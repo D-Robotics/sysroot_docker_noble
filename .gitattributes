@@ -1,0 +1,2 @@
+usr_s600/hobot/lib/libhbtl.so filter=lfs diff=lfs merge=lfs -text
+usr_s600/hobot/lib/libmali.so.0.50.0 filter=lfs diff=lfs merge=lfs -text
