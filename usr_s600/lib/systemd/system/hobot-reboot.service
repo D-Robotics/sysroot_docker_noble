@@ -1,0 +1,12 @@
+[Unit]
+Description=Config system before reboot
+DefaultDependencies=no
+Before=shutdown.target reboot.target halt.target
+After=hobot-otatool.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/reboot-action.sh
+
+[Install]
+WantedBy=shutdown.target reboot.target halt.target

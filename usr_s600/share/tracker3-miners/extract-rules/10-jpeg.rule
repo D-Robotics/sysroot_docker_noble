@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-jpeg.so
+MimeTypes=image/jpeg
+FallbackRdfTypes=nfo:Image;nmm:Photo;
+Graph=tracker:Pictures
+Hash=2e0447a40f1edba99089be159cae655ff5d26a77c2bfbdef9c4b34fab806f74e
+

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>org.gnome.tweaks</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <project_group>GNOME</project_group>
+  <!-- developer_name tag deprecated with Appstream 1.0 -->
+  <developer_name>The GNOME Project</developer_name>
+  <developer_name xml:lang="zh_TW">GNOME 專案</developer_name>
+  <developer_name xml:lang="zh_CN">GNOME 项目</developer_name>
+  <developer_name xml:lang="vi">Dự án GNOME</developer_name>
+  <developer_name xml:lang="uk">Проєкт GNOME</developer_name>
+  <developer_name xml:lang="tr">GNOME Projesi</developer_name>
+  <developer_name xml:lang="th">โครงการ GNOME</developer_name>
+  <developer_name xml:lang="sv">GNOME-projektet</developer_name>
+  <developer_name xml:lang="sr@latin">Projekat Gnom</developer_name>
+  <developer_name xml:lang="sr">Пројекат Гном</developer_name>
+  <developer_name xml:lang="sl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="sk">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ru">Проект GNOME</developer_name>
+  <developer_name xml:lang="ro">Proiectul GNOME</developer_name>
+  <developer_name xml:lang="pt_BR">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pt">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="pa">ਗਨੋਮ ਪਰੋਜੈੱਕਟ</developer_name>
+  <developer_name xml:lang="oc">Lo projècte GNOME</developer_name>
+  <developer_name xml:lang="nl">Het GNOME-project</developer_name>
+  <developer_name xml:lang="ne">जिनोम परियोजना</developer_name>
+  <developer_name xml:lang="nb">GNOME prosjektet</developer_name>
+  <developer_name xml:lang="ms">Projek GNOME</developer_name>
+  <developer_name xml:lang="ml">ഗ്നോം പദ്ധതി</developer_name>
+  <developer_name xml:lang="mjw">GNOME Project</developer_name>
+  <developer_name xml:lang="lv">GNOME projekts</developer_name>
+  <developer_name xml:lang="lt">GNOME projektas</developer_name>
+  <developer_name xml:lang="ko">그놈 프로젝트</developer_name>
+  <developer_name xml:lang="kk">GNOME жобасы</developer_name>
+  <developer_name xml:lang="ka">პროექტი "GNOME"</developer_name>
+  <developer_name xml:lang="ja">The GNOME Project</developer_name>
+  <developer_name xml:lang="it">Il progetto GNOME</developer_name>
+  <developer_name xml:lang="is">GNOME verkefnið</developer_name>
+  <developer_name xml:lang="ie">Li projecte GNOME</developer_name>
+  <developer_name xml:lang="id">Proyek GNOME</developer_name>
+  <developer_name xml:lang="hu">A GNOME projekt</developer_name>
+  <developer_name xml:lang="hr">GNOME projekt</developer_name>
+  <developer_name xml:lang="he">מיזם GNOME</developer_name>
+  <developer_name xml:lang="gl">O Proxecto GNOME</developer_name>
+  <developer_name xml:lang="fur">Il progjet GNOME</developer_name>
+  <developer_name xml:lang="fr">Le projet GNOME</developer_name>
+  <developer_name xml:lang="fi">Gnome-projekti</developer_name>
+  <developer_name xml:lang="fa">پروژهٔ گنوم</developer_name>
+  <developer_name xml:lang="eu">GNOME proiektua</developer_name>
+  <developer_name xml:lang="es">El Proyecto GNOME</developer_name>
+  <developer_name xml:lang="eo">La GNOME-projekto</developer_name>
+  <developer_name xml:lang="en_GB">The GNOME Project</developer_name>
+  <developer_name xml:lang="el">Το έργο GNOME</developer_name>
+  <developer_name xml:lang="de">Das GNOME-Projekt</developer_name>
+  <developer_name xml:lang="da">GNOME-projektet</developer_name>
+  <developer_name xml:lang="cs">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ca">El projecte GNOME</developer_name>
+  <developer_name xml:lang="bg">Проектът GNOME</developer_name>
+  <developer_name xml:lang="be">Праект GNOME</developer_name>
+  <developer_name xml:lang="ar">مشروع جنوم</developer_name>
+  <developer_name xml:lang="af">Die GNOME-projek</developer_name>
+  <developer_name xml:lang="ab">The GNOME Project</developer_name>
+  <developer id="org.gnome">
+    <name>The GNOME Project</name>
+  </developer>
+  <update_contact>contact_at_evanwelsh.com</update_contact>
+  <name>GNOME Tweaks</name>
+  <name xml:lang="zh_TW">GNOME 調校</name>
+  <name xml:lang="zh_CN">GNOME Tweaks</name>
+  <name xml:lang="vi">Tinh chỉnh GNOME</name>
+  <name xml:lang="uk">Налаштування GNOME</name>
+  <name xml:lang="tr">GNOME İnce Ayarlar</name>
+  <name xml:lang="th">ดัดแปลง GNOME</name>
+  <name xml:lang="sv">GNOME Justering</name>
+  <name xml:lang="sr@latin">Gnomov alat za lickanje</name>
+  <name xml:lang="sr">Гномов алат за лицкање</name>
+  <name xml:lang="sl">GNOME Tweaks</name>
+  <name xml:lang="sk">Vyladenia prostredia GNOME</name>
+  <name xml:lang="ru">Доп. настройки GNOME</name>
+  <name xml:lang="ro">Instrument de ajustare GNOME</name>
+  <name xml:lang="pt_BR">Ajustes do GNOME</name>
+  <name xml:lang="pt">Ajustes do GNOME</name>
+  <name xml:lang="pl">Dostrajanie środowiska GNOME</name>
+  <name xml:lang="pa">ਗਨੋਮ ਟਵਿਕ</name>
+  <name xml:lang="oc">Ajustaments de GNOME</name>
+  <name xml:lang="nl">GNOME Afstelhulp</name>
+  <name xml:lang="ne">जिनोम ट्विकस्</name>
+  <name xml:lang="nb">GNOME Tweaks</name>
+  <name xml:lang="ms">Tweak GNOME</name>
+  <name xml:lang="ml">ഗ്നോം ട്വീക്ക്</name>
+  <name xml:lang="mjw">GNOME Tweaks</name>
+  <name xml:lang="lv">GNOME piedare</name>
+  <name xml:lang="lt">GNOME papildomų nustatymai</name>
+  <name xml:lang="ko">그놈 기능 개선</name>
+  <name xml:lang="kk">GNOME қосымша баптаулары</name>
+  <name xml:lang="ka">GNOME -ის მცირე ცვლილებები</name>
+  <name xml:lang="ja">GNOME Tweaks</name>
+  <name xml:lang="it">Personalizzazioni di GNOME</name>
+  <name xml:lang="is">GNOME sérbreytingar</name>
+  <name xml:lang="ie">Retuche de GNOME</name>
+  <name xml:lang="id">GNOME Oprek</name>
+  <name xml:lang="hu">GNOME Finomhangoló</name>
+  <name xml:lang="hr">GNOME prilagoditelj</name>
+  <name xml:lang="he">כלי התאמת GNOME</name>
+  <name xml:lang="gl">Axustes de GNOME</name>
+  <name xml:lang="fur">Personalizazions di GNOME</name>
+  <name xml:lang="fr">Ajustements de GNOME</name>
+  <name xml:lang="fi">Gnomen lisäasetukset</name>
+  <name xml:lang="fa">سیخونک‌های گنوم</name>
+  <name xml:lang="eu">GNOME Doikuntzak</name>
+  <name xml:lang="es">Retoques de GNOME</name>
+  <name xml:lang="eo">GNOME Alĝustigoj</name>
+  <name xml:lang="en_GB">GNOME Tweaks</name>
+  <name xml:lang="el">Εργαλείο μικρορυθμίσεων GNOME</name>
+  <name xml:lang="de">GNOME-Optimierung</name>
+  <name xml:lang="da">GNOME Tilpasninger</name>
+  <name xml:lang="cs">Vyladění GNOME</name>
+  <name xml:lang="ckb">تویکی گنۆم</name>
+  <name xml:lang="ca@valencia">Eina d'ajustaments del GNOME</name>
+  <name xml:lang="ca">Retocs del GNOME</name>
+  <name xml:lang="bg">Натаманяване на GNOME</name>
+  <name xml:lang="be">GNOME Tweaks</name>
+  <name xml:lang="ar">تطويعات جنوم</name>
+  <name xml:lang="af">GNOME Gevorderde Instellings</name>
+  <summary>Tweak advanced GNOME settings</summary>
+  <summary xml:lang="zh_CN">调整 GNOME 高级设置</summary>
+  <summary xml:lang="vi">Tinh chỉnh các cài đặt GNOME nâng cao</summary>
+  <summary xml:lang="uk">Додаткові налаштування для GNOME</summary>
+  <summary xml:lang="tr">Gelişmiş GNOME ayarlarını yapılandır</summary>
+  <summary xml:lang="sv">Justera avancerade GNOME-inställningar</summary>
+  <summary xml:lang="sl">Prilagajanje naprednih nastavitev okolja GNOME</summary>
+  <summary xml:lang="ru">Настройка дополнительных параметров GNOME</summary>
+  <summary xml:lang="ro">Ajustează configurări GNOME avansate</summary>
+  <summary xml:lang="pt_BR">Ajuste as configurações avançadas do GNOME</summary>
+  <summary xml:lang="pt">Ajustar definições avançadas do GNOME</summary>
+  <summary xml:lang="pl">Dostrajanie zaawansowanych ustawień środowiska GNOME</summary>
+  <summary xml:lang="nl">Uitgebreide instellingen voor GNOME</summary>
+  <summary xml:lang="lv">Pieregulēt paplašinātos GNOME iestatījumus</summary>
+  <summary xml:lang="lt">Reguliuokite papildomus GNOME nustatymus</summary>
+  <summary xml:lang="ko">그놈 기능 개선 고급 설정</summary>
+  <summary xml:lang="kk">GNOME қосымша баптауларын өзгерту</summary>
+  <summary xml:lang="ka">შეცვალეთ GNOME-ის დამატებითი პარამეტრები</summary>
+  <summary xml:lang="ie">Retuchar avansat parametres de GNOME</summary>
+  <summary xml:lang="id">Ubah pengaturan tingkat lanjut GNOME</summary>
+  <summary xml:lang="hu">A GNOME speciális beállításainak finomhangolása</summary>
+  <summary xml:lang="he">התאמת הגדרות מתקדמות ב־GNOME</summary>
+  <summary xml:lang="gl">Axustes de retoques avanzados en GNOME</summary>
+  <summary xml:lang="fur">Personalize lis impostazions avanzadis di GNOME</summary>
+  <summary xml:lang="fr">Ajuster les paramètres avancés de GNOME</summary>
+  <summary xml:lang="fi">Muokkaa Gnomen lisäasetuksia</summary>
+  <summary xml:lang="fa">به تنظیمات پیشرفتهٔ گنوم سیخونک بزنید</summary>
+  <summary xml:lang="eu">Doitu GNOMEren ezarpen aurreratuak</summary>
+  <summary xml:lang="es">Ajustes de configuración avanzados en GNOME</summary>
+  <summary xml:lang="en_GB">Tweak advanced GNOME settings</summary>
+  <summary xml:lang="el">Τροποποιήστε τις προηγμένες ρυθμίσεις του GNOME</summary>
+  <summary xml:lang="de">Erweiterte Einstellungen für GNOME optimieren</summary>
+  <summary xml:lang="da">Tilpas avancerede indstillinger for GNOME</summary>
+  <summary xml:lang="cs">Vylaďte si pokročilá nastavení GNOME</summary>
+  <summary xml:lang="ca">Retoca paràmetres avançats del GNOME</summary>
+  <summary xml:lang="bg">Нагласяне на разширените настройки на GNOME</summary>
+  <summary xml:lang="be">Пашыраныя налады GNOME</summary>
+  <description>
+    <p>
+      GNOME Tweaks allows adjusting advanced GNOME options.
+    </p>
+    <p xml:lang="zh_TW">GNOME 調校讓您可以調整進階的 GNOME 選項。</p>
+    <p xml:lang="zh_CN">GNOME Tweaks 可以调整 GNOME 的高级选项。</p>
+    <p xml:lang="vi">Tinh chỉnh GNOME cho phép bạn chỉnh các tùy chọn GNOME ở mức cao cấp.</p>
+    <p xml:lang="uk">"Налаштування GNOME" дозволяє коригувати додаткові параметри GNOME.</p>
+    <p xml:lang="tr">GNOME İnce Ayarlar, gelişmiş GNOME ayarları yapabilmenizi sağlar.</p>
+    <p xml:lang="th">ดัดแปลง GNOME ช่วยในการปรับตัวเลือกขั้นสูงของ GNOME</p>
+    <p xml:lang="sv">GNOME Justering erbjuder justering av avancerade GNOME-alternativ.</p>
+    <p xml:lang="sr@latin">Gnomov alat za lickanje omogućava doterivanje naprednih Gnomovih opcija.</p>
+    <p xml:lang="sr">Гномов алат за лицкање омогућава дотеривање напредних Гномових опција.</p>
+    <p xml:lang="sl">Program GNOME Tweaks omogoča prilagajanje naprednih nastavitev okolja GNOME.</p>
+    <p xml:lang="sk">Aplikácia Vyladenia prostredia GNOME umožňuje upravovať pokročilé voľby prostredia GNOME.</p>
+    <p xml:lang="ru">Дополнительные настройки GNOME позволяют точнее настроить среду рабочего стола GNOME.</p>
+    <p xml:lang="ro">Instrument de ajustare GNOME vă permite să personalizați opțiuni GNOME avansate.</p>
+    <p xml:lang="pt_BR">Ajustes do GNOME permite a configuração de opções avançadas do GNOME.</p>
+    <p xml:lang="pt">Os Ajustes do GNOME permitem-lhe ajustar opções avançadas do GNOME.</p>
+    <p xml:lang="pl">Narzędzie dostrajania GNOME umożliwia dostosowywanie zaawansowanych opcji środowiska GNOME.</p>
+    <p xml:lang="pa">ਗਨੋਮ ਟਵਿਕ ਤਕਨੀਕੀ ਗਨੋਮ ਚੋਣਾਂ ਨੂੰ ਬਦਲਣ ਲਈ ਹੈ।</p>
+    <p xml:lang="oc">Ajustaments de GNOME permet d’ajustar las opcions avançadas de GNOME.</p>
+    <p xml:lang="nl">GNOME Afstelhulp maakt uitgebreid afstellen van GNOME-opties mogelijk.</p>
+    <p xml:lang="ne">जिनोम ट्वीकले उन्नत जिनोम विकल्प समायोजन गर्न अनुमति दिन्छ ।.</p>
+    <p xml:lang="nb">GNOME Tweaks lar deg justere avanserte innstillinger for GNOME.</p>
+    <p xml:lang="ms">Tweak GNOME membolehkan pelarasan pilihan GNOME lanjutan.</p>
+    <p xml:lang="ml">ഗ്നോം ട്വീക്ക് കൂടുതല്‍ ഗ്നോം ഉപാധികള്‍ ക്രമീകരിക്കാന്‍ അനുവദിക്കുന്നു.</p>
+    <p xml:lang="lv">GNOME piedare ļauj pielāgot paplašinātas GNOME opcijas.</p>
+    <p xml:lang="lt">GNOME papildomų nustatymų įrankis leidžia keisti sudėtingesnius GNOME parametrus.</p>
+    <p xml:lang="ko">그놈 기능 개선에서는 고급 그놈 옵션 값을 조정할 수 있습니다.</p>
+    <p xml:lang="kk">Қосымша баптаулар көмегімен GNOME жұмыс үстел ортасын дәлдеп баптауға болады.</p>
+    <p xml:lang="ka">GNOME Tweaks -ი GNOME-ის დამატებითი პარამეტრების შეცვლის საშუალებას გაძლევთ.</p>
+    <p xml:lang="ja">GNOME Tweaks は GNOME の詳細なオプションを調整するためのツールです。</p>
+    <p xml:lang="it">Personalizzazioni di GNOME consente di modificare le opzioni avanzate di GNOME.</p>
+    <p xml:lang="is">GNOME sérbreytingatólið (Tweak Tool) auðveldar ítarlegar breytingar á stillingum GNOME.</p>
+    <p xml:lang="id">GNOME Oprek memungkinkan menyetel opsi-opsi tingkat lanjut GNOME.</p>
+    <p xml:lang="hu">A GNOME Finomhangoló lehetővé teszi speciális GNOME beállítások módosítását.</p>
+    <p xml:lang="hr">GNOME prilagoditelj omogućava prilagodbu naprednih GNOME mogućnosti.</p>
+    <p xml:lang="he">‏כלי התאמת GNOME מאפשר התאמה מתקדם של אפשרויות GNOME.</p>
+    <p xml:lang="gl">Axustes de GNOME permítelle realizar axustes avanzados nas opcións de GNOME.</p>
+    <p xml:lang="fur">Personalizazions di GNOME al permet di justâ lis opzions avanzadis di GNOME.</p>
+    <p xml:lang="fr">Ajustements de GNOME permet d’ajuster les options avancées de GNOME.</p>
+    <p xml:lang="fi">Gnomen lisäasetukset mahdollistaa lukuisten Gnomen asetusten muuttamisen.</p>
+    <p xml:lang="fa">سیخونک‌های گنوم اجازهٔ تنظیم گزینه‌های پیشرفتهٔ گنوم را به شما می‌دهد.</p>
+    <p xml:lang="eu">GNOME Doikuntzak aplikazioak GNOMEren aukera aurreratuak doitzea ahalbidetzen du.</p>
+    <p xml:lang="es">Retoques de GNOME le permite modificar opciones avanzadas de GNOME.</p>
+    <p xml:lang="eo">GNOME Alĝustigoj permasas al vi alĝustigi altnivelajn GNOME-agordojn.</p>
+    <p xml:lang="en_GB">GNOME Tweaks allows adjusting advanced GNOME options.</p>
+    <p xml:lang="el">Το εργαλείο μικρορυθμίσεων GNOME επιτρέπει τη ρύθμιση προχωρημένων επιλογών του GNOME.</p>
+    <p xml:lang="de">GNOME-Optimierung ermöglicht das Anpassen fortgeschrittener GNOME-Einstellungen.</p>
+    <p xml:lang="da">GNOME Tilpasninger giver mulighed for ændring af avancerede GNOME-indstillinger.</p>
+    <p xml:lang="cs">Vyladění GNOME umožňuje přizpůsobit si pokročilé volby GNOME.</p>
+    <p xml:lang="ckb">تویکی گنۆم ڕێگت دەدات گۆڕانکاری پێشکەوتوو ئەنجام بدەیت.</p>
+    <p xml:lang="ca@valencia">L'eina d'ajustaments del GNOME vos permet ajustar opcions avançades del GNOME.</p>
+    <p xml:lang="ca">L'eina de Retocs del GNOME us permet ajustar opcions avançades del GNOME.</p>
+    <p xml:lang="bg">„Натаманяване на GNOME“ позволява нагласянето на разширените настройки на GNOME.</p>
+    <p xml:lang="be">GNOME Tweaks дазваляе змяняць дадатковыя параметры GNOME.</p>
+    <p xml:lang="ar">تطويعات جنوم تتيح ضبط خيارات جنوم المتقدمة.</p>
+    <p xml:lang="af">GNOME Gevorderde Instellings laat toe dat verskeie gevorderde instellings gestel kan word.</p>
+    <p>
+      It can manage keyboard mapping customizations, add
+      startup applications, and set custom window controls
+      among other settings.
+    </p>
+    <p xml:lang="zh_CN">它可以管理自定义键盘映射，添加开机启动应用程序，并在其它设置中设定自定义窗口控制。</p>
+    <p xml:lang="uk">Може керувати, серед іншого, прив'язками дій до клавіатурних скорочень, додавати програми до списку автоматичного запуску і встановлювати нетипові засоби керування вікнами.</p>
+    <p xml:lang="tr">Klavye eşleme özelleştirmelerini yönetebilir, başlangıç uygulamaları ekleyebilir ve diğer ayarların yanı sıra özel pencere denetimlerini ayarlayabilir.</p>
+    <p xml:lang="sv">Det kan bland annat hantera anpassade tangentbordsmappningar, lägga till program att starta automatiskt och ställa in anpassade fönsterkontroller.</p>
+    <p xml:lang="ru">С помощью приложения можно управлять настройками отображения клавиатуры, добавлять запускаемые приложения, устанавливать пользовательские элементы управления окнами и т.д.</p>
+    <p xml:lang="ro">Poate gestiona personalizări de mapare de tastatură, adăuga aplicații de pornire a sistemului și stabili controale de fereastră personalizate, printre alte configurări.</p>
+    <p xml:lang="pt_BR">Ele pode gerir personalizações de mapas de teclado, adicionar aplicações de início, e definir controles de janela personalizados entre outras configurações.</p>
+    <p xml:lang="pl">To narzędzie umożliwia może między innymi zarządzanie modyfikacjami mapowania klawiatury, dodawanie programów startowych i ustawianie niestandardowych przycisków sterowania oknami.</p>
+    <p xml:lang="lv">Tas var pārvaldīt tastatūras kartēšanas pielāgojumus, pārvaldīt palaišanas lietotnes un iestatīt pielāgotas logu vadīklas, kā arī pārvaldīt citus iestatījumus.</p>
+    <p xml:lang="kk">Ол басқа баптауларға қоса пернетақта сәйкестеу баптауларын, іске қосылу қолданбаларын басқара алады және терезенің басқару батырмаларын қоса алады.</p>
+    <p xml:lang="ka">მას შეუძლია მართოს კლავიატურის მორგება, დაამატოს ჩატვირთვისას გასაშვები აპლიკაციები, დაამატოს მომხმარებლის ფანჯრის კონტროლი და ა.შ.</p>
+    <p xml:lang="hu">Többek között képes kezelni a billentyűzetleképezések személyre szabását, az indítandó alkalmazások hozzáadását és az egyéni ablakvezérlők beállítását.</p>
+    <p xml:lang="he">הוא מאפשר  לנהל מיפוי קיצורי מקשים מותאמים אישית, להוסיף יישומי הפעלה, להגדיר בקרים מותאמים לחלונות, לצד הגדרות נוספות.</p>
+    <p xml:lang="gl">Pode xestionar personalizacións na asignación de teclas do teclado, engadir aplicacións de inicio e estabelecer os controis de xanela personalizados entre outras preferencias.</p>
+    <p xml:lang="fi">Sen avulla voit hallita näppäimistön määrittelyjä, käynnistettäviä sovelluksia, ikkunapainikkeiden asettelua ja paljon muuta.</p>
+    <p xml:lang="fa">این ابزار می‌تواند در کنار دیگر تنظیمات، سفارشی‌سازی‌های نگاشت صفحه‌کلید را مدیریت کرده، برنامه‌ها را به راه‌اندازی افزوده و واپایش‌های پنجرهٔ سفارشی تنظیم کند. کنار دیگر تنظیمات فعّال کند.</p>
+    <p xml:lang="es">Puede gestionar personalizaciones del mapa del teclado, añadir aplicaciones al inicio y establecer controles de ventanas personalizados, entre otras opciones.</p>
+    <p xml:lang="en_GB">It can manage keyboard mapping customisations, add startup applications, and set custom window controls among other settings.</p>
+    <p xml:lang="de">Es kann Tastaturbelegungs-Anpassungen verwalten, Startanwendungen hinzufügen und neben weiteren Einstellungen auch benutzerdefinierte Fenstersteuerungen festlegen.</p>
+    <p xml:lang="da">Det kan blandt andet håndtere tastaturtilpasninger, tilføje opstartsprogrammer og indstille tilpassede vindueskontroller.</p>
+    <p xml:lang="cs">Mimo jiné umí spravovat přizpůsobení mapování klávesnice, přidávat aplikace spouštěné při spuštění systému a nastavovat vlastní ovládací prvky oken.</p>
+    <p xml:lang="be">Апроч іншых налад, можа кіраваць спалучэннямі клавіш, дадаваць праграмы у аўтазапуск, задаваць нестандартныя дзеянні для кіравання вокнамі.</p>
+  </description>
+  <releases>
+    <release version="46.0" date="2024-03-17">
+      <description>
+        <ul>
+          <li>User interface redesigned with Adwaita and GTK4</li>
+          <li>Fixed bug preventing translations from loading in parts of the app</li>
+          <li>Removed tweaks now handled by GNOME Settings</li>
+          <li>Added tweaks for managing pointing sticks</li>
+          <li>Bug fixes and performance improvements</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="45.0" date="2023-09-22">
+      <description>
+        <ul>
+          <li>Remove settings now found in GNOME Settings</li>
+          <li>Some interface refreshments ahead of the GTK4 port</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="42.0" date="2023-09-22">
+      <description>
+        <ul>
+          <li>Fix GNOME Extensions link</li>
+          <li>Clarify legacy GTK theme setting</li>
+          <li>Remove tweaks duplicated in Settings</li>
+          <li>Remove broken lockscreen wallpaper setting</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40.0" date="2021-03-27">
+      <description>
+        <p>
+          First stable release for GNOME 40. This version is mainly comprised
+          of bug fixes and changes for GNOME 40. There are also some notable
+          improvements:
+        </p>
+        <ul>
+          <li>Remove Extensions support (now found in the Extensions app)</li>
+          <li>Support new font settings for GNOME 40</li>
+          <li>Fix UI on small screens</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40~beta" date="2021-02-13">
+      <description>
+        <ul>
+          <li>Remove Extensions support</li>
+          <li>Add Flatpak support</li>
+          <li>Support new font settings</li>
+          <li>Fix leaflet on small screens</li>
+          <li>Various other bug fixes</li>
+          <li>Update translations</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <provides>
+    <id>gnome-tweak-tool.desktop</id>
+  </provides>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+  </kudos>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/GNOME/gnome-tweaks/raw/HEAD/data/screenshot-windows.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/gnome-tweaks/raw/HEAD/data/screenshot-appearance.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/gnome-tweaks/raw/HEAD/data/screenshot-fonts.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/gnome-tweaks/raw/HEAD/data/screenshot-mouse-touchpad.png</image>
+    </screenshot>
+  </screenshots>
+  <translation type="gettext">gnome-tweaks</translation>
+  <launchable type="desktop-id">org.gnome.tweaks.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <url type="homepage">https://gitlab.gnome.org/GNOME/gnome-tweaks</url>
+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-tweaks/-/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/gnome-tweaks</url>
+</component>

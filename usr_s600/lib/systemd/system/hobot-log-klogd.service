@@ -1,0 +1,17 @@
+# hobot log
+
+[Unit]
+Description=Hobot log klogd
+After=hobot-log-daemon.service hobot-log-syslogd.service
+Wants=hobot-log-daemon.service hobot-log-syslogd.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+StartLimitBurst=0
+ExecStart=/usr/bin/hobot-log-start klogd
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=basic.target

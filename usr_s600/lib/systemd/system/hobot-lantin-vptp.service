@@ -1,0 +1,18 @@
+# hobot lantin vptp
+
+[Unit]
+Description=Hobot lantin vptp service
+After=hobot-mount.service hobot-loadko.service
+Wants=hobot-mount.service hobot-loadko.service
+ConditionPathExists=/dev/lantin_log
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+StartLimitBurst=0
+ExecStart=/usr/bin/hobot-lantin-vptp.sh
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=basic.target

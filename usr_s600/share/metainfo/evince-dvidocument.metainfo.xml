@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>evince-dvidocument</id>
+  <extends>org.gnome.Evince</extends>
+  <name>DVI Documents</name>
+  <name xml:lang="zu">Amadokhumende we-DVI</name>
+  <name xml:lang="zh_TW">DVI 文件</name>
+  <name xml:lang="zh_HK">DVI 文件</name>
+  <name xml:lang="zh_CN">DVI 文档</name>
+  <name xml:lang="vi">Tài liệu DVI</name>
+  <name xml:lang="uk">Документи DVI</name>
+  <name xml:lang="ug">DVI پۈتۈكى</name>
+  <name xml:lang="tr">DVI Belgeleri</name>
+  <name xml:lang="th">เอกสาร DVI</name>
+  <name xml:lang="tg">Ҳуҷҷатҳои DVI</name>
+  <name xml:lang="te">DVI పత్రాలు</name>
+  <name xml:lang="ta">DVI ஆவணங்கள்</name>
+  <name xml:lang="sv">DVI-dokument</name>
+  <name xml:lang="sr@latin">DVI dokumenti</name>
+  <name xml:lang="sr">ДВИ документи</name>
+  <name xml:lang="sq">Dokumente DVI</name>
+  <name xml:lang="sl">Dokumenti DVI</name>
+  <name xml:lang="sk">Dokumenty typu DVI</name>
+  <name xml:lang="si">DVI ලේඛන</name>
+  <name xml:lang="ru">Документы формата DVI</name>
+  <name xml:lang="ro">Documente DVI</name>
+  <name xml:lang="pt_BR">Documentos DVI</name>
+  <name xml:lang="pt">Documentos DVI</name>
+  <name xml:lang="ps">لاسوندونه DVI</name>
+  <name xml:lang="pl">Dokumenty DVI</name>
+  <name xml:lang="pa">DVI ਦਸਤਾਵੇਜ਼</name>
+  <name xml:lang="or">DVI ଦଲିଲ</name>
+  <name xml:lang="oc">Documents DVI</name>
+  <name xml:lang="nn">DVI-dokument</name>
+  <name xml:lang="nl">DVI-documenten</name>
+  <name xml:lang="ne">डि भि आइ कागजातहरु</name>
+  <name xml:lang="nds">DVI Dokumente</name>
+  <name xml:lang="nb">DVI-dokumenter</name>
+  <name xml:lang="my">DVI ဖိုင်များ</name>
+  <name xml:lang="ms">Dokumen-dokumen DVI</name>
+  <name xml:lang="mr">DVI दस्तऐवज</name>
+  <name xml:lang="mn">DVI Баримт бичиг</name>
+  <name xml:lang="ml">DVI രേഖകള്‍</name>
+  <name xml:lang="mk">DVI документи</name>
+  <name xml:lang="mjw">DVI Documents</name>
+  <name xml:lang="mg">Tahirin-kevitra DVI</name>
+  <name xml:lang="mai">DVI दस्ताबेज</name>
+  <name xml:lang="lv">DVI dokumenti</name>
+  <name xml:lang="lt">DVI dokumentai</name>
+  <name xml:lang="ku">Belgeyên DVI</name>
+  <name xml:lang="ks">डीवी आई कागजात</name>
+  <name xml:lang="ko">DVI 문서</name>
+  <name xml:lang="kn">DVI ದಸ್ತಾವೇಜುಗಳು</name>
+  <name xml:lang="km">ឯកសារ DVI</name>
+  <name xml:lang="kk">DVI құжаттары</name>
+  <name xml:lang="kab">Isemliyen DVI</name>
+  <name xml:lang="ka">DVI დოკუმენტები</name>
+  <name xml:lang="ja">DVI ドキュメント</name>
+  <name xml:lang="it">Documenti DVI</name>
+  <name xml:lang="is">DVI skjöl</name>
+  <name xml:lang="ie">Documentes DVI</name>
+  <name xml:lang="id">Dokumen DVI</name>
+  <name xml:lang="hu">DVI-dokumentumok</name>
+  <name xml:lang="hr">DVI dokumenti</name>
+  <name xml:lang="hi">DVI दस्तावेज़</name>
+  <name xml:lang="he">מסמכי DVI</name>
+  <name xml:lang="gu">DVI દસ્તાવેજો</name>
+  <name xml:lang="gl">Documentos DVI</name>
+  <name xml:lang="gd">Sgrìobhainnean DVI</name>
+  <name xml:lang="ga">Cáipéisí DVI</name>
+  <name xml:lang="fur">Documents DVI</name>
+  <name xml:lang="fr">Documents DVI</name>
+  <name xml:lang="fi">DVI-asiakirjat</name>
+  <name xml:lang="fa">سندهای DVI</name>
+  <name xml:lang="eu">DVI dokumentuak</name>
+  <name xml:lang="et">DVI-dokumendid</name>
+  <name xml:lang="es">Documentos DVI</name>
+  <name xml:lang="eo">DVI-dokumentoj</name>
+  <name xml:lang="en@shaw">DVI 𐑛𐑪𐑒𐑿𐑥𐑩𐑯𐑑𐑕</name>
+  <name xml:lang="en_GB">DVI Documents</name>
+  <name xml:lang="en_CA">DVI Documents</name>
+  <name xml:lang="el">Έγγραφα DVI</name>
+  <name xml:lang="dz">ཌི་ཝི་ཨའི་ཡིག་ཆ་ཚུ།</name>
+  <name xml:lang="de">DVI-Dokumente</name>
+  <name xml:lang="da">DVI-dokumenter</name>
+  <name xml:lang="cy">Dogfennau DVI</name>
+  <name xml:lang="cs">Dokumenty DVI</name>
+  <name xml:lang="ca@valencia">Documents DVI</name>
+  <name xml:lang="ca">Documents DVI</name>
+  <name xml:lang="bs">DVI dokumenti</name>
+  <name xml:lang="br">Teulieù DVI</name>
+  <name xml:lang="bn_IN">DVI ডকুমেন্ট</name>
+  <name xml:lang="bn">DVI নথি</name>
+  <name xml:lang="bg">Документи DVI</name>
+  <name xml:lang="be@latin">Dakumenty DVI</name>
+  <name xml:lang="be">Дакументы DVI</name>
+  <name xml:lang="ast">Documentos DVI</name>
+  <name xml:lang="as">DVI দস্তাবেজসমূহ</name>
+  <name xml:lang="ar">مستندات DVI</name>
+  <name xml:lang="an">Documentos DVI</name>
+  <name xml:lang="af">DVI-dokumente</name>
+  <summary>Adds support for reading DVI documents</summary>
+  <summary xml:lang="zh_TW">加入讀取 DVI 文件的支援</summary>
+  <summary xml:lang="zh_HK">加入讀取 DVI 文件的支援</summary>
+  <summary xml:lang="zh_CN">增加支持阅读 DVI 文档的功能</summary>
+  <summary xml:lang="vi">Thêm hỗ trợ đọc các tài liệu DVI</summary>
+  <summary xml:lang="uk">Додає підтримування читання документів DVI</summary>
+  <summary xml:lang="tr">DVI belgelerini görüntüleme desteği ekler</summary>
+  <summary xml:lang="th">เพิ่มการรองรับการอ่านเอกสาร DVI</summary>
+  <summary xml:lang="tg">Барои хониши ҳуҷҷатҳои DVI дастгириро илова мекунад</summary>
+  <summary xml:lang="te">DVI పత్రములు చదువుటకు తోడ్పాటు జతచేయును</summary>
+  <summary xml:lang="ta">DVI ஆவணங்களைப் படிப்பதற்கான ஆதரவைச் சேர்க்கிறது</summary>
+  <summary xml:lang="sv">Lägger till stöd för att läsa DVI-dokument</summary>
+  <summary xml:lang="sr@latin">Dodajte podršku za čitanje DVI dokumenata</summary>
+  <summary xml:lang="sr">Додајте подршку за читање ДВИ докумената</summary>
+  <summary xml:lang="sl">Doda podporo za branje datotek DVI</summary>
+  <summary xml:lang="sk">Pridá podporu na čítanie dokumentov typu DVI</summary>
+  <summary xml:lang="ru">Добавляет поддержку для чтения документов в формате DVI</summary>
+  <summary xml:lang="ro">Adaugă suport pentru citirea documenteleor DVI</summary>
+  <summary xml:lang="pt_BR">Adiciona suporte para leitura de documentos DVI</summary>
+  <summary xml:lang="pt">Adiciona suporte para ler documentos DVI</summary>
+  <summary xml:lang="pl">Dodaje obsługę dokumentów w formacie DVI</summary>
+  <summary xml:lang="pa">DVI ਦਸਤਾਵੇਜ਼ ਪੜ੍ਹਨ ਲਈ ਸਹਾਇਤਾ ਜੋੜਦੀ ਹੈ</summary>
+  <summary xml:lang="oc">Apond la presa en carga de la lectura dels documents DVI</summary>
+  <summary xml:lang="nl">Voegt ondersteuning toe voor het lezen van DVI-documenten</summary>
+  <summary xml:lang="ne">DVI कागजात पढ्न समर्थन थप्नुहोस्</summary>
+  <summary xml:lang="nb">Legger til støtte for å lese DVI-dokumenter</summary>
+  <summary xml:lang="my">DVI မှတ်တမ်းစာအုပ်များ ဖတ်စေနိုင်သည်</summary>
+  <summary xml:lang="ms">Tambah sokongan untuk pembacaan dokumen DVI</summary>
+  <summary xml:lang="mr">DVI दस्तऐवज वाचण्याकरिता समर्थन समाविष्ट करते</summary>
+  <summary xml:lang="lv">Pievieno atbalstu DVI dokumentu lasīšanai</summary>
+  <summary xml:lang="lt">Prideda DVI dokumentų palaikymą</summary>
+  <summary xml:lang="ko">DVI 문서를 읽는 기능을 추가합니다</summary>
+  <summary xml:lang="kn">DVI ದಸ್ತಾವೇಜುಗಳನ್ನು ಓದಲು ಬೆಂಬಲವನ್ನು ಸೇರಿಸುತ್ತದೆ</summary>
+  <summary xml:lang="kk">DVI құжаттарын оқу мүмкіндігін қосады</summary>
+  <summary xml:lang="kab">Irennu asalel i tɣuri n yisemliyen DVI</summary>
+  <summary xml:lang="ka">DVI დოკუმენტების კითხვის მხარდაჭერის დამატება</summary>
+  <summary xml:lang="ja">DVI ドキュメントの読み取りサポートを追加する</summary>
+  <summary xml:lang="it">Aggiunge il supporto per la lettura dei documenti DVI</summary>
+  <summary xml:lang="is">Bætir við stuðningi til lestrar á DVI skjölum</summary>
+  <summary xml:lang="ie">Adjunte li subtention de leer documentes DVI</summary>
+  <summary xml:lang="id">Menambahkan dukungan untuk membaca dokumen DVI</summary>
+  <summary xml:lang="hu">Támogatást nyújt DVI dokumentumok olvasásához</summary>
+  <summary xml:lang="hr">Dodaje podršku za čitanje DVI dokumenata</summary>
+  <summary xml:lang="hi">DVI दस्तावेज़ पढ़ने के लिए समर्थन जोड़ता है</summary>
+  <summary xml:lang="he">הוספת תמיכה לקריאת מסמכי DVI</summary>
+  <summary xml:lang="gu">DVI દસ્તાવેજોને વાંચવા માટે આધારને ઉમેરે છે</summary>
+  <summary xml:lang="gl">Engade compatibilidade para ler documentos DVI</summary>
+  <summary xml:lang="gd">Cuiridh seo taic gus sgrìobhainnean DVI a leughadh ris</summary>
+  <summary xml:lang="fur">Al zonte il supuart par lei i documents DVI</summary>
+  <summary xml:lang="fr">Ajoute la prise en charge de la lecture des documents DVI</summary>
+  <summary xml:lang="fi">Lisää tuen DVI-asiakirjojen lukemiselle</summary>
+  <summary xml:lang="fa">پشتیبانی از خواندن سندهای DVI را اضافه می‌کند</summary>
+  <summary xml:lang="eu">DVI dokumentuak irakurtzeko euskarria gehitzen du</summary>
+  <summary xml:lang="es">Añade soporte para leer documentos DVI</summary>
+  <summary xml:lang="eo">Aldonas subtenon por legi DVI-dokumentojn</summary>
+  <summary xml:lang="en_GB">Adds support for reading DVI documents</summary>
+  <summary xml:lang="el">Προσθέτει υποστήριξη για την ανάγνωση εγγράφων DVI</summary>
+  <summary xml:lang="de">Fügt Unterstützung für das Lesen von DVI-Dokumenten hinzu</summary>
+  <summary xml:lang="da">Tilføjer understøttelse af DVI-dokumenter</summary>
+  <summary xml:lang="cs">Přidává podporu pro čtení dokumentů DVI</summary>
+  <summary xml:lang="ca@valencia">Permet la lectura de documents DVI</summary>
+  <summary xml:lang="ca">Permet la lectura de documents DVI</summary>
+  <summary xml:lang="bs">Dodaje podršku za čitanje DVI dokumenata</summary>
+  <summary xml:lang="bn_IN">DVI নথিপত্র পড়ার জন্য সহায়তা যোগ করে</summary>
+  <summary xml:lang="bg">Добавя поддръжка за четене на документи DVI</summary>
+  <summary xml:lang="be">Дадае падтрымку прагляду дакументаў у фармаце DVI</summary>
+  <summary xml:lang="as">DVI দস্তাবেজসমূহ পঢ়াৰ সমৰ্থন যোগ কৰিছে</summary>
+  <summary xml:lang="an">Anyade capacidat ta leyer documentos DVI</summary>
+  <mimetypes>
+    <mimetype>application/x-bzdvi</mimetype>
+    <mimetype>application/x-dvi</mimetype>
+    <mimetype>application/x-ext-dvi</mimetype>
+    <mimetype>application/x-gzdvi</mimetype>
+  </mimetypes>
+  <kudos>
+    <kudo>ModernToolkit</kudo>
+  </kudos>
+  <url type="homepage">https://wiki.gnome.org/Apps/Evince/SupportedDocumentFormats</url>
+  <metadata_license>GPL-2.0+ or GFDL-1.3-only</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <update_contact>https://discourse.gnome.org/tag/evince</update_contact>
+</component>

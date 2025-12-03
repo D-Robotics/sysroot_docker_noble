@@ -1,0 +1,4 @@
+# This package is installed automatically on GNOME systems, and not
+# appropriate to install on non-GNOME systems, even if the machine happens
+# to have rfkill devices
+appstream-metadata-missing-modalias-provide */udev/rules.d/*

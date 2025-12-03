@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>org.gnome.baobab</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>Disk Usage Analyzer</name>
+  <name xml:lang="zh_TW">磁碟用量分析器</name>
+  <name xml:lang="zh_HK">磁碟用量分析器</name>
+  <name xml:lang="zh_CN">磁盘占用分析器</name>
+  <name xml:lang="vi">Bộ phân tích đĩa</name>
+  <name xml:lang="uk">Аналізатор використання диска</name>
+  <name xml:lang="ug">دىسكا ئىشلىتىش تەھلىلچىسى</name>
+  <name xml:lang="tr">Disk Kullanımı İnceleyici</name>
+  <name xml:lang="th">เครื่องมือวิเคราะห์การใช้ดิสก์</name>
+  <name xml:lang="tg">Таҳлилгари истифодаи диск</name>
+  <name xml:lang="te">డిస్క్ వినిమయ విశ్లేషకం</name>
+  <name xml:lang="ta">வட்டு பயன்பாடு ஆராய்வி</name>
+  <name xml:lang="sv">Diskanvändningsanalysator</name>
+  <name xml:lang="sr@latin">Ispitivač iskorišćenosti diska</name>
+  <name xml:lang="sr">Испитивач искоришћености диска</name>
+  <name xml:lang="sl">Orodje za preučevanje porabe diska</name>
+  <name xml:lang="sk">Analyzátor využitia disku</name>
+  <name xml:lang="si">තැටි භාවිත විශ්ලේෂකය</name>
+  <name xml:lang="ru">Анализатор использования дисков</name>
+  <name xml:lang="ro">Analizatorul utilizării discului</name>
+  <name xml:lang="pt_BR">Analisador de uso de disco</name>
+  <name xml:lang="pt">Analisador de utilização do disco</name>
+  <name xml:lang="ps">د ټيکلي کارونې شننونکی</name>
+  <name xml:lang="pl">Wykorzystanie dysku</name>
+  <name xml:lang="pa">ਡਿਸਕ ਵਰਤੋਂ ਜਾਂਚਕਾਰ</name>
+  <name xml:lang="or">ଡିସ୍କ ବ୍ଯବହାର ବିଧି ବିଶ୍ଳେଷକ</name>
+  <name xml:lang="oc">Analisador d'utilizacion dels disques</name>
+  <name xml:lang="nn">Analyse av diskplass</name>
+  <name xml:lang="nl">Schijfgebruik</name>
+  <name xml:lang="ne">डिस्क प्रयोग विश्लेषक</name>
+  <name xml:lang="nds">Spiekergebruk unnersöken</name>
+  <name xml:lang="nb">Lagring</name>
+  <name xml:lang="ms">Penganalisis Penggunaan Cakera</name>
+  <name xml:lang="mr">डीस्क वापर विश्लेषक</name>
+  <name xml:lang="ml">ഡിസ്ക് യൂസേജ് അനലൈസർ</name>
+  <name xml:lang="mk">Употребата на дискот</name>
+  <name xml:lang="mjw">Disk Usage Analyzer</name>
+  <name xml:lang="mai">डिस्क प्रयोग विश्लेषण</name>
+  <name xml:lang="lv">Diska izmantojuma analizators</name>
+  <name xml:lang="lt">Disko naudojimo analizatorius</name>
+  <name xml:lang="ku">Analîzkerê Bikaranîna Dîskê</name>
+  <name xml:lang="ko">디스크 사용량 분석</name>
+  <name xml:lang="kn">ಡಿಸ್ಕ್‍ ಬಳಕೆಯ ವಿಶ್ಲೇಷಕ</name>
+  <name xml:lang="km">កម្មវិធី​វិភាគ​ការ​ប្រើ​ថាស</name>
+  <name xml:lang="kk">Диск қолдануын анализдеушісі</name>
+  <name xml:lang="kab">Anaslaḍ n useqdec n uḍebsi</name>
+  <name xml:lang="ka">დისკის მოხმარების ანალიზატორი</name>
+  <name xml:lang="ja">ディスク使用量アナライザー</name>
+  <name xml:lang="it">Analizzatore di utilizzo del disco</name>
+  <name xml:lang="is">Disknotkunargreining</name>
+  <name xml:lang="ie">Analisator del usage de discos</name>
+  <name xml:lang="id">Penganalisa Penggunaan Diska</name>
+  <name xml:lang="hu">Lemezhasználat-elemző</name>
+  <name xml:lang="hr">Analizator iskoristivosti diska</name>
+  <name xml:lang="hi">डिस्क प्रयोग विश्लेषण</name>
+  <name xml:lang="he">מנתח השימוש בכונן</name>
+  <name xml:lang="gu">ડિસ્ક વપરાશકર્તા વિશ્લેષક</name>
+  <name xml:lang="gl">Analizador do uso do disco</name>
+  <name xml:lang="gd">Sgrùdair cleachdadh nan diosga</name>
+  <name xml:lang="ga">Anailíseoir Úsáid Diosca</name>
+  <name xml:lang="fy">Skiifgebrûk</name>
+  <name xml:lang="fur">Analizadôr di utilizazion dal disc</name>
+  <name xml:lang="fr">Analyseur d’utilisation des disques</name>
+  <name xml:lang="fo">Disksnýtslugreinari</name>
+  <name xml:lang="fi">Levynkäytön analysointi</name>
+  <name xml:lang="fa">تحلیلگر مصرف دیسک</name>
+  <name xml:lang="eu">Disko-erabileraren analizatzailea</name>
+  <name xml:lang="et">Kettakasutuse analüsaator</name>
+  <name xml:lang="es">Analizador de uso de disco</name>
+  <name xml:lang="eo">Diskuzada analizilo</name>
+  <name xml:lang="en@shaw">𐑛𐑦𐑕𐑒 𐑿𐑕𐑦𐑡 𐑨𐑯𐑩𐑤𐑲𐑟𐑻</name>
+  <name xml:lang="en_GB">Disk Usage Analyser</name>
+  <name xml:lang="el">Αναλυτής χρήσης δίσκου</name>
+  <name xml:lang="dz">ཌིཀསི་གི་བེད་སྤྱོད་དཔྱད་ཞིབ་པ།</name>
+  <name xml:lang="de">Festplattenbelegungsanalyse</name>
+  <name xml:lang="da">Diskforbrugsanalyse</name>
+  <name xml:lang="cs">Analyzátor využití disku</name>
+  <name xml:lang="crh">Disk Qullanımı Tahlilcisi</name>
+  <name xml:lang="ca@valencia">Analitzador de l'ús dels discs</name>
+  <name xml:lang="ca">Analitzador de l'ús dels discs</name>
+  <name xml:lang="bs">Alat za analizu upotrebe diska</name>
+  <name xml:lang="br">Dezranner arver ar c'hantennoù</name>
+  <name xml:lang="bn_IN">ডিস্ক ব্যবহারের বিশ্লেষণ ব্যবস্থা</name>
+  <name xml:lang="bn">ডিস্ক ব্যবহারের বিশ্লেষণ ব্যবস্থা</name>
+  <name xml:lang="bg">Анализатор на ползването на диска</name>
+  <name xml:lang="be@latin">Analizatar zaniataści dyskavaj prastory</name>
+  <name xml:lang="be">Аналіз дыскавай прасторы</name>
+  <name xml:lang="ast">Analizador d'Usu de Discu</name>
+  <name xml:lang="as">ডিস্ক ব্যৱহাৰ বিশ্লেষক</name>
+  <name xml:lang="ar">محلّل استخدام القرص</name>
+  <name xml:lang="an">Analizador d'uso de disco</name>
+  <name xml:lang="af">Skyfgebruik</name>
+  <name xml:lang="ab">Адиск ахархәара анализҟаҵага</name>
+  <summary>Check folder sizes and available disk space</summary>
+  <summary xml:lang="zh_TW">檢查資料夾大小與可用的磁碟空間</summary>
+  <summary xml:lang="zh_HK">檢查資料夾大小與可用的磁碟空間</summary>
+  <summary xml:lang="zh_CN">检查文件夹大小和可用磁盘空间</summary>
+  <summary xml:lang="vi">Kiểm tra kích cỡ của thư mục và chỗ trống trên đĩa</summary>
+  <summary xml:lang="uk">Перевірте розміри тек та дисковий простір</summary>
+  <summary xml:lang="ug">قىسقۇچ چوڭلۇقى ۋە ئىشلىتىشكە بولىدىغان دىسكا بوشلۇقىنى تەكشۈر</summary>
+  <summary xml:lang="tr">Klasör boyutlarını ve kullanılabilir disk alanını denetle</summary>
+  <summary xml:lang="th">ตรวจสอบขนาดของโฟลเดอร์ต่างๆ และเนื้อที่ว่างในดิสก์</summary>
+  <summary xml:lang="tg">Санҷиши андозаи ҷузвдонҳо ва фазои диски дастрас</summary>
+  <summary xml:lang="te">అందుబాటులోవున్న డిస్క్ స్థలం మరియు సంచయపు పరిమాణాలను తనిఖీచేయి</summary>
+  <summary xml:lang="ta">அடைவு அளவு மற்றும் கிடைக்கக்கூடிய வட்டு இடைவெளி ஆகியவற்றை சரிபார் </summary>
+  <summary xml:lang="sv">Kontrollera mappstorlekar och tillgängligt diskutrymme</summary>
+  <summary xml:lang="sr@latin">Proverite veličine fascikli i slobodan prostor na disku</summary>
+  <summary xml:lang="sr">Проверите величине фасцикли и слободан простор на диску</summary>
+  <summary xml:lang="sl">Preveri velikosti map in prostor na disku</summary>
+  <summary xml:lang="sk">Kontroluje veľkosti priečinkov a dostupné miesto na disku</summary>
+  <summary xml:lang="ru">Изучение размера папок и свободного места на дисках</summary>
+  <summary xml:lang="ro">Verifică dimensiunea dosarului și spațiul disponibil pe disc</summary>
+  <summary xml:lang="pt_BR">Verifique o tamanho de pastas e o espaço disponível em disco</summary>
+  <summary xml:lang="pt">Verificar o tamanho das pastas e o espaço disponível em disco</summary>
+  <summary xml:lang="ps">د پوښۍ کچونه او شته ټيکلی تشه وګورﺉ</summary>
+  <summary xml:lang="pl">Wyświetlanie rozmiaru katalogów i dostępnego miejsca na dysku</summary>
+  <summary xml:lang="pa">ਫੋਲਡਰ ਸਾਇਜ਼ ਅਤੇ ਉਪਲੱਬਧ ਡਿਸਕ ਥਾਂ ਚੈੱਕ ਕਰੋ</summary>
+  <summary xml:lang="or">ଫୋଲଡରର ଆକାର ଏବଂ ଉପଲବ୍ଧ ଡିସ୍କ ସ୍ଥାନ ଯାଞ୍ଚ କରନ୍ତୁ</summary>
+  <summary xml:lang="oc">Verificar la talha dels dorsièrs e l'espaci de disc disponible</summary>
+  <summary xml:lang="nn">Undersøk mappestorleikar og tilgjengeleg diskplass</summary>
+  <summary xml:lang="nl">Bekijk mapgroottes en beschikbare schijfruimte</summary>
+  <summary xml:lang="ne">फोल्डर साइज र उपलब्ध डिस्क खालीस्थान जाँच गर्नुहोस्</summary>
+  <summary xml:lang="nb">Kontroller lagringsplassen din</summary>
+  <summary xml:lang="ms">Periksa saiz folder dan ruang cakera yang tersedia</summary>
+  <summary xml:lang="mr">फोल्डर आकार व उपलब्ध डीस्क जागा तपासा</summary>
+  <summary xml:lang="ml">ഫോൾഡറുകളുടെ വ്യാപ്തിയും ഡിസ്കില്‍ ലഭ്യമായ സ്ഥലവും പരിശോധിയ്ക്കുക</summary>
+  <summary xml:lang="mk">Провери ја големината на папките и достапниот простор на дискот</summary>
+  <summary xml:lang="mjw">Folder apun lapen disk space angse kelang</summary>
+  <summary xml:lang="lv">Pārbauda mapju izmērus un pieejamo diska vietu</summary>
+  <summary xml:lang="lt">Tikrinti aplankų dydžius ir laisvą vietą</summary>
+  <summary xml:lang="ko">폴더 용량과 디스크의 빈 공간을 검사합니다</summary>
+  <summary xml:lang="kn">ಕಡತಕೋಶದ ಗಾತ್ರಗಳು ಹಾಗು ಲಭ್ಯವಿರುವ ಡಿಸ್ಕಿನ ಜಾಗಕ್ಕಾಗಿ ನೋಡು</summary>
+  <summary xml:lang="km">ពិនិត្យ​មើល​ទំហំ​ថត និង​ទំហំ​ថាស​ដែល​អាច​ប្រើ​បាន</summary>
+  <summary xml:lang="kk">Бумалар өлшемдерін және дисктердегі қолжетерлік орынды тексеру</summary>
+  <summary xml:lang="kab">Senqed teɣzi n yikaramen akked tallunt yellan deg uḍebsi</summary>
+  <summary xml:lang="ka">საქაღალდის ზომებისა და ხელმისაწვდომი ადგილის შემოწმება</summary>
+  <summary xml:lang="ja">フォルダーと利用可能なディスク容量をチェックします</summary>
+  <summary xml:lang="it">Controlla la dimensione delle cartelle e lo spazio disco disponibile</summary>
+  <summary xml:lang="is">Athuga hve mikið pláss skrár taka á tölvunni og hve mikið pláss er eftir</summary>
+  <summary xml:lang="ie">Controlar grandores de fólderes e disc-spacie disponibil</summary>
+  <summary xml:lang="id">Periksa ukuran folder dan ruang diska yang tersedia</summary>
+  <summary xml:lang="hu">Mappaméretek és elérhető lemezterület vizsgálata</summary>
+  <summary xml:lang="hr">Provjerite veličinu mapa  i dostupan prostor na disku</summary>
+  <summary xml:lang="hi">फोल्डर आकार जाँचें और उपलब्ध डिस्क स्थान</summary>
+  <summary xml:lang="he">בדיקת גודלי התיקיות והמקום פנוי בכונן</summary>
+  <summary xml:lang="gu">ફોલ્ડર માપો અને ઉપલબ્ધ ડિસ્ક જગ્યા ચકાસો</summary>
+  <summary xml:lang="gl">Comprobe o tamaño dos cartafoles e o espazo dispoñíbel no disco</summary>
+  <summary xml:lang="gd">Thoir sùil air meud nam pasganan ’s an rum shaor air an diosga</summary>
+  <summary xml:lang="ga">Seiceáil méideanna fillteán agus spás diosca le fáil</summary>
+  <summary xml:lang="fy">Kontrolearje map gruttes en beskikbere skiifromte</summary>
+  <summary xml:lang="fur">Controle la dimension des cartelis e il spazi libar sul disc</summary>
+  <summary xml:lang="fr">Vérifier la taille des dossiers et l’espace disque disponible</summary>
+  <summary xml:lang="fo">Skoða skjáttustøddir og tøkt diskspláss</summary>
+  <summary xml:lang="fi">Tarkista kansioiden koko ja käytettävissä oleva levytila</summary>
+  <summary xml:lang="fa">بررسی اندازهٔ شاخه‌ها و فضای دیسک موجود</summary>
+  <summary xml:lang="eu">Egiaztatu karpeten tamainak eta diskoan dagoen leku erabilgarria</summary>
+  <summary xml:lang="et">Kaustade suuruse ja saadaoleva kettaruumi kontroll</summary>
+  <summary xml:lang="es">Compruebe el tamaño de las carpetas y el espacio disponible en disco</summary>
+  <summary xml:lang="eo">Kontroli dosierujajn grandojn kaj disponeblan diskmemoron</summary>
+  <summary xml:lang="en@shaw">𐑗𐑧𐑒 𐑓𐑴𐑤𐑛𐑼 𐑕𐑲𐑟𐑩𐑟 𐑯 𐑩𐑝𐑱𐑤𐑩𐑚𐑩𐑤 𐑛𐑦𐑕𐑒 𐑕𐑐𐑱𐑕</summary>
+  <summary xml:lang="en_GB">Check folder sizes and available disk space</summary>
+  <summary xml:lang="el">Έλεγχος μεγέθους φακέλων και διαθέσιμου χώρου στο δίσκο</summary>
+  <summary xml:lang="dz">ཡིག་སྣོད་ཀྱི་ཚད་ཚུ་དང་འཐོབ་ཚུགས་པའི་ཌིཀསི་ས་སྟོང་ཞིབ་དཔྱད་འབད</summary>
+  <summary xml:lang="de">Ordnergrößen und freien Festplattenplatz analysieren</summary>
+  <summary xml:lang="da">Kontrollér mappestørrelser og tilgængelig diskplads</summary>
+  <summary xml:lang="cs">Zkontrolovat velikost složek a dostupné místo na disku</summary>
+  <summary xml:lang="crh">Cilbent ölçülerini ve faydalanışlı disk fezasını teşker</summary>
+  <summary xml:lang="ckb">چێکردنی قەبارەی بوخچە و بۆشایی بەردەست لە پەپکەکاندا</summary>
+  <summary xml:lang="ca@valencia">Comprova la mida de les carpetes i l'espai disponible al disc</summary>
+  <summary xml:lang="ca">Comprova la mida de les carpetes i l'espai disponible al disc</summary>
+  <summary xml:lang="bs">Provjeri veličinu direktorija i raspoloživ prostor na disku</summary>
+  <summary xml:lang="br">Gwiriañ mentoù an teuliadoù ha plas hegerz war ar gantennad</summary>
+  <summary xml:lang="bn_IN">ফোল্ডারের মাপ ও ডিস্কে উপলব্ধ স্থান পরীক্ষা করা হবে</summary>
+  <summary xml:lang="bn">ফোল্ডারের মাপ ও ডিস্কে বিদ্যমান স্থান পরীক্ষা করা হবে</summary>
+  <summary xml:lang="bg">Проверка на размерите на папките и свободното пространство на диска</summary>
+  <summary xml:lang="be@latin">Spraŭdź pamiery katalohaŭ i dyskavuju prastoru</summary>
+  <summary xml:lang="be">Праверка памеру папак і даступнай дыскавай прасторы</summary>
+  <summary xml:lang="ast">Comprobar el tamañu de les carpetes y l'espaciu disponible en discu</summary>
+  <summary xml:lang="as">ফোল্ডাৰৰ মাপ আৰু ডিস্কত উপলব্ধ স্থান নিৰীক্ষণ কৰক</summary>
+  <summary xml:lang="ar">افحص حجم المجلدات والمساحة المتوفرة</summary>
+  <summary xml:lang="an">Compreba la grandaria d'as carpetas y lo espacio disponible en disco</summary>
+  <summary xml:lang="af">Kontroleer gidsgroottes en beskikbare skyfspasie</summary>
+  <description>
+    <p>
+      A simple application to keep your disk usage and available space under control.
+    </p>
+    <p xml:lang="zh_TW">一款能控管磁碟用量及可用空間的簡單應用程式。</p>
+    <p xml:lang="zh_CN">一个简单的应用程序，保持你的磁盘使用情况和可用空间处于控制。</p>
+    <p xml:lang="vi">Một ứng dụng đơn giản để giúp bạn kiểm soát dung lượng đĩa tiêu dùng và còn lại.</p>
+    <p xml:lang="uk">Проста програма для утримання вжитку диска і доступного місця під контролем.</p>
+    <p xml:lang="tr">Disk kullanımınızı ve kullanılabilir alanınızı denetim altında tutmak için basit uygulama.</p>
+    <p xml:lang="sv">Ett enkelt program för att hålla koll på din diskanvändning och tillgängligt utrymme.</p>
+    <p xml:lang="sr@latin">Jednostavan program za držanje iskorišćenosti diska i dostupnog prostora pod kontrolom.</p>
+    <p xml:lang="sr">Једноставан програм за држање искоришћености диска и доступног простора под контролом.</p>
+    <p xml:lang="sl">Enostaven program za nadzor porabe diska in pregled razpoložljivosti prostora.</p>
+    <p xml:lang="sk">Jednoduchá aplikácia, ktorá vám pomôže udržať využitie disku a dostupné miesto pod kontrolou.</p>
+    <p xml:lang="ru">Простое приложение для контроля использования диска и доступного пространства.</p>
+    <p xml:lang="ro">O aplicație simplă pentru păstrarea sub control a utilizării discului și a spațiului disponibil.</p>
+    <p xml:lang="pt_BR">Um aplicativo simples para manter o uso do disco e o espaço disponível sob controle.</p>
+    <p xml:lang="pt">Uma aplicação simples para manter a sua utilização de disco e os espaço disponível dentro do seu controlo.</p>
+    <p xml:lang="pl">Prosty program pomagający utrzymać wykorzystanie dysku i dostępne miejsce w ryzach.</p>
+    <p xml:lang="pa">ਤੁਹਾਡੀ ਡਿਸਕ ਵਰਤੋਂ ਅਤੇ ਮੌਜੂਦਾ ਖਾਲੀ ਥਾਂ ਨੂੰ ਕੰਟਰੋਲ ਹੇਠ ਰੱਖਣ ਲਈ ਸਰਲ ਐਪਲੀਕੇਸ਼ਨ ਹੈ।</p>
+    <p xml:lang="oc">Una aplicacion simpla per gardar jos contraròtle l'utilizacion de sos disques e l'espaci disponible.</p>
+    <p xml:lang="nl">Een eenvoudige toepassing om uw schijfgebruik en beschikbare ruimte onder controle te houden.</p>
+    <p xml:lang="ne">तपाईँको डिस्क उपयोग र उपलब्ध ठाउँ नियन्त्रणमा राख्ने एक साधारण अनुप्रयोग।.</p>
+    <p xml:lang="nb">Hva tar mest plass på enheten? Analyser lagringsenhetene dine med Lagring, og se hva som spiser opp tilgjengelig plass.</p>
+    <p xml:lang="ms">Sebuah aplikasi ringkas yang memantau penggunaan cakera dan mengawal ruang yang ada.</p>
+    <p xml:lang="ml">താങ്കളുടെ ഡിസ്ക് ഉപഭോഗവും ലഭ്യമായ സ്ഥലവും നിയന്ത്രണവിധേയമാക്കാനുള്ള ഒരു ലളിതമായ പ്രയോഗം.</p>
+    <p xml:lang="lv">Vienkārša lietotne, kas palīdz uzraudzīt disku izmantojumu un brīvi pieejamo vietas apjomu.</p>
+    <p xml:lang="lt">Paprasta programa disko naudojimui bei prieinamai vietai valdyti.</p>
+    <p xml:lang="ko">디스크 사용량 및 남은 공간을 관리하는 간단한 프로그램입니다.</p>
+    <p xml:lang="kk">Диск қолданылуын және қолжетерлік диск орнын бақылауға арналған қарапайым қолданба.</p>
+    <p xml:lang="kab">Asnas afessas i wakken ad yeqqim useqdec n uḍebsi-k d tallaunt i yellan ddaw n usenqed.</p>
+    <p xml:lang="ka">მარტივი პროგრამა თქვენი დისკის გამოყენების და ხელმისაწვდომი სივრცის საკონტროლოდ.</p>
+    <p xml:lang="ja">ディスクの使用量と利用可能な空き領域を管理するためのシンプルなアプリケーションです。</p>
+    <p xml:lang="it">Un'applicazione per tenere sotto controllo l'utilizzo del disco.</p>
+    <p xml:lang="is">Einfalt forrit til að sýsla með disknotkun og tiltækt pláss.</p>
+    <p xml:lang="ie">Un simplic application quel controla li usage de vor discos e li disponibil spacie.</p>
+    <p xml:lang="id">Aplikasi sederhana untuk menjaga penggunaan diska Anda dan ruang yang tersedia tetap dibawah kendali.</p>
+    <p xml:lang="hu">Egy egyszerű alkalmazás a lemezhasználat és az elérhető hely ellenőrzés alatt tartásához.</p>
+    <p xml:lang="hr">Jednostavna aplikacija za držanje pod nadzorom upotrebu diska i slobodnog diskovnog prostora.</p>
+    <p xml:lang="he">יישום פשוט לשמירת השימוש בכונן שלך ושמירת המקום הפנוי תחת שליטה.</p>
+    <p xml:lang="gl">Unha aplicación simple para manter baixo control o uso do disco e o espazo dispoñíbel.</p>
+    <p xml:lang="gd">Aplacaid shimplidh gus smachd a chumail air an àite air na diosgan agad.</p>
+    <p xml:lang="fy">In simpele applikaasje op jo skiifgebrûk en beskikbere romte yn'e touwen te hâlden.</p>
+    <p xml:lang="fur">Une semplice aplicazion par tignî sot control il spazi doprât e disponibil dal to disc.</p>
+    <p xml:lang="fr">Une application simple pour garder sous contrôle l’utilisation de ses disques et l’espace disponible.</p>
+    <p xml:lang="fo">Eitt einfalt forrit til at skil á disksnýtslu og -pláss.</p>
+    <p xml:lang="fi">Yksinkertainen sovellus, jonka avulla pysyt perillä levyn käytöstä ja vapaasta tilasta.</p>
+    <p xml:lang="fa">برنامه‌ای ساده برای واپایش مصرف و فضای موجود دیسک.</p>
+    <p xml:lang="eu">Diskoaren erabilpena eta leku librea kontrol pean mantentzeko aplikazio xume bat.</p>
+    <p xml:lang="es">Una sencilla aplicación para mantener el uso de disco y el espacio en disco bajo control.</p>
+    <p xml:lang="eo">Facila aplikaĵo por kontroli la uzadon kaj disponeblan spacon de via diskoj.</p>
+    <p xml:lang="en_GB">A simple application to keep your disk usage and available space under control.</p>
+    <p xml:lang="el">Μια απλή εφαρμογή που σας βοηθά να έχετε υπό έλεγχο τη χρήση και τον ελεύθερο χώρο του δίσκου σας.</p>
+    <p xml:lang="de">Eine einfache Anwendung, die Festplattenbelegung und freien Speicherplatz überwacht.</p>
+    <p xml:lang="da">Et simpelt program til at holde styr på diskforbrug og -plads.</p>
+    <p xml:lang="cs">Jednoduchá aplikace, díky které budete mít přehled o využití disku a volném místu.</p>
+    <p xml:lang="ca@valencia">Una aplicació simple per mantindre l'ús del disc i l'espai disponible sota control.</p>
+    <p xml:lang="ca">Una aplicació simple per a mantenir l'ús del disc i l'espai disponible sota control.</p>
+    <p xml:lang="bg">Лесно за употреба приложение за преглед на използваното дисково пространство.</p>
+    <p xml:lang="be">Простая праграма для кантролю выкарыстанай і даступнай дыскавай прасторы.</p>
+    <p xml:lang="ar">تطبيق بسيط لإبقاء استخدامك لمساحة القرص و المساحة المتاحة تحت السيطرة.</p>
+    <p xml:lang="af">'n Eenvoudige toepassing om u skyfgebruik en beskikbare spasie onder beheer te hou.</p>
+    <p>
+      Disk Usage Analyzer can scan specific folders, storage devices and online accounts.
+      It provides both a tree and a graphical representation showing the size of each folder,
+      making it easy to identify where disk space is wasted.
+    </p>
+    <p xml:lang="zh_TW">《磁碟用量分析器》能掃描特定資料夾、儲存裝置、線上帳號等位置，並提供環狀與樹狀兩種圖表來呈現個別資料夾所佔用的空間，藉此來分析磁碟空間是否有妥善利用。</p>
+    <p xml:lang="zh_CN">磁盘占用分析器可以扫描指定的文件夹、存储设备和在线账号。它同时提供了树形和图形展示来显示每个文件夹的大小，因此可以很容易的识别出哪里的磁盘空间被浪费了。</p>
+    <p xml:lang="vi">Bộ phân tích tiêu dùng đĩa có thể quét các thư mục, thiết bị lưu trữ và các tài khoản trực tuyến cụ thể. Nó cung cấp cả cây và hiển thị biểu diễn dạng đồ họa của kích thước của từng thư mục, làm cho nó dễ dàng chỉ ra chỗ đĩa nào đang bị lãng phí.</p>
+    <p xml:lang="uk">Аналізатор використання дисків може сканувати вказані теки, пристрої та мережеві облікові записи. Він надає як ієрархічний, так і графічний огляд розміру кожної теки, що спрощує пошук місця, де перенасичено використання диска.</p>
+    <p xml:lang="tr">Disk Kullanımı İnceleyici belirli klasörleri, depolama aygıtlarını ve çevrim içi hesapları tarayabilir. Ayrıca, her klasör boyutunun ağaç ve grafik gösterimini sunar, disk alanının nerede boşa harcandığını saptamayı kolaylaştırır.</p>
+    <p xml:lang="sv">Diskanvändningsanalysator kan läsa av specifika mappar, lagringsenheter och nätkonton. Det tillhandahåller både en trädrepresentation och en grafisk representation som visar storleken för varje mapp, vilket gör det enkelt att identifiera var diskutrymme går till spillo.</p>
+    <p xml:lang="sr@latin">Ispitivač iskorišćenosti diska može da pregleda naročite fascikle, skladišne uređaje i naloge na mreži. Obezbeđuje predstavljanje i u vidu stabla i u vidu grafika pokazujući veličinu svake fascikle, olakšavajući otkrivanje izgubljenog prostora na disku.</p>
+    <p xml:lang="sr">Испитивач искоришћености диска може да прегледа нарочите фасцикле, складишне уређаје и налоге на мрежи. Обезбеђује представљање и у виду стабла и у виду графика показујући величину сваке фасцикле, олакшавајући откривање изгубљеног простора на диску.</p>
+    <p xml:lang="sl">Program za preučevanje zasedenosti diska omogoča nadzor nad obsežnostjo posameznih datotek, map, naprav za shranjevanje in spletnih računov. Omogoča drevesni in grafični pregled s prikazom velikosti datotek in map. Orodje močno poenostavi odkrivanje največjih porabnikov prostora.</p>
+    <p xml:lang="sk">Analyzátor využitia disku dokáže analyzovať určené priečinky, úložné zariadenia a účty služieb. Poskytuje stromovú aj grafickú reprezentáciu, ktorá zobrazuje veľkosť každého priečinku a uľahčuje tým identifikáciu, kde sa plytvá miestom.</p>
+    <p xml:lang="ru">Анализатор использования дисков может сканировать отдельные папки, устройства хранения и сетевые учётные записи. Обеспечивает графическое представление и представление в виде дерева, показывающее размер каждой папки, что позволяет легко определить, где теряется дисковое пространство.</p>
+    <p xml:lang="ro">Analizatorul de utilizare a discului poate scana dosare specifice, dispozitive de stocare și conturi online. Oferă atât o reprezentare arborescentă cât și una grafică afișând dimensiunea fiecărui dosar, facilitând identificarea locului unde spațiul pe disc este risipit.</p>
+    <p xml:lang="pt_BR">Analisador de uso de disco pode analisar pastas específicas, dispositivo de armazenamento e contas on-lines. Ele fornece representação por árvore ou gráfico exibindo o tamanho de cada pasta, facilitando identificar onde o espaço em disco é desperdiçado.</p>
+    <p xml:lang="pt">O Analisador de Utilização de Disco pode analisar diretórios específicos, dispositivos de armazenamento e contas online. Oferece um representação em árvore e gráfica que mostra o tamanho de cada diretório, tornando fácil identificar como o espaço do disco está a ser utilizado.</p>
+    <p xml:lang="pl">Można skanować konkretne katalogi, urządzenia i konta online. Dostępne jest drzewo katalogów oraz ich graficzna reprezentacja, pokazująca rozmiar każdego katalogu, ułatwiając identyfikowanie zmarnowanego miejsca.</p>
+    <p xml:lang="pa">ਡਿਸਕ ਵਰਤੋਂਕਾਰ ਜਾਂਚਕਰਤਾ  ਕਿਸੇ ਖਾਸ ਫੋਲਡਰ, ਸਟੋਰੇਜ਼ ਡਿਵਾਈਸਾਂ ਅਤੇ ਆਨਲਾਈਨ ਖਾਤਿਆਂ ਦੀ ਜਾਂਚ ਕਰ ਸਕਦਾ ਹੈ। ਇਹ ਹਰ ਫੋਲਡਰ ਦੇ ਆਕਾਰ ਨੂੰ ਲੜੀ ਅਤੇ ਗਰਾਫ਼ ਦੇ ਰੂਪ ਵਿੱਚ ਪੇਸ਼ ਕਰਦਾ ਹੈ, ਜਿਸ ਨਾਲ ਪਛਾਣਨਾ ਸੌਖਾ ਹੋ ਜਾਂਦਾ ਹੈ ਕਿ ਕਿੱਥੇ ਡਿਸਕ ਦੀ ਥਾਂ ਬੇਕਾਰ ਪਈ ਹੈ।</p>
+    <p xml:lang="oc">L'analisador d'utilizacion dels disques pòt analisar de dorsièrs, de periferics d'emmagazinatge o de comptes en linha especifics. Prepausa de representacions arborescentas e graficas que mòstran la talha de cada dorsièr, per facilitar la deteccion dels endreits ont l'espaci de disc es gastat.</p>
+    <p xml:lang="nl">Schijfgebruik kan specifieke mappen, opslagapparaten en online-accounts scannen. Het laat zowel een boomstructuur als een grafische weergave zien met de grootte van elke map, wat het gemakkelijk maakt om te zien waar veel schijfruimte wordt gebruikt.</p>
+    <p xml:lang="ne">डिस्क प्रयोग विश्लेषकले विशिष्ट फोल्डरहरू, भण्डारण यन्त्रहरू र अनलाइन खाताहरू स्क्यान गर्न सक्छन्। यो रूख दुवै र ग्राफिकल प्रतिनिधित्व प्रदान गर्दछ प्रत्येक फोल्डरको साइज देखाउँदा, डिस्कको ठाउँ बर्बाद हुन्छ जहाँ पहिचान गर्न सजिलो बनाउँछ।.</p>
+    <p xml:lang="nb">Appen kan analysere mapper, enheter og nettkontoer, og fremstille plassbruken deres på en klar og lettfattelig måte. Dette gjør det lett å se hvor det brukes unødvendig mye lagringsplass.</p>
+    <p xml:lang="ms">Penganalisis Penggunaan Cakera boleh mengimbas folder khusus, peranti storan dan akaun atas-talian. Ia menyediakan kedua-dua persembahan bergrafik dan pepohon yang menunjukkan saiz bagi setiap folder, menjadikannya lebih mudah mengenal pasti ruang cakera yang telah dibazirkan.</p>
+    <p xml:lang="ml">ഡിസ്ക് യൂസേജ് അനലൈസറിനു് പ്രത്യേക ഫോൾഡറുകൾ, സംഭരണ ഉപകരണങ്ങൾ, ഓൺലൈൻ അക്കൗണ്ടുകൾ എന്നിവ പരതാൻ സാധിക്കും. അത് ഓരോ ഫോൾഡറിന്റേയും വൃക്ഷരൂപത്തിലും ചിത്രരൂപത്തിലുമുള്ള മാതൃകകൾ നൽകുന്നതുവഴി, ഡിസ്കിലെ സ്ഥലം എവിടെയാണ് നഷ്ടമാകുന്നതെന്ന് തിരിച്ചറിയൽ എളുപ്പമാക്കുന്നു.</p>
+    <p xml:lang="lv">Disku izmantojuma analizators var skenēt noteiktas mapes, krātuvju ierīces un tiešsaistes kontus. Tas sniedz gan koka skatu, gan grafiku, kas rāda katras mapes izmēru. Tādējādi ir vieglāk noteikt, kur diska vieta tiek izniekota.</p>
+    <p xml:lang="lt">Disko naudojimo analizatorius gali perskaityti nurodytus aplankus, saugyklos įrenginius bei internetines paskyras. Jis pateikia medžio bei grafinę reprezentaciją, parodančią kiekvieno aplanko dydį, taip padedant greičiau surasti, kur yra švaistoma disko vieta.</p>
+    <p xml:lang="ko">디스크 사용량 분석은 특정 폴더, 저장 장치, 온라인 계정을 검사할 수 있습니다. 각 폴더를 트리 방식 및 그래픽으로 나타내어 디스크 공간을 낭비하는 영역을 쉽게 찾아볼 수 있게 합니다.</p>
+    <p xml:lang="kk">Диск қолданылуын анализдеуші көрсетілген бумаларды, сақтаушы құрылғыларды және желілік тіркелгілерді сканерлей алады. Ол бір уақытта ағаш көрінісін және диск орны қайда қолданылғанын анықтауды ыңғайлы қылатын әр буманың өлшемі берілген графикалық көріністі көрсетеді.</p>
+    <p xml:lang="kab">Anaslaḍ n useqdec n uḍebsi yezmer ad iḍumm ikaramen uzzigen, ibenkan n uḥraz akked imiḍanen yeqqnen. Yettmuddu-d aseklu d usenked udlif ɣef tikkelt s usakn n teɣzi n yal akaram, ayen ara yeǧǧen asbadu afessas anida tettruḥu tallunt n uḍebsi akka kan.</p>
+    <p xml:lang="ka">დისკის გამოყენების ანალიზატორს შეუძლია დაასკანიროს კონკრეტული საქაღალდეები, შენახვის მოწყობილობები და ონლაინ ანგარიშები. ის უზრუნველყოფს როგორც ხეს, ასევე გრაფიკულ გამოსახულებას, რომელიც აჩვენებს თითოეული საქაღალდის ზომას, რაც აადვილებს იმის იდენტიფიცირებას, თუ სად იკარგება დისკის ადგილი.</p>
+    <p xml:lang="ja">ディスク使用量アナライザーは指定したフォルダー、ストレージデバイス、およびオンラインアカウントをスキャンすることができます。スキャンした各フォルダーは、ツリー形式とグラフ形式の両方でサイズが表示されるため、ディスクのどの部分が無駄に使用されているかが簡単に確認できます。</p>
+    <p xml:lang="it">«Analizzatore di utilizzo del disco» è in grado di analizzare delle cartelle specifiche, dei dispositivi di archiviazione e degli account online. Fornisce una rappresentazione grafica e ad albero con le dimensioni di ciascuna cartella, facilitando l'individuazione degli sprechi di spazio sul disco.</p>
+    <p xml:lang="is">Diskapláss-forritið getur skannað tilteknar möppur, geymslutæki og reikninga á netinu. Hægt er að birta bæði greinasýn og myndræna framsetningu fyrir stærð hverrar möppu, sem auðveldar að finna hvar geymsluplássi er sóað.</p>
+    <p xml:lang="ie">Li Analisator posse examinar specific fólderes, aparates de inmagasinage e contos online. It provide e un representation de árbor e un grafico quel monstra li grandore de chascun fólder, por que on posse vider facilmen quo occupa li disc-spacie.</p>
+    <p xml:lang="id">Penganalisa Penggunaan Diska dapat memindai folder tertentu, perangkat penyimpanan, dan akun daring. Ini menyediakan representasi pohon dan grafis yang menampilkan ukuran setiap folder, membuat mudah mengidentifikasi di mana ruang disk disia-siakan.</p>
+    <p xml:lang="hu">A lemezhasználat-elemző képes megvizsgálni bizonyos mappákat, tárolóeszközöket és online fiókokat. Mind fa, mind grafikus ábrázolást szolgáltat az egyes mappák méretének megjelenítéséhez, megkönnyítve annak azonosítását, hogy hol vész el a lemezterület.</p>
+    <p xml:lang="hr">Analizator iskoristivosti diska može pretražiti određene mape, uređaje pohrane i mrežne račune. Omogućuje prikaz u stablu i grafičku prezentaciju koja prikazuje veličinu pojedine mape, čineći jednostavnijim upravljanje iskorištenim prostorom.</p>
+    <p xml:lang="he">מנתח השימוש בכונן יכול לסרוק תיקייה מסוימת, התקני אחסון וחשבונות מקוונים. הוא מספק תצוגה עץ ותצוגה חזותית להצגת הגודל של כל תיקייה, מה שמקל זיהוי בזבוז של מקום בכונן.</p>
+    <p xml:lang="gl">O Analizador de uso do disco pode analizar cartafoles específicos, dispositivos de almacenamento e contas en liña. Fornece unha representación gráfica e en árbore que mostra o tamaño de cada cartafol, facendo máis doado identificar onde se está ocupando o espazo en disco.</p>
+    <p xml:lang="gd">’S urrainn dha Sgrùdair cleachdadh nan diosga pasganan sònraichte, uidheaman stòrais agus cunntasan air loidhne a sganadh. Bheir e an dà chuid sealladh craoibhe is riochdachadh grafaigeach dhut a sheallas meud gach pasgain ach am faic thu gun duilgheadas càit a bheil àite ’ga chaitheamh air an diosga.</p>
+    <p xml:lang="fy">Skiifgebrûk kin spesifyke mappen, opslach apparaten en online accounts scanne. It hat sawol in beam as in grafyske represintaasje dy't de grutte fan eltse map sjen lit, wat it maklik makket om te sjen wêr as jo skiifrome oan op giet.</p>
+    <p xml:lang="fur">L'Analizadôr di utilizazion dal disc al pues analizâ specifichis cartelis, dispositîfs di archiviazion e account in linie. Al furnìs tant un arbul che une rapresentazion grafiche, mostrant la dimension di ogni cartele e rindint facil identificâ dulà che il spazi al ven strassât.</p>
+    <p xml:lang="fr">L’Analyseur d’utilisation des disques peut analyser des dossiers, des périphériques de stockage ou des comptes en ligne spécifiques. Il propose des représentations arborescentes et graphiques montrant la taille de chaque dossier, pour faciliter la détection des endroits où l’espace disque est gaspillé.</p>
+    <p xml:lang="fo">Diskanýtslugreinari kann skoða givnu skjáttur, goymslutóleindir og netkontur. Forritið kann, við bæði træðsýning og myndasýning, vísa støddina av hvørjari skjáttu, ið ger tað lætt at peika á hvar pláss verður burturspilt.</p>
+    <p xml:lang="fi">Levynkäytön analysointi voi tarkistaa yksittäisiä kansioita, tallennuslaitteita ja verkkotilejä. Se näyttää puumaisen ja graafisen esityksen jokaisen kansion sisällöstä ja tilan käytöstä. Sovelluksen avulla näet helposti, mitkä kansiot vievät eniten tilaa.</p>
+    <p xml:lang="fa">تحلیلگر مصرف دیسک می‌تواند شاخه‌های خاص، دستگاه‌های ذخیره و حساب‌های برخط را بپوید. این برنامه یک بازنمایی درختی و گرافیکی فراهم می‌کند که اندازهٔ هر شاخه را برای تسهیل تشخیص مکان هدر رفت فضای دیسک، نشان می‌دهد.</p>
+    <p xml:lang="eu">Diskoaren erabilpenaren aztertzaileak karpeta zehatzak, biltegiratze-gailuak eta lineako kontuak analiza ditzake. karpeta bakoitzaren tamaina erakusten dituzten zuhaitzak eta adierazpen grafikoak eskaintzen ditu, diskoaren zer leku xahutzen den modu erraz baten identifikatzeko.</p>
+    <p xml:lang="es">El analizador de uso del disco puede analizar carpetas específicas, dispositivos de almacenamiento y cuentas en línea. Proporciona tanto una vista de árbol como una representación gráfica del tamaño de cada carpeta, simplificando la identificación de dónde se consume el espacio.</p>
+    <p xml:lang="eo">Diskuzada analizilo povas skani specifajn dosierujojn, datumportilojn, kaj retajn kontojn. Ĝi provizas arban kaj diagraman prezenton de grando de ĉiu dosierujo, kiu faciligas identigon de malŝparata diskospaco.</p>
+    <p xml:lang="en_GB">Disk Usage Analyser can scan specific folders, storage devices and online accounts. It provides both a tree and a graphical representation showing the size of each folder, making it easy to identify where disk space is wasted.</p>
+    <p xml:lang="el">Ο Αναλυτής χρήσης δίσκου μπορεί να σαρώσει συγκεκρμένους φακέλους, συσκευές αποθήκευσης και διαδικτυακούς λογαριασμούς. Παρέχει δενδροειδή και γραφικά διαγράμματα δείχνοντας το μέγεθος κάθε φακέλου,  καθιστώντας το εύκολο να εντοπιστεί ο χαμένος χώρος της συσκευής.</p>
+    <p xml:lang="de">Die Festplattenbelegungsanalyse Baobab kann Ordner, Datenspeicher und Onlinespeicherdienste auswerten. Die grafische Darstellung erfolgt sowohl als Baumdiagramm als auch als Kreisdiagramm und zeigt die Größe jedes Ordners, sodass verschwendeter Speicherplatz schnell und einfach identifiziert werden kann.</p>
+    <p xml:lang="da">Diskforbrugsanalyse kan skanne givne mapper, lagerenheder og onlinekonti. Programmet tilbyder både en træbaseret og en grafisk repræsentation, som viser størrelsen af hver mappe, så det bliver let at se hvor diskplads spildes.</p>
+    <p xml:lang="cs">Analyzátor využití disku umí procházet určené složky, úložná zařízení a účty on-line. Výsledky pak poskytuje ve stromové i grafické podobě ukazující velikosti jednotlivých složek, takže můžete snadno zjistit, co zabírá největší část místa na disku.</p>
+    <p xml:lang="ca@valencia">L'analitzador de l'ús dels discs pot escanejar carpetes específiques i comptes en línia. Proveeix un arbre i una representació gràfica mostrant la mida de cada carpeta, simplificant la identificació d'on es consumeix l'espai de disc.</p>
+    <p xml:lang="ca">L'analitzador de l'ús dels discs pot escanejar carpetes específiques i comptes en línia. Proveeix un arbre i una representació gràfica mostrant la mida de cada carpeta, simplificant la identificació d'on es consumeix l'espai de disc.</p>
+    <p xml:lang="bg">С „Анализатора на ползването на диска“ може да преглеждате папки, устройства и регистрации онлайн. Програмата има графично и дървовидно представяния на използваното дисково пространство на всяка папка, което спомага да откриете къде то се губи.</p>
+    <p xml:lang="be">Аналізатар дыскавай прасторы можа даследаваць вызначаныя папкі, запамінальныя прылады і сеціўныя ўліковыя запісы. Ён выводзіць дрэва папак і іх графічную схему з указаннем памеру, што дазваляе лёгка выяўляць дзе расходуецца дыскавая прастора.</p>
+    <p xml:lang="ar">يستطيع محلل استخدام القرص فحص مجلدات معينة، و أجهزة التخزين، و حسابات الإنترنت. يوفر تمثيلا شجريًا و بيانيًا توضح حجم كل مجلد، مما يسهّل معرفة أين تُستهلك مساحة التخزين.</p>
+    <p xml:lang="af">Skyfgebruik kan spesifieke gidse, stoortoestelle en aanlynrekeninge skandeer. Dit bied 'n boom en 'n grafiese voorstelling wat die grootte van elke gids aandui, wat dit maklik maak om te identifiseer waar skyfspasie vermors word.</p>
+    <p xml:lang="ab">Адискқәа ранализҟаҵага азин амоуп хазытәи аҭаӡқәа рықәҭыхра, аиқәырхара аиҿыртәырақәа насгьы аҳасабырбатә нҵамҭақәа рықәҭыхра.Еиқәнаршәоит аграфикатә аарԥшра ,насгьы ҵлаҵас аарԥшра, аҭаӡцыԥхьаӡа ашәагаа шәзырбо , уи ишәнаҭоит алшара имарианы адиск аиужьра ахьыӡо ашьақәыргылара.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Devices and Locations View</caption>
+      <caption xml:lang="zh_CN">设备与位置</caption>
+      <caption xml:lang="uk">Перегляд пристроїв та місць</caption>
+      <caption xml:lang="tr">Aygıtlar ve Konumlar Görünümü</caption>
+      <caption xml:lang="sv">Enhets- och platsvy</caption>
+      <caption xml:lang="sl">Odpre pogled naprav in mest</caption>
+      <caption xml:lang="sk">Zobrazenie zariadení a umiestnení</caption>
+      <caption xml:lang="ru">Просмотр устройств и расположений</caption>
+      <caption xml:lang="ro">Vizualizarea dispozitive și locații</caption>
+      <caption xml:lang="pt_BR">Exibição de dispositivos e locais</caption>
+      <caption xml:lang="pt">Vista de dispositivos e localizações</caption>
+      <caption xml:lang="pl">Widok urządzeń i położeń</caption>
+      <caption xml:lang="pa">ਡਿਵਾਈਸ ਅਤੇ ਟਿਕਾਣੇ ਵੇਖੋ</caption>
+      <caption xml:lang="oc">Vista dels periferics e emplaçaments</caption>
+      <caption xml:lang="nl">Apparaten en locaties-weergave</caption>
+      <caption xml:lang="nb">Enheter og plasseringer</caption>
+      <caption xml:lang="lv">Ierīču un vietu skats</caption>
+      <caption xml:lang="lt">Įrenginių ir vietų rodinys</caption>
+      <caption xml:lang="ko">장치 및 위치 보기</caption>
+      <caption xml:lang="kk">Құрылғылар мен орындар көрінісі</caption>
+      <caption xml:lang="kab">Askan n yibenkan d yidgan</caption>
+      <caption xml:lang="ka">მოწყობილობებისა და მდებარეობების ხედი</caption>
+      <caption xml:lang="it">Vista dispositivi e posizioni</caption>
+      <caption xml:lang="is">Sýn á tæki og staðsetningar</caption>
+      <caption xml:lang="ie">Vise de Aparates e localisationes</caption>
+      <caption xml:lang="id">Tampilan Perangkat dan Lokasi</caption>
+      <caption xml:lang="hu">Eszközök és helyek nézet</caption>
+      <caption xml:lang="he">תצוגת התקנים ומיקומים</caption>
+      <caption xml:lang="gl">Vista de dispositivos e localizacións</caption>
+      <caption xml:lang="fur">Viodude dispositîfs e posizions</caption>
+      <caption xml:lang="fr">Vue des périphériques et emplacements</caption>
+      <caption xml:lang="fi">Laitteet ja sijainnit -näkymä</caption>
+      <caption xml:lang="fa">نمای افزاره‌ها و مکان‌ها</caption>
+      <caption xml:lang="eu">Gailuen eta kokalekuen ikuspegia</caption>
+      <caption xml:lang="es">Vista de dispositivos y ubicaciones</caption>
+      <caption xml:lang="eo">Vido pri aparatoj kaj lokoj</caption>
+      <caption xml:lang="en_GB">Devices and Locations View</caption>
+      <caption xml:lang="el">Προβολή συσκευές και τοποθεσίες</caption>
+      <caption xml:lang="de">Ansicht »Geräte und Orte«</caption>
+      <caption xml:lang="da">Enheder og steder-visning</caption>
+      <caption xml:lang="cs">Zobrazení zařízení a umístění</caption>
+      <caption xml:lang="ca">Vista de Dispositius i ubicacions</caption>
+      <caption xml:lang="bg">Изглед с устройства и местоположения</caption>
+      <caption xml:lang="be">Прагляд прылад і размяшчэнняў</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/baobab/baobab-main.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Scan View</caption>
+      <caption xml:lang="zh_CN">扫描视图</caption>
+      <caption xml:lang="uk">Перегляд сканування</caption>
+      <caption xml:lang="tr">Tara Görünümü</caption>
+      <caption xml:lang="sv">Avsökningsvy</caption>
+      <caption xml:lang="sl">Odpre pregled preiskovalnika</caption>
+      <caption xml:lang="sk">Zobrazenie analýzy</caption>
+      <caption xml:lang="ru">Просмотр сканирования</caption>
+      <caption xml:lang="ro">Vizualizarea scanării</caption>
+      <caption xml:lang="pt_BR">Análise</caption>
+      <caption xml:lang="pt">Vista de análise</caption>
+      <caption xml:lang="pl">Widok skanowania</caption>
+      <caption xml:lang="pa">ਜਾਂਚ ਝਲਕ</caption>
+      <caption xml:lang="oc">Vista analisa</caption>
+      <caption xml:lang="nl">Scanweergave</caption>
+      <caption xml:lang="nb">Analysering</caption>
+      <caption xml:lang="lv">Skenēšanas skats</caption>
+      <caption xml:lang="lt">Skaitymo rodinys</caption>
+      <caption xml:lang="ko">검사 보기</caption>
+      <caption xml:lang="kk">Сканерлеу көрінісі</caption>
+      <caption xml:lang="kab">Ḍumm taskant</caption>
+      <caption xml:lang="ka">ხედის სკანირება</caption>
+      <caption xml:lang="it">Vista analisi</caption>
+      <caption xml:lang="is">Sýn á skönnun</caption>
+      <caption xml:lang="ie">Vise de Examination</caption>
+      <caption xml:lang="id">Tampilan Pindai</caption>
+      <caption xml:lang="hu">Vizsgálat nézet</caption>
+      <caption xml:lang="he">תצוגת סריקה</caption>
+      <caption xml:lang="gl">Vista de análise</caption>
+      <caption xml:lang="fur">Viodude analisi</caption>
+      <caption xml:lang="fr">Vue de l’analyse</caption>
+      <caption xml:lang="fi">Kartoitusnäkymä</caption>
+      <caption xml:lang="fa">نمای پویش</caption>
+      <caption xml:lang="eu">Eskaneatze-ikuspegia</caption>
+      <caption xml:lang="es">Vista de análisis</caption>
+      <caption xml:lang="eo">Skana vido</caption>
+      <caption xml:lang="en_GB">Scan View</caption>
+      <caption xml:lang="el">Προβολή σάρωσης</caption>
+      <caption xml:lang="de">Ansicht »Analysieren«</caption>
+      <caption xml:lang="da">Skanningsvisning</caption>
+      <caption xml:lang="cs">Zobrazení analýzy</caption>
+      <caption xml:lang="ca">Vista d'escaneig</caption>
+      <caption xml:lang="bg">Изглед за претърсване</caption>
+      <caption xml:lang="be">Прагляд даследвання</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/baobab/baobab-scan.png</image>
+    </screenshot>
+  </screenshots>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>Notifications</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <url type="homepage">https://apps.gnome.org/Baobab/</url>
+  <url type="contribute">https://welcome.gnome.org/app/Baobab/</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/baobab/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="translate">https://l10n.gnome.org/module/baobab/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/baobab</url>
+  <update_contact>stefano.facchini_at_gmail.com</update_contact>
+  <project_group>GNOME</project_group>
+  <!-- developer_name tag deprecated with Appstream 1.0 -->
+  <developer_name>The GNOME Project</developer_name>
+  <developer_name xml:lang="zh_TW">GNOME 專案</developer_name>
+  <developer_name xml:lang="zh_CN">GNOME 项目</developer_name>
+  <developer_name xml:lang="vi">Dự án GNOME</developer_name>
+  <developer_name xml:lang="uk">Проект GNOME</developer_name>
+  <developer_name xml:lang="tr">GNOME Projesi</developer_name>
+  <developer_name xml:lang="sv">GNOME-projektet</developer_name>
+  <developer_name xml:lang="sr@latin">Gnomov projekat</developer_name>
+  <developer_name xml:lang="sr">Гномов пројекат</developer_name>
+  <developer_name xml:lang="sl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="sk">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ru">The GNOME Project</developer_name>
+  <developer_name xml:lang="ro">Proiectul GNOME</developer_name>
+  <developer_name xml:lang="pt_BR">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pt">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="pa">ਗਨੋਮ ਪਰੋਜੈਕਟ</developer_name>
+  <developer_name xml:lang="oc">Lo projècte GNOME</developer_name>
+  <developer_name xml:lang="nl">Het GNOME-project</developer_name>
+  <developer_name xml:lang="ne">जिनोम परियोजना</developer_name>
+  <developer_name xml:lang="nb">GNOME</developer_name>
+  <developer_name xml:lang="ms">Projek GNOME</developer_name>
+  <developer_name xml:lang="ml">ഗ്നോം പ്രൊജക്ട്</developer_name>
+  <developer_name xml:lang="mjw">GNOME Project</developer_name>
+  <developer_name xml:lang="lv">GNOME projekts</developer_name>
+  <developer_name xml:lang="lt">GNOME projektas</developer_name>
+  <developer_name xml:lang="ko">그놈 프로젝트</developer_name>
+  <developer_name xml:lang="kk">GNOME жобасы</developer_name>
+  <developer_name xml:lang="kab">Asenfar n GNOME</developer_name>
+  <developer_name xml:lang="ka">პროექტი „GNOME“</developer_name>
+  <developer_name xml:lang="ja">The GNOME Project</developer_name>
+  <developer_name xml:lang="it">Il progetto GNOME</developer_name>
+  <developer_name xml:lang="is">GNOME verkefnið</developer_name>
+  <developer_name xml:lang="ie">Li projecte GNOME</developer_name>
+  <developer_name xml:lang="id">Proyek GNOME</developer_name>
+  <developer_name xml:lang="hu">A GNOME projekt</developer_name>
+  <developer_name xml:lang="hr">GNOME projekt</developer_name>
+  <developer_name xml:lang="he">מיזם GNOME</developer_name>
+  <developer_name xml:lang="gl">O Proxecto GNOME</developer_name>
+  <developer_name xml:lang="gd">Pròiseact GNOME</developer_name>
+  <developer_name xml:lang="fy">It GNOME Projekt</developer_name>
+  <developer_name xml:lang="fur">Il progjet GNOME</developer_name>
+  <developer_name xml:lang="fr">Le projet GNOME</developer_name>
+  <developer_name xml:lang="fo">GNOME verkætlanin</developer_name>
+  <developer_name xml:lang="fi">Gnome-projekti</developer_name>
+  <developer_name xml:lang="fa">پروژهٔ گنوم</developer_name>
+  <developer_name xml:lang="eu">GNOME proiektua</developer_name>
+  <developer_name xml:lang="es">El Proyecto GNOME</developer_name>
+  <developer_name xml:lang="eo">La Projekto GNOME</developer_name>
+  <developer_name xml:lang="en_GB">The GNOME Project</developer_name>
+  <developer_name xml:lang="el">Το έργο του GNOME</developer_name>
+  <developer_name xml:lang="de">Das GNOME-Projekt</developer_name>
+  <developer_name xml:lang="da">GNOME-projektet</developer_name>
+  <developer_name xml:lang="cs">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ckb">پرۆژەی گنۆم</developer_name>
+  <developer_name xml:lang="ca@valencia">El projecte GNOME</developer_name>
+  <developer_name xml:lang="ca">El projecte GNOME</developer_name>
+  <developer_name xml:lang="bg">Проектът GNOME</developer_name>
+  <developer_name xml:lang="be">Праект GNOME</developer_name>
+  <developer_name xml:lang="af">Die GNOME Projek</developer_name>
+  <developer_name xml:lang="ab">The GNOME Project</developer_name>
+  <developer id="gnome.org">
+    <name>The GNOME Project</name>
+  </developer>
+  <launchable type="desktop-id">org.gnome.baobab.desktop</launchable>
+  <translation type="gettext">baobab</translation>
+  <releases>
+    <release version="46.0" date="2024-03-21">
+      <description>
+        <p>Disk Usage Analyzer 46.0 comes with the following updates:</p>
+        <ul>
+          <li>Improved App metainfo</li>
+          <li>Use enter instead of leave to update highlightitem</li>
+        </ul>
+        <p>The following translations were updated:</p>
+        <ul>
+          <li>Kabyle (Rachida SACI)</li>
+          <li>Basque (Asier Sarasua Garmendia)</li>
+          <li>Brazilian Portuguese (Juliano de Souza Camargo, Alex Jr, Leônidas Araújo)</li>
+          <li>British English (Andi Chandler)</li>
+          <li>Chinese (China) (Boyuan Yang)</li>
+          <li>Esperanto (Kristjan SCHMIDT)</li>
+          <li>Interlingue (Olga Smirnova)</li>
+          <li>Latvian (Rūdolfs Mazurs)</li>
+          <li>Norwegian Bokmål (Brage Fuglseth)</li>
+          <li>Romanian (Florentina Mușat)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="45.0" date="2023-09-18">
+      <description>
+        <p>Disk Usage Analyzer 45.0 comes with a slight UI refresh and translation updates for the following locales:</p>
+        <ul>
+          <li>Basque (Asier Sarasua Garmendia)</li>
+          <li>Belarusian (Vasil Pupkin)</li>
+          <li>Catalan (Jordi Mas)</li>
+          <li>Chinese (China) (Luming Zh)</li>
+          <li>Czech (Daniel Rusek)</li>
+          <li>Danish (Ask Hjorth Larsen)</li>
+          <li>Dutch (Nathan Follens)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+          <li>French (Irénée THIRION)</li>
+          <li>Friulian (Fabio Tomat)</li>
+          <li>Galician (Fran Dieguez)</li>
+          <li>Georgian (Ekaterine Papava)</li>
+          <li>German (Philipp Kiemle)</li>
+          <li>Greek, Modern (1453-) (Efstathios Iosifidis)</li>
+          <li>Hebrew (Yosef Or Boczko)</li>
+          <li>Hungarian (Balázs Úr)</li>
+          <li>Indonesian (Kukuh Syafaat)</li>
+          <li>Italian (Milo Casagrande)</li>
+          <li>Kazakh (Baurzhan Muftakhidinov)</li>
+          <li>Korean (Seong-ho Cho)</li>
+          <li>Lithuanian (Aurimas Černius)</li>
+          <li>Occitan (post 1500) (Quentin PAGÈS)</li>
+          <li>Panjabi (Amn Alam)</li>
+          <li>Persian (Danial Behzadi)</li>
+          <li>Polish (Piotr Drąg)</li>
+          <li>Portuguese (Hugo Carvalho)</li>
+          <li>Russian (Artur So)</li>
+          <li>Slovenian (Matej Urbančič)</li>
+          <li>Spanish (Daniel Mustieles)</li>
+          <li>Swedish (Anders Jonsson)</li>
+          <li>Turkish (Sabri Ünal)</li>
+          <li>Ukrainian (Yuri Chornoivan)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="44.0" date="2023-03-19">
+      <description>
+        <p>Disk Usage Analyzer 44.beta comes with updated strings, the ability to open the menu with F10, and translation updates for the following locales:</p>
+        <ul>
+          <li>Basque (Asier Sarasua Garmendia)</li>
+          <li>Belarusian (Vasil Pupkin)</li>
+          <li>Bulgarian (Alexander Shopov)</li>
+          <li>Catalan (Jordi Mas i Hernandez)</li>
+          <li>Czech (Marek Černocký)</li>
+          <li>Danish (Ask Hjorth Larsen)</li>
+          <li>Dutch (Nathan Follens)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+          <li>French (Irénée THIRION)</li>
+          <li>Friulian (Fabio Tomat)</li>
+          <li>Galician (Fran Dieguez)</li>
+          <li>Georgian (Ekaterine Papava)</li>
+          <li>German (Jürgen Benvenuti)</li>
+          <li>Greek, Modern (1453-) (Efstathios Iosifidis)</li>
+          <li>Hebrew (Yaron Shahrabani, Yosef Or Boczko)</li>
+          <li>Hungarian (Balázs Úr)</li>
+          <li>Icelandic (Sveinn í Felli)</li>
+          <li>Indonesian (Kukuh Syafaat)</li>
+          <li>Interlingue (Olga Smirnova)</li>
+          <li>Korean (Seong-ho Cho)</li>
+          <li>Lithuanian (Aurimas Černius)</li>
+          <li>Occitan (post 1500) (Quentin PAGÈS)</li>
+          <li>Persian (MohammadSaleh Kamyab)</li>
+          <li>Polish (Piotr Drąg)</li>
+          <li>Portuguese (Hugo Carvalho)</li>
+          <li>Russian (Aleksandr Melman)</li>
+          <li>Slovak (Dušan Kazik)</li>
+          <li>Slovenian (Matej Urbančič)</li>
+          <li>Spanish (Daniel)</li>
+          <li>Swedish (Luna Jernberg, Anders Jonsson)</li>
+          <li>Turkish (Sabri Ünal)</li>
+          <li>Ukrainian (Yuri Chornoivan)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="43.0" date="2022-09-18">
+      <description>
+        <p>Disk Usage Analyzer 43.0 comes with updated translations for the following locales:</p>
+        <ul>
+          <li>Abkhazian</li>
+          <li>Bulgarian</li>
+          <li>Catalan</li>
+          <li>Chinese (China)</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Croatian</li>
+          <li>Czech</li>
+          <li>Danish</li>
+          <li>Dutch</li>
+          <li>French</li>
+          <li>Galician</li>
+          <li>Georgian</li>
+          <li>German</li>
+          <li>Hungarian</li>
+          <li>Icelandic</li>
+          <li>Indonesian</li>
+          <li>Kazakh</li>
+          <li>Korean</li>
+          <li>Latvian</li>
+          <li>Lithuanian</li>
+          <li>Nepali</li>
+          <li>Occitan (post 1500)</li>
+          <li>Persian</li>
+          <li>Polish</li>
+          <li>Portuguese (Brazil)</li>
+          <li>Russian</li>
+          <li>Serbian</li>
+          <li>Slovenian</li>
+          <li>Swedish</li>
+          <li>Turkish</li>
+          <li>Ukrainian</li>
+        </ul>
+      </description>
+    </release>
+    <release version="42.0" date="2022-03-20">
+      <description>
+        <p>Disk Usage Analyzer 42.0 comes with a port to libadwaita, updated styling, and updated translations for the following locales:</p>
+        <ul>
+          <li>Basque</li>
+          <li>Bokmål, Norwegian</li>
+          <li>Bulgarian</li>
+          <li>Catalan</li>
+          <li>Chinese (China)</li>
+          <li>Croatian</li>
+          <li>Czech</li>
+          <li>Danish</li>
+          <li>Finnish</li>
+          <li>French</li>
+          <li>Friulian</li>
+          <li>Galician</li>
+          <li>German</li>
+          <li>Hebrew</li>
+          <li>Hungarian</li>
+          <li>Icelandic</li>
+          <li>Indonesian</li>
+          <li>Italian</li>
+          <li>Japanese</li>
+          <li>Kazakh</li>
+          <li>Korean</li>
+          <li>Lithuanian</li>
+          <li>Occitan (post 1500)</li>
+          <li>Persian</li>
+          <li>Polish</li>
+          <li>Portuguese</li>
+          <li>Portuguese (Brazil)</li>
+          <li>Russian</li>
+          <li>Serbian</li>
+          <li>Slovak</li>
+          <li>Slovenian</li>
+          <li>Spanish</li>
+          <li>Swedish</li>
+          <li>Turkish</li>
+          <li>Ukrainian</li>
+        </ul>
+      </description>
+    </release>
+    <release version="41.0" date="2021-09-21">
+      <description>
+        <p>Disk Usage Analyzer 41 comes with support for building the GUI on windows, contributed Gabriel Rauter.</p>
+        <p>The following translations have been updated:</p>
+        <ul>
+          <li>Bulgarian</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Croatian</li>
+          <li>Czech</li>
+          <li>Danish</li>
+          <li>Dutch</li>
+          <li>English (United Kingdom)</li>
+          <li>Greek, Modern (1453-)</li>
+          <li>Hebrew</li>
+          <li>Nepali</li>
+          <li>Occitan (post 1500)</li>
+          <li>Russian</li>
+          <li>Slovak</li>
+          <li>Western Frisian</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40.0" date="2021-03-20">
+      <description>
+        <p>Disk Usage Analyzer's visuals have been updated to match the GNOME 40 visual style.</p>
+        <p>The following translations have been updated:</p>
+        <ul>
+          <li>Basque</li>
+          <li>Bokmål, Norwegian</li>
+          <li>Catalan</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Croation</li>
+          <li>Czech</li>
+          <li>Danish</li>
+          <li>Dutch</li>
+          <li>Esperanto</li>
+          <li>Finnish</li>
+          <li>French</li>
+          <li>Friulian</li>
+          <li>Galician</li>
+          <li>German</li>
+          <li>Hebrew</li>
+          <li>Hungarian</li>
+          <li>Indonesian</li>
+          <li>Italian</li>
+          <li>Japanese</li>
+          <li>Kazakh</li>
+          <li>Korean</li>
+          <li>Kurdish, Central</li>
+          <li>Latvian</li>
+          <li>Lithuanian</li>
+          <li>Panjabi</li>
+          <li>Persian</li>
+          <li>Polish</li>
+          <li>Portuguese</li>
+          <li>Portuguese (Brazil)</li>
+          <li>Romanian</li>
+          <li>Serbian</li>
+          <li>Slovenian</li>
+          <li>Spanish</li>
+          <li>Swedish</li>
+          <li>Turkish</li>
+          <li>Ukrainian</li>
+          <li>Vietnamese</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.34.0" date="2019-09-09">
+      <description>
+        <p>Updated translations (da, en_GB, eu, fa, hr, mjw, sk, zh_TW)</p>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1"/>
+</component>

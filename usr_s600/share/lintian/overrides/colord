@@ -1,0 +1,2 @@
+# Amazingly, this is *correctly* not linked directly to libc
+colord: library-not-linked-against-libc [usr/lib/*/colord-sensors/libcolord_sensor_dummy.so]

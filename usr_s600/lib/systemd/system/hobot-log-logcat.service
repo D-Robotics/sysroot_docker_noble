@@ -1,0 +1,17 @@
+# hobot log
+
+[Unit]
+Description=Hobot log logcat
+After=hobot-log-daemon.service
+Wants=hobot-log-daemon.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+StartLimitBurst=0
+ExecStart=/usr/bin/hobot-log-start logcat
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=basic.target

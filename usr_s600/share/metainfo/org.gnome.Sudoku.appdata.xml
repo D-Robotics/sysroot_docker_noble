@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2013 Michael Catanzaro and contributors -->
+<component type="desktop-application">
+  <id>org.gnome.Sudoku</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>GNOME Sudoku</name>
+  <name xml:lang="zh_TW">GNOME 數獨</name>
+  <name xml:lang="zh_HK">GNOME 數獨</name>
+  <name xml:lang="zh_CN">GNOME 数独</name>
+  <name xml:lang="vi">Sudoku dành cho GNOME</name>
+  <name xml:lang="uk">Судоку GNOME</name>
+  <name xml:lang="ug">گىنوم Sudoku</name>
+  <name xml:lang="tr">GNOME Sudoku</name>
+  <name xml:lang="th">GNOME Sudoku</name>
+  <name xml:lang="te">గ్నోమ్ సుడోకు</name>
+  <name xml:lang="ta">க்னோம் சுடோகு</name>
+  <name xml:lang="sv">GNOME Sudoku</name>
+  <name xml:lang="sr@latin">Gnomov sudoku</name>
+  <name xml:lang="sr">Гномов судоку</name>
+  <name xml:lang="sl">Sudoku GNOME</name>
+  <name xml:lang="sk">Sudoku prostredia GNOME</name>
+  <name xml:lang="ru">Судоку GNOME</name>
+  <name xml:lang="ro">Sudoku GNOME</name>
+  <name xml:lang="pt_BR">GNOME Sudoku</name>
+  <name xml:lang="pt">Sudoku do GNOME</name>
+  <name xml:lang="pl">GNOME Sudoku</name>
+  <name xml:lang="pa">ਗਨੋਮ ਸੂਡੋਕੁ</name>
+  <name xml:lang="or">GNOME ସୁଡୋକୁ</name>
+  <name xml:lang="oc">GNOME Sudoku</name>
+  <name xml:lang="nn">GNOME Sudoku</name>
+  <name xml:lang="nl">GNOME Sudoku</name>
+  <name xml:lang="ne">जिनोम सुडोकु</name>
+  <name xml:lang="nb">GNOME Sudoku</name>
+  <name xml:lang="ms">Sudoku GNOME</name>
+  <name xml:lang="mr">GNOME सुडोकू</name>
+  <name xml:lang="ml">ഗ്നോം സുഡോക്കു</name>
+  <name xml:lang="mk">GNOME Sudoku</name>
+  <name xml:lang="mai">गनोम सुडोकु</name>
+  <name xml:lang="lv">GNOME Sudoku</name>
+  <name xml:lang="lt">GNOME Sudoku</name>
+  <name xml:lang="lo">ສູໂດກຸ GNOME</name>
+  <name xml:lang="ko">그놈 스도쿠</name>
+  <name xml:lang="kn">GNOME ಸುಡೋಕು</name>
+  <name xml:lang="km">GNOME Sudoku</name>
+  <name xml:lang="kk">GNOME судоку</name>
+  <name xml:lang="ja">GNOME 数独</name>
+  <name xml:lang="it">GNOME Sudoku</name>
+  <name xml:lang="is">GNOME Sudoku</name>
+  <name xml:lang="id">GNOME Sudoku</name>
+  <name xml:lang="hu">GNOME Sudoku</name>
+  <name xml:lang="hr">GNOME Sudoku</name>
+  <name xml:lang="hi">गनोम सुडोकु</name>
+  <name xml:lang="he">סודוקו GNOME</name>
+  <name xml:lang="gu">જીનોમ સુડોકુ</name>
+  <name xml:lang="gl">GNOME Sudoku</name>
+  <name xml:lang="ga">Sudoku GNOME</name>
+  <name xml:lang="fur">GNOME Sudoku</name>
+  <name xml:lang="fr">Sudoku de GNOME</name>
+  <name xml:lang="fi">Sudoku</name>
+  <name xml:lang="fa">سودوکوی گنوم</name>
+  <name xml:lang="eu">GNOME Sudokua</name>
+  <name xml:lang="et">GNOME Sudoku</name>
+  <name xml:lang="es">GNOME Sudoku</name>
+  <name xml:lang="eo">GNOME Sudoko</name>
+  <name xml:lang="en_GB">GNOME Sudoku</name>
+  <name xml:lang="el">Σουντόκου GNOME</name>
+  <name xml:lang="dz">ཇི་ནོམ་སུ་ཌོ་ཀུ་</name>
+  <name xml:lang="de">GNOME Sudoku</name>
+  <name xml:lang="da">GNOME Sudoku</name>
+  <name xml:lang="cy">Sudoku GNOME</name>
+  <name xml:lang="cs">Sudoku GNOME</name>
+  <name xml:lang="ca@valencia">GNOME Sudoku</name>
+  <name xml:lang="ca">GNOME Sudoku</name>
+  <name xml:lang="bs">GNOME Sudoku</name>
+  <name xml:lang="br">Sudoku GNOME</name>
+  <name xml:lang="bn_IN">GNOME Sudoku</name>
+  <name xml:lang="bn">জিনোম সুডোকু</name>
+  <name xml:lang="bg">Судоку</name>
+  <name xml:lang="be">GNOME Судоку</name>
+  <name xml:lang="ast">GNOME Sudoku</name>
+  <name xml:lang="as">GNOME</name>
+  <name xml:lang="ar">جنوم سودوكو</name>
+  <name xml:lang="af">GNOME-sudoku</name>
+  <name xml:lang="ab">Судоку GNOME</name>
+  <summary>Test your logic skills in this number grid puzzle</summary>
+  <summary xml:lang="zh_TW">透過這個數字格子題目來測試您的邏輯能力</summary>
+  <summary xml:lang="zh_HK">透過這個數字格子題目來測試你的邏輯能力</summary>
+  <summary xml:lang="zh_CN">通过这个数字格子解谜游戏测试您的逻辑能力</summary>
+  <summary xml:lang="vi">Kiểm tra kỹ năng lôgic của bạn trong câu đố lưới con số</summary>
+  <summary xml:lang="uk">Перевірте логічні здібності у цій числовій головоломці</summary>
+  <summary xml:lang="ug">رەقەملىك سېتكا تېپىشمىقىدا لوگىكىلىق ماھارىتىڭىزنى سىناڭ</summary>
+  <summary xml:lang="tr">Bu rakam yerleştirme bulmacasında mantıksal yeteneklerinizi sınayın</summary>
+  <summary xml:lang="th">ทดสอบทักษะทางตรรกะของคุณกับปริศนาตารางตัวเลข</summary>
+  <summary xml:lang="te">ఈ సంఖ్యా గ్రిడ్ పజిల్ నందు మీ తార్కిక నైపుణ్యాలను పరిశీలించండి</summary>
+  <summary xml:lang="ta">உங்கள் தர்க்க திறமையை இந்த கட்ட புதிரில் சோதியுங்கள்</summary>
+  <summary xml:lang="sv">Testa dina logiska färdigheter i det här sifferpusslet</summary>
+  <summary xml:lang="sr@latin">Oprobajte vaše logičke sposobnosti u ovoj slagalici mreže brojeva</summary>
+  <summary xml:lang="sr">Опробајте ваше логичке способности у овој слагалици мреже бројева</summary>
+  <summary xml:lang="sl">Preverite svoje logično razmišljanje z reševanjem mrežne uganke.</summary>
+  <summary xml:lang="sk">Otestujte svoje logické myslenie na tejto mriežke s číslami</summary>
+  <summary xml:lang="ru">Проверьте логические способности в этой головоломке расстановки чисел</summary>
+  <summary xml:lang="ro">Testați-vă abilitățile de logică în acest puzzle grilă cu numere</summary>
+  <summary xml:lang="pt_BR">Teste suas habilidades lógicas nesse jogo de grades numéricas</summary>
+  <summary xml:lang="pt">Teste as suas capacidades lógicas neste puzzle numérico</summary>
+  <summary xml:lang="pl">Łamigłówka liczbowa sprawdzająca logiczne myślenie</summary>
+  <summary xml:lang="pa">ਇਹ ਨੰਬਰ ਗਰਿੱਡ ਬੁਝਾਰਤ ਨਾਲ ਆਪਣੀ ਲਾਜ਼ੀਕਲ ਮੁਹਾਰਤ ਟੈਸਟ ਕਰੋ।</summary>
+  <summary xml:lang="or">ଏହି ସଂଖ୍ୟା ଗ୍ରୀଡ଼ ଗୋଲକଧନ୍ଦାରେ ଆପଣଙ୍କର ତାର୍କିକ ଜ୍ଞାନକୁ ପରୀକ୍ଷା କରନ୍ତୁ</summary>
+  <summary xml:lang="oc">Testar vòstras aptituds en logica amb aqueste copacap de nombres en grasilha</summary>
+  <summary xml:lang="nn">Test dine logiske ferdigheter i dette nummerpuslespelet</summary>
+  <summary xml:lang="nl">Stel uw logische denkvermogen op de proef met deze cijferpuzzel</summary>
+  <summary xml:lang="ne">यस नम्बर ग्रिड पजलमा तपाईँको क्षमता परीक्षण गर्नुहोस्</summary>
+  <summary xml:lang="nb">Test dine logiske ferdigheter i dette nummerpuslespillet</summary>
+  <summary xml:lang="ms">Uji kemahiran logik anda dengan teka-teki grid bernombor ini</summary>
+  <summary xml:lang="mr">क्रमांक ग्रीड कोडे मध्ये तुमची तर्क क्षमताची चाचणी करा</summary>
+  <summary xml:lang="ml">ഈ ഗ്രിഡ് പസ്സിലിലൂടെ നിങ്ങലുടെ സാമാന്യ ബുദ്ധി പരീക്ഷിക്കുക</summary>
+  <summary xml:lang="mk">Тестирајте ги Вашите логички можности со оваа сложувалка</summary>
+  <summary xml:lang="lv">Pārbaudi savas loģikas iemaņas šajā skaitļu režģa mīklā</summary>
+  <summary xml:lang="lt">Išmėgink savo loginį mąstymą šioje skaičių dėlionėje</summary>
+  <summary xml:lang="lo">ທົດສອບທັກສະໂລຈິກຂອງທ່ານໃນຈຳນວນຂອງ grid puzzle ນີ້</summary>
+  <summary xml:lang="ko">이 숫자 퍼즐에서 논리 실력을 시험해보세요</summary>
+  <summary xml:lang="kn">ಈ ಸಂಖ್ಯೆಯ ಚೌಕಗಳಲ್ಲಿ ನಿಮ್ಮ ತಾರ್ಕಿಕ ಬುದ್ಧಿಮತ್ತೆಯನ್ನು ಪರೀಕ್ಷಿಸಿ</summary>
+  <summary xml:lang="km">សាកល្បង​បែប​​ជំនាញ​នៅ​ក្នុង​ការ​ផ្គុំ​រូប​ក្រឡា​ចត្រង្គ​​នេះ</summary>
+  <summary xml:lang="kk">Сандық тормен осы ойжұмбақта логикалық зеректігіңізді тексеріңіз</summary>
+  <summary xml:lang="ja">あなたの思考能力を番号の付いたマス目のパズルでテストします</summary>
+  <summary xml:lang="it">Metti alla prova le tue capacità logiche in questo puzzle a griglia numerica</summary>
+  <summary xml:lang="is">Kannaðu rökleikni þína í þessari talnaþraut</summary>
+  <summary xml:lang="id">Uji kemampuan logika Anda dalam teka-teki ini</summary>
+  <summary xml:lang="hu">Tesztelje logikai képességeit ezzel a számrács-fejtörővel</summary>
+  <summary xml:lang="hr">Testirajte svoje logičke sposobnosti u ovoj slagalici s brojevima</summary>
+  <summary xml:lang="hi">इस क्रम ग्रिड पजल में अपना तर्क स्किल जांचें</summary>
+  <summary xml:lang="he">בחינת ההיגיון שלך באמצעות משחק לוח מספרים זה</summary>
+  <summary xml:lang="gu">આ નંબરની જાળી કોયડામાં તમારી તાર્કીક યુક્તિઓ ચકાસો</summary>
+  <summary xml:lang="gl">Probe as súas habilidades de lóxica neste quebracabezas numérico</summary>
+  <summary xml:lang="fur">Met in prove lis tôs capacitâts logjichis in chest puzzle a gridele numeriche</summary>
+  <summary xml:lang="fr">Tester vos aptitudes en logique avec ce casse-tête de nombres en grille</summary>
+  <summary xml:lang="fi">Testaa logiikkakykyjäsi numeroruudukkopelissä</summary>
+  <summary xml:lang="fa">مهارت‌های منطقی خود را در این معمّا شبکه‌ای بیازمایید</summary>
+  <summary xml:lang="eu">Probatu zure logika-gaitasuna zenbaki-sare honetan</summary>
+  <summary xml:lang="et">Loogikavõimeid proovile panev tabelmõistatuste lahendamine</summary>
+  <summary xml:lang="es">Ponga a prueba sus habilidades de lógica en este puzle de rejilla numérica</summary>
+  <summary xml:lang="eo">Testu viajn logikajn kapablojn en ĉi tiu numerokrada puzlo</summary>
+  <summary xml:lang="en@shaw">𐑑𐑧𐑕𐑑 𐑿𐑼 𐑤𐑭𐑡𐑦𐑒 𐑕𐑒𐑦𐑤𐑟 𐑦𐑯 𐑞𐑦𐑕 𐑯𐑳𐑥𐑚𐑼 𐑜𐑮𐑦𐑛 𐑐𐑳𐑟𐑩𐑤</summary>
+  <summary xml:lang="en_GB">Test your logic skills in this number grid puzzle</summary>
+  <summary xml:lang="en_CA">Test your logic skills in this number grid puzzle</summary>
+  <summary xml:lang="el">Δοκιμάστε τη λογική σας σε αυτό το παιχνίδι με αριθμούς</summary>
+  <summary xml:lang="dz">ཁྱོད་རའི་ལོ་ཇིཀ་རིག་རྩལ་འདི་འ་ནི་ཨང་གི་གིརིཌི་སྒྲིག་རྩེད་ནང་བརྟག་ཞིབ་འབད</summary>
+  <summary xml:lang="de">Testen Sie Ihre Logik-Fähigkeiten bei diesem Zahlen-Kreuzworträtsel</summary>
+  <summary xml:lang="da">Afprøv dine logiske evner i denne talgitter-opgave</summary>
+  <summary xml:lang="cs">Otestujte své logické schopnosti v tomto hlavolamu</summary>
+  <summary xml:lang="ca@valencia">Posa a prova les teves habilitats lògiques en esta graella de trencaclosques numèrica</summary>
+  <summary xml:lang="ca">Posa a prova les teves habilitats lògiques en aquest trencaclosques de graella numèrica</summary>
+  <summary xml:lang="bs">Oprobajte vaše logičke sposobnosti u ovoj slagalici mreže brojeva</summary>
+  <summary xml:lang="bn">এই গ্রিড ধাঁধায় আপনার লজিক স্কিল পরীক্ষা করুন</summary>
+  <summary xml:lang="bg">Пробвайте логическите си умения в тази игра с числа</summary>
+  <summary xml:lang="be">Праверце сваё лагічнае мышленне на гэтай лічбавай галаваломцы</summary>
+  <summary xml:lang="ast">Pon a prueba les tos habilidaes de llóxica nesti xuegu de rexáu numbéricu</summary>
+  <summary xml:lang="as">পৰীক্ষা</summary>
+  <summary xml:lang="ar">اختبر مهاراتك المنطقية في هذه الأحجية الشبكية المنطقية</summary>
+  <summary xml:lang="af">Toets logikavaardighede in hierdie syferroosterraaisel</summary>
+  <summary xml:lang="ab">Иҧышәшәа шәлогика ари ахыҧхьӡарақәа рҭыҧыркра иазку ахыҧҽыгала</summary>
+  <description>
+    <p>
+      Play the popular Japanese logic game. GNOME Sudoku is a must-install for
+      Sudoku lovers, with a simple, unobtrusive interface that makes playing
+      Sudoku fun for players of any skill level.
+    </p>
+    <p xml:lang="zh_TW">來玩最受歡迎的日本邏輯遊戲。GNOME Sudoku 是數獨愛好者必裝的，用簡單而含蓄的介面，讓任何技能水準的數獨玩家能快樂的玩數獨。</p>
+    <p xml:lang="zh_CN">快来玩这个风靡日本的逻辑游戏吧。GNOME 数独对数独爱好者来说是必装的游戏，如此简单而不张扬的界面风格让数独游戏更加适合任何级别的玩家。</p>
+    <p xml:lang="vi">Chơi trò chơi lô-gíc phổ biến tại Nhật. Với những người ưa thích Sudoku, GNOME Sudoku là thứ phải cài, có một giao diện đơn giản và không phô trương cái mà làm cho những người chơi Sudoku trở nên thú vị cho dù họ ở bất kỳ mức độ chơi nào.</p>
+    <p xml:lang="uk">Зіграй в популярну японську логічну гру. «Судоку GNOME» – гра, яку любителі судоку обов'язково мають встановити. Це – гра з простим, ненав'язливим інтерфейсом, що дає змогу відчути задоволення від гри гравцям будь-якого рівня.</p>
+    <p xml:lang="tr">Gözde Japon mantık oyununu oynayın. GNOME Sudoku, Sudoku’yu her beceri düzeyindeki oyuncu için eğlenceli yapan kolay ve gösterişsiz arayüzüyle Sudoku severlerin kesinlikle kurması gereken uygulamadır.</p>
+    <p xml:lang="sv">Spela det populära japanska logikspelet. GNOME Sudoku är ett måste för sudokuälskare, med ett enkelt gränssnitt som gör det roligt att spela sudoku för spelare på alla skicklighetsnivåer.</p>
+    <p xml:lang="sr@latin">Igrajte popularnu japansku logičku igru. Gnomov sudoku je nezamenljiv za ljubitelje Sudokua, sa jednostavnim, nenametljivim sučeljem koje čini igranje Sudokua zabavnim za igrače svih nivoa.</p>
+    <p xml:lang="sr">Играјте популарну јапанску логичку игру. Гномов судоку је незаменљив за љубитеље Судокуа, са једноставним, ненаметљивим сучељем које чини играње Судокуа забавним за играче свих нивоа.</p>
+    <p xml:lang="sl">Logična številska uganka z enostavnim vmesnikom, ki omogoča napeto zabavo.</p>
+    <p xml:lang="sk">Hrajte obľúbenú japonskú logickú hru. GNOME Sudoku si musia nainštalovať milovníci hlavolamu Sudoku, pretože hra má jednoduché a nenásilné rozhranie, ktoré učiní hranie Sudoku zábavným pre hráčov s akoukoľvek skúsenosťou.</p>
+    <p xml:lang="ru">Популярная японская логическая игра. Судоку GNOME понравится ценителям судоку — простой и ненавязчивый интерфейс позволяет получить удовольствие от игры игрокам с любым уровнем навыков.</p>
+    <p xml:lang="ro">Jucați jocul de logică japonez popular. Sudoku GNOME este necesar de instalat pentru iubitorii de Sudoku, cu o interfață simplă, discretă care face jocul de Sudoku distractiv pentru jucătorii de orice nivel de îndemânare.</p>
+    <p xml:lang="pt_BR">Brinque com o popular jogo de lógica japonês. O GNOME Sudoku é uma instalação obrigatória para os apaixonados por sudoku, com uma interface simples e discreta que torna jogar sudoku divertido para jogadores com qualquer nível de habilidade.</p>
+    <p xml:lang="pt">Jogue o popular jogo de lógica japonês. O sudoku GNOME é essencial para entusiastas de sudoku, com um ambiente simples e discreto, que torna este jogo divertido para jogadores de qualquer nível.</p>
+    <p xml:lang="pl">Popularne japońskie łamigłówki logiczne. Gra GNOME Sudoku jest przeznaczona dla wszystkich miłośników Sudoku, a jej prosty, łatwy w użyciu interfejs czyni grę przyjemną dla graczy o każdych umiejętnościach.</p>
+    <p xml:lang="oc">Jogatz al jòc de logica popular japonés. GNOME Sudoku es un indispensable pels afogats del sudoku, amb una interfàcia simpla que rend lo jòc plasent pels jogaires de totes nivèls.</p>
+    <p xml:lang="nl">Speel de populaire Japanse denkpuzzel. GNOME Sudoku is zeer aanbevolen voor liefhebbers van sudoku, met een simpele, niet-verstorende interface die het spelen van sudoku leuk maakt voor spelers van elk niveau.</p>
+    <p xml:lang="nb">Spill det populære Japanske logikkspillet. GNOME Sudoku må prøves av Sudoku-elkere, og har et enkelt grensesnitt som gjør spillet morsomt på alle nivåer.</p>
+    <p xml:lang="ms">Main permainan logik jepun yang terkenal ini. Sudoku GNOME merupakan aplikasi mesti-pasang untuk pencinta Sudoku, antara muka ringkas dan jelas dapat bermain Sudoku dengan seronok untuk pemain tidak kira tahap kemahiran yang ada.</p>
+    <p xml:lang="lv">Spēlējiet populāro Japāņu loģikas spēli. GNOME Sudoku ir jāinstalē visiem Sudoku cienītājiem. Tam ir vienkārša, neuzkrītoša saskarne, kas izklaidējoša visiem Sudoku spēlētājiem, neatkarīgi no iemaņām.</p>
+    <p xml:lang="lt">Žaiskite populiarų japonišką loginį žaidimą. GNOME Sudoku yra būtina visiems Sudoku mėgėjams, su paprasta, netrukdančia sąsaja ji padaro Sudoku žaidimą smagų bet kokio lygio žaidėjams.</p>
+    <p xml:lang="lo">ຫລີ້ນເກມໂລຊິກທີ່ນິຍົມຂອງຊາວຢີ່ປຸນ. GNOME Sudoku ແມ່ນຈະຕ້ອງໄດ້ຮັບການຕິດຕັ້ງສຳລັບຄົນຮັກ Sudoku. ດ້ວຍເຫດທີ Sudoku ມີຫນ້າຕ່າງທີໃຊ້ງານງ່າຍ ແລະ ດືງດູດຄວາມສົນໃຈ ສະນັ້ນມັນຈຶ່ງເຮັດໃຫ້ຜູ້ຫລີ້ນໃນລະດັບຕ່າງໆມີຄວາມມ່ວນຊືນໃນການຫລີ້ນ.</p>
+    <p xml:lang="ko">일본에서 시작된 유명한 논리 게임을 플레이합니다. 그놈 스도쿠는 스도쿠를 좋아하는 사람이라면 꼭 설치할 만한 프로그램입니다. 간단하고 지나치게 화려하지 않은 인터페이스를 이용해 모든 수준의 플레이어가 스도쿠를 재미있게 즐길 수 있습니다.</p>
+    <p xml:lang="kk">Танымал жапон логикалық ойынын ойнау. GNOME судоку - бұл судоку әуесқойларына ұнайтын қарапайым, кедергісіз интерфейсі бар қолданба, ол судоку ойынын кез-келген деңгейдегі ойыншыларға қызықты етеді.</p>
+    <p xml:lang="it">Il popolare gioco giapponese di logica. GNOME Sudoku è il gioco perfetto per tutti gli amanti del Sudoku: dotato di una semplice interfaccia grafica, giocare a Sudoku sarà un'esperienza piacevole per i giocatori di tutti i livelli.</p>
+    <p xml:lang="is">Spilaðu þennan vinsæla Japanska rökleiknileik. GNOME Sudoku er algerlega bráðnauðsynlegt forrit fyrir alla Sudoku-aðdáendur, forrit með einföldu viðmóti sem þvælist ekki fyrir í skemmtun spilara af öllum geturstigum.</p>
+    <p xml:lang="id">Memainkan permainan logika Jepang yang populer. GNOME Sudoku mesti dipasang bagi para pecinta Sudoku, dengan antar muka yang sederhana, tak mencolok, yang membuat bermain Sudoku menarik bagi pemain dengan tingkat ketrampilan apapun.</p>
+    <p xml:lang="hu">Játsszon a népszerű ál-japán logikai játékkal. A GNOME Sudoku kötelező minden Sudoku-rajongónak. Egyszerű felülete a játékot minden tapasztalati szintű játékos számára élvezetessé teszi.</p>
+    <p xml:lang="hr">Igrajte popularnu japansku igru logike. GNOME Sudoku je obavezna instalacija za sve Sudoku ljubitelje, s jednostavnim nenametljivim sučeljem koje čini igranje Sudokua zabavnim za igraće svih razina vještina.</p>
+    <p xml:lang="he">לשחק את משחק החשיבה היפני הפופולרי. סודוקו GNOME הוא חובה להתקנה לחובבי סודוקו. עם ממשק פשוט וצנוע, עושה את משחק הסודוקו מהנה עבור שחקנים בכל רמת מיומנות.</p>
+    <p xml:lang="gl">Xogue ao popular xogo de lóxica xaponés. GNOME Sudoku é de obrigada instalación para os amantes do Sudoku, cunha interface simple e non intrusiva que fai que xogar a Sudoku sexa divertido para xogadores de calquera nivel.</p>
+    <p xml:lang="fur">Il popolâr zûc gjaponês di logjiche. GNOME Sudoku al è il zûc perfet par ducj i amants dal Sudoku: dotât di une semplice interface grafiche, zuiâ a Sudoku al sarà une esperience plasevule pai zuiadôrs di ducj i nivei.</p>
+    <p xml:lang="fr">Jouez au jeu de logique populaire japonais. Sudoku de GNOME est un indispensable pour les amoureux du sudoku, avec une interface simple qui rend le jeu plaisant pour les joueurs de tous niveaux.</p>
+    <p xml:lang="fi">Pelaa suosittua japanilaista logiikkapeliä. Gnomen Sudoku on lähes pakollinen asennus kaikille Sudoku-harrastajille. Selkeä käyttöliittymä tekee pelaamisesta hauskaa, oli pelaajan taitotaso mikä hyvänsä.</p>
+    <p xml:lang="fa">این بازی منطقیِ ژاپنیِ پر طرفدار را بازی کنید. گنوم سودوکو برنامه‌ایست برای سودوکو دوستان که نباید از دست بدهند، با یک رابط کاربری ساده و محبوب که بازی سودوکو را برای هر بازیکنی با هر مهارتی جذاب می‌کند.</p>
+    <p xml:lang="eu">Jokatu logikako joko japoniar ospetsua. Sudoku-zaleek GNOME Sudoku instalatuta eduki beharko lukete. Interfaze xumekoa (eta trabarik egiten ez duena) edozer mailatan trebetasuna duten jokalarientzako prestatuta dago.</p>
+    <p xml:lang="es">Juegue al popular juego de lógica japonés. GNOME Sudoku es un juego imprescindible para los amantes del sudoku, con una interfaz sencilla y no intrusiva que hace que sea divertido jugar a sudoku para los jugadores de todos los niveles.</p>
+    <p xml:lang="eo">Ludu la popularan japanan logikan ludon. GNOME Sudoko estas instalenda por sudok-ŝatantoj, kun simpla, diskreta fasado kiu kaŭzas amuzon dum ludante sudokon por ludantoj de ajna kapablonivelo.</p>
+    <p xml:lang="en_GB">Play the popular Japanese logic game. GNOME Sudoku is a must-install for Sudoku lovers, with a simple, unobtrusive interface that makes playing Sudoku fun for players of any skill level.</p>
+    <p xml:lang="el">Παίξτε το δημοφιλές ιαπωνικό παιχνίδι λογικής. Το Σουντόκου GNOME είναι ένα απαραίτητο παιχνίδι για τους λάτρεις του σουντόκου, με μια απλή, διακριτική διεπαφή που κάνει το παιχνίδι διασκέδαση για παίκτες οποιουδήποτε επιπέδου ικανότητας.</p>
+    <p xml:lang="de">Spielen Sie das beliebte japanische Logik-Rätsel. GNOME Sudoku ist Pflicht für Sudoku-Liebhaber und bietet eine einfache, unaufdringliche Oberfläche, mit der das Spielen von Sudoku zum Vergnügen wird für Spieler aller Fertigkeiten.</p>
+    <p xml:lang="da">Spil det populære japanske spil om logik. GNOME Sudoku er uundværlig for Sudokuelskere med sin simple, uforstyrrende grænseflade som gør det sjovt at spille Sudoku på alle niveauer.</p>
+    <p xml:lang="cs">Zahrajte si populární japonskou logickou hru. Sudoku GNOME musí mít nainstalováno každý milovník sudoku. Má jednoduché rozhraní, které při hře neruší, a hru si tak mohou užít hráči všech úrovní.</p>
+    <p xml:lang="ca@valencia">Jugueu al popular joc de lògica japonés. El GNOME Sudoku és un joc imprescindible pels amants dels sudokus. Amb una interfície simple i clara que permet jugar divertir-se fent sudokus siga quin siga el vostre nivell.</p>
+    <p xml:lang="ca">Jugueu al popular joc de lògica japonès. El GNOME Sudoku és un joc imprescindible pels amants dels sudokus. Amb una interfície simple i clara que permet jugar divertir-se fent sudokus sigui quin sigui el vostre nivell.</p>
+    <p xml:lang="bs">Igraj popularnu japansku logičku igru. GNOME Sudoku je omiljen za sve Sudoku ljubitelje, sa jednostavnim, nenametljivim korisničkim sučeljem koji igranje Sudoku-a čini zanimljivim za sve vrste igrača.</p>
+    <p xml:lang="bg">Игра на популярната японска главоблъсканица с числа. Тази версия на „Судоку“ е с лесен и разбираем интерфейс, който прави играта на всяка трудност истинско удоволствие.</p>
+    <p xml:lang="be">Гуляйце ў папулярную Японскую лагічную гульню. Раім GNOME Судоку ўсім аматарам судоку, бо яго просты і ненадакучлівы інтэрфейс робіць гульню вясёлай незалежна ад вашага майстэрства.</p>
+    <p xml:lang="ab">Зегьы еицырдыруа иапониатәи алогикатә хәмарра Судоку  ахәшьаҩцәагьы ргәы иақәшәоит.Судоку имариоу аиҧгаларҭа ишәнаҭоит  агәыҳалалра ахәмарра аҟынтә шәызцыхәмаруа иԥышәара зеиҧшразаалакгьы.</p>
+    <p>
+      Each game is assigned a difficulty similar to those given by newspapers
+      and websites, so your game will be as easy or as difficult as you want it
+      to be.
+    </p>
+    <p xml:lang="zh_TW">每個遊戲都有指定難度，就像報紙和網站上的一樣，您可按喜好自行選擇簡單或困難的遊戲。</p>
+    <p xml:lang="zh_CN">每局游戏都分配了一种难度，像报纸和网站上那样。你也可以按需定制难易程度。</p>
+    <p xml:lang="vi">Mỗi ván chơi được gán một mức khó tương tự trên báo chí và trang web, do vậy ván chơi của bạn sẽ dễ hay khó là tùy vào ý muốn của bạn.</p>
+    <p xml:lang="uk">Кожна гра має рівень складності подібний до тих, які в газетах або на сайтах. Тому ваша гра буде такою легкою або такою складною, як ви того захочете.</p>
+    <p xml:lang="tr">Her oyun gazetelerde ve web sitelerinde verildiği gibi zorluk düzeylerine göre atanmıştır, böylece oyununuz dilediğinizce kolay veya zorlaşacaktır.</p>
+    <p xml:lang="sv">Varje spel tilldelas en svårighet som den som ges av dagstidningar och webbsidor, så ditt spel kan vara så enkelt eller svårt som du vill.</p>
+    <p xml:lang="sr@latin">Svakoj igri je dodeljena težina slično onima koje daju novine i veb sajtovi, tako da će vaša igra biti laka ili teška onoliko koliko vi to budete želeli.</p>
+    <p xml:lang="sr">Свакој игри је додељена тежина слично онима које дају новине и веб сајтови, тако да ће ваша игра бити лака или тешка онолико колико ви то будете желели.</p>
+    <p xml:lang="sl">Vsaki uganki je določena težavnost, podobno kot to velja za tiskane različice. Težavnost je opredeljena na isti način, kot pri ugankah v zabavnih revijah in na spletnih straneh.</p>
+    <p xml:lang="sk">Každá hra je označená obtiažnosťou podobne ako v novinách a na webových stránkach, takže vaša hra bude obtiažna podľa toho, akú obtiažnosť si zvolíte.</p>
+    <p xml:lang="ru">Каждая игра относится к тому или иному уровню сложности. Можно управлять тем, насколько простой или сложной будет головоломка.</p>
+    <p xml:lang="ro">Fiecărui joc îi este atribuită o dificultate similară celor oferite de ziare și pagini web, prin urmare jocul va fi la fel de simplu sau de dificil precum doriți.</p>
+    <p xml:lang="pt_BR">A cada jogo é atribuída uma dificuldade similar àquelas apresentadas por jornais e sites, de forma que seu jogo será tão fácil quanto ou tão difícil quanto você desejar que seja.</p>
+    <p xml:lang="pt">A cada jogo é atribuída uma dificuldade equivalente às dadas em jornais e páginas web, pelo que o seu jogo será tão fácil ou tão difícil quanto o queira.</p>
+    <p xml:lang="pl">Każda plansza ma przydzielony poziom trudności podobny do tych z gazet i witryn internetowych, więc można wybrać planszę o pasującym poziomie.</p>
+    <p xml:lang="oc">Un nivèl de dificultat es atribuit a cada grasilha sul meteis principi utilizat pels jornals o los sites Web, per que poscatz ajustar la dificultat segon vòstra enveja.</p>
+    <p xml:lang="nl">Elk spel krijgt een moeilijkheidsgraad toegewezen die ongeveer gelijk is aan die van kranten en websites, dus uw spel zal ongeveer zo makkelijk of moeilijk zijn als u wilt.</p>
+    <p xml:lang="nb">Hvert spill tildeles en vanskelighetsgrad på samme måte som i aviser og på nettsteder, så spillet dit vil være så lett eller vanskelig som du ønsker selv.</p>
+    <p xml:lang="ms">Setiap permainan ditetapkan mengikut kesukaran seperti di dalam surat khabar atau tapak sesawang, supaya permainan adalah mudah atau sukar mengikut kehendak anda.</p>
+    <p xml:lang="ml">പത്രങ്ങളിലും വെബ്‌സൈറ്റുകളിലും ഉള്ളതുപോലെ ഓരോ കളിക്കും ഒരു പ്രയാസ നില നല്‍കിയിരിക്കും. കമ്പ്യൂട്ടര്‍ എങ്ങിനെയാണ് കളിക്ക് ഉത്തരം കാണുന്നതെന്ന് നിങ്ങള്‍ക്ക് വിശദമായി നിരീക്ഷിക്കാം.</p>
+    <p xml:lang="lv">Katrai spēlei ir sava sarežģītība, līdzīgi kā to dara avīzēs vai tīmekļa vietnēs. Tāpēc jūsu spēle būs tik viegla vai grūta, cik vēlaties.</p>
+    <p xml:lang="lt">Kiekvienam žaidimui yra priskiriamas sudėtingumas, panašiai kaip laikraščiuose ir tinklalapiuose, tad jūsų žaidimas bus kiek norima paprastas arba sudėtingas.</p>
+    <p xml:lang="lo">ແຕ່ລະເກມແມ່ນຈະໄດ້ຮັບການຕັ້ງຄ່າລະດັບຄວາມຍາກຄ້າຍຄືກັນກັບຢູ່ໃນຫນັງສືພິມ ຫລື ເວັບໄຊທ ສະນັ້ນລະດັບຄວາມຍາກເກມແມ່ນຈະຂື້ນກັບທ່ານຕ້ອງການໃຫ້ຍາກນ້ອຍ ຫລື ຫຼາຍສຳໃດ.</p>
+    <p xml:lang="ko">게임마다 신문과 웹사이트에 쓰여 있는 난이도와 비슷하게 난이도가 설정되어 있습니다. 그러므로 원하는대로 난이도가 쉽거나 어렵게 설정됩니다.</p>
+    <p xml:lang="kk">Әрбір ойынның өз қиындық деңгейі бар, ол ойыныңыз қаншалықты жеңіл немесе күрделі болатынына әсер етеді.</p>
+    <p xml:lang="it">Ogni gioco ha un suo livello di difficoltà simile a quello usato da giornali e siti web in modo tale che la partita sia facile o difficile come più ti aggrada.</p>
+    <p xml:lang="is">Hverjum leik er úthlutað erfiðleikastigi á svipaðan hátt og gert er í dagblöðum og á vefsvæðum, þannig að gáturnar verða eins erfiðar og þú vilt hafa þær.</p>
+    <p xml:lang="id">Setiap permainan diberi tingkat kesulitan mirip dengan yang diberikan oleh surat kabar dan situs web, sehingga permainan Anda bisa semudah atau sesulit yang Anda inginkan.</p>
+    <p xml:lang="hu">Minden játszma különböző nehézségi fokon játszható, hasonlóan az újságok és a weboldalak feladványaihoz, így a játék nehézsége vagy egyszerűsége csak Önön múlik.</p>
+    <p xml:lang="hr">Svaka igra je slične težine kao one iz novina i web stranica, stoga će težina vaše igre biti prema vašoj želji.</p>
+    <p xml:lang="he">רמות הקושי של המשחק תואמות את אלה בעיתונים ובאתרי אינטרנט, כך שהמשחק שלך יהיה קל או קשה כפי שהיית רוצה.</p>
+    <p xml:lang="gl">Cada xogo ten unha dificultade asignada similar ás dos diarios en papel e sitios web, polo que a súa partida será tan doada ou difícil como quere que sexa.</p>
+    <p xml:lang="fur">Ogni zûc al à un so nivel di dificoltât simil a chel doprât tai gjornâi e sîts web, in mût tâl che la partide e sedi facile o dificile come che ti pâr.</p>
+    <p xml:lang="fr">Un niveau de difficulté est attribué à chaque grille sur le même principe utilisé par les journaux ou les sites web, pour que vous puissiez ajuster la difficulté selon votre envie.</p>
+    <p xml:lang="fi">Jokainen peli on niin haastava, kuin asetat vaikeustasoksi. Haasta siis itsesi!</p>
+    <p xml:lang="fa">هر بازی، سختی مشخصی دارد مشابه چیزی که روزنامه‌ها و پایگاه‌های وب ارائه می‌کنند، بنابراین بازی شما یا ساده است یا به اندازه‌ای که میخواهید سخت است.</p>
+    <p xml:lang="eu">Joko bakoitzaren zailtasun-maila  egunkarietan eta webguneetan ematen dietenaren antzekoa da. Jokoa zuk nahi duzun bezain erraza edo zaila izango da.</p>
+    <p xml:lang="es">Cada juego tiene un nivel de dificultad similar a los que aparecen en los periódicos y en las páginas web, por lo que su partida será tan fácil o difícil como quiera.</p>
+    <p xml:lang="eo">Al ĉiu ludo estas asignita malfacilecon simila al tiuj donita de ĵurnaloj kaj retejoj, do via ludo estos tiel facila aŭ tiel malfacila kiel vi deziras ĝin esti.</p>
+    <p xml:lang="en_GB">Each game is assigned a difficulty similar to those given by newspapers and websites, so your game will be as easy or as difficult as you want it to be.</p>
+    <p xml:lang="el">Κάθε παιχνίδι αντιστοιχεί σε επίπεδο δυσκολίας παρόμοιο με αυτό που δίνεται σε εφημερίδες και ιστότοπους, έτσι ώστε το παιχνίδι σας να είναι τόσο εύκολο ή τόσο δύσκολο όσο θέλετε να είναι.</p>
+    <p xml:lang="de">Jedes Spiel ist einem Schwierigkeitsgrad zugeordnet, ähnlich denen in Zeitungen und auf Internetseiten. Das Spiel wird genau so leicht oder schwer, wie Sie es gerne hätten.</p>
+    <p xml:lang="da">Hvert spil tildeles en sværhedsgrad, der svarer til dem der findes i aviser og på websteder, så du kan bestemme hvor svært spillet skal være.</p>
+    <p xml:lang="cs">Každá hra má přiřazené hodnocení obtížnosti, podobně jako ty tištěné nebo na webových stránkách, takže vaše hry budou tak snadné nebo obtížné, jak je budete chtít.</p>
+    <p xml:lang="ca@valencia">Cada joc té assignada una dificultat similar a com ho fan als diaris i a les pàgines web, d'esta manera serà tan fàcil o tan difícil com vulgueu.</p>
+    <p xml:lang="ca">Cada joc té assignada una dificultat similar a com ho fan als diaris i a les pàgines web, d'aquesta manera serà tan fàcil o tan difícil com vulgueu.</p>
+    <p xml:lang="bs">Svakoj igri je dodjeljena slična težina data u novinama i veb stranicama, tako da igra će biti lagana koliko želimo da bude.</p>
+    <p xml:lang="bg">Също както сайтовете и вестниците публикуват трудностите на различните загадки, така и тук можете точно да изберете подходящата трудност.</p>
+    <p xml:lang="be">Кожная гульня мае ўзровень складанасці, падобны на той, які пазначаюць у газетах і на сеціўных пляцоўках, таму гульня можа быць настолькі лёгкай ці складанай, на колькі вы жадаеце.</p>
+    <p xml:lang="ab">Ахәмаррақәа   ҩадарала еиԥшым .Ахәмарра шаҟа иамриахо,мамзар иуадаҩхо ахэмарҩы ихала иалихыр илшоит. </p>
+    <p>
+      If you like to play on paper, you can print games out. You can choose how
+      many games you want to print per page and what difficulty of games you
+      want to print: as a result, GNOME Sudoku can act a renewable Sudoku book
+      for you.
+    </p>
+    <p xml:lang="zh_TW">如果您喜歡在紙上玩數獨，您可以將遊戲印出來。您可以選擇每張紙要列印多少遊戲以及遊戲的難度：也就是說，GNOME 數獨可以變成一本可更新的數獨本。</p>
+    <p xml:lang="zh_HK">如果你喜歡在紙上玩數獨，你可以將遊戲印出來。你可以選擇每張紙要列印多少遊戲以及遊戲的難度：也就是說，GNOME 數獨可以變成一本可更新的數獨本。</p>
+    <p xml:lang="zh_CN">如果您想在纸上玩它，可以将游戏打印出来。您也可以选择每页纸打印几局，和要打印游戏的难度：这样一来，GNOME Sudoku 就成了一本能玩下去的数独书了。</p>
+    <p xml:lang="vi">Nếu bạn muốn chơi trên giấy, bạn có thể in ra. Bạn có thể chọn bao nhiêu bảng bạn muốn in trên một trang và độ khó của trò chơi bạn muốn: kết quả là, GNOME Sudoku có thể thực hiện như là một quyển sách Sudoku có thể đổi mới dành cho bạn.</p>
+    <p xml:lang="uk">Якщо ви полюбляєте грати на папері, ви можете роздрукувати ігри. Можете вибрати скільки ігор ви забажаєте роздрукувати на одній сторінці та їхній рівень складності: як наслідок: «Судоку GNOME» може поновлюваною книгу з судоку.</p>
+    <p xml:lang="tr">Eğer kağıtta oynamayı sevenlerdenseniz, oyunları yazdırabilirsiniz. Sayfa başına kaç ve hangi zorlukta oyun yazdırmak istediğinizi seçebilirsiniz: sonuç olarak, GNOME Sudoku sizin için yenilenebilir Sudoku kitabı işlevi görebilir.</p>
+    <p xml:lang="sv">Om du vill spela på papper kan du skriva ut spel. Du kan välja hur många spel du vill skriva ut per sida och vilken svårighetsgrad du vill skriva ut. Som en följd av detta kan du använda GNOME Sudoku som en förnyelsebar sudoku-bok.</p>
+    <p xml:lang="sr@latin">Ako volite da igrate na papiru, možete da otštampate igre. Možete izabrati koliko igra ćete štampati na jednoj stranici i koju težinu igre želite da igrate. kao rezultat, Gnomov sudoku može delovati kao obnovljiva knjižica sudokua.</p>
+    <p xml:lang="sr">Ако волите да играте на папиру, можете да отштампате игре. Можете изабрати колико игра ћете штампати на једној страници и коју тежину игре желите да играте. као резултат, Гномов судоку може деловати као обновљива књижица судокуа.</p>
+    <p xml:lang="sl">Če vam je ljubše uganke reševati na papirju, je te mogoče tudi natisniti. Pred tiskanjem je treba izbrati število iger, ki naj se natisnejo na vsako stran lista. Na ta način si lahko ustvarite tudi knjižico ugank za na pot.</p>
+    <p xml:lang="sk">Ak radi hráte na papieri, môžete si hry vytlačiť. Môžete si vybrať koľko hier sa má vytlačiť na jednej stránke a náročnosť hier, ktoré chcete tlačiť. Takže hru Sudoku GNOME môžete použiť ako obnoviteľnú knihu sudoku.</p>
+    <p xml:lang="ru">Если вам нравится бумажный вариант игры, вы можете распечатать игру. Вы можете выбрать, сколько игр и какой сложности нужно распечатать на странице. Судоку GNOME может служить вам бесконечной книгой Судоку.</p>
+    <p xml:lang="ro">Dacă vă place să jucați pe hârtie, puteți să tipăriți jocurile. Puteți alege câte jocuri doriți să tipăriți pe pagină și ce dificultate a jocurilor doriți să tipăriți: drept rezultat, Sudoku GNOME poate să acționeze ca o carte Sudoku ce se poate reînnoi.</p>
+    <p xml:lang="pt_BR">Se você gosta de jogar no papel, você pode imprimir os jogos. Você pode escolher quantos jogos você deseja imprimir por página e qual a dificuldade dos jogos que você deseja imprimir: Como resultado, o GNOME Sudoku pode atuar para você como um livro renovável de Sudoku.</p>
+    <p xml:lang="pt">Se gosta de jogar em papel, pode imprimir os jogos. Pode escolher quantos jogos quer imprimir por página e qual a dificuldade do jogo que quer imprimir. Como tal, o GNOME Sudoku age como um livro de Sudoku renovável.</p>
+    <p xml:lang="pl">Można także drukować plansze, aby grać na papierze. Można wybrać liczbę plansz na stronę i ich poziom. Gra GNOME Sudoku może więc być używana jako odnawialna książka do Sudoku.</p>
+    <p xml:lang="oc">Se vos agrada mai de jogar sus papièr, podètz imprimir las grasilhas. Es possible de causir lo nombre de grasilhas per pagina imprimida e tanben lor nivèl de dificultat. Per consequéncia, GNOME Sudoku pòt jogar lo ròtle d'un libre de Sudoku sens fin.</p>
+    <p xml:lang="nl">Als u op papier wilt spelen, kunt u spellen afdrukken. U kunt kiezen hoeveel spellen u wilt printen per pagina en welke moeilijkheidsgraad voor spellen u wilt printen, wat erin resulteert dat GNOME Sudoku als een hernieuwbaar sudokuboek kan dienen.</p>
+    <p xml:lang="nb">Hvis du liker å spille på papir kan du skrive ut spillene. Du kan velge hvor mange spill du vil skrive ut per side, og hvilken vanskelighetsgrad disse skal ha. GNOME Sudoku kan med andre ord fungere som en fornybar Sudoku-bok for deg.</p>
+    <p xml:lang="ms">Jika anda suka bermain di atas kertas, anda boleh mencetak permainan ini. Anda boleh memilih berapa banyak teka-teki per halaman dan tahap kesukarannya: oleh yang demikian, Sudoku GNOME sentiasa merupakan buku Sudoku baharu untuk anda.</p>
+    <p xml:lang="ml">നിങ്ങള്‍ക്ക് പേപ്പറില്‍ കളിക്കാനാണ് താല്പര്യമെങ്കില്‍ കളികള്‍ അച്ചടിക്കാവുന്നതാണ്. ഓരോ പേജിലും എത്ര കളികള്‍ വേണമെന്നും അവ എത്രമാത്രം ബുദ്ധിമുട്ടുള്ളവയാവണമെന്നും നിങ്ങള്‍ക്ക് തിരഞ്ഞെടുക്കാം. ഇപ്രകാരം നിങ്ങള്‍ക്കായി ഗ്നോം സുഡോക്കുവിന് ഒരു പുനരുപയോഗിക്കാന്‍ കഴിയുന്ന സുഡോക്കു പുസ്തകമായി പ്രവര്‍ത്തിക്കാന്‍ കഴിയും.</p>
+    <p xml:lang="lv">Ja vēlies spēlēt uz papīra, vari spēles izdrukāt. Vari izvēlēties, cik daudzas spēles izdrukāt uz vienas lappuses un kādas sarežģītības spēles drukāt. Tā rezultātā GNOME sudoku var kalpot kā atjaunojama sudoku grāmata.</p>
+    <p xml:lang="lt">Jei norite žaisti popieriuje, galite atsispausdinti žaidimus. Galite pasirinkti, kiek žaidimų atspausdinti puslapyje ir kokio sudėtingumo žaidimus norite spausdinti: taip GNOME sudoku gali būti jums atsinaujinančia sudoku knyga.</p>
+    <p xml:lang="lo">ຖ້າທ່ານມັກຫລີ້ນໃສ່ເຈ້ຍ ທ່ານສາມາດພິມເກມອອກໄດ້. ທ່ານສາມາດເລືອກຈຳນວນເກມທີ່ຕ້ອງການພິມໃນຫນ້າຫນຶ່ງ ແລະ ລະດັບຄວາມຍາກຂອງເກມທີ່ທ່ານຕ້ອງການຈະພິມ: ດັ່ງນັ້ນ GNOME Sudoku ຈຶ່ງສາມາດເປັນປື້ມ Sudoku ສຳລັບທ່ານໄດ້.</p>
+    <p xml:lang="ko">종이에 게임을 푸는 게 더 좋다면 게임을 인쇄할 수도 있습니다. 페이지마다 인쇄할 게임 수나 인쇄할 난이도를 지정할 수 있습니다. 즉 그놈 스도쿠는 개속 개정되는 스도쿠 책과 같습니다.</p>
+    <p xml:lang="kk">Егер сіз қағаз нұсқасында ойнауды ұнатсаңыз, ойындарды басып шығаруға болады. Әр парақта қанша ойын болатынын және ойын күрделілігін таңдауға болады: нәтижесінде GNOME судоку сіз үшін тауыспайтын судоку кітабы бола алады.</p>
+    <p xml:lang="it">E se vuoi giocare direttamente sulla carta, poi stampare comodamente i giochi. Puoi scegliere quanti stamparne per foglio e di quale livello di difficoltà: GNOME Sudoko è anche un libro di rompicapi sempre nuovo.</p>
+    <p xml:lang="is">Ef þér finnst betra að spila þetta á blaði, geturðu prentað leikina út. Þú getur valið hve mörg borð verða á hverri síðu og hver erfiðleikastigin eigi að vera. Þar með getur GNOME Sudoku virkað eins og endurnýjanlegur Sudoku-gjafi fyrir þig.</p>
+    <p xml:lang="id">Bila Anda suka bermain pada kertas, Anda dapat mencetak permainan. Anda dapat memilih berapa banyak permainan yang ingin Anda cetak per halaman dan pada tingkat kesulitan apa: sebagai hasilnya, GNOME Sudoku bisa berlaku sebagai buku Sudoku yang dapat diperbarui bagi Anda.</p>
+    <p xml:lang="hu">A játszmák kinyomtathatók, ha papíron szeretne játszani. A nyomtatásnál beállítható, hogy oldalanként hány játszmát és milyen nehézségi fokon szeretne nyomtatni; melynek eredményeként a GNOME Sudoku újrafelhasználható feladványkötetként használható.</p>
+    <p xml:lang="hr">Ako više volite igrati na papiru, možete ispisati igru na pisaču, Možete odabrati koliko igra želite ispisati po stranici i koju težinu igre želite ispisati: kao rezultat, GNOME Sudoku se može ponašati kao vaša obnovljiva Sudoku knjiga.</p>
+    <p xml:lang="he">אם ברצונך לשחק על נייר, ניתן להדפיס את המשחק. ניתן לבחור כמה משחקים להדפיס בכל דף ומה רמת הקושי של המשחק שברצונך להדפיס: מכך GNOME סודוקו יכול לשמש ספר סודוקו מתחדש בשבילך.</p>
+    <p xml:lang="gl">Se quere sobar sobre o papel tamén pode imprimir os xogos. Pode seleccionar que xogos quere imprimir por páxina e de que dificultade: como resultado, GNOME Sudoku pode actuar como un libro de Sudokus actualizábel.</p>
+    <p xml:lang="fur">Se tu vûs zuiâ te cjarte, tu puedis stampâ i zûcs. Tu puedis sielzi trops stampâ par sfuei e di cuâl nivel di dificoltât: GNOME Sudoku al è ancje un libri di berdeis simpri gnûf.</p>
+    <p xml:lang="fr">Si vous préférez jouer sur papier, vous pouvez imprimer les grilles. Il est possible de choisir le nombre de grilles par page imprimée ainsi que leur niveau de difficulté. Par conséquent, Sudoku de GNOME peut jouer le rôle d’un livre de Sudoku sans fin.</p>
+    <p xml:lang="fi">Jos tykkäät pelata mieluummin paperia ja kynää käyttäen, voit myös tulostaa sudokuja. Voit valita sivulle tulostettavien sudokujen määrän ja vaikeustason.</p>
+    <p xml:lang="fa">اگر دوست دارید روی کاغذ بازی کنید، شما می‌توانید بازی‌ها را چاپ کنید. می‌توانید انتخاب کنید که چه تعداد بازی می‌خواهید در صفحه چاپ کنید و با چه سختی‌ای: در نتیجه، سودوکوی گنوم می‌تواند مانند یک کتاب سودوکو تجدیدپذیر برای شما عمل کند.</p>
+    <p xml:lang="eu">Paperean jokatzea gustuko baduzu, jokoak inprimatu ditzakezu. Orrialdeko zenbat joko inprimatzea nahi dituzun aukera dezakezu, baita jokoen zailtasun-maila ere. Ondorioz, Sudoku liburu berriztagarri gisa erabil dezakezu GNOME Sudoku.</p>
+    <p xml:lang="es">Si quiere jugar en papel, puede imprimir los juegos. Puede elegir cuántos juegos por página quiere imprimir y su nivel de dificultad: el resultado es que GNOME Sudoku puede convertirse en un libro de Sudokus renovables por usted mismo.</p>
+    <p xml:lang="eo">Se vi ŝatas ludi sur papero, vi povas presi ludojn. Vi povas elekti kiom da ludojn vi deziras presi por paĝo kaj kio malfacileco de ludoj vi deziras presi: rezulte, GNOME Sudoko povas agi renovigeblan sudoko-libro por vi.</p>
+    <p xml:lang="en_GB">If you like to play on paper, you can print games out. You can choose how many games you want to print per page and what difficulty of games you want to print: as a result, GNOME Sudoku can act a renewable Sudoku book for you.</p>
+    <p xml:lang="el">Εάν σας αρέσει να παίξετε σε χαρτί, μπορείτε να εκτυπώσετε τα παιχνίδια. Μπορείτε να επιλέξετε πόσα παιχνίδια θέλετε να εκτυπώσετε ανά σελίδα και τι επίπεδο δυσκολίας θέλετε να έχουν: ως αποτέλεσμα, το Σουντόκου GNOME μπορεί να αποτελέσει ένα ανανεώσιμο βιβλίο Σουντόκου για εσάς.</p>
+    <p xml:lang="de">Falls Sie auf Papier spielen möchten, können Sie die Sudokus auch ausdrucken. Es kann gewählt werden, wie viele Spiele pro Blatt gedruckt werden und welchen Schwierigkeitsgrad diese haben sollen. Mit Sudoku können Sie sich also ein neues Sudokubuch erstellen.</p>
+    <p xml:lang="da">Hvis du kan lide at spille på papir, kan du udskrive spil. Du kan vælge hvor mange spil, du vil udskrive per side, og hvilken sværhedsgrad de skal være: Dermed kan GNOME Sudoku fungere som din evige Sudokubog.</p>
+    <p xml:lang="cs">Pokud raději hrajete na papíře, můžete si hry vytisknout. Lze si zvolit, kolik her chcete vytisknout na jednu stránku a jak obtížné hry chcete tisnout. Sudoku GNOME vám tak může sloužit, jako stálá zásobárna nových sešitů se Sudoku.</p>
+    <p xml:lang="ca@valencia">Si voleu jugar en paper, podeu imprimir els trencaclosques. Podeu triar quants jocs voleu per pàgina i la dificultat. Per tant, el GNOME Sudoku vos pot fer servei com a un llibre de Sudoku que va canviant.</p>
+    <p xml:lang="ca">Si voleu jugar en paper, podeu imprimir els trencaclosques. Podeu triar quants jocs voleu per pàgina i la dificultat. Per tant, el GNOME Sudoku us pot fer servei com a un llibre de Sudoku que va canviant.</p>
+    <p xml:lang="bs">Ako želite igrati na papiru, možete odštampati igre. Možete odabrati koliko god igara želite ispisati po stranici, i koju težinu igara želite štampati kao rezultat, GNOME Sudoku može djelovati kao obnovljiva Sudoku knjiga za vas.</p>
+    <p xml:lang="bg">Ако обичате да играете на хартия, може да си отпечатате игри, като зададете колко, с каква трудност и колко на страница да са те.</p>
+    <p xml:lang="be">Калі вам падабаецца гуляць на паперы, то галаваломкі можна надрукаваць. Выберыце колькасць галаваломак на кожнай старонцы і іх узровень складанасці. Такім чынам GNOME Судоку можа адыгрываць ролю бясконцай кнігі з судоку.</p>
+    <p xml:lang="ab">Ақьаад аҟны ахәмарра еиҳа шәгәы иақәшәозар ишәылшоит уи шәкьыԥхьарц.Иалшәх шаҟа хәмарра шәкьыԥхьар шәҭаху  , урҭ рыуадаҩра аҳаракыра зеиԥшрахо.Судоку GNOME  ҵыхәаҧҵәара змам Судоку -шәҟәны  иҟалар алшоит шәара шәзы.</p>
+  </description>
+  <screenshots>
+    <screenshot height="577" width="748" type="default">
+      <image>https://gitlab.gnome.org/GNOME/gnome-sudoku/-/raw/master/data/screenshot.png</image>
+      <caption>A GNOME sudoku game preview</caption>
+      <caption xml:lang="zh_TW">GNOME 數獨遊戲預覽</caption>
+      <caption xml:lang="zh_CN">GNOME 数独游戏预览</caption>
+      <caption xml:lang="vi">Xem thử về trò chơi sudoku GNOME</caption>
+      <caption xml:lang="uk">Перегляд гри Судоку</caption>
+      <caption xml:lang="tr">GNOME sudoku oyunu ön izlemesi</caption>
+      <caption xml:lang="sv">En förhandsvisning av GNOME Sudoku</caption>
+      <caption xml:lang="sr@latin">Pregled igre Gnomovog sudokua</caption>
+      <caption xml:lang="sr">Преглед игре Гномовог судокуа</caption>
+      <caption xml:lang="sl">Predogled uganke Sudoku GNOME</caption>
+      <caption xml:lang="sk">Náhľad hry Sudoku prostredia GNOME</caption>
+      <caption xml:lang="ru">Предварительный просмотр игры судоку GNOME</caption>
+      <caption xml:lang="ro">O previzualizare de joc sudoku GNOME</caption>
+      <caption xml:lang="pt_BR">Uma prévia do GNOME para o jogo sudoku</caption>
+      <caption xml:lang="pt">Uma previsão do jogo sudoku do GNOME</caption>
+      <caption xml:lang="pl">Podgląd gry GNOME Sudoku</caption>
+      <caption xml:lang="oc">Un apercebut d’una partida de sudoku de GNOME</caption>
+      <caption xml:lang="nl">Voorbeeld van een GNOME-sudoku spel</caption>
+      <caption xml:lang="nb">Forhåndsvisning av GNOME sudoku</caption>
+      <caption xml:lang="ms">Pratonton permainan sudoku GNOME</caption>
+      <caption xml:lang="ml">കളി സ്ക്രീനില്‍ കാണുക</caption>
+      <caption xml:lang="lv">GNOME sudoku spēles priekšskatījums</caption>
+      <caption xml:lang="lt">GNOME sudoku žaidimo peržiūra</caption>
+      <caption xml:lang="lo">ພລີວິວເກມ GNOME sudoku</caption>
+      <caption xml:lang="ko">그놈 스도쿠 게임 미리보기</caption>
+      <caption xml:lang="kk">GNOME судоку ойынын алдын ала қарау</caption>
+      <caption xml:lang="it">Un'anteprima del gioco GNOME sudoku</caption>
+      <caption xml:lang="is">Forskoðun á GNOME-sudoku leik</caption>
+      <caption xml:lang="id">Pratinjau Permainan GNOME Sudoku</caption>
+      <caption xml:lang="hu">Egy GNOME sudoku játékelőnézet</caption>
+      <caption xml:lang="hr">GNOME sudoku pregled igre</caption>
+      <caption xml:lang="he">תצוגה של משחק GNOME סודוקו</caption>
+      <caption xml:lang="gl">Unha vista previa do xogo GNOME sudoku</caption>
+      <caption xml:lang="fur">Une anteprime dal zûc sudoku di GNOME</caption>
+      <caption xml:lang="fr">Un aperçu d’une partie de sudoku de GNOME</caption>
+      <caption xml:lang="fi">Gnome Sudoku -pelin esikatselu</caption>
+      <caption xml:lang="fa">یک پیش‌نمایش بازی سودوکوی گنوم</caption>
+      <caption xml:lang="eu">GNOME sudoku jokoaren aurrebista</caption>
+      <caption xml:lang="es">Una vista previa del juego de sudoku de GNOME</caption>
+      <caption xml:lang="eo">Antaŭmontro de GNOME-a sudoka ludo</caption>
+      <caption xml:lang="en_GB">A GNOME sudoku game preview</caption>
+      <caption xml:lang="el">Προεπισκόπηση του παιχνιδιού Σουντόκου GNOME</caption>
+      <caption xml:lang="de">Eine Vorschau auf GNOME Sudoku</caption>
+      <caption xml:lang="da">Smugkig på et spil GNOME sudoku</caption>
+      <caption xml:lang="cs">Ukázka hry Sudoku GNOME</caption>
+      <caption xml:lang="ca@valencia">Demostració de Gnome sudoku</caption>
+      <caption xml:lang="ca">Demostració de Gnome sudoku</caption>
+      <caption xml:lang="bg">Преглед на игри судоку за GNOME</caption>
+      <caption xml:lang="be">Папярэдні агляд гульні GNOME Судоку</caption>
+      <caption xml:lang="ab">Судоку GNOME ахәмарра заатәи ахәаҧшра</caption>
+    </screenshot>
+  </screenshots>
+  <launchable type="desktop-id">org.gnome.Sudoku.desktop</launchable>
+  <url type="homepage">https://wiki.gnome.org/Apps/Sudoku</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-sudoku/-/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="help">https://help.gnome.org/users/gnome-sudoku/stable/</url>
+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/gnome-sudoku</url>
+  <update_contact>mcatanzaro_at_gnome.org</update_contact>
+  <project_group>GNOME</project_group>
+  <provides>
+    <id>gnome-sudoku.desktop</id>
+  </provides>
+  <releases>
+    <release version="46.0" date="2024-03-15"/>
+    <release version="46~rc" date="2024-02-29"/>
+    <release version="46~beta" date="2024-02-09"/>
+    <release version="46~alpha" date="2024-01-05"/>
+    <release version="45.4" date="2024-01-05"/>
+    <release version="45.3" date="2023-12-01"/>
+    <release version="45.2" date="2023-10-20"/>
+    <release version="45.1" date="2023-10-14"/>
+    <release version="45.0" date="2023-09-15"/>
+    <release version="45~alpha" date="2023-06-29"/>
+    <release version="44.0" date="2023-03-17"/>
+    <release version="44~beta" date="2023-02-10"/>
+    <release version="44~alpha" date="2023-01-05"/>
+    <release version="43.0" date="2022-09-15"/>
+    <release version="43~beta" date="2022-08-05"/>
+    <release version="43~alpha" date="2022-07-08"/>
+    <release version="42.0" date="2022-03-17"/>
+    <release version="40.2" date="2021-07-23"/>
+    <release version="40.1" date="2021-04-29"/>
+    <release version="40.0" date="2021-03-22"/>
+    <release version="40~alpha" date="2021-01-07"/>
+    <release version="3.38.0" date="2020-09-11"/>
+    <release version="3.37.92" date="2020-09-04"/>
+    <release version="3.37.90" date="2020-08-06"/>
+    <release version="3.37.3" date="2020-07-02"/>
+    <release version="3.37.2" date="2020-05-28"/>
+    <release version="3.37.1" date="2020-04-25"/>
+    <release version="3.36.0" date="2020-03-05"/>
+    <release version="3.34.1" date="2019-10-14"/>
+    <release version="3.34.0" date="2019-09-08"/>
+    <release version="3.33.4" date="2019-07-14"/>
+    <release version="3.32.0" date="2019-03-11"/>
+  </releases>
+  <translation type="gettext">gnome-sudoku</translation>
+  <developer id="gnome.org">
+    <name>The GNOME Project</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+</component>

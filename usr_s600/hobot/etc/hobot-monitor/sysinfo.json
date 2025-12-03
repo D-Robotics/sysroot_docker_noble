@@ -1,0 +1,83 @@
+{
+    "name": "sysinfo",
+    "cmd-list": [
+        {
+            "id": "0x1",
+            "type": "file",
+            "name": "cpufreq0",
+            "file": "/sys/devices/system/cpu/cpufreq/policy0/cpuinfo_cur_freq"
+        },
+        {
+            "id": "0x2",
+            "type": "file",
+            "name": "cpufreq0",
+            "file": "/sys/devices/system/cpu/cpufreq/policy1/cpuinfo_cur_freq"
+        },
+        {
+            "id": "0x3",
+            "type": "file",
+            "name": "cpufreq0",
+            "file": "/sys/devices/system/cpu/cpufreq/policy2/cpuinfo_cur_freq"
+        },
+        {
+            "id": "0x4",
+            "type": "file",
+            "name": "cpufreq0",
+            "file": "/sys/devices/system/cpu/cpufreq/policy3/cpuinfo_cur_freq"
+        },
+        {
+            "id": "0x5",
+            "type": "file",
+            "name": "cpufreq0",
+            "file": "/sys/devices/system/cpu/cpufreq/policy4/cpuinfo_cur_freq"
+        },
+        {
+            "id": "0x6",
+            "type": "file",
+            "name": "cpufreq0",
+            "file": "/sys/devices/system/cpu/cpufreq/policy5/cpuinfo_cur_freq"
+        },
+        {
+            "id": "0x7",
+            "type": "file",
+            "name": "cpufreq0",
+            "file": "/sys/devices/system/cpu/cpufreq/policy6/cpuinfo_cur_freq"
+        },
+        {
+            "id": "0x8",
+            "type": "file",
+            "name": "cpufreq0",
+            "file": "/sys/devices/system/cpu/cpufreq/policy7/cpuinfo_cur_freq"
+        },
+        {
+            "id": "0x9",
+            "type": "file",
+            "name": "cpus",
+            "file": "/sys/devices/system/cpu/possible"
+        },
+        {
+            "id": "0xa",
+            "type": "file",
+            "name": "sysversion",
+            "file": "/etc/version"
+        },
+        {
+            "id": "0xe",
+            "type": "file",
+            "name": "mcore",
+            "file": "/sys/class/remoteproc/remoteproc0/version"
+        },
+        {
+            "id": "0xf",
+            "type": "file",
+            "name": "vdsp0",
+            "file": "/sys/class/remoteproc/remoteproc1/version"
+        },
+        {
+            "id": "0x10",
+            "type": "file",
+            "name": "vdsp1",
+            "file": "/sys/class/remoteproc/remoteproc2/version"
+        }
+    ]
+}

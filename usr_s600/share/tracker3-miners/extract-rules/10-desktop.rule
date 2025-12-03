@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-desktop.so
+MimeTypes=application/x-desktop
+FallbackRdfTypes=nfo:SoftwareApplication;
+Graph=tracker:Software
+Hash=8ca578d731725d60fec8b2a9c5f2c880e61de3a6c4eea0e56b156ec87d63f48f
+

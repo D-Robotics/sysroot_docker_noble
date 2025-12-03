@@ -1,0 +1,2 @@
+package-name-doesnt-match-sonames
+libheimntlm0t64-heimdal: package-name-doesnt-match-sonames libheimntlm0-heimdal

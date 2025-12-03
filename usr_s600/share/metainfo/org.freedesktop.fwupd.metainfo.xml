@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<component type="console-application">
+  <id>org.freedesktop.fwupd</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LGPL-2.0+</project_license>
+  <name>fwupd</name>
+  <summary>Update device firmware on Linux</summary>
+  <description>
+    <p>
+      This project aims to make updating firmware on Linux automatic, safe and
+      reliable.
+      You can either use a GUI software manager like GNOME Software to view and
+      apply updates, the command-line tool or the D-Bus interface directly.
+    </p>
+    <p>
+      The fwupd process is a system daemon to allow session software to update
+      device firmware on your local machine.
+      It is designed for desktops, but this project is also usable on phones,
+      tablets and on headless servers.
+    </p>
+  </description>
+  <url type="bugtracker">https://github.com/fwupd/fwupd/issues</url>
+  <url type="homepage">https://fwupd.org/</url>
+  <url type="translate">https://www.transifex.com/freedesktop/fwupd/</url>
+  <url type="vcs-browser">https://github.com/fwupd/fwupd</url>
+  <update_contact>richard_at_hughsie.com</update_contact>
+  <developer_name>The fwupd authors</developer_name>
+  <developer id="org.fwupd">
+    <name translate="no">The fwupd authors</name>
+  </developer>
+  <translation type="gettext">fwupd</translation>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+  </content_rating>
+  <provides>
+    <binary>fwupdmgr</binary>
+    <binary>fwupdtool</binary>
+  </provides>
+  <releases>
+    <release version="1.9.31" date="2025-07-10">
+      <description>
+        <p>
+          This release adds the following features:
+        </p>
+        <ul>
+          <li>Add a config option to ignore the efivars free space</li>
+          <li>Add support for new Dell dock ownership command</li>
+        </ul>
+        <p>This release fixes the following bugs:</p>
+        <ul>
+          <li>Add two more dbx checksums for offline detection</li>
+          <li>Check for 30kB of free NVRAM space before offering the dbx update</li>
+          <li>Do not allow dbx updates on more several more models</li>
+          <li>Do not copy the vendor name for Intel reference ME firmware</li>
+          <li>Never include systemd.machine_id in the uploaded report if set</li>
+          <li>Never write a UX capsule when using Capsule-On-Disk</li>
+          <li>Only check for fwupdx64.efi when NOT using CoD</li>
+          <li>Probe Synaptics VMM9 devices in a more relaxed way</li>
+          <li>Reduce lzma compression level from 9 to default 6</li>
+          <li>Refactor firmware child deduping to speed up startup</li>
+          <li>Reset RTS5G2 correctly on the Dell dock</li>
+          <li>Support loading multiple coSWID blobs from PE files</li>
+          <li>Wait for the logitech-scribe device to replug after updating</li>
+        </ul>
+        <p>This release adds support for the following hardware:</p>
+        <ul>
+          <li>A new Elan fingerprint reader</li>
+          <li>Poly Studio V72 and V12</li>
+          <li>Several new MediaTek scaler models</li>
+          <li>Thunderbolt 5 Smart Dock</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.9.30" date="2025-05-07">
+      <description>
+        <p>This release fixes the following bugs:</p>
+        <ul>
+          <li>Add several devices with broken firmware to the UEFI dbx blocklist</li>
+          <li>Add /sys/firmware/efi/efivars to ReadWritePaths</li>
+          <li>Do not export Redfish backup partitions as devices</li>
+          <li>Do not show messages or prompt for answers in `fwupdtool --json` mode</li>
+          <li>Fix a crash when installing some Wacom firmware types</li>
+          <li>Fix deploying RMM updates on the Dell Kestrel dock</li>
+          <li>Fix SMBIOS parsing for SPI ROM size &gt;= 16MiB</li>
+          <li>Never allow updating updatable-hidden devices with fwupdtool</li>
+          <li>Recognize a very old dbx hash to allow upgrades to continue</li>
+          <li>Reduce the Dell dock HID timeout, as retries already cover it</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.9.29" date="2025-03-18">
+      <description>
+        <p>
+          This release adds the following features:
+        </p>
+        <ul>
+          <li>Prepend the missing capsule header also when using CoD</li>
+          <li>Support cabinet archives greater in size than 2GB</li>
+        </ul>
+        <p>This release fixes the following bugs:</p>
+        <ul>
+          <li>Do not add a Redfish release date if set to 00:00:00Z</li>
+          <li>Do not add invalid CoSWID entities</li>
+          <li>Fix creating the Redfish user when the ETAG is set</li>
+          <li>Fix dbx deployment by ignoring missing PE/COFF sections</li>
+          <li>Fix writing EFI variables on new kernel versions</li>
+          <li>Include a SHA-256 checksum when using fwupdtool self-sign</li>
+          <li>Include the length in Wacom USB scaler update for future hardware support</li>
+          <li>Increase the timeout for RMM ack when updating Dell Kestrel docks</li>
+          <li>Mark the Redfish progress as finished even if the update never got to 100%</li>
+          <li>Set the Redfish MIME form-data filename correctly</li>
+          <li>Use the metadata version format to set the lowest possible version</li>
+        </ul>
+        <p>This release adds support for the following hardware:</p>
+        <ul>
+          <li>Lenovo USB-C Dual Display Travel Dock</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.9.28" date="2025-01-28">
+      <description>
+        <p>
+          This release adds the following features:
+        </p>
+        <ul>
+          <li>Add support for intel-csme19 version format</li>
+        </ul>
+        <p>This release fixes the following bugs:</p>
+        <ul>
+          <li>Avoid downstream port resets of Parade USB hubs</li>
+          <li>Cleanup Dell dock devices when disconnected</li>
+          <li>Correctly parse PE files with zero sized sections</li>
+          <li>Correctly set the package version of the Dell dock</li>
+          <li>Run the FwupdClient::changed callback in the correct thread</li>
+          <li>Run the UEFI capsule reboot cleanup action when required</li>
+          <li>Split up the AMD GPU VBIOS P/N for the version</li>
+          <li>Use the ISO date as a dbx version number</li>
+        </ul>
+        <p>This release adds support for the following hardware:</p>
+        <ul>
+          <li>HP 400/405</li>
+          <li>More ELAN fingerprint readers</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.9.27" date="2024-12-05">
+      <description>
+        <p>This release fixes the following bugs:</p>
+        <ul>
+          <li>Add a power quirk for Framework systems</li>
+          <li>Allow cros-ec repair the device after flush failure</li>
+          <li>Check the VLI USB3 firmware size before erasing</li>
+          <li>Disallow DBX updates on the Samsung Galaxy Book2 360</li>
+          <li>Do not show 'Device has been removed' as a dock error</li>
+          <li>Do not use a CMSE11 function when using CSME18</li>
+          <li>Fix an unlikely memory leak when using ModemManger Sahara devices</li>
+          <li>Fix a tiny memory leak in algoltek-usb when checking status</li>
+          <li>Mark UEFI dbx updates as affecting full disk encryption</li>
+          <li>Parse FDTs with missing END tokens</li>
+          <li>Rename the dell-k2 plugin to dell-kestrel and rework the update flow</li>
+        </ul>
+        <p>This release adds support for the following hardware:</p>
+        <ul>
+          <li>Google GID8 Headset</li>
+          <li>Parade PS188</li>
+          <li>Primax Ryder Mouse</li>
+        </ul>
+      </description>
+    </release>
+    </releases>
+</component>

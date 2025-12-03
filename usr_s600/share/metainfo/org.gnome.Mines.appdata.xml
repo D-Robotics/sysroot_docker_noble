@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2013 Michael Catanzaro -->
+<component type="desktop-application">
+  <id>org.gnome.Mines</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>GNOME Mines</name>
+  <name xml:lang="zh_TW">GNOME 拆地雷</name>
+  <name xml:lang="zh_HK">GNOME 拆地雷</name>
+  <name xml:lang="zh_CN">GNOME 扫雷</name>
+  <name xml:lang="vi">Dò mìn GNOME</name>
+  <name xml:lang="uk">Міни GNOME</name>
+  <name xml:lang="tr">GNOME Mayınlar</name>
+  <name xml:lang="sv">GNOME Minor</name>
+  <name xml:lang="sr@latin">Gnomove mine</name>
+  <name xml:lang="sr">Гномове мине</name>
+  <name xml:lang="sl">GNOME Mine</name>
+  <name xml:lang="sk">Míny prostredia GNOME</name>
+  <name xml:lang="ru">Сапёр GNOME</name>
+  <name xml:lang="ro">Mine GNOME</name>
+  <name xml:lang="pt_BR">Minas do GNOME</name>
+  <name xml:lang="pt">Minas GNOME</name>
+  <name xml:lang="pl">Miny GNOME</name>
+  <name xml:lang="oc">Desminaire GNOME</name>
+  <name xml:lang="nl">Gnome Mijnenveger</name>
+  <name xml:lang="ne">जिनोम खानी</name>
+  <name xml:lang="nb">GNOME Miner</name>
+  <name xml:lang="ms">Periuk Api GNOME</name>
+  <name xml:lang="ml">ഗ്നോം കുഴിബോംബുകള്‍</name>
+  <name xml:lang="lv">GNOME Mīnas</name>
+  <name xml:lang="lt">GNOME minos</name>
+  <name xml:lang="ko">그놈 지뢰찾기</name>
+  <name xml:lang="kk">GNOME сапёр ойыны</name>
+  <name xml:lang="ja">GNOME マインスイーパー</name>
+  <name xml:lang="it">Mine di GNOME</name>
+  <name xml:lang="is">GNOME sprengjuleit</name>
+  <name xml:lang="id">GNOME Ranjau</name>
+  <name xml:lang="hu">GNOME Aknakereső</name>
+  <name xml:lang="hr">GNOME Mine</name>
+  <name xml:lang="he">‏GNOME מוקשים</name>
+  <name xml:lang="gl">Minas de GNOME</name>
+  <name xml:lang="fur">Minis di GNOME</name>
+  <name xml:lang="fr">Démineur de GNOME</name>
+  <name xml:lang="fi">Gnomen miinaharava</name>
+  <name xml:lang="fa">مین‌های گنوم</name>
+  <name xml:lang="eu">GNOME Minak</name>
+  <name xml:lang="es">GNOME Minas</name>
+  <name xml:lang="eo">GNOME Minoj</name>
+  <name xml:lang="en_GB">GNOME Mines</name>
+  <name xml:lang="el">Νάρκες GNOME</name>
+  <name xml:lang="dz">ཇི་ནོམ་གྱི་འགས་རྫས།</name>
+  <name xml:lang="de">Minen</name>
+  <name xml:lang="da">GNOME Minestryger</name>
+  <name xml:lang="cs">Miny GNOME</name>
+  <name xml:lang="ckb">مینەکانی گنۆم</name>
+  <name xml:lang="ca@valencia">GNOME Mines</name>
+  <name xml:lang="ca">GNOME Mines</name>
+  <name xml:lang="bs">GNOME Mine</name>
+  <name xml:lang="bg">Мини</name>
+  <name xml:lang="be">Мінёр GNOME</name>
+  <name xml:lang="an">GNOME Minas</name>
+  <summary>Clear hidden mines from a minefield</summary>
+  <summary xml:lang="zh_TW">清除方格陣中的隱藏的地雷</summary>
+  <summary xml:lang="zh_HK">清除方格陣中的隱藏的地雷</summary>
+  <summary xml:lang="zh_CN">扫除雷区里的隐藏的地雷</summary>
+  <summary xml:lang="vi">Xóa mọi quả mìn bị ẩn ra khỏi bãi mìn</summary>
+  <summary xml:lang="uk">Очистити мінне поле від прихованих мін</summary>
+  <summary xml:lang="ug">مىنا مەيدانىدىن يوشۇرۇن مىنالارنى تازىلايدۇ</summary>
+  <summary xml:lang="tr">Mayın tarlasından gizli mayınları temizle</summary>
+  <summary xml:lang="th">กู้กับระเบิดที่ซ่อนอยู่จากสนาม</summary>
+  <summary xml:lang="te">గనిక్షేత్రమునుండి మరుగునపరిచిన గనులను శుభ్రముచేయి</summary>
+  <summary xml:lang="ta">பிதைந்து உள்ள கண்ணிவெடிகளை அகற்றவும்</summary>
+  <summary xml:lang="sv">Rensa dolda minor från ett minfält</summary>
+  <summary xml:lang="sr@latin">Očistite skrivene mine sa minskog polja</summary>
+  <summary xml:lang="sr">Очистите скривене мине са минског поља</summary>
+  <summary xml:lang="sl">Očistite minsko polje skritih min</summary>
+  <summary xml:lang="sk">Odhaľte skryté míny v mínovom poli</summary>
+  <summary xml:lang="si">බිම් බෝම්බ කළාපයකින් බිම් බෝම්බ ඉවත් කරන්න</summary>
+  <summary xml:lang="ru">Поиск мин на минном поле</summary>
+  <summary xml:lang="ro">Găsește minele de pe un câmp minat</summary>
+  <summary xml:lang="pt_BR">Limpe as minas de um campo minado</summary>
+  <summary xml:lang="pt">Limpar as minas escondidas num campo minado</summary>
+  <summary xml:lang="pl">Oczyszczanie pola minowego z ukrytych min</summary>
+  <summary xml:lang="pa">ਸੁਰੰਗ-ਖੇਤਰ ਵਿੱਚੋਂ ਸੁਰੰਗਾਂ ਖਾਲੀ ਕਰੋ</summary>
+  <summary xml:lang="or">ଗୋଟିଏ ମାଇନ କ୍ଷେତ୍ରରୁ ଲୁକ୍କାଯୀତ ମାଇନ ଗୁଡିକୁ ପରିଷ୍କାର କର</summary>
+  <summary xml:lang="oc">Netejar un camp de minas de sas minas amagadas</summary>
+  <summary xml:lang="nn">Fjern skjulte miner frå eit minefelt</summary>
+  <summary xml:lang="nl">Zoek de mijnen in een mijnenveld</summary>
+  <summary xml:lang="ne">खानी फिल्डबाट लुकेका खानी हटाउनुहोस्</summary>
+  <summary xml:lang="nb">Fjern skjulte miner fra et minefelt</summary>
+  <summary xml:lang="ms">Bersihkan periuk api yang tersembunyi</summary>
+  <summary xml:lang="mr">माइनफील्डमधून लपलेल्या माइन्स काढा</summary>
+  <summary xml:lang="ml">യുദ്ധഭൂമിയില്‍നിന്ന് കുഴിബോംബുകള്‍ എടുത്ത് മാറ്റുക</summary>
+  <summary xml:lang="mk">Исчисти ги мините од минското поле</summary>
+  <summary xml:lang="mai">सुरंग भूमि सँ नुकल सुरंगकेँ मेटाबू</summary>
+  <summary xml:lang="lv">Notīrīt apslēptas mīnas no laukuma</summary>
+  <summary xml:lang="lt">Išvalykite lauką nuo paslėptų minų</summary>
+  <summary xml:lang="ko">지뢰밭에서 숨겨진 지뢰를 제거합니다</summary>
+  <summary xml:lang="kn">ಅಡಗಿಸಲಾದ ಮೈನ್‌ಗಳನ್ನು ಮೈನ್‌ಫೀಲ್ಡಿನಿಂದ ತೆರವುಗೊಳಿಸು</summary>
+  <summary xml:lang="km">សម្អាត​មីន​ដែល​បាន​លាក់​ពី​វាល​កប់មីន</summary>
+  <summary xml:lang="kk">Миналар өрісінен жасырын миналарды тазарту</summary>
+  <summary xml:lang="ja">地雷原から見えない地雷を除去してください</summary>
+  <summary xml:lang="it">Scova le mine nascoste in un campo minato</summary>
+  <summary xml:lang="is">Hreinsa faldar sprengjur af sprengjusvæði</summary>
+  <summary xml:lang="id">Kosongkan ranjau tersembunyi dari medan ranjau</summary>
+  <summary xml:lang="hu">Elrejtett aknák eltávolítása az aknamezőről</summary>
+  <summary xml:lang="hr">Uklonite skrivene mine iz minskog polja</summary>
+  <summary xml:lang="hi">सुरंग भूमि से छुपे सुरंगों को मिटाएँ</summary>
+  <summary xml:lang="he">ניקוי מוקשים חבויים משדה מוקשים</summary>
+  <summary xml:lang="gu">ખાણક્ષેત્રમાંથી છુપા ગોળાઓ સાફ કરો</summary>
+  <summary xml:lang="gl">Limpar as minas agochadas do campo minado</summary>
+  <summary xml:lang="fur">Smine un cjamp di minis</summary>
+  <summary xml:lang="fr">Nettoyer un champ de mines de ses mines cachées</summary>
+  <summary xml:lang="fi">Puhdista piilotetut miinat miinakentältä</summary>
+  <summary xml:lang="fa">پاک‌سازی مین‌های نهفته از میدان مین</summary>
+  <summary xml:lang="eu">Zedarritu mina-eremuko minak</summary>
+  <summary xml:lang="et">Miinivälja puhastamine sinna peidetud miinidest</summary>
+  <summary xml:lang="es">Limpie de minas el campo minado</summary>
+  <summary xml:lang="eo">Kvitigu kaŝitajn minojn de minplena kampo</summary>
+  <summary xml:lang="en@shaw">𐑒𐑤𐑽 𐑣𐑦𐑛𐑩𐑯 𐑥𐑲𐑯𐑟 𐑓𐑮𐑪𐑥 𐑩 𐑥𐑲𐑯𐑓𐑰𐑤𐑛</summary>
+  <summary xml:lang="en_GB">Clear hidden mines from a minefield</summary>
+  <summary xml:lang="en_CA">Clear hidden mines from a minefield</summary>
+  <summary xml:lang="el">Αφαίρεση κρυμμένων ναρκών από το ναρκοπέδιο</summary>
+  <summary xml:lang="dz">གས་རྫས་ས་སྒོ་ནང་ལས་  གས་རྫས་ཚུ་བསལ་གཏང་།</summary>
+  <summary xml:lang="de">Versteckte Minen aus einem Minenfeld räumen</summary>
+  <summary xml:lang="da">Ryd skjulte miner fra et minefelt</summary>
+  <summary xml:lang="cy">Clirio ffrwydron cudd o faes ffrwydron</summary>
+  <summary xml:lang="cs">Vyčistěte skryté miny z minového pole</summary>
+  <summary xml:lang="ckb">پاککردنەوەی مینەکان لە خانەی مینەکان</summary>
+  <summary xml:lang="ca@valencia">Netegeu les mines ocultes del camp de mines</summary>
+  <summary xml:lang="ca">Netegeu les mines ocultes del camp de mines</summary>
+  <summary xml:lang="bs">Očisti skrivene mine sa minskog polja</summary>
+  <summary xml:lang="bn_IN">মাইনক্ষেত্রে থেকে লুকোনো মাইন সরিয়ে ফেলুন</summary>
+  <summary xml:lang="bn">মাইনক্ষেত্রে থেকে লুকোনো মাইন সরিয়ে ফেলুন</summary>
+  <summary xml:lang="bg">Почистете мините, скрити в минното поле</summary>
+  <summary xml:lang="be">Ачысціце поле ад схаваных мінаў</summary>
+  <summary xml:lang="ast">Llimpiar mines ocultes del campu de mines</summary>
+  <summary xml:lang="as">Clear</summary>
+  <summary xml:lang="ar">مسح ألغام من حقل ألغام</summary>
+  <summary xml:lang="an">Escosque de minas o campo minado</summary>
+  <summary xml:lang="af">Verwyder versteekte myne van 'n mynveld</summary>
+  <description>
+    <p>
+      GNOME Mines is a puzzle game where you search for hidden mines. Flag the
+      spaces with mines as quickly as possible to make the board a safer place. You
+      win the game when you’ve flagged every mine on the board. Be careful not to
+      trigger one, or the game is over!
+    </p>
+    <p xml:lang="zh_TW">GNOME 拆地雷 (Mines) 是一種讓您搜尋隱藏地雷的謎題。儘快將遊戲盤中的地雷標上旗標讓遊戲盤變成安全的地方。當您標上遊戲盤中每一個地雷時就贏得遊戲。請小心不要觸發任何一個，否則遊戲就會結束！</p>
+    <p xml:lang="zh_CN">GNOME 扫雷是一款寻找隐藏地雷的解谜游戏。以最快的速度给棋盘上有雷的地方插上旗，让棋盘变安全。棋盘上所有雷都插上旗时游戏胜利。小心别点到雷哦，点到游戏就结束了！</p>
+    <p xml:lang="vi">Dò mìn GNOME là trò chơi trí tuệ mà ở đó bạn phải tìm những quả mìn bị ẩn. Cắm cờ những ô có mìn càng nhanh càng tốt để làm cho toàn bộ khu vực trở thành nơi an toàn. Bạn thắng ván chơi nếu bạn đã cắm cờ tất cả các ô có mìn trên bàn. Hãy cẩn thận đừng làm nổ mìn, bạn sẽ kết thúc!</p>
+    <p xml:lang="uk">«Міни GNOME»  – гра-головоломка, в якій ви шукаєте приховані міни. Позначте прапорцями клітинки з мінами якнайшвидше, щоб зробити дошку безпечнішою. ви виграєте, коли позначите кожну міну на дошці. Будьте обережними, щоб не задіяти міну, інакше гра закінчиться!</p>
+    <p xml:lang="tr">GNOME Mayınlar, saklı mayınları arayacağınız bulmaca oyunudur. Tahtayı daha güvenli yapmak için mayınlı bölgeleri çabucak işaretleyin. Tahtadaki tüm mayınları işaretlediğinizde oyunu kazanırsınız. Mayınları patlatmamaya dikkat edin, yoksa oyun biter!</p>
+    <p xml:lang="sv">GNOME Minor är ett pusselspel där du söker efter dolda minor. Placera flaggor över rutor med minor så fort som möjligt för att göra brädet till en säkrare plats. Du vinner spelet då du flaggat varje mina på brädet. Var försiktig så du inte aktiverar någon mina, för då tar spelet slut!</p>
+    <p xml:lang="sr@latin">Gnomove mine je igra slagalica u kojoj tražite skrivene mine. Otkrijte polja sa minama što brže možete kako biste tablu učinili bezbednijim mestom. Pobeđujete u igri kada otkrijete svaku minu na tabli. Budite pažljivi da ne nagazite na neku, jer u tom slučaju igra se završava!</p>
+    <p xml:lang="sr">Гномове мине је игра слагалица у којој тражите скривене мине. Откријте поља са минама што брже можете како бисте таблу учинили безбеднијим местом. Побеђујете у игри када откријете сваку мину на табли. Будите пажљиви да не нагазите на неку, јер у том случају игра се завршава!</p>
+    <p xml:lang="sl">Igra Gnome Mine je igra iskanja skritih min. Mesta, kjer so mine, je treba čim hitreje označiti z zastavicami. Igre je konec, ko so pravilno označena vsa polja z minami. Če stopite na polje z mino, je igre konec.</p>
+    <p xml:lang="sk">Míny GNOME je hlavolam, v ktorom odhaľujete skryté míny. V čo najkratšom možnom čase označte všetky míny a spravte tak hraciu plochu bezpečnejším miestom. Hru vyhráte ak označíte všetky míny na hracej ploche. Buďte opatrní a neodpáľte žiadnu mínu, inak hra končí!</p>
+    <p xml:lang="ru">Сапёр GNOME — это игра, в которой нужно найти скрытые мины. Установите флажки на все поля, где находятся мины, затратив минимальное количество времени. Вы побеждаете, если все мины на поле отмечены флажками. Не нажимайте на мины, иначе игра закончится!</p>
+    <p xml:lang="ro">Mine GNOME este un joc puzzle în care se caută mine ascunse. Marcați spațiile minate cât de repede posibil pentru a transforma tabla într-un loc mai sigur. Câștigați jocul atunci când ați marcat fiecare mină de pe tablă. Aveți grijă să nu declanșați una, altfel jocul se încheie!</p>
+    <p xml:lang="pt_BR">O Minas do GNOME é um jogo de quebra-cabeças onde você deve procurar por minas escondidas. Sinalize os espaços que possuem minas o mais rápido possível para fazer do tabuleiro um local mais seguro. Você vence o jogo quando colocou bandeiras em cada mina do tabuleiro. Só tenha cuidado em não disparar uma delas, pois aí você perderá (fim de jogo)!</p>
+    <p xml:lang="pt">O Minas GNOME é um quebra cabeças onde procura minas escondidas. Marque os espaços onde as minas estão, o mais rapidamente possível, para tornar o tabuleiro mais seguro. Ganha o jogo quando tiver marcado todas as minas no tabuleiro. Seja cuidadoso e não ative nenhuma mina ou o jogo termina!</p>
+    <p xml:lang="pl">Miny GNOME to gra w wyszukiwanie ukrytych min. Należy oznaczyć flagami pola z minami jak najszybciej, aby plansza była bezpieczna. Wygrywa się po oznaczeniu wszystkich min na planszy. Gra kończy się, kiedy mina zostanie uaktywniona!</p>
+    <p xml:lang="nl">Gnome Mijnenveger is een puzzelspel waarin u naar verborgen mijnen zoekt. Plaats zo snel mogelijk vlaggen op de met mijnen gevulde plaatsen om het bord veilig te maken. U wint het spel van zodra u een vlag heeft geplaatst op elke mijn op het bord. Zorg dat u niet per ongeluk een mijn doet ontploffen, of het spel is voorbij!</p>
+    <p xml:lang="nb">GNOME Mines er et puslespill hvor du leter etter skjulte miner. Flagg ruter med miner så raskt som mulig for å gjøre brettet til et tryggere sted. Du vinner spillet når du har flagget alle minene på brettet. Vær forsiktig så du ikke utløser en, for da er spillet over!</p>
+    <p xml:lang="ms">Periuk Api GNOME ialah sebuah permainan teka-teki yang mana anda perlu mencari periuk api yang tersembunyi. Letak bendera pada kawasan yang dijangka ada periuk api sepantas mungkin supaya lebih selamat. Anda memenangi permainan sekiranya anda berjaya menanda setiap periuk api yang ada di dalam kawasan papan. Hati-hati tidak tersilap pijak, maka permainan tamat!</p>
+    <p xml:lang="lv">GNOME Mīnas ir spēle, kurā jāmeklē slēptas mīnas. Pēc iespējas ātrāk uzliec karogs uz vietām, kur ir mīnas un padari galdiņu par drošāku vietu. Spēle ir uzvarēta, kad uz galdiņa ir ar karogu ir marķēta katra mīna. Tikai skaties, lai kāda mīna neuzsprāgst, tad spēlei ir beigas!</p>
+    <p xml:lang="lt">GNOME minos yra galvosūkis, kuriame reikia ieškoti paslėptų minų. Pažymėkite užminuotas vietas kiek galima greičiau, kad lenta būtų saugesnė vieta. Laimite, kai visos minos lentoje yra pažymėtos. Atsargiai, nesusprogdinkite minos, nes pralaimėsite!</p>
+    <p xml:lang="ko">그놈 지뢰찾기는 숨겨진 지뢰를 탐색하는 퍼즐 게임입니다. 지뢰가 있는 곳을 가능한 빠르게 표시하세요. 보드의 모든 지뢰를 표시하면 승리합니다. 지뢰를 터뜨리지 않도록 하세요. 지뢰를 터뜨리면 게임이 끝납니다!</p>
+    <p xml:lang="kk">GNOME сапёр ойыны — жасырын миналарды іздейтін жұмбақ ойыны. Миналары бар бос орындарды тақтаны қауіпсіз қылу үшін тезірек белгілеңіз. Тақтадағы әрбір минаның жалаушасы болған кезде ойынды жеңіп шығасыз. Ешбір минаны белсендірмеңіз, өйткені ойын аяқталады!</p>
+    <p xml:lang="it">Mine di GNOME è un gioco nel quale bisogna trovare le mine nascoste. Contrassegna gli spazi con le mine usando una bandiera il più velocemente possibile per rendere il campo un posto sicuro. La partita viene vinta quando tutte le mine sono state trovate. Attenzione a non farle esplodere altrimenti il gioco è finito!</p>
+    <p xml:lang="is">GNOME sprengjuleit er ráðgátuleikur þar sem þú leitar að földum sprengjum. Settu fána á þá reiti sem örugglega innihalda sprengjur, og það sem fyrst, til að gera borðið að öruggari stað til að vera á. Þú vinnur leikinn um leið og þú ert búin/n að flagga allar sprengjurnar á borðinu. Varastu samt að setja neina sprengju í gang, því þá er leiknum lokið!</p>
+    <p xml:lang="id">GNOME Ranjau adalah permainan teka-teki dimana Anda mencari ranjau tersembunyi. Tandai ruang dengan ranjau secepat mungkin untuk membuat papan menjadi tempat yang lebih aman. Anda memenangkan permainan ketika Anda telah menandai setiap ranjau pada papan. Berhati-hatilah untuk tidak memicu salah satu, atau permainan berakhir!</p>
+    <p xml:lang="hu">A GNOME Aknakereső egy logikai játék, ahol rejtett aknákat kereshet. Jelölje meg zászlóval az aknák helyét amilyen gyorsan csak tudja, hogy biztonságos hellyé változtassa a táblát. Akkor nyeri meg a játékot, ha minden aknát megjelölt a táblán. Legyen óvatos, nehogy aktiváljon egyet, mert akkor a játéknak vége!</p>
+    <p xml:lang="hr">GNOME mine je igra slagalice gdje tražite skrivene mine. Označite što brže prostor s minama kako bi ploču učinili sigurnijim mjestom. Pobijedili ste kada su označene sve mine na ploči. Budite oprezni da ne aktivirate minu, tada igra završava!</p>
+    <p xml:lang="he">מוקשים מבית GNOME הוא משחק בו ניתן לחפש אחר מוקשים מוסתרים. יש לסמן את המשבצות שיש בהן מוקשים במהירות וכל זה על מנת להפוך את הלוח לבטוח יותר. כדי לנצח במשחק עליך לסמן בדגל כל מוקש על הלוח. עליך להיזהר כדי לא להפעיל אף מוקש אחרת הפסדת במשחק!</p>
+    <p xml:lang="gl">Minas de GNOME é un xogo de quebracabezas onde debe buscar minas agochadas. Marque os espazos con minas tan pronto como poida para asegurar o seu taboleiro. Gana o xogo cando marque cunha bandeira cada mina do taboleiro. Teña coidado de non estourar unha ou o xogo rematará!</p>
+    <p xml:lang="fur">Minis di GNOME al è un zûc dulà che tu âs di cirî lis minis platadis. Segne i spazis des minis doprant une bandiere tal minôr timp pussibil par rindi il puest sigûr. Tu vincis cuant che tu âs cjatât dutis lis minis. Sta atent a no fâlis esplodi se no il zûc al finis!</p>
+    <p xml:lang="fr">Démineur de GNOME est un casse-tête où vous cherchez des mines cachées. Signalez les cases contenant une mine aussi vite que possible pour faire du plateau un lieu sûr. Vous gagnez lorsque vous avez signalé toutes les mines du plateau. Faites attention à ne pas en déclencher une, au risque de perdre la partie !</p>
+    <p xml:lang="fi">Miinaharava on peli, jossa etsitään piilotettuja miinoja. Liputa miinoin varustetut alueet mahdollisimman nopeasti tehdäksesi pelilaudasta turvallisemman alueen. Läpäiset pelin, kun olet liputtanut pelilaudan jokaisen miinan. Varo kuitenkin, ettet vahingossakaan astu yhteenkään miinaan, tai peli päättyy!</p>
+    <p xml:lang="fa">«مین‌های گنوم» یک بازی فکری است که در آن به دنبال مین‌های مخفی شده می‌گردید. با بیش‌ترین سرعت ممکن خانه‌های جدول را به عنوان مین مشخص کنید تا تخته بازی را امن‌تر کنید. شما بازی را زمانی که تمام مین‌های تخته را مشخص کرده باشید برنده می‌شوید. مواضب باشید که یکی از آنها را منفجر نکنید، وگرنه بازی تمام می‌شود!</p>
+    <p xml:lang="eu">GNOME Minak puzzle joko bat da, bere helburua ezkutatutako minak aurkitzea izanik. Jarri bandera minak dituzten lekuei ahalik eta azkarren mahaia seguruagoa izateko. Mahaiko mina guztiei bandera jarritakoan irabaziko duzu jokoa. Kontu eduki mina bat ez lehertzearekin, bestela jokoa amaitzen delako.,</p>
+    <p xml:lang="es">GNOME Minas es un juego de tipo puzle para buscar minas ocultas. Marque los espacios con minas tan rápido como sea posible para asegurar el tablero. Gana la partida cuando ha marcado todas las minas del tablero. Tenga cuidado de no descubrir una mina o se terminará la partida.</p>
+    <p xml:lang="eo">GNOME Minoj estas puzla ludo en kiu oni serĉas kaŝitajn minojn. Flagu la spacojn kun minoj rapidege por sekurigi la tabulon. Vi gajnos kiam vi flagis ĉiujn minojn sur la tabulo. Atentu pro ke vi ne ekagigu minon, ĉar la ludo finus!</p>
+    <p xml:lang="en_GB">GNOME Mines is a puzzle game where you search for hidden mines. Flag the spaces with mines as quickly as possible to make the board a safer place. You win the game when you've flagged every mine on the board. Be careful not to trigger one, or the game is over!</p>
+    <p xml:lang="el">Οι Νάρκες του GNOME είναι ένα παιχνίδι γρίφων όπου αναζητείτε τις κρυμμένες νάρκες. Σημάνετε τις νάρκες όσο το δυνατό γρηγορότερα ώστε να είστε ασφαλής. Κερδίζετε το παιχνίδι όταν έχετε σημάνει όλες τις νάρκες που υπάρχουν. Προσοχή μην πατήσετε κάποια, διότι το παιχνίδι τελειώνει!</p>
+    <p xml:lang="de">»Minen« ist ein Denkspiel, bei dem man nach versteckten Minen sucht. Markieren Sie die Felder mit Minen so schnell wie möglich, um das Spielfeld zu einem sicheren Ort zu machen. Sie gewinnen das Spiel, wenn Sie jede Mine auf dem Feld markiert haben. Geben Sie Acht, keine der Minen auszulösen, sonst ist das Spiel vorbei!</p>
+    <p xml:lang="da">GNOME Minestryger er et tænkespil hvor du søger efter skjulte miner. Sæt flag på felterne med miner så hurtigt som muligt for at gøre brættet et mere sikkert sted. Du vinder spillet når du har sat flag på alle minerne på brættet. Pas på du ikke detonerer en, ellers er spillet slut!</p>
+    <p xml:lang="cs">Miny GNOME jsou logická hra, ve které hledáte skryté miny. Označte co nejrychleji místa s minami, aby se hrací deska stala bezpečným místem. Vyhráváte, jakmile máte označeny všechny miny. Dávejte pozor, abyste přitom žádnou neodpálili, jinak hra končí.</p>
+    <p xml:lang="ca@valencia">El GNOME Mines és un trencaclosques on cerqueu mines amagades. Marqueu amb banderes els espais amb mines tan ràpid com siga possible per fer del tauler un lloc segur. Guanyeu la partida quan marqueu totes les mines del tauler. Aneu amb compte de no activar-ne cap o s'acabarà la partida!</p>
+    <p xml:lang="ca">El GNOME Mines és un trencaclosques on cerqueu mines amagades. Marqueu amb banderes els espais amb mines tan ràpid com sigui possible per a fer del tauler un lloc segur. Guanyeu la partida quan marqueu totes les mines del tauler. Aneu amb compte de no activar-ne cap o s'acabarà la partida!</p>
+    <p xml:lang="bg">„Мини“ е игра-пъзел, в която трябва да откриете скритите мини. Отбелязвайте с флагче местата, където смятате, че има мини, възможно най-бързо, за да направите дъската безопасна. Ще спечелите играта, ако успеете да отбележите всички мини на дъската с флагче. Внимавайте – ако улучите мина, играта приключва!</p>
+    <p xml:lang="be">У галаваломцы Мінёр GNOME трэба знайсці схаваныя міны. Як мага хутчэй пазначце міны сцяжкамі, каб зрабіце дошку бяспечным месцам. Каб выйграць, трэба пазначыць усе міны на дошцы. Асцярожна, не націсніце на адну з іх, інакш вы прапалі!</p>
+    <p>
+      You can select the size of the field you want to play on at the start of the
+      game. If you get stuck, you can ask for a hint: there’s a time penalty, but
+      that’s better than hitting a mine!
+    </p>
+    <p xml:lang="zh_TW">在遊戲開始時您可以選擇想要玩的尺寸。如果您卡關了，您可以尋求提示：這樣會被追加大量的時間，但是比觸發地雷好！</p>
+    <p xml:lang="zh_CN">您可以在游戏启动时选择棋盘大小。陷入僵局时，您可以寻求提示：使用提示会有惩罚，但总比踩到雷好嘛！</p>
+    <p xml:lang="vi">Bạn có thể chọn cỡ của công trường mà bạn muốn chơi ở lúc bắt đầu cuộc chơi. Nếu bạn ở thế bí, bạn có thể hỏi gợi ý: ở đây có hình phạt thời gian, nhưng dù sao thì vẫn tốt hơn là dẫm phải mìn!</p>
+    <p xml:lang="uk">На початку гри, ви можете вибрати розміри поля, на якому хочете зіграти. Якщо ви зайдете в глухий кут, то можете попросити підказку: у цьому випадку ви отримаєте штрафний час, однак це все ж краще, ніж зачепити міну!</p>
+    <p xml:lang="tr">Oyunun başlarken oynamak istediğiniz tarlanın boyutunu seçebilirsiniz. Eğer takılırsanız ipucu isteyebilirsiniz: bu işlem zamanınızdan götürür ancak mayın patlatmaktan iyidir!</p>
+    <p xml:lang="sv">Du kan vid spelets början välja vilken storlek du vill ha på brädet. Om du fastnar kan du be om ett tips. Detta ger strafftid, men det är bättre än att stöta på en mina!</p>
+    <p xml:lang="sr@latin">Na početku igre možete da izaberete veličinu polja za igru. Ako se nađete u bezizlaznoj situaciji (a u pitanju je vaš goli život), možete da zatražite savet: ali to se kažnjava vremenom, mada je i to bolje nego li leteti nebu pod oblake nagazivši na minu!</p>
+    <p xml:lang="sr">На почетку игре можете да изаберете величину поља за игру. Ако се нађете у безизлазној ситуацији (а у питању је ваш голи живот), можете да затражите савет: али то се кажњава временом, мада је и то боље него ли летети небу под облаке нагазивши на мину!</p>
+    <p xml:lang="sl">Na začetku igre je mogoče izbrati velikost igralnega polja. Če se igra zaplete, je mogoče dobiti namig, ki pa je kaznovan s časovnim pribitkom.</p>
+    <p xml:lang="sk">Môžete si vybrať veľkosť hracieho poľa na začiatku hry. Ak si neviete poradiť, môžete požiadať o radu. Dostanete však časovú penalizáciu, ale lepšie ako odpáliť mínu!</p>
+    <p xml:lang="ru">В начале игры вы можете выбрать размер игрового поля. Если вы попали в затруднительное положение, вы можете получить подсказку, за получение подсказки начисляется штрафное время, но это лучше, чем нарваться на мину!</p>
+    <p xml:lang="ro">Puteți selecta dimensiunea câmpului pe care doriți să jucați la începutul jocului. Dacă rămâneți blocat, puteți solicita un indiciu: există o sancțiune de timp, dar este mai bine decât să loviți o mină!</p>
+    <p xml:lang="pt_BR">Você pode selecionar o tamanho do campo que deseja jogar no início do jogo. Caso você fique preso, você pode solicitar uma dica: há uma penalidade de tempo, mas isto é melhor do que bater em uma mina!</p>
+    <p xml:lang="pt">No início do jogo, pode selecionar o tamanho do campo onde pretende jogar. Se ficar bloqueado, pode pedir uma dica: há uma penalização de tempo mas é melhor do que pisar um mina!</p>
+    <p xml:lang="pl">Można wybrać rozmiar planszy na początku gry. W razie utknięcia można użyć podpowiedzi, co dodaje karę czasową, ale zawsze to lepsze niż wybuch!</p>
+    <p xml:lang="nl">U kan de grootte van het speelveld selecteren bij de start van het spel. Een tip voor als u vast zou zitten: het is beter dat de klok verder tikt dan dat u een mijn doet ontploffen!</p>
+    <p xml:lang="nb">Du kan velge størrelse på feltet du vil spille på ved starten av spillet. Hvis du står fast kan du be om et hint. Det gis en straff på tid, men det er bedre enn å treffe en mine!</p>
+    <p xml:lang="ms">Anda boleh memilih saiz medan yang anda mahu untuk memulakan permainan. Jika anda rasa ragu-ragu, sila rujuk pembanyang: tetapi akan ada penalti masa, lebih baik tersilap pijak periuk api!</p>
+    <p xml:lang="lv">Katras spēles sākumā vari izvēlēties laukuma izmēru. Ja iestrēgsti, vari prasīt padomu, būs laika sods, bet tas ir labāk, kā uzkāpt uz mīnas!</p>
+    <p xml:lang="lt">Pradėdami galite pasirinkti lauko dydį, kuriame norite žaisti. Jei užstrigsite, galite prašyti patarimo: būsite nubaustas laiko bauda, bet tai yra geriau, nei užlipti ant minos!</p>
+    <p xml:lang="ko">게임을 시작할 때 플레이할 게임판의 크기를 지정합니다. 중간에 어려움이 생기면 힌트를 얻을 수도 있지만, 시간이 늘어납니다. 하지만 지뢰를 밟는 것보다는 낫습니다!</p>
+    <p xml:lang="kk">Ойынның басында ойналатын өрістің өлшемін таңдауға болады. Егер тұрып қалсаңыз, тұспал сұрауға болады: бұл уақыт кідірісін қосады, бірақ бұл минаға тап болудан жақсы!</p>
+    <p xml:lang="it">È possibile selezionare la dimensione del campo nel quale giocare all'inizio della partita. Se ci si trova in difficoltà si può chiedere un suggerimento: c'è una penalità sul tempo, ma è sempre meglio che far esplodere una mina!</p>
+    <p xml:lang="is">Þú getur valið stærð vígvallarins í upphafi leiks. Ef þú veist ekki hvað þú ættir að gera geturðu fengið vísbendingar; vissulega kemur þá til tímarefsing, en slíkt er væntanlega betra en að stíga á sprengju!</p>
+    <p xml:lang="id">Anda dapat memilih ukuran papan yang ingin Anda mainkan pada awal permainan. Bila Anda mengalami kebuntuan, Anda bisa meminta petunjuk: ada penalti waktu, tapi itu lebih baik daripada mengenai sebuah ranjau!</p>
+    <p xml:lang="hu">A játék elején kiválaszthatja, hogy mekkora méretű mezőn szeretne játszani. Ha elakad, kérhet segítséget: ez időbüntetéssel jár, de még mindig jobb mint hozzáérni egy aknához!</p>
+    <p xml:lang="hr">Možete odabrati željenu veličinu polja na početku igre. Ako zapnete, možete zatražiti savjet: postoji kazneno vrijeme, ali i to je bolje od naleta na minu!</p>
+    <p xml:lang="he">ניתן לבחור את גודל השדה הרצוי למשחק בתחילת המשחק. אם נתקעת ניתן לבקש רמז: מתלווה אליו ענישת זמן אך זה עדיף על פגיעה במוקש!</p>
+    <p xml:lang="gl">Pode seleccionar o tamaño do campo no que quere xogar ao inicio do xogo. Se se atascou pode pedir un consello, porén engadirase un tempo de penalización.</p>
+    <p xml:lang="fur">Al è pussibil selezionâ la dimension dal cjamp dulà zuiâ, tal inizi de partide. Se tu ti cjatis in dificoltât tu puedis domandâ un aiût: e je une penalitât sul timp, ma simpri miôr che fa saltâ pal aiar une mine!</p>
+    <p xml:lang="fr">Vous pouvez choisir la taille du plateau que vous voulez au début de la partie. Si vous êtes bloqué, vous pouvez demander un indice. Vous recevrez une pénalité de temps, mais cela vaut mieux que de sauter sur une mine !</p>
+    <p xml:lang="fi">Voit valita pelilaudan koon pelin alussa. Jos jäät jumiin, voit pyytää vihjettä - siitä seuraa aikasakko, mutta se on parempi vaihtoehto kuin miinaan astuminen!</p>
+    <p xml:lang="fa">در شروع بازی می‌توانید اندازهٔ زمینی که می‌خواهید در شروع بازی کنید را مشخص کنید. اگر گیر کردید، می‌توانید راهنمایی بگیرید: البته این کار جریمهٔ زمانی دارد، اما از منفجر کردن یک مین بهتر است!</p>
+    <p xml:lang="eu">Jokoaren hasieran mahaiaren tamaina hauta dezakezu. Larritasunean aurkitzen bazara, argibide bat eska dezakezu: zigor gisa denbora gehitzen zaizun arren, mina bat zapaltzea baino hobeagoa da.</p>
+    <p xml:lang="es">Puede seleccionar el tamaño del tablero en el que quiere jugar al principio de la partida. Si tiene problema, puede pedir una pista: hay una penalización del tiempo, pero eso mejor que pisar una mina.</p>
+    <p xml:lang="eo">Vi povas elekti la grandon de la kampo kiun vi deziras ludi je la komenco de la ludo. Se vi dubas pri sekva paŝo, vi povas peti sugeston: tio kaŭzas tempan punon, sed tio estas pli bona ol frapi minon!</p>
+    <p xml:lang="en_GB">You can select the size of the field you want to play on at the start of the game. If you get stuck, you can ask for a hint: there's a time penalty, but that's better than hitting a mine!</p>
+    <p xml:lang="el">Μπορείτε να επιλέξετε το μέγεθος του πεδίου που θέλετε να παίξετε κατά την εκκίνηση του παιχνιδιού. Εάν κολλήσετε κάπου, μπορείτε να ζητήσετε μια υπόδειξη: υπάρχει ποινή χρόνου, αλλά είναι καλύτερα από το να χτυπήσετε μια νάρκη!</p>
+    <p xml:lang="de">Sie können die Spielfeldgröße zu Beginn festlegen. Falls Sie nicht weiterkommen, können Sie sich einen Hinweis anzeigen lassen: Es gibt eine Zeitstrafe dafür, aber das ist immer noch besser, als auf eine Mine zu treffen!</p>
+    <p xml:lang="da">Ved spillets begyndelse kan du vælge størrelsen på det område, du vil spille på. Hvis du ikke kan komme videre, kan du bede om at få et tip: der er en tidsstraf, men det er bedre end at ramme en mine!</p>
+    <p xml:lang="cs">Na začátku hry si můžete zvolit velikost pole, na kterém chcete hrát. Když jste v nesnázích, můžete požádat o radu – to vás bude sice stát trestný čas, ale je to lepší než odpálit minu.</p>
+    <p xml:lang="ca@valencia">Podeu seleccionar la mida del camp que voleu jugar a l'inici de la partida. Si esteu perdut, podeu demanar una pista, però tindreu una penalització de temps, però és millor això que no pas activar una mina!</p>
+    <p xml:lang="ca">Podeu seleccionar la mida del camp que voleu jugar a l'inici de la partida. Si esteu perdut, podeu demanar una pista, però tindreu una penalització de temps, però és millor això que no pas activar una mina!</p>
+    <p xml:lang="bg">Можете да изберете размера на полето в началото на играта. Ако се затрудните, може да поискате съвет – ако го направите, ще получите допълнително време като наказание, но това все пак е по-добре, отколкото да улучите мина!</p>
+    <p xml:lang="be">На пачатку гульні выберыце памер поля. Калі вы не ведаеце, што рабіць, можаце выкарыстаць падказку: за гэта даецца штрафны час, але гэта лепей за выбух міны!</p>
+  </description>
+  <screenshots>
+    <screenshot type="default" height="563" width="748">
+      <image>https://people.gnome.org/~mcatanzaro/gnome-mines.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://wiki.gnome.org/Apps/Mines</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-mines/issues</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="help">https://help.gnome.org/users/gnome-mines/stable/</url>
+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <update_contact>robert.roth.off_at_gmail.com</update_contact>
+  <launchable type="desktop-id">org.gnome.Mines.desktop</launchable>
+  <project_group>GNOME</project_group>
+  <releases>
+    <release version="3.31.90" date="2019-02-04" type="development"/>
+    <release version="3.31.4.1" date="2019-01-08"/>
+    <release version="3.31.4" date="2019-01-08"/>
+  </releases>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <translation type="gettext">gnome-mines</translation>
+  <developer_name>The GNOME Project</developer_name>
+  <developer_name xml:lang="zh_TW">GNOME 計畫</developer_name>
+  <developer_name xml:lang="zh_CN">GNOME 项目</developer_name>
+  <developer_name xml:lang="vi">Dự án GNOME</developer_name>
+  <developer_name xml:lang="uk">Проект GNOME</developer_name>
+  <developer_name xml:lang="tr">GNOME Projesi</developer_name>
+  <developer_name xml:lang="sv">GNOME-projektet</developer_name>
+  <developer_name xml:lang="sr@latin">Gnomov projekat</developer_name>
+  <developer_name xml:lang="sr">Гномов пројекат</developer_name>
+  <developer_name xml:lang="sl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="sk">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ru">Проект GNOME</developer_name>
+  <developer_name xml:lang="ro">Proiectul GNOME</developer_name>
+  <developer_name xml:lang="pt_BR">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pt">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="nl">Het Gnome-project</developer_name>
+  <developer_name xml:lang="ne">जिनोम परियोजना</developer_name>
+  <developer_name xml:lang="nb">GNOME prosjektet</developer_name>
+  <developer_name xml:lang="ms">Projek GNOME</developer_name>
+  <developer_name xml:lang="ml">ഗ്നോം പദ്ധതി</developer_name>
+  <developer_name xml:lang="lv">GNOME projekts</developer_name>
+  <developer_name xml:lang="lt">GNOME projektas</developer_name>
+  <developer_name xml:lang="ko">그놈 프로젝트</developer_name>
+  <developer_name xml:lang="kk">GNOME жобасы</developer_name>
+  <developer_name xml:lang="ja">The GNOME Project</developer_name>
+  <developer_name xml:lang="it">Il progetto GNOME</developer_name>
+  <developer_name xml:lang="is">GNOME verkefnið</developer_name>
+  <developer_name xml:lang="id">Proyek GNOME</developer_name>
+  <developer_name xml:lang="hu">A GNOME projekt</developer_name>
+  <developer_name xml:lang="hr">GNOME projekt</developer_name>
+  <developer_name xml:lang="he">מיזם GNOME</developer_name>
+  <developer_name xml:lang="gl">O Proxecto GNOME</developer_name>
+  <developer_name xml:lang="fur">Il progjet GNOME</developer_name>
+  <developer_name xml:lang="fr">Le projet GNOME</developer_name>
+  <developer_name xml:lang="fi">Gnome-projekti</developer_name>
+  <developer_name xml:lang="fa">پروژه گنوم</developer_name>
+  <developer_name xml:lang="eu">GNOME proiektua</developer_name>
+  <developer_name xml:lang="es">El proyecto GNOME</developer_name>
+  <developer_name xml:lang="eo">La projekto GNOME</developer_name>
+  <developer_name xml:lang="en_GB">The GNOME Project</developer_name>
+  <developer_name xml:lang="el">Έργο GNOME</developer_name>
+  <developer_name xml:lang="de">Das GNOME-Projekt</developer_name>
+  <developer_name xml:lang="da">GNOME-projektet</developer_name>
+  <developer_name xml:lang="cs">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ca@valencia">El projecte GNOME</developer_name>
+  <developer_name xml:lang="ca">El projecte GNOME</developer_name>
+  <developer_name xml:lang="bg">Проектът GNOME</developer_name>
+  <developer_name xml:lang="be">Праект GNOME</developer_name>
+  <!-- Generated by  http://apps-xdgapp.rhcloud.com/oars -->
+  <content_rating type="oars-1.0">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">none</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+    <content_attribute id="social-audio">none</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">none</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
+</component>

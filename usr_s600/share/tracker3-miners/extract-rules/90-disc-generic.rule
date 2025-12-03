@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-disc-generic.so
+MimeTypes=application/x-cue;
+FallbackRdfTypes=nfo:Software;
+Graph=tracker:Software
+Hash=6a14e2ec343bc4e00409c4c50e0412a51a3caa51e64532afc92f5371d019ab20
+

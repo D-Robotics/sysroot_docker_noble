@@ -1,0 +1,23 @@
+{
+    "name": "vio_stat",
+    "cmd-list": [
+        {
+            "id": "0x1",
+            "type": "file",
+            "name": "isp0_info",
+            "file": "/proc/hb_isp"
+        },
+        {
+            "id": "0x2",
+            "type": "file",
+            "name": "isp1_info",
+            "file": "/proc/hb_isp_hw1"
+        },
+        {
+            "id": "0x3",
+            "type": "file",
+            "name": "fps_all",
+            "file": "/sys/class/vps/flow/fps"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/aarch64-linux-gnu
+includedir=${prefix}/include
+
+Name: libcanberra
+Description: Event Sound API
+Version: 0.30
+Libs: -L${libdir} -lcanberra 
+Cflags: -D_REENTRANT -I${includedir}
+Requires:

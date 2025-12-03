@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-html.so
+MimeTypes=text/html;application/xhtml+xml;
+FallbackRdfTypes=nfo:HtmlDocument
+Graph=tracker:Documents
+Hash=813dadeb0014a68bdc0475b31e0427354072b47d2fd73ce94e404cf2cee99338
+

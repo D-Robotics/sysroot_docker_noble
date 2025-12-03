@@ -1,0 +1,13 @@
+Document: fonts-sil-abyssinica-features
+Title: Font Features for Abyssinica SIL
+Author: SIL International www.sil.org
+Abstract: How to use optional font features in the Abyssinica SIL font.
+ Additional documentation is located in various files.
+Section: Office
+
+Format: HTML
+Index: /usr/share/doc/fonts-sil-abyssinica/documentation/index.html
+Files: /usr/share/doc/fonts-sil-abyssinica/documentation/*.html
+
+Format: PDF
+Files: /usr/share/doc/fonts-sil-abyssinica/documentation/pdf/*

@@ -1,0 +1,2 @@
+link-to-shared-library-in-wrong-package
+package-name-doesnt-match-sonames libshotwell-authenticator0 libshotwell-plugin-common0 libshotwell-plugin-dev-1.0-0

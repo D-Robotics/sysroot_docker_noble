@@ -1,0 +1,2 @@
+# Netplan complains if its configuration is generally accessible
+non-standard-file-perm 0600 != 0644 [lib/netplan/00-network-manager-all.yaml]

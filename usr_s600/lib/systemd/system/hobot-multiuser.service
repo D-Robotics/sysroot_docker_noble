@@ -1,0 +1,12 @@
+# hobot multiuser service
+[Unit]
+Description=Hobot multiuser service
+Before=systemd-logind.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/multiuser.sh
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=basic.target

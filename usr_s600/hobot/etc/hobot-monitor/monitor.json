@@ -1,0 +1,37 @@
+{
+    "mode": "online",
+    "server_ip": "0.0.0.0",
+    "port": 1234,
+    "sub-configs": [
+        {
+            "class": "SYSINFO",
+            "code": "0xae01",
+            "config": "/usr/hobot/etc/hobot-monitor/sysinfo.json"
+        },
+        {
+            "class": "CPUSTAT",
+            "code": "0xae02",
+            "config": "/usr/hobot/etc/hobot-monitor/cpu_mon.json"
+        },
+        {
+            "class": "BPUSTAT",
+            "code": "0xae03",
+            "config": "/usr/hobot/etc/hobot-monitor/bpu_mon.json"
+        },
+        {
+            "class": "PERI",
+            "code": "0xae06",
+            "config": "/usr/hobot/etc/hobot-monitor/peri_mon.json"
+        },
+        {
+            "class": "VIOSTAT",
+            "code": "0xae08",
+            "config": "/usr/hobot/etc/hobot-monitor/vio_mon.json"
+        },
+        {
+            "class": "NETMON",
+            "code": "0xae09",
+            "config": "/usr/hobot/etc/hobot-monitor/net_mon.json"
+        }
+    ]
+}

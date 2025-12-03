@@ -1,0 +1,9 @@
+flake8_simplify-stubs/METADATA.toml,sha256=JQmSe7_fH6uS-qrwWiW_IYhofekDdykEHFML2goOnqI,154
+flake8_simplify-stubs/__init__.pyi,sha256=C82JYJ5wh6LFfzP7a9bHhP08t1Zs83-GzRo2t2WbCBI,280
+flake8_simplify-stubs/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+types_flake8_simplify-0.21.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+types_flake8_simplify-0.21.dist-info/METADATA,sha256=1733mMFaazZhPfOeY9iP2u1EhNMv4jP4KvULWKpIdeY,1788
+types_flake8_simplify-0.21.dist-info/RECORD,,
+types_flake8_simplify-0.21.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_flake8_simplify-0.21.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+types_flake8_simplify-0.21.dist-info/top_level.txt,sha256=OgG8UQAU6JSMlDsL7o9I5q6Um8UoNWSshvElFC_1vqI,22

@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "exec PCI rescan"
+
+pcie_mode=$(cat /sys/class/boardinfo/pcie_mode)
+if [ "$pcie_mode" != "rc" ]; then
+	echo "can be executed only on RC mode"
+	exit 1
+fi
+
+rootbuses="$(ls /sys/bus/pci/devices/*:01:00.0 -d 2>/dev/null)"
+for bus in "$rootbuses"; do
+	echo 1 > $bus/remove
+done
+echo 1 > /sys/bus/pci/rescan

@@ -1,0 +1,13 @@
+prefix=/usr
+includedir=${prefix}/include
+libdir=${prefix}/lib/aarch64-linux-gnu
+
+have_seatd=true
+have_logind=true
+have_builtin=true
+
+Name: libseat
+Description: Seat management library
+Version: 0.8.0
+Libs: -L${libdir} -lseat
+Cflags: -I${includedir}

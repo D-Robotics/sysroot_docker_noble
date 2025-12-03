@@ -1,0 +1,11 @@
+dockerfile_parse-stubs/METADATA.toml,sha256=NTn7w_LMAm2GChZ9E_-tA2oREOMRqFjQCdl4sduFp-k,99
+dockerfile_parse-stubs/__init__.pyi,sha256=4WciTIRprsd7_5gO0_2WVE-tQQpB0jKnkKunEpZHCYM,75
+dockerfile_parse-stubs/constants.pyi,sha256=WBSo9FXFrNyAO5xo2YkBThRfaaehcEpAtFvoTXrGaUY,50
+dockerfile_parse-stubs/parser.pyi,sha256=-IhPi-6Z5YnuAEabQIaRrtellZOWndHSnvscioJv_YY,2116
+dockerfile_parse-stubs/util.pyi,sha256=p2ysnC3w0k1FtVsIWM4bguYCoDja7wQpmv9qfI2gObg,2038
+types_dockerfile_parse-2.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+types_dockerfile_parse-2.0.dist-info/METADATA,sha256=Dj1gBMyWYCtwDln9yde9X6aGlDfDRutQtqumKgSPF_w,1614
+types_dockerfile_parse-2.0.dist-info/RECORD,,
+types_dockerfile_parse-2.0.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_dockerfile_parse-2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+types_dockerfile_parse-2.0.dist-info/top_level.txt,sha256=6b3ZlYRwBxApEo9SbUezMFzQESSafhp6_BpdEI-_XZ4,23

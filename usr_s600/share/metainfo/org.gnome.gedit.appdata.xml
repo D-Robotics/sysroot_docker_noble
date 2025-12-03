@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 Paolo Borelli <pborelli@gnome.org> -->
+<component type="desktop">
+  <id>org.gnome.gedit.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>gedit</name>
+  <name xml:lang="zh_TW">gedit</name>
+  <name xml:lang="zh_HK">gedit</name>
+  <name xml:lang="zh_CN">Gedit</name>
+  <name xml:lang="wa">gedit</name>
+  <name xml:lang="vi">gedit</name>
+  <name xml:lang="uk">gedit</name>
+  <name xml:lang="ug">gedit</name>
+  <name xml:lang="tr">gedit</name>
+  <name xml:lang="tk">gedit</name>
+  <name xml:lang="ta">gedit</name>
+  <name xml:lang="sv">gedit</name>
+  <name xml:lang="sr">Вилењакова бележница</name>
+  <name xml:lang="sl">gedit</name>
+  <name xml:lang="sk">gedit</name>
+  <name xml:lang="ru">gedit</name>
+  <name xml:lang="ro">gedit</name>
+  <name xml:lang="pt_BR">gedit</name>
+  <name xml:lang="pt">gedit</name>
+  <name xml:lang="pl">gedit</name>
+  <name xml:lang="pa">ਜੀ-ਸੰਪਾਦਕ</name>
+  <name xml:lang="or">gedit</name>
+  <name xml:lang="oc">gedit</name>
+  <name xml:lang="nn">gedit</name>
+  <name xml:lang="nl">gedit</name>
+  <name xml:lang="nds">gedit</name>
+  <name xml:lang="nb">gedit</name>
+  <name xml:lang="my">gedit</name>
+  <name xml:lang="ms">gedit</name>
+  <name xml:lang="mk">gedit</name>
+  <name xml:lang="mjw">gedit</name>
+  <name xml:lang="lv">gedit</name>
+  <name xml:lang="lt">gedit</name>
+  <name xml:lang="ko">지에디트</name>
+  <name xml:lang="kn">gedit</name>
+  <name xml:lang="km">gedit</name>
+  <name xml:lang="kk">gedit</name>
+  <name xml:lang="ka">gedit</name>
+  <name xml:lang="ja">gedit</name>
+  <name xml:lang="it">gedit</name>
+  <name xml:lang="is">gedit</name>
+  <name xml:lang="id">gedit</name>
+  <name xml:lang="hu">gedit</name>
+  <name xml:lang="hr">gedit</name>
+  <name xml:lang="he">gedit</name>
+  <name xml:lang="gl">gedit</name>
+  <name xml:lang="ga">gedit</name>
+  <name xml:lang="fur">gedit</name>
+  <name xml:lang="fr">gedit</name>
+  <name xml:lang="fi">gedit</name>
+  <name xml:lang="fa">جی‌ادیت</name>
+  <name xml:lang="eu">gedit</name>
+  <name xml:lang="et">gedit</name>
+  <name xml:lang="es">gedit</name>
+  <name xml:lang="eo">gedit</name>
+  <name xml:lang="en_GB">gedit</name>
+  <name xml:lang="en_CA">gedit</name>
+  <name xml:lang="el">gedit</name>
+  <name xml:lang="de">gedit</name>
+  <name xml:lang="da">gedit</name>
+  <name xml:lang="cs">gedit</name>
+  <name xml:lang="crh">gedit</name>
+  <name xml:lang="ckb">‫gedit</name>
+  <name xml:lang="ca">gedit</name>
+  <name xml:lang="bs">gedit</name>
+  <name xml:lang="br">gedit</name>
+  <name xml:lang="bn_IN">gedit</name>
+  <name xml:lang="az">gedit</name>
+  <name xml:lang="ast">gedit</name>
+  <name xml:lang="as">gedit</name>
+  <name xml:lang="an">gedit</name>
+  <name xml:lang="am">gedit</name>
+  <name xml:lang="af">gedit</name>
+  <summary>Text editor</summary>
+  <summary xml:lang="zh_CN">文本编辑器</summary>
+  <summary xml:lang="uk">Текстовий редактор</summary>
+  <summary xml:lang="tr">Metin düzenleyici</summary>
+  <summary xml:lang="sv">Textredigerare</summary>
+  <summary xml:lang="sr">Уређивач текста</summary>
+  <summary xml:lang="sl">Urejevalnik besedil</summary>
+  <summary xml:lang="ru">Текстовый редактор</summary>
+  <summary xml:lang="pt_BR">Editor de texto</summary>
+  <summary xml:lang="pt">Editor de texto</summary>
+  <summary xml:lang="pl">Edytor tekstu</summary>
+  <summary xml:lang="lt">Tekstų redaktorius</summary>
+  <summary xml:lang="ko">텍스트 편집기</summary>
+  <summary xml:lang="ka">ტექსტური რედაქტორი</summary>
+  <summary xml:lang="is">Textaritill</summary>
+  <summary xml:lang="id">Penyunting teks</summary>
+  <summary xml:lang="hu">Szövegszerkesztő</summary>
+  <summary xml:lang="hr">Uređivač teksta</summary>
+  <summary xml:lang="he">עורך טקסט</summary>
+  <summary xml:lang="gl">Editor de texto</summary>
+  <summary xml:lang="fur">Editôr di test</summary>
+  <summary xml:lang="fr">Éditeur de texte</summary>
+  <summary xml:lang="fi">Tekstimuokkain</summary>
+  <summary xml:lang="fa">ویرایشگر متن</summary>
+  <summary xml:lang="eu">Testu-editorea</summary>
+  <summary xml:lang="de">Texteditor</summary>
+  <summary xml:lang="da">Tekstredigering</summary>
+  <summary xml:lang="cs">Textový editor</summary>
+  <summary xml:lang="ca">Editor de text</summary>
+  <description>
+    <p>
+      gedit is an easy-to-use and general-purpose text editor. Its development
+      started in 1998, at the beginnings of the GNOME project, with a good
+      integration with that desktop environment.
+    </p>
+    <p xml:lang="uk">gedit — проста у користуванні програма загального призначення для редагування тексту. Її розробку було розпочато у 1998 році, на початку проєкту GNOME, із доброю інтеграцією із цим стільничним середовищем.</p>
+    <p xml:lang="tr">gedit, kullanımı kolay genel amaçlı metin düzenleyicidir. 1998 yılında, GNOME projesinin başlangıcında, masaüstü ortamıyla iyi tümleşecek şekilde geliştirilmeye başlamıştır.</p>
+    <p xml:lang="sv">gedit är en lättanvänd universaltextredigerare. Den skapades 1998, i begynnelsen av GNOME, och har god integration med den skrivbordsmiljön.</p>
+    <p xml:lang="ru">gedit - это простой в использовании и универсальный текстовый редактор. Его разработка началась в 1998 году, на заре проекта GNOME, с хорошей интеграцией в эту среду рабочего стола.</p>
+    <p xml:lang="pt">gedit é um editor de texto fácil de usar e de uso geral. O seu desenvolvimento começou em 1998, no início do projeto GNOME, com uma boa integração com aquele ambiente gráfico.</p>
+    <p xml:lang="pl">gedit to łatwy w użyciu i uniwersalny edytor tekstu. Powstał w 1998 roku, na samym początku GNOME, więc dobrze integruje się z tym środowiskiem.</p>
+    <p xml:lang="id">gedit adalah penyunting teks yang mudah digunakan dan serba guna. Pengembangannya dimulai pada tahun 1998, pada awal proyek GNOME, dengan integrasi yang baik dengan lingkungan destop itu.</p>
+    <p xml:lang="hu">A gedit egy könnyen használható, általános célú szövegszerkesztő. A fejlesztése 1998-ban, a GNOME projekt kezdeteinél indult, és jól integrálódott az asztali környezetbe.</p>
+    <p xml:lang="he">‏gedit הוא עורך טקסט למטרות כלליות. הוא נוצר בשנת 1998, בתחילתו של מיזם GNOME, עם שילוב בשולחן עבודה זה.</p>
+    <p xml:lang="gl">gedit é un editor fácil de usar e de propósito xeral. O seu desenvolvemento comezou en 1998, nos inicios do proxecto GNOME, con unha boa integración co ambiente de escritorio.</p>
+    <p xml:lang="eu">Gedit erabiltzeko erraza den xede orokorreko testu-editorea da Garapena 1998an hasi zen, GNOME proiektuaren hastapenetan, eta horregatik, GNOMEren mahaigainarekin integrazio ona du.</p>
+    <p xml:lang="de">gedit ist ein einfach zu verwendender und universeller Texteditor. Seine Entwicklung begann 1998, in den Anfängen des GNOME-Projekts, mit einer guten Integration in diese Arbeitsumgebung.</p>
+    <p xml:lang="ca">El gedit és un editor de text fàcil d'utilitzar i de propòsit general. El desenvolupament començà el 1998, als inicis del projecte GNOME, amb una bona integració amb aquest entorn d'escriptori.</p>
+    <p>
+      You can use it to write simple notes and documents, or you can enable more
+      advanced features that are useful for software development.
+    </p>
+    <p xml:lang="uk">Його можна використовувати для написання звичайних нотаток та документів, або ви можете увімкнути додаткові можливості, які є корисними для розробки програмного забезпечення.</p>
+    <p xml:lang="tr">Basit notlar ve belgeler yazmak için kullanabilir ya da yazılım geliştirme için yararlı olan daha gelişmiş özellikleri etkinleştirebilirsiniz.</p>
+    <p xml:lang="sv">Du kan använda den för att skriva enkla anteckningar och dokument, eller så kan du aktivera mer avancerade funktioner som är användbara för programvaruutveckling.</p>
+    <p xml:lang="ru">Вы можете использовать его для написания простых заметок и документов, а можете включить более продвинутые функции, полезные для разработки программного обеспечения.</p>
+    <p xml:lang="pt">Pode usá-lo para escrever notas e documentos simples, ou pode ativar recursos mais avançados que são úteis para o desenvolvimento de software.</p>
+    <p xml:lang="pl">Można go używać do pisania prostych notatek i dokumentów, albo włączyć bardziej zaawansowane funkcje przydatne do pisania oprogramowania.</p>
+    <p xml:lang="id">Anda dapat menggunakannya untuk menulis catatan dan dokumen sederhana, atau Anda dapat mengaktifkan fitur yang lebih canggih yang berguna untuk pengembangan perangkat lunak.</p>
+    <p xml:lang="hu">Használhatja egyszerű jegyzetek és dokumentumok írásához, vagy engedélyezhet a szoftverfejlesztéshez hasznos, speciálisabb funkciókat.</p>
+    <p xml:lang="he">ניתן להשתמש בו לכתיבת הערות ומסמכים פשוטים, או לאפשר תכונות מתקדמות יותר לפיתוח תכנה.</p>
+    <p xml:lang="gl">Pode usalo para escribir notas e documentos sinxelos, ou pode habilitar funcións máis avanzadas que sexan útiles para o desenvolvemento de software.</p>
+    <p xml:lang="eu">Ohar eta dokumentu sinpleak idazteko erabili daiteke, baina softwarea garatzeko erabilgarriak diren eginbide aurreratuagoak ere gaitu daitezke.</p>
+    <p xml:lang="de">Sie können damit einfache Notizen und Dokumente schreiben oder auch fortgeschrittene Funktionen aktivieren, die nützlich für die Softwareentwicklung sind.</p>
+    <p xml:lang="ca">El podeu usar per a escriure notes simples i documents, o podeu activar característiques més avançades que són útils per al desenvolupament de programari.</p>
+  </description>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>HighContrast</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/swilmet/gedit-extra/-/raw/main/screenshots/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://wiki.gnome.org/Apps/Gedit</url>
+  <url type="bugtracker">https://wiki.gnome.org/Apps/Gedit/ReportingBugs</url>
+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
+  <update_contact>swilmet@gnome.org</update_contact>
+  <translation type="gettext">gedit</translation>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <!-- Beware for alpha/beta/rc, example: version="44~beta" -->
+    <release version="46.2" date="2024-02-18"/>
+    <release version="46.1" date="2023-08-06"/>
+    <release version="46.0" date="2023-07-29"/>
+    <release version="45.0" date="2023-06-23"/>
+    <release version="45~alpha" date="2023-04-26"/>
+    <release version="44.1" date="2023-01-04"/>
+    <release version="44.0" date="2023-01-01"/>
+    <release version="43.1" date="2022-11-04"/>
+    <release version="43.0" date="2022-11-03"/>
+  </releases>
+</component>

@@ -1,0 +1,16 @@
+# stackdump
+
+[Unit]
+Description=stackdump service
+After=hobot-mount.service hobot-loadko.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+StartLimitBurst=0
+ExecStart=/usr/bin/hobot-stackdump.sh
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=basic.target

@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright © 2014 Christian Persch
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2, or (at your option)
+  any later version.
+
+  This program is distributed in the hope conf it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<component type="desktop-application">
+  <id>org.gnome.Evince</id>
+  <launchable type="desktop-id">org.gnome.Evince.desktop</launchable>
+  <metadata_license>GPL-2.0+ or GFDL-1.3-only</metadata_license>
+  <project_license>GPL-2.0-or-later</project_license>
+  <name>Document Viewer</name>
+  <name xml:lang="zu">Isibuki samadokhumende</name>
+  <name xml:lang="zh_TW">文件檢視器</name>
+  <name xml:lang="zh_HK">文件檢視器</name>
+  <name xml:lang="zh_CN">文档查看器</name>
+  <name xml:lang="wa">Håyneu di documints</name>
+  <name xml:lang="vi">Xem tài liệu</name>
+  <name xml:lang="uk">Переглядач документів</name>
+  <name xml:lang="ug">پۈتۈك كۆرگۈ</name>
+  <name xml:lang="tr">Belge Görüntüleyici</name>
+  <name xml:lang="th">โปรแกรมดูเอกสาร</name>
+  <name xml:lang="tg">Муштарии ҳуҷҷат</name>
+  <name xml:lang="te">పత్ర వీక్షకం</name>
+  <name xml:lang="ta">ஆவண காட்டி</name>
+  <name xml:lang="sv">Dokumentvisare</name>
+  <name xml:lang="sr@latin">Pregledač dokumenata</name>
+  <name xml:lang="sr">Прегледач докумената</name>
+  <name xml:lang="sq">Shikues dokumentesh</name>
+  <name xml:lang="sl">Pregledovalnik dokumentov</name>
+  <name xml:lang="sk">Prehliadač dokumentov</name>
+  <name xml:lang="si">ලේඛන දසුන</name>
+  <name xml:lang="ru">Просмотр документов</name>
+  <name xml:lang="ro">Vizualizator de documente</name>
+  <name xml:lang="pt_BR">Visualizador de documentos</name>
+  <name xml:lang="pt">Visualizador de documentos</name>
+  <name xml:lang="ps">لاسوند ليدانی</name>
+  <name xml:lang="pl">Przeglądarka dokumentów</name>
+  <name xml:lang="pa">ਦਸਤਾਵੇਜ਼ ਦਰਸ਼ਕ</name>
+  <name xml:lang="or">ଦଲିଲ ପ୍ରଦର୍ଶକ</name>
+  <name xml:lang="oc">Visionador de documents</name>
+  <name xml:lang="nn">Dokumentframsynar</name>
+  <name xml:lang="nl">Documentweergave</name>
+  <name xml:lang="ne">कागजात दृश्यक</name>
+  <name xml:lang="nds">Dokumentkieker</name>
+  <name xml:lang="nb">Dokumentvisning</name>
+  <name xml:lang="my">ဖိုင်မြင်ကွင်း</name>
+  <name xml:lang="ms">Pelihat Dokumen</name>
+  <name xml:lang="mr">दस्तऐवज दर्शक</name>
+  <name xml:lang="mn">Баримт бичиг үзүүлэгч</name>
+  <name xml:lang="ml">രേഖാദര്‍ശിനി</name>
+  <name xml:lang="mk">Прегледувач за документи</name>
+  <name xml:lang="mjw">Document kelang-ason</name>
+  <name xml:lang="mg">Mpaneho tahirin-kevitra</name>
+  <name xml:lang="mai">दस्ताबेज प्रदर्शक</name>
+  <name xml:lang="lv">Dokumentu skatītājs</name>
+  <name xml:lang="lt">Dokumentų peržiūros programa</name>
+  <name xml:lang="ku">Nîşanderê Belgeyan</name>
+  <name xml:lang="ks">कागजात वुछनुक</name>
+  <name xml:lang="ko">문서 보기</name>
+  <name xml:lang="kn">ದಸ್ತಾವೇಜು ವೀಕ್ಷಕ</name>
+  <name xml:lang="km">កម្មវិធី​មើល​ឯកសារ</name>
+  <name xml:lang="kk">Құжаттарды көрсету қолданбасы</name>
+  <name xml:lang="kab">Amsenqad n yisemliyen</name>
+  <name xml:lang="ka">დოკუმენტების მნახველი</name>
+  <name xml:lang="ja">ドキュメントビューアー</name>
+  <name xml:lang="it">Visualizzatore documenti</name>
+  <name xml:lang="is">Skjalaskoðari</name>
+  <name xml:lang="ie">Visor de documentes</name>
+  <name xml:lang="id">Penampil Dokumen</name>
+  <name xml:lang="hu">Dokumentummegjelenítő</name>
+  <name xml:lang="hr">Preglednik dokumenata</name>
+  <name xml:lang="hi">दस्तावेज़ दर्शक</name>
+  <name xml:lang="he">מציג מסמכים</name>
+  <name xml:lang="gu">દસ્તાવેજ દર્શક</name>
+  <name xml:lang="gl">Visor de documentos</name>
+  <name xml:lang="gd">Sealladair sgrìobhainnean</name>
+  <name xml:lang="ga">Amharcán Cáipéisí</name>
+  <name xml:lang="fur">Visualizadôr di Documents</name>
+  <name xml:lang="fr">Visionneur de documents</name>
+  <name xml:lang="fi">Asiakirjakatselin</name>
+  <name xml:lang="fa">نمایشگر سند</name>
+  <name xml:lang="eu">Dokumentu-ikustailea</name>
+  <name xml:lang="et">Dokumendinäitaja</name>
+  <name xml:lang="es">Visor de documentos</name>
+  <name xml:lang="eo">Dokumentmontrilo</name>
+  <name xml:lang="en@shaw">𐑛𐑪𐑒𐑿𐑥𐑩𐑯𐑑 𐑝𐑿𐑼</name>
+  <name xml:lang="en_GB">Document Viewer</name>
+  <name xml:lang="en_CA">Document Viewer</name>
+  <name xml:lang="el">Προβολή εγγράφων</name>
+  <name xml:lang="dz">ཡིག་ཆ་མཐོང་བྱེད།</name>
+  <name xml:lang="de">Dokumentenbetrachter</name>
+  <name xml:lang="da">Dokumentfremviser</name>
+  <name xml:lang="cy">Gwelydd Dogfennau</name>
+  <name xml:lang="cs">Prohlížeč dokumentů</name>
+  <name xml:lang="ca@valencia">Visualitzador de documents</name>
+  <name xml:lang="ca">Visualitzador de documents</name>
+  <name xml:lang="bs">Pregledač dokumenta</name>
+  <name xml:lang="br">Lenner teulioù</name>
+  <name xml:lang="bn_IN">ডকুমেন্ট প্রদর্শন ব্যবস্থা</name>
+  <name xml:lang="bn">নথি প্রদর্শক</name>
+  <name xml:lang="bg">Преглед на документи</name>
+  <name xml:lang="be@latin">Ahladalnik dakumentaŭ</name>
+  <name xml:lang="be">Праглядальнік дакументаў</name>
+  <name xml:lang="ast">Visor de Documentos</name>
+  <name xml:lang="as">দস্তাবেজ প্ৰদৰ্শক</name>
+  <name xml:lang="ar">عارض المستندات</name>
+  <name xml:lang="an">Visualizador de documentos</name>
+  <name xml:lang="af">Dokumentbekyker</name>
+  <summary>Document viewer for popular document formats</summary>
+  <summary xml:lang="zh_TW">常用文件格式的文件檢視器</summary>
+  <summary xml:lang="zh_HK">常用文件格式的文件檢視器</summary>
+  <summary xml:lang="zh_CN">支持查看常见文档格式的查看器</summary>
+  <summary xml:lang="vi">Ứng dụng xem các tài liệu có định dạng phổ biến</summary>
+  <summary xml:lang="uk">Переглядач документів для популярних форматів</summary>
+  <summary xml:lang="tr">Gözde belge biçimleri için belge görüntüleyici</summary>
+  <summary xml:lang="th">โปรแกรมดูเอกสารสำหรับฟอร์แมตยอดนิยมต่างๆ</summary>
+  <summary xml:lang="tg">Барномаи намоиши ҳуҷҷатҳо барои форматҳои ҳуҷҷатҳои оммавӣ</summary>
+  <summary xml:lang="te">ప్రఖ్యాత పత్ర ఫార్మాట్ల కొరకు పత్ర వీక్షణి</summary>
+  <summary xml:lang="ta">பிரபல ஆவண வடிவமைப்புகளுக்கான ஆவணக் காட்சிக்கருவி</summary>
+  <summary xml:lang="sv">Dokumentvisare för populära dokumentformat</summary>
+  <summary xml:lang="sr@latin">Pregledač dokumenata za popularne zapise dokumenata</summary>
+  <summary xml:lang="sr">Прегледач докумената за популарне записе докумената</summary>
+  <summary xml:lang="sl">Pregledovalnik različnih zapisov dokumentov</summary>
+  <summary xml:lang="sk">Prehliadač dokumentov pre obľúbené formáty dokumentov</summary>
+  <summary xml:lang="ru">Приложение для просмотра документов в распространённых форматах</summary>
+  <summary xml:lang="ro">Vizualizator de documente pentru formatele populare</summary>
+  <summary xml:lang="pt_BR">Visualizador de documentos para formatos populares de documentos</summary>
+  <summary xml:lang="pt">Visualizador de documentos para formatos comuns de documentos</summary>
+  <summary xml:lang="pl">Przeglądarka dokumentów w popularnych formatach</summary>
+  <summary xml:lang="pa">ਹਰਮਨਪਿਆਰੇ ਦਸਤਾਵੇਜ਼ ਫਾਰਮੈਟਾਂ ਲਈ ਦਸਤਾਵੇਜ਼ ਦਰਸ਼ਕ</summary>
+  <summary xml:lang="oc">Visionador de documents per de formats de documents corrents</summary>
+  <summary xml:lang="nl">Documentenviewer voor populaire documentformaten</summary>
+  <summary xml:lang="ne">लोकप्रिय कागजात स्वरूप लागि कागजात दर्शक</summary>
+  <summary xml:lang="nb">Les gjennom dokumenter</summary>
+  <summary xml:lang="my">အသုံးများသော မှတ်တမ်းစာအုပ်အမျိုးအစားများအတွက် မှတ်တမ်းစာအုပ်ကြည့်ရှုကိရိယာ</summary>
+  <summary xml:lang="ms">Pelihat dokumen untuk format-format dokumen popular</summary>
+  <summary xml:lang="mr">प्रसिद्ध दस्तऐवज रूपणकरिता दस्तऐवज दर्शक</summary>
+  <summary xml:lang="lv">Dokumentu skatītājs izplatītiem dokumentu formātiem</summary>
+  <summary xml:lang="lt">Dokumentų žiūryklė populiariems dokumentų formatams</summary>
+  <summary xml:lang="ko">많이 사용하는 문서 형식에 대한 문서 보기 프로그램</summary>
+  <summary xml:lang="kn">ಜನಪ್ರಿಯ ದಸ್ತಾವೇಜು ವಿನ್ಯಾಸಗಳಿಗಾಗಿನ ದಸ್ತಾವೇಜು ವೀಕ್ಷಕ</summary>
+  <summary xml:lang="kk">Кеңінен қолданылатын құжаттар пішімдерін қарау қолданбасы</summary>
+  <summary xml:lang="kab">Amsenqad n yisemliyen i yimasalne n yifuyla i yettwassnen</summary>
+  <summary xml:lang="ka">დოკუმენტების პოპულარული ფორმატების გამხსნელი</summary>
+  <summary xml:lang="ja">人気の高い文書フォーマット用のドキュメントビューアー</summary>
+  <summary xml:lang="it">Visualizzatore di documenti per i formati più popolari</summary>
+  <summary xml:lang="is">Skjalaskoðari fyrir ýmsar algengar gerðir skjala</summary>
+  <summary xml:lang="ie">Viser por formates populari de documentes</summary>
+  <summary xml:lang="id">Penampil dokumen bagi format-format dokumen populer</summary>
+  <summary xml:lang="hu">Dokumentummegjelenítő a népszerű dokumentumformátumokhoz</summary>
+  <summary xml:lang="hr">Preglednik dokumenata za popularne formate dokumenata</summary>
+  <summary xml:lang="hi">लोकप्रिय दस्तावेज़ प्रारूप के लिए दस्तावेज़ प्रदर्शक</summary>
+  <summary xml:lang="he">מציג מסמכים עבור תבניות מסמכים נפוצים</summary>
+  <summary xml:lang="gu">જાણીતા દસ્તાવેજ બંધારણો માટે દસ્તાવેજ દર્શક</summary>
+  <summary xml:lang="gl">Visor de documentos para os formatos de documentos máis populares</summary>
+  <summary xml:lang="gd">Sealladair sgrìobhainnean airson fòrmatan sgrìobhainn mòr-chòrdte</summary>
+  <summary xml:lang="fur">Visualizadôr di documents pai formâts plui popolârs</summary>
+  <summary xml:lang="fr">Visionneur de documents pour des formats de documents courants</summary>
+  <summary xml:lang="fi">Asiakirjakatselin suosituille asiakirjatiedostomuodoille</summary>
+  <summary xml:lang="fa">نمایشگر سند برای قالب‌های رایج اسناد</summary>
+  <summary xml:lang="eu">Dokumentuen formatu ospetsuen ikustailea</summary>
+  <summary xml:lang="es">Visor de documentos para formatos de documentos populares</summary>
+  <summary xml:lang="eo">Dokumentmontrilo por popularaj dokumentaj dosierformoj</summary>
+  <summary xml:lang="en_GB">Document viewer for popular document formats</summary>
+  <summary xml:lang="el">Εφαρμογή προβολής εγγράφων για δημοφιλείς μορφές εγγράφων</summary>
+  <summary xml:lang="de">Dokumentenbetrachter für gängige Dokumentformate</summary>
+  <summary xml:lang="da">Dokumentfremviser for populære dokumentformater</summary>
+  <summary xml:lang="cs">Prohlížeč dokumentů pro populární formáty dokumentů</summary>
+  <summary xml:lang="ca@valencia">Visualitzador de documents per a formats de documents populars</summary>
+  <summary xml:lang="ca">Visualitzador de documents per a formats de documents populars</summary>
+  <summary xml:lang="bs">Preglednik dokumenata za popularne formate dokumenata</summary>
+  <summary xml:lang="bn_IN">জনপ্রিয় নথি ফর্ম্যাটের জন্য নথি ভিউয়ার</summary>
+  <summary xml:lang="bg">Програма за преглед на често срещани видове документи</summary>
+  <summary xml:lang="be">Праглядальнік дакументаў для распаўсюджаных фарматаў</summary>
+  <summary xml:lang="as">জনপ্ৰিয় দস্তাবেজ বিন্যাসসমূহৰ বাবে দস্তাবেজ দৰ্শক</summary>
+  <summary xml:lang="ar">عارض مستندات يدعم الأنساق الشائعة</summary>
+  <summary xml:lang="an">Visor de documentos ta formatos de documentos populars</summary>
+  <summary xml:lang="af">Dokumentbekyker vir populêre dokumentformate</summary>
+  <description>
+    <p>A document viewer for the GNOME desktop. You can view, search or annotate documents in many different formats.</p>
+    <p xml:lang="zh_TW">GNOME 桌面的文件檢視器。您可以在許多不同格式下檢視、搜尋、或註釋文件。</p>
+    <p xml:lang="zh_CN">GNOME 文档查看器。你可以查看、搜索或注释不同格式的文档。</p>
+    <p xml:lang="vi">Phần mềm đọc tài liệu cho môi trường máy tính để bàn GNOME. Bạn có thể xem, tìm kiếm hay ghi chú các tài liệu ở nhiều định dạng khác nhau.</p>
+    <p xml:lang="uk">Програма для перегляду документів у середовищі GNOME. За її допомогою ви зможете переглядати документи у багатьох форматах, шукати у них дані та анотувати ці документи.</p>
+    <p xml:lang="tr">GNOME masaüstü için belge görüntüleyici. Birçok değişik biçimdeki belgeyi görüntüleyebilir, arayabilir ve açımlayabilirsiniz.</p>
+    <p xml:lang="th">โปรแกรมดูเอกสารสำหรับเดสก์ท็อป GNOME คุณสามารถดู ค้นหา หรือทำหมายเหตุเอกสารในเอกสารฟอร์แมตต่างๆ ได้หลายฟอร์แมต</p>
+    <p xml:lang="sv">En dokumentvisare för GNOME-skrivbordet. Du kan visa, söka eller kommentera dokument i många olika format.</p>
+    <p xml:lang="sr@latin">Pregledač dokumenata za Gnom. Možete gledati, pretraživati ili obeležavati sadržaj dokumenata raznih formata.</p>
+    <p xml:lang="sr">Прегледач докумената за Гном. Можете гледати, претраживати или обележавати садржај докумената разних формата.</p>
+    <p xml:lang="sl">Pregledovalnik dokumentov za namizje GNOME. Program omogoča ogledovanje dokumenta, iskanje po vsebini, dodajanje opomb in drugo.</p>
+    <p xml:lang="sk">Prehliadač dokumentov pre prostredie GNOME. Môžete zobrazovať, vyhľadávať alebo pridávať poznámky do dokumentov v mnohých rozličných formátoch.</p>
+    <p xml:lang="ru">Приложение просмотра документов для рабочего стола GNOME. Вы можете просматривать, искать или комментировать документы в множестве разных форматов.</p>
+    <p xml:lang="ro">Un vizualizator de documente pentru desktopul GNOME. Aveți posibilitatea de a vizualiza, căuta sau adnota documente în multe formate diferite.</p>
+    <p xml:lang="pt_BR">Um visualizador de documentos para o ambiente GNOME. Com ele você pode visualizar, pesquisar ou anotar documento de vários formatos.</p>
+    <p xml:lang="pt">Um visualizador de documentos para o ambiente gráfico GNOME. Permite visualizar, pesquisar ou anotar documentos em vários formatos.</p>
+    <p xml:lang="pl">Przeglądarka dokumentów dla środowiska GNOME. Umożliwia wyświetlanie, przeszukiwanie i dodawanie przypisów do dokumentów w wielu różnych formatach.</p>
+    <p xml:lang="pa">ਇਹ ਗਨੋਮ ਡੈਸਕਟਾਪ ਲਈ ਦਸਤਾਵੇਜ਼ ਦਰਸ਼ਕ ਹੈ। ਤੁਸੀਂ ਵੱਖ-ਵੱਖ ਫਾਰਮੈਟਾਂ ਨੂੰ ਤੁਸੀਂ ਦਸਤਾਵੇਜ਼ ਨੂੰ ਵੇਖ, ਖੋਜ ਜਾਂ ਵਿਆਖਿਆ ਕਰ ਸਕਦੇ ਹੋ।</p>
+    <p xml:lang="oc">Un visionador de documents pel burèu GNOME. Podètz veire, recercar e anotar de documents dins mantun format.</p>
+    <p xml:lang="nl">Weergave van documenten op het Gnome-bureaublad. U kunt documenten weergeven, doorzoeken en annoteren in diverse formaten.</p>
+    <p xml:lang="ne">जिनोम डेस्कटपका लागि कागजात दर्शक । तपाईं धेरै फरक ढाँचाहरूमा कागजातहरू हेर्न, खोजी गर्न वा एनोटेट गर्न सक्नुहुन्छ।.</p>
+    <p xml:lang="nb">Dokumenter lar deg åpne, søke i og notere i mange forskjellige typer dokumenter.</p>
+    <p xml:lang="my">နုန်ဒက်စ်တော့ပ်၏မှတ်တမ်းစာအုပ်ကြည့်ရှုကိရိယာဖြစ်သည်။ အမျိုးမျိုးသော မှတ်တမ်းစာအုပ်အမျိုးအစားများတွင် ကြည့်ရှု၊ ရှာဖွေ၊ စာမှတ်ခြင်းများ ပြုလုပ်နိုင်သည်။</p>
+    <p xml:lang="ms">Sebuah pelihat dokumen untuk atas menja GNOME . Anda boleh lihat, gelintar atau buat catatan pada dokumen dalam pelbagai format.</p>
+    <p xml:lang="lv">Dokumentu skatītājs GNOME darbvirsmas videi. Varat skatīt, meklēt un anotēt dažādu formātu dokumentus.</p>
+    <p xml:lang="lt">Dokumentų žiūryklė GNOME darbalaukiui. Galite rodyti, ieškoti bei anotuoti įvairių formatų dokumentuose.</p>
+    <p xml:lang="ko">그놈 데스크톱의 문서 보기 프로그램입니다. 다양한 형식의 문서를 보고, 내용을 검색하며, 주석을 달 수 있습니다.</p>
+    <p xml:lang="kk">GNOME жұмыс үстелі үшін құжаттар көрсетушісі. Бірнеше түрдегі құжаттарды қарау, ішінен іздеу немесе аңдатпаларды қосуға болады.</p>
+    <p xml:lang="kab">A,senqad n yisemli i tnarit GNOME. Tzemreḍ ad twaliḍ, ad tnadiḍ neɣ ad twennteḍ isemliyen deg waṭas n yimasalen yemgaraden.</p>
+    <p xml:lang="ka">GNOME სამუშაო მაგიდის დოკუმენტების დამთვალიერებელი. შეგიძლიათ დაათვალიეროთ, მოძებნოთ და ანოტაცია გაუკეთოთ მრავალი სახის დოკუმენტს.</p>
+    <p xml:lang="ja">GNOME デスクトップ用のドキュメントビューアーです。さまざまな形式の文書を表示したり、文書内を検索したり、文書に注釈を付けたりすることができます。</p>
+    <p xml:lang="it">Un visualizzatore di documenti per il desktop GNOME. Si può visualizzare, cercare o annotare i documenti in molti differenti formati.</p>
+    <p xml:lang="is">Skjalaskoðari fyrir GNOME skjáborðsumhverfið. Þú getur skoðað, leitða í eða glósað við mörg mismunandi skjalasnið.</p>
+    <p xml:lang="id">Penampil dokumen untuk destop GNOME. Anda dapat melihat, mencari atau membubuhi keterangan dokumen dalam berbagai format.</p>
+    <p xml:lang="hu">Dokumentummegjelenítő a GNOME asztali környezethez. Megtekintheti, keresheti és jegyzetekkel láthatja el a dokumentumokat számos formátumban.</p>
+    <p xml:lang="hr">Preglednik dokumenata za GNOME radno okruženje. Možete pregledavati, pretraživati ili zabilježiti dokumente u raznim formatima.</p>
+    <p xml:lang="hi">GNOME डेस्कटॉप के लिए एक दस्तावेज़ प्रदर्शक। आप दस्तावेज़ों को कई अलग-अलग प्रारूपों में देख, खोज या व्याख्या कर सकते हैं।</p>
+    <p xml:lang="he">מציג מסמכים עבור שולחן העבודה GNOME. מאפשר להציג, לחפש ולהעיר במגוון רחב של תבניות.</p>
+    <p xml:lang="gl">Un visor de documento para o ambiente GNOME. Pode ver, buscar ou anotar documentos en varios formatos distintos.</p>
+    <p xml:lang="fur">Un visualizadôr di documents pal scritori GNOME. Si pues viodi, cirî o meti notis tai documents di tancj formâts diferents.</p>
+    <p xml:lang="fr">Un visionneur de documents pour le bureau GNOME. Vous pouvez afficher, rechercher ou annoter des documents dans de nombreux formats différents.</p>
+    <p xml:lang="fi">Asiakirjakatselin Gnome-työpöydälle. Voit katsella, etsiä ja lisätä huomautuksia useissa eri tiedostomuodoissa oleviin asiakirjoihin.</p>
+    <p xml:lang="fa">یک سندبین برای میزکار گنوم. می‌توانید سندها را در قالب‌های مختلف دیده، جست‌وجو و حاشیه‌نویسی کنید.</p>
+    <p xml:lang="eu">GNOME mahaigainerako dokumentu-ikustailea. Formatu mota askotako dokumentuak ikusi, haiek arakatu eta haietan oharrak idatzi ahal dituzu.</p>
+    <p xml:lang="es">Un visor de documentos para el escritorio GNOME. Puede ver, buscar o hacer anotaciones en documentos en varios formatos.</p>
+    <p xml:lang="eo">Dokumentmontrilo por la GNOME labortablo. Vi povas vidi, serĉi aŭ noti dokumentojn en multe da diversaj formoj.</p>
+    <p xml:lang="en_GB">A document viewer for the GNOME desktop. You can view, search or annotate documents in many different formats.</p>
+    <p xml:lang="el">Μια εφαρμογή προβολής εγγράφων του GNOME. Μπορείτε να δείτε, αναζητήσετε ή να σχολιάσετε έγγραφα σε πολλές διαφορετικές μορφές.</p>
+    <p xml:lang="de">Ein Dokumentenbetrachter für die GNOME-Arbeitsumgebung. Sie können Dokumente in vielen verschiedenen Formaten betrachten, durchsuchen oder mit Anmerkungen versehen.</p>
+    <p xml:lang="da">En dokumentfremviser til GNOME-skrivebordet. Du kan vise, søge og skrive noter i dokumenter i mange forskellige dokumentformater.</p>
+    <p xml:lang="cs">Prohlížeč dokumentů pro uživatelské prostředí GNOME. Můžete si prohlížet, prohledávat a komentovat dokumenty v rozličných formátech.</p>
+    <p xml:lang="ca">Un visualitzador de documents per a l'escriptori GNOME. Podeu visualitzar, cercar o fer anotacions en molts formats diferents.</p>
+    <p xml:lang="bg">Програма за преглед на често срещани видове документи за графичната среда GNOME. Може да разглеждате, анотирате и търсите в документи в много различни формати.</p>
+    <p xml:lang="be">Праглядальнік дакументаў для асяроддзя GNOME. Прагляд, пошук і стварэнне нататак для дакументаў у разнастайных фарматах.</p>
+    <p xml:lang="ar">عارض مستندات لسطح مكتب جنوم. يمكنك عرض المستندات والبحث فيها والتأشير عليها، بأنساق متعددة.</p>
+    <p>Evince supports documents in: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (with SyncTeX), and Comic Books archives (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="zh_TW">它支援以下文件格式：PDF、PS、EPS、XPS、DjVu、TIFF、DVI (使用 SyncTeX) 和漫畫書壓縮檔 (CBR、CBT、CBZ、CB7)。</p>
+    <p xml:lang="zh_CN">文档查看器（Evince）支持以下的文档格式：PDF、PS、EPS、XPS、DjVu、TIFF、DVI（带 SyncTex）以及漫画归档（CBR、CBT、CBZ、CB7）。</p>
+    <p xml:lang="vi">Evince hỗ trợ những dạng tài liệu sau: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (với SyncTeX), và kho nén truyện tranh vui (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="uk">У Evince передбачено підтримку документів у таких форматах: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (з SyncTeX), а також архіви коміксів (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="tr">Evince şu belgeleri destekler: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (SyncTeX ile), ve Çizgi Roman arşivleri (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="th">Evince รองรับฟอร์แมตเอกสารต่อไปนี้: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (พร้อมการรองรับ SyncTeX), และกรุหนังสือการ์ตูนต่างๆ (CBR, CBT, CBZ, CB7)</p>
+    <p xml:lang="sv">Evince stöder dokument i: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (med SyncTeX) och serietidningsarkiv (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="sr@latin">Pregledač dokumenata podržava dokumente u formatima PDF, PS, EPS, IksPS, DjVu, TIFF, DVI (sa SinkTeKSom), i arhive stripova (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="sr">Прегледач докумената подржава документе у форматима ПДФ, ПС, ЕПС, ИксПС, ДјВу, ТИФФ, ДВИ (са СинкТеКСом), и архиве стрипова (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="sl">Program podpira zapise: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (s podporo SyncTeX) in arhive stripov (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="sk">Aplikácia Evince podporuje dokumenty: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (s funkciou SyncTeX) a archívy komiksov (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="ru">Evince поддерживает документы в следующих форматах: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (с SyncTeX) и Comic Book Archive (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="ro">Evince suportă documente în: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (cu SyncTeX), și arhive de benzi desenate (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="pt_BR">O Evince oferece suporte aos seguintes formatos de documentos: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (com SyncTeX) e arquivos de revistas em quadrinhos (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="pt">Suporta os seguintes formatos de documentos: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (com SyncTeX) e arquivos de banda desenhada (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="pl">Evince obsługuje dokumenty w formatach: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (z SyncTeX) oraz archiwa z komiksami (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="pa">ਅੱਗੇ ਦਿੱਤੇ ਦਸਤਾਵੇਜ਼ ਫਾਰਮੈਟ ਇਵੈਂਸ ਸਹਾਇਕ ਹਨ: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (SyncTeX ਸਮੇਤ), ਅਤੇ ਹਾਸਰਸ ਕਿਤਾਬਾਂ ਅਕਾਇਵ (CBR, CBT, CBZ, CB7)।</p>
+    <p xml:lang="oc">Evince pren en carga los documents : PDF, PS, EPS, XPS, DjVu, TIFF, DVI (with SyncTeX),e los archius de BD (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="nl">Evince ondersteunt documenten in: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (met SyncTeX), en stripboekarchieven (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="ne">यसले निम्न कागजात ढाँचाहरूलाई समर्थन गर्दछ: पिडिएफ, पिएस, इपिएस, एक्सपिएस, DjVu, TIFF, DVI (SyncTeX सँग), र हास्य पुस्तक अभिलेखहरू (CBR, CBT, CBZ, CB7)</p>
+    <p xml:lang="nb">Disse formatene støttes: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (med SyncTeX) og Comic Books-arkiv (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="my">Evince သည် စာရွက်စာတမ်းများဖြစ်သော PDF၊ PS၊ EPS၊ XPS၊ DjVu၊ TIFF၊ DVI (SyncTeX) နှင့် ရုပ်ပြစာအုပ်များ မှတ်တမ်းများ (CBR၊ CBT၊ CBZ၊ CB7) တို့တွင် ပံ့ပိုးပေးပါသည်။</p>
+    <p xml:lang="ms">Evince menyokong dokumen dalam format: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (dengan SyncTeX), dan arkib Buku Komik (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="lv">Evince atbalsta dokumentus šādos formātos: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (ar SyncTeX), un komiksu arhīvus (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="lt">Evince palaiko šiuos dokumentų formatus: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (su SyncTeX) bei komiksų archyvus (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="ko">에빈스는 다음 문서 형식을 지원합니다: PDF, PS, EPS, XPS, DjVu, TIFF, DVI(SyncTeX 사용), 만화책 묶음(CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="kk">Evince келесі құжаттар пішімдерін қолдайды: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (SyncTeX), және Comic Books архивтері (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="kab">Evince yessefrak isemliyen deg: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (s SyncTeX), akked iɣbaren n yidlisen Comic (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="ka">Evince-ს აქვს მხარდაჭერა: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (SyncTeX-ით) და კომიქსების წიგნების არქივების (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="ja">Evince は次の文書をサポートしています: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (SyncTeX 利用), Comic Books アーカイブ (CBR, CBT, CBZ, CB7)。</p>
+    <p xml:lang="it">Supporta documenti in: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (con SyncTeX), e archivi di fumetti (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="is">Evince styður eftirfarandi skjalasnið: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (með SyncTeX), og myndasögusafnskrár (Comicbook) eins og (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="id">Evince mendukung dokumen dalam: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (dengan SyncTeX), dan arsip-arsip Comic Books (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="hu">Az Evince a következő dokumentumformátumokat támogatja: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (SyncTeX-kel), valamint képregény-archívumok (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="hr">Evince podržava sljedeće formate dokumenata: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (sa SyncTeX) i arhive stripova (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="hi">एविंस निम्नलिखित दस्तावेज़ प्रारूप का समर्थन करता है: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (SyncTeX के साथ) और कॉमिक बुक अभिलेखागार (CBR, CBT, CBZ &amp; CB7)।</p>
+    <p xml:lang="he">‏Evince תומך בתבניות המסמכים הבאות: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (עם SyncTeX) וארכיבי ספרי  קומקיס (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="gl">Evince admite documentos en: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (con SyncTeX) e arquivos de libros de banda deseñada (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="fur">Evince al supuarte document in: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (cun SyncTeX) e archivis di fumets (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="fr">Evince prend en charge les formats de documents suivants : PDF, PS, EPS, XPS, DjVu, TIFF, DVI (avec SyncTeX) et les formats archives de bandes dessinées (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="fi">Sovellus tukee seuraavia asiakirjamuotoja: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (SyncTeX:illa) ja sarjakuva-arkistoja (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="fa">اوینس از قالب‌های مقابل پشتیبانی می‌کند:  PDF ،PS ،EPS ،XPS ،DjVu ،TIFF ،DVI (همراه با SyncTeX) و کتاب‌های کمیک (CBR ،CBT ،CBZ ،CB7).</p>
+    <p xml:lang="eu">Honako dokumentu-formatuak onartzen ditu: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (SyncTeX-ekin), eta komikien artxiboak (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="es">Evince soporta los siguientes formatos de documentos: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (con SyncTeX), y archivos de libros de cómics (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="eo">Evinco subtenas la sekvajn dosierformojn: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (kun SyncTeX), kaj komiksaj dosieroj (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="en_GB">Evince supports documents in: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (with SyncTeX), and Comic Books archives (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="el">Υποστηρίζει τις παρακάτω μορφές εγγράφων: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (με SyncTeX), και αρχεία βιβλίων κόμικ (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="de">Die folgenden Dokumentformate werden unterstützt: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (inkl. SyncTeX) und Comicbuch-Archive (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="da">Evince understøtter følgende dokumentformater: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (med SyncTeX) og tegneseriearkiver (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="cs">Podporuje následující formáty dokumentů: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (pomocí SyncTeX) a archivy s komiksy (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="ca">Permet la visualització dels documents en format: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (amb SyncTeX) i els arxius de llibres de còmic (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="bg">Поддържат се следните видове документи: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (със SyncTeX) и комикси (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="be">Evince падтрымлівае наступныя фарматы дакументаў: PDF, PS, EPS, XPS, DjVu, TIFF, DVI (з SyncTeX) і архівы коміксаў (CBR, CBT, CBZ, CB7).</p>
+    <p xml:lang="ar">يدعم الأنساق التالية: PDF، و PS، و EPS، و XPS، و DjVu، و TIFF، و DVI (مع SyncTeX)، و القصص المصورة (CBR، و CBT، و CBZ، و CB7).</p>
+  </description>
+  <provides>
+    <id>evince.desktop</id>
+  </provides>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/GNOME/evince/raw/main/data/screenshots/evince-1.png</image>
+      <caption>A clear, simple UI</caption>
+      <caption xml:lang="zh_TW">簡單、乾淨的介面</caption>
+      <caption xml:lang="zh_CN">简洁明了的用户界面</caption>
+      <caption xml:lang="vi">Giao điện người dùng rõ ràng và đơn giản</caption>
+      <caption xml:lang="uk">Простий і зрозумілий інтерфейс</caption>
+      <caption xml:lang="tr">Temiz, basit kullanıcı arayüzü</caption>
+      <caption xml:lang="th">ส่วนติดต่อผู้ใช้ที่ชัดเจนและเรียบง่าย</caption>
+      <caption xml:lang="sv">Ett rent, enkelt användargränssnitt</caption>
+      <caption xml:lang="sr@latin">Jednostavno, pregledno grafičko sučelje</caption>
+      <caption xml:lang="sr">Једноставно, прегледно графичко сучеље</caption>
+      <caption xml:lang="sl">Pregleden, enostaven vmesnik</caption>
+      <caption xml:lang="sk">Čisté, jednoduché rozhranie</caption>
+      <caption xml:lang="ru">Простой и понятный интерфейс</caption>
+      <caption xml:lang="ro">Un UI simplu, clar</caption>
+      <caption xml:lang="pt_BR">Uma interface limpa e simples</caption>
+      <caption xml:lang="pt">Uma interface simples e intuitiva</caption>
+      <caption xml:lang="pl">Prosty interfejs użytkownika</caption>
+      <caption xml:lang="pa">ਸਾਫ਼, ਸਧਾਰਨ UI</caption>
+      <caption xml:lang="oc">Una interfàcia clara e simpla</caption>
+      <caption xml:lang="nl">Een duidelijke en gemakkelijke gebruikersinterface</caption>
+      <caption xml:lang="ne">एक स्पष्ट, सरल यूआई</caption>
+      <caption xml:lang="nb">Enkel utforming</caption>
+      <caption xml:lang="my">ရိုးရှင်းသော ယူအိုင်</caption>
+      <caption xml:lang="ms">Sebuah UI ringkas, dan mudah</caption>
+      <caption xml:lang="mjw">Ingthirved lapen joike</caption>
+      <caption xml:lang="lv">Vienkārša lietotāja saskarne</caption>
+      <caption xml:lang="lt">Švari, paprasta sąsaja</caption>
+      <caption xml:lang="ko">깔끔하고 단순한 사용자 인터페이스</caption>
+      <caption xml:lang="kk">Таза, қарапайым интерфейс</caption>
+      <caption xml:lang="kab">Agrudem n useqdac taceεlalt, tafessast</caption>
+      <caption xml:lang="ka">სუფთა, მარტივი UI</caption>
+      <caption xml:lang="ja">単純明快な UI</caption>
+      <caption xml:lang="it">Una pulita, semplice interfaccia</caption>
+      <caption xml:lang="is">Einfalt og hreinlegt viðmót</caption>
+      <caption xml:lang="ie">Un nett, simplic interfacie</caption>
+      <caption xml:lang="id">Antarmuka (UI) yang jelas dan sederhana</caption>
+      <caption xml:lang="hu">Egyszerű, letisztult felület</caption>
+      <caption xml:lang="hr">Pregledno, jednostavno grafičko sučelje</caption>
+      <caption xml:lang="hi">एक स्पष्ट, सरल UI</caption>
+      <caption xml:lang="he">ממשק נקי ופשוט</caption>
+      <caption xml:lang="gl">Unha interface de usuario limpa e simple</caption>
+      <caption xml:lang="fur">Une semplice, linde IU</caption>
+      <caption xml:lang="fr">Une interface utilisateur claire et simple</caption>
+      <caption xml:lang="fi">Selkeä ja yksinkertainen käyttöliittymä</caption>
+      <caption xml:lang="fa">رابط کاربری‌ای تمیز و ساده</caption>
+      <caption xml:lang="eu">Interfaze argi eta sinplea</caption>
+      <caption xml:lang="es">Una IU simple y limpia</caption>
+      <caption xml:lang="eo">Klara, simpla grafika fasado</caption>
+      <caption xml:lang="en_GB">A clear, simple UI</caption>
+      <caption xml:lang="el">Μια καθαρή, απλή γραφική διεπαφή χρήστη</caption>
+      <caption xml:lang="de">Eine klare, einfache Benutzeroberfläche</caption>
+      <caption xml:lang="da">En ren og enkel brugerflade</caption>
+      <caption xml:lang="cs">Čisté a jednoduché uživatelské rozhraní</caption>
+      <caption xml:lang="ca">Una interfície d'usuari clara i simple</caption>
+      <caption xml:lang="bg">Опростен и интуитивен интерфейс</caption>
+      <caption xml:lang="be">Просты і зразумелы інтэрфейс карыстальніка</caption>
+      <caption xml:lang="ar">واجهة سهلة وبسيطة</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/evince/raw/main/data/screenshots/evince-2.png</image>
+      <caption>Advanced highlighting and annotation</caption>
+      <caption xml:lang="zh_TW">進階標明與註解</caption>
+      <caption xml:lang="zh_CN">高级突出显示和注释</caption>
+      <caption xml:lang="vi">Thêm chú thích và tô sáng tiên tiến</caption>
+      <caption xml:lang="uk">Широкі можливості із позначення та анотування документів</caption>
+      <caption xml:lang="tr">Gelişmiş vurgulama ve açıklama</caption>
+      <caption xml:lang="th">เน้นและทำหมายเหตุขั้นสูง</caption>
+      <caption xml:lang="sv">Avancerade färgmarkeringar och kommentarer</caption>
+      <caption xml:lang="sr@latin">Napredno isticanje i obeleživanje</caption>
+      <caption xml:lang="sr">Напредно истицање и обележивање</caption>
+      <caption xml:lang="sl">Napredno poudarjanje in dodajanje opomb</caption>
+      <caption xml:lang="sk">Pokročilé zvýrazňovanie a pridávanie poznámok</caption>
+      <caption xml:lang="ru">Расширенное выделение и аннотация</caption>
+      <caption xml:lang="ro">Evidențiere și adnotare avansată</caption>
+      <caption xml:lang="pt_BR">Destaque e anotação avançada</caption>
+      <caption xml:lang="pt">Anotação e realce avançados</caption>
+      <caption xml:lang="pl">Zaawansowane zakreślanie i dodawanie przypisów</caption>
+      <caption xml:lang="pa">ਤਕਨੀਕੀ ਉਭਾਰਨਾ ਅਤੇ ਵਿਆਖਿਆ</caption>
+      <caption xml:lang="oc">Anotacion e suslinhatge avançats</caption>
+      <caption xml:lang="nl">Geavanceerd markeren en annoteren</caption>
+      <caption xml:lang="ne">उन्नत हाइलाइटिङ र एनोटेसन</caption>
+      <caption xml:lang="nb">Avansert fremheving og notering</caption>
+      <caption xml:lang="my">အဆင့်မြင် အလင်းတင်ပြခြင်းနှင့် မှတ်စာရေးသားခြင်း</caption>
+      <caption xml:lang="ms">Penyorotan dan catatan lanjutan</caption>
+      <caption xml:lang="lv">Plašas izcelšanas un anotēšanas iespējas</caption>
+      <caption xml:lang="lt">Sudėtingesnis paryškinimas bei anotavimas</caption>
+      <caption xml:lang="ko">발전된 강조 및 주석</caption>
+      <caption xml:lang="kk">Кеңейтілген түрде түспен ерекшелеу және аңдатпаларды қосу</caption>
+      <caption xml:lang="kab">Asebruraq d uwennit leqqayen</caption>
+      <caption xml:lang="ka">დამატებითი გამკვეთა და ანოტაცია</caption>
+      <caption xml:lang="ja">高度なハイライトと注釈</caption>
+      <caption xml:lang="it">Evidenziazione e annotazione avanzata</caption>
+      <caption xml:lang="is">Ítarleg áherslulitun og glósur</caption>
+      <caption xml:lang="id">Sorotan dan anotasi lanjutan</caption>
+      <caption xml:lang="hu">Fejlett kiemelés és jegyzetek hozzáadása</caption>
+      <caption xml:lang="hr">Napredno naglašavanje i bilježenje</caption>
+      <caption xml:lang="hi">उन्नत चिन्हांकन और व्याख्या</caption>
+      <caption xml:lang="he">פרשנות והדגשה מתקדמים</caption>
+      <caption xml:lang="gl">Anotación e realzado avanzado</caption>
+      <caption xml:lang="fur">Evidenziazion e notazion avanzade</caption>
+      <caption xml:lang="fr">Annotation et mise en surbrillance avancées</caption>
+      <caption xml:lang="fi">Monipuolinen korostus ja huomioiden merkintä</caption>
+      <caption xml:lang="fa">افزودن حاشیه‌نویسی و نشانه‌گذاری</caption>
+      <caption xml:lang="eu">Nabarmentze eta oharren sortze aurreratua</caption>
+      <caption xml:lang="es">Resaltado avanzado y anotación</caption>
+      <caption xml:lang="eo">Alnivela emfazado kaj notado</caption>
+      <caption xml:lang="en_GB">Advanced highlighting and annotation</caption>
+      <caption xml:lang="el">Επισήμανση και σχολιασμός για προχωρημένους</caption>
+      <caption xml:lang="de">Fortgeschrittene Hervorhebung und Anmerkungen</caption>
+      <caption xml:lang="da">Avanceret fremhævning og annotering</caption>
+      <caption xml:lang="cs">Pokročilé zvýrazňování a psaní poznámek</caption>
+      <caption xml:lang="ca">Ressaltat avançat i anotacions</caption>
+      <caption xml:lang="bg">Допълнителни оцветяване и анотации</caption>
+      <caption xml:lang="be">Пашыраныя магчымасці для маркіравання і стварэння нататак</caption>
+      <caption xml:lang="ar">تأشير و تعليق متقدم</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://apps.gnome.org/Evince</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/evince/-/issues/</url>
+  <url type="translate">https://l10n.gnome.org/module/evince/</url>
+  <url type="contribute">https://welcome.gnome.org/app/Evince</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/evince/</url>
+  <project_group>GNOME</project_group>
+  <!-- developer_name tag deprecated with Appstream 1.0 -->
+  <developer_name>The GNOME Project</developer_name>
+  <developer_name xml:lang="zh_CN">GNOME 项目</developer_name>
+  <developer_name xml:lang="uk">Проєкт GNOME</developer_name>
+  <developer_name xml:lang="tr">GNOME Projesi</developer_name>
+  <developer_name xml:lang="th">The GNOME Project</developer_name>
+  <developer_name xml:lang="sv">GNOME-projektet</developer_name>
+  <developer_name xml:lang="sr@latin">Gnomov projekat</developer_name>
+  <developer_name xml:lang="sr">Гномов пројекат</developer_name>
+  <developer_name xml:lang="sl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="sk">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ru">Проект GNOME</developer_name>
+  <developer_name xml:lang="ro">Proiectul GNOME</developer_name>
+  <developer_name xml:lang="pt_BR">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pt">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="pa">ਗਨੋਮ ਪਰੋਜੈੱਕਟ</developer_name>
+  <developer_name xml:lang="oc">Lo projècte GNOME</developer_name>
+  <developer_name xml:lang="nl">Het GNOME-project</developer_name>
+  <developer_name xml:lang="ne">जिनोम परियोजना</developer_name>
+  <developer_name xml:lang="nb">GNOME</developer_name>
+  <developer_name xml:lang="my">GNOME ပရောဂျက်</developer_name>
+  <developer_name xml:lang="lv">GNOME projekts</developer_name>
+  <developer_name xml:lang="lt">GNOME projektas</developer_name>
+  <developer_name xml:lang="ko">그놈 프로젝트</developer_name>
+  <developer_name xml:lang="kk">GNOME жобасы</developer_name>
+  <developer_name xml:lang="kab">Asenfar n GNOME</developer_name>
+  <developer_name xml:lang="ka">პროექტი "GNOME"</developer_name>
+  <developer_name xml:lang="it">Il progetto GNOME</developer_name>
+  <developer_name xml:lang="id">Proyek GNOME</developer_name>
+  <developer_name xml:lang="hu">A GNOME projekt</developer_name>
+  <developer_name xml:lang="hi">GNOME परियोजना</developer_name>
+  <developer_name xml:lang="he">מיזם GNOME</developer_name>
+  <developer_name xml:lang="gl">O Proxecto GNOME</developer_name>
+  <developer_name xml:lang="fur">Il Progjet GNOME</developer_name>
+  <developer_name xml:lang="fr">Le projet GNOME</developer_name>
+  <developer_name xml:lang="fi">Gnome-projekti</developer_name>
+  <developer_name xml:lang="fa">پروژهٔ گنوم</developer_name>
+  <developer_name xml:lang="eu">GNOME proiektua</developer_name>
+  <developer_name xml:lang="es">El Proyecto GNOME</developer_name>
+  <developer_name xml:lang="en_GB">The GNOME Project</developer_name>
+  <developer_name xml:lang="el">Το έργο GNOME</developer_name>
+  <developer_name xml:lang="de">Das GNOME-Projekt</developer_name>
+  <developer_name xml:lang="da">GNOME-projektet</developer_name>
+  <developer_name xml:lang="cs">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ca">El projecte GNOME</developer_name>
+  <developer_name xml:lang="be">Праект GNOME</developer_name>
+  <developer id="org.gnome">
+    <name>The GNOME Project</name>
+  </developer>
+  <update_contact>https://discourse.gnome.org/tag/evince</update_contact>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <translation type="gettext">evince</translation>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="46.3.1" type="stable" date="2024-07-21">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/2035">#2035</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/2037">#2037</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1971">#1971</issue>
+      </issues>
+    </release>
+    <release version="46.3" type="stable" date="2024-04-25"/>
+    <release version="46.2" type="stable" date="2024-05-24">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/2030">#2030</issue>
+      </issues>
+    </release>
+    <release version="46.1" type="stable" date="2024-04-27"/>
+    <release version="46.0" type="stable" date="2024-03-16"/>
+    <release version="46~rc" type="development" date="2024-03-11">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1395">#1395</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1985">#1985</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1991">#1991</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/2009">#2009</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/2022">#2022</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/2024">#2024</issue>
+      </issues>
+    </release>
+    <release version="45.0" type="stable" date="2023-09-18">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1138">#1138</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1620">#1620</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1683">#1683</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1733">#1733</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1905">#1905</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1919">#1919</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1929">#1929</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1930">#1930</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1933">#1933</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1936">#1936</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1943">#1943</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1950">#1950</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1951">#1951</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1969">#1969</issue>
+      </issues>
+    </release>
+    <release version="45~rc" type="development" date="2023-09-04">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1951">#1951</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1969">#1969</issue>
+      </issues>
+    </release>
+    <release version="45~alpha" type="development" date="2023-07-01">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1138">#1138</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1620">#1620</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1683">#1683</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1733">#1733</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1905">#1905</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1919">#1919</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1929">#1929</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1930">#1930</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1933">#1933</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1936">#1936</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1943">#1943</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1950">#1950</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/692988">#692988</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/704631">#704631</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/704631">#704631</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/704631">#704631</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/704631">#704631</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/704631">#704631</issue>
+      </issues>
+    </release>
+    <release version="44.0" type="stable" date="2023-03-17">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1518">#1518</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1555">#1555</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1759">#1759</issue>
+      </issues>
+    </release>
+    <release version="44~rc" type="development" date="2023-03-07">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1242">#1242</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1723">#1723</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1861">#1861</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1864">#1864</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1869">#1869</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1885">#1885</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1898">#1898</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/724096">#724096</issue>
+      </issues>
+    </release>
+    <release version="43.1" type="stable" date="2022-10-26">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1766">#1766</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1857">#1857</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1858">#1858</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1866">#1866</issue>
+      </issues>
+    </release>
+    <release version="43.0" type="stable" date="2022-09-18">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/333">#333</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1713">#1713</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1776">#1776</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1779">#1779</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1784">#1784</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1800">#1800</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1814">#1814</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1821">#1821</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1822">#1822</issue>
+      </issues>
+    </release>
+    <release version="42.0" type="stable" date="2022-03-18">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/48">#48</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/704">#704</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/848">#848</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/931">#931</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/965">#965</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1425">#1425</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1490">#1490</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1576">#1576</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1666">#1666</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1690">#1690</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1695">#1695</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1711">#1711</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1725">#1725</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1730">#1730</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1756">#1756</issue>
+      </issues>
+    </release>
+    <release version="41.2" type="stable" date="2021-10-09">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1682">#1682</issue>
+      </issues>
+    </release>
+    <release version="41.1" type="stable" date="2021-10-09"/>
+    <release version="41.0" type="stable" date="2021-10-09">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/220">#220</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/386">#386</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/602">#602</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/637">#637</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/736">#736</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/968">#968</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1004">#1004</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1004">#1004</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1351">#1351</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1549">#1549</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1557">#1557</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1570">#1570</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1571">#1571</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1587">#1587</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1618">#1618</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1638">#1638</issue>
+      </issues>
+    </release>
+    <release version="40.2" date="2021-06-08">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1587">#1587</issue>
+      </issues>
+    </release>
+    <release version="40.1" date="2021-03-26">
+      <description>
+        <p>Restore libraries soname.</p>
+      </description>
+    </release>
+    <release version="40.0" date="2021-03-26">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1190">#1190</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1566">#1566</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1568">#1568</issue>
+      </issues>
+    </release>
+    <release version="3.39.2" date="2021-02-14">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/336">#336</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1085">#1085</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1403">#1403</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1442">#1442</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1541">#1541</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1543">#1543</issue>
+      </issues>
+    </release>
+    <release version="3.39.1" date="2021-01-25">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#46">#46</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#221">#221</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#445">#445</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1416">#1416</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1328">#1328</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1333">#1333</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1504">#1504</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1545">#1545</issue>
+      </issues>
+    </release>
+    <release version="3.38.0" date="2020-09-12">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#842">#842</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1477">#1477</issue>
+      </issues>
+    </release>
+    <release version="3.37.90" date="2020-08-22">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#53">#53</issue>
+      </issues>
+    </release>
+    <release version="3.37.3" date="2020-07-04">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#128">#128</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#623">#623</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#637">#637</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#662">#662</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#680">#680</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#810">#810</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1010">#1010</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1147">#1147</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1344">#1344</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1345">#1345</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1418">#1418</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1426">#1426</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1429">#1429</issue>
+      </issues>
+    </release>
+    <release version="3.37.2" date="2020-05-30">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1410">#1410</issue>
+      </issues>
+    </release>
+    <release version="3.37.1" date="2020-05-30">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#795">#795</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#860">#860</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1275">#1275</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1409">#1409</issue>
+      </issues>
+    </release>
+    <release version="3.36.1" date="2020-05-19">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#842">#842</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#570">#570</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1339">#1339</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1364">#1364</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1365">#1365</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1373">#1373</issue>
+      </issues>
+    </release>
+    <release version="3.36.0" date="2020-03-07"/>
+    <release version="3.35.92" date="2020-02-22">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#943">#943</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1010">#1010</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1023">#1023</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1278">#1278</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1312">#1312</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1314">#1314</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/#1316">#1316</issue>
+      </issues>
+    </release>
+    <release version="3.35.1" date="2019-11-23">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/390">#390</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/617">#617</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/830">#830</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1168">#1168</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1203">#1203</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1274">#1274</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1302">#1302</issue>
+      </issues>
+    </release>
+    <release version="3.34.2" date="2019-11-23">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1168">#1168</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1246">#1246</issue>
+      </issues>
+    </release>
+    <release version="3.34.1" date="2019-10-07">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/Initiatives/issues/12">#12</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/54">#54</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/700">#700</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1262">#1262</issue>
+      </issues>
+    </release>
+    <release version="3.34.0" date="2019-09-29">
+      <issues>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/787">#787</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/789">#789</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1008">#1008</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1023">#1023</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1179">#1179</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1129">#1129</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1113">#1113</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1119">#1119</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1120">#1120</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1125">#1125</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1135">#1135</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1177">#1177</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1212">#1212</issue>
+        <issue url="https://gitlab.gnome.org/GNOME/evince/issues/1218">#1218</issue>
+      </issues>
+    </release>
+    <release version="3.32.1" date="2019-09-29"/>
+    <release version="3.32.0" date="2019-03-14"/>
+    <release version="3.30.3" date="2019-09-29"/>
+  </releases>
+</component>

@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=lib
+includedir=/usr/include/shiboken2
+generator_location=/usr/bin/shiboken2
+python_interpreter=/usr/bin/python3
+python_include_dir=/usr/include/python3.12
+
+Name: shiboken2
+Description: Support library for Python bindings created with the Shiboken2 generator.
+Version: 5.15.13
+Libs:  -L${libdir} -lshiboken2.cpython-312-aarch64-linux-gnu
+Cflags: -I/usr/include/python3.12 -I${includedir}/

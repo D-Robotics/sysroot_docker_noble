@@ -1,0 +1,57 @@
+#
+#   MIME conversions file for OpenPrinting CUPS Filters.
+#
+#   Copyright 2007-2011 by Apple Inc.
+#   Copyright 1997-2007 by Easy Software Products.
+#   Copyright 2012-2016 by Till Kamppeter.
+#   Copyright 2017 by Sahil Arora.
+#
+#   Licensed under Apache License v2.0.  See the file "LICENSE" for more
+#   information.
+#
+
+########################################################################
+#
+# Format of Lines:
+#
+#   source/type destination/type cost filter
+#
+# General Notes:
+#
+#   The "cost" field is used to find the least costly filters to run
+#   when converting a job file to a printable format.
+#
+#   All filters *must* accept the standard command-line arguments
+#   (job-id, user, title, copies, options, [filename or stdin]) to
+#   work with CUPS.
+#
+
+########################################################################
+#
+# Input formats
+#
+
+image/jpeg                      application/vnd.universal-input      0    -
+image/png                       application/vnd.universal-input      0    -
+image/tiff                      application/vnd.universal-input      0    -
+image/pwg-raster                application/vnd.universal-input      0    -
+application/vnd.cups-pdf        application/vnd.universal-input      0    -
+image/urf                       application/vnd.universal-input      0    -
+application/pdf                 application/vnd.universal-input      0    -
+text/plain                      application/vnd.universal-input      0    -
+application/PCLm                application/vnd.universal-input      0    -
+application/vnd.cups-pdf-banner application/vnd.universal-input      0    -
+
+########################################################################
+#
+# Output formats
+#
+
+application/vnd.universal-input  application/pdf                    0  universal
+application/vnd.universal-input  application/vnd.cups-pdf           0  universal
+application/vnd.universal-input  application/vnd.cups-postscript    0  universal
+application/vnd.universal-input  application/postscript             0  universal
+application/vnd.universal-input  application/vnd.cups-raster        0  universal
+application/vnd.universal-input  image/pwg-raster                   0  universal
+application/vnd.universal-input  image/urf                          0  universal
+application/vnd.universal-input  application/PCLm                   0  universal

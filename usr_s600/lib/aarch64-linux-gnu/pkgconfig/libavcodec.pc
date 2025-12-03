@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=/usr/lib/aarch64-linux-gnu
+includedir=/usr/include/aarch64-linux-gnu
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 60.31.102
+Requires: 
+Requires.private: libswresample >= 4.12.100, libavutil >= 58.29.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -lvpx -lm -lvpx -lm -lvpx -lm -lvpx -lm -lwebpmux -pthread -lm -latomic -llzma -ldav1d -lrsvg-2 -lm -lgio-2.0 -lgdk_pixbuf-2.0 -lgobject-2.0 -lglib-2.0 -lcairo -lzvbi -lpthread -lm -lpng -lz -lsnappy -lstdc++ -laom -lcodec2 -lgsm -ljxl -ljxl_threads -lmp3lame -lm -lopenjp2 -lopus -lrav1e -lm -lshine -lspeex -lSvtAv1Enc -ltheoraenc -ltheoradec -logg -ltwolame -lvorbis -lvorbisenc -lwebp -lx264 -lx265 -lxvidcore -lz -lva
+Cflags: -I${includedir}

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright © 2014 Christian Persch
+
+  This program is free software; you can redistribute it and/or modify
+  it under the terms of either:
+
+  * the GNU General Public License as published by the Free
+    Software Foundation; either version 3 of the License, or (at your
+    option) any later version.
+
+  or
+
+  * the GNU Free Documentation License version 1.3 as published by the
+    Free Software Foundation; with no Invariant Sections, no Front-Cover
+    Texts, and no Back-Cover Texts.
+
+  or both in parallel, as here.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License and the GNU Free Documentation License
+  for more details.
+
+  You should have received a copy of the GNU General Public License and
+  of the GNU Free Documentation License along with this program.
+  If not, see <https://www.gnu.org/licenses/>.
+-->
+<component xmlns="https://specifications.freedesktop.org/metainfo/1.0" xmlns:xi="http://www.w3.org/2001/XInclude" type="desktop-application">
+  <id>org.gnome.Terminal.desktop</id>
+  <metadata_license>GPL-3.0+ or GFDL-1.3-only</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Terminal</name>
+  <name xml:lang="am">ተርሚናል</name>
+  <name xml:lang="an">Terminal</name>
+  <name xml:lang="ar">الطرفية</name>
+  <name xml:lang="as">টাৰ্মিনেল</name>
+  <name xml:lang="ast">Terminal</name>
+  <name xml:lang="az">Terminal</name>
+  <name xml:lang="be">Тэрмінал</name>
+  <name xml:lang="be-Latn">Terminał</name>
+  <name xml:lang="bg">Терминал</name>
+  <name xml:lang="bn">টার্মিনাল</name>
+  <name xml:lang="bn-IN">টার্মিন্যাল</name>
+  <name xml:lang="br">Termenell</name>
+  <name xml:lang="bs">Terminal</name>
+  <name xml:lang="ca">Terminal</name>
+  <name xml:lang="ca-valencia">Terminal</name>
+  <name xml:lang="cs">Terminál</name>
+  <name xml:lang="cy">Terfynell</name>
+  <name xml:lang="da">Terminal</name>
+  <name xml:lang="de">Terminal</name>
+  <name xml:lang="dz">ཊར་མི་ནཱལ་།</name>
+  <name xml:lang="el">Τερματικό</name>
+  <name xml:lang="en-CA">Terminal</name>
+  <name xml:lang="en-GB">Terminal</name>
+  <name xml:lang="en-Shaw">𐑑𐑻𐑥𐑦𐑯𐑩𐑤</name>
+  <name xml:lang="eo">Terminalo</name>
+  <name xml:lang="es">Terminal</name>
+  <name xml:lang="et">Terminal</name>
+  <name xml:lang="eu">Terminala</name>
+  <name xml:lang="fa">پایانه</name>
+  <name xml:lang="fi">Pääte</name>
+  <name xml:lang="fr">Terminal</name>
+  <name xml:lang="fur">Terminâl</name>
+  <name xml:lang="ga">Teirminéal</name>
+  <name xml:lang="gd">Tèirmineal</name>
+  <name xml:lang="gl">Terminal</name>
+  <name xml:lang="gu">ટર્મિનલ</name>
+  <name xml:lang="he">מסוף</name>
+  <name xml:lang="hi">टर्मिनल</name>
+  <name xml:lang="hr">Terminal</name>
+  <name xml:lang="hu">Terminál</name>
+  <name xml:lang="hy">Տերմինալ</name>
+  <name xml:lang="id">Terminal</name>
+  <name xml:lang="ie">Terminal</name>
+  <name xml:lang="is">Skjáhermir (Terminal)</name>
+  <name xml:lang="it">Terminale</name>
+  <name xml:lang="ja">端末</name>
+  <name xml:lang="ka">ტერმინალი</name>
+  <name xml:lang="kab">Anemdu</name>
+  <name xml:lang="kk">Терминал</name>
+  <name xml:lang="km">ស្ថានីយ</name>
+  <name xml:lang="kn">ಟರ್ಮಿನಲ್‌</name>
+  <name xml:lang="ko">터미널</name>
+  <name xml:lang="ku">Termînal</name>
+  <name xml:lang="lt">Terminalas</name>
+  <name xml:lang="lv">Terminālis</name>
+  <name xml:lang="mai">टर्मिनल</name>
+  <name xml:lang="mg">Terminal</name>
+  <name xml:lang="mk">Терминал</name>
+  <name xml:lang="ml">ടെര്‍മിനല്‍</name>
+  <name xml:lang="mn">Терминал</name>
+  <name xml:lang="mr">टर्मिनल</name>
+  <name xml:lang="ms">Terminal</name>
+  <name xml:lang="nb">Terminal</name>
+  <name xml:lang="nds">Terminal</name>
+  <name xml:lang="ne">टर्मिनल</name>
+  <name xml:lang="nl">Terminalvenster</name>
+  <name xml:lang="nn">Terminal</name>
+  <name xml:lang="oc">Terminal</name>
+  <name xml:lang="or">ଟର୍ମିନାଲ</name>
+  <name xml:lang="pa">ਟਰਮੀਨਲ</name>
+  <name xml:lang="pl">Terminal</name>
+  <name xml:lang="ps">پايالی</name>
+  <name xml:lang="pt">Terminal</name>
+  <name xml:lang="pt-BR">Terminal</name>
+  <name xml:lang="ro">Terminal</name>
+  <name xml:lang="ru">Терминал</name>
+  <name xml:lang="si">අග්‍රය</name>
+  <name xml:lang="sk">Terminál</name>
+  <name xml:lang="sl">Terminal</name>
+  <name xml:lang="sq">Terminali</name>
+  <name xml:lang="sr">Терминал</name>
+  <name xml:lang="sr-Latn">Terminal</name>
+  <name xml:lang="sv">Terminal</name>
+  <name xml:lang="ta">முனையம்</name>
+  <name xml:lang="te">టెర్మినల్</name>
+  <name xml:lang="tg">Терминал</name>
+  <name xml:lang="th">เทอร์มินัล</name>
+  <name xml:lang="tr">Uçbirim</name>
+  <name xml:lang="ug">تېرمىنال</name>
+  <name xml:lang="uk">Термінал</name>
+  <name xml:lang="vi">Thiết bị cuối</name>
+  <name xml:lang="wa">Terminå</name>
+  <name xml:lang="xh">i-Terminal</name>
+  <name xml:lang="zh-CN">终端</name>
+  <name xml:lang="zh-HK">終端機</name>
+  <name xml:lang="zh-TW">終端機</name>
+  <summary>Use the command line</summary>
+  <summary xml:lang="an">Emplega la linia de comandos</summary>
+  <summary xml:lang="ar">استعمل سطر الأوامر</summary>
+  <summary xml:lang="as">কমান্ড শাৰী ব্যৱহাৰ কৰক</summary>
+  <summary xml:lang="ast">Usar llinia de comandos</summary>
+  <summary xml:lang="be">Загадны радок</summary>
+  <summary xml:lang="be-Latn">Užyj zahadny radok</summary>
+  <summary xml:lang="bg">Използване на команден ред</summary>
+  <summary xml:lang="bn">কমান্ড লাইন ব্যবহার করুন</summary>
+  <summary xml:lang="bn-IN">কমান্ড লাইন ব্যবহার করুন</summary>
+  <summary xml:lang="br">Arverañ al linenn arc'had</summary>
+  <summary xml:lang="bs">Koristi komandnu liniju</summary>
+  <summary xml:lang="ca">Obriu la línia d'ordres</summary>
+  <summary xml:lang="ca-valencia">Obriu la línia d'ordes</summary>
+  <summary xml:lang="cs">Používejte příkazový řádek</summary>
+  <summary xml:lang="cy">Defnyddio'r llinell orchymyn</summary>
+  <summary xml:lang="da">Brug kommandolinjen</summary>
+  <summary xml:lang="de">Befehlszeile verwenden</summary>
+  <summary xml:lang="dz">བཀོད་ལམ་ལག་ལེན་འཐབ།</summary>
+  <summary xml:lang="el">Χρησιμοποιήστε τη γραμμή εντολών</summary>
+  <summary xml:lang="en-CA">Use the command line</summary>
+  <summary xml:lang="en-GB">Use the command line</summary>
+  <summary xml:lang="en-Shaw">𐑿𐑕 𐑞 𐑒𐑩𐑥𐑭𐑯𐑛 𐑤𐑲𐑯</summary>
+  <summary xml:lang="eo">Uzi la komandolinion</summary>
+  <summary xml:lang="es">Use la línea de comandos</summary>
+  <summary xml:lang="et">Käsurea kasutamine</summary>
+  <summary xml:lang="eu">Erabili komando-lerroa</summary>
+  <summary xml:lang="fa">استفاده از خط فرمان</summary>
+  <summary xml:lang="fi">Käytä komentoriviä</summary>
+  <summary xml:lang="fr">Utiliser la ligne de commande</summary>
+  <summary xml:lang="fur">Dopre la rie di comant</summary>
+  <summary xml:lang="ga">Bain úsáid as líne na n-orduithe</summary>
+  <summary xml:lang="gd">Cleachd an loidhne-àithne</summary>
+  <summary xml:lang="gl">Usar a liña de ordes</summary>
+  <summary xml:lang="gu">આદેશ વાક્ય વાપરો</summary>
+  <summary xml:lang="he">שימוש בשורת הפקודה</summary>
+  <summary xml:lang="hi">कमांड लाइन का प्रयोग करें</summary>
+  <summary xml:lang="hr">Koristite naredbeni redak</summary>
+  <summary xml:lang="hu">Parancssor használata</summary>
+  <summary xml:lang="id">Menggunakan baris perintah</summary>
+  <summary xml:lang="ie">Usar li linea de comandes</summary>
+  <summary xml:lang="is">Nota skipanalínu</summary>
+  <summary xml:lang="it">Usa la riga di comando</summary>
+  <summary xml:lang="ja">コマンドライン端末です</summary>
+  <summary xml:lang="ka">ბრძანების სტრიქონის გამოყენება</summary>
+  <summary xml:lang="kk">Командалық жолды қолдану</summary>
+  <summary xml:lang="km">ប្រើ​បន្ទាត់​ពាក្យបញ្ជា</summary>
+  <summary xml:lang="kn">ಆಜ್ಞಾ ಸಾಲನ್ನು ಬಳಸು</summary>
+  <summary xml:lang="ko">명령 행을 사용합니다</summary>
+  <summary xml:lang="ku">Rêzika fermanan bikar bîne</summary>
+  <summary xml:lang="lt">Naudoti komandų eilutę</summary>
+  <summary xml:lang="lv">Izmantot komandrindu</summary>
+  <summary xml:lang="mai">कमांड लाइन क' प्रयोग करू</summary>
+  <summary xml:lang="mg">Hampiasa ny lazam-baiko</summary>
+  <summary xml:lang="mk">Користи ја командната линија</summary>
+  <summary xml:lang="ml">കമാന്‍ഡ് ലൈന്‍ ഉപയോഗിക്കുക</summary>
+  <summary xml:lang="mn">Тушаалын мөр хэрэглэ</summary>
+  <summary xml:lang="mr">आदेश पंक्ती वापरा</summary>
+  <summary xml:lang="ms">Guna baris perintah</summary>
+  <summary xml:lang="nb">Bruk kommandolinjen</summary>
+  <summary xml:lang="nds">De Orderreeg bruken</summary>
+  <summary xml:lang="ne">आदेश रेखा प्रयोग गर्नुहोस्</summary>
+  <summary xml:lang="nl">Gebruik de opdrachtregel</summary>
+  <summary xml:lang="nn">Bruk kommandolinja</summary>
+  <summary xml:lang="oc">Utilizar la linha de comanda</summary>
+  <summary xml:lang="or">ନିର୍ଦ୍ଦେଶ ଧାରାକୁ ବ୍ୟବହାର କରନ୍ତୁ</summary>
+  <summary xml:lang="pa">ਕਮਾਂਡ ਲਾਇਨ ਵਰਤੋਂ</summary>
+  <summary xml:lang="pl">Wiersz poleceń</summary>
+  <summary xml:lang="ps">بولۍ ليکه کارول</summary>
+  <summary xml:lang="pt">Utilizar a linha de comandos</summary>
+  <summary xml:lang="pt-BR">Use a linha de comando</summary>
+  <summary xml:lang="ro">Folosește linia de comandă</summary>
+  <summary xml:lang="ru">Использовать командную строку</summary>
+  <summary xml:lang="sk">Umožňuje používať príkazový riadok</summary>
+  <summary xml:lang="sl">Uporabi ukazno vrstico</summary>
+  <summary xml:lang="sq">Përdor rreshtin e komandës</summary>
+  <summary xml:lang="sr">Користи линију наредби</summary>
+  <summary xml:lang="sr-Latn">Koristite liniju naredbi</summary>
+  <summary xml:lang="sv">Använd kommandoraden</summary>
+  <summary xml:lang="ta">கட்டளை வரியை பயன்படுத்து</summary>
+  <summary xml:lang="te">ఆదేశ లైనును ఉపయోగించండి</summary>
+  <summary xml:lang="tg">Истифодаи хати фармон</summary>
+  <summary xml:lang="th">สั่งการด้วยบรรทัดคำสั่ง</summary>
+  <summary xml:lang="tr">Komut satırını kullan</summary>
+  <summary xml:lang="ug">بۇيرۇق قۇرىنى ئىشلەت</summary>
+  <summary xml:lang="uk">Командний рядок</summary>
+  <summary xml:lang="vi">Dùng dòng lệnh</summary>
+  <summary xml:lang="wa">Eployî l' roye di comande</summary>
+  <summary xml:lang="zh-CN">使用命令行</summary>
+  <summary xml:lang="zh-HK">使用命令列</summary>
+  <summary xml:lang="zh-TW">使用命令列</summary>
+  <description>
+    <p>GNOME Terminal is a terminal emulator application for accessing a UNIX shell environment which can be used to run programs available on your system.</p>
+    <p xml:lang="an">GNOME Terminal ye una aplicación d'emulación d'a terminal ta accedir a l'entorno de shell d'UNIX, que se puede usar ta executar programas disponibles en o suyo equipo.</p>
+    <p xml:lang="ar">طرفية جنوم هو محاكي طرفية للوصول إلى بيئة صدفة يونكس و التي يمكن استخدامها لتشغيل البرامج الموجودة على نظامك.</p>
+    <p xml:lang="as">GNOME টাৰ্মিনেল এটা UNIX শ্বেল পৰিৱেশ অভিগম কৰিবলে এটা টাৰ্মিনেল ইমুলেটৰ এপ্লিকেচন যাক আপোনাৰ চিস্টেমত উপলব্ধ প্ৰগ্ৰামসমূহ চলাবলে ব্যৱহাৰ কৰিব পাৰি।</p>
+    <p xml:lang="be">Тэрмінал GNOME з'яўляецца праграмай для доступу да абалонкі UNIX, прыдатнай для запуску праграм, усталяваных у вашай сістэме.</p>
+    <p xml:lang="bg">Терминалът на GNOME е емулатор на традиционен терминал и дава достъп до обвивките на UNIX, от които могат да се стартират програмите на вашия компютър.</p>
+    <p xml:lang="bn-IN">GNOME টার্মিন্যাল হল একটি UNIX সেল এনভায়রনমেন্ট অ্যাক্সেস করার একটি টার্মিন্যাল ইমিউলেটর অ্যাপ্লিকেশন যা আপনার সিস্টেমে উপলব্ধ প্রোগ্রামগুলি চালাতে ব্যবহার করা যেতে পারে।</p>
+    <p xml:lang="bs">GNOME Terminal je imitator terminalne aplikacije za pristup UNIX shell oktuženje koje mogu biti korištene za pokretanje programa dostupne na sistemu.</p>
+    <p xml:lang="ca">El Terminal del GNOME és una aplicació d'emulació de terminal per a accedir a un intèrpret d'ordres UNIX que es pot utilitzar per a executar programes del sistema.</p>
+    <p xml:lang="ca-valencia">El Terminal del GNOME és una aplicació d'emulació de terminal per accedir a un intèrpret d'ordes UNIX que es pot utilitzar per executar programes del sistema.</p>
+    <p xml:lang="cs">Terminál GNOME je aplikace emulující terminál pro přístup k prostředí UNIXového shellu a v něm umožňuje spouštět programy dostupné ve vašem systému.</p>
+    <p xml:lang="da">GNOME Terminal er et terminalemulatorprogram som giver adgang til et UNIX-skalmiljø, som kan bruges til at køre programmer som findes på dit system.</p>
+    <p xml:lang="de">GNOME-Terminal ist ein Terminal-Emulator für den Zugang zu einer UNIX Shell-Umgebung, die u.a. dazu verwendet werden kann, um auf Ihrem System verfügbare Programme zu starten.</p>
+    <p xml:lang="el">Το Τερματικό του GNOME είναι μια εφαρμογή εξομοιωτή τερματικού για την πρόσβαση σε ένα περιβάλλον κελύφους UNIX που μπορεί να χρησιμοποιηθεί για την εκτέλεση των διαθέσιμων προγραμμάτων στο σύστημά σας.</p>
+    <p xml:lang="en-GB">GNOME Terminal is a terminal emulator application for accessing a UNIX shell environment which can be used to run programs available on your system.</p>
+    <p xml:lang="eo">GNOME Terminalo estas terminalimitilo por aliri Uniks-ŝela medio, kiun oni povas uzi por ruli programojn disponeblajn por via sistemo.</p>
+    <p xml:lang="es">GNOME Terminal es una aplicación de emulación de la terminal para acceder al entorno de shell de UNIX, que se puede usar para ejecutar programas disponibles en su equipo.</p>
+    <p xml:lang="eu">GNOMEren Terminala terminal bat emulatzen duen aplikazio bat da UNIXeko shell-aren ingurunea atzitzeko. Sistemako aplikazioak exekutatzeko erabil daiteke.</p>
+    <p xml:lang="fa">پایانهٔ گنوم یک برنامهٔ شبیه‌ساز پایانه برای دسترسی به یک محیط پوستهٔ یونیکس بوده که می‌تواند برای اجرای برنامه‌های موجود روی سامانه‌تان استفاده شود.</p>
+    <p xml:lang="fi">Gnomen pääte on pääte-emulointisovellus UNIX shell -ympäristöön, jonka avulla on mahdollista suorittaa järjestelmän eri ohjelmia.</p>
+    <p xml:lang="fr">L’application Terminal de GNOME est un émulateur de terminal pour accéder à l’environnement du shell d’UNIX et qui permet d’exécuter des programmes présents dans votre système.</p>
+    <p xml:lang="fur">Il terminâl di GNOME al è un emuladôr di terminâl par acedi al ambient shell UNIX. Tu puedis doprâlu par eseguî programs disponibii tal propri sisteme.</p>
+    <p xml:lang="gd">’S e aplacaid aithrisiche tèirmineil a th’ ann an Tèirmineal GNOME gus àrainneachd slige UNIX inntrigeadh a ghabhas cleachdadh gus prògraman a ruith a tha ri am faighinn air an t-siostam agad.</p>
+    <p xml:lang="gl">Terminal de GNOME é unha aplicación de emulación de terminal para acceder a ambientes de consola UNIX que pode usar para executar as aplicacións dispoñíbeis no seu sistema.</p>
+    <p xml:lang="he">מסוף GNOME הוא יישום הדמיית מסוף עבור גישת מעטפת סביבת UNIX אשר יכול לשמש להרצת תכניות הזמינות במערכת שלך.</p>
+    <p xml:lang="hr">GNOME Terminal je aplikacija terminalnog emulatora za pristup okruženju UNIX ljuske koja se može koristiti za pokretanje programa dostupnim na vašem sustavu.</p>
+    <p xml:lang="hu">A GNOME Terminál egy terminál emulációs alkalmazás, mely hozzáférést nyújt az UNIX shell környezethez. A shell környezetben futtathatja az Ön rendszerén elérhető programokat.</p>
+    <p xml:lang="id">GNOME Terminal adalah aplikasi emulator terminal untuk mengakses lingkungan shell UNIX yang dapat dipakai untuk menjalankan program yang tersedia pada sistem Anda.</p>
+    <p xml:lang="is">GNOME-Skjáhermir (Terminal) er útstöðvarhermir sem gefur aðgang að UNIX-skeljarumhverfi, þar sem hægt er að keyra þau forrit sem tiltæk eru á kerfinu.</p>
+    <p xml:lang="it">Il terminale di GNOME è un emulatore di terminale per accedere all'ambiente shell UNIX che può essere usato per eseguire programmi disponibili nel proprio sistema .</p>
+    <p xml:lang="ja">GNOME 端末は UNIX シェル環境にアクセスするための端末エミュレーターです。お使いのシステムで利用可能なプログラムを実行することができます。</p>
+    <p xml:lang="ka">GNOME Terminal is a terminal emulator application for accessing a UNIX shell environment which can be used to run programs available on your system.</p>
+    <p xml:lang="kk">GNOME терминалы - бұл UNIX қоршамы ортасына қатынауға арналған терминал эмуляторы қолданбасы, оның көмегімен жүйеңізде қолжетерлік бағдарламаларды жөнелтуге болады.</p>
+    <p xml:lang="km">ស្ថានីយ GNOME គឺជា​ស្ថានីយ​កម្មវិធី​និម្មិត​សម្រាប់​ចូល​ដំណើរការ​បរិស្ថាន UNIX សែល ដែល​អាច​ត្រូវ​បាន​ប្រើ​ដើម្បី​ដំណើរការ​កម្មវិធី​ដែល​មាន​នៅ​លើ​ប្រព័ន្ធ​របស់​អ្នក។</p>
+    <p xml:lang="kn">GNOME ಟರ್ಮಿನಲ್‌ ಎನ್ನುವುದು ಒಂದು UNIX ಶೆಲ್‌ ಪರಿಸರವನ್ನು ನಿಲುಕಿಸಿಕೊಳ್ಳಲು ಬಳಸಲಾಗುವ ಒಂದು ಎಮ್ಯುಲೇಟರ್ ಅನ್ವಯವಾಗಿದ್ದು, ಇದನ್ನು ನಿಮ್ಮ ವ್ಯವಸ್ಥೆಯಲ್ಲಿ ಲಭ್ಯವಿರುವ ಪ್ರೊಗ್ರಾಮ್‌ಗಳನ್ನು ಚಲಾಯಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ.</p>
+    <p xml:lang="ko">그놈 터미널은 터미널 에뮬레이터 프로그램입니다. 터미널 에뮬레이터는 유닉스 셸 환경을 사용해 컴퓨터의 프로그램을 실행하는데 사용합니다.</p>
+    <p xml:lang="lt">GNOME terminas yra terminalo emuliatorius UNIX apvalkalo aplinkai pasiekti, kurį galima naudoti jūsų sistemos programų vykdymui.</p>
+    <p xml:lang="lv">GNOME terminālis ir termināļa emulācijas lietotne, lai piekļūtu UNIX čaulas videi, ko var izmantot, lai palaist sistēmā pieejamās programmas.</p>
+    <p xml:lang="ml">ഗ്നോം ടെര്‍മിനല്‍ എന്നത് സിസ്റ്റത്തില്‍ ലഭ്യമായ പ്രോഗ്രാമുകള്‍ പ്രവര്‍ത്തിപ്പിക്കാനായി യുണിക്സ് ഷെല്‍ പരിസ്ഥിതി ലഭ്യമാക്കാന്‍ കഴിയുന്ന ഒരു ടെര്‍മിനല്‍ എമുലേറ്റര്‍ ആപ്ലിക്കേഷനാണ്.</p>
+    <p xml:lang="mr">GNOME टर्मिनल हे UNIX शेल वातावरणच्या प्रवेशकरिता एक टर्मिनल एम्युलेटर ॲप्लिकेशन आहे ज्याचा वापर प्रणालीवरील प्रोग्राम्स चालवण्याकरिता होतो.</p>
+    <p xml:lang="ms">GNOME Terminal adalah aplikasi pelagak terminal untuk mencapai persekitaran shell UNIX yang boleh digunakan untuk menjalankan program yang tersedia dalam sistem Anda.</p>
+    <p xml:lang="nb">GNOME terminal er en terminalemulator. Den gir tilgang til UNIX-skallmiljøer, som kan brukes til å kjøre programmer på systemet.</p>
+    <p xml:lang="ne">जिनोम टर्मिनल युनिक्स शेल परिवेशमा पहुँच प्राप्त गर्नका लागि टर्मिनल इमुलेटर अनुप्रयोग हो जुन तपाईँको प्रणालीमा उपलब्ध कार्यक्रम चलाउन प्रयोग गर्न सकिन्छ ।.</p>
+    <p xml:lang="nl">GNOME Terminal is een terminal-emulator die toegang geeft tot een Unix-shellomgeving waarin programma’s uitgevoerd kunnen worden die op uw systeem beschikbaar zijn.</p>
+    <p xml:lang="oc">L'aplicacion Terminal de GNOME es un emulator de terminal per accedir a l'environament del shell d'UNIX e que permet d'executar de programas presents dins vòstre sistèma.</p>
+    <p xml:lang="pa">ਗਨੋਮ ਟਰਮੀਨਲ ਇੱਕ ਟਰਮੀਨਲ ਸਮਰੂਪ ਐਪਲੀਕੇਸ਼ਨ ਹੈ, ਜੋ ਕਿ ਯੂਨੈਕਸ ਸੈੱਲ ਇੰਵਾਇਰਨਮੈਂਟ ਦੀ ਵਰਤੋਂ ਕਰਨ ਲਈ
+ਹੈ, ਜਿਸ ਨੂੰ ਤੁਹਾਡੇ ਸਿਸਟਮ ਉੱਤੇ ਉਪਲੱਬਧ ਪ੍ਰੋਗਰਾਮ ਨੂੰ ਚਲਾਉਣ ਲਈ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ।</p>
+    <p xml:lang="pl">Terminal środowiska GNOME to emulator terminala dający dostęp do powłoki systemu UNIX, umożliwiając wykonywanie programów zainstalowanych na komputerze.</p>
+    <p xml:lang="pt">Terminal GNOME é uma aplicação emuladora de terminal para aceder ao ambiente de linha de comandos UNIX que pode ser utilizado para executar aplicações disponíveis no seu sistema.</p>
+    <p xml:lang="pt-BR">O GNOME Terminal é um aplicativo emulador de terminal usado para acessar um ambiente de shell de UNIX e que pode ser usado para executar programas disponíveis no seu sistema.</p>
+    <p xml:lang="ro">Terminal GNOME este o aplicație emulator de terminal pentru a accesa mediul UNIX shell care poate fi folosit pentru a rula programe disponibile pe sistemul dumneavoastră.</p>
+    <p xml:lang="ru">Терминал GNOME — это эмулятор терминала для работы со средой оболочки UNIX. Терминал можно использовать для запуска программ, доступных в вашей системе.</p>
+    <p xml:lang="sk">Terminál prostredia GNOME je emulátor terminálovej aplikácie na prístup k UNIXovému prostrediu shellu, ktorý môže byť použitý na spúšťanie programov dostupných v systéme.</p>
+    <p xml:lang="sl">Program Terminal GNOME je program, ki omogoča dostop do okolja lupine UNIX in omogoča zaganjanje programov, dostopnih v sistemu.</p>
+    <p xml:lang="sr">Гномов терминал је опонашавач терминала за приступ конзолном окружењу ЈУНИКСА који може бити коришћен за покретање програма који су доступнни на вашем систему.</p>
+    <p xml:lang="sr-Latn">Gnomov terminal je oponašavač terminala za pristup konzolnom okruženju JUNIKSA koji može biti korišćen za pokretanje programa koji su dostupnni na vašem sistemu.</p>
+    <p xml:lang="sv">GNOME Terminal är en terminalemulator som gör det möjligt att använda en UNIX-skalmiljö vilken kan användas för att köra program tillgängliga på ditt system.</p>
+    <p xml:lang="ta">GNOME முனையம் என்பது உங்கள் கணினியில் இருக்கும் நிரல்களை இயக்கப் பயன்படுகின்ற UNIX ஷெல் ஒன்றை அணுகுவதற்கான முனைய உருவாக்கப் பயன்பாடு.</p>
+    <p xml:lang="te">గ్నోమ్ టెర్మినల్ అనునది టెర్మినల్ ఎమ్యులేటర్ ఇది ఉపయోగించి యునిక్స్ షెల్ ఎన్విరాన్మెంట్ ఏక్సెస్ చేయవద్దు అది మీ వ్యవస్థ నందలి ప్రోగ్రామ్లను నడుపుటకు ఉపయోగించవచ్చు.</p>
+    <p xml:lang="tg">Терминали GNOME- ин барномаи тақлидгари терминал барои кушодани муҳити восити UNIX мебошад ва метавонад барои иҷро кардани барномаҳои системаи шумо истифода шавад.</p>
+    <p xml:lang="th">เทอร์มินัล GNOME เป็นโปรแกรมจำลองเทอร์มินัลสำหรับเข้าใช้สภาพแวดล้อมเชลล์ยูนิกซ์ ซึ่งสามารถใช้เรียกทำงานโปรแกรมต่างๆ ที่มีอยู่ในระบบของคุณได้</p>
+    <p xml:lang="tr">GNOME Uçbirimi, sisteminizde bulunan programları çalıştırmakta kullanabileceğiniz UNIX kabuğu ortamına erişmek için bir uçbirim öykünücüsü uygulamasıdır.</p>
+    <p xml:lang="uk">GNOME Terminal — програма для емулювання термінала, щоб доступитись до оболонки UNIX, яку можна використати для запускання програм, що доступні на вашій системі.</p>
+    <p xml:lang="vi">Thiết bị cuối GNOME là ứng dụng mô phỏng thiết bị cuối để truy cập môi trường hệ vỏ UNIX cái mà có thể dùng để chạy các chương trình sẵn có trên hệ thống của bạn.</p>
+    <p xml:lang="zh-CN">GNOME 终端 是一个访问 UNIX shell 环境的终端模拟器应用，可用来运行您系统上的程序。</p>
+    <p xml:lang="zh-HK">GNOME Terminal 是用來存取 UNIX shell 環境的終端機模擬程式，可以用來執行你系統上可用的程式。</p>
+    <p xml:lang="zh-TW">GNOME 終端機是用來存取 UNIX 外表殼 (shell) 環境的終端機模擬程式，可以用來執行您系統上可用的程式。</p>
+    <p>It supports several profiles, multiple tabs and implements several keyboard shortcuts.</p>
+    <p xml:lang="an">Suporta quantos perfils, quantas pestanyas y implementa quantos alcorces de teclau.</p>
+    <p xml:lang="ar">يدعم تشكيلات مختلفة، و الألسنة و العديد من اختصارات لوحة المفاتيح.</p>
+    <p xml:lang="as">ই কেইবাটাও আলেখ্য, একাধিক টেবসমূহ সমৰ্থন কৰে আৰু কেইবাটাও কি'বৰ্ড চৰ্টকাট প্ৰণয়ন কৰে।</p>
+    <p xml:lang="be">Ён падтрымлівае розныя профілі, тэрміналы ў картках і разнастайныя клавіятурныя скароты.</p>
+    <p xml:lang="bg">Програмата поддържа профили, множество подпрозорци и клавишни комбинации.</p>
+    <p xml:lang="bn-IN">এটি একাধিক প্রোফাইল, একাধিক ট্যাব সমর্থন করে, এবং একাধিক কীবোর্ড শর্টকাট বাস্তবায়িত করে।</p>
+    <p xml:lang="bs">Podržava nekoliko profila, više kartica i implementira nekoliko tipkovnih prečica.</p>
+    <p xml:lang="ca">Permet l'ús de diferents perfils, múltiples pestanyes i a més implementa diferents dreceres de teclat.</p>
+    <p xml:lang="ca-valencia">Permet l'ús de diferents perfils, múltiples pestanyes i a més implementa diferents dreceres de teclat.</p>
+    <p xml:lang="cs">Podporuje více profilů, více terminálů v kartách a řadu klávesových zkratek.</p>
+    <p xml:lang="da">Det understøtter flere profiler, flere faneblade og implementerer adskillige tastaturgenveje.</p>
+    <p xml:lang="de">Es unterstützt mehrere Profile, verschiedene Reiter und bietet einige Tastenkombinationen.</p>
+    <p xml:lang="el">Υποστηρίζει διάφορα προφίλ, πολλαπλές καρτέλες και υλοποιεί διάφορες συντομεύσεις πληκτρολογίου.</p>
+    <p xml:lang="en-GB">It supports several profiles, multiple tabs and implements several keyboard shortcuts.</p>
+    <p xml:lang="eo">Ĝi subtenas plurajn profilojn, multajn langetojn kaj povas uzi kelkajn klavkombinojn.</p>
+    <p xml:lang="es">Soporta varios perfiles, varias pestañas e implementa varios atajos de teclado.</p>
+    <p xml:lang="eu">Hainbat profil eta fitxa onartzen ditu, horrez gain hainbat laster-tekla ditu.</p>
+    <p xml:lang="fa">از نمایه‌ها، زبانه‌های چندگانه و میان‌برهای صفحه کلید مختلف پشتیبانی می‌کند.</p>
+    <p xml:lang="fi">Se tukee useita profiileja, lukuisia välilehtiä ja sisältää paljon eri pikanäppäimiä.</p>
+    <p xml:lang="fr">Elle prend en charge plusieurs profils, de nombreux onglets et met en place plusieurs raccourcis clavier.</p>
+    <p xml:lang="fur">Al supuarte plui profîi, schedis multiplis e al implemente une vore di scurtis vie tastiere.</p>
+    <p xml:lang="gd">Cuiridh e taic ri iomadh pròifil, taba ’s ath-ghoiridean meur-chlàir.</p>
+    <p xml:lang="gl">Permite usar varios perfiles, varias lapelas e implementa varios atallos de teclado.</p>
+    <p xml:lang="gu">તે ઘણી રૂપરેખા, ઘણાં ટૅબને આધાર આપે છે અને ઘણાં કિબોર્ડ ટૂંકાણોનું અમલીકરણ કરે છે.</p>
+    <p xml:lang="he">הוא תומך במספר פרופילים, ריבוי לשוניות ומיישם כמה קיצורי מקשים.</p>
+    <p xml:lang="hr">Podržava nekoliko profila, višestruke kartice i implementira nekoliko prečaca tipkovnice.</p>
+    <p xml:lang="hu">A GNOME Terminál támogatja több profil és több lap használatát, és számos billentyűkombinációt tartalmaz.</p>
+    <p xml:lang="id">Ini mendukung beberapa profil, tab berganda, dan mengimplementasi beberapa pintasan papan tik.</p>
+    <p xml:lang="it">Supporta molteplici profili, schede multiple e implementa molte scorciatoie da tastiera.</p>
+    <p xml:lang="ja">複数プロファイルやマルチタブ表示をサポートし、さらに各種キーボードショートカットが利用できます。</p>
+    <p xml:lang="ka">მას რამდენიმე პროფილის, ბევრი ჩანართის და რამდენიმე კლავიატურის მალსახმობის მხარდაჭერა გააჩნია.</p>
+    <p xml:lang="kk">Ол бірнеше профильді, бетті және пернетақта жарлықтарын қолдайды.</p>
+    <p xml:lang="km">វា​គាំទ្រ​ទម្រង់​ច្រើន ផ្ទាំង​ច្រើន និង​អនុវត្ត​គ្រាប់ចុច​ផ្លូវកាត់​ជាច្រើន​ផង​ដែរ។</p>
+    <p xml:lang="kn">ಇದು ಹಲವಾರು ಪ್ರೊಫೈಲ್‌ಗಳನ್ನು, ಅನೇಕ ಟ್ಯಾಬ್‌ಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ ಮತ್ತು ಹಲವಾರು ಕೀಲಿಮಣೆ ಸಮೀಪಮಾರ್ಗಗಳನ್ನು ಅಳವಡಿಸುತ್ತದೆ.</p>
+    <p xml:lang="ko">여러가지 프로파일, 탭 모드를 지원하고, 여러가지 키보드 바로 가기가 있습니다.</p>
+    <p xml:lang="lt">Jis palaiko kelis profilius, daug kortelių ir turi daug klaviatūros trumpinių.</p>
+    <p xml:lang="lv">Tas atbalsta vairākus profilus, cilnes un dažas tastatūras saīsnes.</p>
+    <p xml:lang="ml">ഇത് വിവിധ പ്രൊഫൈലുകളെ പിന്‍തുണയ്ക്കുന്നു, ഒന്നിലധികം ടാബുകള്‍, അനേകം കീബോര്‍ഡ് കുറുക്കുവഴികള്‍ ലഭ്യമാക്കുന്നു.</p>
+    <p xml:lang="mr">ते विविध प्रोफाइल्स, बहु टॅब्जकरिता समर्थन पुरवते आणि अनेक कळफलक शॉर्टकट्स लागू करते.</p>
+    <p xml:lang="ms">Ia menyokong beberapa profil, tab berbilang, dan melaksanakan beberapa pintasan papan kekunci.</p>
+    <p xml:lang="nb">Den støtter flere profiler, flere faner og tilbyr mange tastatursnarveier.</p>
+    <p xml:lang="ne">यसले धेरै प्रोफाइल, बहुविध ट्याबहरू समर्थन गर्दछ र धेरै कुञ्जीपाटी सर्टकटहरू कार्यान्वयन गर्दछ ।</p>
+    <p xml:lang="nl">Het ondersteunt verschillende profielen, meerdere tabbladen en tal van sneltoetsen.</p>
+    <p xml:lang="oc">Pren en carga mantun perfil, d'onglets nombroses e met en plaça mantun acorchi de clavièr.</p>
+    <p xml:lang="pa">ਇਹ ਕਈ ਪ੍ਰੋਫਾਇਲਾਂ, ਕਈ ਟੈਬਾਂ ਲਈ ਸਹਾਇਕ ਹੈ ਅਤੇ ਕਈ ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਰੱਖਦਾ ਹੈ।</p>
+    <p xml:lang="pl">Obsługuje on profile, karty i wiele skrótów klawiszowych.</p>
+    <p xml:lang="pt">Suporta vários perfis, múltiplos separadores e implementa várias teclas de atalho.</p>
+    <p xml:lang="pt-BR">Possui suporte a vários perfis, abas múltiplas e implementa vários atalhos de teclado.</p>
+    <p xml:lang="ro">Suportă diferite profile, taburi multiple și implementează diferite scurtături de tastatură.</p>
+    <p xml:lang="ru">Терминал GNOME поддерживает работу с профилями, создание вкладок вкладок, комбинации клавиш.</p>
+    <p xml:lang="sk">Podporuje používanie profilov, otváranie kariet a implementuje niekoľko klávesových skratiek.</p>
+    <p xml:lang="sl">Podpira uporabo več profilov, več zavihkov in različnih tipkovnih bližnjic.</p>
+    <p xml:lang="sr">Подржава неколико профила, отварање више језичака и примену неколико пречица тастатуре.</p>
+    <p xml:lang="sr-Latn">Podržava nekoliko profila, otvaranje više jezičaka i primenu nekoliko prečica tastature.</p>
+    <p xml:lang="sv">Den stödjer multipla profiler, flera flikar och implementerar flertalet tangentbordsgenvägar.</p>
+    <p xml:lang="ta">இது பல தனியமைப்புகளையும் பல கீற்றுகளையும் ஆதரிக்கிறது. பல விசைப்பலகைக் குறுக்குவழிகளும் உள்ளது.</p>
+    <p xml:lang="te">ఇది చాలా ప్రొఫైళ్ళతు తోడ్పాటునిచ్చును, పలు టాబ్లు మరియు చాలా కీబోర్డ్ లఘువులను ఇంప్లిమెంట్ చేయును.</p>
+    <p xml:lang="tg">Он якчанд профил ва якчанд варақаҳоро дастгирӣ мекунад, ва баъзе миёнбурҳои клавиатураро истифода мебарад.</p>
+    <p xml:lang="th">รองรับโพรไฟล์หลายชนิด การใช้หลายแท็บ และมีปุ่มลัดแป้นพิมพ์ให้ใช้มากมาย</p>
+    <p xml:lang="tr">Birçok profili, çoklu sekmeyi destekler ve türlü klavye kısayolları kullanmayı sağlar.</p>
+    <p xml:lang="uk">Підтримуються кілька профілів, кілька вкладок і різні клавіатурні скорочення.</p>
+    <p xml:lang="vi">Nó hỗ trợ nhiều hồ sơ, đa thẻ và thực hiện nhiều phím tắt.</p>
+    <p xml:lang="zh-CN">它支持多个配置文件，多标签页，支持多个键盘快捷键。</p>
+    <p xml:lang="zh-HK">它支援多種設定組合、多重分頁與實作許多快捷鍵。</p>
+    <p xml:lang="zh-TW">它支援多種設定檔、多重分頁與實作許多快捷鍵。</p>
+  </description>
+  <recommends>
+    <control>console</control>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://help.gnome.org/users/gnome-terminal/stable/figures/gnome-terminal.png</image>
+  </screenshot>
+  </screenshots>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>HighContrast</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <url type="homepage">https://wiki.gnome.org/Apps/Terminal</url>
+  <project_group>GNOME</project_group>
+  <update_contact>https://wiki.gnome.org/Apps/Terminal/ReportingBugs</update_contact>
+  <launchable type="desktop-id">org.gnome.Terminal.desktop</launchable>
+</component>

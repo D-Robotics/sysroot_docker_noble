@@ -1,0 +1,15 @@
+# mount filesystems
+
+[Unit]
+Description=mount filesystems
+DefaultDependencies=no
+Before=sysinit.target system.slice shutdown.target
+Conflicts=shutdown.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/hobot-mount.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sysinit.target

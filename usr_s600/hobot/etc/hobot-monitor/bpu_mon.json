@@ -1,0 +1,17 @@
+{
+    "name": "bpu_stat",
+    "cmd-list": [
+        {
+            "id": "0x1",
+            "type": "file",
+            "name": "bpu0_ratio",
+            "file": "/sys/devices/system/bpu/bpu0/ratio"
+        },
+        {
+            "id": "0x3",
+            "type": "file",
+            "name": "bpu_user",
+            "file": "/sys/devices/system/bpu/users"
+        }
+    ]
+}

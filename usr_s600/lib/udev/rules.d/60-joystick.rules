@@ -1,0 +1,52 @@
+ACTION!="add", GOTO="joystick_rules_end"
+KERNEL!="js*", GOTO="joystick_rules_end"
+
+# Restore any stored calibration for the device
+RUN+="/usr/bin/jscal-restore %E{DEVNAME}"
+
+# ---------------------------------------------------------------------
+# Set game controller leds to the value of the js device number.
+
+# ---------------------------------------------------------------------
+# XBOX: joystick devices with xbox-style ring of four-LEDs
+
+# all devices served by the "xpad" input driver
+DRIVERS=="xpad", \
+  RUN+="/lib/udev/js-set-enum-leds XBOX /sys/%E{DEVPATH}/../../../../leds/ $number"
+
+# ---------------------------------------------------------------------
+# FOUR: joystick devices with four individual LEDs
+
+# Sony PLAYSTATION(R)3 Controller
+ATTRS{id/vendor}=="054c", ATTRS{id/product}=="0268", \
+  RUN+="/lib/udev/js-set-enum-leds FOUR /sys/%E{DEVPATH}/../device/leds/ $number"
+
+# Nyko Core Controller for PS3
+ATTRS{id/vendor}=="1345", ATTRS{id/product}=="3008", \
+  RUN+="/lib/udev/js-set-enum-leds FOUR /sys/%E{DEVPATH}/../device/leds/ $number"
+
+# Nintendo Wii Remote
+ATTRS{id/vendor}=="057e", ATTRS{id/product}=="0306", \
+  RUN+="/lib/udev/js-set-enum-leds FOUR /sys/%E{DEVPATH}/../device/leds/ $number"
+
+# Nintendo Wii Remote 2
+ATTRS{id/vendor}=="057e", ATTRS{id/product}=="0330", \
+  RUN+="/lib/udev/js-set-enum-leds FOUR /sys/%E{DEVPATH}/../device/leds/ $number"
+
+# Bigben Interactive Bigben Game Pad
+ATTRS{id/vendor}=="146b", ATTRS{id/product}=="0902", \
+  RUN+="/lib/udev/js-set-enum-leds FOUR /sys/%E{DEVPATH}/../device/leds/ $number"
+
+# ---------------------------------------------------------------------
+# COLOR: joystick devices with a single multicolor LED
+
+# Sony Interactive Entertainment Wireless Controller
+ATTRS{id/vendor}=="054c", ATTRS{id/product}=="05c4", \
+  RUN+="/lib/udev/js-set-enum-leds COLOR /sys/%E{DEVPATH}/../device/leds/ $number"
+
+# Sony Interactive Entertainment Wireless Controller
+ATTRS{id/vendor}=="054c", ATTRS{id/product}=="09cc", \
+  RUN+="/lib/udev/js-set-enum-leds COLOR /sys/%E{DEVPATH}/../device/leds/ $number"
+
+# ---------------------------------------------------------------------
+LABEL="joystick_rules_end"

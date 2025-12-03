@@ -1,0 +1,8 @@
+
+[testing]
+fields
+hunter
+process-tests
+pytest-xdist
+six
+virtualenv

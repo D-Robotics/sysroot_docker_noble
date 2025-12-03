@@ -1,0 +1,9 @@
+Document: python-logilab-common
+Title: Logilab common library API
+Author: LOGILAB S.A.
+Abstract: Logilab common library (aka Logilab's extension to the standard library).
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python3-logilab-common/html/index.html
+Files: /usr/share/doc/python3-logilab-common/html/*

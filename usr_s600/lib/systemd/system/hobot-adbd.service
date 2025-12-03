@@ -1,0 +1,16 @@
+# adb service
+
+[Unit]
+Description=Android debug bridage daemon
+After=hobot-appinit.service
+Wants=hobot-appinit.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/default/adbenv
+ExecStart=/usr/bin/usb-gadget.sh start adb
+RemainAfterExit=yes
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=multi-user.target

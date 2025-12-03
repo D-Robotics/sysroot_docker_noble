@@ -1,0 +1,138 @@
+#!/bin/bash
+
+# 检查是否以root运行
+if [ "$(id -u)" -ne 0 ]; then
+    echo "Error: This script must be run as root." >&2
+    exit 1
+fi
+
+# 定义debugfs路径
+DEBUGFS_PATH="/sys/kernel/debug/pinctrl"
+
+# 检查路径是否存在
+if [ ! -d "$DEBUGFS_PATH" ]; then
+    echo "Error: $DEBUGFS_PATH not found." >&2
+    exit 1
+fi
+
+# 处理单个pinctrl控制器
+process_controller() {
+    local ctrl_dir="$1"
+    local filter="$2"
+    local gpio_ranges_file="$ctrl_dir/gpio-ranges"
+    local pinmux_pins_file="$ctrl_dir/pinmux-pins"
+
+    # 检查必要文件
+    if [ ! -f "$gpio_ranges_file" ] || [ ! -f "$pinmux_pins_file" ]; then
+        return
+    fi
+    # TODO: handle multiple pin ranges
+    pin_base=$(awk 'NR == 1 { next }
+                    {
+                    pin_base_start = index($4,"[");
+                    pin_base=substr($4, pin_base_start+1);
+                    print pin_base}' ${gpio_ranges_file})
+    pin_base=$(echo $pin_base | tr '\n' ' ')
+    pin_range=$(awk 'NR == 1 { next }
+                    {
+                    pin_range_start_i = index($8,"[");
+                    pin_range_start=substr($8, pin_range_start_i+1);
+                    pin_range_end_i = index($10,"]");
+                    pin_range_end=substr($10, 1, pin_range_end_i-1);
+                    print pin_range_start " " pin_range_end}' ${gpio_ranges_file})
+    pin_range=$(echo $pin_range | tr '\n' ' ')
+
+    # 解析pinmux-pins
+    # 使用awk代替复杂正则表达式进行可靠解析
+    awk '
+    /^pin [0-9]+ / {
+        split(pin_base_str, pin_base_arr, " ");
+        split(pin_range_str, pin_range_arr, " ");
+        pin_num = "";
+        for (i = 1; i <= length(pin_base_arr); i++ ) {
+            cur_pin_start = pin_range_arr[i * 2 - 1];
+            cur_pin_end = pin_range_arr[i * 2];
+            if ($2 <= cur_pin_end && $2 >= cur_pin_start) {
+                pin_num = $2 - cur_pin_start + pin_base_arr[i];
+            }
+        }
+        name_start = index($0, "(");
+        name_end = index($0, ")");
+        pin_name = substr($0, name_start+1, name_end-name_start-1);
+
+        # Get status
+        status = substr($0, name_end+3);
+
+        # Initalize local variables
+        mux_owner = "";
+        gpio_owner = "";
+        pin_func = "Not Configured";
+
+        # Extract and analyze status
+        if (status ~ /\(MUX UNCLAIMED\)/) {
+            # MUX is not taken
+            if (status ~ /\(GPIO UNCLAIMED\)/) {
+                gpio_owner = "UNCLAIMED";
+            } else {
+                # Get gpio Owner
+                split(status, parts, /\(MUX UNCLAIMED\)/);
+                gpio_owner = parts[2];
+                sub(/^[[:space:]]+/, "", gpio_owner);
+            }
+
+            if (gpio_owner != "" && gpio_owner != "UNCLAIMED") {
+                pin_func = "gpio";
+            }
+        } else {
+            # MUX Taken
+            split(status, parts, "group");
+            mux_owner = parts[2];
+            pin_func = mux_owner;
+        }
+
+        # Filter output
+        if (pin_num != "") {
+            if (filter == "") {
+                printf("%03d|%16s|%20s\n", pin_num, pin_name, pin_func);
+            } else if (pin_name == filter) {
+                printf("%03d|%16s|%20s\n", pin_num, pin_name, pin_func);
+            }
+        }
+
+    }' filter="$filter" pin_base_str="$pin_base" pin_range_str="$pin_range" "$pinmux_pins_file"
+}
+
+# 主逻辑
+if [ $# -eq 1 ]; then
+    # 带参数模式：过滤特定PIN名
+    target_pin="$1"
+    found=0
+    for ctrl_dir in "$DEBUGFS_PATH"/*; do
+        if [ -d "$ctrl_dir" ]; then
+            output=$(process_controller "$ctrl_dir" "$target_pin")
+            if [ -n "$output" ]; then
+                found=1
+            fi
+        fi
+    done
+    if [ "$found" -eq 0 ]; then
+        echo "No pin named '$target_pin' found."
+    fi
+else
+    # 无参数模式：输出所有PIN信息
+    output=$(
+    for ctrl_dir in "$DEBUGFS_PATH"/*; do
+        if [ -d "$ctrl_dir" ]; then
+            process_controller "$ctrl_dir"
+        fi
+    done | sort -k1,1n)  # 按第一列(PIN序号)数字排序
+fi
+printf "|%3s %16s %20s|\n" "---" "----------------" "--------------------"
+printf "|%s|%16s|%20s|\n" "Idx" "Pin Name" "Pin Func"
+printf "|%3s %16s %20s|\n" "---" "----------------" "--------------------"
+
+echo "$output" | while read -r line; do
+    printf "|%s|\n" "$line"
+    printf "|%3s %16s %20s|\n" "---" "----------------" "--------------------"
+done
+printf "|%3s %16s %20s|\n" "---" "----------------" "--------------------"

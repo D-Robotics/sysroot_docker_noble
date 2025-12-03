@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="endeavour">
+    <schema id="org.gnome.todo" path="/org/gnome/todo/">
+        <key name="window-maximized" type="b">
+            <default>true</default>
+            <summary>Window maximized</summary>
+            <description>Window maximized state</description>
+        </key>
+        <key name="window-size" type="(ii)">
+            <default>(800, 600)</default>
+            <summary>Window size</summary>
+            <description>Window size (width and height).</description>
+        </key>
+        <key name="first-run" type="b">
+            <default>true</default>
+            <summary>First run of Endeavour</summary>
+            <description>Whether it’s the first run of Endeavour (to run the initial setup) or not</description>
+        </key>
+        <key name="default-provider" type="s">
+            <default>"local"</default>
+            <summary>Default provider to add new lists to</summary>
+            <description>The identifier of the default provider to add new lists to</description>
+        </key>
+        <key name="active-extensions" type="as">
+            <default>["task-lists-workspace", "inbox-panel", "all-tasks-panel", "background", "eds", "today-panel", "next-week-panel", "night-light"]</default>
+            <summary>List of active extensions</summary>
+            <description>The list of active extensions</description>
+        </key>
+        <key name="sidebar-revealed" type="b">
+            <default>true</default>
+            <summary>Sidebar revealed</summary>
+            <description>Whether the sidebar is revealed or not</description>
+        </key>
+    </schema>
+</schemalist>

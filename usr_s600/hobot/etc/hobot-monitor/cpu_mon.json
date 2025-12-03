@@ -1,0 +1,57 @@
+{
+    "name": "cpu_stat",
+    "cmd-list": [
+        {
+            "id": "0x1",
+            "type": "file",
+            "name": "cpustat",
+            "file": "/proc/stat"
+        },
+        {
+            "id": "0x3",
+            "type": "file",
+            "name": "process_stat",
+            "file": "/proc/$pid/stat"
+        },
+        {
+            "id": "0x4",
+            "type": "file",
+            "name": "process_io",
+            "file": "/proc/$pid/io"
+        },
+        {
+            "id": "0x8",
+            "type": "custom",
+            "name": "process_stat_all",
+            "lib": "/usr/hobot/lib/libmon_cpu.so",
+            "symbols": "get_process_stat_all"
+        },
+        {
+            "id": "0x9",
+            "type": "file",
+            "name": "interrupt",
+            "file": "/proc/interrupts"
+        },
+        {
+            "id": "0xa",
+            "type": "custom",
+            "name": "enable_perf",
+            "lib": "/usr/hobot/lib/libmon_perf.so",
+            "symbols": "enable_perf_mon"
+        },
+        {
+            "id": "0xb",
+            "type": "custom",
+            "name": "get_perf_data",
+            "lib": "/usr/hobot/lib/libmon_perf.so",
+            "symbols": "get_perf_data"
+        },
+        {
+            "id": "0xc",
+            "type": "custom",
+            "name": "disable_perf",
+            "lib": "/usr/hobot/lib/libmon_perf.so",
+            "symbols": "disable_perf_mon"
+        }
+    ]
+}

@@ -1,0 +1,2 @@
+embedded-library usr/lib/*/libcanberra.so.0.2.5: ltdl
+libcanberra0t64: package-name-doesnt-match-sonames libcanberra0

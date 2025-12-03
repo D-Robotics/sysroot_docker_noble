@@ -1,0 +1,1663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2013, 2016 Michael Catanzaro and contributors -->
+<component type="desktop">
+  <id>org.gnome.Calculator.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Calculator</name>
+  <name xml:lang="zh_TW">計算機</name>
+  <name xml:lang="zh_HK">計數機</name>
+  <name xml:lang="zh_CN">计算器</name>
+  <name xml:lang="xh">Ikhaltyuleyitha</name>
+  <name xml:lang="vi">Máy tính bỏ túi</name>
+  <name xml:lang="uk">Калькулятор</name>
+  <name xml:lang="ug">ھېسابلىغۇچ</name>
+  <name xml:lang="tr">Hesap Makinesi</name>
+  <name xml:lang="tk">Çot</name>
+  <name xml:lang="th">เครื่องคิดเลข</name>
+  <name xml:lang="tg">Калкулатор</name>
+  <name xml:lang="te">గణన పరికరం</name>
+  <name xml:lang="ta">கணிப்பான்</name>
+  <name xml:lang="sv">Kalkylator</name>
+  <name xml:lang="sr">Калкулатор</name>
+  <name xml:lang="sr@latin">Kalkulator</name>
+  <name xml:lang="sq">Makinë llogaritëse</name>
+  <name xml:lang="sl">Računalo</name>
+  <name xml:lang="sk">Kalkulačka</name>
+  <name xml:lang="si">ගණකය</name>
+  <name xml:lang="rw">Mubazi</name>
+  <name xml:lang="ru">Калькулятор</name>
+  <name xml:lang="ro">Calculator</name>
+  <name xml:lang="pt">Calculadora</name>
+  <name xml:lang="pt_BR">Calculadora</name>
+  <name xml:lang="pl">Kalkulator</name>
+  <name xml:lang="pa">ਕੈਲਕੂਲੇਟਰ</name>
+  <name xml:lang="or">କାଲକୁଲେଟର</name>
+  <name xml:lang="oc">Calculadoira</name>
+  <name xml:lang="nn">Kalkulator</name>
+  <name xml:lang="nl">Rekenmachine</name>
+  <name xml:lang="ne">गणकयन्त्र</name>
+  <name xml:lang="nb">Kalkulator</name>
+  <name xml:lang="my">ဂဏန်းတွက်စက်</name>
+  <name xml:lang="ms">Kalkulator</name>
+  <name xml:lang="mr">गणनयंत्र</name>
+  <name xml:lang="mn">Тооны машин</name>
+  <name xml:lang="ml">ഗണനി</name>
+  <name xml:lang="mk">Калкулатор</name>
+  <name xml:lang="mjw">Calculator</name>
+  <name xml:lang="mg">Milina mpikajy</name>
+  <name xml:lang="mai">कैलकुलेटर</name>
+  <name xml:lang="lv">Kalkulators</name>
+  <name xml:lang="lt">Skaičiuotuvas</name>
+  <name xml:lang="ko">계산기</name>
+  <name xml:lang="kn">ಕ್ಯಾಲ್ಕುಲೇಟರ್</name>
+  <name xml:lang="km">ម៉ាស៊ីន​គិត​លេខ</name>
+  <name xml:lang="kk">Калькулятор</name>
+  <name xml:lang="kab">Tamsiḍent</name>
+  <name xml:lang="ka">კალკულატორი</name>
+  <name xml:lang="ja">電卓</name>
+  <name xml:lang="it">Calcolatrice</name>
+  <name xml:lang="id">Kalkulator</name>
+  <name xml:lang="hy">Հաշվիչ</name>
+  <name xml:lang="hu">Számológép</name>
+  <name xml:lang="hr">Kalkulator</name>
+  <name xml:lang="hi">गणक</name>
+  <name xml:lang="he">מחשבון</name>
+  <name xml:lang="gu">કૅલ્ક્યુલેટર</name>
+  <name xml:lang="gl">Calculadora</name>
+  <name xml:lang="gd">Àireamhair</name>
+  <name xml:lang="ga">Áireamhán</name>
+  <name xml:lang="fur">Calcoladorie</name>
+  <name xml:lang="fr">Calculatrice</name>
+  <name xml:lang="fo">Roknimaskina</name>
+  <name xml:lang="fi">Laskin</name>
+  <name xml:lang="fa">ماشین‌حساب</name>
+  <name xml:lang="eu">Kalkulagailua</name>
+  <name xml:lang="et">Kalkulaator</name>
+  <name xml:lang="es">Calculadora</name>
+  <name xml:lang="eo">Kalkulilo</name>
+  <name xml:lang="en@shaw">𐑒𐑨𐑤𐑒𐑿𐑤𐑱𐑑𐑼</name>
+  <name xml:lang="en_GB">Calculator</name>
+  <name xml:lang="en_CA">Calculator</name>
+  <name xml:lang="el">Αριθμομηχανή</name>
+  <name xml:lang="dz">རྩིས་འཕྲུལ།</name>
+  <name xml:lang="de">Taschenrechner</name>
+  <name xml:lang="da">Lommeregner</name>
+  <name xml:lang="cy">Cyfrifiannell</name>
+  <name xml:lang="cs">Kalkulačka</name>
+  <name xml:lang="ca@valencia">Calculadora</name>
+  <name xml:lang="ca">Calculadora</name>
+  <name xml:lang="bs">Računalo</name>
+  <name xml:lang="bn">ক্যালকুলেটর</name>
+  <name xml:lang="bn_IN">ক্যালকুলেটর</name>
+  <name xml:lang="bg">Калкулатор</name>
+  <name xml:lang="be">Калькулятар</name>
+  <name xml:lang="be@latin">Kalkulatar</name>
+  <name xml:lang="az">Hesaplayıcı</name>
+  <name xml:lang="ast">Calculadora</name>
+  <name xml:lang="as">গণক</name>
+  <name xml:lang="ar">آلة حاسبة</name>
+  <name xml:lang="af">Sakrekenaar</name>
+  <summary>Perform arithmetic, scientific or financial calculations</summary>
+  <summary xml:lang="zh_TW">進行數字、科學或財務計算</summary>
+  <summary xml:lang="zh_HK">進行數字、科學或金融的計算</summary>
+  <summary xml:lang="zh_CN">执行算术、科学或财务计算</summary>
+  <summary xml:lang="vi">Chạy phép tính kiểu số học, khoa học hay tài chính</summary>
+  <summary xml:lang="uk">Виконання арифметичних, наукових або фінансових розрахунків</summary>
+  <summary xml:lang="ug">ئارىفمېتىكىلىق، ئىلمىي ياكى ئىقتىسادىي ھېساباتلارنى ئېلىپ بېرىش پروگراممىسى</summary>
+  <summary xml:lang="tr">Aritmetik, bilimsel ve finansal hesaplamalar gerçekleştirir</summary>
+  <summary xml:lang="th">คำนวณเลขคณิต ฟังก์ชันวิทยาศาสตร์ หรือการเงิน</summary>
+  <summary xml:lang="tg">Иҷрои ҳисобҳои арифметикӣ, илмӣ ё молиявӣ </summary>
+  <summary xml:lang="te">బీజీయ, శాస్త్రీయ లేదా ఆర్ధిక గణనలను ప్రదర్శించు</summary>
+  <summary xml:lang="ta">கணித, அறிவியல் அல்லது பொருளாதார கணக்குகளை செய்கிறது.</summary>
+  <summary xml:lang="sv">Utför aritmetiska, vetenskapliga eller finansiella beräkningar</summary>
+  <summary xml:lang="sr">Извршавајте аритметичке, научне или финансијске прорачуне</summary>
+  <summary xml:lang="sr@latin">Izvršavajte aritmetičke, naučne ili finansijske proračune</summary>
+  <summary xml:lang="sq">Kryen llogari aritmetikore, shkencore ose financiare</summary>
+  <summary xml:lang="sl">Izvajanje aritmetičnih, znanstvenih ali finančnih izračunov</summary>
+  <summary xml:lang="sk">Vykonáva aritmetické, vedecké alebo finančné výpočty</summary>
+  <summary xml:lang="rw">Kubara imibare, kuyiteranya no gukora imibare mu bya siyansi</summary>
+  <summary xml:lang="ru">Вычисления: арифметические, научные и финансовые</summary>
+  <summary xml:lang="ro">Efectuează calcule aritmetice, științifice și financiare</summary>
+  <summary xml:lang="pt">Realize cálculos aritméticos, científicos ou financeiros</summary>
+  <summary xml:lang="pt_BR">Efetue cálculos aritméticos, científicos ou financeiros</summary>
+  <summary xml:lang="pl">Wykonanie obliczeń arytmetycznych, naukowych lub finansowych</summary>
+  <summary xml:lang="pa">ਗਣਿਤ, ਵਿਗਿਆਨਕ ਜਾਂ ਵਿੱਤੀ ਗਣਨਾ ਕਰੋ</summary>
+  <summary xml:lang="or">ଗାଣିତିକ,ବୈଜ୍ଞାନିକ କିମ୍ବା ଆର୍ଥିକ ହିସାବ କରନ୍ତୁ</summary>
+  <summary xml:lang="oc">Efectua de calculs aritmetics, scientifics o financièrs</summary>
+  <summary xml:lang="nn">Utfør aritmetiske, vitskaplege eller finansielle utregningar</summary>
+  <summary xml:lang="nl">Voer rekenkundige, wetenschappelijke of financiële berekeningen uit</summary>
+  <summary xml:lang="ne">अंकगणितीय, वैज्ञानिक वा आर्थिक गणनाहरू कार्यसम्पादन गर्नुहोस्</summary>
+  <summary xml:lang="nb">Utfør aritmetiske, vitenskapelige eller finansielle utregninger</summary>
+  <summary xml:lang="ms">Buat pengiraan aritmatik, saintifik dan kewangan</summary>
+  <summary xml:lang="mr">अंकगणित, शास्त्रीय किंवा वित्तीय गणना चालवून पहा</summary>
+  <summary xml:lang="ml">അരിതമെറ്റിക്, ശാസ്ത്രീയം അല്ലെങ്കില്‍ ധനകാര്യ സംബന്ധമായ കണക്കുകൂട്ടലുകള്‍ നടത്തുക</summary>
+  <summary xml:lang="mk">Извршете аритметички, научни или финансиски пресметки</summary>
+  <summary xml:lang="mjw">Perform arithmetic, scientific or financial calculations</summary>
+  <summary xml:lang="lv">Veikt aritmētiskus, zinātniskus vai finansiālus aprēķinus</summary>
+  <summary xml:lang="lt">Atlikti aritmetinius, mokslinius ar finansinius skaičiavimus</summary>
+  <summary xml:lang="ko">일반 연산, 과학, 재무용 계산을 합니다</summary>
+  <summary xml:lang="kn">ಗಣಿತ, ವೈಜ್ಞಾನಿಕ ಅಥವಾ ಹಣಕಾಸಿನ ಲೆಕ್ಕಚಾರಗಳನ್ನು ಮಾಡಿ</summary>
+  <summary xml:lang="km">អនុវត្ត​ការ​គណនា​គណិតវិទ្យា វិទ្យាសាស្ត្រ ឬ​ហិរញ្ញវត្ថុ</summary>
+  <summary xml:lang="kk">Қарапайым, ғылыми не қаржылық есептеулерді жүргізу</summary>
+  <summary xml:lang="kab">Aselkem asnamḍan, ussnan neɣ aẓerfan</summary>
+  <summary xml:lang="ka">არითმეტიკული, სამეცნიერო და ფინანსური გამოთვლები</summary>
+  <summary xml:lang="ja">算術/科学/財務の計算を行います</summary>
+  <summary xml:lang="it">Esegue calcoli aritmetici, scientifici e finanziari</summary>
+  <summary xml:lang="id">Lakukan perhitungan aritmetik, ilmiah, atau keuangan</summary>
+  <summary xml:lang="hy">Կատարել թվաբանական, գիտական կամ ֆինանսական հաշվարկներ</summary>
+  <summary xml:lang="hu">Aritmetikai, tudományos vagy pénzügyi számítások végrehajtása</summary>
+  <summary xml:lang="hr">Izvodite aritmetičke, znanstvene ili financijske izračune</summary>
+  <summary xml:lang="hi">अंकगणित, वैज्ञानिक, या वित्तीय गणना करें</summary>
+  <summary xml:lang="he">ביצוע חישובים פשוטים, מדעיים או כלכליים</summary>
+  <summary xml:lang="gu">ગાણિતીક, વૈજ્ઞાનિક અથવા આર્થિક ગણતરીઓ કરો</summary>
+  <summary xml:lang="gl">Realice cálculos aritméticos, científicos ou financeiros</summary>
+  <summary xml:lang="gd">Dèan cunntadh àireamhachd, saidheansail no ionmhais</summary>
+  <summary xml:lang="fur">Eseguìs calcui aritmetics, sientifics o finanziaris</summary>
+  <summary xml:lang="fr">Effectue des calculs arithmétiques, scientifiques ou financiers</summary>
+  <summary xml:lang="fo">Avrika talfrøðiskar, vísindaligar ella fíggjarligar útrokningar</summary>
+  <summary xml:lang="fi">Suorita aritmeettisia, tieteellisiä tai talouslaskutoimituksia</summary>
+  <summary xml:lang="fa">انجام محاسبات ریاضی، علمی و مالی</summary>
+  <summary xml:lang="eu">Egin kalkulu aritmetikoak, zientifikoak edo finantzarioak</summary>
+  <summary xml:lang="et">Aritmeetilised, teaduslikud ja finantsarvutused</summary>
+  <summary xml:lang="es">Realice cálculos aritméticos, científicos o financieros</summary>
+  <summary xml:lang="eo">Fari aritmetikajn, sciencajn aŭ financajn kalkulojn</summary>
+  <summary xml:lang="en@shaw">𐑐𐑼𐑓𐑹𐑥 𐑼𐑦𐑔𐑥𐑩𐑑𐑦𐑒, 𐑕𐑲𐑩𐑯𐑑𐑦𐑓𐑦𐑒 𐑹 𐑓𐑲𐑯𐑨𐑯𐑖𐑩𐑤 𐑒𐑨𐑤𐑒𐑿𐑤𐑱𐑖𐑩𐑯𐑟</summary>
+  <summary xml:lang="en_GB">Perform arithmetic, scientific or financial calculations</summary>
+  <summary xml:lang="en_CA">Perform arithmetic, scientific or financial calculations</summary>
+  <summary xml:lang="el">Εκτελεί αριθμητικούς, επιστημονικούς ή εμπορικούς υπολογισμούς</summary>
+  <summary xml:lang="dz">མཚན་རིགས་ དངུལ་འབྲེལ་ ཡང་ན་ ཨང་རྩིས་ཀྱི་ རྩིས་ལས་ཀྱི་ ལས་འགན་བསྒྲུབ་ </summary>
+  <summary xml:lang="de">Arithmetische, wissenschaftliche und finanztechnische Berechnungen durchführen</summary>
+  <summary xml:lang="da">Udfør aritmetiske, videnskabelige eller finansielle udregninger</summary>
+  <summary xml:lang="cs">Provádějte aritmetické, vědecké i finanční výpočty</summary>
+  <summary xml:lang="ca@valencia">Realitza càlculs aritmètics, científics o financers</summary>
+  <summary xml:lang="ca">Realitzeu càlculs aritmètics, científics o financers</summary>
+  <summary xml:lang="bs">Obavi aritmetičke, naučne ili finansijske proračune</summary>
+  <summary xml:lang="bn">গাণিতিক, বৈজ্ঞানিক অথবা অর্থনৈতিক গণনা সম্পাদন করা হবে</summary>
+  <summary xml:lang="bn_IN">গণিত, বৈজ্ঞানিক অথবা অর্থনৈতিক প্রণালী করুন</summary>
+  <summary xml:lang="bg">Извършване на аритметични, научни или финансови изчисления</summary>
+  <summary xml:lang="be">Арыфметычныя, навуковыя і фінансавыя разлікі</summary>
+  <summary xml:lang="ast">Fai cálculos aritméticos, científicos o financieros</summary>
+  <summary xml:lang="as">গণিতিক, বিজ্ঞানভিত্তিক অথবা আৰ্থিক গণনাসমূহ কৰক</summary>
+  <summary xml:lang="ar">قم بحسابات رياضيّة وعلميّة وماليّة</summary>
+  <summary xml:lang="af">Voer rekenkundige, wetenskaplike of finansiële berekeninge uit</summary>
+  <description>
+    <p>
+      Calculator is an application that solves mathematical equations.
+      Though it at first appears to be a simple calculator with only basic
+      arithmetic operations, you can switch into Advanced, Financial, or
+      Programming mode to find a surprising set of capabilities.
+    </p>
+    <p xml:lang="zh_TW">計算機是用來解決數學算式的應用程式。看似只能進行基本的運算，一旦切換至進階模式、財務模式或程式設計模式，就會被它強大的功能所震撼。</p>
+    <p xml:lang="zh_CN">计算器是解决数学算式的应用程序。虽然一眼看上去它只是个简单的计算器，只有基本的算数运算功能，但您要是切换到高级、金融或者编程模式，就会惊讶地发现它有这么多功能。</p>
+    <p xml:lang="uk">«Калькулятор» — програма, яка розв'язує математичні рівняння. Хоча на перший погляд це простий калькулятор тільки з базовими арифметичними операціями, ви можете перейти у розширений, фінансовий або програмувальний режим, щоб побачити зворушливий набір можливостей.</p>
+    <p xml:lang="tr">Hesap Makinesi matematiksel denklemleri çözen bir uygulamadır. Başlangıçta yalnızca temel aritmetik işlemleri yapabileceğiniz basit hesap makinesi gibi görünse de Gelişmiş, Finansal ve Programlama kiplerine geçerek şaşırtıcı türlü yeteneklerini bulabilirsiniz.</p>
+    <p xml:lang="th">เครื่องคิดเลข เป็นโปรแกรมที่แก้ปัญหาสมการทางคณิตศาสตร์ แม้ว่าครั้งแรกที่เห็นจะเป็นเครื่องคิดเลขง่ายๆ มีเพียงการคำนวณเลขคณิตพื้นฐาน แต่คุณสามารถสลับเป็นโหมดพิเศษ, การเงิน, หรือการเขียนโปรแกรม เพื่อพบกับความสามารถที่น่าประหลาดใจ</p>
+    <p xml:lang="sv">Kalkylator är ett program som löser matematiska ekvationer. Trots att det vid en första anblick kan verka som en enkel kalkylator med endast grundläggande räknesätt, så kan du byta till avancerat, finansiellt eller programmeringsläge för att finna ett förvånansvärt stort urval av funktioner.</p>
+    <p xml:lang="sr">Калкулатор је програм за решавање математичких једначина. Иако на први поглед личи на једноставан калкулатор само са основним аритметичким операцијама, можете да се пребаците на напредан, финансијски, или програмерски начин рада и да откријете изненађујући скуп могућности.</p>
+    <p xml:lang="sl">Računalo za namizje GNOME je program za razreševanje matematičnih enačb. Na prvi pogled podpira le osnovne aritmetične operacije. S preklopom na znanstveni, finančni ali programerski način pa se pokažejo številna presenečenja.</p>
+    <p xml:lang="sk">Kalkulačka je aplikácia na riešenie matematických rovníc. Napriek tomu, že vyzerá ako jednoduchá kalkulačka na počítanie základných vecí, môžete prepnúť režim na Rozšírený, Finančný alebo Programátorský. Tieto režimy poskytujú rozsiahle možnosti.</p>
+    <p xml:lang="rw">Mubazi ni porogaramu ikemura ibigereranyo mu mibare. Nubwo igaragara nkaho ari mubazi isanzwe ifite imikorere isanzwe, ushobora guhindura ukajya mu idirishya ryo gukora imibare Ikomeye, Imari cyangwa mu byo Kwandika Kode ukabona ubushobozi butangaje</p>
+    <p xml:lang="ru">Калькулятор - это приложение, которое решает математические уравнения. Хотя на первый взгляд это простой калькулятор с базовыми арифметическими операциями, вы можете переключиться в расширенный режим, финансовый режим или режим программирования, чтобы обнаружить удивительный набор возможностей.</p>
+    <p xml:lang="ro">Calculator este o aplicație care rezolvă ecuații matematice. Deși la început pare a fi un calculator simplu care deține doar operațiile aritmetice de bază, puteți comuta la modul avansat, financiar sau de programare pentru a găsi un set surprinzător de capabilități.</p>
+    <p xml:lang="pt">A Calculadora é uma aplicação que resolve equações matemáticas. Apesar de à primeira vista parecer uma simples calculadora com apenas as funções aritméticas básicas, permite mudar para os modos Avançado, Financeiro ou de Programação, que proporcionam um surpreendente número de capacidades.</p>
+    <p xml:lang="pt_BR">Calculadora é um aplicativo que resolve equações matemáticas. Embora a princípio pareça ser uma calculadora simples com apenas operações aritméticas básicas, você pode alternar para os modos avançado, financeiro ou programador para encontrar um conjunto surpreendente de recursos.</p>
+    <p xml:lang="pl">Kalkulator jest programem rozwiązującym równania matematyczne. Mimo że na pierwszy rzut oka wydaje się to być prosty kalkulator z podstawowymi działaniami arytmetycznymi, można w każdej chwili włączyć tryb zaawansowany, finansowy lub programistyczny, które mogą zaskoczyć swoimi możliwościami.</p>
+    <p xml:lang="pa">ਕੈਲਕੂਲੇਟਰ ਐਪਲੀਕੇਸ਼ਨ ਹੈ, ਜੋ ਕਿ ਗਣਿਤ ਸਮੀਕਰਨਾਂ ਨੂੰ ਹੱਲ ਕਰਦਾ ਹੈ। ਹਾਲਾਂਕਿ ਇਹ ਪਹਿਲਾਂ ਇੱਕ ਸਧਾਰਨ ਕੈਲਕੂਲੇਟਰ ਹੀ ਹੈ, ਜੋ ਕਿ ਸਧਾਰਨ ਗਣਿਤ ਕੰਮ ਕਰਦਾ ਹੈ, ਤੁਸੀਂ ਇਸ ਨੂੰ ਮਾਹਿਰ, ਵਿੱਤੀ ਜਾਂ ਪ੍ਰੋਗਰਾਮਿੰਗ ਮੋਡ ਵਿੱਚ ਵੀ ਬਦਲ ਕੇ ਸਮਰੱਥਾ ਦਾ ਲਾਹਾ ਲੈ ਸਕਦੇ ਹੋ।</p>
+    <p xml:lang="oc">La calculadoira GNOME es una aplicacion per resòlvre d'eqüacions matematicas. Mentre qu'aparesca inicialament coma una simpla calculadoira amb unicament las operacions aritmeticas de basa, podètz bascular dins los mòdes Avançat, Finanças o Programacion per descobrir un nombre susprenent de foncionalitats.</p>
+    <p xml:lang="nl">Rekenmachine is een toepassing die wiskundige vergelijkingen oplost. Alhoewel het op het eerste gezicht een eenvoudige rekenmachine lijkt met slechts rekenkundige basisoperaties, kunt u omschakelen naar de modi Geavanceerd, Financieel of Programmeren en een verbazende verzameling mogelijkheden vinden.</p>
+    <p xml:lang="ne">क्याल्कुलेटर एउटा अनुप्रयोग हो जसले गणितीय समीकरणहरू समाधान गर्दछ। यद्यपि यो सुरुमा आधारभूत अंकगणितीय कार्यहरू भएको साधारण क्यालकुलेटर जस्तो देखिन्छ, तपाईं क्षमताहरूको आश्चर्यजनक सेट फेला पार्न उन्नत, वित्तीय, वा प्रोग्रामिङ मोडमा स्विच गर्न सक्नुहुन्छ।</p>
+    <p xml:lang="lv">Kalkulators ir lietotne, kas risina matemātikas vienādojumus. Lai arī sākumā tas izskatās pēc vienkārša kalkulatora ar dažām aritmētikas operācijām, jūs varat ieslēgt paplašināto, finanšu vai programmēšanas režīmu, lai atrastu papildu iespējas.</p>
+    <p xml:lang="lt">Skaičiuotuvas yra matematinių skaičiavimų sprendimo programa. Nors iš pirmo žvilgsnio tai yra paprastas skaičiuotuvas, turintis tik paprastus aritmetinius veiksmus, galima įjungti išplėstinę, finansų arba programavimo veikseną, kurioje atsiskleidžia įspūdingos galimybės.</p>
+    <p xml:lang="ko">계산기는 수학식을 푸는 프로그램입니다. 처음에 보면 단순한 연산 기능만 있는 단순 계산기로 보이지만 고급 모드, 재무 모드, 프로그래밍 모드로 전환하면 놀랄만한 기능이 있습니다.</p>
+    <p xml:lang="kk">Калькулятор — математикалық теңдеулерді шешетін қосымша. Басында ол тек негізгі арифметикалық операциялары бар қарапайым калькулятор болып көрінсе де, таңқаларлық мүмкіндіктер жиынтығын табу үшін кеңейтілген, қаржылық немесе бағдарламалау режиміне ауысуға болады.</p>
+    <p xml:lang="kab">Taselkimt d asnas iferrun tigda tusnakin. Γas akken tettban-d deg tazwara d taselkimt tafessast i tmehlin tusnakin tizadurin kan, d acu tzemreḍ ad tt-terreḍ ɣer uskar anemhaz, aẓruf neɣ ɣer usihel i usnirem taggayt n tmahilin yessewahamen.</p>
+    <p xml:lang="ka">კალკულატორი მათემატიკური განტოლებების ამოხსნის პროგრამაა. იმის მიუხედავად, რომ პირველი შეხედვით მხოლოდ მარტივი ოპერაციების მქონე კალკულატორია, ის დამატებით, ფინანსურ ან პროგრამირების რეჟიმში, შეგიძლიათ, გადართოთ და გაგიკვირდებათ, იმდენ რამეს იპოვით.</p>
+    <p xml:lang="ja">“電卓”は、数学の方程式を解くアプリケーションです。最初は単なる基本的な電卓だと思われますが、拡張モード、財務モード、プログラミングモードに切り替えることにより、意外な機能を見つけるでしょう。</p>
+    <p xml:lang="it">Calcolatrice è un'applicazione che risolve equazioni matematiche. Anche se a prima vista sembra una semplice calcolatrice adatta solo a basilari operazioni aritmetiche, è possibile selezionare le modalità Avanzata, Finanziaria o Programmazione per scoprire sorprendenti funzionalità.</p>
+    <p xml:lang="id">Kalkulator adalah suatu aplikasi yang memecahkan persamaan matematis. Walaupun awalnya nampak seperti kalkulator sederhana dengan hanya operasi aritmetik dasar, Anda dapat berpindah ke mode Tingkat Lanjut, Keuangan, atau Pemrograman untuk menemukan set kapabilitas yang mengejutkan.</p>
+    <p xml:lang="hu">A Számológép egy matematikai egyenleteket megoldó alkalmazás. Bár első megjelenésekor kizárólag alap számtani műveletekkel rendelkező egyszerű számológépnek tűnik, azonban a speciális, pénzügyi vagy programozói módba történő váltáskor bámulatos képességeket fedezhet fel.</p>
+    <p xml:lang="hr">Kalkulator je aplikacija koja rješava matematičke jednadžbe. Iako se u početku čini jednostavnim kalkulatorom s osnovnim aritmetičkim operacijama, možete ga prebaciti u napredni, financijski ili programerski način rada kako biste pronašli iznenađujući skup mogućnosti.</p>
+    <p xml:lang="hi">गणक एक अनुप्रयोग है जो गणितीय समीकरण का हल निकालता है. हालाँकि यह पहले सरल गणक दिखता है केवल बुनियादी अंकगणितीय संचालन के साथ आप इसे उन्नत, वित्तीय या प्रोग्रामिंग अवस्था में ले जा सकते हैं जिसकी क्षमता असाधारण है.</p>
+    <p xml:lang="he">מחשבון הוא יישום הפותר משוואות מתמטיות. על אף שבמבט ראשון הוא נראה מחשבון פשוט עם פעולות חשבוניות בסיסיות, ניתן לעבור למצב מתקדם, פיננסי או תכנות ולמצוא מגוון מפתיע של יכולות.</p>
+    <p xml:lang="gl">Calculadora é unha aplicación que resolve ecuacións matemáticas. Aínda que ao principio poida parecer unha calculadora simple con só operacións aritméticas básicas, pode cambiar o modo a Avanzado, Financeiro ou Programación para atopar un conxunto sorprendente de capacidades.</p>
+    <p xml:lang="fur">Calcoladorie e je une aplicazion che e risolf ecuazions matematichis. Ancje se in prime batude e somee a une semplice calcoladorie adate nome a basilârs operazions aritmetichis, al è pussibil passâ ae modalitât Avanzade, Finanziarie o Programazion par scuvierzi straordenariis funzionalitâts.</p>
+    <p xml:lang="fr">La Calculatrice est une application pour résoudre des équations mathématiques. Bien qu’elle apparaisse initialement comme une simple calculatrice avec uniquement les opérations arithmétiques de base, vous pouvez basculer dans les modes Avancé, Financier ou Programmation pour découvrir un nombre surprenant de fonctionnalités.</p>
+    <p xml:lang="fo">Roknimaskinan er eitt forrit, ið loysir støddfrøðiligar líkningar. Hóast, at tað við fyrsta eygna bragd sær út sum ein einføld roknimaskina, ið einans hevur einfaldar rokningarháttir, so kanst tú, við at skifta til tí framkomna-, fíggjarligarliga-, ella forritanar-støðuna, finna eina stórfingna mongd av funkum.</p>
+    <p xml:lang="fi">Laskin on sovellus matemaattisten yhtälöiden ratkaisemiseen. Laskin tukee perustilan lisäksi edistynyttä tilaa, taloustilaa ja ohjelmointitilaa. Eri tilojen avulla laskin on kätevä apu lukuisissa eri matemaattisissa haasteissa.</p>
+    <p xml:lang="fa">ماشین‌حساب گنوم برنامه‌ای است که معادلات ریاضی را حل می‌کند. با این که در ابتدا به نظر می‌رسد ماشین‌حسابی ساده با تنها عملگرهای پایهٔ حسابی باشد، می‌توانید آن را به حالت‌های پیش‌رفته، مالی یا برنامه‌نویسی تغییر دهید تا قابلیت‌های غافل‌گیرانهٔ آن را بیابید.</p>
+    <p xml:lang="eu">Kalkulagailua matematikako ekuazioak ebazteko aplikazio bat da. Kalkulagailu xume bat (oinarrizko eragiketa aritmetikoekin) dirudien arren, modu aurreratua, finantzarioa edo programaziokoa ere baditu. Ahalmen multzo harrigarria aurkituko duzu modu horietan.</p>
+    <p xml:lang="es">Calculadora de GNOME es una aplicación que resuelve ecuaciones matemáticas. A primera vista parece una calculadora sencilla con aplicaciones aritméticas básicas, pero puede activar los modos Avanzado, Financiero o Programación para encontrar un sorprendente conjunto de posibilidades.</p>
+    <p xml:lang="eo">Kalkulilo estas aplikaĵo, kiu solvas matematikajn egalaĵojn. Kvankam ĝi unue ŝajnas esti simpla kalkulilo kun nura bazaj aritmetikaj operacioj, vi povas ŝanĝi al altnivela, financa aŭ programada reĝimo por trovi surprizan aron de kapabloj.</p>
+    <p xml:lang="en_GB">Calculator is an application that solves mathematical equations. Though it at first appears to be a simple calculator with only basic arithmetic operations, you can switch into Advanced, Financial, or Programming mode to find a surprising set of capabilities.</p>
+    <p xml:lang="el">Η Αριθμομηχανή είναι μια εφαρμογή για να επιλύετε μαθηματικές εξισώσεις. Αν και εμφανίστηκε στην αρχή ως μια απλή αριθμομηχανή με μόνο τις βασικές αριθμητικές λειτουργίες, μπορείτε να κάνετε εναλλαγή σε κατάσταση για προχωρημένους, οικονομική ή προγραμματιστική κατάσταση ώστε να βρείτε ένα εκπληκτικό σύνολο δυνατοτήτων.</p>
+    <p xml:lang="de">Taschenrechner ist ein Programm zum Lösen von mathematischen Gleichungen. Obwohl die Anwendung auf den ersten Blick wie ein simpler Taschenrechner mit nur einfachen arithmetischen Operationen erscheint, kann in einen erweiterten, einen finanztechnischen und einen Informatik-Modus umgeschaltet werden, in denen sich überraschende Fähigkeiten befinden.</p>
+    <p xml:lang="da">Lommeregner er et program, som kan løse matematiske ligninger. Selvom det ved første øjekast ligner en simpel lommeregner med simple aritmetiske operationer, vil du med et skift til tilstanden avanceret, finansiel eller programmering finde et imponerende sæt funktioner.</p>
+    <p xml:lang="cs">Kalkulačka je aplikace pro řešení matematických výpočtů. Ačkoliv na první pohled vypadá jen jako jednoduchá kalkulačka se základními operacemi, dá se přepnout do pokročilého, finančního nebo programátorského režimu, ve kterých najdete překvapující množství dalších funkcí.</p>
+    <p xml:lang="ca">La Calculadora és una aplicació per a resoldre equacions matemàtiques. Tot i que a primer cop d'ull pot semblar una calculadora senzilla, podeu canviar al mode avançat, financer o de programació on descobrireu que pot realitzar una gran quantitat d'operacions.</p>
+    <p xml:lang="bg">„Калкулаторът на GNOME“ е приложение, което изчислява математически изрази. Първоначално показва основен калкулатор само с прости аритметични операции, но можете да превключите към режимите „Разширен“, „Финансов“ или „Програмиране“. В тези режими ще намерите впечатляващ набор от функционалности.</p>
+    <p xml:lang="be">Калькулятар — гэта праграма для рашэння матэматычных выразаў. Хоць першапачаткова гэты праграма запускаецца ў базавым рэжыме з асноўнымі арыфметычнымі аперацыямі, вы можаце пераключыцца ў пашыраны, фінансавы або ў рэжым праграмавання.</p>
+    <p xml:lang="ar">آلة الحاسبة هي تطبيق يحل المعادلات الرياضيّة. بالرغم من أنّها تبدو في البداية آلة حاسبة بسيطة تقوم بعمليات حسابية بسيطة، ألا إنه يمكنك التحويل للوضع المتقدم أو المالي أو البرمجي لتكتشف مجموعة مدهشة من الإمكانيات</p>
+    <p>
+      The Advanced calculator supports many operations, including:
+      logarithms, factorials, trigonometric and hyperbolic functions,
+      modulus division, complex numbers, random number generation, prime
+      factorization and unit conversions.
+    </p>
+    <p xml:lang="zh_TW">進階模式支援許多運算方式，包含：對數、階乘、三角函數和雙曲函數、模數除法、複數、隨機數生成、質因數分解和單位轉換。</p>
+    <p xml:lang="zh_HK">進階計數機支援許多運算方式，包含：對數、階乘、三角函數和雙曲函數、模數除法、複數、產生數數、分解質因數和單位轉換。</p>
+    <p xml:lang="zh_CN">高级计算器支持多种运算，包括：对数，阶乘，三角函数和双曲函数，取模、复数，随机数生成，分解质因数和单位转换。</p>
+    <p xml:lang="vi">Chế độ cấp cao hỗ trợ nhiều thao tác, bao gồm: lô ga rít, số mũ, hàm lượng giác và hipebon, chia lấy phần dư, số phức, tạo số ngẫu nhiên, tìm thừa số nguyên tố và chuyển đổi đơn vị.</p>
+    <p xml:lang="uk">Розширений калькулятор підтримує багато операцій, зокрема: логарифмічні, факторіальні, тригонометричні й  гіперболічні функції, ділення модулів, комплексні числа, породження випадкових чисел, розкладання на прості множники, перетворення одиниць.</p>
+    <p xml:lang="tr">Gelişmiş hesap makinesi bir çok işlemi destekler, örneğin: logaritmalar, faktöriyeller, trigonometrik ve hiperbolik fonksiyonlar, modüler bölme, karmaşık sayılar, rastgele sayı üretimi, asal çarpanlara ayırma ve birim dönüşümleri.</p>
+    <p xml:lang="th">เครื่องคิดเลขโหมดพิเศษจะรองรับตัวกระทำหลายอย่าง รวมถึง: ลอการิทึม, แฟกทอเรียล, ฟังก์ชันตรีโกณมิติและไฮเพอร์โบลิก, การหารเอาเศษ, จำนวนเชิงซ้อน, การสร้างเลขสุ่ม, การแยกตัวประกอบเป็นจำนวนเฉพาะ และการแปลงหน่วย</p>
+    <p xml:lang="tg">Калкулятори иловагӣ амалҳои гуногунро таъмин менамояд, аз ҷумла: логарифм, факториал, тригонометрия ва функсияҳои сермуболиға, тақсимкунандаи модулӣ, рақамҳои мураккаб, тавлидкунии тақамҳои тасофуфӣ, факторизатсияи аслӣ ва табдилдиҳии воҳидҳо.</p>
+    <p xml:lang="te">అధునాత గణని చాలా ఆపరేషన్లకు తోడ్పాటునిచ్చును: లాగర్థెమ్స్, ఫాక్టోరియల్స్, ట్రిగ్నోమెట్రిక్ మరియు హైపర్‌బోలిక్ ఫంక్లన్లు, మాడ్యులస్ డివిజన్, సంక్లిష్ట సంఖ్యలు, యాదృశ్టిక సంఖ్యలను పుట్టించుట, ప్రైమ్ ఫాక్టోరైజేషన్ మరియు యూనిట్ కన్వర్షన్.</p>
+    <p xml:lang="ta">மேம்பட்ட கணிப்பானில் மடக்கைகள், காரணியங்கள், முக்கோணவியல் மற்றும் பரவளைய சார்புகள், மட்டு வகுத்தல், சிக்கலெண்கள், சமவாய்ப்பு எண் உருவாக்கம், முதல் நிலை காரணியாக்கம் மற்றும் அலகு மாற்றங்கள் போன்றவை உள்ளிட்ட பல செயலம்சங்கள் உள்ளன.</p>
+    <p xml:lang="sv">Den avancerade kalkylatorn stödjer många operationer så som: logaritmer, fakultet, trigonometriska och hyperboliska funktioner, division med rest, komplexa tal, generering av slumptal, primtalsfaktorisering och enhetsomvandling.</p>
+    <p xml:lang="sr">Напредни калкулатор подржава многе операције, укључујући: логаритамске, факторијелне, тригонометријске и хиперболичке функције, дељење модула, комплексне бројеве, стварање насумичног броја, факторизацију простог броја и претварање јединица.</p>
+    <p xml:lang="sr@latin">Napredni kalkulator podržava mnoge operacije, uključujući: logaritamske, faktorijelne, trigonometrijske i hiperboličke funkcije, deljenje modula, kompleksne brojeve, stvaranje nasumičnog broja, faktorizaciju prostog broja i pretvaranje jedinica.</p>
+    <p xml:lang="sl">Znanstveni način podpira različne matematične operacije: logaritme, fakultete, trigonometrične in hiperbolične funkcije, modulo, kompleksna števila, ustvarjanje naključnih števil, praštevila in pretvorbe enot.</p>
+    <p xml:lang="sk">Rozšírený režim podporuje veľa operácií, vrátane logaritmov, faktoriálov, trigonometrických a hyperbolických funkcií, zvyšku celočíselného delenia, komplexných čísiel, generácie náhodneho čísla, faktorizácie na prvočísla a prevodu jednotiek.</p>
+    <p xml:lang="rw">Mubazi Iteye Imbere yemera ibikorwa byinshi harimo: logaritime, amafagitoriyari, tirigonometiri n'imikorere ya hayipaboli, kugabanya modulo, imibare igoye, gukora imibare iri random, fagitoriyari z'imibare y'ingenzi no guhindura ibipimo.</p>
+    <p xml:lang="ru">Расширенный режим поддерживает многие операции, включая: логарифмы, факториалы, тригонометрические и гиперболические функции, деление по модулю, комплексные числа, генератор случайных чисел, разложение на простые множители и преобразование единиц измерений.</p>
+    <p xml:lang="ro">Calculatorul avansat suportă multe operații, inclusiv: logaritmi, factoriale, funcții trigonometrice și hiperbolice, împărțirea cu rest, numere complexe, generare de numere aleatorii, factorizare de numere prime și conversii de unitate.</p>
+    <p xml:lang="pt">A calculadora avançada suporta muitas operações incluindo: logaritmos, fatoriais, funções trigonométricas e hiperbólicas, modo da divisão, números complexos, geração de números aleatórios, fatores de primos e conversão de unidades.</p>
+    <p xml:lang="pt_BR">A calculadora avançada tem suporte a muitas operações, incluindo: funções logarítmicas, fatoriais, trigonométricas e hiperbólicas, divisão de módulos, números complexos, geração de números aleatórios, fatoração de primos e conversão de unidades.</p>
+    <p xml:lang="pl">Zaawansowany kalkulator obsługuje wiele działań, takich jak: logarytmy, silnie, funkcje trygonometryczne i hiperboliczne, dzielenie z resztą, liczby zespolone, generator liczb losowych, rozkład na czynniki oraz przeliczanie jednostek.</p>
+    <p xml:lang="pa">ਮਾਹਿਰ (ਤਕਨੀਕੀ) ਕੈਲਕੂਲੇਟਰ ਕਈ ਕਾਰਵਾਈਆਂ ਲਈ ਸਹਾਇਕ ਹੈ, ਜਿਸ ਵਿੱਚ ਹਨ: ਲਾਗਰਿਥਮਿਕ, ਫਕਟੋਰੀਅਲ, ਤਿਕੋਣ-ਮਿਤੀ ਅਤੇ ਹਾਈਪਰਬੋਲਿਕ ਫੰਕਸ਼ਨ, ਮੋਡੀਊਲ ਵਿਭਾਜਨ, ਕੰਪਲੈਕਸ ਨੰਬਰ, ਰਲਵਾਂ ਨੰਬਰ ਤਿਆਰ ਕਰਨਾ, ਪ੍ਰਾਇਮ ਫੈਕਟਰ ਤੇ ਇਕਾਈ ਤਬਦੀਲੀ ਸ਼ਾਮਿਲ ਹਨ।</p>
+    <p xml:lang="or">ଉନ୍ନତ ଧରଣର ହିସାବ କିମ୍ବା ଅନେକ ପ୍ରୟୋଗଗୁଡ଼ିକ, ଏହାକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରି: ଲଗାରିଦମ, ଗଣନାଙ୍କ, ତ୍ରିକୋଣମିତି ଏବଂ ହାଇପରବଲିକ ଫଳନ, ମଡ୍ୟୁଲୋସ ବିଭାଜନ, ଜଟିଳ ସଂଖ୍ୟା, ଅଜଣା ସଂଖ୍ୟା ସୃଷ୍ଟି, ପରମ ବିଭାଜନ ଏବଂ ଏକକ ପରିବର୍ତ୍ତନ।</p>
+    <p xml:lang="oc">La calculadoira avançada pren en carga fòrça operacions, incluses los logaritmes, las factorialas, las foncions trigonometricas e iperbolicas, lo modulo de division, los nombres complèxes, la generacion de nombres aleatòris, la factorizacion en nombres primièrs e la conversion entre unitats.</p>
+    <p xml:lang="nl">De geavanceerde rekenmachine ondersteunt vele operaties, waaronder: logaritmes, ontbinden in factoren, trigonometrische en hyperbolische functies, modulair delen, complexe getallen, genereren van willekeurige getallen, ontbinden in priemfactoren en eenhedenconversies.</p>
+    <p xml:lang="ne">उन्नत क्यालकुलेटरले धेरै कार्यहरूलाई समर्थन गर्दछ, निम्न सहित: लोगारिदम, फ्याक्टोरियल, त्रिकोणमितीय र हाइपरबोलिक प्रकार्यहरू, मोडुलस विभाजन, जटिल संख्याहरू, अनियमित संख्या उत्पादन, प्राइम फ्याक्टराइजेसन र एकाइ रूपान्तरणहरू।</p>
+    <p xml:lang="nb">Avansert kalkulator støtter mange operasjoner som f.eks: logaritmer, fakulteter, trigonometriske og hyperbolske funksjoner, modulus divisjon, komplekse tall, generering av tilfeldige tall, faktorisering av primtall og konvertering mellom enheter.</p>
+    <p xml:lang="ms">Kalkulator lanjutan menyokong banyak operasi, termasuklah: logaritma, faktorial, fungsi trigonometrik dan hiperbolik, pembahagian modulus, bilangan kompleks, penjanaan nombor rawak, pemfaktoran Perdana dan unit penukaran.</p>
+    <p xml:lang="mr">प्रगत कॅलक्युलेटर बरेच कार्य, जसे कि: लोगॅरिदम्स, फॅटोरिअल्स, ट्रिग्नोमेट्रिक आणि हायपरबोलिक फंक्शन्स, मॉड्युलस डिव्हिजन, कॉम्प्लेक्स नंबर्स, रँडम नंबर जनरेशन, प्राइम फॅक्टोराइजेशन आणि युनिट कनवर्जन्स समाविष्टीत आहे.</p>
+    <p xml:lang="lv">Paplašinātais kalkulators atbalsta daudzas operācijas, tai skaitā logaritmus, faktoriālus, trigonometriskās un hiperboliskās funkcijas, dalīšanu pēc moduļa, kompleksos skaitļus, nejaušu skaitļu ģenerēšanu, dalīšanu reizinātājos un mērvienību pārveidošanu.</p>
+    <p xml:lang="lt">Išplėstinis skaičiuotuvas palaiko daug veiksmų, tokių kaip logaritmai, faktorialai, trigonometrinės bei hiperbolinės funkcijos, dalyba su liekana, kompleksiniai skaičiai, atsitiktinių skaičių generavimas, skaidymas pirminiais dauginamaisiais bei matavimo vienetų keitimas.</p>
+    <p xml:lang="ko">고급 계산기에서는 다음과 같은 여러가지 기능을 지원합니다: 로그, 팩토리얼, 삼각함수, 쌍곡선 함수, 나머지 계산, 복소수, 난수 생성, 소인수 분해, 단위 환산.</p>
+    <p xml:lang="kn">ಮುಂದುವರೆದ ಕ್ಯಾಲ್ಕುಲೇಟರ್‌ ಹಲವಾರು ಕಾರ್ಯಾಚರಣೆಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ: ಲಾಗರಿತಮ್‌ಗಳು, ಅಪವರ್ತ್ಯಗಳು, ಟ್ರಿಗೋನಮೆಟ್ರಿಕ್‌ ಮತ್ತು ಹೈಪರ್ಬೋಲಿಕ್ ಕಾರ್ಯಭಾರಗಳು, ಮಾಡ್ಯುಲಸ್‌ ವಿಭಜನೆ, ಸಂಕೀರ್ಣ ಸಂಖ್ಯೆಗಳು, ಯಾದೃಚ್ಛಿಕ ಸಂಖ್ಯೆಯ ಉತ್ಪಾದನೆ, ಪ್ರೈಮ್ ಫ್ಯಾಕ್ಟರೈಸೇಶನ್ ಮತ್ತು ಏಕಮಾನದ ರೂಪಾಂತರಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.</p>
+    <p xml:lang="km">ម៉ាស៊ីន​គិតលេខ​​គាំទ្រ​កម្មវិធី​ជា​ច្រើន, រួមមាន៖ logarithms, factorials, trigonometric and hyperbolic functions, modulus division, complex numbers, random number generation, prime factorization and unit conversions.</p>
+    <p xml:lang="kk">Кеңейтілген калькулятор көптеген операцияларды қолдайды, оның ішінде: логарифмдер, факториалдар, тригонометриялық және гиперболалық функциялар, модульдік бөлу, күрделі сандар, кездейсоқ сандарды генерациялау, жай санның көбейткіштерін анықтау және бірліктерді түрлендіру.</p>
+    <p xml:lang="kab">Taselkimt tumhizt tessefrak aṭas n tmehlin, seg-sen: iɣerzimen, uskiren, timahilin tiskitiniɣmer akked tiknudamin, beṭṭu n uzegrir, imḍanen isemlalen, tasuta n yimḍanen igacuren, amesker amezwaru akked iselkaten n tayunin.</p>
+    <p xml:lang="ka">დამატებით კალკულატორს ბევრი ოპერაციის ჩატარების ფუნქცია აქვს, რომელიც შეიცავს: ლოგარითმებს, ფაქტორიალებს, ტრიგონომეტრიულ და ჰიპერბოლურ ფუნქციებს, მოდულის გაყოფას, კომპლექსურ რიცხვებს, შემთხვევით რიცხვებს, და ერთეულის გადაყვანას.</p>
+    <p xml:lang="ja">拡張モードは次の多くの演算をサポートします: 対数, 階乗, 三角関数および双曲線関数, 剰余演算, 複素数, 乱数発生, 素因数分解, 単位換算</p>
+    <p xml:lang="it">La calcolatrice Avanzata supporta molte operazioni, tra cui: logaritmi, fattoriali, funzioni trigonometriche e iperboliche, resto di divisioni, numeri complessi, generazione di numeri casuali, scomposizione in fattori primi e conversioni di unità.</p>
+    <p xml:lang="id">Kalkulator tingkat lanjut mendukung banyak operasi, termasuk: logaritma, faktorial, fungsi trigonometrik dan hiperbolik, pembagian modulus, bilangan kompleks, penjangkitan bilangan acak, faktorisasi prima, dan konversis satuan.</p>
+    <p xml:lang="hu">A speciális számológép számos műveletet támogat, beleértve: logaritmus, faktoriális, trigonometriai és hiperbolikus függvények, maradékos osztás, komplex számok, véletlen számok előállítása, prím faktorizálás és mértékegység átváltások.</p>
+    <p xml:lang="hr">Napredni kalkulator podržava mnoge operacije, uključujući: logaritme, faktorijele, trigonometrijske i hiperboličke funkcije, module dijeljenja, kompleksne brojeve, generiranje slučajnih brojeva, proste faktore i pretvorbu jedinica.</p>
+    <p xml:lang="hi">उन्नत कैलकुलेटर कई परिचालनों का समर्थन करता है, जिनमें शामिल हैं: लघुगणक, भाज्य, त्रिकोणमितीय और अतिपरवलयिक प्रकार्य, मापांक विभाजन, जटिल संख्याएं, यादृच्छिक संख्या पीढ़ी, अभाज्य गुणनखंडन और इकाई रूपांतरण।</p>
+    <p xml:lang="he">מצב מתקדם תומך בפעולות רבות, כולל: לוגריתם, עצרת, טריגונומטריה, פונקציות היפרבוליות, חלוקת שארית, מספרים מרוכבים, מחולל מספר אקראי, פירוק לגורמים והמרת יחידות.</p>
+    <p xml:lang="gu">ઉન્નત કેલ્ક્યુલેટર ઘણી ક્રિયાઓ, આને સમાવી રહ્યા છે: લૉગેરિધમ, ફેક્ટોરિયલ, ટ્રાઇગોમેટ્રીક, અને હાઇપરબોલિક ફંક્શન, મોડ્યુલક વિભાજન, જટિલ નંબરો, વિવિધ નંબર પેઢી, પ્રાઇમ ફેક્ટોરાઇઝેશન અને અનન્ય રૂપાંતરણને આધાર આપે છે.</p>
+    <p xml:lang="gl">A calculadora Avanzada admite varias operacións, incluíndo: logaritmos, factoriais, funcións de trigonometría e hiperbólicas, módulos de división, números complexos, xeración de números aleatorios, factorización de números primos e conversión de unidades.</p>
+    <p xml:lang="gd">Cuiridh an t-àireamhair adhartach taic ri iomadh obrachadh, a’ gabhail a-steach: log-àireamhan, factarailean, foincseanan triantanach ’s os-bhoileach, roinneadh mòidealais, àireamhan iom-fhillte, gintinn àireamh air thuaiream, factarachadh ann am prìomh-àireamhan agus iompachadh aonadan.</p>
+    <p xml:lang="fur">La calcoladorie Avanzade e supuarte une vore di operazions, includût: funzions logaritmichis, fatoriâi, trigonometrichis e iperbolichis, divisions modul, numars complès, gjenerazion di numars casuâi, fatorizazions primis e conversions di unitât.</p>
+    <p xml:lang="fr">La calculatrice avancée prend en charge beaucoup d’opérations, y compris les logarithmes, les factorielles, les fonctions trigonométriques et hyperboliques, le modulo de division, les nombres complexes, la génération de nombres aléatoires, la factorisation en nombres premiers et la conversion entre unités.</p>
+    <p xml:lang="fo">Tann framkomna roknimaskinan hevur nógvar funkur. Herundur: logaritmir, faldirøð, trigilsfrøðiligar og hýperbolskar funkur, modulus býting, komplekst tøl, tilvildarlig tal framleiðsla, frumvalds loysing, og eindar-umroknara.</p>
+    <p xml:lang="fi">Edistynyt laskin tukee monia operaatioita, kuten logaritmeja, kertomia, trigonometrisia ja hyperbolisia funktioita, modulusjakolaskua, kompleksilukuja, satunnaislukujen generointia, alkutekijöihin jakamista sekä yksikkömuunnoksia.</p>
+    <p xml:lang="fa">ماشین‌حساب پیش‌رفته عملگرهای زیادی را پشتیبانی می‌کند. از جمله: لگاریتم‌، فاکتوریل، مثلّثات، توابع هزلولی، تقسیم پیمانه‌ای، اعداد مختلط، تولید عدد تصادفی، تجزیه به اعداد اوّل و تبدیل یکاها.</p>
+    <p xml:lang="eu">Kalkulagailu aurreratuak eragiketa mota ugari onartzen ditu: logaritmoak, faktorialak, funtzio trigonometrikoak eta hiperbolikoak, zatiketen moduluak, zenbaki konplexuak, ausazko zenbakien sortzailea, zenbaki lehenen faktorizazioa eta unitateen bihurketak.</p>
+    <p xml:lang="es">La calculadora avanzada soporta muchas operaciones, incluyendo logaritmos, factoriales, funciones trigonométricas e hiperbólicas, módulo de la división, números complejos, generación de números aleatorios, factorización en números primos y conversión de unidades.</p>
+    <p xml:lang="eo">La altnivela kalkulilo subtenas multajn operaciojn, inkluzive: logaritmojn, faktorialojn, trigonometriajn kaj hiperbolajn funkciojn, modulan dividon, kompleksajn nombrojn, generadon de hazardaj nombroj, priman faktorialigon, kaj konverton de unuoj.</p>
+    <p xml:lang="en_GB">The Advanced calculator supports many operations, including: logarithms, factorials, trigonometric and hyperbolic functions, modulus division, complex numbers, random number generation, prime factorization and unit conversions.</p>
+    <p xml:lang="el">Η αριθμομηχανή για προχωρημένους υποστηρίζει πολλές λειτουργίες, συμπεριλαμβανομένων: λογάριθμων, παραγοντικών, τριγωνομετρικών λειτουργιών, υπόλοιπο διαίρεσης ακέραιων, μιγαδικοί αριθμοί, δημιουργία τυχαίων αριθμών, παραγοντοποίηση και μετατροπή μονάδων.</p>
+    <p xml:lang="de">Der erweiterte Taschenrechner unterstützt viele Operationen, darunter: Logarithmus, Fakultät, trigonometrische und hyperbolische Funktionen, Modulo-Division, Berechnung komplexer Zahlen, Zufallszahlengeneration, Primfaktorzerlegung und Einheitenumrechnungen.</p>
+    <p xml:lang="da">Den avancerede lommeregner understøtter mange operationer inklusive: Logaritmer, fakulteter, trigonometriske og hyberbolske funktioner, modulusdivision, komplekse tal, en tilfældig talgenerator, primtalsfaktorisering og enhedskonvertering.</p>
+    <p xml:lang="cs">Pokročilá kalkulačka podporuje řadu operací, včetně: logaritmů, faktoriálů, trigonometrických a hyperbolických funkcí, dělení se zbytkem, komplexních čísel, generátoru náhodných čísel, rozkladu na prvočinitele a převodu jednotek.</p>
+    <p xml:lang="ca@valencia">El mode avançat permet moltes operacions, entre les quals: logaritmes, factorials, funcions trigonomètriques i hiperbòliques, divisió modular, nombres complexes, generació de nombres aleatoris, factorització a nombres primers i conversió d'unitats.</p>
+    <p xml:lang="ca">El mode avançat permet moltes operacions, entre les quals s'inclouen: logaritmes, factorials, funcions trigonomètriques i hiperbòliques, divisió modular, nombres complexos, generació de nombres aleatoris, factorització a nombres primers i conversió d'unitats.</p>
+    <p xml:lang="bs">Napredni kalkulator podržava mnogo operacija ukljućujući:logaritam,faktorijel,trigonometrijske i ihiperbolne funkcije,modul podjela,kompleksne brojeve,biranje nasumičnih brojeva,primarna faktorizacija i pretvarač jedinica.</p>
+    <p xml:lang="bn_IN">উন্নত ক্যালকুলেটর সমর্থন করে বিভিন্ন অপারেশন, যার অন্তর্ভুক্ত হল: লগারিদম, ফ্যাক্টোরিয়াল, ট্রিগোনোমেট্রিক এবং হাইপারবোলিক ফাংশন, মডিউলাস ভাগ, জটিল সংখ্যা, অনির্দিষ্ট সংখ্যা তৈরি, প্রাইম ফ্যাক্টোরাইজেশন এবং ইউনিট রূপান্তর।</p>
+    <p xml:lang="bg">Режимът „Разширен“ поддържа множество операции включително: логаритми, факториели, тригонометрични и хиперболични функции, делене по модул, комплексни числа, генериране на случайни числа, разлагане на прости множители и преобразуване на мерни единици.</p>
+    <p xml:lang="be">Пашыраны калькулятар падтрымлівае мноства аперацый, у іх ліку лагарыфмы, фактарыялы, трыганаметрычныя і гіпербалічныя функцыі, дзяленне па модулі, камплексныя лікі, генерацыя выпадковых лікаў, раскладанне на простыя множнікі і пераўтварэнне адзінак вымярэння.</p>
+    <p xml:lang="as">উন্নত গণকে বহুতো কাৰ্য্য সমৰ্থন কৰে, যেনে: লগাৰিথিম, গৌণিক, ত্ৰিকোণমিতি আৰু অতিবৃত্তীয় ফলনসমূহ, গুণাংক হৰণ, জটিল সংখ্যা, যাদৃচ্ছিক সংখ্যা সৃজন, মৌলিক গুণিতক আৰু একক পৰিবৰ্তন।</p>
+    <p xml:lang="ar">الآلة الحاسبة المتقدمة تدعم العديد من العمليات مثل: اللوغاريتمات، المضروب، الدوال المثلثية والزائدة، باقي قسمة، الأعداد المركبة، توليد الأرقام العشوائية، التحليل الأولي، وتحويلات الوحدات.</p>
+    <p>
+      Financial mode supports several computations, including periodic interest
+      rate, present and future value, double declining and straight line
+      depreciation, and many others.
+    </p>
+    <p xml:lang="zh_TW">財務模式支援多種運算，包含定期利率、現值和終值、雙倍餘額遞減法和直線法折舊等運算方式。</p>
+    <p xml:lang="zh_HK">金融模式支援多種運算，包含定期利率、現在和未來值、雙倍餘額遞減和直線折舊，以及其他許多方式。</p>
+    <p xml:lang="zh_CN">财务模式支持多种计算，包括定期利率、现值和未来值、双倍余额递减和直线折旧等。</p>
+    <p xml:lang="vi">Chế độ tài chính hỗ trợ nhiều kiểu tính toán, bao gồm lợi tức tuần hoàn , giá trị hiện tại và tương lai, suy thoái kép và khấu hao tuyến tính, và nhiều thứ khác nữa.</p>
+    <p xml:lang="uk">Фінансовий режим підтримує кілька обрахувань, зокрема процентна ставка за період, теперішня і майбутня вартість, методи подвійного скорочення та пропорційного списання амортизації, тощо.</p>
+    <p xml:lang="tr">Finansal kip çeşitli hesaplamaları destekler, örneğin: dönemsel faiz oranı, mevcut ve gelecekteki değer, çift düşüş ve doğrusal düşüş ve birçok benzer hesaplama.</p>
+    <p xml:lang="th">โหมดการเงินรองรับการคำนวณที่หลากหลาย รวมถึงอัตราดอกเบี้ยเป็นงวด, มูลค่าปัจจุบันและในอนาคต, การคำนวณค่าเสื่อมราคาทั้งแบบยอดลดลงทวีคูณและแบบเส้นตรง, และอื่นๆ อีกมากมาย</p>
+    <p xml:lang="tg">Ҳолати молиявӣ якчанд тарзи ҳисобкуниро дастгирӣ мекунад, аз ҷумла  маблағи қарзи бонкӣ, қиматҳои ҳозира ва оянда, тақсими дубораing ва таназзули хати рост ва функсияҳои дигар.</p>
+    <p xml:lang="te">ఆర్ధిక రీతి చాలా గణలకు తోడ్పాటునిచ్చును, సాధారణ వడ్డీ, ప్రస్తుత మరియు భవిష్య విలువ, డబుల్ డిక్లైనింగ్ మరియు స్ట్రైట్ లైన్ డిప్రిసియేషన్, మరియు ఇంకా చాలా.</p>
+    <p xml:lang="ta">நிதி அம்ச கணிப்பானில், காலமுறை வட்டிவீதம், தற்கால மற்றும் எதிர்கால மதிப்பு, இரட்டை சாய்வு மற்றும் நேர்க்கோட்டுத் தேய்மானம் போன்றவை உள்ளிட்ட பல கணக்கீடுகளைச் செய்ய முடியும்.</p>
+    <p xml:lang="sv">Finansiellt läge stödjer många beräkningar som periodisk räntesats, nuvarande och framtida värde, dubbel degressiv och linjär avskrivning och många andra.</p>
+    <p xml:lang="sr">Финансијски начин рада подржава неколико израчунавања, укључујући периодичну каматну стопу, садашњу и будућу вредност, двоструко опадање и праволинијско умањење, и многе друге.</p>
+    <p xml:lang="sr@latin">Finansijski način rada podržava nekoliko izračunavanja, uključujući periodičnu kamatnu stopu, sadašnju i buduću vrednost, dvostruko opadanje i pravolinijsko umanjenje, i mnoge druge.</p>
+    <p xml:lang="sl">Finančni način podpira različne izračuna vključno z periodičnimi obrestnimi merami, sedanje in prihodnje vrednosti, dvojno pojemajoče in linearno razvrednotenje ter mnoge druge.</p>
+    <p xml:lang="sk">Finančný režim podporuje viacero výpočtov, vrátane úroku za časové obdobie, súčasnú a budúcu hodnotu, dvojitú odpisovú metódu, a mnoho ďalších.</p>
+    <p xml:lang="rw">Mubazi y'Imari ishobora kubara ibitandukanye, harimo inyungu y'igihe runaka, imibare ikurikiza igihe, guta agaciro mu buryo bukubye kabiri cyangwa mu buryo bw'umurongo uringaniye n'ibindi</p>
+    <p xml:lang="ru">Финансовый режим поддерживает несколько вычислений, включая периодическую процентную ставку, текущую и будущую стоимость, удвоенная и равномерная амортизация и многие другие.</p>
+    <p xml:lang="ro">Modul financiar suportă calculări diverse, inclusiv rata dobânzi periodice, valoarea curentă și viitoare, amortizarea dublu-regresivă și pe linie dreaptă, și multe altele.</p>
+    <p xml:lang="pt">O modo financeiro suporta vários cálculos, incluindo taxa de juro periódica, valor presente e futuro, depreciação constante e de duplo declínio composta e muitas outras.</p>
+    <p xml:lang="pt_BR">Modo financeiro tem suporte a diversas computações, incluindo taxa de juro periódica, valor presente e futuro, depreciação de declinação dupla e linear, e muitos outros.</p>
+    <p xml:lang="pl">Tryb finansowy obsługuje wiele obliczeń, takich jak okresowa stopa procentowa, wartość bieżąca i przyszła, przyspieszona i liniowa amortyzacja oraz wiele innych.</p>
+    <p xml:lang="pa">ਵਿੱਤ ਮੋਡ ਕਈ ਗਣਨਾ ਕਰਨ ਲਈ ਸਹਾਇਕ ਹੈ, ਜਿਸ ਵਿੱਚ ਆਵਰਤੀ ਵਿਆਜ ਦਰ, ਮੌਜੂਦਾ ਤੇ ਭਵਿੱਖ ਦੇ ਮੁੱਲ, ਦੋਹਰੀ ਕਮੀ ਅਤੇ ਸਿੱਧੀ ਰੇਖਿਕ ਕਮੀ ਤੇ ਹੋਰ ਕਈ ਕੁਝ ਸ਼ਾਮਿਲ ਹੈ।</p>
+    <p xml:lang="or">ଆର୍ଥିକ ଧାରା ଅନେକ ହିସାବକୁ ସହାୟତା କରିଥାଏ, ନିୟମିତ ସୁଧ ହାର, ବର୍ତ୍ତମାନ ଏବଂ ଭିଷ୍ୟତ ମୂଲ୍ୟ, ଦ୍ୱୀଗୁଣ ହ୍ରାସ ଏବଂ ସିଧା ସଳଖ ହ୍ରାସ, ଏବଂ ଆହୁରି ଅନେକକୁ ଅନ୍ତର୍ଭୁକ୍ତ କରି।</p>
+    <p xml:lang="oc">Lo mòde financièr permet mantun calcul dont lo taus d'interès periodic, la valor presenta e futura, l'amortiment degressiu e linear, e d'autres.</p>
+    <p xml:lang="nl">Financiële modus ondersteunt diverse berekeningen waaronder periodieke rente, huidige en toekomstige waarde, dubbel afnemende- en lineaire afschrijving en vele andere.</p>
+    <p xml:lang="ne">वित्तीय मोडले आवधिक ब्याज दर, वर्तमान र भविष्यको मूल्य, दोहोरो गिरावट र सीधा रेखा मूल्यह्रास, र अन्य धेरै सहित धेरै गणनाहरूलाई समर्थन गर्दछ।</p>
+    <p xml:lang="nb">Finansiell modus støtter flere beregninger inkludert periodisk renterate og fremtidig verdi, halvert levetid, lineær avskriving og mange andre.</p>
+    <p xml:lang="ms">Mod kewangan menyokong beberapa pengiraan, termasuk kadar faedah berkala, nilai kini dan akan datang, dua susut nilai garis menurun dan lurus, dan lain-lain lagi.</p>
+    <p xml:lang="mr">आर्थिक मोड अनेक कम्प्युटेशन्सकरिता समर्थन पुरवते, पिरिऑडिक इंटरेस्ट रेट, चालू आणि भावी मूल्य, डबल डिक्लाइनिंग आणि स्टेट लाइन डिप्रिकेशन, आणि इतर बरेच काही समाविष्टीत आहे.</p>
+    <p xml:lang="lv">Finanšu režīms atbalsta dažādus aprēķinus, piemēram, periodisko procentu likmi, pašreizējo un nākotnes vērtību, paātrināto un lineāro amortizāciju, un daudzas citas.</p>
+    <p xml:lang="lt">Finansų veiksena palaiko keletą skaičiavimų, tolių kaip periodinė palūkanų norma, dabartinė ir ateities vertė, dvigubo mažėjimo ir tiesinį nusidėvėjimą bei daug kitų.</p>
+    <p xml:lang="ko">재무 모드에서는 다음과 같은 여러가지 계산 기능을 지원합니다: 정기 이율, 현재/미래 가치, 이중/정액 감가상각 등.</p>
+    <p xml:lang="kn">ಹಣಕಾಸು ಕ್ರಮವು ನಿಗಧಿತ ಅವಧಿ ಬಡ್ಡಿದರ, ಪ್ರಸಕ್ತ ಮತ್ತು ಭವಿಷ್ಯದ ಮೌಲ್ಯ, ಜೋಡಿ ಇಳಿಕೆ (ಡಿಕ್ಲೈನಿಂಗ್) ಮತ್ತು ಸರಳ ರೇಖೆಯ ಸವಕಳಿ, ಮತ್ತು ಇತರವುಗಳೊಂದಿಗೆ ಇನ್ನೂ ಹಲವಾರು ಕಂಪ್ಯೂಟೇಶನ್‌ಗಳನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.</p>
+    <p xml:lang="km">របៀប​ហិរញ្ញវត្ថុ​គាំទ្រ​សម្រាប់​ការ​គណនា​មួយ​ចំនួន, រួម​មាន​អត្រា​ការ​ប្រាក់​​តាម​ពេល​កំណត់, តម្លៃ​បច្ចុប្បន្ន និង​ពេល​អនាគត, ការ​បង់​រំលោះ​តាម​បន្ទាត់​ត្រង់, និង​ផ្សេង​ច្រើន​ទៀត។</p>
+    <p xml:lang="kk">Қаржы режимі бірнеше есептеулерді қолдайды, оның ішінде кезеңдік пайыздық мөлшерлеме, қазіргі және болашақтағы құн, екі есе төмендеу және түзу сызықты амортизация және т.б. бар.</p>
+    <p xml:lang="kab">Askar aẓerfan yessefrak aṭas n usiḍen, aṭas aṭas atug n tanfa tawalant, azal imiran d win n yimal, aktum uslig d uktum n wazal imzireg akked wayen niḍen.</p>
+    <p xml:lang="ka">ფინანსურ რეჟიმს რამდენიმე გამოთვლა აქვს, პერიოდული მოგების, მიმდინარე და მომავალი მნიშვნელობის, ორმაგი უარყოფის და ბევრი სხვა.</p>
+    <p xml:lang="ja">財務モードはいくつかの特殊な計算をサポートします。定期金利、現在と障害の価値、定額法に準じた減価償却、倍額定率法による減価償却などの計算を行えます。</p>
+    <p xml:lang="it">La modalità Finanziaria supporta diversi calcoli, tra cui il tasso di interesse sul periodo, valore presente e futuro, ammortamento lineare e a dimezzamento annuale, e molti altri.</p>
+    <p xml:lang="id">Mode keuangan mendukung beberapa komputasi, termasuk tingkat bunga periodik, present dan future value, depresiasi double declining dan straight line, dan banyak lagi.</p>
+    <p xml:lang="hu">A pénzügyi mód több számítást támogat, beleértve az időszakos kamatlábat, a jelen- és jövőértéket, a progresszív és a lineáris értékcsökkenési leírást, valamint számos egyéb módszert.</p>
+    <p xml:lang="hr">Financijski način rada podržava nekoliko proračuna, uključujući obročnu kamatnu stopu, sadašnju i buduću vrijednost, dvostruko opadanje, linearnu amortizaciju i mnoge druge.</p>
+    <p xml:lang="hi">वित्तीय अवस्था कई कंप्यूटेशन का समर्थन करता है, आवधिक रूचि दर, मौजूदा और भविष्य के मान, डबल डिक्लायनिंग और सीधी लाइन का डेप्रिशियेशन और कई अन्य.</p>
+    <p xml:lang="he">מצב פיננסי תומך במספר חישובים, כולל שיעור ריבית תקופתי, ערך נוכחי ועתידי, יתרה פוחתת כפולה וקו ישר ועוד רבים אחרים.</p>
+    <p xml:lang="gu">નાણાકીય સ્થિતિ સામયિક વ્યાજ સહિત અનેક ગણતરીઓ, દર, વર્તમાન અને ભવિષ્ય કિંમત ડબલ ઘટી અને સીધી રેખાઅવમૂલ્યન, અને ઘણા અન્યને આધાર આપે છે.</p>
+    <p xml:lang="gl">O modo Financeiro admite varias computacións, incluíndo taxas de intereses periódicos, valores presentes e futuros, depreciacións declinadas dobres e de liña recta e moitas outras.</p>
+    <p xml:lang="gd">Cuiridh am modh ionmhais taic ris caochladh de chunntaidhean, a’ gabhail a-steach luadh-rèidh o àm gu àm, luach làithreach ’s ri teachd, dìmeasadh crìonaidh dhùbailte ’s loidhne dìrich agus mòran a bharrachd.</p>
+    <p xml:lang="fur">La modalitât Finanziarie e supuarte diviers calcui, includût il tas di interès sul periodi, valôr present e futûr, amortament lineâr e a smiezament anuâl e une vore di altris.</p>
+    <p xml:lang="fr">Le mode financier permet plusieurs calculs dont le taux d’intérêt périodique, la valeur présente et future, l’amortissement dégressif et linéaire, et d’autres.</p>
+    <p xml:lang="fo">Tann fíggjarliga roknimaskinan kann útføra mangar útrokningar. Herundir: reglubundin rentustøði, núverandi og framtíðar virði, tvífalt lækkandi avskriving (double declining balance deprecation), beinlinju-avskriving (straight-line depreciation), og nógvar aðrar.</p>
+    <p xml:lang="fi">Taloustila tukee monenlaisia laskuja, kuten säännöllinen korkotaso, nykyinen ja tuleva arvo, kahdesti aleneva arvonalennus, tasapoisto ja monia muita.</p>
+    <p xml:lang="fa">حالت مالی محاسبات زیادی را پشتیبانی می کند. از جمله نرخ سود دوره‌ای، مقدار حاضر و آینده، کاهش دوبرابر، استهلاک خط مستقیم و خیلی محاسبات دیگر.</p>
+    <p xml:lang="eu">Modu finantzarioak hainbat kalkulu onartzen ditu, beste batzuen artean: interes-tasa periodikoa, egungo eta etorkizuneko balioa, faktore bikoitzeko amortizazio beherakorra eta amortizazio lineala.</p>
+    <p xml:lang="es">El modo financiero soporta varios cálculos, incluyendo tasa de interés periódico, valor presente y futuro, doble declinación y depreciación lineal y muchas otras</p>
+    <p xml:lang="eo">Financa reĝimo subtenas plurajn komputadojn, inkluzive periodan interesan indicon, nunan kaj estontan valoron, duoblan malpliiĝon kaj linearan amortizon, kaj multajn aliajn.</p>
+    <p xml:lang="en_GB">Financial mode supports several computations, including periodic interest rate, present and future value, double declining and straight line depreciation, and many others.</p>
+    <p xml:lang="el">Η οικονομική λειτουργία υποστηρίζει διάφορες υπολογισμούς, συμπεριλαμβανομένων του περιοδικού επιτοκίου, παρούσης και μελλοντικής αξίας, διπλή μείωση και σταθερή απόσβεση και πολλά άλλα.</p>
+    <p xml:lang="de">Der finanztechnische Modus unterstützt verschiedene Berechnungen, darunter periodischer Zinssatz, Barwert und zukünftigen Zielwert, degressive Doppelratenabschreibung und lineare Abschreibung und vieles mehr.</p>
+    <p xml:lang="da">Tilstanden Finansiel understøtter adskillige udregninger inklusive periodisk renterate, nuværende og fremtidig værdi, dobbelt faldende- og ret linje-afskrivning og mange andre.</p>
+    <p xml:lang="cs">Finanční režim umí několik komplexních výpočtů, včetně úrokové sazby za období, současné a budoucí hodnoty, dvojitě degresivního a lineárního odpisu a mnoho dalšího.</p>
+    <p xml:lang="ca@valencia">El mode financer permet realitzar una bona quantitat de càlculs, entre els quals: tipus d'interés periòdic, valors presents i futurs, depreciació doble decreixent i constant i molts altres més.</p>
+    <p xml:lang="ca">El mode financer permet realitzar una bona quantitat de càlculs, incloent-hi el tipus d'interès periòdic, valors presents i futurs, depreciació doble decreixent i constant, i molts altres més.</p>
+    <p xml:lang="bs">Financijski mod podržava nekoliko računanja,uključujući periodičnu kamatnu stopu,trenutnu i buduću vrijednost,duplo opadanje,pravac amortizacije i mnoge druge.</p>
+    <p xml:lang="bn_IN">ফিনান্সিয়াল মোড সমর্থন করে, একাধিক কম্পিউটেশন, এবং পর্যায়বৃত্ত সুদের হার, বর্তমান এবং ভবিষ্যতের মান, ডাবল ডিক্লাইনিং এবং স্ট্রেট লাইন ডিপ্রিসিয়েশন, এবং অারো অনে কিছু।</p>
+    <p xml:lang="bg">Режимът „Финансов“ поддържа множество изчисления, включително изчисление на лихва за период от време, текуща и бъдеща стойност, амортизации по линеен метод и метод на намаляващия се остатък и др.</p>
+    <p xml:lang="be">Фінансавы рэжым падтрымлівае некалькі вылічэнняў, у іх ліку перыядычная працэнтная стаўка, бягучае і будучае значэнне, метад падвоенага паніжэння і выкарыстанне лінейнай амартызацыі, а таксама іншыя функцыі.</p>
+    <p xml:lang="as">বিত্তীয় অৱস্থায় বহুতো গণনা সমৰ্থন কৰে যেনে, চক্ৰীয় সুতৰ হাৰ, বৰ্তমান আৰু ভৱিষ্যত মান, দ্বিগুণ হ্ৰাস আৰু সৰল ৰেখা অৱমূল্যন, আৰু অন্য বহুতো।</p>
+    <p xml:lang="ar">يدعم الوضع المالي العديد من الحسابات، بما في ذلك معدل الفائدة الدوري، والقيمة الحالية والمستقبلية، والانخفاض المزدوج والإهلاك بقسطٍ ثابت، وغيرها الكثير.</p>
+    <p>
+      Programming mode supports conversion between common bases (binary, octal,
+      decimal, and hexadecimal), boolean algebra, one’s and two’s complementation,
+      character to character code conversion, and more.
+    </p>
+    <p xml:lang="zh_TW">程式設計模式支援許多常用的基礎換算（二進位、八進位、十進位和十六進位）、布林代數、一補數與二補數、字元碼轉換等等。</p>
+    <p xml:lang="zh_HK">程式設計模式支援許多常用基礎的換算 (二進位、八進位、十進位和十六進位)，邏輯代數，一與二的補數、字符對字符代碼轉換等等。</p>
+    <p xml:lang="zh_CN">编程模式支持数制间转换（二进制、八进制、十进制和十六进制）、逻辑运算、二进制反码或补码运算、逐字符的编码转换，等等。</p>
+    <p xml:lang="vi">Chế độ lập trình hỗ trợ chuyển đổi giữa các cơ số cơ bản (nhị phân, bát phân, thập phần và thập lục phân), đại số lô gíc, bù của một và hai, ký tự sang mã và nhiều hơn thế nữa.</p>
+    <p xml:lang="uk">Програмувальний режим підтримує перетворення між загальними базами (бінарна, вісімкова, десяткова, шістнадцяткова), булева алгебра, зворотний і доповняльний код, перетворення символів у код символу, тощо.</p>
+    <p xml:lang="tr">Programlama kipi yaygın sayı tabanları (ikilik, sekizlik, onluk ve on altılık) arasında dönüşüm, mantıksal cebir, bir ve ikinin tümleyenleri, karakterden karaktere kod dönüşümü ve daha fazlasını destekler.</p>
+    <p xml:lang="th">โหมดการเขียนโปรแกรมรองรับการแปลงเลขฐานที่ใช้บ่อย (ฐานสอง, ฐานแปด, ฐานสิบ, และฐานสิบหก), พีชคณิตบูลีน, ส่วนเติมเต็มหนึ่งและสอง, การแปลงรหัสอักขระ, และอื่นๆ</p>
+    <p xml:lang="tg">Ҳолати барномарезӣ унксияи табдилдиҳиро байни ду асосҳои умумӣ дастгирӣ мекунад (дуӣ, ҳаштӣ, даҳӣ ва шонздаҳӣ), риёзиёти булин, созмонёбии якҳо ва дуҳо, табдилдиҳии аломат ба аломат ва ғайра.</p>
+    <p xml:lang="te">ప్రోగ్రామింగ్ రీతినందు కామన్ బేసెస్ మధ్యన కన్వర్షన్ (బైనరీ, ఆక్టల్, డెసిమల్, మరియు హెక్సాడెసిమల్), బూలియన్ ఆల్జీబ్రా, ఒన్స్ అండ్ టూస్ కాంప్లిమెంటేషన్, కారక్టర్ టు కారక్టర్ కోడ్ కన్వర్షన్, మరియు ఇంకా.</p>
+    <p xml:lang="ta">நிரலாக்க பயன்முறையில் பொதுவான அடிமானங்களுக்கு இடையிலான மாற்றம் (ஈருறுப்பு, எண்மம், தசமம் மற்றும் ஹெக்சா தசமம் போன்றவை), பூலியன் அல்ஜீப்ரா, ஒன்றுகள் மற்றும் இரண்டுகள் நிரப்பல், எழுத்திலிருந்து எழுத்துக்கான குறியீட்டு மாற்றம் போன்ற பல செயல்களைச் செய்ய முடியும்.</p>
+    <p xml:lang="sv">Programmeringsläge stödjer konvertering mellan vanliga talbaser (binärt, oktalt, decimalt och hexadecimalt), boolesk algebra, ett- och tvåkomplement, konvertering från tecken till teckenkoder och annat.</p>
+    <p xml:lang="sr">Програмерски начин рада подржава претварање бројева између општих основа (бинарних, окталних, децималних и хексадецималних), булову алгебру, комплемент јединице и двојке, претварање кода знака у знак, и друго.</p>
+    <p xml:lang="sr@latin">Programerski način rada podržava pretvaranje brojeva između opštih osnova (binarnih, oktalnih, decimalnih i heksadecimalnih), bulovu algebru, komplement jedinice i dvojke, pretvaranje koda znaka u znak, i drugo.</p>
+    <p xml:lang="sl">Programerski način podpira pretvarjanje med splošnimi številskimi osnovami (dvojiško, osmiško, desetiško, šestnajstiško), Boolovo algebro, znakovno pretvarjanje in še mnogo več.</p>
+    <p xml:lang="sk">Programátorský režim podporuje prevod medzi číselnými sústavami (dvojková, osmičková, desiatková a šestnástková), Boolovu algebru, jednotkový a dvojkový doplnok, prevod znaku na kód znaku, a viac.</p>
+    <p xml:lang="rw">Mu Rwego rwo Gukorogarama ushobora guhindura hagati ya nshingiro zitandukanye (nyabubiri, nyamunani, nyacumi na nyacumi na gatandatu), aligebura nyabubiri, ishimwe rya rimwe n'irya kabiri, guhindura code y'inyuguti mu yindi, n'ibindi. </p>
+    <p xml:lang="ru">Режим программирования поддерживает преобразования между распространёнными системами счисления (двоичной, восьмеричной, десятичной и шестнадцатиричной), булеву алгебру, обратный и дополнительный код числа, преобразование кодов символов и другие возможности.</p>
+    <p xml:lang="ro">Modul de programare suportă conversia între bazele comune (binar, octal, zecimal, și hexazecimal), algebră logică, complement față de unu și doi, conversie de cod caracter cu caracter, și multe altele.</p>
+    <p xml:lang="pt">O modo de programação suporta a conversão entre bases comuns (binária, octal, decimal e hexadecimal), álgebra booleana, complementos de um e dois, conversão de códigos carácter a carácter, e mais.</p>
+    <p xml:lang="pt_BR">Modo programador tem suporte a conversão entre bases comuns (binário, octal, decimal e hexadecimal), álgebra booleana, complementação de um e de dois, conversão de caractere para código caractere e mais.</p>
+    <p xml:lang="pl">Tryb programistyczny obsługuje przeliczanie pomiędzy powszechnymi systemami liczbowymi (dwójkowym, ósemkowym, dziesiętnym i szesnastkowym), algebrę Boole’a, uzupełnienie jedynkowe i dwójkowe, przeliczanie kodu znaku oraz wiele więcej.</p>
+    <p xml:lang="pa">ਪ੍ਰੋਗਰਾਮਿੰਗ ਮੋਡ ਆਮ ਬੇਸ (ਬਾਈਨਰੀ, ਓਕਟਲ, ਡੈਸੀਮਲ ਅਤੇ ਹੈਕਸਾਡੈਸੀਮਲ), ਬੂਲੀਅਨ ਐਲਜਬਰਾ, ਇੱਕ ਤੇ ਦੋ ਦੇ ਪੂਰ, ਅੱਖਰ ਤੋਂ ਅੱਖਰ ਕੋਡ ਤਬਦੀਲੀ ਅਤੇ ਹੋਰ ਵਿੱਚ ਬਦਲਣ ਲਈ ਸਹਾਇਕ ਹੈ।</p>
+    <p xml:lang="or">ପ୍ରଗ୍ରାମିଙ୍ଗ ଧାରା ସାଧାରଣ ଆଧାରଗୁଡ଼ିକ ମଧ୍ଯରେ ପରିବର୍ତ୍ତନକୁ ସହାୟତା କରିଥାଏ (ବାଇନାରୀ, ଅଷ୍ଟକ, ଦଶମିକ, ଏବଂ ଶୋହଳମିକ), ବୁଲିଆନ ଗଣିତ, ଏକ ଏବଂ ଦୁଇର ପରିପୂରକ, ଅକ୍ଷରରୁ ଅକ୍ଷର ସଂକେତ ପରିବର୍ତ୍ତନ, ଏବଂ ଆହୁରି ଅନେକ।</p>
+    <p xml:lang="oc">Lo mòde programacion permet la conversion entre de basas usualas (binari, octal, decimal e exadecimal), l'algèbra de Boole, los complements a un e a dos, la conversion de còdi de caractèr, e d'autres.</p>
+    <p xml:lang="nl">Programmeermodus ondersteunt conversie tussen algemene talstelsels (binair, octaal, decimaal en hexadecimaal), booleaanse algebra, 1- en 2-complement, teken-naar-tekencodeconversie en meer.</p>
+    <p xml:lang="ne">प्रोग्रामिङ मोडले साझा आधारहरू (बाइनरी, अक्टल, दशमलव, र हेक्साडेसिमल), बुलियन बीजगणित, एक र दुईको पूरक, क्यारेक्टरदेखि क्यारेक्टर कोड रूपान्तरण, र थपहरू बीचको रूपान्तरणलाई समर्थन गर्दछ।</p>
+    <p xml:lang="nb">Programmeringsmodus støtter konvertering mellom ulike grunntall (binær, oktal, desimal, og heksadesimal), bolsk algebra, ener- og toerkomplementet, konvertering fra tegn til tegnkode og mer.</p>
+    <p xml:lang="ms">Mod pengaturcaraan menyokong penukaran antara asas biasa (perduaan, perlapanan, perpuluhan, dan perenambelasan), algebra boolean, satu dan dua Komplimentasi, penukaran kod aksara ke aksara, dan banyak lagi.</p>
+    <p xml:lang="mr">प्रोग्रामिंग मोड सामान्य बेसेस (बाइनरि, ऑकटल, डेसिमल, आणि हेक्जाडेसिमल) अंतर्गत रूपांतरकरिता समर्थन पुरवते, बूलियन अलजिब्रा, वन्स आणि टूज कॉमप्लिमेंटेशन, कॅरेक्टर टू कॅरेक्टर कोड कंवर्जन, आणि अधिक समाविष्टीत आहे.</p>
+    <p xml:lang="lv">Programmēšanas režīms atbalsta pārveidošanu starp bāzēm (bināro, astotnieku, decimālo un heksadecimālo), būla algebru, vieninieku un divnieku papildkodu, koda pārveidošanu pa rakstzīmēm un vēl vairāk.</p>
+    <p xml:lang="lt">Programavimo veiksena palaiko konvertavimą tarp pagrindinių skaičiavimo sistemų (dvejetainės, aštuonetainės, dešimtainės ir šešioliktainės), bulio algebrą, vienetų dvejetų papildinys, simbolių kodų konvertavimas ir kt.</p>
+    <p xml:lang="ko">프로그래밍 모드에서는 많이 사용하는 진법(2진수, 8진수, 10진수, 16진수)에 따라 변환하는 기능, 불리언 대수, 1의 보수와 2의 보수 계산, 문자 코드 변환 등의 기능이 있습니다.</p>
+    <p xml:lang="kn">ಪ್ರೊಗ್ರಾಮಿಂಗ್‌ ಕ್ರಮವು (ಬೈನರಿ, ಆಕ್ಟಲ್‌, ಡೆಸಿಮಲ್ ಮತ್ತು ಹೆಕ್ಸಾಡೆಸಿಮಲ್‌), ಬೂಲಿಯನ್‌ ಆಲ್ಜಿಬ್ರಾ, ಒಂದರ ಮತ್ತು ಎರಡರ ಕಾಂಪ್ಲಿಮೆಂಟೇಶನ್‌, ಕ್ಯಾರೆಕ್ಟರ್‌ನಿಂದ ಕ್ಯಾರೆಕ್ಟರ್‌ಗೆ ಕೋಡ್ ಪರಿವರ್ತನೆ, ಮತ್ತು ಇನ್ನಷ್ಟು ಸಾಮಾನ್ಯ ಮೂಲಗಳ ನಡುವಿನ ರೂಪಾಂತರವನ್ನು ಬೆಂಬಲಿಸುತ್ತದೆ.</p>
+    <p xml:lang="km">របៀប​សរសេរ​កម្មវិធី​គាំទ្រ​ការ​សន្ទនា​រវាង​មូលដ្ឋាន​ទូទៅ (គណិតវិទ្យា, octal, decimal, and hexadecimal), boolean algebra, one’s and two’s complementation, character to character code conversion, and more.</p>
+    <p xml:lang="kk">Бағдарламалау режимі жалпы базалар арасында түрлендіруді (екілік, сегіздік, ондық және он алтылық), логикалық алгебра, кері және қосымша код, таңба кодын түрлендіру және т.б. қолдайды.</p>
+    <p xml:lang="kab">Askar n usihel yessefrak aselket gar taffiwin tinmilin (asinsin, atamḍan, amrawan akked usḍisamrawan), aljibr abulan, asmad ɣer yiwen akked ɣer sin, aselket n tengalt n usekkil ɣer usekkil, akked wayen niḍen.</p>
+    <p xml:lang="ka">პროგრამირების რეჟიმს აქვს გადაყვანა ორობით, რვაობით, ათობით და თექვსმეტობითს შორის, ორობითი ალგებრა, ერთის და ორის შეთავსება, სიმბოლოების კოდირებების გადაყვანა და სხვა.</p>
+    <p xml:lang="ja">プログラミングモードは進数変換 (2 進数、8 進数、10 進数、16 進数)、ブーリアン代数、1 の補数と 2 の補数、文字コードの文字への変換などの多くの機能をサポートします。</p>
+    <p xml:lang="it">La modalità Programmazione supporta la conversione tra basi comuni (binaria, ottale, decimale ed esadecimale), algebra booleana, complemento a uno e a due, conversione di codice carattere a carattere e molto altro.</p>
+    <p xml:lang="id">Mode pemrograman mendukung konversi antara basis yang umum (biner, oktal, desimal, dan heksadesimal), aljabar boolean, komplemen satu dan dua, konversi kode karakter ke karakter, dan lebih banyak lagi.</p>
+    <p xml:lang="hu">A programozói mód támogatja az ismert számrendszerek (kettes, nyolcas, tízes, tizenhatos) közötti átváltást, a boole-algebrát, egyes és kettes komplemenseket, karakterből karakterkódra váltásokat, és még sok mást.</p>
+    <p xml:lang="hr">Programerski način rada podržava pretvorbu između zajedničkih baza (binarne, oktalne, decimalne i heksadecimalne), booleovu algebru, komplemente jedinica i dvica, znak za znak pretvorbu kôdova i još mnogo toga.</p>
+    <p xml:lang="hi">प्रोग्रामिंग अवस्था सामान्य बेस के बीच रूपांतरण का समर्थन करता है (binary, octal, decimal, और hexadecimal), बूलियन अलजेबरा, एक या दो पूरक, वर्ण या वर्ण कोड रूपांतरण या और.</p>
+    <p xml:lang="he">מצב תכנות תומך בהמרה בין בסיסים נפוצים (בינרי, אוקטלי, עשרוני והקסדצימלי), אלגברה בוליאנית, משלים ל־1 ומשלים ל־2, המרת תו לקוד תו ועוד.</p>
+    <p xml:lang="gu">પ્રોગ્રામિંગ સ્થિતિ  સામાન્ય પાયા (બાઈનરી, ઓક્ટલ, ડેસિમલ, અને હેક્ઝાડેસિમલ), બુલિયન બીજગણિત, એક અને બેની પૂરક સંખ્યા, અક્ષર થી અક્ષર રૂપાંતર કોડ રૂપાંતરણ, અને વધારે વચ્ચે રૂપાંતર માટે આધાર આપે છે.</p>
+    <p xml:lang="gl">O modo Programación admite a conversión entre as bases comúns (binaria, octal, decimal e hexadecimal), álxebra boolean, complementación a 0 e a 1, conversión de código carácter a carácter e moitas máis.</p>
+    <p xml:lang="gd">Cuiridh am modh prògramachaidh taic ri iompachadh eadar bunaitean coitcheann (bìnearaidh, ochdach, deicheach ’s sia-dheicheach), ailseabra Booleach, co-shlànachadh aon ’s dà, iompachadh o charactar gu caractar agus a bharrachd.</p>
+    <p xml:lang="fur">La modalitât Programazion e supuarte la conversion tra basis comuns (binarie, otâl, decimâl e esadecimâl), algjebre booleane, complement a un e a doi, conversion di codiç caratar a caratar e altri.</p>
+    <p xml:lang="fr">Le mode programmation permet la conversion entre des bases usuelles (binaire, octal, décimal et hexadécimal), l’algèbre de Boole, les compléments à un et à deux, la conversion de code de caractère, et d’autres.</p>
+    <p xml:lang="fo">Forritanar-støðan kann rokna í millum nógvar vanlig grundtalsskipanir (tvítals, áttatals, tíggjutals, og sekstantals), fremja booleska bókstavarokning, handfara eittara- og tveyara-fylling, fremja tekin til stav til stavkotu umskapan, og annað.</p>
+    <p xml:lang="fi">Ohjelmointitila tukee lukujen muuntamista lukujärjestelmien (binääri, oktaali, desimaali ja heksadesimaali) välillä, Boolen algebraa, yhden ja kahden komplementtia, merkin muuntamista merkkikoodiksi ja muuta.</p>
+    <p xml:lang="fa">حالت مهندسی از تبدیل بین مبناها (دودویی، هشت‌هشتی، ده‌دهی و شانزده‌شانزدهی)، جبر بولی، مکمّل یک و دو، تبدیل کد نویسه‌به‌نویسه و بسیاری قابلیت‌های دیگر پشتیبانی می‌کند.</p>
+    <p xml:lang="eu">Programazioaren modak ohiko oinarrien (bitarra, zortzitarra, hamartarra eta hamaseitarra) arteko bihurketa, algebra lineala, bat eta biren osagarria, karakterez karaktereko kode bihurketa, eta gehiago onartzen ditu.</p>
+    <p xml:lang="es">El modo de programación soporta la conversión entre bases comunes (binaria, octal, decimal y hexadecimal), álgebra booleana, complemento de uno y de dos, conversión de códigos carácter a carácter y más</p>
+    <p xml:lang="eo">Programada reĝimo subtenas konverton inter oftaj bazoj (duuma, okuma, dekuma kaj deksesuma), bulean algebron, komplementon ĝis unu kaj du, konverton de signo al signokodo, kaj pli.</p>
+    <p xml:lang="en_GB">Programming mode supports conversion between common bases (binary, octal, decimal, and hexadecimal), boolean algebra, one’s and two’s complementation, character to character code conversion, and more.</p>
+    <p xml:lang="el">Η λειτουργία για προγραμματιστές υποστηρίζει την μετατροπή μεταξύ κοινών βάσεων (δυαδικό, οκταδικό, δεκαδικό και δεκαεξαδικό), άλγεβρα Boole, συμπλήρωση ενός και δυο, μετατροπή κώδικα χαρακτήρα προς χαρακτήρα και πολλά άλλα.</p>
+    <p xml:lang="de">Der Informatik-Modus unterstützt die Umwandlung zwischen weit verbreiteten Zahlensystemen (Binär, Oktal, Dezimal und Hexadezimal), boolesche Algebra, Einer- und Zweierkomplement und weiteres.</p>
+    <p xml:lang="da">Tilstanden Programmering understøtter konvertering mellem almindelige grundtal (binær, oktal, decimal og heksadecimal), boolesk algebra, etter- og toer-kompliment, tegn til tegnkode-konvertering med mere.</p>
+    <p xml:lang="cs">Programátorský režim podporuje převod mezi číselnými soustavami (dvojková, osmičková, desítková a šetnáctková), boolovskou algebru, jedničkový a dvojkový doplněk, převod znaku na jeho kód a další věci.</p>
+    <p xml:lang="ca@valencia">El mode de programació permet convertir entre bases habituals (binari, octal, decimal i hexadecimal), àlgebra booleana, complement a u o dos, conversió caràcter a caràcter i més.</p>
+    <p xml:lang="ca">El mode de programació permet convertir entre bases habituals (binària, octal, decimal i hexadecimal), àlgebra booleana, complement a u o dos, conversió caràcter a caràcter i més.</p>
+    <p xml:lang="bs">Programerski mod podržava konverziju između osnovne baze(binarna,oktalna,decimalna i heksadecimalna),boolovu algebru,jedne i dvije komplementacije,pretvarač slovo po slovo i više.</p>
+    <p xml:lang="bn_IN">প্রোগ্রামিং মোড সমর্থন করে কমন বেসের মধ্যে রূপান্তর (বাইনারি, অক্টাল, দশমিক, এবং হেক্সাডেসিমেল), বুলিন অ্যালজেব্রা, এক এবং দুই'র কম্পিমেন্টেশন, অক্ষর থেকে অক্ষর কোড রূপান্তর, এবং অারো অনেক কিছু।</p>
+    <p xml:lang="bg">Режимът „Програмиране“ поддържа преобразуване между често използвани бройни системи (двоична, осмична, десетична и шестнайсетична), булева алгебра, преобразуване в обратен и допълнителен код, преобразуване на знак в код и др.</p>
+    <p xml:lang="be">Рэжым праграмавання падтрымлівае пераўтварэнне асновы для сістэм злічэння (двайковай, васьмярковай, дзесятковая і шаснаццатковая), булеву алгебру, зваротны і дапаўняльны код ліку, пераўтварэнне сімвала ў код сімвала і іншыя функцыі.</p>
+    <p xml:lang="as">প্ৰগ্ৰামিং অৱস্থায় সাধাৰণ ভিত্তি (বাইনাৰি, অকটেল, ডেচিমেল, আৰু হেক্সাডেচিমেল), বুলিয়ান এলজেব্ৰা, এক আৰু দুইৰ কমপ্লিমেন্টেষণ, আখৰৰ পৰা আখৰ ক'ড পৰিবৰ্তন, আৰু অধিক।</p>
+    <p xml:lang="ar">يدعم وضع البرمجة التحويل بين القواعد الشائعة (الثنائي، والثماني، والعشري، والسداسي العشري)، والجبر البولي، والمتمم الأحادي والثنائي، وتحويل الرمز من محرف لآخر، والمزيد.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Basic Mode</caption>
+      <caption xml:lang="zh_TW">基礎模式</caption>
+      <caption xml:lang="zh_HK">基礎模式</caption>
+      <caption xml:lang="zh_CN">基本模式</caption>
+      <caption xml:lang="vi">Chế độ cơ bản</caption>
+      <caption xml:lang="uk">Простий режим</caption>
+      <caption xml:lang="tr">Temel Kip</caption>
+      <caption xml:lang="th">โหมดพื้นฐาน</caption>
+      <caption xml:lang="tg">Ҳолати аслӣ</caption>
+      <caption xml:lang="te">ప్రాథమిక రీతి</caption>
+      <caption xml:lang="ta">அடிப்படை முறைமை</caption>
+      <caption xml:lang="sv">Grundläggande läge</caption>
+      <caption xml:lang="sr@latin">Osnovni način rada</caption>
+      <caption xml:lang="sl">Osnovni</caption>
+      <caption xml:lang="sk">Základný režim</caption>
+      <caption xml:lang="rw">Urwego bw'Ibanze</caption>
+      <caption xml:lang="ru">Базовый режим</caption>
+      <caption xml:lang="ro">Mod de bază</caption>
+      <caption xml:lang="pt">Modo Básico</caption>
+      <caption xml:lang="pt_BR">Modo básico</caption>
+      <caption xml:lang="pl">Tryb podstawowy</caption>
+      <caption xml:lang="pa">ਮੁੱਢਲਾ ਮੋਡ</caption>
+      <caption xml:lang="or">ମୌଳିକ ଧାରା</caption>
+      <caption xml:lang="nl">Eenvoudige modus</caption>
+      <caption xml:lang="ne">आधारभूतस्थिति</caption>
+      <caption xml:lang="nb">Grunnleggende modus</caption>
+      <caption xml:lang="ms">Mod asas</caption>
+      <caption xml:lang="mr">मूळ मोड</caption>
+      <caption xml:lang="mjw">Basic Mode</caption>
+      <caption xml:lang="lv">Pamata režīms</caption>
+      <caption xml:lang="lt">Paprasta veiksena</caption>
+      <caption xml:lang="ko">기본 모드</caption>
+      <caption xml:lang="kn">ಮೂಲಭೂತ ಕ್ರಮ</caption>
+      <caption xml:lang="km">របៀប​ជា​គោល</caption>
+      <caption xml:lang="kk">Қарапайым режимі</caption>
+      <caption xml:lang="kab">Askar amezwaru</caption>
+      <caption xml:lang="ka">ძირითადი რეჟიმი</caption>
+      <caption xml:lang="it">Modalità base</caption>
+      <caption xml:lang="id">Mode Dasar</caption>
+      <caption xml:lang="hu">Alap mód</caption>
+      <caption xml:lang="hi">बुनियादी विधा</caption>
+      <caption xml:lang="he">מצב בסיסי</caption>
+      <caption xml:lang="gu">મૂળભૂત સ્થિતિ</caption>
+      <caption xml:lang="gl">Modo básico</caption>
+      <caption xml:lang="gd">Modh bunasach</caption>
+      <caption xml:lang="fur">Modalitât basiche</caption>
+      <caption xml:lang="fr">Mode basique</caption>
+      <caption xml:lang="fi">Perustila</caption>
+      <caption xml:lang="fa">حالت ساده</caption>
+      <caption xml:lang="eu">Oinarrizko modua</caption>
+      <caption xml:lang="es">Modo básico</caption>
+      <caption xml:lang="eo">Baza reĝimo</caption>
+      <caption xml:lang="en_GB">Basic Mode</caption>
+      <caption xml:lang="el">Βασική λειτουργία</caption>
+      <caption xml:lang="de">Standardmodus</caption>
+      <caption xml:lang="da">Basistilstand</caption>
+      <caption xml:lang="cs">Základní režim</caption>
+      <caption xml:lang="ca@valencia">Mode bàsic</caption>
+      <caption xml:lang="ca">Mode bàsic</caption>
+      <caption xml:lang="bs">Osnovni režim</caption>
+      <caption xml:lang="bn_IN">প্রাথমিক মোড</caption>
+      <caption xml:lang="bg">Основен режим</caption>
+      <caption xml:lang="be">Звычайны рэжым</caption>
+      <caption xml:lang="as">মৌলিক অৱস্থা</caption>
+      <caption xml:lang="ar">الوضع الأساسي</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/calculator/basic-mode.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Advanced Mode</caption>
+      <caption xml:lang="zh_TW">進階模式</caption>
+      <caption xml:lang="zh_HK">進階模式</caption>
+      <caption xml:lang="zh_CN">高级模式</caption>
+      <caption xml:lang="vi">Chế độ cao cấp</caption>
+      <caption xml:lang="uk">Розширений режим</caption>
+      <caption xml:lang="tr">Gelişmiş Kip</caption>
+      <caption xml:lang="th">โหมดพิเศษ</caption>
+      <caption xml:lang="tg">Ҳолати иловагӣ</caption>
+      <caption xml:lang="te">ఆధునిక రీతి</caption>
+      <caption xml:lang="ta">மேம்பட்ட முறைமை</caption>
+      <caption xml:lang="sv">Avancerat läge</caption>
+      <caption xml:lang="sr@latin">Napredni način rada</caption>
+      <caption xml:lang="sl">Znanstveni</caption>
+      <caption xml:lang="sk">Rozšírený režim</caption>
+      <caption xml:lang="rw">Urwego rwo hejuru</caption>
+      <caption xml:lang="ru">Расширенный режим</caption>
+      <caption xml:lang="ro">Mod avansat</caption>
+      <caption xml:lang="pt">Modo Avançado</caption>
+      <caption xml:lang="pt_BR">Modo avançado</caption>
+      <caption xml:lang="pl">Tryb zaawansowany</caption>
+      <caption xml:lang="pa">ਤਕਨੀਕੀ ਮੋਡ</caption>
+      <caption xml:lang="or">ଉନ୍ନତ ଧାରା</caption>
+      <caption xml:lang="nl">Geavanceerde modus</caption>
+      <caption xml:lang="ne">उन्नतस्थिति</caption>
+      <caption xml:lang="nb">Avansert modus</caption>
+      <caption xml:lang="ms">Mod Lanjutan</caption>
+      <caption xml:lang="mr">प्रगत मोड</caption>
+      <caption xml:lang="mjw">Advanced Mode</caption>
+      <caption xml:lang="lv">Paplašināts režīms</caption>
+      <caption xml:lang="lt">Išplėstinė veiksena</caption>
+      <caption xml:lang="ko">고급 모드</caption>
+      <caption xml:lang="kn">ಮುಂದುವರೆದ ಕ್ರಮ</caption>
+      <caption xml:lang="km">របៀប​កម្រិត​ខ្ពស់</caption>
+      <caption xml:lang="kk">Кеңейтілген режимі</caption>
+      <caption xml:lang="kab">Askar alqayan</caption>
+      <caption xml:lang="ka">დამატებითი პარამეტრები</caption>
+      <caption xml:lang="it">Modalità avanzata</caption>
+      <caption xml:lang="id">Mode Lanjutan</caption>
+      <caption xml:lang="hu">Speciális mód</caption>
+      <caption xml:lang="hi">उन्नत विधा</caption>
+      <caption xml:lang="he">מצב מתקדם</caption>
+      <caption xml:lang="gu">ઉન્નત સ્થિતિ</caption>
+      <caption xml:lang="gl">Modo avanzado</caption>
+      <caption xml:lang="gd">Modh adhartach</caption>
+      <caption xml:lang="fur">Modalitât avanzade</caption>
+      <caption xml:lang="fr">Mode avancé</caption>
+      <caption xml:lang="fi">Edistynyt tila</caption>
+      <caption xml:lang="fa">حالت پیش‌رفته</caption>
+      <caption xml:lang="eu">Modu aurreratua</caption>
+      <caption xml:lang="es">Modo avanzado</caption>
+      <caption xml:lang="eo">Altnivela reĝimo</caption>
+      <caption xml:lang="en_GB">Advanced Mode</caption>
+      <caption xml:lang="el">Προχωρημένη λειτουργία</caption>
+      <caption xml:lang="de">Erweiterter Modus</caption>
+      <caption xml:lang="da">Avanceret tilstand</caption>
+      <caption xml:lang="cs">Pokročilý režim</caption>
+      <caption xml:lang="ca@valencia">Mode avançat</caption>
+      <caption xml:lang="ca">Mode avançat</caption>
+      <caption xml:lang="bs">Napredni režim</caption>
+      <caption xml:lang="bn_IN">উন্নত মোড</caption>
+      <caption xml:lang="bg">Разширен режим</caption>
+      <caption xml:lang="be">Пашыраны рэжым</caption>
+      <caption xml:lang="as">উন্নত অৱস্থা</caption>
+      <caption xml:lang="ar">الوضع المتقدم</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/calculator/advanced-mode.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Financial Mode</caption>
+      <caption xml:lang="zh_TW">金融模式</caption>
+      <caption xml:lang="zh_HK">金融模式</caption>
+      <caption xml:lang="zh_CN">财务模式</caption>
+      <caption xml:lang="vi">Chế độ tài chính</caption>
+      <caption xml:lang="uk">Фінансовий режим</caption>
+      <caption xml:lang="tr">Finansal Kip</caption>
+      <caption xml:lang="th">โหมดการเงิน</caption>
+      <caption xml:lang="tg">Ҳолати молиявӣ</caption>
+      <caption xml:lang="te">ఆర్థిక రీతి</caption>
+      <caption xml:lang="ta">நிதி முறைமை</caption>
+      <caption xml:lang="sv">Finansiellt läge</caption>
+      <caption xml:lang="sr@latin">Finansijski način rada</caption>
+      <caption xml:lang="sl">Finančni</caption>
+      <caption xml:lang="sk">Finančný režim</caption>
+      <caption xml:lang="rw">Urwego rw'Imari</caption>
+      <caption xml:lang="ru">Финансовый режим</caption>
+      <caption xml:lang="ro">Mod financiar</caption>
+      <caption xml:lang="pt">Modo Financeiro</caption>
+      <caption xml:lang="pt_BR">Modo financeiro</caption>
+      <caption xml:lang="pl">Tryb finansowy</caption>
+      <caption xml:lang="pa">ਵਿੱਤੀ ਮੋਡ</caption>
+      <caption xml:lang="or">ଆର୍ଥିକ ଧାରା</caption>
+      <caption xml:lang="nl">Financiële modus</caption>
+      <caption xml:lang="ne">वित्तिय स्थिति</caption>
+      <caption xml:lang="nb">Finansiell modus</caption>
+      <caption xml:lang="ms">Mod Kewangan</caption>
+      <caption xml:lang="mr">वित्तीय मोड</caption>
+      <caption xml:lang="mjw">Financial Mode</caption>
+      <caption xml:lang="lv">Finanšu režīms</caption>
+      <caption xml:lang="lt">Finansinė veiksena</caption>
+      <caption xml:lang="ko">재무 모드</caption>
+      <caption xml:lang="kn">ಹಣಕಾಸು ಕ್ರಮ</caption>
+      <caption xml:lang="km">របៀប​​ហិរញ្ញវត្ថុ</caption>
+      <caption xml:lang="kk">Қаржылық режимі</caption>
+      <caption xml:lang="kab">Askar s tedrimt</caption>
+      <caption xml:lang="ka">ფინანსური რეჟიმი</caption>
+      <caption xml:lang="it">Modalità finanziaria</caption>
+      <caption xml:lang="id">Mode Keuangan</caption>
+      <caption xml:lang="hu">Pénzügyi mód</caption>
+      <caption xml:lang="hi">वित्तीय विधा</caption>
+      <caption xml:lang="he">מצב פיננסי</caption>
+      <caption xml:lang="gu">નાણાકીય સ્થિતિ</caption>
+      <caption xml:lang="gl">Modo financeiro</caption>
+      <caption xml:lang="gd">Modh ionmhais</caption>
+      <caption xml:lang="fur">Modalitât finanziarie</caption>
+      <caption xml:lang="fr">Mode financier</caption>
+      <caption xml:lang="fi">Taloustila</caption>
+      <caption xml:lang="fa">حالت مالی</caption>
+      <caption xml:lang="eu">Modu finantzarioa</caption>
+      <caption xml:lang="es">Modo financiero</caption>
+      <caption xml:lang="eo">Financa reĝimo</caption>
+      <caption xml:lang="en_GB">Financial Mode</caption>
+      <caption xml:lang="el">Οικονομική λειτουργία</caption>
+      <caption xml:lang="de">Finanztechnischer Modus</caption>
+      <caption xml:lang="da">Finanstilstand</caption>
+      <caption xml:lang="cs">Finanční režim</caption>
+      <caption xml:lang="ca@valencia">Mode financer</caption>
+      <caption xml:lang="ca">Mode financer</caption>
+      <caption xml:lang="bs">Financijski režim</caption>
+      <caption xml:lang="bn_IN">ফিনান্সিয়াল মোড</caption>
+      <caption xml:lang="bg">Финансов режим</caption>
+      <caption xml:lang="be">Фінансавы рэжым</caption>
+      <caption xml:lang="as">বিত্তীয় অৱস্থা</caption>
+      <caption xml:lang="ar">الوضع المالي</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/calculator/financial-mode.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Programming Mode</caption>
+      <caption xml:lang="zh_TW">程式設計模式</caption>
+      <caption xml:lang="zh_HK">程式設計模式</caption>
+      <caption xml:lang="zh_CN">编程模式</caption>
+      <caption xml:lang="vi">Chế độ lập trình</caption>
+      <caption xml:lang="uk">Програмувальний режим</caption>
+      <caption xml:lang="tr">Programlama Kipi</caption>
+      <caption xml:lang="th">โหมดการเขียนโปรแกรม</caption>
+      <caption xml:lang="tg">Ҳолати барномасозӣ</caption>
+      <caption xml:lang="te">ప్రోగ్రామింగ్ రీతి</caption>
+      <caption xml:lang="ta">நிரலாக்க முறைமை</caption>
+      <caption xml:lang="sv">Programmeringsläge</caption>
+      <caption xml:lang="sr@latin">Programerski način rada</caption>
+      <caption xml:lang="sl">Programerski</caption>
+      <caption xml:lang="sk">Programátorský režim</caption>
+      <caption xml:lang="rw">Urwego rwo Gukorogarama</caption>
+      <caption xml:lang="ru">Режим программирования</caption>
+      <caption xml:lang="ro">Mod programare</caption>
+      <caption xml:lang="pt">Modo de Programação</caption>
+      <caption xml:lang="pt_BR">Modo programador</caption>
+      <caption xml:lang="pl">Tryb programistyczny</caption>
+      <caption xml:lang="pa">ਪਰੋਗਰਾਮਿੰਗ ਮੋਡ</caption>
+      <caption xml:lang="or">ପ୍ରୋଗ୍ରାମିଙ୍ଗ ଧାରା</caption>
+      <caption xml:lang="nl">Programmeermodus</caption>
+      <caption xml:lang="ne">प्रोग्रामिङ स्थिति</caption>
+      <caption xml:lang="nb">Programmeringsmodus</caption>
+      <caption xml:lang="ms">Mod Pemprograman</caption>
+      <caption xml:lang="mr">प्रोग्रामिंग मोड</caption>
+      <caption xml:lang="mjw">Programming Mode</caption>
+      <caption xml:lang="lv">Programmēšanas režīms</caption>
+      <caption xml:lang="lt">Programavimo veiksena</caption>
+      <caption xml:lang="ko">프로그래밍 모드</caption>
+      <caption xml:lang="kn">ಪ್ರೊಗ್ರಾಮಿಂಗ್ ಕ್ರಮ</caption>
+      <caption xml:lang="km">របៀប​​សរសេរ​កម្មវិធី</caption>
+      <caption xml:lang="kk">Бағдарламалау режимі</caption>
+      <caption xml:lang="kab">Askar n wahil</caption>
+      <caption xml:lang="ka">პროგრამირების რეჟიმი</caption>
+      <caption xml:lang="it">Modalità programmazione</caption>
+      <caption xml:lang="id">Mode Pemrograman</caption>
+      <caption xml:lang="hu">Programozói mód</caption>
+      <caption xml:lang="hi">प्रोग्रामिंग विधा</caption>
+      <caption xml:lang="he">מצב תכנות</caption>
+      <caption xml:lang="gu">પ્રોગ્રામીંગ સ્થિતિ</caption>
+      <caption xml:lang="gl">Modo programación</caption>
+      <caption xml:lang="gd">Modh prògramachaidh</caption>
+      <caption xml:lang="fur">Modalitât programazion</caption>
+      <caption xml:lang="fr">Mode programmation</caption>
+      <caption xml:lang="fi">Ohjelmointitila</caption>
+      <caption xml:lang="fa">حالت برنامه‌نویسی</caption>
+      <caption xml:lang="eu">Programatzeko modua</caption>
+      <caption xml:lang="es">Modo de programación</caption>
+      <caption xml:lang="eo">Programada reĝimo</caption>
+      <caption xml:lang="en_GB">Programming Mode</caption>
+      <caption xml:lang="el">Προγραμματιστική λειτουργία</caption>
+      <caption xml:lang="de">Informatik-Modus</caption>
+      <caption xml:lang="da">Programmeringstilstand</caption>
+      <caption xml:lang="cs">Programátorský režim</caption>
+      <caption xml:lang="ca@valencia">Mode de programació</caption>
+      <caption xml:lang="ca">Mode de programació</caption>
+      <caption xml:lang="bs">Programerski režim</caption>
+      <caption xml:lang="bn_IN">প্রোগ্রামিং মোড</caption>
+      <caption xml:lang="bg">Програмистки режим</caption>
+      <caption xml:lang="be">Рэжым праграмавання</caption>
+      <caption xml:lang="as">প্ৰগ্ৰামিং অৱস্থা</caption>
+      <caption xml:lang="ar">الوضع البرمجة</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/calculator/programming-mode.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Keyboard Mode</caption>
+      <caption xml:lang="zh_TW">鍵盤模式</caption>
+      <caption xml:lang="zh_CN">键盘模式</caption>
+      <caption xml:lang="vi">Chế độ bàn phím</caption>
+      <caption xml:lang="uk">Клавіатурний режим</caption>
+      <caption xml:lang="tr">Klavye Kipi</caption>
+      <caption xml:lang="th">โหมดแป้นพิมพ์</caption>
+      <caption xml:lang="tg">Реҷаи клавиатура</caption>
+      <caption xml:lang="sv">Tangentbordsläge</caption>
+      <caption xml:lang="sr@latin">Režim tastature</caption>
+      <caption xml:lang="sl">Vpisni način</caption>
+      <caption xml:lang="sk">Režim klávesnice</caption>
+      <caption xml:lang="rw">Urwego rwa Mwanditsi</caption>
+      <caption xml:lang="ru">Клавиатурный режим</caption>
+      <caption xml:lang="ro">Mod de tastatură</caption>
+      <caption xml:lang="pt">Modo de teclado</caption>
+      <caption xml:lang="pt_BR">Modo teclado</caption>
+      <caption xml:lang="pl">Tryb klawiatury</caption>
+      <caption xml:lang="pa">ਕੀਬੋਰਡ  ਮੋਡ</caption>
+      <caption xml:lang="nl">Toetsenbordmodus</caption>
+      <caption xml:lang="ne">कुञ्जीपाटी शैली</caption>
+      <caption xml:lang="nb">Tastaturmodus</caption>
+      <caption xml:lang="ms">Mod Papan Kekunci</caption>
+      <caption xml:lang="mjw">Keyboard Mode</caption>
+      <caption xml:lang="lv">Tastatūras režīms</caption>
+      <caption xml:lang="lt">Klaviatūros veiksena</caption>
+      <caption xml:lang="ko">키보드 모드</caption>
+      <caption xml:lang="kk">Пернетақта режимі</caption>
+      <caption xml:lang="kab">Askar n unasiw</caption>
+      <caption xml:lang="ka">კლავიატურის რეჟმი</caption>
+      <caption xml:lang="it">Modalità tastiera</caption>
+      <caption xml:lang="id">Mode Papan Tik</caption>
+      <caption xml:lang="hu">Billentyűzet mód</caption>
+      <caption xml:lang="hi">कीबोर्ड विधा</caption>
+      <caption xml:lang="he">מצב הקלדה</caption>
+      <caption xml:lang="gl">Teclado teclado</caption>
+      <caption xml:lang="gd">Modh a’ mheur-chlàir</caption>
+      <caption xml:lang="fur">Modalitât tastiere</caption>
+      <caption xml:lang="fr">Mode clavier</caption>
+      <caption xml:lang="fi">Näppäimistötila</caption>
+      <caption xml:lang="fa">حالت صفحه‌کلید</caption>
+      <caption xml:lang="eu">Teklatu modua</caption>
+      <caption xml:lang="es">Modo de teclado</caption>
+      <caption xml:lang="eo">Klavara reĝimo</caption>
+      <caption xml:lang="en_GB">Keyboard Mode</caption>
+      <caption xml:lang="el">Λειτουργία πληκτρολογίου</caption>
+      <caption xml:lang="de">Tastaturmodus</caption>
+      <caption xml:lang="da">Tastaturtilstand</caption>
+      <caption xml:lang="cs">Režim klávesnice</caption>
+      <caption xml:lang="ca@valencia">Mode del teclat</caption>
+      <caption xml:lang="ca">Mode del teclat</caption>
+      <caption xml:lang="bs">Režim tastature</caption>
+      <caption xml:lang="bg">Клавиатурен режим</caption>
+      <caption xml:lang="be">Рэжым клавіятуры</caption>
+      <caption xml:lang="ar">وضع لوحة المفاتيح</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/calculator/keyboard-mode.png</image>
+    </screenshot>
+  </screenshots>
+  <update_contact>mcatanzaro_at_gnome.org</update_contact>
+  <project_group>GNOME</project_group>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <!-- developer_name tag deprecated with Appstream 1.0 -->
+  <developer_name>The GNOME Project</developer_name>
+  <developer_name xml:lang="zh_TW">GNOME 專案</developer_name>
+  <developer_name xml:lang="zh_CN">GNOME 项目</developer_name>
+  <developer_name xml:lang="vi">Dự án GNOME</developer_name>
+  <developer_name xml:lang="uk">Проект GNOME</developer_name>
+  <developer_name xml:lang="tr">GNOME Projesi</developer_name>
+  <developer_name xml:lang="th">โครงการ GNOME</developer_name>
+  <developer_name xml:lang="sv">GNOME-projektet</developer_name>
+  <developer_name xml:lang="sr">Пројекат Гном</developer_name>
+  <developer_name xml:lang="sr@latin">Projekat Gnom</developer_name>
+  <developer_name xml:lang="sl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="sk">Projekt GNOME</developer_name>
+  <developer_name xml:lang="rw">Gahunda ya GNOME</developer_name>
+  <developer_name xml:lang="ru">Проект GNOME</developer_name>
+  <developer_name xml:lang="ro">Proiectul GNOME</developer_name>
+  <developer_name xml:lang="pt">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pt_BR">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="pa">ਗਨੋਮ ਪਰੋਜੈਕਟ</developer_name>
+  <developer_name xml:lang="oc">Lo projècte GNOME</developer_name>
+  <developer_name xml:lang="nl">Het GNOME-project</developer_name>
+  <developer_name xml:lang="ne">जिनोम परियोजना</developer_name>
+  <developer_name xml:lang="nb">GNOME prosjektet</developer_name>
+  <developer_name xml:lang="ms">Projek GNOME</developer_name>
+  <developer_name xml:lang="mjw">GNOME Project</developer_name>
+  <developer_name xml:lang="lv">GNOME projekts</developer_name>
+  <developer_name xml:lang="lt">GNOME projektas</developer_name>
+  <developer_name xml:lang="ko">그놈 프로젝트</developer_name>
+  <developer_name xml:lang="kk">GNOME жобасы</developer_name>
+  <developer_name xml:lang="kab">Asenfar n GNOME</developer_name>
+  <developer_name xml:lang="ka">პროექტი "GNOME"</developer_name>
+  <developer_name xml:lang="ja">The GNOME Project</developer_name>
+  <developer_name xml:lang="it">Il progetto GNOME</developer_name>
+  <developer_name xml:lang="id">Proyek GNOME</developer_name>
+  <developer_name xml:lang="hu">A GNOME projekt</developer_name>
+  <developer_name xml:lang="hr">GNOME projekt</developer_name>
+  <developer_name xml:lang="hi">GNOME परियोजना</developer_name>
+  <developer_name xml:lang="he">מיזם GNOME</developer_name>
+  <developer_name xml:lang="gl">O proxecto GNOME</developer_name>
+  <developer_name xml:lang="gd">Pròiseact GNOME</developer_name>
+  <developer_name xml:lang="fur">Il progjet GNOME</developer_name>
+  <developer_name xml:lang="fr">Le projet GNOME</developer_name>
+  <developer_name xml:lang="fo">GNOME verkætlanin</developer_name>
+  <developer_name xml:lang="fi">Gnome-projekti</developer_name>
+  <developer_name xml:lang="fa">پروژهٔ گنوم</developer_name>
+  <developer_name xml:lang="eu">GNOME proiektua</developer_name>
+  <developer_name xml:lang="es">El Proyecto GNOME</developer_name>
+  <developer_name xml:lang="eo">La projekto GNOME</developer_name>
+  <developer_name xml:lang="en_GB">The GNOME Project</developer_name>
+  <developer_name xml:lang="el">Έργο GNOME</developer_name>
+  <developer_name xml:lang="de">Das GNOME-Projekt</developer_name>
+  <developer_name xml:lang="da">GNOME-projektet</developer_name>
+  <developer_name xml:lang="cs">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ca@valencia">El projecte GNOME</developer_name>
+  <developer_name xml:lang="ca">El projecte GNOME</developer_name>
+  <developer_name xml:lang="bg">Проектът GNOME</developer_name>
+  <developer_name xml:lang="be">Праект GNOME</developer_name>
+  <developer_name xml:lang="ar">مشروع GNOME «غنوم»</developer_name>
+  <developer_name xml:lang="ab">The GNOME Project</developer_name>
+  <developer id="org.gnome">
+    <name>The GNOME Project</name>
+  </developer>
+  <url type="homepage">https://apps.gnome.org/Calculator</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-calculator/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="help">https://help.gnome.org/users/gnome-calculator/stable/</url>
+  <url type="translate">https://l10n.gnome.org/module/gnome-calculator/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/gnome-calculator</url>
+  <translation type="gettext">gnome-calculator</translation>
+  <launchable type="desktop-id">org.gnome.Calculator.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="46.3" date="2025-04-24" type="stable">
+      <description>
+        <ul>
+          <li>Set the default user agent (Alessandro Astone)</li>
+          <li>Use GNOME-hosted exchange rates (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="46.2" date="2025-03-21" type="stable">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+          <li>Fixed currency conversions not working #451 (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="46.1" date="2024-05-06" type="stable">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+          <li>Disable undo action if nothing to undo #280 (Robert Roth)</li>
+          <li>Keep last conversion options at launch #351 (Robert Roth)</li>
+          <li>Fixed event controller propagation phase #392 (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="46.0" date="2024-03-16" type="stable">
+      <description>
+        <ul>
+          <li>Updated translations</li>
+          <li>Metainfo improvements (Alexandre Franke, Andre Klapper)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="46~rc" date="2024-03-02" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 46.rc</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Metainfo (homepage, developer id) improvements (Sophie Herold, Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="46~beta" date="2024-02-11" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 46.beta</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="46~alpha" date="2024-01-06" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 46.alpha</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Allow substring search in the unit selection drop-downs #338 (Lukáš Tyrychtr)</li>
+          <li>libsoup library usage update (Robert Roth)</li>
+          <li>appdata updates !158 (Sabri Ünal)</li>
+          <li>Ported some components to adwaita !159 (Pig)</li>
+          <li>Support Argentine Peso currency #370 (Pacho Ramos)</li>
+          <li>Reload conversion rates if in search-provider conversion fails !162 (Vladislav Yegorov)</li>
+          <li>Add Troy ounce (ozt) as new unit !109 (Gwyneth Morgan)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="45.0.2" date="2023-09-16" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 45.0.2</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="45.0.1" date="2023-09-02" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 45.0.1</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="45.0" date="2023-08-16" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 45.0</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Search provider performance improvements !154, !155, !156 (Christian Hergert)</li>
+          <li>Use numeric font instead of monospace #290 (Robert Roth)</li>
+          <li>Fixed electron-volt unit abbreviation #347 (Robert Roth)</li>
+          <li>Fixed erroneous Joule unit name #348 (Robert Roth)</li>
+          <li>Fixed missing build dependency !157 (Jeremy Bicha)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="45~beta" date="2023-08-03" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 45.beta</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Fixed variable and function popover reverse typing #335, #320 (Robert Roth)</li>
+          <li>Better left/right cursor key handling !153 (Seth Falco)</li>
+          <li>Improved toolbar using Adwaita library !151 (Felipe Kinoshita)</li>
+          <li>Flatpak build improvements (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="45~alpha" date="2023-06-28" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 45.alpha</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Remember window size #328 !146 (Leonard K, Alice Mikhaylenko)</li>
+          <li>Allow opening Main Menu by pressing F10 !142 !149 (Automeris naranja)</li>
+          <li>Extend bit-shifting limit #306 !143 (J Sory)</li>
+          <li>Added new energy units !143 (J Sory)</li>
+          <li>Added TWD support via Bank of Canada rates #27 !148 (Mário Adriano)</li>
+          <li>Added legal section for exchange rate source attribution (Robert Roth)</li>
+          <li>Added United Nations Treasury exchange rate datasource (Robert Roth)</li>
+          <li>Added Jamaican Dollar currency #291 (Robert Roth)</li>
+          <li>Added Ukrainian hryvnia currency #278 (Robert Roth)</li>
+          <li>Added Nigerian Naira currency #142 (Robert Roth)</li>
+          <li>Changed symbolic icon to C on the clear button #336 (Robert Roth)</li>
+          <li>Dropped VEF currency support #78 (Robert Roth)</li>
+          <li>Use new vala-nightly SDK extension for flatpak (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="44.0" date="2023-03-17" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 44.0</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="44~rc" date="2023-03-03" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 44.rc</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="44~beta" date="2023-02-11" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 44.beta</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Improved factorization !141 (J. Sory)</li>
+          <li>Number format selection documentation improvements #321 (Robert Roth)</li>
+          <li>Made builtin function descriptions translatable #323 (Robert Roth)</li>
+          <li>Fixed display showing 0 on startup #318 (Robert Roth)</li>
+          <li>Improved button tooltips !132 (sunflowerskater)</li>
+          <li>Added signed int support to programming mode !110 (Erik Wolf)</li>
+          <li>i and e constants updated according to ISO 80000-2:2009 !137 (majjejjam)</li>
+          <li>Help overlay updates !133 (Sabri Ünal)</li>
+          <li>Added preferences shortcut !129 (Sabri Ünal)</li>
+          <li>Destroy dialog after clicking cancel #310 (Jaycee Santos)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="43.0.1" date="2022-09-16" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 43.0.1</p>
+        <ul>
+          <li>Fixed appdata versioning (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="43.0" date="2022-09-16" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 43.0</p>
+        <ul>
+          <li>Removed old issue tracker references !128 (Jake Dane)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="43~rc" date="2022-09-02" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 43.rc</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Fix crash when entering new function name !124 (Nathaniel Russel)</li>
+          <li>Fix source view border !121 (Alexander Mikhaylenko)</li>
+          <li>Flatpak build update !122 (Bartłomiej Piotrowski)</li>
+          <li>Port about window to libadwaita !119 (Christopher Davis)</li>
+          <li>Port to libsoup3 !120 (AppleME)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="43~alpha" date="2022-07-08" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 43.alpha</p>
+        <ul>
+          <li>Updated translations</li>
+          <li>Fixed broken undo/redo #266 (Robert Roth)</li>
+          <li>Make sure variable name definitions work with whitespace too (Robert Roth)</li>
+          <li>Fix translatable strings !116 (Maximiliano)</li>
+          <li>Fixed missing implicit multiplication with variable and root #279 (Robert Roth)</li>
+          <li>meson warning fixes (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="42.2" date="2022-07-01" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 42.2</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Fixed incorrect history with bits toggling #281 (Robert Roth)</li>
+          <li>Fixed crash when typing in variable popover #282 (Robert Roth)</li>
+          <li>Fixed incorrect libxml usage #283 (Luca Bacci, Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="42.1" date="2022-05-27" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 42.1</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Fixed broken undo/redo #266 (Robert Roth)</li>
+          <li>Removed automatic closing brace addition #271 (Robert Roth)</li>
+          <li>Fixed incorrect percentage symbol precedence handling #236, #275 (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="42.0" date="2022-03-19" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 42.0</p>
+        <ul>
+          <li>Updated Translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="42~rc" date="2022-03-06" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 42.rc</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Use new gnome post_install script !106 (Bobby Rong)</li>
+          <li>gcalc build fixes (Daniel Espinoza Ortiz)</li>
+          <li>Updated screenshots (Christopher Davis)</li>
+          <li>Set default focus to entry (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="42~beta" date="2022-02-13" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 42.beta</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Fixed build issues with GCI entry controller tests #250 (Robert Roth)</li>
+          <li>Force LTR in history view #252 (Robert Roth)</li>
+          <li>programing mode: Force bit digits to be always LTR #258 (Yosef Or Boczko)</li>
+          <li>Use AdwApplication (Alexander Mikhaylenko)</li>
+          <li>ui: Fix styles !105 (Alexander Mikhaylenko)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="42~alpha" date="2022-01-08" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 42.alpha</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>build: Support flatpak development builds (Óscar Fernández Díaz)</li>
+          <li>build: migrated to GTK4 !98 (Cristopher Davis, Robert Roth)</li>
+          <li>entry: Added currencies completion provider (Robert Roth)</li>
+          <li>entry: Fixed percentage evaluation error #237 (Robert Roth)</li>
+          <li>internal: Moved history view from MathDisplay to MathWindow (Robert Roth)</li>
+          <li>window: set default width for basic and keyboard mode #240 (Robert Roth)</li>
+          <li>buttons: removed destructive action class from clear button #242 (Robert Roth)</li>
+          <li>converter: search support in unit selector, separate conversion category selector #108 (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="41.0" date="2021-09-18" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 41.0</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Use first translated symbol for conversion with button #219 (Robert Roth)</li>
+          <li>Appdata includes hardware support information (Adrien Plazas)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="41~rc" date="2021-09-04" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 41.rc</p>
+        <ul>
+          <li>Updated Translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="41~alpha" date="2021-07-10" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 41.alpha</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Adaptive preferences window !85 (Adrien Plazas)</li>
+          <li>Fixed currency conversion using convert button #216 (Robert Roth)</li>
+          <li>User interface reworked, adaptive UI !81 (Adrien Plazas)</li>
+          <li>Enlarged calculator icon in help !82 (Sabri Ünal)</li>
+          <li>Code cleanup (Robert Roth)</li>
+          <li>Fixed kilohertz shorthand !87 (scootergrisen)</li>
+          <li>Fixed donation link !88 (René Genz)</li>
+          <li>Added support using calculator without currency conversion for privacy !89 (Ray Strode)</li>
+          <li>Added support for function description of custom functions using @ !90 (Martin Jirku)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40.0" date="2021-03-19" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 40.0</p>
+        <ul>
+          <li>Updated Translations</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40~rc" date="2021-03-12" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 40.rc</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Resize window after switching mode !78 (joshas)</li>
+          <li>Fixed compilation warnings (Robert Roth)</li>
+          <li>Support offline currency conversion tests #208 (Robert Roth)</li>
+          <li>Use official unit on conversion button click #207 (Robert Roth)</li>
+          <li>Fixed temperature unit typos #211 (Robert Roth)</li>
+          <li>Ellipsize conversion labels #17 (Robert Roth)</li>
+          <li>Added Ctrl+Delete shortcut for clearing the current equation #187 (Robert Roth)</li>
+          <li>Allow multiple decimal points #166. #5 (Robert Roth)</li>
+          <li>Added Ctrl+O shortcut for degrees symbol (Robert Roth)</li>
+          <li>Use gtk-sourceview 4.8 !80 (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40~beta" date="2021-02-05" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 40.beta</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Fixed CI build (Robert Roth)</li>
+          <li>Fixed issues with initial loading of currencies (Robert Roth)</li>
+          <li>Rework currency retrieval preparing for currency provider plugins (Robert Roth)</li>
+          <li>Fixed commandline conversions #33 (Robert Roth)</li>
+          <li>Added currency conversion tests (Robert Roth)</li>
+          <li>Added support for frequencies conversion (Dave Hulst)</li>
+          <li>Added support for converting to and from weeks (Dave Hulst)</li>
+          <li>Added support for converting to and from centuries and decades (Dave Hulst)</li>
+          <li>Increase buttons font size #201 (Robert Roth)</li>
+          <li>Added % button to Advanced mode (Dave Hulst)</li>
+          <li>Show 4 decimals in converter instead of only two #203 (Robert Roth)</li>
+          <li>Added style classes to buttons !76 (Dave Hulst)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40~alpha" date="2021-01-10" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 40.alpha</p>
+        <ul>
+          <li>Updated Translations</li>
+          <li>Use libhandy for window and headerbar !69 (Cristopher Davis)</li>
+          <li>Use C instead of Clr in help !70 (scootergrisen)</li>
+          <li>Fixed broken currency conversion on first start #199 (Robert Roth)</li>
+          <li>Removed duplicate word from help #198 (Robert Roth)</li>
+          <li>Added lbs shortcut for pounds conversion (Robert Roth)</li>
+          <li>Fixed inconsistent word size (A. M. Roswell)</li>
+          <li>Removed unused trunc button from programming mode #41 (Robert Roth)</li>
+          <li>Fixed deprecation warnings</li>
+          <li>Added Serbian Dinar with fixed rate #49 (Robert Roth)</li>
+          <li>Added Bangladeshi Taka with fixed rate #191 (A. M. Roswell)</li>
+          <li>Updated mailing list contact to Discourse (Robert Roth)</li>
+          <li>Added basic help page for programming mode (A. M. Roswell)</li>
+          <li>Added insert character code button (A. M. Roswell)</li>
+          <li>Dim inapplicable bits on word size change #189 (A. M. Roswell)</li>
+          <li>Make the conversion labels selectable (Robert Roth)</li>
+          <li>Do not convert on swap #170 (Robert Roth)</li>
+          <li>Word size changer in programming mode !58 (A. M. Roswell)</li>
+          <li>Added metric cups conversion unit !53 (Lucy Coleclough)</li>
+          <li>Fixed astronomical unit conversion !51 (Thomas Nilsson)</li>
+          <li>Fixed feet-based units name, added mph and kph shortcuts #180 (Robert Roth)</li>
+          <li>Use shell copy to clipboard action #178 (Robert Roth)  </li>
+          <li>Fixed preferences of angle units !56 (Delton Ding)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.38.0" date="2020-09-11" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.38.0</p>
+        <ul>
+          <li>Updated German translation (Mario Blättermann)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Updated Hungarian translation (Balázs Meskó)</li>
+          <li>Updated Danish translation (Ask Hjorth Larsen, Alan Mortensen)</li>
+          <li>Updated Greek translation (Efstathios Iosifidis)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.37.92" date="2020-09-04" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.37.92</p>
+        <ul>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+          <li>Updated Spanish translation (Daniel Mustieles García)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+          <li>Updated Turkish translation (Emin Tufan)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Updated Croatian translation (Goran Vidović)</li>
+          <li>Updated Japanese translation (sicklylife)</li>
+          <li>Updated Czech translation (Marek Černocký)</li>
+          <li>Updated Brazilian Portuguese translation (Yuri Gomes)</li>
+          <li>Updated Persian translation (Daniel Behzadi)</li>
+          <li>Updated Dutch translation (Nathan Follens)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated British English translation (Zander Brown)</li>
+          <li>Updated Serbian translation (Марко М. Костић (Marko M. Kostić))</li>
+          <li>Updated Slovak translation (Dušan Kazik)</li>
+          <li>Updated Korean translation (Changwoo Ryu)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.37.90" date="2020-08-06" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.37.90</p>
+        <ul>
+          <li>Add tooltips for bits in programming mode !46 (Olliver Schinagl)</li>
+          <li>Updated French translation (Guillaume Bernard)</li>
+          <li>Updated Indonesian translation (Andika Triwidada)</li>
+          <li>Updated Ukrainian translation (Daniel Korostil, Yuri Chornoivan)</li>
+          <li>Updated Catalan translation (Jordi Mas, Gil Forcada)</li>
+          <li>Updated Basque translation (Ibai Oihanguren Sala, Asier Sarasua Garmendia)</li>
+          <li>Updated Hebrew translation (Yosef Or Boczko)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>snap packaging updates (Ken VanDine)</li>
+          <li>Added link to website in About #155 (Robert Roth)</li>
+          <li>Added speed conversions !49 (Mathieu Heurtevin)</li>
+          <li>Updated Romanian translation (Florentina Mușat)</li>
+          <li>History view follows preferences #105, #159, #168 (Robert Roth)</li>
+          <li>Added month as time unit #158 (Robert Roth)</li>
+          <li>Better help for variables example usage #154 (Robert Roth)</li>
+          <li>Defined pi variable, added pi button in programming mode #153 (Robert Roth)</li>
+          <li>CI build fixes (Robert Roth)</li>
+          <li>Updated app icon !47 (Jakub Steiner)</li>
+          <li>Fixed bug returning empty string as result #152 (Robert Roth)</li>
+          <li>Support latex-style multiplication #164 (Robert Roth)</li>
+          <li>Added support for tau constant #46 (Robert Roth)</li>
+          <li>Unify constant handling (Robert Roth)</li>
+          <li>Separate UI files from sources (Robert Roth)</li>
+          <li>Moved number format selection to separate menu #24 (Robert Roth)</li>
+          <li>Replaces mode selector shortcuts with Ctrl+Alt (Robert Roth)</li>
+          <li>Clear answer if editing right before it #59, #161 (Robert Roth)</li>
+          <li>Moved preferences dialog to UI file (Robert Roth)</li>
+          <li>Refresh bits panel after calculation #38 (Robert Roth)</li>
+          <li>Updated Spanish translation (Daniel Mustieles García)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Kazakh translation (Baurzhan Muftakhidinov)</li>
+          <li>Updated Lithuanian translation (Aurimas Černius)</li>
+          <li>Updated Chinese translation (Boyuan Yang)</li>
+          <li>Updated German translation (Tim Sabsch)</li>
+          <li>Removed past author addresses #174 (Robert Roth)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.36.0" date="2020-03-07" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.36.0</p>
+        <ul>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Fixed broken markup in XHosa UI translation (Andre Klapper)</li>
+          <li>Updated Swedish translation (Anders Jonsson)  </li>
+          <li>Updated Italian translation (Janvitus)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated German translation (Tim Sabsch)</li>
+          <li>Updated Dutch translation (Nathan Follens)</li>
+          <li>Fixed broken markup in Dzongka UI translation (Andre Klapper)</li>
+          <li>Updated Czech help translation (Marek Černocký)</li>
+          <li>Updated Hungarian translation (Balázs Úr)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.35.92" date="2020-02-29" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.35.92</p>
+        <ul>
+          <li>Updated Spanish translation (Daniel Mustieles García)</li>
+          <li>Updated Croatian translation (Goran Vidović)</li>
+          <li>Documentation build fixes (Rico Tzschichholz)</li>
+          <li>Updated Lithuanian translation (Aurimas Černius)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Removed obsolete keyboard shortcut #148 (Robert Roth)</li>
+          <li>Updated Persian translation (Danial Behzadi)</li>
+          <li>Updated Basque translation (Asier Sarasua Garmendia)</li>
+          <li>Update British English translation (Bruce Cowan)</li>
+          <li>Updated Japanese translation (sicklylife)</li>
+          <li>Updated Czech translation (Marek Černocký)</li>
+          <li>Updated Turkish translation (Emin Tufan)</li>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+          <li>Updated Hungarian translation (Balázs Meskó)</li>
+          <li>Updated Chinese (Taiwan) translation (pesder)</li>
+          <li>Updated Danish translation (Alan Mortensen)</li>
+          <li>Updated Serbian translation (Марко М. Костић (Marko M. Kostić))</li>
+          <li>help: Update icon for 3.36 (Andre Klapper)</li>
+          <li>Updated Karbi translation (J T)</li>
+          <li>Updated Korean translation (Changwoo Ryu)</li>
+          <li>Updated French translation (Julien Humbert)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.35.90" date="2020-02-01" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.35.90</p>
+        <ul>
+          <li>Updated Greek translation (Efstathios Iosifidis)</li>
+          <li>Updated Indonesian translation (Sucipto)</li>
+          <li>Drop padding around the display !40 (Adrien Plazas)</li>
+          <li>Updated Keyboard Shortcuts (Sabri Ünal)</li>
+          <li>Handle Escape and Enter correctly with completion #144 (Robert Roth)</li>
+          <li>Updated Spanish translation (Daniel Mustieles García)</li>
+          <li>Updated Slovak translation (Dušan Kazik)</li>
+          <li>Added F10 for primary menu shortcut #148 (Robert Roth)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated app icon !43 (Tobias Bernard)</li>
+          <li>Updated Malay translation (Umarzuki Mochlis)</li>
+          <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+          <li>Added Rack Units to the conversions !37 (Léo Gillot-Lamure)</li>
+          <li>Updated Karbi translation (J T)</li>
+          <li>Fixed freeze on calculating atan(+/-i) #139 (Robert Roth)</li>
+          <li>Fixed mode shortcuts by removing blocking mnemonics #138 (Robert Roth)</li>
+          <li>Implemented result history browsing using alt left/right #129 (Robert Roth)</li>
+          <li>Added translator comments for possible modes as command line arguments !38 (Rafael Fontenelle)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.35.3" date="2020-01-05" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.35.3</p>
+        <ul>
+          <li>Updated Chinese (Taiwan) translation (Yi-Jyun Pan)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Help updates (Andre Klapper)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.35.2" date="2019-11-24" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.35.2</p>
+        <ul>
+          <li>Updated Italian translation (Milo Casagrande)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Japanese translation (Ryuta Fujii)</li>
+          <li>Updated Danish translation (Ask Hjorth Larsen)</li>
+          <li>List possible modes in commandline help #112 (Robert Roth)</li>
+          <li>Add square feet unit #132 (Robert Roth)</li>
+          <li>Base conversion display selectable #123 (Robert Roth)</li>
+          <li>Created nightly icon (Jakub Steiner)</li>
+          <li>Snap build updates (Heather Ellsworth)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>GCalc library code fixes (Rico Tzschichholz, Daniel Espinoza Ortiz)</li>
+          <li>Update required meson version (Diego Escalante Urrelo)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Persian translation (Danial Behzadi)</li>
+          <li>Adapt code to changed gtk+-3.0 bindings (Rico Tzschichholz)</li>
+          <li>Added GCi libary and tests for controllers for widgets (Daniel Espinoza Ortiz)</li>
+          <li>Updated Czech translation (Marek Černocký)</li>
+          <li>Updated Indonesian translation (Andika Triwidada)</li>
+          <li>Solve on = key if input isq not a variable name #22 (Alberto González Palomo)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.34.0" date="2019-09-09" type="stable">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.34.0</p>
+        <ul>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.33.92" date="2019-09-02" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.33.92</p>
+        <ul>
+          <li>Updated Czech translation (Marek Černocký)</li>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated German translation (Tim Sabsch)</li>
+          <li>Updated Lithuanian translation (Aurimas Černius)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+          <li>Updated Persian translation (Danial Behzadi)</li>
+          <li>Updated Serbian translation (Марко М. Костић (Marko M. Kostić))</li>
+          <li>Updated Latvian translation (Rūdolfs Mazurs)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+          <li>Updated British English translation (Zander)</li>
+          <li>Updated Turkish translation (Ahmet Elgün)</li>
+          <li>Updated Japanese translation (Ryuta Fujii)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated French translation (Charles Monzat)</li>
+          <li>Updated Korean translation (Changwoo Ryu)</li>
+          <li>README updates (Roger)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.33.90" date="2019-08-06" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.33.90</p>
+        <ul>
+          <li>Updated Dutch translation (Nathan Follens)</li>
+          <li>Updated Croatian translation (Goran Vidović)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Updated Karbi translation (J T)</li>
+          <li>Updated Basque translation (Asier Sarasua Garmendia)</li>
+          <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Romanian translation (Florentina Mușat)</li>
+          <li>Flatpak build cleanup (Jordan Petridis)</li>
+          <li>Debug messages cleanup (Daniel Espinosa Ortiz)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.33.3" date="2019-06-17" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.33.3</p>
+        <ul>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Hungarian translation (Balázs Úr)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>Updated Greek translation (Efstathios Iosifidis)</li>
+          <li>calculator library build fixes (Daniel Espinosa Ortiz)</li>
+          <li>CI build fixes (Ken VanDine)</li>
+          <li>Added mnemonics for primary menu items #113 (Robert Roth)</li>
+          <li>Dropped leading zeros octal prefix #114, #109, #110 (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.33.2" date="2019-05-21" type="development">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.33.2</p>
+        <ul>
+          <li>Separated calculator library !19 (Daniel Espinosa Ortiz)</li>
+          <li>Ensure icon is available for shell (Ken VanDine)</li>
+          <li>Updated French translation (Charles Monzat)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Support entering left/right shift with keyboard #98 (Robert Roth)</li>
+          <li>Updated Croatian translation (Goran Vidović)</li>
+          <li>Fixed CFA conversion rate #102 (Robert Roth)</li>
+          <li>Remove copy icon from search provider results #103 (Robert Roth)</li>
+          <li>Do not assume octal base for binary numbers #101 (Robert Roth)</li>
+          <li>Show thousands separator in unit converter #102 (Robert Roth)</li>
+          <li>Use currency name instead of display name for conversion #106 (Robert Roth)</li>
+          <li>Quit warns and closes all windows #51 (Robert Roth)</li>
+          <li>Avoid normalizing the equation twice in search #104 (Pascal Nowack)</li>
+          <li>Ignore keypresses while calculating results #47 (Robert Roth)</li>
+          <li>Only allow one decimal point in numbers #5 (Robert Roth)</li>
+          <li>Application icon updated in help (Andre Klapper)</li>
+          <li>Updated Danish translation (Ask Hjorth Larsen)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Basque translation (Asier Sarasua Garmendia)</li>
+          <li>Updated Chinese translation (Dingzhong Chen)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.32.0" date="2019-03-11">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.32.0</p>
+        <ul>
+          <li>Updated Esperanto translation (Kristjan Esperanto)</li>
+          <li>Updated Korean translation (Changwoo Ryu)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Snap build update (Ken VanDine)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.31.92" date="2019-03-05">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.31.92</p>
+        <ul>
+          <li>Updated Turkish translation (Emin Tufan)</li>
+          <li>Updated French translation (Guillaume Bernard)</li>
+          <li>Updated Dutch translation (Nathan Follens)</li>
+          <li>Updated Lithuanian translation (Aurimas Černius)</li>
+          <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+          <li>Updated Italian translation (Milo Casagrande)</li>
+          <li>Updated Russian translation (Stas Solovey)</li>
+          <li>Updated Serbian translation (Марко Костић)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated German translation (Tim Sabsch)</li>
+          <li>Updated Vietnamese translation (Trần Ngọc Quân)</li>
+          <li>Updated Latvian translation (Rūdolfs Mazurs)</li>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.31.91" date="2019-02-18">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.31.91</p>
+        <ul>
+          <li>Updated Danish translation (Alan Mortensen)</li>
+          <li>Updated Kazakh translation (Baurzhan Muftakhidinov)</li>
+          <li>Updated Catalan translation (Jordi Mas)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Updated Czech translation (Marek Cernocky)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Updated Japanese translation (Ryuta Fujii)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>Updated Romanian translation (Daniel Șerbănescu)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+          <li>Updated Turkish translation (Emin Tufan)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+          <li>Updated Hungarian translation (Balázs Úr)</li>
+          <li>Additional syntax for unit conversion (Tuomas Mikkola)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Galician translation (Fran Diéguez)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.31.90" date="2019-02-04">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.31.90</p>
+        <ul>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated Greek translation (Tom Tryfonidis)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Updated Spanish translation (Daniel Mustieles)</li>
+          <li>Updated Japanese translation (Ryuta Fujii)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Hungarian translation (Balázs Úr)</li>
+          <li>Updated Czech translation (Daniel Rusek)</li>
+          <li>Updated Catalan translation (Jordi Maas)</li>
+          <li>snap build fixes (Jeremy Bicha)</li>
+          <li>Exchange rate update interval preference #58 (Robert Roth)</li>
+          <li>Updated and fixed appdata !20 (Harald H.)</li>
+          <li>Fix for digit transformed into ^ on double #91 (Robert Roth)</li>
+          <li>Accept comma and decimal point as decimal separator #86 (Robert Roth)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.30.1" date="2018-09-24">
+      <description>
+        <p>Overview of changes in gnome-calculator 3.30.1:</p>
+        <ul>
+          <li>Fix opening multiple windows in GNOME Shell (Florian Müllner)</li>
+          <li>Mark some strings translatable (Robert Roth)</li>
+          <li>Updated Brazilian Portuguese translation (Rafael Fontenelle)</li>
+          <li>Updated Croatian translations (Goran Vidović)</li>
+          <li>Updated Czech translation (Marek Cernocky)</li>
+          <li>Updated Danish translation (Ask Hjorth Larsen)</li>
+          <li>Updated Finnish translation (Jiri Grönroos)</li>
+          <li>Updated Friulian translation (Fabio Tomat)</li>
+          <li>Updated German translation (Mario Blättermann)</li>
+          <li>Updated Hungarian translation (Balázs Meskó)</li>
+          <li>Updated Indonesian translation (Kukuh Syafaat)</li>
+          <li>Updated Italian translation (Janvitus)</li>
+          <li>Updated Latvian translation (Rūdolfs Mazurs)</li>
+          <li>Updated Polish translation (Piotr Drąg)</li>
+          <li>Updated Romanian translation (Daniel Șerbănescu)</li>
+          <li>Updated Russian translation (Stas Solovey)</li>
+          <li>Updated Swedish translation (Anders Jonsson)</li>
+          <li>Updated Slovenian translation (Matej Urbančič)</li>
+          <li>Updated Turkish translation (Emin Tufan Çetin)</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <custom>
+    <value key="Purism::form_factor">mobile</value>
+  </custom>
+</component>

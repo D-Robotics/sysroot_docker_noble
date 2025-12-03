@@ -1,0 +1,13 @@
+Document: fonts-sil-annapurna-features
+Title: Font Features for Annapurna SIL
+Author: SIL International www.sil.org
+Abstract: How to use optional font features in the Annapurna SIL font.
+ Additional documentation is located in various files.
+Section: Office
+
+Format: HTML
+Index: /usr/share/doc/fonts-sil-annapurna/documentation/index.html
+Files: /usr/share/doc/fonts-sil-annapurna/documentation/*.html
+
+Format: PDF
+Files: /usr/share/doc/fonts-sil-annapurna/documentation/pdf/*

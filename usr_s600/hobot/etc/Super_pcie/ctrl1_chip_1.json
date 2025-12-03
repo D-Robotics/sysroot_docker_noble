@@ -1,0 +1,18 @@
+{
+	"chipID": 1,
+	"maxTopic": 16,
+	"chipList": [
+		{
+			"chipID": 0,
+			"cdID": 1,
+			"busID": 0,
+			"maxInnerBufSize": 1048576
+		},
+		{
+			"chipID": 1,
+			"cdID": 1,
+			"busID": 65,
+			"maxInnerBufSize": 1048576
+		}
+	]
+}

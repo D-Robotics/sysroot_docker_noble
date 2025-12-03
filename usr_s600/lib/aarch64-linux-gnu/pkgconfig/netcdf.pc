@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib/aarch64-linux-gnu
+includedir=/usr/include
+ccompiler=/usr/bin/cc
+
+Name: netCDF
+Description: NetCDF Client Library for C
+URL: https://www.unidata.ucar.edu/netcdf
+Version: 4.9.2
+Libs: -L${libdir} -lnetcdf
+Libs.private: -lhdf5_hl -lhdf5 -lcrypto -lcurl -lpthread -lsz -lz -ldl -lm -lxml2 -L/usr/lib/aarch64-linux-gnu/hdf5/serial
+Cflags: -I${includedir} -I/usr/include/hdf5/serial

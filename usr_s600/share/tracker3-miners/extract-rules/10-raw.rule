@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-raw.so
+MimeTypes=image/x-dcraw;image/x-adobe-dng;image/x-canon-cr2;image/x-canon-crw;image/x-epson-erf;image/x-fuji-raf;image/x-minolta-mrw;image/x-nikon-nef;image/x-olympus-orf;image/x-panasonic-rw;image/x-pentax-pef;image/x-raw;image/x-samsung-raw;image/x-sigma-x3f;image/x-sony-arw;image/x-sony-srf;image/x-sony-sr2;
+FallbackRdfTypes=nfo:Image;nmm:Photo;
+Graph=tracker:Pictures
+Hash=4aa0ec40f819663700359c9fa00b4faa6d5a14ad0d8e3eee6146695cdda69a3e
+

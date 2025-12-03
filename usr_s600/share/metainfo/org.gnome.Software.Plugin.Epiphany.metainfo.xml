@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2013-2016 Richard Hughes <richard@hughsie.com> -->
+<component type="addon">
+  <id>org.gnome.Software.Plugin.Epiphany</id>
+  <extends>org.gnome.Software.desktop</extends>
+  <name>Web Apps Support</name>
+  <name xml:lang="zh_TW">網頁應用程式支援</name>
+  <name xml:lang="zh_CN">网页应用支持</name>
+  <name xml:lang="vi">Hỗ trợ Ứng dụng Web</name>
+  <name xml:lang="uk">Підтримка вебпрограм</name>
+  <name xml:lang="tr">Web Uygulamaları Desteği</name>
+  <name xml:lang="sv">Stöd för webbapplikationer</name>
+  <name xml:lang="sr@latin">Podrška za veb aplikacije</name>
+  <name xml:lang="sr">Подршка за веб апликације</name>
+  <name xml:lang="sl">Podpora Web Apps</name>
+  <name xml:lang="ru">Поддержка веб-приложений</name>
+  <name xml:lang="ro">Suport pentru miniaplicații web</name>
+  <name xml:lang="pt_BR">Suporte a aplicativos web</name>
+  <name xml:lang="pt">Suporte de aplicações web</name>
+  <name xml:lang="pl">Obsługa programów WWW</name>
+  <name xml:lang="pa">ਵੈੱਬ ਐਪ ਸਹਿਯੋਗ</name>
+  <name xml:lang="oc">Presa en carga de las aplicacions web</name>
+  <name xml:lang="nl">Ondersteuning voor webtoepassingen</name>
+  <name xml:lang="nb">Støtte for nettapper</name>
+  <name xml:lang="ml">വെബ് അപ്ലിക്കേഷനുകളുടെ പിന്തുണ</name>
+  <name xml:lang="lv">Tīmekļa lietotņu atbalsts</name>
+  <name xml:lang="lt">Žiniatinklio programų palaikymas</name>
+  <name xml:lang="ko">웹 앱 지원</name>
+  <name xml:lang="kk">Веб қолданбалар қолдауы</name>
+  <name xml:lang="ka">ვებ აპების მხარდაჭერა</name>
+  <name xml:lang="it">Supporto applicazione web</name>
+  <name xml:lang="is">Stuðningur við vefforrit</name>
+  <name xml:lang="id">Dukungan Aplikasi Web</name>
+  <name xml:lang="hu">Webalkalmazások támogatása</name>
+  <name xml:lang="hr">Podrška web aplikacija</name>
+  <name xml:lang="hi">वेब ऐप्लिकेशन सहायता</name>
+  <name xml:lang="he">תמיקה ביישומי רשת</name>
+  <name xml:lang="gl">Compatibilidade con aplicacións web</name>
+  <name xml:lang="gd">Taic ri aplacaidean-lìn</name>
+  <name xml:lang="fur">Supuart aplicazions Web</name>
+  <name xml:lang="fr">Prise en charge d’applications web</name>
+  <name xml:lang="fi">Verkkosovellusten tuki</name>
+  <name xml:lang="fa">پشتیبانی برنامه‌های وبی</name>
+  <name xml:lang="eu">Web-aplikazioen euskarria</name>
+  <name xml:lang="es">Soporte de aplicaciones web</name>
+  <name xml:lang="eo">Retaplikaĵa subteno</name>
+  <name xml:lang="en_GB">Web Apps Support</name>
+  <name xml:lang="el">Υποστήριξη εφαρμογών Ιστού</name>
+  <name xml:lang="de">Unterstützung für Web-Anwendungen</name>
+  <name xml:lang="da">Understøttelse af webprogrammer</name>
+  <name xml:lang="cs">Podpora pro webové aplikace</name>
+  <name xml:lang="ca@valencia">Compatibilitat amb Web Apps</name>
+  <name xml:lang="ca">Compatibilitat amb aplicacions Web</name>
+  <name xml:lang="bg">Поддръжка на уеб приложения</name>
+  <name xml:lang="be">Падтрымка вэб-праграм</name>
+  <name xml:lang="af">Webtoepassing ondersteuning</name>
+  <name xml:lang="ab">Веб-апшьқәа рыдкылара </name>
+  <summary>Run popular web applications in a browser</summary>
+  <summary xml:lang="zh_TW">在瀏覽器中執行知名的網頁應用程式</summary>
+  <summary xml:lang="zh_CN">在浏览器里运行流行的网页应用程序</summary>
+  <summary xml:lang="vi">Chạy các ứng dụng web phổ biến trên một trình duyệt</summary>
+  <summary xml:lang="uk">Запуск популярних вебпрограм у програмі для перегляду інтернету</summary>
+  <summary xml:lang="tr">Gözde web uygulamalarını tarayıcıda çalıştır</summary>
+  <summary xml:lang="sv">Kör populära webbapplikationer i en webbläsare</summary>
+  <summary xml:lang="sr@latin">Izvrši popularne veb programe unutar pregledača</summary>
+  <summary xml:lang="sr">Изврши популарне веб програме унутар прегледача</summary>
+  <summary xml:lang="sl">Zaganjanje spletnih programov v oknu brskalnika</summary>
+  <summary xml:lang="ru">Запуск популярных веб-приложений в браузере</summary>
+  <summary xml:lang="ro">Rulează aplicații web populare într-un navigator</summary>
+  <summary xml:lang="pt_BR">Execute aplicativos populares da web em um navegador</summary>
+  <summary xml:lang="pt">Executar aplicações web populares num navegador</summary>
+  <summary xml:lang="pl">Uruchamianie popularnych programów WWW w przeglądarce</summary>
+  <summary xml:lang="pa">ਬਰਾਊਜ਼ਰ ਵਿੱਚ ਹਰਮਨਪਿਆਰੇ ਵੈੱਬ ਐਪਲੀਕੇਸ਼ਨ ਚਲਾਓ</summary>
+  <summary xml:lang="oc">Aviar d'aplicacions web dins un navigador</summary>
+  <summary xml:lang="nl">Voer populaire webtoepassingen uit in een browser</summary>
+  <summary xml:lang="nb">Installer populære nettapper og åpne dem i en nettleser</summary>
+  <summary xml:lang="ml">ജനപ്രിയ ബ്രൗസറിൽ വെബ് ആപ്ലിക്കേഷനുകൾ പ്രവർത്തിപ്പിക്കുക</summary>
+  <summary xml:lang="lv">Palaist populāras tīmekļa lietotnes pārlūkā</summary>
+  <summary xml:lang="lt">Vykdyti populiarias žiniatinklio programas naršyklėje</summary>
+  <summary xml:lang="ko">브라우저에서 인기있는 웹 프로그램 실행</summary>
+  <summary xml:lang="kk">Әйгілі веб қолданбаларын браузер ішінде жөнелту</summary>
+  <summary xml:lang="ka">გაუშვით პოპულარული ვებაპები ბრაუზერში</summary>
+  <summary xml:lang="it">Lancia popolari applicazioni web in un browser</summary>
+  <summary xml:lang="id">Jalankan aplikasi web populer di peramban</summary>
+  <summary xml:lang="hu">Népszerű webalkalmazások futtatása egy böngészőben</summary>
+  <summary xml:lang="hr">Pokrenite popularne web aplikacije u pregledniku</summary>
+  <summary xml:lang="hi">किसी ब्राउज़र में लोकप्रिय वेब ऐप्लिकेशन्स चलाएँ</summary>
+  <summary xml:lang="he">הרצת יישומי רשת פופולריים בדפדפן</summary>
+  <summary xml:lang="gl">Execute aplicacións web nun navegador</summary>
+  <summary xml:lang="gd">Ruith aplacaidean-lìn mòr-còrdte am broinn brabhsair</summary>
+  <summary xml:lang="fur">Eseguìs lis aplicazions web popolârs intun browser</summary>
+  <summary xml:lang="fr">Exécuter des applications web connues dans un navigateur</summary>
+  <summary xml:lang="fi">Suorita suosittuja verkkosovelluksia selaimessa</summary>
+  <summary xml:lang="fa">برنامه‌های وبی مشهور را در یک مرورگر اجرا کنید</summary>
+  <summary xml:lang="eu">Exekutatu web-aplikazio ezagunak nabigatzaile batean</summary>
+  <summary xml:lang="es">Ejecutar aplicaciones web populares en un navegador</summary>
+  <summary xml:lang="eo">Ruli popularajn retaplikaĵojn en foliumilo</summary>
+  <summary xml:lang="en_GB">Run popular web applications in a browser</summary>
+  <summary xml:lang="el">Εκτέλεση δημοφιλών εφαρμογών Ιστού στον περιηγητή</summary>
+  <summary xml:lang="de">Beliebte Web-Anwendungen in einem Browser ausführen</summary>
+  <summary xml:lang="da">Kør populære webprogrammer i en browser</summary>
+  <summary xml:lang="cs">Spouštějte populární webové aplikace v prohlížeči</summary>
+  <summary xml:lang="ca@valencia">Executeu aplicacions populars al navegador</summary>
+  <summary xml:lang="ca">Executa aplicacions web populars en un navegador</summary>
+  <summary xml:lang="bg">Изпълнение на популярни уеб приложения в браузър</summary>
+  <summary xml:lang="be">Запуск папулярных вэб-праграм праз браўзер</summary>
+  <summary xml:lang="af">Gebruik populêre webtoepassings in 'n webblaaier</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0-or-later</project_license>
+  <update_contact>mwleeds_at_protonmail.com</update_contact>
+</component>
