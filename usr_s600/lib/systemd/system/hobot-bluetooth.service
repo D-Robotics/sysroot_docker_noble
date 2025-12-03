@@ -1,0 +1,21 @@
+# Hobot firstrun service
+# Do some config when first/second boot
+# This service may block the boot process for up to 2 minutes
+
+[Unit]
+Description=Hobot init Bluetooth
+Before=getty.target system-getty.slice
+After=hobot-loadko.service
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/etc/init.d/hobot-bluetooth start
+TimeoutStartSec=1min
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

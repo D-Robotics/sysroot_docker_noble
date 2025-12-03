@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2013, 2014 David King <davidk@gnome.org -->
+<component type="desktop">
+  <id>org.gnome.Cheese.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <!-- Both taken from the desktop file. -->
+  <name>Cheese</name>
+  <name xml:lang="zu">i-Cheese</name>
+  <name xml:lang="zh_TW">Cheese</name>
+  <name xml:lang="zh_HK">Cheese</name>
+  <name xml:lang="zh_CN">茄子</name>
+  <name xml:lang="xh">U-Cheese</name>
+  <name xml:lang="vi">Cheese</name>
+  <name xml:lang="uk">Сир</name>
+  <name xml:lang="ug">Cheese</name>
+  <name xml:lang="tr">Peynir</name>
+  <name xml:lang="th">ชีส</name>
+  <name xml:lang="tg">Табассум</name>
+  <name xml:lang="te">చీజ్</name>
+  <name xml:lang="ta">சீஸ்</name>
+  <name xml:lang="sv">Cheese</name>
+  <name xml:lang="sr@latin">Ptičica</name>
+  <name xml:lang="sr">Птичица</name>
+  <name xml:lang="sq">Cheese</name>
+  <name xml:lang="sl">Cheese</name>
+  <name xml:lang="sk">Cheese</name>
+  <name xml:lang="ru">Cheese</name>
+  <name xml:lang="ro">Cheese</name>
+  <name xml:lang="pt_BR">Cheese</name>
+  <name xml:lang="pt">Cheese</name>
+  <name xml:lang="ps">چيز</name>
+  <name xml:lang="pl">Cheese</name>
+  <name xml:lang="pa">ਚੀਜ਼</name>
+  <name xml:lang="or">Cheese</name>
+  <name xml:lang="oc">Cheese</name>
+  <name xml:lang="nn">Cheese</name>
+  <name xml:lang="nl">Cheese</name>
+  <name xml:lang="ne">चिज</name>
+  <name xml:lang="nds">Cheese</name>
+  <name xml:lang="nb">Cheese</name>
+  <name xml:lang="ms">Cheese</name>
+  <name xml:lang="mr">चीज्</name>
+  <name xml:lang="ml">ചീസ്</name>
+  <name xml:lang="mk">Cheese</name>
+  <name xml:lang="mjw">Cheese</name>
+  <name xml:lang="lv">Cheese</name>
+  <name xml:lang="lt">Cheese</name>
+  <name xml:lang="lo">Cheese</name>
+  <name xml:lang="ky">Cheese</name>
+  <name xml:lang="ku">Cheese</name>
+  <name xml:lang="ko">치즈</name>
+  <name xml:lang="kn">ಚೀಸ್</name>
+  <name xml:lang="km">Cheese</name>
+  <name xml:lang="kk">Cheese</name>
+  <name xml:lang="ka">Cheese</name>
+  <name xml:lang="ja">Cheese</name>
+  <name xml:lang="it">Cheese</name>
+  <name xml:lang="is">Cheese (sís)</name>
+  <name xml:lang="ie">Cheese</name>
+  <name xml:lang="id">Cheese</name>
+  <name xml:lang="hu">Csííz</name>
+  <name xml:lang="hr">Cheese</name>
+  <name xml:lang="hi">चीज</name>
+  <name xml:lang="he">‏Cheese</name>
+  <name xml:lang="gu">Cheese</name>
+  <name xml:lang="gl">Cheese</name>
+  <name xml:lang="ga">Cheese</name>
+  <name xml:lang="fur">Cheese</name>
+  <name xml:lang="fr">Cheese</name>
+  <name xml:lang="fi">Muikku</name>
+  <name xml:lang="fa">چیز</name>
+  <name xml:lang="eu">Cheese</name>
+  <name xml:lang="et">Cheese</name>
+  <name xml:lang="es">Cheese</name>
+  <name xml:lang="eo">Rideto</name>
+  <name xml:lang="en@shaw">·𐑗𐑰𐑟</name>
+  <name xml:lang="en_GB">Cheese</name>
+  <name xml:lang="el">Cheese</name>
+  <name xml:lang="dz">ཅིསི།</name>
+  <name xml:lang="de">Cheese</name>
+  <name xml:lang="da">Cheese</name>
+  <name xml:lang="cs">Cheese</name>
+  <name xml:lang="ckb">چیس</name>
+  <name xml:lang="ca@valencia">Cheese</name>
+  <name xml:lang="ca">Cheese</name>
+  <name xml:lang="bs">Cheese</name>
+  <name xml:lang="bn_IN">Cheese</name>
+  <name xml:lang="bn">Cheese</name>
+  <name xml:lang="bg">Cheese</name>
+  <name xml:lang="be@latin">Cheese</name>
+  <name xml:lang="be">Cheese</name>
+  <name xml:lang="ast">Cheese</name>
+  <name xml:lang="as">Cheese</name>
+  <name xml:lang="ar">«ابتسم»</name>
+  <name xml:lang="an">Cheese</name>
+  <name xml:lang="af">Cheese</name>
+  <name xml:lang="ab">Cheese</name>
+  <summary>Take photos and videos with your webcam, with fun graphical effects</summary>
+  <summary xml:lang="zu">Thwebula izithombe kanye namavidiyo nge-webcam yakho, enemiphumela ejabulisayo yombukiso</summary>
+  <summary xml:lang="zh_TW">從您的網路攝影機擷取相片與影片，並加入有趣的影像特效</summary>
+  <summary xml:lang="zh_HK">從你的網絡攝影機擷取相片與影片，並加入有趣的圖片特效</summary>
+  <summary xml:lang="zh_CN">使用摄像头拍照或录像，并加上有趣的图像效果</summary>
+  <summary xml:lang="xh">Thatha imifanekiso yakho ngekhamera yekhompuyutha, enotshintsho olonwabisayo</summary>
+  <summary xml:lang="vi">Chụp ảnh và quay phim dùng webcam, thêm các hiệu ứng đồ họa thú vị</summary>
+  <summary xml:lang="uk">Створення фотографій та відео за допомогою веб-камери, із використанням цікавих ефектів</summary>
+  <summary xml:lang="ug">ۋېبكامېرا ئارقىلىق سىن ۋە سۈرەتلەرنى تارتىش بىلەن بىرگە ئۇنىڭغا قىزىقارلىق گرافىكىلىق ئۈنۈملەرنى قوشۇش پروگراممىسى</summary>
+  <summary xml:lang="tr">Web kameranızdan fotoğraflar ve videolar çekip bunlara görsel etkiler ekler.</summary>
+  <summary xml:lang="th">ถ่ายภาพและวีดิทัศน์จากเว็บแคมของคุณ พร้อมใส่ลูกเล่นสนุกๆ</summary>
+  <summary xml:lang="tg">Суратҳо ва видеоҳоро тавассути вебкамераи худ бо истифодаи таъсирҳои графикӣ сабт намоед.</summary>
+  <summary xml:lang="te">సరదా గ్రాఫికల్ ప్రభావాలను వాడి వెబ్‌క్యామ్‌తో ఫోటోలను మరియు వీడియోలను తీయండి</summary>
+  <summary xml:lang="ta">வெப்கேம் மூலம் வேடிக்கையான வரைகலை விளைவுகளுடன் போட்டோ மற்றும் வீடீயோ எடுங்கள்</summary>
+  <summary xml:lang="sv">Ta foton och videor med din webbkamera med roliga grafiska effekter</summary>
+  <summary xml:lang="sr@latin">Napravite fotke i snimke vašom veb kamericom, uz zabavne efekte</summary>
+  <summary xml:lang="sr">Направите фотке и снимке вашом веб камерицом, уз забавне ефекте</summary>
+  <summary xml:lang="sq">Bëj foto dhe regjistro video me kamerën tënde web, me efekte të këndshme grafike.</summary>
+  <summary xml:lang="sl">Zajemanje in obdelava posnetkov s spletno kamero z veliko grafičnimi učinki</summary>
+  <summary xml:lang="sk">Sníma fotografie a natáča videá vašou webovou kamerou, so zábavnými grafickými efektami</summary>
+  <summary xml:lang="ru">Создание фотографий и видео с помощью веб-камеры, c применением занятных эффектов</summary>
+  <summary xml:lang="ro">Faceți poze și filme cu camera web, folosind efect grafice nostime</summary>
+  <summary xml:lang="pt_BR">Tire fotos e vídeos com sua webcam, com efeitos gráficos divertidos</summary>
+  <summary xml:lang="pt">Tire fotografias e grave vídeos, com efeitos gráficos divertidos, na sua câmera Web</summary>
+  <summary xml:lang="ps">په خپل ګورتکېم باندې انځورونه او وېډيوګانې جوړې کړﺉ، د کښنيزو اغېزو سره</summary>
+  <summary xml:lang="pl">Robienie zdjęć i nagrywanie filmów z zabawnymi efektami za pomocą kamery internetowej</summary>
+  <summary xml:lang="pa">ਆਪਣੇ ਵੈੱਬ-ਕੈਮ ਨਾਲ ਫੋਟੋ ਲਵੋ ਅਤੇ ਵਿਡੀਓ ਬਣਾਓ ਅਤੇ ਗਰਾਫਿਕਸ ਪਰਭਾਵ ਨਾਲ ਮੌਜਾਂ ਲੁੱਟੋ</summary>
+  <summary xml:lang="or">ଆପଣଙ୍କ ୱେବକ୍ୟାମ ସାହାଯ୍ୟରେ ଆଲୋକଚିତ୍ର ଏବଂ ଚଳଚିତ୍ର ନିଅନ୍ତୁ, ମଜାଳିଆ ଗ୍ରାଫିକାଲ ପ୍ରଭାବ ସହିତ</summary>
+  <summary xml:lang="oc">Prenètz de fotografias e de vidèos amb vòstra webcam amb d'efièits grafics risolièrs</summary>
+  <summary xml:lang="nn">Ta bilete og ta opp filmar med morosame effektar med nettkameraet ditt</summary>
+  <summary xml:lang="nl">Maak foto’s en video’s met een webcam, met leuke visuele effecten</summary>
+  <summary xml:lang="ne">तपाईँको वेबक्यामले रमाइला ग्राफिक प्रभाव सहितका फोटो र भिडियो लिनुहोस्</summary>
+  <summary xml:lang="nb">Ta bilder og ta opp video fra ditt webkamera med morsomme effekter</summary>
+  <summary xml:lang="ms">Tangkap foto dan video menggunakan kamera sesawang anda, dengan kesan grafik yang menyeronokkan</summary>
+  <summary xml:lang="mr">चित्रलेखीय प्रभावांसह, वेबकॅमेऱ्यातून छायाचित्र व चलचित्र घ्या</summary>
+  <summary xml:lang="ml">നിങ്ങളുടെ വെബ്കാം ഉപയോഗിച്ചു് നല്ല രസമുള്ള ഗ്രാഫിക്കല്‍ പ്രഭാവങ്ങളോടുകൂടിയ ചിത്രങ്ങളും ചലച്ചിത്രങ്ങളും എടുക്കുക</summary>
+  <summary xml:lang="mk">Сликајте фотографии и снимајте видеа од Вашата веб камера, со забавни графички ефекти</summary>
+  <summary xml:lang="lv">Uzņemiet fotogrāfijas un video ar savu tīmekļa kameru ar jautriem efektiem</summary>
+  <summary xml:lang="lt">Fotografuokite ir filmuokite internetine kamera, naudokite smagius efektus</summary>
+  <summary xml:lang="lo">ຖ່າຍຮູບ ແລະ ວິດີໂອດ້ວຍເວັບແຄມຂອງທ່ານ ພ້ອມກັບໃສ່ລູກຫລີ້ນທີ່ຫນ້າຮັກ</summary>
+  <summary xml:lang="ky">Шайыр графикалык эффекттерди колдонуп, веб-камера менен фотографияларды жана видеолорду жасоо</summary>
+  <summary xml:lang="ku">Bi webcama xwe wêne û vîdyoyan bikişînin, bi efektên seyr.</summary>
+  <summary xml:lang="ko">웹카메라에서 사진과 비디오를 찍고, 재미있는 그래픽 효과를 사용할 수도 있습니다</summary>
+  <summary xml:lang="kn">ನಿಮ್ಮ ವೆಬ್‌ಕ್ಯಾಮ್‌ ಅನ್ನು ಬಳಸಿಕೊಂಡು ತಮಾಷೆಯ ಗ್ರಾಫಿಕಲ್ ಪರಿಣಾಮಗಳೊಂದಿಗೆ ಚಿತ್ರಗಳನ್ನು ಹಾಗು ವಿಡಿಯೋಗಳನ್ನು ತೆಗೆಯಿರಿ</summary>
+  <summary xml:lang="km">ថតរូប និង​វីដេអូ​ជាមួយ​វិបខេម​របស់​អ្នក ដោយ​មាន​បែបផែន​ក្រាហ្វិក</summary>
+  <summary xml:lang="kk">Вебкамераңыздан фото мен видеоларды түсіру, графикалық эффектерді қолданып</summary>
+  <summary xml:lang="ka">გადაიღეთ სურათები და ვიდეოები თქვენი ვებკამერით და დაადეთ სასაცილო გრაფიკული ეფექტები</summary>
+  <summary xml:lang="ja">ウェブカムでエフェクトをつけた楽しい写真やビデオを撮ります</summary>
+  <summary xml:lang="it">Scatta fotografie e registra video con la webcam applicando divertenti effetti grafici</summary>
+  <summary xml:lang="is">Taka myndir og myndskeið með vefmyndavélinni, með skemmtilegum myndrænum brellum</summary>
+  <summary xml:lang="id">Ambil foto dan video dengan webkam Anda, dengan efek grafis yang menarik</summary>
+  <summary xml:lang="hu">Képek készítése és videók felvétele webkamerával, vicces grafikai effektusokkal</summary>
+  <summary xml:lang="hr">Napravite fotografije i snimke pomoću vaše web kamere, uz šarolike grafičke efekte</summary>
+  <summary xml:lang="hi">अपने वेबकैम से तस्वीर व वीडियो लें, मजेदार आलेखी प्रभाव के साथ</summary>
+  <summary xml:lang="he">צילום תמונות וסרטים בעזרת מצלמת האינטרנט שלך והוספת אפקטים גרפיים משעשעים</summary>
+  <summary xml:lang="gu">- તમારા વેબકેમમાંથી ફોટાઓ અને વીડિયો લો, ગ્રાફિકલ અસરો સાથે આનંદ મેળવો</summary>
+  <summary xml:lang="gl">Saque fotografías e vídeos coa súa cámara web, con efectos gráficos divertidos</summary>
+  <summary xml:lang="ga">Tóg grianghraif agus físeáin le do cheamara gréasáin, le maisíochtaí grafacha greannmhara</summary>
+  <summary xml:lang="fur">Fâs fotos e videos cun la tô webcam, cun efiets grafics legris</summary>
+  <summary xml:lang="fr">Prise de photos et enregistrement de vidéos grâce à votre webcam avec effets graphiques rigolos</summary>
+  <summary xml:lang="fi">Ota valokuvia ja videoita web-kamerallasi hauskojen tehosteiden kera</summary>
+  <summary xml:lang="fa">گرفتن عکس و ویدیو با وب‌کمتان به همراه جلوه‌های جذاب گرافیکی</summary>
+  <summary xml:lang="eu">Atera argazkiak eta bideoak web-kameratik, efektu grafiko dibertigarriekin</summary>
+  <summary xml:lang="et">Veebikaamerast fotode ja videote salvestamine, ka koos graafiliste efektidega</summary>
+  <summary xml:lang="es">Tome fotografías y vídeos con su cámara web, con divertidos efectos gráficos</summary>
+  <summary xml:lang="eo">Fari fotojn kaj videojn per via retfilmilo, kun gajaj grafikaj efektoj</summary>
+  <summary xml:lang="en@shaw">𐑑𐑱𐑒 𐑓𐑴𐑑𐑴𐑟 𐑯 𐑝𐑦𐑛𐑰𐑴𐑟 𐑢𐑦𐑞 𐑿𐑼 𐑢𐑧𐑚𐑒𐑨𐑥, 𐑢𐑦𐑞 𐑓𐑳𐑯 𐑜𐑮𐑨𐑓𐑦𐑒𐑩𐑤 𐑦𐑓𐑧𐑒𐑑𐑕</summary>
+  <summary xml:lang="en_GB">Take photos and videos with your webcam, with fun graphical effects</summary>
+  <summary xml:lang="el">Τραβήξτε φωτογραφίες και βίντεο από την δικτυακή σας κάμερα, με διασκεδαστικά γραφικά εφέ</summary>
+  <summary xml:lang="de">Ein Programm, um Bilder und Videos mit einer Webcam aufzunehmen und lustige graphische Effekte hinzuzufügen</summary>
+  <summary xml:lang="da">Tag billeder og optag video fra dit webkamera, med sjove grafiske effekter</summary>
+  <summary xml:lang="cs">Pořizujte pomocí webové kamery obrázky a videoklipy se zábavnými grafickými efekty</summary>
+  <summary xml:lang="ckb">وێنە بگرە بە وێبکامەکەت، کە کاریگەری وێنەی خۆشی لەگەڵدا بێت</summary>
+  <summary xml:lang="ca@valencia">Feu fotos i vídeos amb la càmera web, amb efectes gràfics divertits</summary>
+  <summary xml:lang="ca">Feu fotos i vídeos amb la càmera web, amb efectes gràfics divertits</summary>
+  <summary xml:lang="bs">Snimite fotografije i video snimke sa vasom web kamerom, uz zabavnim grafičkim efektima</summary>
+  <summary xml:lang="bn_IN">ওয়েবক্যামের সাহায্যে মজাদার গ্র্যাফিক্স সহ ফটো তুলুন ও ভিডিও তৈরি করুন</summary>
+  <summary xml:lang="bn">ওয়েবক্যামের সাহায্যে মজাদার গ্রাফিক্সের আবহসহ ফটো তুলুন ও ভিডিও তৈরি করুন</summary>
+  <summary xml:lang="bg">Заснeмане на снимки и видео с вашата уеб камера и прилагане на ефекти</summary>
+  <summary xml:lang="be@latin">Rabi zdymki j videa sa svajoj web-kamery, ź cikavymi hrafičnymi efektami</summary>
+  <summary xml:lang="be">Фота- і відэаздымка праз вэб-камеру з цікавымі графічнымі эфектамі</summary>
+  <summary xml:lang="ast">Tome semeyes y vídeos cola so cámara web, con divertíos efeutos gráficos</summary>
+  <summary xml:lang="as">ৱেবকেমৰ সহায়ত আমোদময় গ্ৰাফিক্সসহ ফ'টো লওক আৰু ভিডিঅ' তৈয়াৰ কৰক</summary>
+  <summary xml:lang="ar">التقط صور وفيديوهات من كمرة الوب، مع مؤثرات رسومية ممتعة</summary>
+  <summary xml:lang="an">Fe fotos y videos con a suya camara web, con divertius efectos graficos</summary>
+  <summary xml:lang="af">Neem foto's en video's met die webkamera, met oulike grafiese effekte</summary>
+  <description>
+    <p>
+      Cheese uses your webcam to take photos and videos, applies fancy
+      special effects and lets you share the fun with others.
+    </p>
+    <p xml:lang="zh_TW">Cheese 使用您的網路攝影機來拍攝相片與影片，套用神奇的特殊效果並讓您與其他人分享歡樂。</p>
+    <p xml:lang="zh_HK">Cheese 使用你的網絡攝影機來拍攝相片與影片，套用神奇的特殊效果並讓你與其他人分享歡樂。</p>
+    <p xml:lang="zh_CN">Cheese 使用您的网络摄像头来拍照和录像，并可以应用有趣的特效，并可以和他人分享。</p>
+    <p xml:lang="vi">Cheese dùng webcam của bạn để chụp hình và quay phim, áp dụng ứng hiệu ứng đặc biệt lạ mắt để giúp bạn chia sẻ niềm vui với những người khác.</p>
+    <p xml:lang="uk">Cheese використовує камеру, щоб знімати фотографії та відеозаписи, застосовувати модні спецефекти і ділитись веселощами з іншими.</p>
+    <p xml:lang="tr">Peynir; web kameranızı kullanarak fotoğraf ve video çeker, hoş etkiler uygular ve eğlenceyi başkalarıyla paylaşmanıza olanak tanır.</p>
+    <p xml:lang="th">ชีสใช้เว็บแคมของคุณในการถ่ายภาพและวีดิทัศน์ เติมลูกเล่นพิเศษแพรวพราว และให้คุณแบ่งปันความสนุกกับคนอื่นๆ</p>
+    <p xml:lang="tg">Барномаи "Табассум" барои гирифтани суратҳо ва сабт кардани видеоҳо вебкамераи шуморо истифода мебарад, таъсирҳои махсусро татбиқ мекунад ва имкон медиҳад, ки шумо тавонед сурату видеоро бо дӯстон мубодила кунед.</p>
+    <p xml:lang="te">ఫొటోలను మరియు వీడియోలను తీయుటకు చీజ్ మీ వెబ్‌కామ్‌ను ఉపయోగించును, మరియు ఫాన్సీ స్పెషన్ ఎఫెక్ట్స్‌ను వాటిపై వర్తింపచేసి ఇతరులతో పంచుకోనిస్తుంది.</p>
+    <p xml:lang="ta">நிழற்படங்கள் மற்றும் வீடியோக்களை எடுக்க சீஸ் உங்கள் வெப்கேமைப் பயன்படுத்துகிறது, ஆடம்பரமான சிறப்பு விளைவுகளைப் பயன்படுத்துகிறது மற்றும் மற்றவர்களுடன் வேடிக்கைகளைப் பகிர்ந்து கொள்ள உங்களை அனுமதிக்கிறது.</p>
+    <p xml:lang="sv">Cheese använder din webbkamera för att ta foton och videoklipp, lägger till tjusiga specialeffekter och låter dig dela med dig av det roliga med andra.</p>
+    <p xml:lang="sr@latin">Ptičica koristi vašu veb kamericu za snimanje fotografija i video zapisa, primenjuje kičaste naročite efekte i dopušta vam da se zabavite sa ostalima.</p>
+    <p xml:lang="sr">Птичица користи вашу веб камерицу за снимање фотографија и видео записа, примењује кичасте нарочите ефекте и допушта вам да се забавите са осталима.</p>
+    <p xml:lang="sl">Program Cheese uporablja spletno kamero za zajem posnetkov, omogoča uporabo različnih učinkov in izmenjavo izdelkov s prijatelji.</p>
+    <p xml:lang="sk">Program Cheese využíva vašu webovú kameru na zachytenie fotografií a videí, aplikuje zábavné špeciálne efekty a umožňuje vám zdieľať zábavu s ostatnými.</p>
+    <p xml:lang="ru">Cheese использует веб-камеру для съёмки фото и видео, применяет забавные эффекты и позволяет публиковать снимки.</p>
+    <p xml:lang="ro">Cheese utilizează camera web pentru a face poze și videouri, aplică efecte speciale extravagante și vă permite să împărtășiți distracția cu alții.</p>
+    <p xml:lang="pt_BR">O Cheese utiliza sua webcam para tirar fotos e vídeos, aplicar efeitos especiais sofisticados e permite que você compartilhe a diversão com os outros.</p>
+    <p xml:lang="pt">O Cheese utiliza a sua webcam para tirar fotos e vídeos, aplicar efeitos especiais sofisticados e permite-lhe divertir-se com outras pessoas.</p>
+    <p xml:lang="pl">Program Cheese umożliwia robienie zdjęć i nagrywanie filmów za pomocą kamery internetowej, dodając przy tym niezwykłe efekty specjalne.</p>
+    <p xml:lang="pa">ਚੀਜ਼ ਤੁਹਾਡੇ ਵੈੱਬ-ਕੈਮ ਨੂੰ ਤਸਵੀਰ ਅਤੇ ਵਿਡੀਓ ਬਣਾਉਣ ਲਈ ਵਰਤਦਾ ਹੈ, ਖਾਸ ਪ੍ਰਭਾਵ ਦਿੰਦਾ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਹੋਰਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰਨ ਲਈ ਸਹਾਇਕ ਹੈ।</p>
+    <p xml:lang="or">ଫୋଟୋ ଏବଂ ଭିଡ଼ିଓ ନେବା ପାଇଁ Cheese ଆପଣଙ୍କର ୱେବକ୍ୟାମ ବ୍ୟବହାର କରିଥାଏ, ଚମତ୍କାରୀ ବିଶେଷ ପ୍ରଭାବଗୁଡ଼ିକୁ ପ୍ରୟୋଗ କରିଥାଏ ଏବଂ ଆପଣଙ୍କୁ ଅନ୍ୟମାନଙ୍କ ସହ ତାହା ସହଭାଗ କରିବା ପାଇଁ ଅନୁମତି ଦେଇଥାଏ।</p>
+    <p xml:lang="oc">Cheese utiliza la webcam per prene de fòtos e de vidèos, aplica d'efièits especials e vos daissa partejar de moments de léser amb los autres.</p>
+    <p xml:lang="nl">Cheese gebruikt uw webcam om foto’s en video’s te maken, past hippe, speciale effecten toe en laat u dat delen met anderen.</p>
+    <p xml:lang="ne">Cheeseले फोटो र भिडियो लिनका लागि तपाईँको वेबक्याम प्रयोग गर्छ, त्यसमा फ्यान्सी प्रभावहरु लागु गरेर तपाईँको खुसी अरुसँग बाँड्न दिन्छ।.</p>
+    <p xml:lang="nb">Cheese bruker ditt nettkamera til å ta bilder og videoer, og bruker flotte spesialeffekter og lar deg dele moroa med andre.</p>
+    <p xml:lang="ms">Cheese menggunakan kamera sesawang anda untuk mengambil foto dan video, terapkan kesan khas yang beragam dan berkongsi keseronokan dengan orang lain.</p>
+    <p xml:lang="mr">छायाचित्र आणि व्हिडीओजकरिता चीज तुमच्या वेबकॅमचा वापर करून, देखणीय विशेष प्रभाव लागू करते आणि इतरांशी आनंद लुटण्याकरिता सहमती देते.</p>
+    <p xml:lang="ml">നിങ്ങളുടെ വെബ്കാം ഉപയോഗിച്ച് ചിത്രങ്ങളും ചലചിത്രങ്ങളും എടുത്ത്, കിടിലം പ്രഭാവങ്ങളൊക്കെ ചേര്‍ത്ത്, വേണമെങ്കില്‍ മറ്റുള്ളവരുമായി പങ്കുവയ്കാന്‍ സഹായിക്കുന്ന പ്രയോഗമാണ് ചീസ്.</p>
+    <p xml:lang="lv">Cheese izmanto jūsu tīmekļa kameru, lai uzņemtu fotogrāfijas un video un izmanto foršus īpašos efektus.</p>
+    <p xml:lang="lt">Cheese naudoja jūsų internetinę kamerą nuotraukoms ir vaizdo įrašams atlikti, pritaiko įdomius specialiuosius efektus bei leidžia dalintis su kitais.</p>
+    <p xml:lang="lo">Cheese ນຳໃຊ້ເວັບແຄມຂອງທ່ານໃນການຖ່າຍຮູບ ແລະ ວິດີໂອ ພ້ອມກັບມີລູກຫລີ້ນທີ່ຫລາກລາຍ ແລະ ເຮັດໃຫ້ທ່ານສາມາດແບ່ງປັນຄວາມສະຫນຸກສະຫນານກັບຄົນອື່ນໆ.</p>
+    <p xml:lang="ko">치즈에서는 컴퓨터의 웹캠을 이용해 사진과 동영상을 찍고, 예쁜 특수 효과를 적용하고, 다른 사람과 공유합니다.</p>
+    <p xml:lang="kn">ಚೀಸ್ ನಿಮ್ಮ ವೆಬ್‌ಕ್ಯಾಮ್ ಅನ್ನು ಬಳಸಿಕೊಂಡು ಚಿತ್ರಗಳನ್ನು ಮತ್ತು ವೀಡಿಯೊಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ, ವಿಶೇಷ ಪರಿಣಾಮಗಳನ್ನು ಅಳವಡಿಸುತ್ತದೆ ಮತ್ತು ಈ ಮೋಜನ್ನು  ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ನೆರವಾಗುತ್ತದೆ.</p>
+    <p xml:lang="kk">Cheese сіздің вебкамераңызды фото және видеоны түсіру үшін, арнайы эффекттерді асыру және басқалармен бөлісуді мүмкін етеді.</p>
+    <p xml:lang="ka">Cheese იყენებს ვებკამერას სურათების და ვიდეოების გადასაღებად, დაადებს ეფექტებს და საშუალებას გაძლევთ, სხვებთან მისი გაზიარებით გაერთოთ.</p>
+    <p xml:lang="ja">Cheese は、ウェブカムを使って写真やビデオを撮ることができます。写真やビデオに豪華なエフェクトを適用したり、友達と共有して楽しむことができます。</p>
+    <p xml:lang="it">Cheese usa la webcam per catturare foto e video, applicare fantastici effetti speciali e permette di condividere il divertimento con gli altri.</p>
+    <p xml:lang="is">Cheese notar vefmyndavélina til að taka ljósmyndir og myndskeið, beitir flottum sjónbrellum og gerir þér kleift að deila skemmtilegheitunum með öðrum.</p>
+    <p xml:lang="id">Cheese memakai webcam Anda untuk mengambil foto dan video, menerapkan efek khusus yang fancy dan memungkinkan Anda berbagi keceriaan dengan yang lain.</p>
+    <p xml:lang="hu">A Csííz a webkamera használatával fényképeket és videókat készít, vicces speciális effektusokat alkalmaz és lehetővé teszi a képek megosztását másokkal.</p>
+    <p xml:lang="hr">Cheese koristi vašu web kameru za fotografiranje i snimanje, primjenjuje šarolike specijalne efekte i omogućuje vam dijelenje smiješnih snimaka s drugim osobama.</p>
+    <p xml:lang="hi"> Cheese uses your webcam to take photos and videos, applies fancy special effects and lets you share the fun with others.</p>
+    <p xml:lang="he">‏Cheese משתמש במצלמת הרשת שלך כדי לצלם תמונות וסרטים, להחיל אפקטים מהודרים מיוחדים ולאפשר לך לחלוק את הכיף עם אחרים.</p>
+    <p xml:lang="gu">ફોટા અને વિડિયોને લેવા માટે Cheese તમારાં વેબકૅમને વાપરે છે, ખાસ અસરોને લાગુ કરે છે અને તમને બીજાઓ સાથે આનંદ કરવા દો.</p>
+    <p xml:lang="gl">Cheese usa a súa cámara web para sacar fotos e vídeos, aplica efectos especiais divertidos e permítelle compartir as súas fotos con outros.</p>
+    <p xml:lang="fur">Cheese al dopre la tô webcam par fâ fotos e videos, aplicâ efiets di fantasie e al permet di condividi il divertiment cun chei altris.</p>
+    <p xml:lang="fr">Cheese utilise la webcam pour prendre des photos et des vidéos, applique des effets spéciaux et vous laisse partager des moments de détente avec les autres.</p>
+    <p xml:lang="fi">Muikku käyttää web-kameraa kuvien ja videoiden tallennukseen, lisää halutessasi hienoja erikoistehosteita ja mahdollistaa tulosten jakamisen muille ihmisille.</p>
+    <p xml:lang="fa">چیز از وب‌کمتان برای گرفتن عکس و ویدیو استفاده می‌کند، جلوه‌های زیبا اعمال کرده و می‌گذارد این خوشی را با دیگران هم‌رسانی کنید.</p>
+    <p xml:lang="eu">Cheese-k web-kamera darabil argazkiak eta bideoak hartzeko, efektu berezi eta dotoreak aplikatzen ditu eta jostaketa beste batzuekin partekatzea uzten dizu.</p>
+    <p xml:lang="et">Cheese kasutab sinu veebikaamerat, et teha pilte ja videoid, rakendada uhkeid eriefekte ja jagada lõbu teistega.</p>
+    <p xml:lang="es">Cheese usa su cámara web para hacer fotos y vídeos, aplica efectos especiales divertidos y le permite compartir su diversión con los demás.</p>
+    <p xml:lang="eo">Rideto uzas vian retfilmilon por fari fotojn kaj videojn, aldonas kapricajn efektojn kaj ebligas vin kunhavigi la amuzon kun aliaj.</p>
+    <p xml:lang="en_GB">Cheese uses your webcam to take photos and videos, applies fancy special effects and lets you share the fun with others.</p>
+    <p xml:lang="el">Το Cheese χρησιμοποιεί την δικτυακή κάμερα σας για να πάρει φωτογραφίες και βίντεο, εφαρμόζει φανταχτερά εφέ και σας επιτρέπει να μοιραστείτε τη χαρά με άλλους.</p>
+    <p xml:lang="de">Cheese nutzt Ihre Webcam, um Fotos und Videos aufzunehmen, originelle Effekte anzuwenden und den Spaß mit anderen zu teilen.</p>
+    <p xml:lang="da">Cheese bruger dit webkamera til at tage billeder og videoer med, til at tilføje lækre effekter med og giver dig mulighed for nemt at dele det hele med andre.</p>
+    <p xml:lang="cs">Cheese používá vaši webovou kameru k pořizování fotek a videí, na které pak aplikuje speciální efekty a umožní vám je sdílet s ostatními.</p>
+    <p xml:lang="ca@valencia">El Cheese utilitza la vostra càmera web per fer fotos i vídeos, aplicar efectes especials divertits i vos permet compartir la diversió amb altres.</p>
+    <p xml:lang="ca">El Cheese utilitza la vostra càmera web per a fer fotos i vídeos, aplicar efectes especials divertits i us permet compartir la diversió amb altres.</p>
+    <p xml:lang="bs">Cheese koristi vašu web kameru da dobavi fotografije i video, obavi efektne specijalne efekte i omoguća vam da dijelite zabavu s drugim</p>
+    <p xml:lang="bn_IN">Cheese ছবি এবং ভিডিও তুলতে অাপনার ওয়েবক্যাম ব্যবহার করে, চোখে পড়ার মতো বিশেষ রূপ যোগ করে এবং তা অাপনাকে অন্যদের সংগে ভাগ করতে দেয়।</p>
+    <p xml:lang="bg">Cheese използва камерата ви за заснемане на снимки и видео. Може да приложите специални ефекти към тях и да ги споделите с ваши приятели.</p>
+    <p xml:lang="be">Праграма Cheese прызначана для фота- і відэаздымкі, умее ўжываць цікавыя эфекты і паказваць вынік вашым сябрам.</p>
+    <p xml:lang="as">Cheese এ আপোনাৰ ৱেবকেম ব্যৱহাৰ কৰি ফ'টো আৰু ভিডিঅ' লয়, মনোহাৰী বিশেষ প্ৰভাৱসমূহ প্ৰয়োগ কৰে আৰু অন্যৰ সৈতে আনন্দ অংশীদাৰী কৰাৰ সুযোগ দিয়ে।</p>
+    <p xml:lang="an">Cheese usa a suya camara web ta fer fotos y videos, aplica efectos especials divertius y le permite compartir a suya diversión con os de demás.</p>
+    <p xml:lang="af">Cheese gebruik jou webkamera om fotos en videos te neem, pas grafiese effekte toe en laat jou toe om die genot met ander te deel.</p>
+    <p>
+      Take multiple photos in quick succession with burst mode.
+      Use the countdown to give yourself time to strike a pose, and wait for the
+      flash!
+    </p>
+    <p xml:lang="zh_TW">以連拍模式在短時間拍攝多張相片。使用倒數計時讓您自己有時間擺好姿勢，然後等待快門！</p>
+    <p xml:lang="zh_HK">以連拍模式在短時間拍攝多張相片。使用倒數計時讓你自己有時間擺好姿勢，然後等待快門！</p>
+    <p xml:lang="zh_CN">使用连拍模式在快速连续拍摄多张照片。您可以利用倒计时来摆姿势，并等待闪光灯！</p>
+    <p xml:lang="vi">Chụp nhiều ảnh với chế độ chụp liên tiếp. Dùng bộ đếm ngược để bản thân bạn có thời gian tạo dáng, và chờ đèn nháy!</p>
+    <p xml:lang="uk">Зробити кілька світлин у швидкий безперервний ряд без серійного знімання. Використовувати зворотний відлік, щоб мати час на підготовлення до знімку й очікування спалаху. </p>
+    <p xml:lang="tr">Şipşak kipinde hızlıca birçok fotoğraf çekin. Poz verebilmek için sayacı kullanarak kendinize zaman tanıyın ve flaşı bekleyin!</p>
+    <p xml:lang="th">ถ่ายภาพหลายภาพต่อๆ กันอย่างรวดเร็วด้วยโหมดถ่ายต่อเนื่อง  ใช้การนับถอยหลังเพื่อให้เวลาตัวคุณเองที่จะวางท่าและรอแฟลช!</p>
+    <p xml:lang="tg">Якчанд суратро дар ҷаласаи фаврӣ бо ҳолати таркониш гиред. Барои гирифтани сурат дар ҳолати махсус байни суратҳо имкони сониясанҷро истифода баред ва барои чароғ интизор шавед! </p>
+    <p xml:lang="te">బర్స్ట్ రీతినందు పలు ఫోటోలను త్వరితంగా వరుసగా తీయవచ్చు. మీ కావలసిన ఫోజులో, ఫ్లాష్ కోసం ఆగి ఫోటో తీసుకొనుటకు కౌంట్‌డౌన్ ఉపయోగించండి.</p>
+    <p xml:lang="ta">தொடர் படமெடுப்பு முறையில் விரைவாக அடுத்தடுத்து பல நிழற்படங்களை எடுக்கவும். ஒரு நிற்கும் விதத்தை தக்கவைத்துக்கொள்ள உங்களுக்கு நேரம் கொடுக்க இறங்குமுகக் கணிப்பை பயன்படுத்தவும், பின்பு ஃபிளாஷ்காக காத்திருங்கள்!</p>
+    <p xml:lang="sv">Ta flera foton i snabb följd med sekvensläge. Använd nedräkningen för att få tid att posera, och invänta blixten!</p>
+    <p xml:lang="sr@latin">Snimite nekoliko fotografija u rafalnom režimu. Koristite odbrojavanje da date sebi vremena da se namestite, i da sačekate na blic!</p>
+    <p xml:lang="sr">Снимите неколико фотографија у рафалном режиму. Користите одбројавање да дате себи времена да се наместите, и да сачекате на блиц!</p>
+    <p xml:lang="sl">Za zajem več fotografij lahko uporabite način zaporednega zajemanja. Z možnostjo je mogoče uporabiti tudi odštevalnik, da se imate čas namestiti!</p>
+    <p xml:lang="sk">Zachyťte viacero fotografií rýchlo za sebou v režime sekvenčného snímania. Použite časovač na odpočítavanie času, počas ktorého zapózujete a budete čakať na blesk!</p>
+    <p xml:lang="ru">Сделайте несколько снимков в режиме серийной съёмки. Используйте счётчик, чтобы подготовиться к съёмке и ожидайте вспышки!</p>
+    <p xml:lang="ro">Realizați mai multe poze în succesiune rapidă cu modul „rafală”. Folosiți temporizarea pentru a avea timp să luați poziția de fotografiere, apoi așteptați blițul!</p>
+    <p xml:lang="pt_BR">Tire várias fotos sucessivas rapidamente usando o modo contínuo. Use a contagem regressiva para dar a si mesmo tempo para uma pose e aguarde o flash!</p>
+    <p xml:lang="pt">Tire múltiplas fotografias em rápida sucessão com o modo Sequência. Use a contagem decrescente para lhe dar tempo para fazer pose e aguarde pelo flash!</p>
+    <p xml:lang="pl">Zrobienie kilku zdjęć jedno po drugim jest możliwe dzięki trybowi zdjęć seryjnych. Opcja odliczania natomiast daje nam czas na przybranie odpowiedniej pozy, po czym wystarczy tylko czekać na błysk flesza!</p>
+    <p xml:lang="pa">ਬਰੱਸਟ ਮੋਡ ਨਾਲ ਲਗਾਤਾਰ ਕਈ ਫੋਟੋ ਖਿੱਚੋ। ਆਪਣੇ-ਆਪ ਨੂੰ ਪੋਜ ਵਿੱਚ ਲਿਆਉਣ ਲਈ ਉਲਟੀ-ਗਿਣਤੀ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਫਲੈਸ਼ ਵੱਜਣ ਦੀ ਉਡੀਕ ਕਰੋ!</p>
+    <p xml:lang="or">ବିଚ୍ଛୁରଣ ଧାରାରେ ସ୍ୱଳ୍ପ ସମୟ ମଧ୍ଯରେ ଏକାଧିକ ଫୋଟୋ ନିଅନ୍ତୁ। ସମୟ ମାପକକୁ କୌଣସି ଏକ ଶୈଳୀରେ ଠିଆହେବା ପାଇଁ ବ୍ୟବହାର କରନ୍ତୁ, ଏବଂ ଫ୍ଲାସକୁ ଅପେକ୍ଷା କରନ୍ତୁ!</p>
+    <p xml:lang="oc">Prenètz rapidament mantuna fòto d'afilada amb lo mòde rafala. Utilizatz lo descompte per vos donar lo temps de prene la pausa, e esperatz lo flash !</p>
+    <p xml:lang="nl">Neem meerdere opnames snel achter elkaar met de burst-modus. Gebruik het aftellen om de juiste houding aan te nemen voor de foto en wacht op de flits!</p>
+    <p xml:lang="ne">ब्रस्ट मोडबाट द्रुत गतिमा एक पछि अर्को गर्दै धेरैवटा फोटो लिनुहोस्। आफुलाई पोज दिनका लागि समय मिलाउन गणनाको प्रयोग गर्नुहोस्, र फ्ल्यास आउन्जेल पर्खनुहोस्!</p>
+    <p xml:lang="nb">Ta flere bilder i rask rekkefølge med seriemodus. Bruk nedtelling til å gi deg selv tid til å stille deg opp og vent på blitzen!</p>
+    <p xml:lang="ms">Tangkap foto berbilang dengan pantas dengan mod ledak. Guna kiraan mengundur supaya anda sempat membuat gaya dan bersedia!</p>
+    <p xml:lang="mr">बर्स्ट मोडसह जलद गतीने एकापेक्षा जास्त छायाचित्र घ्या. काउंटडाउनचा वापर करा आणि पोजकरिता सज्ज व्हा, आणि फ्लॅशची वाट पहा!</p>
+    <p xml:lang="ml">ബഴ്സ്റ്റ് രീതി ഉപയോഗിച്ച് കുറേ ഫോട്ടോകള്‍ അടുത്തടുത്തായി എടുക്കാം. കൗണ്ട്ഡൗൺ ഉപയോഗിച്ച് നിങ്ങള്‍ക്ക് ഒരുങ്ങാനുള്ള സമയം നൽകാം, വേണമെങ്കില്‍ ഫ്ലാഷും ആവാം!</p>
+    <p xml:lang="lv">Ātri uzņemt vairākas fotogrāfijas pēc kārtas šalts režīmā. Izmanto atpakaļskaitīšanu, lai paspētu ieņemt pozu un gaidi zibsni!</p>
+    <p xml:lang="lt">Padarykite keletą nuotraukų greitai viena po kitos pliūpsnine veiksena. Naudokite laikmatį, kad duotumėt sau laiko pozavimo padėčiai užimti ir laukite blykstės!</p>
+    <p xml:lang="lo">ຖ່າຍຫລາຍຮູບພ້ອມກັນຢ່າງວອງໄວດ້ວຍການນຳໃຊ້ໂຫມດຮູບພາບຕໍ່ເນື່ອງ. ໃຊ້ການນັບຖອຍຫລັງເພື່ອເຮັດໃຫ້ທ່ານມີເວລາກັບໄປຖ່າຍຮູບທັນ!</p>
+    <p xml:lang="ko">연사 모드에서는 사진 여러 장을 빠르게 연속해서 찍습니다. 초읽기를 이용해 사진 찍기 전에 자세를 취하고 플래시가 터지기를 기다리세요!</p>
+    <p xml:lang="kn">ಸ್ಫೋಟ್ ಕ್ರಮದಲ್ಲಿ ಕ್ಷಿಪ್ರ ಕಾಲಾವಧಿಯಲ್ಲಿ ಅನೇಕ ಚಿತ್ರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ. ಒಂದು ಪೋಸ್ ನೀಡುವ, ಮತ್ತು ಫ್ಲಾಶ್‌ಗಾಗಿ ಕಾಯುವ ಸಮಯಕ್ಕಾಗಿ ಕೌಂಟ್‌ಡೌನ್ ಅನ್ನು ಬಳಸಿ!</p>
+    <p xml:lang="kk">Бірнеше түсіру режимінде жылдам ауысатын бірнеше фотоны түсіріңіз. Дайындалу уақытын көрсету үшін кері санауды қолданыңыз, және де жарқылдауды күтіңіз!</p>
+    <p xml:lang="ka">გადაიღეთ ბევრი სურათი სწრაფ რეჟიმში. მიუთითეთ წამზომის დაყოვნება, რათა მომზადებისთვის დრო დაიტოვოთ და დაელოდეთ, ჩიტი გამოფრინდება!</p>
+    <p xml:lang="ja">連射モードで連続写真を撮ることができます。セルフタイマー機能も利用でき、しっかりポーズを決めて撮影できます。</p>
+    <p xml:lang="it">Scatta foto multiple in veloce successione con la modalità raffica. Usa il conto alla rovescia per avere il tempo di metterti in posa e aspetta il flash!</p>
+    <p xml:lang="is">Taktu margar myndir í einu með runuham. Notaðu niðurteljarann ef þú vilt taka þér stöðu og bíddu svo eftir leifturljósinu.</p>
+    <p xml:lang="id">Ambil foto berganda dalam urutan cepat dengan mode rentetan. Gunakan hitung mundur untuk memberi Anda waktu mengambil posisi, dan tunggu lampu kilat!</p>
+    <p xml:lang="hu">Készítsen több fényképet gyors egymásutánban a sorozat módban. A visszaszámlálás alatt felvehet egy pózt, majd várjon a villanásra!</p>
+    <p xml:lang="hr">Uslikajte više fotografija jednu za drugom u višestrukom načinu. Koristite odbrojavanje kako bi namjestili najbolju pozu i pričekajte bljesak!</p>
+    <p xml:lang="hi">बर्स्ट अवस्था में बारंबार कई तस्वीर लें. काउंटडाउन का उपयोग पोज को स्ट्राइक करने के लिए करें और फ्लैश के लिए प्रतीक्षा करें!</p>
+    <p xml:lang="he">ניתן לקחת תמונות רבות ברצף מהיר באמצעות מצב צילום רציף. ניתן להשתמש בספירה לאחור כדי לתת לעצמך זמן לעשות תנוחה ולהמתין להבזק!</p>
+    <p xml:lang="gu">બર્સ્ટ સ્થિતિ સાથે તરતજ સફળતામાં ઘણા ફોટો લો. ફોટા માટે ઉભા રહેવા માટે તમારી જાતેજ સમયની ગણતરી કરો, અને ફ્લેશ માટે રાહ જુઓ!</p>
+    <p xml:lang="gl">Saque varias fotos nunha sucesión rápida no modo ráfaga. Use a conta atrás para que poida poñer unha pose e agarde ao flash!</p>
+    <p xml:lang="fur">Scate plui fotos in sucession rapide cun la modalitât rafiche. Dopre la conte par ledrôs par vê il timp di metiti in pose e spietâ il flash!</p>
+    <p xml:lang="fr">Prenez rapidement plusieurs photos d’affilée avec le mode rafale. Utilisez le décompte pour vous donner le temps de prendre la pose, et attendez le flash !</p>
+    <p xml:lang="fi">Ota useita kuvia peräkkäin sarjakuvaustilaa käyttäen. Aseta lähtölaskenta, poseeraa kunnolla ja odota salamavaloa!</p>
+    <p xml:lang="fa">با حالت عکس‌برداری رگباری، پشت سر هم با سرعت زیاد عکس بگیرید. با شمارش معکوس به خودتان فرصت ژست گرفتن داده و منتظر فلاش شوید!</p>
+    <p xml:lang="eu">Hartu hainbat argazki jarraian azkar-azkar 'Sorta' moduan. Erabili atzera-kontaketa jarrera zuzentzeko, eta itxaron flasha agertu arte.</p>
+    <p xml:lang="et">Tee ühekorraga mitu pilti sarivõtte režiimiga. Kasuta viitpäästikut, et anda omale aega poosi võtmiseks ning oota välku!</p>
+    <p xml:lang="es">Haga varias fotos en una rápida sucesión con el modo ráfaga. Use la cuenta atrás para que le de tiempo a colocarse y espere al flash.</p>
+    <p xml:lang="eo">Faru plurajn fotojn en rapida serio kun seriokapta reĝimo. Uzu la ĝisnumbrado por doni vin tempo por pozi, tiam atendu por la fulmo!</p>
+    <p xml:lang="en_GB">Take multiple photos in quick succession with burst mode. Use the countdown to give yourself time to strike a pose, and wait for the flash!</p>
+    <p xml:lang="el">Πάρτε πολλαπλές φωτογραφίες σε γρήγορη διαδοχή με την λειτουργία πολλαπλής φωτογράφησης. Χρησιμοποιήστε την αντίστροφη μέτρηση για να δώσετε στον εαυτόν σας χρόνο για να πάρει μια πόζα και περιμένετε για το φλας!</p>
+    <p xml:lang="de">Mehrere Fotos in schneller Abfolge aufnehmen mit der Serienaufnahme. Verwenden Sie den Countdown, um sich in Position zu bringen und auf den Blitz zu warten!</p>
+    <p xml:lang="da">Tag flere billeder hurtigt efter hinanden med serie-tilstand. Brug nedtællingen til at give dig selv mulighed for at sætte det helt rigtige billede op og vent så på blitzen!</p>
+    <p xml:lang="cs">Pořiďte si několik fotek v rychlém sledu pomocí režimu snímání v sérii. Použijte odpočítávání, abyste měli čas zaujmout pózu a vyčkejte než vyletí ptáček.</p>
+    <p xml:lang="ca@valencia">Feu múltiples fotos en una successió ràpida amb el mode seqüència. Utilitzeu el compte arrere per donar-vos temps a posar-vos a punt i espereu el flaix!</p>
+    <p xml:lang="ca">Feu múltiples fotos en una successió ràpida amb el mode seqüència. Utilitzeu el compte enrere per a donar-vos temps a posar-vos a punt i espereu el flaix!</p>
+    <p xml:lang="bs">Uzmite više fotografija u brzom slijedu grupnim režimom. Koristite brojač da date sebi vremena da postavite pozu i čekajte blic!</p>
+    <p xml:lang="bn_IN">বার্স্ট মোডে দ্রুত একটার পর একটা একাধিক ছবি তুলুন। পোজ দিতে সময় নেওয়ার জন্য কাউন্টডাউন ব্যবহার করুন এবং তারপরে ফ্ল্যাশ হওয়ার অপেক্ষায় থাকুন!</p>
+    <p xml:lang="bg">С режима „Серия от снимки“ можете да правите последователност от множество снимки. Използвайте възможността за отброяване, за да имате време да заемете позата, която сте си наумили!</p>
+    <p xml:lang="be">Вы зможаце зрабіць серыю фотаздымкаў. Выкарыстоўвайце адваротны адлік, каб даць сабе час прыняць позу, а пасля чакайце ўспышкі!</p>
+    <p xml:lang="as">বাৰস্ট অৱস্থা ব্যৱহাৰ কৰি দ্ৰুত অৱধিত কেইবাটাও ফ'টো লওক। আপোনাক এটা ভঙ্গি ধৰাৰ সময় দিবলৈ কাউন্টডাউন ব্যৱহাৰ কৰক, আৰু ফ্লেশ্বৰ বাবে অপেক্ষা কৰক!</p>
+    <p xml:lang="an">Faiga quantas fotos en una rapida sucesión con o modo ráfaga. Use a cuenta entazaga ta que le de tiempo a colocar-se y aspere a o flash.</p>
+    <p xml:lang="af">Neem baie fotos vinnig na mekaar met sarsiemodus. Gebruik die stophorlosie om jouself tyd te gee om reg te maak vir die foto, en wag vir die flits!</p>
+    <p>
+      Under the hood, Cheese uses GStreamer to apply fancy effects to
+      photos and videos.
+      With Cheese it is easy to take photos of you, your friends, pets or
+      whatever you want and share them with others.
+    </p>
+    <p xml:lang="zh_TW">在後端，Cheese 使用 GStreamer 套用神奇的效果到相片與影片。使用 Cheese 可以簡單拍攝您與朋友、寵物或任何您想要與其他人分享的相片。</p>
+    <p xml:lang="zh_HK">在後端，Cheese 使用 GStreamer 套用神奇的效果到相片與影片。使用 Cheese 可以簡單拍攝你與朋友、寵物或任何你想要與其他人分享的相片。</p>
+    <p xml:lang="zh_CN">从原理上讲，Cheese 使用 GStreamer 给照片和视频加上特效。使用 Chesse 可以轻松的为您、朋友、宠物以及任何你想拍照的对象拍摄照片，以及将这些照片与他人分享。</p>
+    <p xml:lang="vi">Ở đằng sau, Cheese dùng GStreamer để áp dụng các hiệu ứng lạ mắt vào ảnh và phim. Với Cheese việc chụp ảnh bạn, bạn của bạn, thú cứng hay bất cứ những thứ gì khác mà bạn muốn và chia sẻ chúng với những người khác trở nên dễ dàng hơn bao giờ hết.</p>
+    <p xml:lang="uk">Під капотом, Сир використовує GStreamer для застосування спецефектів на світлини і відеозаписи. З Сиром просто робити власні фотографії, ваших друзів, домашніх улюбленців або чого тільки душа забажає та ділитись з іншими.</p>
+    <p xml:lang="tr">Peynir, fotoğraflarınıza ve videolarınıza hoş etkiler vermek için perde arkasında GStreamer'i kullanır. Peynir ile kendinizin, arkadaşlarınızın, hayvanlarınızın ve istediğiniz her şeyin fotoğrafını çekmek ve başkalarıyla paylaşmak çok kolay.</p>
+    <p xml:lang="th">การทำงานภายในของชีส จะใช้ GStreamer ในการเติมลูกเล่นแพรวพราวให้กับภาพถ่ายและวีดิทัศน์ กับชีสแล้วเป็นเรื่องง่ายในการถ่ายภาพของคุณ เพื่อนของคุณ สัตว์เลี้ยง หรือภาพใดๆ ที่คุณต้องการ และแบ่งปันให้กับคนอื่นๆ</p>
+    <p xml:lang="tg">Барномаи "Табассум" барои истифодаи таъсирҳо ҳангоми гирифтани суратҳо ва сабт кардани видеоҳо барномаи GStreamer-ро истифода мебарад. Бо барномаи "Табассум" шумо метавонед суратҳои худ, дӯстон, ҳайвонот ё объектҳои дилхоҳро ба осонӣ сабт намоед ва сурату видеои сабтшударо бо дигарон мубодила кунед.</p>
+    <p xml:lang="te">ఫోటోలకు మరియు వీడియోలకు ఫాన్సీ ప్రభావాలను వర్తింపచేయుటకు చీజ్ GStreamer ఉపయోగించును. చీజ్‌తో సులువుగా మీవి, మీ స్నేహితులవి, మీ పెంపుడు జంతువులవి మీకు కావలసినట్లు ఫోటోలు తీసుకొని ఇతరులతో పంచుకొనవచ్చు.</p>
+    <p xml:lang="ta">நிழற்படங்கள் மற்றும் வீடியோக்களுக்கு ஆடம்பரமான விளைவுகளைப் பயன்படுத்த சீஸ் ஜீஸ்ட்ரீமரைப் பயன்படுத்துகிறது. சீஸ் மூலம் நீங்கள், உங்கள் நண்பர்கள், செல்லப்பிராணிகள் அல்லது நீங்கள் விரும்பும் நிழற்படங்களை எடுத்து மற்றவர்களுடன் பகிர்ந்து கொள்வது எளிது.</p>
+    <p xml:lang="sv">Under huven använder Cheese GStreamer för att lägga till tjusiga effekter till foton och videoklipp. Med Cheese är det lätt att ta foton på dig själv, dina vänner, husdjur eller vad du vill och dela dem med andra.</p>
+    <p xml:lang="sr@latin">Ispod haube, Ptičica koristi Gstrimer da primeni lepe efekte na fotografijama i video zapisima. Sa Ptičicom ćete lako uslikati vas, vaše prijatelje, kućne ljubimce ili šta god drugo poželite i da fotografije podelite sa drugima.</p>
+    <p xml:lang="sr">Испод хаубе, Птичица користи Гстример да примени лепе ефекте на фотографијама и видео записима. Са Птичицом ћете лако усликати вас, ваше пријатеље, кућне љубимце или шта год друго пожелите и да фотографије поделите са другима.</p>
+    <p xml:lang="sl">Program uporablja sistem GStreamer za dodajanje učinkov na slike in posnetke. Zajemanje slik je enostavno, izmenjava prek različnih spletnih računov pa hitra.</p>
+    <p xml:lang="sk">Pod kapotou programu Cheese je GStreamer, pomocou ktorého sa aplikujú zábavné efekty na fotografie a videá. S programom Cheese viete jednoducho zachytiť fotografie vás, vašich priateľov, zvierat alebo čohokoľvek chcete a sprístupniť to ostatným.</p>
+    <p xml:lang="ru">Для применения различных эффектов к фото и видео Cheese использует GStreamer. С помощью Cheese вы можете сделать собственные снимки, снимки с вашими друзьями, домашними питомцами и т. д., вы также можете опубликовать сделанные фотографии.</p>
+    <p xml:lang="ro">Sub capotă, Cheese utilizează GStreamer pentru a aplica efecte extravagante pozelor și videourilor. Cu Cheese este ușor să vă faceți fotografii vouă, prietenilor, animalelor de companie sau orice altceva ce doriți să partajați cu alții.</p>
+    <p xml:lang="pt_BR">Por trás do palco, o Cheese utiliza o GStreamer para aplicar efeitos sofisticados a fotos e vídeos. Com o Cheese é fácil tirar fotos de você, de seus amigos, animais de estimação ou do que quiser compartilhar com os outros.</p>
+    <p xml:lang="pt">Por baixo da capota, o Cheese utiliza o GStreamer para aplicar efeitos sofisticados nas suas fotografias e vídeos. Com o Cheese é fácil tirar fotografias de si mesmo, dos seus amigos, animais ou o que quiser assim como partilhá-las com os outros.</p>
+    <p xml:lang="pl">Pod swoją maską, program Cheese korzysta z biblioteki GStreamer, wzbogacając zdjęcia i filmy o niezwykłe efekty. Robienie ich sobie, przyjaciołom, zwierzakom lub wszystkiemu innemu i dzielenie się nimi nigdy jeszcze nie było tak proste.</p>
+    <p xml:lang="pa">ਅੰਦਰੂਨੀ ਰੂਪ ਵਿੱਚ, ਚੀਜ਼ ਜੀਸਟਰੀਮਰ ਨੂੰ ਫੋਟੋ ਤੇ ਵਿਡੀਓ ਉੱਤੇ ਮੌਜੀ ਪ੍ਰਭਾਵ ਲਾਗੂ ਕਰਨ ਲਈ ਵਰਤਦਾ ਹੈ। ਚੀਜ਼ ਤੁਹਾਡੀਆਂ, ਤੁਹਾਡੇ ਦੋਸਤਾਂ, ਪਾਲਤੂ ਜਾਨਵਰਾਂ ਜਾਂ ਜਿਸ ਕਿਸੇ ਦੀਆਂ ਵੀ ਤੁਸੀਂ ਚਾਹੋ, ਫੋਟੋ ਲੈਣਾ ਅਤੇ ਹੋਰਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰਨਾ ਸੌਖਾ ਹੈ।</p>
+    <p xml:lang="or">ହୁଡ ତଳେ, Cheese ଫୋଟୋ ଏବଂ ଭିଡ଼ିଓରେ ଚମତ୍କାରୀ ପ୍ରଭାବଗୁଡ଼ିକୁ ପ୍ରୟୋଗ କରିବା ପାଇଁ GStreamer ବ୍ୟବହାର କରିଥାଏ। Cheese ସହିତ ଆପଣଙ୍କର ନିଜର, ସାଙ୍ଗସାଥୀ, ଗୃହପାଳିତ ପଶୁ ପକ୍ଷୀ ଏବଂ ଯାହା ଆପଣ ଚାହାନ୍ତି ତାହାର ଫୋଟୋ ନେବା ସହଜ ହୋଇଥାଏ ଏବଂ ସେଗୁଡ଼ିକୁ ଅନ୍ୟମାନଙ୍କ ସହିତ ସହଭାଗ କରନ୍ତୁ।</p>
+    <p xml:lang="oc">Jol capòt, Cheese utiliza GStreamer per aplicar d'efièits fantasistas aux fòtos e vidèos. Amb Cheese, es aisit de prene de fòtos de se, de sos amics, animals o de çò que volèm e de las partejar amb los autres.</p>
+    <p xml:lang="nl">Onder de motorkap gebruikt Cheese GStreamer om foto’s en video’s hippe effecten te geven. Met Cheese is het eenvoudig foto’s van uzelf, uw vrienden, huisdieren of wat dan ook te maken en deze te delen met anderen.</p>
+    <p xml:lang="ne">Cheese ले GStreamer को प्रयोग गरेर फ्यान्सी इफेक्टहरु फोटो र भिडियोमा लागु गर्छ । Cheese को साथले तपाइ,तपाइ को साथी , पाल्तु वा तपाइलाइ जे मन पर्छ त्यसैको तस्विर र भिडियो लिन र बाड्न सजिलो हुन्छ ।.</p>
+    <p xml:lang="nb">Under panseret bruker Cheese GStreamer til å påføre flotte effekter på bilder og videoer. Det er lett å ta bilder av deg selv, dine venner, kjæledyr eller hva som helst med Cheese, i tillegg til å dele dem med andre.</p>
+    <p xml:lang="ms">Dibawah hud, Cheese gunakan GStreamer untuk terapkan kesan beragam terhadap foto dan video. Dengan Cheese, anda mudah mengambil foto anda, rakan anda, haiwan kesayangan anda atau apa jua yang mahu di kongsikan dengan orang lain.</p>
+    <p xml:lang="mr">आंतरिकरित्या, छायाचित्र आणि व्हिडीओकरिता देखणीय प्रभाव लागू करण्यासाठी चीज GStreamer चा वापर करतात. चीजसह आपले, आपले मित्र, पाळीव प्राणी किंवा इतरांबरोबर शेअर करण्याजोगी बाबींचे छायाचित्र घेणे सोपे आहे.</p>
+    <p xml:lang="ml">പിന്നണിയില്‍, GStreamer ഉപയോഗിച്ചാണ് ചീസ് ഫോട്ടോകള്‍ക്കും ചലചിത്രങ്ങള്‍ക്കും കിടിലന്‍ പ്രഭാവങ്ങളൊക്കെ കൊടുക്കുന്നത്. ചീസ് ഉപയോഗിച്ച് നിങ്ങളുടെയോ, കൂട്ടുകാരുടേയോ, ഓമന മൃഗങ്ങളുടേയോ, അങ്ങനെ എന്തിന്റേയും ഫോട്ടോ എടുക്കുന്നതും മറ്റുള്ളവരുമായി പങ്ക് വയ്ക്കുന്നതും എളുപ്പമാണ്.</p>
+    <p xml:lang="lv">Programma izmanto GStreamer, lai fotogrāfijām un video pielietotu jaukus efektus. Ar Cheese var viegli uzņemt savas, draugu, mājdzīvnieku un citas bildes un ar tām dalīties ar citiem.</p>
+    <p xml:lang="lt">Cheese naudoja GStreamer sūdėtingų efektų pritaikymui nuotraukoms ir vaizdo įrašams. Su Cheese yra lengva padaryti savo, draugų, augintinių ar ko nors kito nuotraukas.</p>
+    <p xml:lang="lo">ການເຮັດວຽກພາຍໃນຂອງ Cheese ແມ່ນໄດ້ນຳໃຊ້ GStreamer ໃນການເພີ່ມລູກຫລີ້ນທີ່ຫລາກຫລາຍໃຫ້ກັບຮູບພາບ ແລະ ວິດີໂອ. Cheese ຈະເຮັດໃຫ້ທ່ານສາມາດຖ່າຍຮູບຂອງທ່ານໄດ້ງ່າຍຂື້ນ, ຫມູ່ຂອງທ່ານ, ສັດລ້ຽງ ຫລື ອື່ນໆທີ່ທ່ານຕ້ອງການ ແລະ ແບ່ງປັນຮູບເຫລົ່ານັ້ນກັບຄົນອື່ນໆ.</p>
+    <p xml:lang="ko">내부적으로는 치즈는 GStreamer를 사용해 사진과 동영상에 특수 효과를 적용합니다. 치즈를 이용하면 간단하게 나, 친구, 애완 동물 사진을 찍고 다른 사람과 공유할 수 있습니다.</p>
+    <p xml:lang="kn">ಹಿನ್ನೆಲೆಯಲ್ಲಿ, ಚಿತ್ರಗಳಿಗೆ ಮತ್ತು ವೀಡಿಯೊಗಳಿಗೆ ಫ್ಯಾನ್ಸಿ ಪರಿಣಾಮಗಳನ್ನು ಅನ್ವಯಿಸಲು ಚೀಸ್‌ GStreamer ಅನ್ನು ಬಳಸುತ್ತದೆ. ಚೀಸ್‌ ಅನ್ನು ಬಳಸಿಕೊಂಡು ನೀವು ನಿಮ್ಮ, ನಿಮ್ಮ ಸ್ನೇಹಿತರ, ಸಾಕುಪ್ರಾಣಿಗಳ ಅಥವ ನಿಮಗೆ ಬೇಕಾದ್ದರ ಚಿತ್ರವನ್ನು ಸುಲಭವಾಗಿ ತೆಗೆಯಬಹುದು ಮತ್ತು ಅದನ್ನು ಇತರರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಬಹುದು.</p>
+    <p xml:lang="kk">Cheese қолданбасы фото және видеоларға эффекттерді іске асыру үшін GStreamer-ді қолданады. Cheese көмегімен өзіңіз және достарыңыз не үй жануарларыңыздың фотоларын түсіріп, басқалармен бөлісу оңай болады.</p>
+    <p xml:lang="ka">ფარდის უკან კი, Cheese ეფექტების დასადებად GStreamer-ს იყენებს. Cheese -ის საშუალებით თქვენი და თქვენი მეგობრების, ცხოველებისა თუ რაც გნებავთ, სურათების გადაღება და გაზიარება უადვილესი გახდება.</p>
+    <p xml:lang="ja">Cheese が写真やビデオに豪華なエフェクトを適用するために裏では GStreamer を使用しています。Cheese を使うことで、自分や友人の写真、好きなペットを撮り、他のユーザーと共有することも簡単にできます。</p>
+    <p xml:lang="it">Sotto il cofano, Cheese usa GStreamer per applicare fantastici effetti a foto e video. Con Cheese è facile scattare foto di te, dei tuoi amici, dei tuoi animali o di qualsiasi cosa ti piaccia e condividerlo con gli altri.</p>
+    <p xml:lang="is">Undir húddinu styðst Cheese við GStreamer fyrir allskyns sjónbrellur á ljósmyndir og myndskeið. Með Cheese er einfalt að taka myndir af sjálfum þér, vinum þínum, gæludýrunum eða hverju sem er og deila þeim með öðrum.</p>
+    <p xml:lang="id">Di dapur, Cheese memakai GStreamer untuk menerapkan efek yang fancy ke foto dan video. Dengan Cheese menjadi mudah mengambil foto Anda, teman Anda, pet, atau apapun yang Anda inginkan dan berbagi mereka dengan yang lain.</p>
+    <p xml:lang="hu">A felszín alatt a Csííz a GStreamert használja az effektusok fényképekre és videókra alkalmazásához. A Csíízzel egyszerűen készíthet fényképeket önmagáról, barátairól, háziállatairól vagy amiről csak szeretne, és megoszthatja képeit másokkal.</p>
+    <p xml:lang="hr">U pozadini, Cheese koristi GStreamer za primjenjivanje šarolikih efekata za fotografije i snimke. S Cheesom možete s lakoćom uslikati sebe, svojeg prijatelja, kućnog ljubimca ili što god želite i podijeliti to s drugim osobama.</p>
+    <p xml:lang="hi">हुड के अंदर, चीज GStreamer का उपयोग फोटो और वीडियो के फैंसी प्रभाव को लागू करने के लिए करता है. चीज के द्वारा फोटो लेना आसान है, अपने दोस्त का, पेट का, जो कुछ आप अपने अन्य से साझा करना चाहते हैं</p>
+    <p xml:lang="he">מתחת למכסה המנוע, Cheese משתמש ב־GStreamer להחלת אפקטים מהודרים לתמונות ולסרטים. עם Cheese קל לצלם תמונות שלך, של החברים שלך, חיות מחמד או כל מה שאתה רוצה ולשתף עם אחרים.</p>
+    <p xml:lang="gu">હુડ હેઠળ, Cheese એ ફોટો અને વિડિયોમાં ખાસ અસરો લાગુ કરવા માટે GStreamer ને વાપરે છે. Cheese સાથે તેને તમારો ફોટો, તમારાં મિત્રોનો, પાલતુ પ્રાણીનો ફોટો લેવાનું સરળ છે, કે ગમે ત્યારે તમે ઇચ્છો ત્યારે બીજાઓ સાથે વહેંચો. </p>
+    <p xml:lang="gl">Por embaixo, Cheese usa GStreamer para aplicar efectos divertidos nas súas fotos e vídeos. Con Cheese é doado sacarse fotos, aos seus amigos, mascotas ou calquera cousa que queira e logo compartilos con outros.</p>
+    <p xml:lang="fur">Sot il tapon, Cheese al dopre GStreamer par aplicâ efiets di fantasie a fotos e videos. Cun Cheese al è facil scatâ fotos di te, dai tiei amîs, dai tiei animâi e di cualsisei robe ti plasi e condividilis con chei altris.</p>
+    <p xml:lang="fr">Sous le capot, Cheese utilise GStreamer pour appliquer des effets fantaisistes aux photos et vidéos. Avec Cheese, il est facile de prendre des photos de soi, de ses amis, animaux ou de ce qu’on veut et de les partager avec les autres.</p>
+    <p xml:lang="fi">Muikku käyttää GStreameria tehosteiden lisäämiseksi kuviin ja videoihin. Muikun avulla otat vaivatta kuvia itsestästi, kavereistasi, lemmikeistäsi tai mistä ikinä haluat.</p>
+    <p xml:lang="fa">در زیر کاپوت، چیز از GStreamer برای اعمال جلوه های گرافیکی به عکس‌ها و ویدیوها استفاده می‌کند. با چیز خیلی راحت می‌توانید از خود، دوستان یا حیوان‌خانگیتان یا هرچیز دیگری عکس گرفته و آنها را با دیگران هم‌رسانی کنید.</p>
+    <p xml:lang="eu">Cheese-k barrutik GStreamer erabiltzen du argazkiei eta bideoei efektu dotoreak aplikatzeko. Cheese-kin zure buruaren, zure lagunen, etxeko abereen edo nahi duzunaren argazkiak erraz egingo dituzu. Gainera, beste batzuekin parteka ditzakezu.</p>
+    <p xml:lang="et">Kapoti all kasutab Cheese Gstreamerit, et rakendada uhkeid efekte piltidele ja videotele. Cheese’iga on lihtne teha pilte sinust, sinu sõpradest, lemmikloomadest või millest iganes soovid ning jagada neid teistega.</p>
+    <p xml:lang="es">Internamente, Cheese usa GStreamer para aplicar efectos fantásticos a ls fotos y los vídeos. Con Cheese es fácil hacerse fotos, hacerlas a sus amigos, sus mascotas o lo que quiera compartir con otros.</p>
+    <p xml:lang="eo">Interne, Rideto uzas na GStreamer por aldoni efektojn al fotoj kaj videoj. Per Rideto estas simpla por fari fotojn de vi, viaj amikoj, bestoj aŭ io ajn kiun vi volas kaj kunhavigi ilin kun aliaj.</p>
+    <p xml:lang="en_GB">Under the hood, Cheese uses GStreamer to apply fancy effects to photos and videos. With Cheese it is easy to take photos of you, your friends, pets or whatever you want and share them with others.</p>
+    <p xml:lang="el">Στα ενδότερα, το Cheese χρησιμοποιεί το GStreamer για να εφαρμόσει φανταχτερά εφέ σε φωτογραφίες και βίντεο. Με το Cheese είναι εύκολο να πάρετε δικές σας φωτογραφίες, των φίλων σας, κατοικίδιων ή ο,τιδήποτε θέλετε να μοιραστείτε με άλλους.</p>
+    <p xml:lang="de">Unter der Haube nutzt Cheese GStreamer, um originelle Effekte auf die Fotos und Videos anzuwenden. Mit Cheese ist es einfach, Fotos von Ihnen, ihren Freunden, Haustieren oder was immer Sie möchten aufzunehmen und diese mit anderen zu teilen.</p>
+    <p xml:lang="da">Under overfladen bruger Cheese GStreamer til at tilføje lækre effekter på billeder og videoer. Med Cheese er det nemt at tage billeder af dig selv, dine venner, kæledyr eller hvad nu end du har lyst til, og at dele dem med andre.</p>
+    <p xml:lang="cs">Pod kapotou používá Cheese platformu GStreamer k aplikování zábavných efektů na fotky a videa. S Cheese snadno pořídíte fotky jak sebe, tak svých přátel, mazlíčků nebo čehokoliv, co chcete sdílet s ostatními.</p>
+    <p xml:lang="ca@valencia">Com a rerefons, el Cheese utilitza la GStreamer per aplicar efectes divertits a les fotos i als vídeos. Amb el Cheese és molt fàcil fer-vos fotos vosaltres mateixos, amb els amics, mascotes o qualsevol cosa que vulgueu i compartir-les amb els altres.</p>
+    <p xml:lang="ca">Com a rerefons, el Cheese utilitza la GStreamer per a aplicar efectes divertits a les fotos i als vídeos. Amb el Cheese és molt fàcil fer-vos fotos vosaltres mateixos, amb els amics, mascotes o qualsevol cosa que vulgueu i compartir-les amb els altres.</p>
+    <p xml:lang="bs">Ispod haube, Cheese koristi GStreamer da primjeni efekte nad fotografijama i videom. Sa Cheese je lako uzei fotografije vas, prijatelja, ljubimaca ili šta god želite dijeliti s drugim.</p>
+    <p xml:lang="bn_IN">Cheese ছবি এবং ভিডিওতে চোখে পড়ার মতো রূপ প্রয়োগ করতে GStreamer ব্যবহার করে। Cheese ব্যবহার করে অাপনি খুব সহজেই নিজের, অাপনার বন্ধুদের, পোষ্যের বা অাপনার খুশি মতো যা কিছুর ছবি তুলতে পারবেন এবং তা অন্যদের সংগে ভাগ করতে পারবেন।</p>
+    <p xml:lang="bg">Cheese използва GStreamer за прилагането на ефектите. С Cheese можете лесно да снимате себе си, приятелите си, домашните си любимци — въобще каквото ви щукне, а след това може да споделите резултата.</p>
+    <p xml:lang="be">Cheese выкарыстоўвае GStreamer, каб ужываць цікавыя фота- і відэаэфекты. Праз Cheese так проста здымаць сябе, сяброў, гадаванцаў — што заўгодна, і дзяліцца сваімі вынікамі з іншымі.</p>
+    <p xml:lang="as">অভ্যন্তৰীকভাৱে, Cheese এ ফ'টো আৰু ভিডিঅ'সমূহত মনোহাৰী প্ৰভাৱসমূহ দিবলৈ GStreamer ব্যৱহাৰ কৰে। Cheese ব্যৱহাৰ কৰি আপোনাৰ, আপোনাৰ বন্ধুৰ, চেনেহুৱা অথবা আপুনি বিচৰা যিকোনো বস্তুৰ ফ'টো লব পাৰিব আৰু অন্যৰ সৈতে অংশীদাৰী কৰিব পাৰিব।</p>
+    <p xml:lang="an">Internament, Cheese usa GStreamer ta aplicar efectos fantesticos a las fotos y os videos. Con Cheese ye facil fer-se fotos, fer-las a os suyos amigos, as suyas mascotas u o que quiera compartir con atros.</p>
+    <p xml:lang="af">Cheese gebruik GStreamer om effekte oor fotos en videos te plaas. Met Cheese is dit maklik om fotos van jouself, vriende en troeteldiere te neem en met ander te deel.</p>
+  </description>
+  <url type="homepage">https://wiki.gnome.org/Apps/Cheese</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/cheese/-/issues</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="help">https://help.gnome.org/users/cheese/stable</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/GNOME/cheese/uploads/88a2b6e0276529ff5484d19f813c1436/cheese.png</image>
+    </screenshot>
+  </screenshots>
+  <update_contact>davidk@gnome.org</update_contact>
+  <project_group>GNOME</project_group>
+  <translation type="gettext">cheese</translation>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="44.1" date="2023-07-15">
+      <url>https://gitlab.gnome.org/GNOME/cheese/raw/44.1/NEWS</url>
+    </release>
+    <release version="44.0.1" date="2023-04-17">
+      <url>https://gitlab.gnome.org/GNOME/cheese/raw/44.0.1/NEWS</url>
+    </release>
+    <release version="44.0" date="2023-04-10">
+      <url>https://gitlab.gnome.org/GNOME/cheese/raw/44.0/NEWS</url>
+    </release>
+    <release version="43.0" date="2022-12-12">
+      <url>https://gitlab.gnome.org/GNOME/cheese/raw/43.0/NEWS</url>
+    </release>
+    <release version="41.1" date="2021-11-01">
+      <url>https://gitlab.gnome.org/GNOME/cheese/raw/41.1/NEWS</url>
+    </release>
+    <release version="41.0" date="2021-09-20">
+      <url>https://gitlab.gnome.org/GNOME/cheese/raw/41.0/NEWS</url>
+    </release>
+    <release version="3.38.0" date="2020-09-16">
+      <url>https://gitlab.gnome.org/GNOME/cheese/raw/3.38.0/NEWS</url>
+    </release>
+  </releases>
+</component>

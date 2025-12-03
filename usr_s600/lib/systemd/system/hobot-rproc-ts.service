@@ -1,0 +1,16 @@
+# hobot rproc ts
+
+[Unit]
+Description=hrut remoteproc timesync
+After=hobot-mount.service hobot-loadko.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+StartLimitBurst=0
+ExecStart=/usr/hobot/bin/hrut_remoteproc_timesync
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=basic.target

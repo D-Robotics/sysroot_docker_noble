@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>org.gnome.Characters.desktop</id>
+  <name>Characters</name>
+  <name xml:lang="zh_TW">字元</name>
+  <name xml:lang="zh_CN">字符</name>
+  <name xml:lang="uk">Символи</name>
+  <name xml:lang="tr">Karakterler</name>
+  <name xml:lang="th">อักขระ</name>
+  <name xml:lang="tg">Аломатҳо</name>
+  <name xml:lang="ta">எழுத்துக்கள்</name>
+  <name xml:lang="sv">Tecken</name>
+  <name xml:lang="sr@latin">Tablica znakova</name>
+  <name xml:lang="sr">Таблица знакова</name>
+  <name xml:lang="sl">Znaki</name>
+  <name xml:lang="sk">Znaky</name>
+  <name xml:lang="sat">ᱪᱤᱱᱦᱟᱹ ᱠᱚ</name>
+  <name xml:lang="ru">Символы</name>
+  <name xml:lang="ro">Caractere</name>
+  <name xml:lang="pt_BR">Caracteres</name>
+  <name xml:lang="pt">Caracteres</name>
+  <name xml:lang="pl">Znaki</name>
+  <name xml:lang="pa">ਅੱਖਰ</name>
+  <name xml:lang="oc">Caractèrs</name>
+  <name xml:lang="nl">Tekens en symbolen</name>
+  <name xml:lang="ne">वर्ण</name>
+  <name xml:lang="nb">Tegn</name>
+  <name xml:lang="ms">Aksara</name>
+  <name xml:lang="ml">ക്യാരക്റ്റേഴ്സ്</name>
+  <name xml:lang="lv">Rakstzīmes</name>
+  <name xml:lang="lt">Simboliai</name>
+  <name xml:lang="ln">Minkomá</name>
+  <name xml:lang="ko">문자 도구</name>
+  <name xml:lang="kk">Таңбалар</name>
+  <name xml:lang="kab">Isekkilen</name>
+  <name xml:lang="ka">სიმბოლოები</name>
+  <name xml:lang="ja">文字</name>
+  <name xml:lang="it">Caratteri</name>
+  <name xml:lang="is">Stafir</name>
+  <name xml:lang="ie">Caracteres</name>
+  <name xml:lang="id">Karakter</name>
+  <name xml:lang="hu">Karakterek</name>
+  <name xml:lang="hr">Znakovi</name>
+  <name xml:lang="hi">वर्ण</name>
+  <name xml:lang="he">תווים</name>
+  <name xml:lang="gu">અક્ષરો</name>
+  <name xml:lang="gl">Caracteres</name>
+  <name xml:lang="gd">Caractaran</name>
+  <name xml:lang="fy">Characters</name>
+  <name xml:lang="fur">Caratars</name>
+  <name xml:lang="fr">Caractères</name>
+  <name xml:lang="fi">Merkit</name>
+  <name xml:lang="fa">نویسه‌ها</name>
+  <name xml:lang="eu">Karaktereak</name>
+  <name xml:lang="es">Caracteres</name>
+  <name xml:lang="eo">Signoj</name>
+  <name xml:lang="en_GB">Characters</name>
+  <name xml:lang="el">Χαρακτήρες</name>
+  <name xml:lang="de">Zeichen</name>
+  <name xml:lang="da">Tegn</name>
+  <name xml:lang="cs">Znaky</name>
+  <name xml:lang="ckb">نووسەکان</name>
+  <name xml:lang="ca@valencia">Caràcters</name>
+  <name xml:lang="ca">Caràcters</name>
+  <name xml:lang="bg">Знаци</name>
+  <name xml:lang="be">Сімвалы</name>
+  <name xml:lang="ar">المحارف</name>
+  <name xml:lang="af">Karakters</name>
+  <name xml:lang="ab">Асимволқәа</name>
+  <summary>Character map application</summary>
+  <summary xml:lang="zh_TW">字元對應表應用程式</summary>
+  <summary xml:lang="zh_CN">字符映射应用程序</summary>
+  <summary xml:lang="uk">Програма символів</summary>
+  <summary xml:lang="tr">Karakter eşlem uygulaması</summary>
+  <summary xml:lang="th">แอปพลิเคชันผังอักขระ</summary>
+  <summary xml:lang="ta">எழுத்து வரைபட பயன்பாடு</summary>
+  <summary xml:lang="sv">Teckentabellprogram</summary>
+  <summary xml:lang="sr@latin">Program tablice znakova</summary>
+  <summary xml:lang="sr">Програм таблице знакова</summary>
+  <summary xml:lang="sl">Program za prikaz znakov pisav</summary>
+  <summary xml:lang="sk">Aplikácia mapa znakov</summary>
+  <summary xml:lang="sat">ᱪᱤᱱᱦᱟᱹ ᱱᱟᱠᱷᱟ ᱮᱯᱞᱤᱠᱮᱥᱚᱱ</summary>
+  <summary xml:lang="ru">Приложение карты символов</summary>
+  <summary xml:lang="ro">Aplicație cu tabel de caractere</summary>
+  <summary xml:lang="pt_BR">Aplicativo de mapa de caracteres</summary>
+  <summary xml:lang="pt">Aplicação Mapa de Caracteres</summary>
+  <summary xml:lang="pl">Tablica znaków</summary>
+  <summary xml:lang="pa">ਅੱਖਰ ਖਾਕਾ ਐਪਲੀਕੇਸ਼ਨ</summary>
+  <summary xml:lang="oc">Aplicacion de la taula de caractèrs</summary>
+  <summary xml:lang="nl">Gebruik eenvoudig speciale tekens en symbolen</summary>
+  <summary xml:lang="ne">अक्षर मानचित्र अनुप्रयोग</summary>
+  <summary xml:lang="nb">Se etter spesialtegn</summary>
+  <summary xml:lang="ms">Aplikasi peta aksara</summary>
+  <summary xml:lang="ml">അക്ഷരങ്ങളുടെ വഴികാട്ടി</summary>
+  <summary xml:lang="lv">Rakstzīmju tabulu lietotne</summary>
+  <summary xml:lang="lt">Simbolių žemėlapio programa</summary>
+  <summary xml:lang="ko">문자 표 프로그램</summary>
+  <summary xml:lang="kk">Таңбалар картасы қолданбасы</summary>
+  <summary xml:lang="ka">სიმბოლოების რუკის აპლიკაცია</summary>
+  <summary xml:lang="ja">文字マップアプリケーション</summary>
+  <summary xml:lang="it">Applicazione caratteri</summary>
+  <summary xml:lang="is">Stafatöfluforrit</summary>
+  <summary xml:lang="ie">Tabelle de caracteres</summary>
+  <summary xml:lang="id">Aplikasi peta karakter</summary>
+  <summary xml:lang="hu">Karaktertérkép alkalmazás</summary>
+  <summary xml:lang="hr">Aplikacija za umetanje znakova</summary>
+  <summary xml:lang="hi">वर्ण नक्शा अनुप्रयोग</summary>
+  <summary xml:lang="he">יישום מפת תווים</summary>
+  <summary xml:lang="gu">અક્ષરનો નકશો એપલીકા</summary>
+  <summary xml:lang="gl">Aplicación de mapa de caracteres</summary>
+  <summary xml:lang="gd">Aplacaid mapa charactaran</summary>
+  <summary xml:lang="fy">Karakter tabel applikaasje</summary>
+  <summary xml:lang="fur">Aplicazion des mapis caratars</summary>
+  <summary xml:lang="fr">Application de la table de caractères</summary>
+  <summary xml:lang="fi">Merkkikarttasovellus</summary>
+  <summary xml:lang="fa">برنامهٔ نقشهٔ نویسه‌ها</summary>
+  <summary xml:lang="eu">Karaktere-maparen aplikazioa</summary>
+  <summary xml:lang="es">Aplicación de mapa de caracteres</summary>
+  <summary xml:lang="eo">Signa programo</summary>
+  <summary xml:lang="en_GB">Character map application</summary>
+  <summary xml:lang="el">Εφαρμογή χάρτη χαρακτήρων</summary>
+  <summary xml:lang="de">Zeichentabelle-Anwendung</summary>
+  <summary xml:lang="da">Tegnoversigtsprogram</summary>
+  <summary xml:lang="cs">Aplikace s mapou znaků</summary>
+  <summary xml:lang="ckb">داوانامەی خشتەی نووسەکان</summary>
+  <summary xml:lang="ca@valencia">Aplicació per mostrar caràcters</summary>
+  <summary xml:lang="ca">Aplicació per a mostrar caràcters</summary>
+  <summary xml:lang="bg">Програма с таблици на знаците</summary>
+  <summary xml:lang="be">Праграма з адмысловымі сімваламі</summary>
+  <summary xml:lang="ar">تطبيق خريطة المحارف</summary>
+  <summary xml:lang="af">Karakterkaart toepassing</summary>
+  <summary xml:lang="ab">Асимволқәа рыхсаала аҧшьы</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>BSD-3-Clause AND GPL-2.0-or-later</project_license>
+  <description>
+    <p>
+      Characters is a simple utility application to find and insert unusual characters.  It allows you to quickly find the character you are looking for by searching for keywords.
+    </p>
+    <p xml:lang="zh_TW">《字元》為一款簡單的公用程式，能尋找並插入較少使用的字元。您可以在搜尋框中輸入關鍵字來尋找欲使用的字元。</p>
+    <p xml:lang="zh_CN">字符 是一个简单的查找并插入特殊字符的实用程序。它可以让你通过通过搜索关键字快速找到你正在寻找的字符。</p>
+    <p xml:lang="uk">Символи — простенька програм для пошуку та вставлення незвичайних символів. Він дозволяє швидко знайти символ за допомогою ключових слів.</p>
+    <p xml:lang="tr">Karakterler, alışılmadık karakterleri bulmak ve eklemek için yardımcı yalın bir araçtır. Anahtar sözcükler arayarak karakteri hızlıca bulmanızı sağlar.</p>
+    <p xml:lang="th">"อักขระ" เป็นแอปพลิเคชันอรรถประโยชน์อย่างง่ายสำหรับหาและแทรกอักขระพิเศษ โดยให้คุณหาอักขระที่ต้องการได้อย่างรวดเร็วโดยค้นหาด้วยคำสำคัญ</p>
+    <p xml:lang="sv">Tecken är ett enkelt nyttoprogram för att söka och infoga ovanliga tecken. Det låter dig snabbt hitta tecknet du söker genom att söka efter nyckelord.</p>
+    <p xml:lang="sr@latin">Znakovnik je jednostavno pomagalo za nalaženje i umetanje neobičnih znakova. On vam omogućava da lako nađete znak koji tražite unosom ključnih reči.</p>
+    <p xml:lang="sr">Знаковник је једноставно помагало за налажење и уметање необичних знакова. Он вам омогућава да лако нађете знак који тражите уносом кључних речи.</p>
+    <p xml:lang="sl">Program Znaki je enostaven program za iskanje in vstavljanje neobičajnih znakov v besedilo. Omogoča hitro iskanje s ključnimi opisnimi besedami.</p>
+    <p xml:lang="sk">Znaky je jednoduchá užitočná aplikácia na nájdenie a vloženie neobvyklých znakov. Umožňuje vám rýchlo nájsť znak, ktorý môžete vyhľadať pomocou kľúčových slov.</p>
+    <p xml:lang="sat">ᱪᱤᱱᱦᱟᱹᱯ ᱠᱚ ᱫᱚ ᱠᱷᱟᱹᱞᱤ ᱢᱤᱫᱴᱟᱹᱝ ᱥᱟᱫᱨᱚᱬ ᱭᱱᱤᱴᱭ ᱮᱯᱞᱤᱠᱮᱥᱚᱱ ᱠᱟᱱᱟ ᱡᱟᱦᱟᱸ ᱛᱮ ᱟᱢ ᱡᱟᱦᱱᱟᱜ ᱥᱮᱸᱫᱽᱨᱟ ᱟᱨ ᱮᱴᱟᱜ ᱞᱮᱠᱷᱟ ᱪᱤᱱᱦᱟᱹ ᱠᱚ ᱮᱢ ᱪᱷᱚ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ ᱯᱮ ᱾ ᱱᱚᱶᱟ ᱛᱮ ᱡᱟᱦᱱᱟᱜ ᱜᱮ ᱪᱤᱱᱦᱟᱹ ᱞᱚᱜᱚᱱ ᱜᱮ ᱯᱟᱱᱛᱮ ᱜᱟᱱᱚᱜᱼᱟ ᱾</p>
+    <p xml:lang="ru">Символы — это простое приложение, для поиска и вставки необычных символов. Оно позволяет быстро находить нужный символ по ключевым словам.</p>
+    <p xml:lang="ro">Caractere este o aplicație simplă pentru găsirea și introducerea caracterelor rare. Ea vă permite să găsiți rapid caracterele pe care le doriți prin căutarea după cuvinte cheie.</p>
+    <p xml:lang="pt_BR">O aplicativo Caracteres é um utilitário simples para localizar e inserir caracteres incomuns. Ele permite que você localize de forma rápida o caractere desejado ao pesquisar por palavras-chaves.</p>
+    <p xml:lang="pt">O Caracteres é um utilitário simples para localizar e inserir caracteres pouco habituais. Permite-lhe encontrar rapidamente o carácter que procura, procurando por palavras chave.</p>
+    <p xml:lang="pl">Tablica znaków to proste narzędzie do wyszukiwania i wstawiania znaków specjalnych. Umożliwia ono szybkie znajdowanie znaków dzięki słowom kluczowym.</p>
+    <p xml:lang="pa">ਕਰੈਕਟਰ (ਅੱਖਰ) ਅਸਧਾਰਨ ਅੱਖਰ ਲੱਭਣ ਤੇ ਪਾਉਣ ਵਾਲੀ ਸਰਲ ਸਹੂਲਤ ਵਾਲੀ ਐਪਲੀਕੇਸ਼ਨ ਹੈ। ਇਹ ਤੁਹਾਨੂੰ ਖਾਸ ਢੰਗ ਰਾਹੀਂ ਲੱਭ ਕੇ ਤੁਹਾਨੂੰ ਅੱਖਰ ਲੱਭਣ ਦੀ ਇਜਾਜ਼ਤ ਦਿੰਦੀ ਹੈ।</p>
+    <p xml:lang="oc">Caractèrs es un utilitari per cercar e inserir de caractèrs inabituals. Vos permet de trobar rapidament lo caractèr que cercatz pel biais de mots-claus.</p>
+    <p xml:lang="nl">Tekens en symbolen is een eenvoudig hulpmiddel om bijzondere tekens te zoeken en in te voegen. U kunt het door u gezochte teken snel vinden door middel van trefwoorden.</p>
+    <p xml:lang="ne">क्यारेक्टरस् असामान्य वर्णहरू फेला पार्न र सम्मिलित गर्न सरल उपयोगिक अनुप्रयोग हो। यसले तपाईँलाई चाँडै वर्णहरू खोज्ने र पत्ता लगाउने अनुमति दिन्छ।.</p>
+    <p xml:lang="nb">Noen ganger finnes rett og slett ikke tegnet du ser etter på tastaturet ditt. Denne appen lar deg søke etter hvilket som helst tegn, for å så kopiere det til utklippstavlen og bruke det der du vil.</p>
+    <p xml:lang="ms">Aksara merupakan sebuah aplikasi utiliti ringkas yang dapat mencari dan menyisip aksara. Ia membolehkan anda cari aksara dengan pantas hanya dengan menggelintar kata kunci.</p>
+    <p xml:lang="ml">ക്യാരക്ടര്‍ എന്നത് ലളിതമായി ഉപയോഗിക്കാവുന്ന അപ്ലിക്കേഷന്‍ ആണ്.ഇത് അപൂര്‍വ്വമായ ക്യാരക്ടറെ കണ്ടെത്തുകയും കൂട്ടിച്ചേര്‍ക്കുകയും ചെയ്യുന്നു.നിങ്ങള്‍ നല്‍കുന്ന സൂചകപദങ്ങളെ വേഗത്തില്‍ കണ്ടെത്തുന്നതിന് ഇത് അനുവദിക്കുന്നു.</p>
+    <p xml:lang="lv">Rakstzīmes ir vienkārša utilītprogramma, lai atrastu un ievietotu neparastas rakstzīmes. Tā ļauj ātri atrast vajadzīgās rakstzīmes, meklējot atslēgvārdus.</p>
+    <p xml:lang="lt">Simboliai yra paprasta programa simbolių suradimui ir įterpimui. Ji leidžia greitai rasti pageidaujamą simbolį ieškant raktinių žodžių.</p>
+    <p xml:lang="ln">Minkoma ézali ntoma mpona koluka mpe bakisa minkoma ya momeseno tê. Ezo sunga yo mpona kokuta na lombangu monkoma ozali koluka na nzéla ya liloba-mamá.</p>
+    <p xml:lang="ko">문자 도구는 자주 사용하지 않는 문자를 찾아 입력하는 단순한 유틸리티 프로그램입니다. 찾아볼 문자를 단어로 빨리 찾아볼 수 있습니다.</p>
+    <p xml:lang="kk">Таңбалар - бұл сирек кездесетін таңбаларды табу және кірістіру үшін арналған қолданба. Оның көмегімен сіз кілт сөздер көмегімен керек таңбаларды жылдам таба аласыз.</p>
+    <p xml:lang="ka">Characters უბრალო ხელსაწყოს წარმოადგენს, რომ იპოვოთ და დააკოპიროთ იშვიათი სიმბოლოები. ის საშუალებას გაძლევთ, სასურველი სიმბოლო მალე იპოვოთ, საძიებო სიტყვების საშუალებით.</p>
+    <p xml:lang="ja">Characters は珍しい文字を探して挿入するためのシンプルなユーティリティです。キーワード検索により、素早く文字を発見できます。</p>
+    <p xml:lang="it">Caratteri è un semplice programma per la ricerca e l'inserimento di caratteri insoliti. Consente di cercare velocemente dei caratteri attraverso una ricerca per parole chiave.</p>
+    <p xml:lang="is">Stafataflan Characters er einfalt nytjatól til að finna og setja inn óvenjuleg staftákn. Fljótlegt er að finna táknið sem þú leitar að með því að setja inn stikkorð.</p>
+    <p xml:lang="id">Karakter adalah sebuah utilitas sederhana untuk mencari dan menyisipkan karakter-karakter tak umum. Ini memungkinkan Anda mencari secara cepat karakter yang Anda inginkan dengan mencari berdasarkan kata-kata kunci.</p>
+    <p xml:lang="hu">A Karakterek egy egyszerű segédprogram alkalmazás szokatlan karakterek kereséséhez és beszúrásához. Lehetővé teszi a keresett karakter gyors megtalálását kulcsszavakra való kereséssel.</p>
+    <p xml:lang="hr">Znakovi je mala aplikacija pomagala za pronalazak i umetanje neuobičajenih znakova. Omogućuje vam brz pronalazak znaka kojeg tražite pretragom po ključnoj riječi.</p>
+    <p xml:lang="hi">वर्ण असामान्य वर्णों को खोजने और लिखने के लिए एक सरल अनुप्रयोग है। यह आपको संकेतशब्दों की खोज करके उस वर्ण को जल्दी से खोजने में सहायता करता है जिसे आप खोज रहे हैं।</p>
+    <p xml:lang="he">תווים זהו יישום שירות פשוט למציאה ולהכנסת תווים בלתי רגילים. הוא מאפשר לך למצאו במהירות תווים שהנך מחפש באמצעות חיפוש מילות מפתח.</p>
+    <p xml:lang="gu">અક્ષરો ઓ શોધવા અને અસામાન્ય અક્ષરો દાખલ કરવા માટે એક સરળ ઉપયોગીતા એપ્લિકેશન છે. તે તમને ઝડપથી તમારા કીવર્ડ્સ માટે અક્ષરને શોધવા માટે પરવાનગી આપે છે.</p>
+    <p xml:lang="gl">Caracteres é unha utilidade sinxela para buscar e inserir caracteres non normais. Permítelle atopar de forma rápida o carácter que está buscando por etiquetas.</p>
+    <p xml:lang="gd">’S e goireas simplidh a th’ ann an Caractaran gus caractaran sònraichte a lorg ’s a chur ann. Leigidh e leat an caractar a tha thu ag iarraidh a lorg gu luath le taic faclan-luirg.</p>
+    <p xml:lang="fy">Charakters is in maklik te brûken applikaasje foar it fynen en ynfieren fan ôfwikende karakters. It stelt jo yn steat fluch it karakter te fynen wer om sykje troch in oantal trefwurden yn te fieren.</p>
+    <p xml:lang="fur">Caratars al è un sempliç program par la ricercje e l'inseriment di caratars insolits. Al permet di cirî di corse dai caratars a mieç di une ricercje par peraulis clâf.</p>
+    <p xml:lang="fr">Caractères est un utilitaire pour chercher et insérer des caractères inhabituels. Il vous permet de trouver rapidement le caractère que vous cherchez par le biais de mots-clés.</p>
+    <p xml:lang="fi">Merkit on yksinkertainen sovellus, jonka avulla on mahdollista etsiä ja syöttää epätavallisia merkkejä. Voit etsiä merkkejä käyttäen hakusanoja.</p>
+    <p xml:lang="fa">نویسه‌ها ابزاری ساده برای یافتن و درج نویسه‌های غیرمعمول است. این ابزار به شما امکان یافتن سریع نویسه‌ای که به دنبالش هستید را با جست‌وجو برای کلیدواژگان می‌دهد.</p>
+    <p xml:lang="eu">Karaktereak aplikazio xume bat da ohikoak ez diren karaktereak bilatu eta txertatzeko. Gako-hitzen arabera bilatzea nahi duzun karakterea bizkor aurkitzen du.</p>
+    <p xml:lang="es">Caracteres es una sencilla aplicación para buscar e insertar caracteres poco habituales. Le permite buscar rápidamente el carácter que está buscando usando palabras clave.</p>
+    <p xml:lang="eo">Signoj estas simpla utila aplikaĵo por trovi kaj enmeti nekutimajn signojn. Ĝi permesas al vi rapide trovi la signon kiun vi serĉas per serĉi ŝlosilvortojn.</p>
+    <p xml:lang="en_GB">Characters is a simple utility application to find and insert unusual characters. It allows you to quickly find the character you are looking for by searching for keywords.</p>
+    <p xml:lang="el">Η εφαρμογή «Χαρακτήρες» είναι μια απλή βοηθητική εφαρμογή εύρεσης και εισαγωγής σπάνιων χαρακτήρων. Σας επιτρέπει να βρείτε γρήγορα τον χαρακτήρα που ψάχνετε αναζητώντας λέξεις κλειδιά.</p>
+    <p xml:lang="de">Zeichen ist ein einfaches Hilfsprogramm zum Auffinden und Einsetzen von selten verwendeten Zeichen. Sie können schnell das gesuchte Zeichen finden, indem Sie nach Schlüsselwörtern suchen.</p>
+    <p xml:lang="da">Tegn er et simpelt hjælpeværktøj til at finde og indsætte usædvanlige tegn. Det giver dig mulighed for hurtigt at finde tegn, du leder efter, ved at søge efter nøgleord.</p>
+    <p xml:lang="cs">Znaky je jednoduchá pomocná aplikace pro vyhledávání a vkládání méně běžných znaků. Znak, který hledáte, můžete rychle najít podle klíčových slov.</p>
+    <p xml:lang="ckb">نووسەکان بریتین لە داوانامە بۆ دۆزینەوە و دانانی نووسەی نائاسایی. ڕێگەت دەدات بە خێرایی ئەو نووسانە بدۆزیتەوە کە بۆی دەگەڕێیت ئەویش بەبەکارهێنانی کلیلەووشە.</p>
+    <p xml:lang="ca@valencia">Caràcters és una aplicació per buscar i inserir caràcters inusuals. Vos permet trobar ràpidament els caràcters que esteu cercant usant paraules clau.</p>
+    <p xml:lang="ca">Caràcters és una aplicació per a cercar i inserir caràcters inusuals. Us permet trobar ràpidament els caràcters que esteu cercant usant paraules clau.</p>
+    <p xml:lang="bg">„Знаци“ е лесна за ползване програма за намирането и вмъкването на по-редки знаци. Тя дава възможност бързо да намерите знак като го търсите с ключови думи.</p>
+    <p xml:lang="be">Знакі - гэта простая праграма, якая дазваляе шукаць і ўстаўляць незвычайныя сімвалы. Вы можаце хутка знайсці патрэбны вам сімвал па ключавых словах.</p>
+    <p xml:lang="ar">«محارف» تطبيق بسيط للبحث عن المحارف غير المألوفة. يسمح لك التّطبيق بالبحث عن المحرف الّذي تريده بالبحث عن الكلمات المفتاحية.</p>
+    <p xml:lang="af">Karakters is 'n eenvoudige nutstoepassing om ongewone karakters te vind en in te voeg. Dit laat u toe om vinnig karakter te vind deur met sleutelwoorde te soek.</p>
+    <p xml:lang="ab">Асимволқәа-ари имариоу ҧшьуп иалукааша асимволқәа рыҧшаареи аҭагалареи рзыУи ишәнаҭоит алшара ишәҭаху асимвол иаарццакны аҧшаара ихадоу ажәақәа рыла</p>
+    <p>
+      You can also browse characters by categories, such as Punctuation, Pictures, etc.
+    </p>
+    <p xml:lang="zh_TW">您也可以根據分類來尋找字元，例如：標點符號、圖符等。</p>
+    <p xml:lang="zh_CN">你也可以按照目录浏览字符，比如 标点、图片等。</p>
+    <p xml:lang="uk">Ви також можете переглянути символи через категорії, як-от Пунктуація, Малюнки тощо.</p>
+    <p xml:lang="tr">Ayrıca karakterlere kategorileri ile göz atabilirsiniz, örneğin Noktalama, Resimler vb.</p>
+    <p xml:lang="th">คุณยังสามารถท่องดูอักขระตามหมวดหมู่ต่างๆ ได้ เช่น เครื่องหมายวรรคตอน รูปภาพ ฯลฯ</p>
+    <p xml:lang="sv">Du kan också bläddra igenom tecken efter kategorier som skiljetecken, bilder o.s.v.</p>
+    <p xml:lang="sr@latin">Možete da listate znakove po kategorijama kao što su Interpunkcije, Slike i drugo.</p>
+    <p xml:lang="sr">Можете да листате знакове по категоријама као што су Интерпункције, Слике и друго.</p>
+    <p xml:lang="sl">Kategorije, kot so Znaki, Ločila, Sličice in podobno, je mogoče tudi prebrskati.</p>
+    <p xml:lang="sk">Môžete tiež prehliadať znaky podľa kategórií, ako sú napríklad Znaky, Obrázky, atď.</p>
+    <p xml:lang="sat">ᱟᱢ ᱫᱚ ᱛᱷᱚᱠ ᱠᱚ ᱞᱮᱠᱷᱟ, ᱡᱮᱞᱠᱟ ᱪᱤᱠᱷᱱᱟᱹ, ᱪᱤᱛᱟᱹᱨ ᱠᱚ, ᱟᱨᱦᱚᱸ ᱮᱴᱟᱜ ᱡᱤᱱᱤᱥ ᱠᱚᱢ ᱥᱮᱱᱫᱽᱨᱟ ᱫᱟᱲᱮᱭᱟᱜᱼᱟᱢ ᱾</p>
+    <p xml:lang="ru">Также можно просматривать символы по категориям, таким как знаки пунктуации, картинки и т.д.</p>
+    <p xml:lang="ro">Puteți de asemenea să navigați prin caractere după categorii, precum punctuație, poze, etc.</p>
+    <p xml:lang="pt_BR">Você também pode navegar entre caracteres através de categorias, como pontuação, imagens, etc.</p>
+    <p xml:lang="pt">Também pode procurar por categorias, tais como pontuação, imagens, etc.</p>
+    <p xml:lang="pl">Można także przeglądać znaki według kategorii, takich jak interpunkcja, obrazki itp.</p>
+    <p xml:lang="pa">ਤੁਸੀਂ ਵਰਗ ਜਿਵੇਂ ਕਿ ਵਿਰਾਮ-ਚਿੰਨ੍ਹ, ਤਸਵੀਰਾਂ ਰਾਹੀਂ ਵੀ ਅੱਖਰਾਂ ਦੀ ਝਲਕ ਵੇਖ ਸਕਦੇ ਹੋ।</p>
+    <p xml:lang="oc">Tanben podètz navegar dins los caractèrs per categorias, coma per Ponctuacion, Imatges, etc.</p>
+    <p xml:lang="nl">U kunt ook tekens zoeken per categorie, zoals interpunctie, afbeeldingen, enz.</p>
+    <p xml:lang="ne">तपाइँ पनि वर्ग द्वारा वर्णहरू ब्राउज गर्न सक्नुहुन्छ, जस्तै विराम चिन्ह, चित्रहरू आदि।.</p>
+    <p xml:lang="nb">Du kan også bla gjennom alle tegnene i bestemte kategorier, som skilletegn eller bilder.</p>
+    <p xml:lang="ms">Anda juga boleh melayari aksara mengikut kategori, seperti Tanda Baca, Gambar, dll.</p>
+    <p xml:lang="ml">ചിത്രങ്ങള്‍ , ചിഹ്നങ്ങള്‍ മുതലായവ വിഭാഗങ്ങളായി ക്രമത്തില്‍ നിങ്ങളെ തിരയാം.</p>
+    <p xml:lang="lv">Rakstzīmes varat pārlūkot pēc kategorijām, piemēram, interpunkcija un attēli.</p>
+    <p xml:lang="lt">Taip pat galite ieškoti simbolių pagal kategorijas, tokias kaip skyrybos ženklai, paveikslėliai ir kt.</p>
+    <p xml:lang="ln">Okoki mpe koluka minkoma na katégoli, lokola na bilembo bya bokomi, bilili, etc.</p>
+    <p xml:lang="ko">구두기호, 그림 등의 분류 방식으로 문자를 찾아볼 수 있습니다.</p>
+    <p xml:lang="kk">Сонымен бірге, сіз таңбаларды санаттар бойынша шола аласыз, мыс. емле таңбалары, суреттер және т.б.</p>
+    <p xml:lang="ka">სიმბოლოები ასევე შეგიძლიათ მოძებნოთ კატეგორიების მიხედვით, როგორიცაა პუნქტუაცია, სურათები, ა.შ.</p>
+    <p xml:lang="ja">また、句読点記号や絵文字のようなカテゴリー別に閲覧することもできます。</p>
+    <p xml:lang="it">È anche possibile esplorare il caratteri per categorie come punteggiatura, immagini, ecc.</p>
+    <p xml:lang="is">Þú getur skoðað staftákn eftir flokkum, eins og Myndir, Greinamerki o.s.frv.</p>
+    <p xml:lang="id">Anda juga dapat meramban karakter-karakter menurut kategori, seperti Tanda Baca, Gambar, dsb.</p>
+    <p xml:lang="hu">Böngészhet a karakterek között kategóriák szerint is, úgymint központozás, képek, stb.</p>
+    <p xml:lang="hr">Isto tako možete pregledavati znakove po kategorijama, poput interpunkcija, slika, itd.</p>
+    <p xml:lang="hi">आप वर्णों को श्रेणियों के आधार पर भी देख सकते हैं, जैसे विराम चिह्न, चित्र, आदि।</p>
+    <p xml:lang="he">כמו כן ניתן לדפדף בתווים באמצעות קטגוריות, כמו סימני פיסוק, תמונות וכו׳.</p>
+    <p xml:lang="gu">તમે વિરામચિહ્ન, ચિત્રો, વગેરે દ્વારા પણ અક્ષરો બ્રાઉઝ કરી શકો છો.</p>
+    <p xml:lang="gl">Tamén pode explorar caracteres por categorías, como Puntuación, Imaxes, etc.</p>
+    <p xml:lang="gd">’S urrainn dhut na caractaran a bhrabhsadh a-rèir roinn-seòrsa cuideachd, can puingeachadh, dealbhan is msaa.</p>
+    <p xml:lang="fy">Jo kin ek per kategory troch karakters blêdzje, lykas Punktuaasje, Foto's, ensfh.</p>
+    <p xml:lang="fur">Al è pussibil ancje esplorâ i caratars par categorie come puntuazions, figuris, ecc.</p>
+    <p xml:lang="fr">Vous pouvez aussi naviguer dans les caractères par catégories, comme par Ponctuation, Images, etc.</p>
+    <p xml:lang="fi">Voit myös selata merkkejä luokkien perusteella, esimerkiksi välimerkkejä, kuvia jne.</p>
+    <p xml:lang="fa">همچنین می‌توانید نویسه‌ها را بر اساس دسته‌بندی‌هایی چون نقطه‌گذاری، نگاره‌ها و… بیابید.</p>
+    <p xml:lang="eu">Kategorien arabera ere araka ditzakezu karaktereak. Hala nola, puntuazioa, irudiak eta abar.</p>
+    <p xml:lang="es">Puede examinar los caracteres por categorías, tales como Puntuación, Imágenes, etc.</p>
+    <p xml:lang="eo">Vi ankaŭ povas foliumi signojn laŭ kategorioj, kiel Interpunkcio, Bildoj, ktp.</p>
+    <p xml:lang="en_GB">You can also browse characters by categories, such as Punctuation, Pictures, etc.</p>
+    <p xml:lang="el">Μπορείτε επίσης να περιηγηθείτε στους χαρακτήρες κατά κατηγορίες, όπως στίξη, εικόνες κ.λ.π.</p>
+    <p xml:lang="de">Sie können ebenfalls nach Kategorien suchen, wie z.B. nach Satzzeichen oder Bildern.</p>
+    <p xml:lang="da">Du kan også gennemse tegn efter kategorier såsom tegnsætning, billeder osv.</p>
+    <p xml:lang="cs">Znaky můžete také procházet podle kategorií, jako například „interpunkce“, „obrázky“ atd.</p>
+    <p xml:lang="ckb">دەتوانی بنواڕیتە نووسەکان بە پێی پۆلەکان، وەک خاڵبەندی، وێنە،هیتر.</p>
+    <p xml:lang="ca@valencia">També podeu navegar els caràcters per categories, com ara puntuació, imatges, etc. </p>
+    <p xml:lang="ca">També podeu navegar els caràcters per categories, com ara puntuació, imatges, etc.</p>
+    <p xml:lang="bg">Може да разглеждате знаците и по категории като пунктуация, картинки и др.</p>
+    <p xml:lang="be">Таксама можна аглядаць сімвалы па катэгорыях, такіх як пунктуацыя, выявы і інш.</p>
+    <p xml:lang="ar">يمكنك تصفّح المحارف حسب فئاتها، كعلامات الترقيم و الصّور وغيرها.</p>
+    <p xml:lang="af">U kan ook deur karakter-kategorieë blaai, soos leestekens, prente, ens.</p>
+    <p xml:lang="ab">Насгьы асимволқәа шәрышьҭаларц шәылшоит хкыла,иаҳҳәап, апунктуациа адыргақәа, асахьақәа.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/GNOME/gnome-characters/raw/main/data/screenshots/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://gitlab.gnome.org/GNOME/gnome-characters/raw/main/data/screenshots/screenshot2.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>GNOME</project_group>
+  <!-- developer_name tag deprecated with Appstream 1.0 -->
+  <developer_name>The GNOME Project</developer_name>
+  <developer_name xml:lang="zh_TW">GNOME 專案</developer_name>
+  <developer_name xml:lang="zh_CN">GNOME 项目</developer_name>
+  <developer_name xml:lang="uk">Проєкт GNOME</developer_name>
+  <developer_name xml:lang="tr">GNOME Projesi</developer_name>
+  <developer_name xml:lang="th">โครงการ GNOME</developer_name>
+  <developer_name xml:lang="sv">GNOME-projektet</developer_name>
+  <developer_name xml:lang="sr">Гном пројекат</developer_name>
+  <developer_name xml:lang="sl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="sk">Projekt GNOME</developer_name>
+  <developer_name xml:lang="sat">GNOME ᱯᱟᱱᱛᱷᱟ</developer_name>
+  <developer_name xml:lang="ru">The GNOME Project</developer_name>
+  <developer_name xml:lang="ro">Proiectul GNOME</developer_name>
+  <developer_name xml:lang="pt_BR">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pt">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="pa">ਗਨੋਮ ਪਰੋਜੈਕਟ</developer_name>
+  <developer_name xml:lang="oc">Lo projècte GNOME</developer_name>
+  <developer_name xml:lang="nl">Het GNOME-project</developer_name>
+  <developer_name xml:lang="ne">जिनोम परियोजना</developer_name>
+  <developer_name xml:lang="nb">GNOME</developer_name>
+  <developer_name xml:lang="lv">GNOME projekts</developer_name>
+  <developer_name xml:lang="lt">GNOME projektas</developer_name>
+  <developer_name xml:lang="ko">그놈 프로젝트</developer_name>
+  <developer_name xml:lang="kk">GNOME жобасы</developer_name>
+  <developer_name xml:lang="ka">პროექტი GNOME</developer_name>
+  <developer_name xml:lang="it">Il progetto GNOME</developer_name>
+  <developer_name xml:lang="is">GNOME-verkefnið</developer_name>
+  <developer_name xml:lang="ie">Li projecte GNOME</developer_name>
+  <developer_name xml:lang="id">Proyek GNOME</developer_name>
+  <developer_name xml:lang="hu">A GNOME projekt</developer_name>
+  <developer_name xml:lang="hr">GNOME projekt</developer_name>
+  <developer_name xml:lang="hi">दी गनोम प्रॉजेक्ट</developer_name>
+  <developer_name xml:lang="he">מיזם GNOME</developer_name>
+  <developer_name xml:lang="gl">O Proxecto GNOME</developer_name>
+  <developer_name xml:lang="fur">Il Progjet GNOME</developer_name>
+  <developer_name xml:lang="fr">Le projet GNOME</developer_name>
+  <developer_name xml:lang="fi">Gnome-projekti</developer_name>
+  <developer_name xml:lang="fa">پروژهٔ گنوم</developer_name>
+  <developer_name xml:lang="eu">GNOME proiektua</developer_name>
+  <developer_name xml:lang="es">El Proyecto GNOME</developer_name>
+  <developer_name xml:lang="eo">La projekto GNOME</developer_name>
+  <developer_name xml:lang="en_GB">The GNOME Project</developer_name>
+  <developer_name xml:lang="el">Το Έργο GNOME</developer_name>
+  <developer_name xml:lang="de">Das GNOME-Projekt</developer_name>
+  <developer_name xml:lang="da">GNOME-projektet</developer_name>
+  <developer_name xml:lang="cs">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ca">El projecte GNOME</developer_name>
+  <developer_name xml:lang="bg">Проектът GNOME</developer_name>
+  <developer_name xml:lang="be">Праект GNOME</developer_name>
+  <developer_name xml:lang="ab">The GNOME Project</developer_name>
+  <developer id="org.gnome">
+    <name>The GNOME Project</name>
+  </developer>
+  <url type="homepage">https://apps.gnome.org/Characters/</url>
+  <url type="contribute">https://welcome.gnome.org/app/Characters/</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-characters/issues</url>
+  <url type="translate">https://l10n.gnome.org/module/gnome-characters</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/gnome-characters</url>
+  <url type="donation">https://www.gnome.org/donate</url>
+  <update_contact>dueno_at_src.gnome.org</update_contact>
+  <kudos>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>HighContrast</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+  </kudos>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length>360</display_length>
+  </requires>
+  <translation type="gettext">org.gnome.Characters</translation>
+  <launchable type="desktop-id">org.gnome.Characters.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="46.0" date="2024-03-18">
+      <description>
+        <p>Characters 46 release.</p>
+        <ul>
+          <li>Update to CLDR 44 (Alice Mikhaylenko)</li>
+          <li>Update to Emoji 15.1 (Alice Mikhaylenko)</li>
+          <li>Improve appdata for AppStream 1.0 (Sabri Ünal)</li>
+        </ul>
+        <p>It also comes with translation updates for the following locales:</p>
+        <ul>
+          <li>British (Andi Chandler)</li>
+          <li>Turkish (Sabri Ünal)</li>
+          <li>Serbian (Марко Костић)</li>
+          <li>Spanish (Daniel Mustieles)</li>
+          <li>Esperanto (Kristjan SCHMIDT)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="45.0" date="2023-07-17">
+      <description>
+        <p>Characters 45 brings support for Unicode 15.0.1 and new CJK extensions, in addition to miscellaneous bug fixes.</p>
+        <p>It also comes with translation updates for the following locales:</p>
+        <ul>
+          <li>Chinese (China) (Boyuan Yang)</li>
+          <li>Dutch (Nathan Follens)</li>
+          <li>English (United Kingdom) (Bruce Cowan)</li>
+          <li>French (Guillaume Bernard)</li>
+          <li>Greek, Modern (1453-) (Efstathios Iosifidis)</li>
+          <li>Icelandic (Sveinn í Felli)</li>
+          <li>Italian (Gianvito Cavasoli)</li>
+          <li>Portuguese (Brazil) (Leônidas Araújo)</li>
+          <li>Slovak (Dušan Kazik)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="44.0" date="2023-03-19">
+      <description>
+        <p>Characters 44.0 brings support for Unicode 15.</p>
+        <p>It also comes with translation updates for the following locales:</p>
+        <ul>
+          <li>Basque (Asier Sarasua Garmendia)</li>
+          <li>Belarusian (Vasil Pupkin)</li>
+          <li>Bulgarian (Alexander Shopov)</li>
+          <li>Czech (Marek Černocký)</li>
+          <li>Danish (Alan Mortensen)</li>
+          <li>Dutch (Nathan Follens)</li>
+          <li>Finnish (Jiri Grönroos)</li>
+          <li>Friulian (Fabio Tomat)</li>
+          <li>Galician (Fran Dieguez)</li>
+          <li>Georgian (Ekaterine Papava)</li>
+          <li>German (Philipp Kiemle)</li>
+          <li>Greek, Modern (1453-) (Kosmas Martakidis)</li>
+          <li>Hebrew (Yaron Shahrabani, Yosef Or Boczko)</li>
+          <li>Hindi (Hemish)</li>
+          <li>Hungarian (Balázs Úr)</li>
+          <li>Icelandic (Sveinn í Felli)</li>
+          <li>Indonesian (Kukuh Syafaat)</li>
+          <li>Interlingue (Olga Smirnova)</li>
+          <li>Korean (DaeHyun Sung)</li>
+          <li>Lithuanian (Aurimas Černius)</li>
+          <li>Occitan (post 1500) (Quentin PAGÈS)</li>
+          <li>Persian (MohammadSaleh Kamyab)</li>
+          <li>Polish (Piotr Drąg)</li>
+          <li>Portuguese (Hugo Carvalho)</li>
+          <li>Russian (Aleksandr Melman)</li>
+          <li>Serbian (Марко Костић)</li>
+          <li>Slovenian (Matej Urbančič)</li>
+          <li>Spanish (Daniel)</li>
+          <li>Swedish (Luna Jernberg)</li>
+          <li>Turkish (Sabri Ünal)</li>
+          <li>Ukrainian (Yuri Chornoivan)</li>
+        </ul>
+      </description>
+    </release>
+    <release version="43.0" date="2022-09-18">
+      <description>
+        <p>Characters 43.0 brings support for composite emoji, allowing you to use emoji with different skin tones, genders, colors, and more.</p>
+        <p>It also comes with updated translations for the following locales:</p>
+        <ul>
+          <li>Abkhazian</li>
+          <li>Basque</li>
+          <li>Bulgarian</li>
+          <li>Catalan</li>
+          <li>Chinese (China)</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Croatian</li>
+          <li>Czech</li>
+          <li>Danish</li>
+          <li>Dutch</li>
+          <li>English (United Kingdom)</li>
+          <li>Finnish</li>
+          <li>French</li>
+          <li>Friulian</li>
+          <li>Galician</li>
+          <li>Georgian</li>
+          <li>German</li>
+          <li>Hebrew</li>
+          <li>Hungarian</li>
+          <li>Icelandic</li>
+          <li>Indonesian</li>
+          <li>Korean</li>
+          <li>Latvian</li>
+          <li>Lithuanian</li>
+          <li>Nepali</li>
+          <li>Occitan (post 1500)</li>
+          <li>Persian</li>
+          <li>Polish</li>
+          <li>Portuguese</li>
+          <li>Portuguese (Brazil)</li>
+          <li>Russian</li>
+          <li>Santali</li>
+          <li>Serbian</li>
+          <li>Slovenian</li>
+          <li>Spanish</li>
+          <li>Swedish</li>
+          <li>Turkish</li>
+          <li>Ukrainian</li>
+        </ul>
+      </description>
+    </release>
+    <release version="43~rc" date="2022-09-03" type="development">
+      <description>
+        <p>Characters 43.rc comes with updated translations for the following locales:</p>
+        <ul>
+          <li>Catalan</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Croatian</li>
+          <li>Czech</li>
+          <li>Danish</li>
+          <li>Finnish</li>
+          <li>Galician</li>
+          <li>Hungarian</li>
+          <li>Lithuanian</li>
+          <li>Polish</li>
+          <li>Portuguese (Brazil)</li>
+          <li>Slovenian</li>
+        </ul>
+      </description>
+    </release>
+    <release version="43~beta" date="2022-08-07" type="development"/>
+    <release version="43~alpha" date="2022-07-13">
+      <description>
+        <p>Characters 43.alpha comes with composite emoji support and a new adaptive aboud window.</p>
+        <p>It also comes with updated translations for the following locales:</p>
+        <ul>
+          <li>Dutch</li>
+          <li>English (United Kingdom)</li>
+          <li>Georgian</li>
+          <li>Icelandic</li>
+          <li>Indonesian</li>
+          <li>Persian</li>
+          <li>Portuguese</li>
+          <li>Russian</li>
+          <li>Swedish</li>
+          <li>Ukrainian</li>
+        </ul>
+      </description>
+    </release>
+    <release version="42.0" date="2022-03-19">
+      <description>
+        <p>Characters 42.0 comes plenty of changes</p>
+        <ul>
+          <li>Port to GTK 4 / libadwaita</li>
+          <li>Proper dark theme support</li>
+          <li>Fix various search provider related issues</li>
+          <li>Search provider now displays the character on the search results</li>
+          <li>Translations updates</li>
+        </ul>
+      </description>
+    </release>
+    <release version="41.0" date="2021-09-21">
+      <description>
+        <p>Characters 41 comes with a fix so that the close button shows on the sidebar at mobile sizes.</p>
+        <p>Characters 41 also comes with updated translations for the following locales:</p>
+        <ul>
+          <li>Belarusian</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Danish</li>
+          <li>Dutch</li>
+          <li>English (United Kingdom)</li>
+          <li>Greek, Modern (1453-)</li>
+          <li>Hebrew</li>
+          <li>Korean</li>
+          <li>Nepali</li>
+          <li>Occitan (post 1500)</li>
+          <li>Russian</li>
+          <li>Tamil</li>
+          <li>Western Frisian</li>
+        </ul>
+      </description>
+    </release>
+    <release version="40.0" date="2021-03-20">
+      <description>
+        <p>Characters has received a visual upgrade, and is now able to be used across mobile and desktop form factors.</p>
+        <p>Characters 40 also comes with updated translations for the following locales:</p>
+        <ul>
+          <li>Bangla (India)</li>
+          <li>Basque</li>
+          <li>Bokmål, Norwegian</li>
+          <li>Catalan</li>
+          <li>Chinese (China)</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Croatian</li>
+          <li>Czech</li>
+          <li>Danish</li>
+          <li>Dutch</li>
+          <li>English (United Kingdom)</li>
+          <li>Esperanto</li>
+          <li>Finnish</li>
+          <li>French</li>
+          <li>Friulian</li>
+          <li>Galician</li>
+          <li>German</li>
+          <li>Greek, Modern (1453-)</li>
+          <li>Hebrew</li>
+          <li>Hungarian</li>
+          <li>Indonesian</li>
+          <li>Italian</li>
+          <li>Japanese</li>
+          <li>Kazakh</li>
+          <li>Korean</li>
+          <li>Latvian</li>
+          <li>Lithuanian</li>
+          <li>Panjabi</li>
+          <li>Persian</li>
+          <li>Polish</li>
+          <li>Portuguese</li>
+          <li>Portuguese (Brazil)</li>
+          <li>Romanian</li>
+          <li>Serbian</li>
+          <li>Slovak</li>
+          <li>Slovenian</li>
+          <li>Spanish</li>
+          <li>Swedish</li>
+          <li>Turkish</li>
+          <li>Ukrainian</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.32.1" date="2019-04-08"/>
+  </releases>
+</component>

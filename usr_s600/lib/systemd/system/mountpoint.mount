@@ -1,0 +1,6 @@
+[Unit]
+Description=not umount in umount.target, will umount when shutdown
+DefaultDependencies=no
+
+[Mount]
+What=from_fstab

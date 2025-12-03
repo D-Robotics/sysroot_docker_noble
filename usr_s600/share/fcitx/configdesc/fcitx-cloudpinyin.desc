@@ -1,0 +1,38 @@
+[CloudPinyin/CandidateOrder]
+Type=Integer
+DefaultValue=2
+Min=1
+Description=Cloud Pinyin Candidate Word Order
+
+[CloudPinyin/MinimumPinyinLength]
+Type=Integer
+DefaultValue=2
+Min=1
+Description=Minimum Length of Pinyin To Trigger Cloud Pinyin
+
+[CloudPinyin/DontShowSource]
+Type=Boolean
+DefaultValue=True
+Description=Don't Show the 'via cloud' hint
+
+[CloudPinyin/Source]
+Type=Enum
+DefaultValue=Google
+Description=Cloud Pinyin Source
+EnumCount=2
+Enum0=Google
+Enum1=Baidu
+
+[CloudPinyin/ToggleKey]
+Type=Hotkey
+DefaultValue=
+Description=Toggle Cloud Pinyin enabled status
+LongDescription=Disable Cloud Pinyin When you are using mobile can save your network
+
+[CloudPinyin/Enabled]
+Type=Boolean
+DefaultValue=True
+Description=Enabled
+
+[DescriptionFile]
+LocaleDomain=fcitx-cloudpinyin

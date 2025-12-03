@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/aarch64-linux-gnu
+includedir=/usr/include/aarch64-linux-gnu
+
+Name: Userspace RCU 
+Description: A userspace RCU (read-copy-update) library, standard version
+Version: 0.14.0
+Requires:
+Libs: -L${libdir} -lurcu-common -lurcu
+Cflags: -I${includedir} 

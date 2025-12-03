@@ -1,0 +1,15 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=lib
+includedir=/usr/include/PySide2
+typesystemdir=/usr/share/PySide2/typesystems
+gluedir=/usr/share/PySide2/glue
+pythonpath=/usr/lib/aarch64-linux-gnu/python3.12/site-packages
+
+Name: PySide2
+Description: Support library for Python bindings of Qt5-based libraries.
+Version: 5.15.13
+Libs: -L${libdir} -lpyside2.cpython-312-aarch64-linux-gnu
+Cflags: -I${includedir}
+Requires: shiboken2
+

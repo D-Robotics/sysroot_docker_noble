@@ -1,0 +1,14 @@
+simplejson-stubs/METADATA.toml,sha256=C64Enc7aj_-LuPEtCQzwKdPsFiXJGbw3F-nZ5tERsWc,148
+simplejson-stubs/__init__.pyi,sha256=wWOWghqxhz1SLDE4dJS8DxbwFWMF9b4BoqHsSz8NaY8,621
+simplejson-stubs/decoder.pyi,sha256=Prn5QN0iKm-HFYbBytIsRIW3igglW8ol1Fb158c5r24,279
+simplejson-stubs/encoder.pyi,sha256=DykdN9iXdinJM1cO59VW1bG-54XJNJ35R6lhCXNfyqk,340
+simplejson-stubs/errors.pyi,sha256=J8yUtlWLFlBlDyG6YdgvkWWkNHHtkEOctaVnfnxV6gA,521
+simplejson-stubs/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+simplejson-stubs/raw_json.pyi,sha256=H39GYCuE5fNRlGZvkB9avYqrOUsqKGKJXU9wZRpoQyk,92
+simplejson-stubs/scanner.pyi,sha256=LrG4AqJZyCtd8gDnRsihE9BoPjnK7RT9hE1B-V5NkXs,176
+types_simplejson-3.19.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+types_simplejson-3.19.dist-info/METADATA,sha256=E5WcxpxmzpxONR5FckZvqjhl0ux8dWiMZVJTqaf4-Do,1737
+types_simplejson-3.19.dist-info/RECORD,,
+types_simplejson-3.19.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_simplejson-3.19.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+types_simplejson-3.19.dist-info/top_level.txt,sha256=dyPpVbVov_NTZvFSIYqFH05ghI2mBFnq_p2S2mh0zIw,17

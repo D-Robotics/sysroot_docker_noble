@@ -1,0 +1,10 @@
+[Unit]
+Description=Hobot perf monitor
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=hb_monitor -c /usr/hobot/etc/hobot-monitor/monitor.json
+
+[Install]
+WantedBy=multi-user.target

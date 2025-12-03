@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>org.gnome.eog.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+ and GFDL-1.3</project_license>
+  <name>Image Viewer</name>
+  <name xml:lang="zu">Umbonisi sithombe</name>
+  <name xml:lang="zh_HK">影像檢視器</name>
+  <name xml:lang="xh">Isibonisi-Mfanekiso</name>
+  <name xml:lang="wa">Håyneu d' imådjes</name>
+  <name xml:lang="vi">Xem ảnh</name>
+  <name xml:lang="uz@cyrillic">Расм кўрувчи</name>
+  <name xml:lang="uz">Rasm koʻruvchi</name>
+  <name xml:lang="ug">سۈرەت كۆرگۈ</name>
+  <name xml:lang="ts">Xikomba Swifaniso</name>
+  <name xml:lang="tk">Resim Namaýyşçysy</name>
+  <name xml:lang="th">โปรแกรมดูรูป</name>
+  <name xml:lang="tg">Бинандаи тасвирҳо</name>
+  <name xml:lang="te">బొమ్మ వీక్షకము</name>
+  <name xml:lang="ta">பிம்ப காட்டி</name>
+  <name xml:lang="sr@latin">Pregledač slika</name>
+  <name xml:lang="sr">Прегледач слика</name>
+  <name xml:lang="sq">Shikues figurash</name>
+  <name xml:lang="si">පිළිඹිබු දසුන</name>
+  <name xml:lang="pt_BR">Visualizador de imagens</name>
+  <name xml:lang="ps">انځور ليدانی</name>
+  <name xml:lang="pa">ਚਿੱਤਰ ਦਰਸ਼ਕ</name>
+  <name xml:lang="or">ଚିତ୍ର ଦର୍ଶକ</name>
+  <name xml:lang="oc">Visionador d'imatges</name>
+  <name xml:lang="nso">Selebeledi sa Seswantšho</name>
+  <name xml:lang="nn">Biletevisar</name>
+  <name xml:lang="ne">छवि प्रदर्शक</name>
+  <name xml:lang="nds">Billopwieser</name>
+  <name xml:lang="nb">Bildevisning</name>
+  <name xml:lang="my">ပုံကြည့်ရှုသည့်အရာ</name>
+  <name xml:lang="ms">Pelihat Imej</name>
+  <name xml:lang="mr">प्रतिमा दर्शक</name>
+  <name xml:lang="mn">Зураг харагч</name>
+  <name xml:lang="ml">ചിത്ര ദര്‍ശിനി</name>
+  <name xml:lang="mk">Прегледувач на слики</name>
+  <name xml:lang="mjw">Arjan Kelang</name>
+  <name xml:lang="mg">Mpizaha sary</name>
+  <name xml:lang="mai">बिंब प्रदर्शक</name>
+  <name xml:lang="ku">Nîşanderê Wêneyan</name>
+  <name xml:lang="ks">फोटो हावनुक</name>
+  <name xml:lang="ko">이미지 보기</name>
+  <name xml:lang="kn">ಚಿತ್ರ ವೀಕ್ಷಕ</name>
+  <name xml:lang="km">កម្មវិធី​មើល​រូបភាព</name>
+  <name xml:lang="ja">画像ビューアー</name>
+  <name xml:lang="it">Visualizzatore di immagini</name>
+  <name xml:lang="ie">Visor de images</name>
+  <name xml:lang="hr">Preglednik slika</name>
+  <name xml:lang="hi">छवि प्रदर्शक</name>
+  <name xml:lang="gu">ચિત્ર દર્શક</name>
+  <name xml:lang="gd">Sealladair dhealbhan</name>
+  <name xml:lang="ga">Amharcán Íomhánna</name>
+  <name xml:lang="fy">Ôfbyldingswerjefteprogramma</name>
+  <name xml:lang="fur">Visualizadôr di imagjins</name>
+  <name xml:lang="fr">Visionneur d’images</name>
+  <name xml:lang="et">Pildivaataja</name>
+  <name xml:lang="eo">Bildomontrilo</name>
+  <name xml:lang="en@shaw">𐑦𐑥𐑦𐑡 𐑝𐑿𐑼</name>
+  <name xml:lang="en_GB">Image Viewer</name>
+  <name xml:lang="en_CA">Image Viewer</name>
+  <name xml:lang="el">Εφαρμογή προβολής εικόνων</name>
+  <name xml:lang="dz">གཟུགས་བརྙན་མཐོང་བྱེད།</name>
+  <name xml:lang="da">Billedfremviser</name>
+  <name xml:lang="cy">Gwelydd Delweddau</name>
+  <name xml:lang="ckb">پیشاندەری وێنە</name>
+  <name xml:lang="ca@valencia">Visualitzador d'imatges</name>
+  <name xml:lang="bs">Preglednik slika</name>
+  <name xml:lang="br">Gweler skeudennoù</name>
+  <name xml:lang="bn_IN">ছবি প্রদর্শক</name>
+  <name xml:lang="bn">ছবি প্রদর্শক</name>
+  <name xml:lang="bg">Преглед на изображения</name>
+  <name xml:lang="be@latin">Ahladalnik vyjavaŭ</name>
+  <name xml:lang="az">Rəsm Nümayişcisi</name>
+  <name xml:lang="ast">Visor d'Imáxenes</name>
+  <name xml:lang="as">ছবি প্ৰদৰ্শক</name>
+  <name xml:lang="ar">عارض الصّور</name>
+  <name xml:lang="an">Visor d'imachens</name>
+  <name xml:lang="am">የምስል ተመልካች</name>
+  <name xml:lang="af">Beeldvertoner</name>
+  <name xml:lang="ab">Асахьа ахәаԥшра</name>
+  <summary>Browse and rotate images</summary>
+  <summary xml:lang="zu">Dlulisa amehlo bese ijikeleza isithombe</summary>
+  <summary xml:lang="zh_TW">瀏覽及更改影像的方向</summary>
+  <summary xml:lang="zh_HK">瀏覽及更改影像的方向</summary>
+  <summary xml:lang="zh_CN">浏览及旋转图像</summary>
+  <summary xml:lang="xh">Funda nje kwaye ujikajike umifanekiso</summary>
+  <summary xml:lang="vi">Duyệt và xoay ảnh</summary>
+  <summary xml:lang="uz@cyrillic">Расмни кўриш ва буриш</summary>
+  <summary xml:lang="uz">Rasmni koʻrish va burish</summary>
+  <summary xml:lang="uk">Перегляд та обертання зображень</summary>
+  <summary xml:lang="ug">سۈرەتكە كۆز يۈگۈرت ۋە ئايلاندۇر</summary>
+  <summary xml:lang="ts">Lavalava na ku hundzuluxa swifaniso</summary>
+  <summary xml:lang="tr">Resimlere göz at ve döndür</summary>
+  <summary xml:lang="th">เรียกดูและหมุนรูป</summary>
+  <summary xml:lang="tg">Тамошо ва даврзании тасвирҳо</summary>
+  <summary xml:lang="te">బొమ్మలను విహరించు మరియు తిప్పు</summary>
+  <summary xml:lang="ta">பிம்பங்களை உலாவு சுழற்று</summary>
+  <summary xml:lang="sv">Bläddra och rotera bilder</summary>
+  <summary xml:lang="sr@latin">Pregledajte i okrenite slike</summary>
+  <summary xml:lang="sr">Прегледајте и окрените слике</summary>
+  <summary xml:lang="sq">Shfleto dhe rrotullo figurat</summary>
+  <summary xml:lang="sl">Brskanje in obračanje slik</summary>
+  <summary xml:lang="sk">Prehliada a otáča obrázky</summary>
+  <summary xml:lang="si">පිළිඹිබු ගවේශනය කිරීම සහ කරකැවීම</summary>
+  <summary xml:lang="ru">Просмотр и вращение изображений</summary>
+  <summary xml:lang="ro">Navighează și rotește imagini</summary>
+  <summary xml:lang="pt_BR">Navegue e gire imagens</summary>
+  <summary xml:lang="pt">Navegar e rodar imagens</summary>
+  <summary xml:lang="ps">انځورونه لټول او چورلول</summary>
+  <summary xml:lang="pl">Przeglądanie i obracanie obrazów</summary>
+  <summary xml:lang="pa">ਝਲਕ ਅਤੇ ਚਿੱਤਰ ਘੁੰਮਾਓ</summary>
+  <summary xml:lang="or">ପ୍ରତିଛବିକୁ ବ୍ରାଉଜ କରନ୍ତୁ ଏବଂ ଘୁରାନ୍ତୁ</summary>
+  <summary xml:lang="oc">Percórrer e pivotar los imatges</summary>
+  <summary xml:lang="nn">Bla gjennom og roter bilete</summary>
+  <summary xml:lang="nl">Doorblader en roteer afbeeldingen</summary>
+  <summary xml:lang="ne">छविहरू ब्राउज गर्नुहोस् र घुमाउनुहोस्</summary>
+  <summary xml:lang="nds">Billers ankieken un dreihn</summary>
+  <summary xml:lang="nb">Bla gjennom og roter bilder</summary>
+  <summary xml:lang="ms">Layar dan putar imej</summary>
+  <summary xml:lang="mr">प्रतिमाचे संचार व गोल फिरवा</summary>
+  <summary xml:lang="ml">ചിത്രങ്ങള്‍ കാണുകയും തിരിക്കുകയും ചെയ്യുക</summary>
+  <summary xml:lang="mk">Разгледај и ротирај слики</summary>
+  <summary xml:lang="mjw">Arjan kelang-kiri pen parting</summary>
+  <summary xml:lang="lv">Pārlūkot un pagriezt attēlus</summary>
+  <summary xml:lang="lt">Naršyti ir vartyti paveikslėlius</summary>
+  <summary xml:lang="ks">छांड त गुमाव फोटो</summary>
+  <summary xml:lang="ko">이미지 살펴보기 및 회전</summary>
+  <summary xml:lang="kn">ಚಿತ್ರಗಳನ್ನು ವೀಕ್ಷಿಸು ಹಾಗು ತಿರುಗಿಸು</summary>
+  <summary xml:lang="km">រកមើល និង​បង្វិល​រូបភាព</summary>
+  <summary xml:lang="kk">Суреттерді шолу және бұру</summary>
+  <summary xml:lang="ka">გამოსახულების დათვალიერება და მობრუნება</summary>
+  <summary xml:lang="ja">画像の閲覧や向きの調整をします</summary>
+  <summary xml:lang="it">Sfoglia e ruota le immagini</summary>
+  <summary xml:lang="is">Skoða og snúa myndum</summary>
+  <summary xml:lang="ie">Demonstrar e rotar images</summary>
+  <summary xml:lang="id">Ramban dan putar gambar</summary>
+  <summary xml:lang="hu">Képek böngészése és forgatása</summary>
+  <summary xml:lang="hr">Pregledajte i zakrenite slike</summary>
+  <summary xml:lang="hi">ब्रॉउज करें और घुमाएँ छवियाँ</summary>
+  <summary xml:lang="he">צפייה וסיבוב של תמונות</summary>
+  <summary xml:lang="gu">ચિત્રો શોધો અને ફેરવો</summary>
+  <summary xml:lang="gl">Ver e rotar imaxes</summary>
+  <summary xml:lang="gd">Brabhsaich is cuairtich dealbhan</summary>
+  <summary xml:lang="ga">Brabhsáil agus rothlaigh íomhánna</summary>
+  <summary xml:lang="fy">Bleaderje en draaie ôfbylingen</summary>
+  <summary xml:lang="fur">Sgarfe e zire imagjins</summary>
+  <summary xml:lang="fr">Parcourir et pivoter les images</summary>
+  <summary xml:lang="fi">Selaa ja kierrä kuvia</summary>
+  <summary xml:lang="fa">مرور و چرخاندن تصویر</summary>
+  <summary xml:lang="eu">Arakatu eta biratu irudiak</summary>
+  <summary xml:lang="et">Piltide sirvimine ja pööramine</summary>
+  <summary xml:lang="es">Examine y rote imágenes</summary>
+  <summary xml:lang="eo">Foliumi kaj turni bildojn</summary>
+  <summary xml:lang="en@shaw">𐑚𐑮𐑬𐑟 𐑯 𐑮𐑴𐑑𐑱𐑑 𐑦𐑥𐑦𐑡𐑩𐑟</summary>
+  <summary xml:lang="en_GB">Browse and rotate images</summary>
+  <summary xml:lang="en_CA">Browse and rotate images</summary>
+  <summary xml:lang="el">Περιηγηθείτε και περιστρέψτε εικόνες</summary>
+  <summary xml:lang="dz">གཟུགས་བརྙན་ཚུ་ བརྡ་འཚོལ་འབད་དེ་བསྒྱིར་</summary>
+  <summary xml:lang="de">Bilder betrachten und drehen</summary>
+  <summary xml:lang="da">Gennemse og rotér billeder</summary>
+  <summary xml:lang="cs">Procházení a otáčení obrázků</summary>
+  <summary xml:lang="ckb">بینین و سوڕانەوەی وێنە</summary>
+  <summary xml:lang="ca@valencia">Navegueu per imatges i gireu-les</summary>
+  <summary xml:lang="ca">Navegueu per imatges i gireu-les</summary>
+  <summary xml:lang="bs">Pregledaj i izvrni slike</summary>
+  <summary xml:lang="bn_IN">ছবি ব্রাউজ করুন ও ঘুরিয়ে নিন</summary>
+  <summary xml:lang="bn">ছবি ব্রাউজ করুন এবং চক্রাকারে ঘোরান</summary>
+  <summary xml:lang="bg">Преглед и завъртане на изображения</summary>
+  <summary xml:lang="be@latin">Ahladaj i pavaročvaj vyjavy</summary>
+  <summary xml:lang="be">Агляд і паварот выяў</summary>
+  <summary xml:lang="ast">Restola y voltia imáxenes</summary>
+  <summary xml:lang="as">ছবি ব্ৰাউছ কৰক আৰু ঘুৰাওক</summary>
+  <summary xml:lang="ar">تصفح و أدر الصور</summary>
+  <summary xml:lang="an">Examine y chire imachens</summary>
+  <summary xml:lang="af">Vertoon en roteer beelde</summary>
+  <description>
+    <p>
+      Image Viewer is the official image viewer for the GNOME desktop.
+      It integrates with the GTK look and feel of GNOME, and supports many image
+      formats for viewing single images or images in a collection.
+    </p>
+    <p xml:lang="vi">Trình xem ảnh là ứng dụng xem ảnh chính thức dành cho môi trường máy tính để bàn GNOME. Nó thống nhất với “xem và cảm nhận” GTK+ của GNOME, và hỗ trợ nhiều định dạng ảnh khác nhau để xem từng ảnh hay nhiều ảnh trong một bộ sưu tập.</p>
+    <p xml:lang="sr">Прегледач слика је званични прегледач слика за Гномову радну површ. Сједињује се са Гномовим ГТК+ изгледом и угођајем, и подржава многобројне записе слика за њихово појединачно или групно прегледање.</p>
+    <p xml:lang="pt_BR">O Visualizador de Imagens é o visualizador de imagens oficial para a área de trabalho do GNOME. Ele se integra com a aparência GTK do GNOME e oferece suporte a muitos formatos diferentes, podendo visualizar imagens únicas ou imagens em uma coleção.</p>
+    <p xml:lang="oc">Visualizador d’imatges es lo visionador d'imatges oficial del burèu GNOME. S'intègra a l'aspècte visual GTK+ de GNOME e pren en carga fòrça formats d'imatge per afichar d'imatges isolats o gropats dins de colleccions.</p>
+    <p xml:lang="ne">छवि दर्शक जिनोम डेस्कटपका लागि आधिकारिक छवि दर्शक हो । यसले जिनोमको जीटीके लुक र फीलसँग एकीकृत गर्दछ, र संग्रहमा एकल छविहरू वा छविहरू हेर्नका लागि धेरै छवि ढाँचाहरू समर्थन गर्दछ।</p>
+    <p xml:lang="nb">Bildevisning er det offisielle programmet for bildevisning for GNOME skrivebordet. Det er integrert med GTK+ utseende og oppførsel for GNOME og støtter mange bildeformater for isning av enkeltbilder og samlinger.</p>
+    <p xml:lang="ko">이미지 보기는 그놈 데스크톱의 공식 이미지 보기 프로그램입니다. 그놈 데스크톱의 GTK+ 룩앤필을 가지고, 여러가지 이미지 형식을 지원하고, 단일 파일이나 여러 이미지 파일의 모음을 볼 수 있습니다.</p>
+    <p xml:lang="ja">“画像ビューアー”は GNOME デスクトップの公式画像ビューアーです。GTK により見た目と操作性で GNOME と統合しています。多くの画像形式をサポートしており、単一の画像に加え画像コレクションの鑑賞にも適しています。</p>
+    <p xml:lang="it">Visualizzatore di immagini è l'applicazione ufficiale del desktop GNOME per visualizzare le immagini. Si integra visivamente e interattivamente tramite le GTK di GNOME, e supporta molti formati per la visualizzazione di immagini singole o di una raccolta.</p>
+    <p xml:lang="hr">Preglednik slika je službeni preglednik slika za GNOME rado okruženje. Integrira se s GTK izgledom GNOMA, i podržava mnogo formata slika za pregled pojedine slike ili kolekcija.</p>
+    <p xml:lang="fur">Visualizadôr di imagjins al è il visualizadôr di imagjins uficiâl pal scritori GNOME. Al è integrât cu lis GTK al stîl e al mût di fâ di GNOME e al supuarte une vore di formâts di imagjins par viodi figuris ugnulis o colezions di imagjins.</p>
+    <p xml:lang="fr">Visionneur d’images est le visionneur d’images officiel du bureau GNOME. Il s’intègre à l’aspect visuel GTK de GNOME et prend en charge de nombreux formats d’image pour afficher des images isolées ou groupées dans des collections.</p>
+    <p xml:lang="en_GB">Image Viewer is the official image viewer for the GNOME desktop. It integrates with the GTK look and feel of GNOME, and supports many image formats for viewing single images or images in a collection.</p>
+    <p xml:lang="el">Η εφαρμογή Προβολή Εικόνων είναι το επίσημο πρόγραμμα προβολής εικόνων για την επιφάνεια εργασίας του GNOME. Ενσωματώνεται με την εμφάνιση και αίσθηση GTK του GNOME και υποστηρίζει πολλές μορφές εικόνας για την προβολή μεμονωμένων εικόνων ή εικόνων σε μια συλλογή.</p>
+    <p xml:lang="da">Billedfremviser er den officielle billedfremviser på GNOME-skrivebordet. Den integrerer med GNOMEs GTK-udseende og -opførsel og understøtter mange billedformater for fremvisning af enkeltbilleder eller samlinger.</p>
+    <p xml:lang="bg">„Прегледът на изображения“ е официалното приложение за преглед на изображения в работната среда GNOME. То е интегрирано с облика за GTK+ на GNOME и поддържа разнообразни формати за преглед на изображения и галерии.</p>
+    <p>
+      Image Viewer also allows to view the images in a fullscreen slideshow mode
+      or set an image as the desktop wallpaper.
+      It reads the camera tags to automatically rotate your images in the correct
+      portrait or landscape orientation.
+    </p>
+    <p xml:lang="vi">Trình xem ảnh cũng cho phép xem các ảnh ở chế độ trình diễn toàn màn hình hay đặt một ảnh làm ảnh nền cho màn hình. Nó đọc thẻ của máy ảnh để tự động quay ảnh của bạn theo hướng đứng hay ngang cho phù hợp.</p>
+    <p xml:lang="sr">Прегледач слика такође омогућава прегледање слика у покретном приказу преко целог екрана или постављање неке слике за позадину радне површи. Чита ознаке фото-апарата да би сам окренуо ваше слике на праву страну.</p>
+    <p xml:lang="pt_BR">O Visualizador de Imagens também permite visualizar as imagens em modo de apresentação de slides em tela cheia ou definir uma imagem como papel de parede da área de trabalho. Ele lê as tags da câmera para girar automaticamente suas imagens na orientação correta de retrato ou paisagem.</p>
+    <p xml:lang="oc">Visualizador d’imatges permet tanben d'afichar los imatges dins un mòde diaporama en ecran complet o de definir un imatge coma fons d'ecran. Sap legir las balisas dels aparelhs fòto per pivotar automaticament los imatges dins la bona orientacion (retrach o païsatge).</p>
+    <p xml:lang="ne">छवि दर्शकले पूर्णस्क्रिन स्लाइडशो मोडमा छविहरू हेर्न वा डेस्कटप वालपेपरको रूपमा छवि सेट गर्न अनुमति दिन्छ। यसले क्यामेरा ट्यागहरू पढ्छ स्वचालित रूपमा तपाईंको छविहरू सही पोर्ट्रेट वा ल्यान्डस्केप अभिमुखीकरणमा घुमाउन।</p>
+    <p xml:lang="nb">Bildevisning lar deg også se på bilder i som en lysbildefremvisning i fullskjerm modus eller du kan sette et bilde som bakgrunn på skrivebordet. Det leser kameramerkelapper for å rotere bildene automatisk som portrett- eller landskapsorientering.</p>
+    <p xml:lang="ko">또한 이미지 보기는 전체 화면 슬라이드쇼 모드에서 이미지를 보여주거나 데스크톱 배경 이미지를 설정할 수 있습니다. 카메라 태그를 읽어 이미지를 바르게 표시할 수 있도록 가로 또는 세로 방향으로 자동 회전합니다.</p>
+    <p xml:lang="ja">“画像ビューアー”では、フルスクリーンでスライドショーを楽しんだり、画像をデスクトップの壁紙にしたりできます。カメラのタグを自動的に読み込んで画像の縦横の方向を正しく表示します。</p>
+    <p xml:lang="it">Visualizzatore di immagini permette anche di visualizzare le immagini in modalità diapositive a schermo intero oppure di impostare un'immagine come sfondo. Legge le etichette della fotocamera per ruotare automaticamente le immagini nel corretto orientamento verticale od orizzontale.</p>
+    <p xml:lang="hr">Preglednik slika isto tako vam dopušta pregled slika u cjelozaslonskoj prezentaciji ili postavljanje slike kao pozadine radne površine. Čita oznake kamere kako bi automatski zakrenuo vaše slike u ispravnu orijentaciju.</p>
+    <p xml:lang="fur">Visualizadôr di imagjins al permet ancje di viodi lis imagjins in modalitât diapositive a plen visôr o doprâ une imagjin come fonts dal scritori. Al lei lis etichetis de fotocjamare par voltâ in automatic lis fotos tal orientament, verticâl o orizontâl, just.</p>
+    <p xml:lang="fr">Visionneur d’images permet également d’afficher les images dans un mode diaporama en plein écran ou de définir une image comme fond d’écran. Il sait lire les balises des appareils photo pour pivoter automatiquement les images dans la bonne orientation (portrait ou paysage).</p>
+    <p xml:lang="en_GB">Image Viewer also allows to view the images in a fullscreen slideshow mode or set an image as the desktop wallpaper. It reads the camera tags to automatically rotate your images in the correct portrait or landscape orientation.</p>
+    <p xml:lang="el">Η εφαρμογή Προβολή Εικόνων επιτρέπει επίσης την προβολή των εικόνων σε λειτουργία προβολής διαφανειών πλήρους οθόνης ή τον ορισμό μιας εικόνας ως ταπετσαρίας επιφάνειας εργασίας. Διαβάζει τις ετικέτες της κάμερας για αυτόματη περιστροφή των εικόνων σας στον σωστό προσανατολισμό κατακόρυφο ή οριζόντιο.</p>
+    <p xml:lang="da">Billedfremviser giver også mulighed for at se billederne i fuldskærm i præsentationstilstand eller at vælge et billede som skrivebordstapet. Programmet læser også billedmærkater fra kameraet for derved automatisk at kunne rotere dine billeder i den korrekte portræt- eller landskabsorientering.</p>
+    <p xml:lang="bg">Също така „Прегледът на изображения“ има възможност за прожекции на цял екран и задаване на изображенията за фон на работния плот. Мета данните в изображенията от цифровите фотоапарати се използват за завъртане в подходящата посока — вертикална или хоризонтална.</p>
+  </description>
+  <url type="homepage">https://wiki.gnome.org/Apps/EyeOfGnome</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/eog/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/eog/</url>
+  <url type="translate">https://l10n.gnome.org/module/eog/</url>
+  <url type="help">https://help.gnome.org/users/eog/stable/</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://gitlab.gnome.org/GNOME/eog/raw/HEAD/data/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <update_contact>https://discourse.gnome.org/tag/eog</update_contact>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>HighContrast</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <releases>
+    <release version="45.3" date="2024-03-16">
+      <description>
+        <p>Eye of GNOME 45.2 is the latest stable version of Eye of GNOME, and contains all translation updates since release 45.2.</p>
+      </description>
+    </release>
+    <release version="45.2" date="2024-01-06"/>
+    <release version="45.1" date="2023-10-21"/>
+    <release version="45.0" date="2023-09-17"/>
+    <release version="44.3" date="2023-07-01"/>
+    <release version="44.2" date="2023-05-27"/>
+    <release version="44.1" date="2023-04-22"/>
+    <release version="44.0" date="2023-03-18"/>
+    <release version="43.2" date="2023-01-07"/>
+    <release version="43.1" date="2022-10-22"/>
+    <release version="43.0" date="2022-09-17"/>
+    <release version="42.2" date="2022-05-28"/>
+    <release version="42.1" date="2022-04-23"/>
+    <release version="42.0" date="2022-03-19"/>
+    <release version="41.1" date="2021-12-04"/>
+    <release version="41.0" date="2021-09-18"/>
+    <release version="40.3" date="2021-08-14"/>
+    <release version="40.2" date="2021-06-05"/>
+    <release version="40.1" date="2021-05-01"/>
+    <release version="40.0" date="2021-03-21"/>
+    <release version="3.38.2" date="2021-02-13"/>
+    <release version="3.38.1" date="2020-11-21"/>
+    <release version="3.38.0" date="2020-09-12"/>
+    <release version="3.36.3" date="2020-07-04"/>
+    <release version="3.36.2" date="2020-04-25"/>
+    <release version="3.36.1" date="2020-04-09"/>
+  </releases>
+  <project_group>GNOME</project_group>
+  <translation type="gettext">eog</translation>
+  <launchable type="desktop-id">org.gnome.eog.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+</component>

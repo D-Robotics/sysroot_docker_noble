@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN" "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>Canonical Ltd</vendor>
+  <vendor_url>https://ubuntu.com/advantage</vendor_url>
+  <action id="com.canonical.UbuntuAdvantage.attach">
+    <description gettext-domain="ubuntu-advantage-desktop-daemon">Attach machine to Ubuntu Pro</description>
+    <message gettext-domain="ubuntu-advantage-desktop-daemon">Authentication is required to attach this machine to Ubuntu Pro</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+  <action id="com.canonical.UbuntuAdvantage.detach">
+    <description gettext-domain="ubuntu-advantage-desktop-daemon">Detach machine from Ubuntu Pro</description>
+    <message gettext-domain="ubuntu-advantage-desktop-daemon">Authentication is required to detach this machine from Ubuntu Pro</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+  <action id="com.canonical.UbuntuAdvantage.enable-service">
+    <description gettext-domain="ubuntu-advantage-desktop-daemon">Enable Ubuntu Pro service</description>
+    <message gettext-domain="ubuntu-advantage-desktop-daemon">Authentication is required to enable an Ubuntu Pro service</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+  <action id="com.canonical.UbuntuAdvantage.disable-service">
+    <description gettext-domain="ubuntu-advantage-desktop-daemon">Disable Ubuntu Pro service</description>
+    <message gettext-domain="ubuntu-advantage-desktop-daemon">Authentication is required to disable an Ubuntu Pro service</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+  </action>
+</policyconfig>

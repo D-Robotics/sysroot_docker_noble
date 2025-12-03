@@ -1,0 +1,17 @@
+# hobot log
+
+[Unit]
+Description=Hobot log hsm
+After=hobot-log-daemon.service tee-supplicant.service
+Wants=hobot-log-daemon.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+StartLimitBurst=0
+ExecStart=/usr/bin/hobot-init-hb_hsm_log_server.sh
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=basic.target

@@ -1,0 +1,4 @@
+# This file does not contain license information. Lintian is probably
+# confused because of the name of the file. Adding the extra information
+# /usr/lib/*/cppcheck/cfg/bsd.cfg does not seem to work.
+cppcheck binary: extra-license-file

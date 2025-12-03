@@ -1,0 +1,11 @@
+pycocotools-stubs/METADATA.toml,sha256=Iwl2aI50O3p6PHNmXYAvAZ1gh_JendZvyTRiGSmePx0,78
+pycocotools-stubs/__init__.pyi,sha256=TZ8ib51uLypJicLpXSX8y3JUpsSWMrMVG1-Lf_ns5nA,191
+pycocotools-stubs/coco.pyi,sha256=bafdrU4pd15Jameng9ZjkLNipDjz4mpH38_DTHRjBKo,3152
+pycocotools-stubs/cocoeval.pyi,sha256=XPVBGrStpYseSGwCLkyAh0n-Y5H0bnJwYxElxt8-cpM,2383
+pycocotools-stubs/mask.pyi,sha256=SZ6V3xkcc2hvn9EJ483Lmwnkpnznpe3iD1xcCbSxKlU,1325
+types_pycocotools-2.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+types_pycocotools-2.0.dist-info/METADATA,sha256=YjWlOx1a9POOO7Wce47WqzMntTc_jPvy84K5fdxiu4M,1548
+types_pycocotools-2.0.dist-info/RECORD,,
+types_pycocotools-2.0.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_pycocotools-2.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+types_pycocotools-2.0.dist-info/top_level.txt,sha256=_C_c4d-K9vfXbvKBkKpYciJvX4uBBI8FAPSfHW8JGpo,18

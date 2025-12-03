@@ -1,0 +1,2 @@
+package-name-doesnt-match-sonames
+libkrb5-26t64-heimdal: package-name-doesnt-match-sonames libkrb5-26-heimdal

@@ -1,0 +1,20 @@
+# Start ota_tool for upgrading check and recovery
+
+[Unit]
+Description=Start ota_tool for upgrading check and recovery
+DefaultDependencies=no
+Before=shutdown.target reboot.target halt.target
+After=hobot-mount.service
+Wants=hobot-mount.service
+
+[Service]
+Type=oneshot
+#TODO: If there is no sleep, the watchdog may trigger.
+#The root cause is unknown and needs to be further investigated.
+ExecStartPre=/bin/sleep 1
+Environment="LD_LIBRARY_PATH=/usr/hobot/lib:$LD_LIBRARY_PATH"
+ExecStart=/usr/hobot/bin/ota_tool -b
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sysinit.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Hobot minidump
+After=hobot-mount.service hobot-loadko.service hobot-log-daemon.service
+Wants=hobot-mount.service hobot-loadko.service hobot-log-daemon.service
+ConditionKernelCommandLine=minidump_enable=1
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/hobot-minidump.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=basic.target

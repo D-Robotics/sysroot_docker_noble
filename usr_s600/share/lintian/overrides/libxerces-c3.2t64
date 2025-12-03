@@ -1,0 +1,6 @@
+libxerces-c3.2t64: package-name-doesnt-match-sonames libxerces-c-3.2
+# The xerces-3 packages install their shared libaries with weird
+# names, which confuses lintian.
+
+
+libxerces-c3.2t64: package-name-doesnt-match-sonames libxerces-c3.2

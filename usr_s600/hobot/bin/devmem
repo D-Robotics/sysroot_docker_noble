@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pname=`cat /proc/$PPID/comm`
+echo "$pname call devmem $@" > /dev/kmsg
+
+/var/busybox/devmem $@

@@ -1,0 +1,4 @@
+# the copyrights of those files are documented in d/copyright
+
+python3-reportlab: license-problem-font-adobe-copyrighted-fragment [usr/lib/python3/dist-packages/reportlab/fonts/DarkGardenMK.pfb]
+python3-reportlab: license-problem-font-adobe-copyrighted-fragment [usr/lib/python3/dist-packages/reportlab/fonts/callig15.pfb]

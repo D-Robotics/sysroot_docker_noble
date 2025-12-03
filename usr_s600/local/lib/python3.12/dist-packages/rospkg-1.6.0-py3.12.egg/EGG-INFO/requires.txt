@@ -1,0 +1,6 @@
+PyYAML
+catkin-pkg
+distro>=1.4.0
+
+[test]
+pytest

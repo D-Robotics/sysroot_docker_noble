@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>evince-psdocument</id>
+  <extends>org.gnome.Evince</extends>
+  <name>PostScript Documents</name>
+  <name xml:lang="zu">Amadokhumende we-PostScript</name>
+  <name xml:lang="zh_TW">PostScript 文件</name>
+  <name xml:lang="zh_HK">PostScript 文件</name>
+  <name xml:lang="zh_CN">PostScript 文档</name>
+  <name xml:lang="wa">Documints PostScript</name>
+  <name xml:lang="vi">Tài liệu Postscript</name>
+  <name xml:lang="uk">Документи PostScript</name>
+  <name xml:lang="ug">PostScript پۈتۈكلىرى</name>
+  <name xml:lang="tr">PostScript Belgeleri</name>
+  <name xml:lang="th">เอกสาร PostScript</name>
+  <name xml:lang="tg">Ҳуҷҷатҳои Хабари тоза</name>
+  <name xml:lang="te">పోస్ట్‍స్క్రిప్ట్ పత్రములు</name>
+  <name xml:lang="ta">பின்னுரை ஆவணங்கள்</name>
+  <name xml:lang="sv">Postscript-dokument</name>
+  <name xml:lang="sr@latin">Post skript dokumenti</name>
+  <name xml:lang="sr">Пост скрипт документи</name>
+  <name xml:lang="sq">Dokumente PostScript</name>
+  <name xml:lang="sl">Dokumenti PostScript</name>
+  <name xml:lang="sk">Dokumenty typu PostScript</name>
+  <name xml:lang="ru">Документы формата PostScript</name>
+  <name xml:lang="ro">Documente PostScript</name>
+  <name xml:lang="pt_BR">Documentos PostScript</name>
+  <name xml:lang="pt">Documentos PostScript</name>
+  <name xml:lang="ps">لاسوندونه PostScript</name>
+  <name xml:lang="pl">Dokumenty PostScript</name>
+  <name xml:lang="pa">ਪੋਸਟ-ਸਕਰਿਪਟ ਦਸਤਾਵੇਜ਼</name>
+  <name xml:lang="or">ପୋଷ୍ଟସ୍କ୍ରିପ୍ଟ ଦଲିଲ</name>
+  <name xml:lang="oc">Documents PostScript</name>
+  <name xml:lang="nn">PostScript-dokument</name>
+  <name xml:lang="nl">PostScript-documenten</name>
+  <name xml:lang="ne">पोष्टस्क्रिप्ट कागजातहरु</name>
+  <name xml:lang="nds">PostScript Dokumente</name>
+  <name xml:lang="nb">PostScript-dokumenter</name>
+  <name xml:lang="my">ပို့စ်စခရစ် မှတ်တမ်းစာအုပ်များ</name>
+  <name xml:lang="ms">Dokumen-dokumen PostScript</name>
+  <name xml:lang="mr">पोस्टस्क्रिप्ट दस्तऐवज</name>
+  <name xml:lang="mn">ПостСкрипт баримтууд</name>
+  <name xml:lang="ml">പോസ്റ്റ് സ്ക്രിപ്റ്റ് രേഖകള്‍</name>
+  <name xml:lang="mk">PostScript документи</name>
+  <name xml:lang="mjw">PostScript Documents</name>
+  <name xml:lang="mg">Tahirin-kevitra PostScript</name>
+  <name xml:lang="mai">पोस्टस्क्रिप्ट दस्ताबेज</name>
+  <name xml:lang="lv">PostScript dokumenti</name>
+  <name xml:lang="lt">PostScript dokumentai</name>
+  <name xml:lang="ku">Belgeyên PostScript</name>
+  <name xml:lang="ks">पोस्टस्क्रिप्ट कागजात</name>
+  <name xml:lang="ko">PostScript 문서</name>
+  <name xml:lang="kn">ಪೋಸ್ಟ್‌ಸ್ಕ್ರಿಪ್ಟ್ ದಸ್ತಾವೇಜುಗಳು</name>
+  <name xml:lang="km">ឯកសារ PostScript</name>
+  <name xml:lang="kk">PostScript құжаттары</name>
+  <name xml:lang="kab">Isemliyen PostScript</name>
+  <name xml:lang="ka">PostScrip დოკუმენტები</name>
+  <name xml:lang="ja">PostScript ドキュメント</name>
+  <name xml:lang="it">Documenti PostScript</name>
+  <name xml:lang="is">PostScript skjöl</name>
+  <name xml:lang="ie">Documentes PostScript</name>
+  <name xml:lang="id">Dokumen PostScript</name>
+  <name xml:lang="hu">PostScript-dokumentumok</name>
+  <name xml:lang="hr">PostScript dokumenti</name>
+  <name xml:lang="hi">पोस्टस्क्रिप्ट दस्तावेज़</name>
+  <name xml:lang="he">מסמכי PostScript</name>
+  <name xml:lang="gu">પોસ્ટસ્ક્રિપ્ટ દસ્તાવેજો</name>
+  <name xml:lang="gl">Documentos PostScript</name>
+  <name xml:lang="gd">Sgrìobhainnean PostScript</name>
+  <name xml:lang="ga">Cáipéisí PostScript</name>
+  <name xml:lang="fur">Documents PostScript</name>
+  <name xml:lang="fr">Documents PostScript</name>
+  <name xml:lang="fi">PostScript-asiakirjat</name>
+  <name xml:lang="fa">سندهای پست‌اسکریپت</name>
+  <name xml:lang="eu">PostScript dokumentuak</name>
+  <name xml:lang="et">PostScript-dokumendid</name>
+  <name xml:lang="es">Documentos PostScript</name>
+  <name xml:lang="eo">PostSkripto-dokumentoj</name>
+  <name xml:lang="en@shaw">𐑐𐑴𐑕𐑑𐑕𐑒𐑮𐑦𐑐𐑑 𐑛𐑪𐑒𐑿𐑥𐑩𐑯𐑑𐑕</name>
+  <name xml:lang="en_GB">PostScript Documents</name>
+  <name xml:lang="en_CA">PostScript Documents</name>
+  <name xml:lang="el">Έγγραφα PostScript</name>
+  <name xml:lang="dz">པོསཊི་སི་ཀིརིཔཊི་ཡིག་ཆ་ཚུ།</name>
+  <name xml:lang="de">PostScript-Dokumente</name>
+  <name xml:lang="da">PostScript-dokumenter</name>
+  <name xml:lang="cy">Dogfennau PostScript</name>
+  <name xml:lang="cs">Dokumenty PostScript</name>
+  <name xml:lang="ca@valencia">Documents PostScript</name>
+  <name xml:lang="ca">Documents PostScript</name>
+  <name xml:lang="bs">Postskript dokumenti</name>
+  <name xml:lang="br">Teulioù PostScript</name>
+  <name xml:lang="bn_IN">PostScript ডকুমেন্ট</name>
+  <name xml:lang="bn">PostScript নথি</name>
+  <name xml:lang="bg">Документи PostScript</name>
+  <name xml:lang="be@latin">Dakumenty PostScript</name>
+  <name xml:lang="be">Дакументы PostScript</name>
+  <name xml:lang="ast">Documentos PostScript</name>
+  <name xml:lang="as">PostScript দস্তাবেজসমূহ</name>
+  <name xml:lang="ar">مستندات PostScript</name>
+  <name xml:lang="an">Documents PostScript</name>
+  <name xml:lang="af">PostScript-dokument</name>
+  <summary>Adds support for reading PostScript documents</summary>
+  <summary xml:lang="zh_TW">加入讀取 PostScript 文件的支援</summary>
+  <summary xml:lang="zh_HK">加入讀取 PostScript 文件的支援</summary>
+  <summary xml:lang="zh_CN">增加支持阅读 PostScript 文档的功能</summary>
+  <summary xml:lang="vi">Thêm hỗ trợ đọc các tài liệu dạng PostScript</summary>
+  <summary xml:lang="uk">Додає підтримування читання документів PostScript</summary>
+  <summary xml:lang="tr">PostScript belgelerini görüntüleme desteği ekler</summary>
+  <summary xml:lang="th">เพิ่มการรองรับการอ่านเอกสารโพสต์สคริปต์</summary>
+  <summary xml:lang="tg">Барои хониши ҳуҷҷатҳои PostScript дастгириро илова мекунад</summary>
+  <summary xml:lang="te">పోస్ట్‌స్క్రిప్ట్ పత్రములు చదువుటకు తోడ్పాటు జతచేయును</summary>
+  <summary xml:lang="ta">PostScript ஆவணங்களைப் படிப்பதற்கான ஆதரவைச் சேர்க்கிறது</summary>
+  <summary xml:lang="sv">Lägger till stöd för att läsa Postscript-dokument</summary>
+  <summary xml:lang="sr@latin">Dodajte podršku za čitanje Post skript dokumenata</summary>
+  <summary xml:lang="sr">Додајте подршку за читање Пост скрипт докумената</summary>
+  <summary xml:lang="sl">Doda podporo za branje datotek PostScript</summary>
+  <summary xml:lang="sk">Pridá podporu na čítanie dokumentov typu PostScript</summary>
+  <summary xml:lang="ru">Добавляет поддержку для чтения документов в формате PostScript</summary>
+  <summary xml:lang="ro">Adaugă suport pentru citirea documentelor PostScript</summary>
+  <summary xml:lang="pt_BR">Adiciona suporte para leitura de documentos PostScript</summary>
+  <summary xml:lang="pt">Adiciona suporte para ler documentos PostScript</summary>
+  <summary xml:lang="pl">Dodaje obsługę dokumentów w formacie PostScript</summary>
+  <summary xml:lang="pa">ਪੋਸਟਸਕ੍ਰਿਪਟ ਦਸਤਾਵੇਜ਼ ਪੜ੍ਹਨ ਲਈ ਸਹਾਇਤਾ ਜੋੜਦੀ ਹੈ</summary>
+  <summary xml:lang="oc">Apond la presa en carga de la lectura dels documents PostScript</summary>
+  <summary xml:lang="nl">Voegt ondersteuning toe voor het lezen van PostScript-documenten</summary>
+  <summary xml:lang="ne">PostScript कागजात पढ्न समर्थन थप्नुहोस्</summary>
+  <summary xml:lang="nb">Legger til støtte for å lese PostScript-dokumenter</summary>
+  <summary xml:lang="my">ပို့စခရစ် မှတ်တမ်းစာအုပ်များ ဖတ်ရှုစေနိုင်သည်</summary>
+  <summary xml:lang="ms">Tambah sokongan untuk pembacaan dokumen PostScript</summary>
+  <summary xml:lang="mr">PostScript दस्तऐवज वाचण्याकरिता समर्थन समाविष्ट करते</summary>
+  <summary xml:lang="lv">Pievieno atbalstu PostScript dokumentu lasīšanai</summary>
+  <summary xml:lang="lt">Prideda PostScript dokumentų palaikymą</summary>
+  <summary xml:lang="ko">PostScript 문서를 읽는 기능을 추가합니다</summary>
+  <summary xml:lang="kn">ಪೋಸ್ಟ್‌ಸ್ಕ್ರಿಪ್ಟ್ ದಸ್ತಾವೇಜುಗಳನ್ನು ಓದುವುದಕ್ಕಾಗಿ ಬೆಂಬಲವನ್ನು ಸೇರಿಸುತ್ತದೆ</summary>
+  <summary xml:lang="kk">PostScript құжаттарын оқу мүмкіндігін қосады</summary>
+  <summary xml:lang="kab">Irennu asalel i tɣuri n yisemliyen PostScript</summary>
+  <summary xml:lang="ka">PostScript დოკუმენტების კითხვის მხარდაჭერის დამატება</summary>
+  <summary xml:lang="ja">PostScript ドキュメントの読み取りサポートを追加する</summary>
+  <summary xml:lang="it">Aggiunge il supporto per la lettura dei documenti PostScript</summary>
+  <summary xml:lang="is">Bætir við stuðningi til lestrar á PostScript skjölum</summary>
+  <summary xml:lang="ie">Adjunte li subtention de leer documentes PostScript</summary>
+  <summary xml:lang="id">Menambahkan dukungan untuk membaca dokumen PostScript</summary>
+  <summary xml:lang="hu">Támogatást nyújt PostScript dokumentumok olvasásához</summary>
+  <summary xml:lang="hr">Dodaje podršku za čitanje PostScript dokumenata</summary>
+  <summary xml:lang="hi">पोस्टस्क्रिप्ट दस्तावेज़ पढ़ने के लिए समर्थन देता है</summary>
+  <summary xml:lang="he">הוספת תמיכה לקריאת מסמכי PostScript</summary>
+  <summary xml:lang="gu">PostScript દસ્તાવેજોને વાંચવા માટે આધારને ઉમેરે છે</summary>
+  <summary xml:lang="gl">Engade compatibilidade para ler documentos PostScript</summary>
+  <summary xml:lang="gd">Cuiridh seo taic gus sgrìobhainnean PostScript a leughadh ris</summary>
+  <summary xml:lang="fur">Al zonte il supuart par lei i documents PostScript</summary>
+  <summary xml:lang="fr">Ajoute la prise en charge de la lecture des documents PostScript</summary>
+  <summary xml:lang="fi">Lisää tuen PostScript-asiakirjojen lukemiselle</summary>
+  <summary xml:lang="fa">پشتیبانی از خواندن سندهای PostScript را اضافه می‌کند</summary>
+  <summary xml:lang="eu">PostScript dokumentuak irakurtzeko euskarria gehitzen du</summary>
+  <summary xml:lang="es">Añade soporte para leer documentos PostScript</summary>
+  <summary xml:lang="eo">Aldonas subtenon por legi PostScript-dokumentojn</summary>
+  <summary xml:lang="en_GB">Adds support for reading PostScript documents</summary>
+  <summary xml:lang="el">Προσθέτει υποστήριξη για την ανάγνωση εγγράφων PostScript</summary>
+  <summary xml:lang="de">Fügt Unterstützung für das Lesen von PostScript-Dokumenten hinzu</summary>
+  <summary xml:lang="da">Tilføjer understøttelse af PostScript-dokumenter</summary>
+  <summary xml:lang="cs">Přidává podporu pro čtení postskriptových dokumentů</summary>
+  <summary xml:lang="ca@valencia">Permet la lectura de documents PostScript</summary>
+  <summary xml:lang="ca">Permet la lectura de documents PostScript</summary>
+  <summary xml:lang="bs">Dodaje podršku za čitanje PostScript dokumenata</summary>
+  <summary xml:lang="bn_IN">PostScript নথিপত্র পড়ার জন্য সহায়তা যোগ করে</summary>
+  <summary xml:lang="bg">Добавя поддръжка за четене на документи PostScript</summary>
+  <summary xml:lang="be">Дадае падтрымку прагляду дакументаў у фармаце PostScript</summary>
+  <summary xml:lang="as">PostScript দস্তাবেজসমূহ পঢ়াৰ সমৰ্থন যোগ কৰিছে</summary>
+  <summary xml:lang="an">Anyade capacidat ta leyer documentos PostScript</summary>
+  <mimetypes>
+    <mimetype>application/postscript</mimetype>
+    <mimetype>application/x-bzpostscript</mimetype>
+    <mimetype>application/x-gzpostscript</mimetype>
+    <mimetype>application/x-ext-eps</mimetype>
+    <mimetype>application/x-ext-ps</mimetype>
+    <mimetype>image/x-bzeps</mimetype>
+    <mimetype>image/x-eps</mimetype>
+    <mimetype>image/x-gzeps</mimetype>
+    <mimetype>application/illustrator</mimetype>
+  </mimetypes>
+  <kudos>
+    <kudo>ModernToolkit</kudo>
+  </kudos>
+  <url type="homepage">https://wiki.gnome.org/Apps/Evince/SupportedDocumentFormats</url>
+  <metadata_license>GPL-2.0+ or GFDL-1.3-only</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <update_contact>https://discourse.gnome.org/tag/evince</update_contact>
+</component>

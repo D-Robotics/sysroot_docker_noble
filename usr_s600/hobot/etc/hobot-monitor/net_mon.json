@@ -1,0 +1,40 @@
+{
+    "name": "net_stat",
+    "cmd-list": [
+        {
+            "id": "0x1",
+            "type": "custom",
+            "name": "add_process",
+            "lib": "/usr/hobot/lib/libmon_cpu.so",
+            "symbols": "add_monitor_process"
+        },
+        {
+            "id": "0x2",
+            "type": "custom",
+            "name": "remove_process",
+            "lib": "/usr/hobot/lib/libmon_cpu.so",
+            "symbols": "remove_monitor_process"
+        },
+        {
+            "id": "0x3",
+            "type": "custom",
+            "name": "start_monitor",
+            "lib": "/usr/hobot/lib/libmon_cpu.so",
+            "symbols": "start_net_monitor"
+        },
+        {
+            "id": "0x4",
+            "type": "custom",
+            "name": "netstat",
+            "lib": "/usr/hobot/lib/libmon_cpu.so",
+            "symbols": "get_network_bandwidth"
+        },
+        {
+            "id": "0x5",
+            "type": "custom",
+            "name": "exit_monitor",
+            "lib": "/usr/hobot/lib/libmon_cpu.so",
+            "symbols": "net_monitor_exit"
+        }        
+    ]
+}

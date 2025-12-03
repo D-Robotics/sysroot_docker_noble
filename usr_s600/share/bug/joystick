@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if udevadm --version > /dev/null; then
+    for device in /dev/input/js*; do
+	udevadm info -a -n $device >&3
+    done
+fi

@@ -1,0 +1,4 @@
+# We install all Bullet libraries into one binary package and no longer into
+# separate ones.
+package-name-doesnt-match-sonames
+libbullet3.24t64: package-name-doesnt-match-sonames libbullet3.24

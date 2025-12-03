@@ -1,0 +1,15 @@
+[Unit]
+Description=Hobot app init
+DefaultDependencies=no
+Before=shutdown.target
+Conflicts=shutdown.target
+After=hobot-mount.service hobot-loadko.service hobot-defaultip.service tee-supplicant.service
+Wants=hobot-mount.service hobot-loadko.service hobot-otatool.service hobot-defaultip.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hobot-appinit.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sysinit.target

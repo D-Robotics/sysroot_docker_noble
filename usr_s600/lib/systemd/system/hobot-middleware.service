@@ -1,0 +1,15 @@
+[Unit]
+Description=Hobot middleware init
+DefaultDependencies=no
+Before=shutdown.target
+Conflicts=shutdown.target
+After=hobot-mount.service hobot-loadko.service hobot-otatool.service hobot-defaultip.service
+Wants=hobot-mount.service hobot-loadko.service hobot-otatool.service hobot-defaultip.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hobot-middleware.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sysinit.target

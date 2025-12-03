@@ -1,0 +1,17 @@
+# hobot hbst
+
+[Unit]
+Description=Hobot secure storage server
+After=tee-supplicant.service hobot-mount.service
+Wants=tee-supplicant.service hobot-mount.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+StartLimitBurst=0
+ExecStart=/usr/bin/hobot-init-hb_st_server.sh
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=multi-user.target

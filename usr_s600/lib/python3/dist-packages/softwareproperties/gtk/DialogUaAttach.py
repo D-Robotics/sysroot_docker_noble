@@ -1,0 +1,206 @@
+#
+#  Copyright (c) 2021 Canonical Ltd.
+#
+#  This program is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License as
+#  published by the Free Software Foundation; either version 2 of the
+#  License, or (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
+#  USA
+
+import os
+from gettext import gettext as _
+import gi
+gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk,GLib,Gio
+from softwareproperties.gtk.utils import setup_ui
+from uaclient.api.u.pro.attach.magic.initiate.v1 import initiate
+from uaclient.api.u.pro.attach.magic.wait.v1 import MagicAttachWaitOptions, wait
+from uaclient.exceptions import MagicAttachTokenError
+
+class DialogUaAttach:
+    def __init__(self, parent, datadir, ua_object):
+        """setup up the gtk dialog"""
+        setup_ui(self, os.path.join(datadir, "gtkbuilder", "dialog-ua-attach.ui"), domain="software-properties")
+
+        self.ua_object = ua_object
+        self.dialog = self.dialog_ua_attach
+        self.dialog.set_transient_for(parent)
+
+        self.contract_token = None
+        self.attaching = False
+        self.poll = None
+        self.pin = ""
+
+        self.net_monitor = Gio.network_monitor_get_default()
+        self.net_monitor.connect("network-changed", self.net_status_changed, 0)
+        self.net_status_changed(
+            self.net_monitor, self.net_monitor.get_network_available(), 1
+        )
+
+    def run(self):
+        self.dialog.run()
+        self.dialog.hide()
+
+    def update_state(self, case = None):
+        """
+        fail   : called by the attachment callback, and it failed.
+        success: called by the attachment callback, and it succeeded.
+        expired: called by the token polling when the token expires.
+        """
+        if self.token_radio.get_active():
+            self.confirm.set_sensitive(self.token_field.get_text() != "" and
+                                       not self.attaching)
+            icon = self.token_status_icon
+            spinner = self.token_spinner
+            status = self.token_status
+        else:
+            self.pin_label.set_text(self.pin)
+            self.confirm.set_sensitive(self.contract_token != None and
+                                       not self.attaching)
+            icon = self.pin_status_icon
+            spinner = self.pin_spinner
+            status = self.pin_status
+
+        if self.attaching:
+            spinner.start()
+        else:
+            spinner.stop()
+
+        def lock_radio_buttons(boolean):
+            self.token_radio.set_sensitive(not boolean)
+            self.magic_radio.set_sensitive(not boolean)
+
+        lock_radio_buttons(self.attaching)
+        self.token_field.set_sensitive(not self.attaching
+                                       and self.token_radio.get_active())
+
+        # Unconditionally hide the "other radio section" icon/status.
+        # Show icon/status of the "current radio section" only if case is set.
+        self.token_status_icon.set_visible(False)
+        self.token_status.set_visible(False)
+        self.pin_status_icon.set_visible(False)
+        self.pin_status.set_visible(False)
+        if (case != None):
+            icon.set_visible(True)
+            status.set_visible(True)
+
+        if (case == "fail"):
+            status.set_markup('<span foreground="red">%s</span>' % _('Invalid token'))
+            icon.set_from_icon_name('emblem-unreadable', 1)
+            status.get_accessible().emit("notification", _('Invalid token'), 0)
+        elif (case == "success"):
+            self.finish()
+        elif (case == "pin_validated"):
+            status.set_markup('<span foreground="green">%s</span>' % _('Valid token'))
+            icon.set_from_icon_name('emblem-default', 1)
+            status.get_accessible().emit("notification", _('Valid token'), 0)
+            lock_radio_buttons(True)
+        elif (case == "expired"):
+            status.set_markup(_('Code expired'))
+            icon.set_from_icon_name('gtk-dialog-warning', 1)
+            status.get_accessible().emit("notification", _('Code expired'), 0)
+
+    def attach(self):
+        if self.attaching:
+            return
+
+        if self.token_radio.get_active():
+            token = self.token_field.get_text()
+        else:
+            token = self.contract_token
+
+        self.attaching = True
+        def on_reply():
+            self.attaching = False
+            self.update_state("success")
+        def on_error(error):
+            self.attaching = False
+            if self.magic_radio.get_active():
+                self.contract_token = None
+            self.update_state("fail")
+        self.ua_object.Attach(token, reply_handler=on_reply, error_handler=on_error, dbus_interface='com.canonical.UbuntuAdvantage.Manager', timeout=600)
+        self.update_state()
+
+    def on_token_typing(self, entry):
+        self.confirm.set_sensitive(self.token_field.get_text() != '')
+
+    def on_token_entry_activate(self, entry):
+        token = self.token_field.get_text()
+        if token != '':
+            self.attach()
+
+    def on_confirm_clicked(self, button):
+        self.attach()
+
+    def on_cancel_clicked(self, button):
+        if self.poll:
+            GLib.Thread.unref(self.poll)
+        self.dialog.response(Gtk.ResponseType.CANCEL)
+
+    def poll_for_magic_token(self):
+        options = MagicAttachWaitOptions(magic_token=self.req_id)
+        try:
+            response = wait(options)
+            self.contract_token = response.contract_token
+            if self.magic_radio.get_active():
+                GLib.idle_add(self.update_state, "pin_validated")
+        except MagicAttachTokenError:
+            if self.magic_radio.get_active():
+                GLib.idle_add(self.update_state, "expired")
+        except Exception as e:
+            print("Error getting the Ubuntu Pro token: ", e, flush = True)
+        finally:
+            self.poll = None
+
+    def start_magic_attach(self):
+        # Already polling, don't bother the server with a new request.
+        if self.poll != None or self.contract_token != None:
+            return
+
+        # Request a magic attachment and parse relevants fields from response.
+        #  userCode:  The pin the user has to type in <ubuntu.com/pro/attach>;
+        #  token:     Identifies the request (used for polling for it).
+        try:
+            response = initiate()
+            self.pin = response.user_code
+            self.req_id = response.token
+        except Exception as e:
+            print("Error retrieving magic token: ", e)
+            return
+        self.update_state()
+        self.poll = GLib.Thread.new("poll", self.poll_for_magic_token)
+
+    def on_radio_toggled(self, button):
+        if self.magic_radio.get_active() and self.contract_token:
+            self.update_state("pin_validated")
+        else:
+            self.update_state()
+
+    def on_magic_radio_clicked(self, button):
+        self.start_magic_attach()
+
+    # Do not control the radio buttons and confirm button widgets directly,
+    # since those former are controlled by update_state and this function must
+    # be logically independent of it. Control the net_control_box'es instead.
+    def net_status_changed(self, monitor, available, first_run):
+        self.no_connection.set_visible(not available)
+        self.radio_net_control_box.set_sensitive(available)
+        self.confirm_net_control_box.set_sensitive(available)
+        if available:
+            if self.pin == "":
+                self.start_magic_attach()
+            elif self.poll == None:
+                # wait() timed out without internet; Restart polling.
+                self.poll = GLib.Thread.new("poll", self.poll_for_magic_token)
+
+    def finish(self):
+        self.dialog.response(Gtk.ResponseType.OK)

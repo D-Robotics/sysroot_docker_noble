@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 Igor Gnatenko <ignatenko@src.gnome.org> -->
+<component type="desktop">
+  <id>org.gnome.Calendar.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Calendar</name>
+  <name xml:lang="zh_TW">行事曆</name>
+  <name xml:lang="zh_HK">行事曆</name>
+  <name xml:lang="zh_CN">日历</name>
+  <name xml:lang="vi">Lịch</name>
+  <name xml:lang="uk">Календар</name>
+  <name xml:lang="tr">Takvim</name>
+  <name xml:lang="th">ปฏิทิน</name>
+  <name xml:lang="tg">Тақвим</name>
+  <name xml:lang="ta">நாள்காட்டி</name>
+  <name xml:lang="sv">Kalender</name>
+  <name xml:lang="sr@latin">Kalendar</name>
+  <name xml:lang="sr">Календар</name>
+  <name xml:lang="sl">Koledar</name>
+  <name xml:lang="sk">Kalendár</name>
+  <name xml:lang="ru">Календарь</name>
+  <name xml:lang="ro">Calendar</name>
+  <name xml:lang="pt_BR">Calendário</name>
+  <name xml:lang="pt">Calendário</name>
+  <name xml:lang="pl">Kalendarz</name>
+  <name xml:lang="pa">ਕੈਲੰਡਰ</name>
+  <name xml:lang="oc">Agenda</name>
+  <name xml:lang="nl">Agenda</name>
+  <name xml:lang="ne">पात्रो</name>
+  <name xml:lang="nb">Kalender</name>
+  <name xml:lang="my">ပြက္ခဒိန်</name>
+  <name xml:lang="ms">Kalendar</name>
+  <name xml:lang="ml">കലണ്ടർ</name>
+  <name xml:lang="mjw">Calendar</name>
+  <name xml:lang="lv">Kalendārs</name>
+  <name xml:lang="lt">Kalendorius</name>
+  <name xml:lang="ko">달력</name>
+  <name xml:lang="kk">Күнтізбе</name>
+  <name xml:lang="kab">Awitay</name>
+  <name xml:lang="ka">კალენდარი</name>
+  <name xml:lang="ja">カレンダー</name>
+  <name xml:lang="it">Calendario</name>
+  <name xml:lang="is">Dagatal</name>
+  <name xml:lang="id">Kalender</name>
+  <name xml:lang="hu">Naptár</name>
+  <name xml:lang="hr">Kalendar</name>
+  <name xml:lang="hi">पंचांग</name>
+  <name xml:lang="he">לוח שנה</name>
+  <name xml:lang="gl">Calendario</name>
+  <name xml:lang="gd">Am mìosachan</name>
+  <name xml:lang="ga">Féilire</name>
+  <name xml:lang="fy">Kalinder</name>
+  <name xml:lang="fur">Calendari</name>
+  <name xml:lang="fr">Agenda</name>
+  <name xml:lang="fi">Kalenteri</name>
+  <name xml:lang="fa">تقویم</name>
+  <name xml:lang="eu">Egutegia</name>
+  <name xml:lang="et">Kalender</name>
+  <name xml:lang="es">Calendario</name>
+  <name xml:lang="eo">Kalendaro</name>
+  <name xml:lang="en_GB">Calendar</name>
+  <name xml:lang="el">Ημερολόγιο</name>
+  <name xml:lang="de">Kalender</name>
+  <name xml:lang="da">Kalender</name>
+  <name xml:lang="cs">Kalendář</name>
+  <name xml:lang="ckb">ڕۆژژمێر</name>
+  <name xml:lang="ca@valencia">Calendari</name>
+  <name xml:lang="ca">Calendari</name>
+  <name xml:lang="bs">Kalendar</name>
+  <name xml:lang="bg">Календар</name>
+  <name xml:lang="be">Каляндар</name>
+  <name xml:lang="ar">التقويم</name>
+  <name xml:lang="an">Calandario</name>
+  <name xml:lang="af">Kalender</name>
+  <summary>Manage your schedule</summary>
+  <summary xml:lang="zh_TW">管理您的行程</summary>
+  <summary xml:lang="zh_CN">管理您的日程计划</summary>
+  <summary xml:lang="uk">Керування вашим розкладом</summary>
+  <summary xml:lang="tr">Programınızı yönetin</summary>
+  <summary xml:lang="th">จัดการกำหนดการของคุณ</summary>
+  <summary xml:lang="sv">Hantera ditt schema</summary>
+  <summary xml:lang="sr@latin">Upravljajte vašim rasporedom</summary>
+  <summary xml:lang="sr">Управљајте вашим распоредом</summary>
+  <summary xml:lang="sl">Upravljanje urnika</summary>
+  <summary xml:lang="ru">Управление расписанием</summary>
+  <summary xml:lang="pt_BR">Gerencie sua agenda</summary>
+  <summary xml:lang="pl">Zarządzanie harmonogramem</summary>
+  <summary xml:lang="pa">ਆਪਣੇ ਕੈਲੰਡਰ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ</summary>
+  <summary xml:lang="oc">Gerissètz vòstres agendas</summary>
+  <summary xml:lang="nl">Beheer uw planning</summary>
+  <summary xml:lang="nb">Hold styr på livet ditt</summary>
+  <summary xml:lang="my">သင့်၏အချိန်ဇယားကို စီစဉ်နိုင်သည်</summary>
+  <summary xml:lang="lv">Pārvaldiet savu grafiku</summary>
+  <summary xml:lang="lt">Tvarkykite savo dienotvarkę</summary>
+  <summary xml:lang="ko">달력을 관리합니다</summary>
+  <summary xml:lang="kk">Жоспарыңызды басқарыңыз</summary>
+  <summary xml:lang="kab">Sefrek asɣiwes-ik</summary>
+  <summary xml:lang="ka">მართეთ თქვენი განრიგი</summary>
+  <summary xml:lang="id">Kelola skedul Anda</summary>
+  <summary xml:lang="hu">Kezelje az időbeosztását</summary>
+  <summary xml:lang="he">ניהול הלו״ז שלך</summary>
+  <summary xml:lang="gl">Xestionar os seus calendarios</summary>
+  <summary xml:lang="gd">Stiùirich an sgeideal agad</summary>
+  <summary xml:lang="fur">Ministre la tô programazion</summary>
+  <summary xml:lang="fr">Gérer votre emploi du temps</summary>
+  <summary xml:lang="fi">Hallitse ajankäyttöäsi</summary>
+  <summary xml:lang="fa">مدیریت زمان‌بندیتان</summary>
+  <summary xml:lang="eu">Kudeatu zure programazioa</summary>
+  <summary xml:lang="es">Gestionar sus programación</summary>
+  <summary xml:lang="en_GB">Manage your schedule</summary>
+  <summary xml:lang="de">Verwalten Sie Ihre Termine</summary>
+  <summary xml:lang="da">Håndtér din tidsplan</summary>
+  <summary xml:lang="cs">Spravovat svůj rozvrh</summary>
+  <summary xml:lang="ca">Gestiona la planificació</summary>
+  <summary xml:lang="be">Кіраванне раскладам</summary>
+  <description>
+    <p>
+      GNOME Calendar is an elegant tool to help you plan and stay on top of your schedule for
+      upcoming days and weeks, whether your months are filled with meetings and appointments,
+      public events, travel logistics, or other commitments in your life.
+    </p>
+    <p xml:lang="zh_TW">GNOME 行事曆是一個優雅的工具，可以協助您計劃並掌握未來幾天和幾週的行程安排，無論您這個月安排了會議和約會、公開活動、旅行安排還是生活中的其他承諾。</p>
+    <p xml:lang="zh_CN">GNOME 日历是一个帮助您计划并对未来几天和几周的日程安排保持关注的优雅工具，无论您的月份里是否填满了会面预约、公共事件、旅行规划或您生活中的其它义务。</p>
+    <p xml:lang="uk">«Календар GNOME» є елегантним інструментом, який допоможе вам планувати і керуватися вашим розкладом протягом наступних днів і тижнів, які заповнено засіданнями та зустрічами, громадськими подіями, подорожами або іншими подіями вашого життя.</p>
+    <p xml:lang="tr">GNOME Takvim; aylarınız toplantı, randevu, etkinlik, yolculuk hazırlığı ya da diğer görevlerle dolu olsun, gelecek gün ve haftaları planlamanıza ve planı izlemenize yardımcı olacak göz alıcı araçtır.</p>
+    <p xml:lang="sv">GNOME Kalender är ett elegant verktyg som hjälper dig planera och hålla koll på ditt schema för kommande dagar och veckor, oavsett om dina månader är fulla med sammanträden och möten, offentliga evenemang, reselogistik eller andra åtaganden i ditt liv.</p>
+    <p xml:lang="sr@latin">Gnomov Kalendar je elegantan alat koji vam pomaže da isplanirate i rasporedite predstojeće obaveze, bilo da je mesec ispunjen sastancima, javnim događajima, putovanjima ili drugim dešavanjima.</p>
+    <p xml:lang="sr">Гномов Календар је елегантан алат који вам помаже да испланирате и распоредите предстојеће обавезе, било да је месец испуњен састанцима, јавним догађајима, путовањима или другим дешавањима.</p>
+    <p xml:lang="sl">Koledar GNOME je orodje za načrtovanje in spremljanje dogodkov v prihajajočih dneh in tednih, ne glede na to, ali so meseci polni sestankov in srečanj, javnih dogodkov, načrtov potovanj ali drugih življenjskih obveznosti.</p>
+    <p xml:lang="ru">Календарь GNOME - это элегантный инструмент, помогающий планировать и составлять расписание на ближайшие дни и недели, независимо от того, чем заняты ваши месяцы - встречами и совещаниями, общественными мероприятиями, поездками или другими жизненными обязательствами.</p>
+    <p xml:lang="pt_BR">O Calendário do GNOME é uma ferramenta elegante que ajuda você a planejar e ficar em dia com sua agenda para os próximos dias e semanas, seja por seus meses estarem cheios de reuniões e compromissos, eventos públicos, logistícas de viagem, ou outros compromissos na sua vida.</p>
+    <p xml:lang="pl">Kalendarz GNOME jest eleganckim narzędziem pomagającym w planowaniu i organizowaniu harmonogramu na nadchodzące dni i tygodnie, niezależnie czy Twój czas jest wypełniony zebraniami i spotkaniami, publicznymi wydarzeniami, podróżami albo innymi zobowiązaniami w życiu.</p>
+    <p xml:lang="pa">ਗਨੋਮ ਕੈਲੰਡਰ ਸ਼ਾਨਦਾਰ ਟੂਲ ਹੈ, ਜੋ ਕਿ ਤੁਹਾਨੂੰ ਆਉਣ ਵਾਲੇ ਦਿਨ ਅਤੇ ਹਫ਼ਤਿਆਂ ਲਈ ਤੁਹਾਡੇ ਸੈਡਿਊਲ ਦੇ ਪਲਾਨ ਕਰਨ ਅਤੇ ਪੂਰਾ ਕਰਨ ਲਈ ਸਹਾਇਕ ਹੈ, ਭਾਵੇਂ ਕਿ ਤੁਹਾਡੇ ਮਹੀਨੇ ਮੀਟਿੰਗਾਂ ਅਤੇ ਮੁਲਾਕਾਤਾਂ, ਪਬਲਿਕ ਈਵੈਂਟਾਂ, ਯਾਤਰਾਵਾਂ ਜਾਂ ਤੁਹਾਡੀ ਜ਼ਿੰਦਗੀ ਤੇ ਹੋਰ ਵਾਅਦਿਆਂ ਨਾਲ ਭਰੇ ਹੋਣ।</p>
+    <p xml:lang="oc">GNOME Calendar es un esplech elegant per vos ajudar a planificar e demorar al fial de vòstres calendièrs pels jorns e setmanas venents, que vòstres meses sián garnits de reünions e rendètz-vos, eveniments publics, logisticas de viatge, o d’autres engatjaments personals.</p>
+    <p xml:lang="nl">GNOME Agenda is een elegant hulpmiddel waarmee u uw planning voor de komende dagen en weken kunt opstellen, of uw maanden nu gevuld zijn met vergaderingen en afspraken, publieke evenementen, reisplannen of andere verplichtingen in uw leven.</p>
+    <p xml:lang="nb">Uansett om hverdagen din er fylt av jobbmøter, sammenkomster, konserter, reiser eller andre ærender, gir Kalender deg en elegant måte å planlegge og holde oversikten over alt dette på.</p>
+    <p xml:lang="my">GNOMEပြက္ခဒိန်ကိရိယာသည် သင်၏အစီအစဉ်များနှင့်အချိန်ဇယားကို အလွယ်တကူစီမံနိုင်ရန် အထောက်အကူပေးနိုင်သည်။</p>
+    <p xml:lang="lv">GNOME Kalendārs ir elegants rīks, kas jums palīdz plānot savu tuvāko dienu un nedēļu grafiku; tas palīdzēs jums izsekot savām sanāksmēm, vizītēm, sabiedriskajiem pasākumiem, ceļojumu loģistikai un citiem savas dzīves notikumiem.</p>
+    <p xml:lang="lt">GNOME kalendorius yra įrankis, padedantis planuoti ir valdyti savo dienotvarkę ateinančioms dienos bei savaitėms, nepriklausomai, ar jūsų mėnesiai užpildyti susitikimais ar susirinkimais, viešais renginiais, kelionėmis bei kitais gyvenimo rūpesčiais.</p>
+    <p xml:lang="ko">그놈 달력은 한 달 내내 회의, 약속, 공공 행사, 물류, 또는 기타 업무로 가득 채워져있다 하더라도, 앞으로 다가올 하루 내지는 주의 계획을 일정 우선순위로 둘 수 있게 지원하는 우아한 도구입니다.</p>
+    <p xml:lang="kk">GNOME күнтізбесі - сіздің айларыңыз жиналыстар мен кездесулерге, қоғамдық іс-шараларға, саяхаттық логистикаға немесе өміріңіздегі басқа да міндеттемелерге толы ма, алдағы күндер мен апталарға арналған кестеңіздің үстінде тұруға және жоспарлауға көмектесетін тамаша құрал.</p>
+    <p xml:lang="kab">Awitay GNOME d afecku i icebḥen aṭas ad ak-yella ad tesεiwseḍ, ad teqqimeḍ deg tqacuct n usɣwes deg wussan d yimalas i d-iteddun, ɣas akken akken ayyuren ččuren d timliliyin d yisihar, n tedyanin tizayazin, d yinigen neɣ d lecɣal niḍen deg tudert-ik.</p>
+    <p xml:lang="ka">GNOME Calendar ელეგანტური ხელსაწყოა, რომ დაგეხმაროთ, დაგეგმოთ და მიჰყვეთ თქვენს გეგმას მომავალ დღეებში და კვირებში, როცა თქვენი თვეები სავსეა შეხვედრებით, საჯარო მოვლენებით, მოგზაურობს ლოჯისტიკით ან სხვა საქმით, რომლითაც დაკავებულ ბრძანდებით.</p>
+    <p xml:lang="id">Kalender GNOME adalah alat elegan untuk membantu Anda merencanakan dan tetap mengikuti jadwal Anda untuk hari-hari dan minggu-minggu mendatang, apakah bulan Anda diisi dengan pertemuan dan janji, acara publik, logistik perjalanan, atau komitmen-komitmen lain dalam kehidupan Anda.</p>
+    <p xml:lang="hu">A GNOME Naptár egy elegáns eszköz, amely segít megtervezni és szem előtt tartani az elkövetkező napok és hetek időbeosztását, függetlenül attól, hogy a hónapok tele vannak-e megbeszélésekkel és találkozókkal, nyilvános eseményekkel, utazási logisztikával vagy egyéb kötelezettségekkel az életében.</p>
+    <p xml:lang="he">לוח השנה של GNOME הוא כלי אלגנטי המסייע לך לתכנן ולהישאר במעקב אחרי לוח הזמנים שלך בימים ובשבועות הקרובים, בין אם החודשים שלך מלאים בפגישות ובישיבות, אירועים ציבוריים, נסיעות עבודה או התחייבויות אחרות בחיים שלך.</p>
+    <p xml:lang="gl">O Calendario de GNOME é unha elegante ferramenta que lle permite planificar e manterse no seu plan para os vindeiros días e semanas, tanto se os seus meses están cheos de reunións como citas, eventos públicos, loxística de viaxes ou outros eventos na súa vida.</p>
+    <p xml:lang="fur">GNOME Calendari al è un strument elegant par judâti a planificâ e a tignî sot voli il to program pai prossims dîs e setemanis, ancje se i tiei mês a son plens di riunions, apontaments, events publics, logjistichis di viaç o altris impegns de tô vite.</p>
+    <p xml:lang="fr">L’Agenda de GNOME est un outil élégant qui vous aide à planifier et à maîtriser votre emploi du temps pour les jours et les semaines à venir, que vos mois soient remplis de réunions et de rendez-vous, d’évènements publics, de voyages ou d’autres engagements dans votre vie.</p>
+    <p xml:lang="fi">Kalenteri on hienostunut työkalu, jonka avulla pystyt hallita ajankäyttöäsi, vaikka kalenterisi olisivat täynnä tapaamisia ja tapahtumia, lomapäiviä, matkustamista tai muuta tekemistä.</p>
+    <p xml:lang="fa">تقویم گنوم ابزاری شیک برای کمک به برنامه‌ریزی و مدیریت زمانبندیتان در روزها و هفته‌های پیش روست که پر از دیدارها، قرارها، رویدادهای عمومی، برنامه‌های سفر یا دیگر مشغله‌های زندگیست.</p>
+    <p xml:lang="eu">GNOMEren Egutegia datozen egun eta asteetan dituzun zereginak eta hitzorduak antolatzeko tresna dotorea da. Bilerak eta hitzorduak, gertaera publikoak, bidaien logistika edo beste edozein zeregin antolatzeko balioko dizu.</p>
+    <p xml:lang="es">Calendario de gnome es una herramienta elegante que le ayudará a planificar y mantenerse al tanto de su agenda para los próximos días y semanas, ya sea que sus meses estén llenos de reuniones y citas, eventos públicos, logística de viajes u otros compromisos en su vida.</p>
+    <p xml:lang="en_GB">GNOME Calendar is an elegant tool to help you plan and stay on top of your schedule for upcoming days and weeks, whether your months are filled with meetings and appointments, public events, travel logistics, or other commitments in your life.</p>
+    <p xml:lang="de">GNOME Kalender ist ein elegantes Werkzeug, um den Überblick über Ihre Termine für die nächsten Tage und Wochen zu erhalten - auch wenn die Monate mit Meetings, Verabredungen, öffentlichen Veranstaltungen, Reisen oder anderen Verpflichtungen in Ihrem Leben gefüllt sind.</p>
+    <p xml:lang="da">GNOME Kalender er et elegant værktøj, der hjælper dig med at planlægge og holde styr på din kalender for de kommende dage og uger, uanset om dine måneder er fyldt med møder og aftaler, offentlige arrangementer, rejselogistik eller andre forpligtelser i dit liv.</p>
+    <p xml:lang="cs">Kalendář GNOME je elegantní nástroj, který vám pomůže naplánovat a udržet si plán na nadcházející dny a týdny, ať už jsou vaše měsíce plné schůzek a termínů, veřejných událostí, cestovní logistiky nebo jiných závazků ve vašem životě.</p>
+    <p xml:lang="ca">El Calendari del GNOME és una eina elegant per ajudar-vos a planificar i estar al dia dels propers dies i setmanes, encara que aneu plens de reunions i cites, esdeveniments públics, logística de viatges o altres compromisos vitals.</p>
+    <p xml:lang="be">Каляндар GNOME - гэта выдатны інструмент, які дапамагае планаваць і сачыць за выкананнем свайго раскладу на бліжэйшыя дні і тыдні, незалежна ад таго, чым запоўнены вашы месяцы - сустрэчамі і нарадамі, грамадскімі мерапрыемствамі, паездкамі ці іншымі планамі.</p>
+    <p>
+      Easily create and manage unlimited calendars and events with GNOME Calendar's infinite
+      scrolling month view, week timetable, and scheduling list view.
+    </p>
+    <p xml:lang="zh_TW">使用 GNOME 行事曆的無限捲動月份檢視、週時程表和行程安排列表檢視，輕鬆建立和管理無限制的日曆和事件。</p>
+    <p xml:lang="zh_CN">使用 GNOME 日历的无限滚动月份视图、周时间表和日程列表视图来容易地创建和管理无限制的日历和事件。</p>
+    <p xml:lang="uk">Без проблем створюйте необмежену кількість календарів і подій та керуйте нею за допомогою нескінченного списку перегляду місяця, розкладу тижня та панелі списку планування «Календаря GNOME».</p>
+    <p xml:lang="tr">GNOME Takvim’in sonsuz kaydırmalı ay görünümü, haftalık zaman çizelgesi ve randevu listesi görünümü ile tüm takvim ve etkinliklerinizi kolayca oluşturup yönetin.</p>
+    <p xml:lang="sv">Skapa och hantera lätt obegränsat med kalendrar och evenemang med GNOME Kalenders oändligt rullande månadsvy, veckotidtabell och listvy för schemaläggning.</p>
+    <p xml:lang="sr@latin">Sa lakoćom napravite i upravljajte neograničenim brojem kalendara i događaja uz Gnomov kalendar i njegov neprekidan mesečni pregled, sedmični raspored u vidu tabele, ili spisak zakazanih događaja.</p>
+    <p xml:lang="sr">Са лакоћом направите и управљајте неограниченим бројем календара и догађаја уз Гномов календар и његов непрекидан месечни преглед, седмични распоред у виду табеле, или списак заказаних догађаја.</p>
+    <p xml:lang="sl">Program omogoča enostavno ustvarjanje in upravljanje neomejenega števila koledarjev in dogodkov z neskončnim pomikanjem pogleda meseca, tedenskega urnika in pogleda načrtovalnega seznama.</p>
+    <p xml:lang="ru">Удобное создание и управление неограниченным количеством календарей и событий с помощью Календаря GNOME с бесконечной прокруткой в виде месяца, расписания на неделю и списка расписаний.</p>
+    <p xml:lang="pt_BR">Crie e gerencie facilmente um número ilimitado de calendários e eventos com a vista de meses com rolagem infinita do Calendário do GNOME, horários da semana, e vista de agendamentos em forma de lista.</p>
+    <p xml:lang="pl">Łatwo twórz i zarządzaj nieograniczoną liczbą kalendarzy i wydarzeń za pomocą przewijanego w nieskończoność widoku miesiąca, tygodniowego kalendarium i widoku listy do planowania.</p>
+    <p xml:lang="pa">ਗਨੋਮ ਦੇ ਬੇਅੰਤ ਹਿਲਾਉਣ ਵਾਲੇ ਮਹੀਨੇ ਝਨਲ, ਹਫ਼ਤੇਵਾਰ ਸਮਾਂ-ਸਾਰਣੀ ਜਾਂ ਸੈਡਿਊਲ ਸੂਚੀ ਝਲਕ ਨਾਲ ਬੇਅੰਤ ਕੈਲੰਡਰ ਅਤੇ ਈਵੈਂਟ ਬਣਾਓ ਅਤੇ ਇੰਤਜ਼ਾਮ ਕਰੋ।</p>
+    <p xml:lang="oc">Creatz e gerissètz facilament un nombre illimitat d’agendas e eveniments amb lo defilament infinit GNOME Calendar per mes, setmanas laboralas e amb la vista en lista de planificacion.</p>
+    <p xml:lang="nl">Maak en beheer oneindig veel agenda’s en afspraken met GNOME Agenda’s eindeloos scrollende maandoverzicht, weekoverzicht en lijstoverzicht.</p>
+    <p xml:lang="nb">Opprett så mange kalendere og hendelser du vil, og se på dem i form av en månedsoversikt, et tidsskjema eller bare en liste med hendelser.</p>
+    <p xml:lang="my">လစဉ်မြင်ကွင်း၊ အပါတ်စဉ်မြင်ကွင်းများကို အဆုံးမရှိပွတ်ဆွဲခြင်းလုပ်၍ရသော GNOMEပြက္ခဒိန်ကိရိယာတွင် အကန့်အသတ်မဲ့ပြက္ခဒိန်နှင့်အစီအစဉ်များ အလွယ်တကူဖန်တီး၍စီမံနိုင်သည်။</p>
+    <p xml:lang="lv">Viegli veidojiet un pārvaldiet neierobežotu skaitu kalendāru un notikumu ar GNOME Kalendāra bezgalīgās ritināšanas mēneša skatu, nedēļas grafiku un plānošanas saraksta skatu.</p>
+    <p xml:lang="lt">Lengvai kurkite ne valdykite neribotą kalendorių bei įvykių skaičių su GNOME kalendoriaus nesibaigiančiu slinkimu mėnesio rodinyje, savaitės tinklelyje bei planavimo sąrašo rodinyje.</p>
+    <p xml:lang="ko">그놈 달력의 무제한 스크롤 달 보기, 주 단위 시간표, 일정 목록 보기 화면으로 기념일과 행사를 무제한으로 쉽게 만들고 관리해보십시오.</p>
+    <p xml:lang="kk">GNOME Күнтізбесінің шексіз айналдыру ай көрінісі, апта кестесі және жоспарлау тізімі көрінісі бар шексіз күнтізбелер мен оқиғаларды оңай жасаңыз және басқарыңыз.</p>
+    <p xml:lang="kab">Rnu syen sefrek ayen i ak-yehwan n yiwitayen d tedyanin s wudem afessas s teskant n wayyur war tilas s uwitay n GNOME, s uwitay n yimalasen akked teskant n tebdart n usɣiwes.</p>
+    <p xml:lang="ka">ადვილად შექმენით და მართეთ განუსაზღვრელი კალენდრები და მოვლენები GNOME Calendar-ის უსაზღვროდ გადახვევადი თვის ხედით, კვირის დროის ცხრილით და გეგმის სიის ხედით.</p>
+    <p xml:lang="id">Buat dan kelola kalender dan acara tanpa batas dengan mudah menggunakan tampilan bulan yang menggulir tanpa batas, jadwal mingguan, dan tampilan daftar penjadwalan dari Kalender GNOME.</p>
+    <p xml:lang="hu">Könnyedén létrehozhat és kezelhet korlátlan számú naptárat és eseményt a GNOME Naptár végtelenül görgethető hónapnézetével, heti ütemtervével és ütemezési lista nézetével.</p>
+    <p xml:lang="he">אפשר ליצור ולנהל בקלות כמות בלתי מוגבלת של לוחות שנה ואירועים עם הגלילה האינסופית של לוח השנה של GNOME בתצוגה החודשית, בלוח הזמנים השבועי וברשימת האירועים.</p>
+    <p xml:lang="gl">Cree e xestione de forma doada calendarios e eventos ilimitados coa vista de mes de desprazamento infinito, planificación de semana e a vista de lista planificada de Calendario de GNOME.</p>
+    <p xml:lang="fur">Cree cun facilitât e gjestìs calendaris e events ilimitâts cu la viodude mensîl a scoriment infinît, la tabele temporâl setemanâl e la viodude de liste des programazions di GNOME Calendari.</p>
+    <p xml:lang="fr">Créez et gérez facilement un nombre illimité de d’agendas et d’évènements grâce au défilement infini de la vue mensuelle, de la vue hebdomadaire et de la vue de planification de l’Agenda de GNOME.</p>
+    <p xml:lang="fi">Luo ja hallitse rajoittamatonta määrää kalentereita sekä tapahtumia jatkuvan vierityksen kuukausinäkymällä, viikkoaikataululla ja luettelonäkymällä.</p>
+    <p xml:lang="fa">ایجاد و مدیریت آسان بی‌شمار تقویم و رویداد با نمای سیاهه‌ای زمان‌بندی، جدول زمانی هفتگی و نمای ماهانهٔ پایان‌ناپذیر.</p>
+    <p xml:lang="eu">Sortu eta kudeatu egutegiak eta gertaerak nahieran GNOMEren Egutegiak eskaintzen duen hilabeteen ikuspegi mugagabean, asteen araberako ordutegian zein programazioko zerrenda-ikuspegian.</p>
+    <p xml:lang="es">Cree y administre fácilmente calendarios y eventos ilimitados con la vista mensual de desplazamiento infinito, el calendario semanal y la vista de lista de programación de Calendario de GNOME.</p>
+    <p xml:lang="en_GB">Easily create and manage unlimited calendars and events with GNOME Calendar's infinite scrolling month view, week timetable, and scheduling list view.</p>
+    <p xml:lang="de">Erstellen und verwalten Sie ganz einfach unbegrenzt viele Kalender und Termine mit den unendlich fortlaufenden Monats-, Wochen- und Agenda-Ansichten.</p>
+    <p xml:lang="da">Opret og håndtér nemt et ubegrænset antal kalendere og begivenheder med GNOME-kalenderens uendeligt rullende månedsvisning, ugeplan og planlægningslistevisning.</p>
+    <p xml:lang="cs">Snadno vytvářejte a spravujte neomezené množství kalendářů a událostí pomocí nekonečného rolovacího zobrazení měsíce, týdenního rozvrhu a seznamu rozvrhů Kalendáře GNOME.</p>
+    <p xml:lang="ca">Crea i gestiona fàcilment calendaris i esdeveniments il·limitats usant el Calendari del GNOME amb la vista mensual de desplaçament infinit, l'horari setmanal i la vista de llista de planificació.</p>
+    <p xml:lang="be">Лёгка стварайце і кіруйце неабмежаванай колькасцю календароў і падзей у Календары GNOME з бясконцай прагорткай і праглядам па месяцах, тыднях, а таксама па спісе запланаваных падзей.</p>
+    <p>
+      Integrating the latest GNOME technologies and design best practices, GNOME Calendar builds on
+      top of the mature Evolution data server to manage large quantities of events and to provide
+      integration with other applications. You can add calendars from various online calendaring
+      services (like NextCloud, Google Calendar, and CalDAV / WebDAV servers), enabling you to
+      synchronize your events across multiple devices and platforms. GNOME Calendar also supports
+      local and offline calendaring, so you can use it anywhere and anytime while travelling
+      (or after civilization's collapse.)
+    </p>
+    <p xml:lang="zh_TW">GNOME 行事曆整合了最新的 GNOME 技術和設計最佳實踐，建立在成熟的 Evolution 資料伺服器之上，可以管理大量事件並提供與其他應用程式的整合。您可以從各種線上日曆服務（如 NextCloud、Google 日曆和 CalDAV/WebDAV 伺服器）添加日曆，使您能夠在多個設備和平臺上同步您的事件。GNOME 行事曆還支援本地和離線日曆，因此您可以在旅行時（或文明崩潰后）隨時隨地使用它。</p>
+    <p xml:lang="zh_CN">集成了最新的 GNOME 技术和最佳的设计实践，GNOME 日历构建于成熟的 Evolution 数据服务器之上来管理大量事件和提供与其它应用的集成。您可以从多种在线日历服务（如 NextCloud、谷歌日历和 CalDAV / WebDAV 服务器）添加日历，可使您跨多个设备和平台来同步事件。GNOME 日历同样支持本地和离线日历，所以您可以在旅行时的任何地点与任何时间使用它（或在文明崩溃之后）。</p>
+    <p xml:lang="uk">Поєднуючи найсвіжіші технології GNOME та найкращі принципи дизайну, «Календар GNOME» побудовано на основі перевіреного сервера даних Evolution, який є зручним для керування великою кількістю записів подій та інтегрує програму з іншими програмами. Ви можете додавати календарі з різних інтернет-служб ведення календарів (зокрема NextCloud, Календаря Google та серверів CalDAV / WebDAV), що надає вам змогу синхронізувати ваші записи подій між різними пристроями та платформами. Крім того, у «Календарі GNOME» передбачено підтримку локальних та автономних календарів, отже ви можете користуватися програмою будь-де і будь-коли під час подорожей (або після краху цивілізації.)</p>
+    <p xml:lang="tr">Güncel GNOME teknolojilerini ve kanıtlanmış tasarım uygulamalarını tümleştiren GNOME Takvim, büyük miktardaki etkinlikleri yönetmek ve diğer uygulamalarla tümleşimi sağlamak için Evolution veri sunucusu üzerine inşa edilmiştir. Türlü çevrim içi takvim hizmetlerinden (NextCloud, Google Takvim ve CalDAV / WebDAV sunucuları gibi) takvim ekleyebilir, etkinliklerinizi birden çok aygıt ve platform arasında eşzamanlayabilirsiniz. GNOME Takvim, yerel ve çevrim dışı takvim kullanımını da destekler, böylece yolculuk ederken (uygarlığın çöküşünden sonra bile) her yerde ve her zaman kullanabilirsiniz.</p>
+    <p xml:lang="sv">Genom att integrera den senaste GNOME-teknologin och bästa designriktlinjerna bygger GNOME Kalender på den mogna Evolution-dataservern för att hantera stora mängder händelser och tillhandahålla integration med andra program. Du kan lägga till kalendrar från olika nätkalendertjänster (som NextCloud, Google Calendar och CalDAV- / WebDAV-servrar), vilket låter dig synkronisera dina händelser över flera enheter och plattformar. GNOME Kalender stöder också lokala och frånkopplade kalendrar, så du kan använda det var som helst och närsomhelst när du reser (eller då civilisationen gått under.)</p>
+    <p xml:lang="sr@latin">Inegrišući najnovije tehnologije Gnoma i primere dobre prakse, Gnomov Kalendar koristi unapređen Evolucijin server za upravljanje velikim brojem događaja i integraciju sa drugim aplikacijama. Kalendar možete dodati iz raznih mrežnih servisa za kalendare (kao što su NextCloud, Google Kaledar, i CalDAV / WebDAV servisi), što će vam omogućiti sinhronizacije događaja na više platformi i uređaja. Gnomov Kalendar podržava rad na mreži ili van nje, tako da ga možete koristiti bilo kad i bilo gde, tokom putovanja (ili nakon kolapsa civilizacije).</p>
+    <p xml:lang="sr">Инегришући најновије технологије Гнома и примере добре праксе, Гномов Календар користи унапређен Еволуцијин сервер за управљање великим бројем догађаја и интеграцију са другим апликацијама. Календар можете додати из разних мрежних сервиса за календаре (као што су NextCloud, Google Каледар, и CalDAV / WebDAV сервиси), што ће вам омогућити синхронизације догађаја на више платформи и уређаја. Гномов Календар подржава рад на мрежи или ван ње, тако да га можете користити било кад и било где, током путовања (или након колапса цивилизације).</p>
+    <p xml:lang="sl">Koledar združuje najnovejše tehnologije, ki jih omogoča okolje GNOME, upoštevajoč zahteve kakovostno oblikovanega vmesnika in zmožnosti podatkovnega strežnika Evolution za upravljanje velikega števila dogodkov in povezljivosti z drugimi programi. Dodati je mogoče koledarje iz različnih spletnih storitev (na primer: NextCloud, Google Calendar in strežniki CalDAV / WebDAV), kar omogoča usklajevanje podatkov z različnimi napravami v različnih okoljih. Koledar GNOME podpira tudi krajevne koledarje brez povezave, zato je nepogrešljiv v vsakem trenutku (tudi po propadu civilizacije.).anslated with DeepL.com (free version)</p>
+    <p xml:lang="ru">Интегрируя новейшие технологии GNOME и лучшие практики проектирования, Календарь GNOME построен на базе зрелого сервера данных Evolution для управления большим количеством событий и интеграции с другими приложениями. Вы можете добавлять календари из различных онлайн-сервисов календарирования (таких как NextCloud, Календарь Google и CalDAV / WebDAV-серверы), что позволяет синхронизировать события на различных устройствах и платформах. Календарь GNOME также поддерживает локальный и автономный календарный учет, что позволяет использовать его в любом месте и в любое время во время путешествий (или после краха цивилизации)</p>
+    <p xml:lang="pt_BR">Integrando as mais recentes tecnologias do GNOME e as melhores praticas de project design, o Calendário do GNOME foi construído sobre o maduro servidor de dados Evolution, para gerenciar altas quantidades de eventos e fornecer integração com outros aplicativos. Você pode adicionar calendários de vários serviços online (como Nextcloud, Calendário do Google, e servidores CalDAV / WebDAV), permitindo que você sincronize seus eventos entre vários dispositivos e plataformas. O Calendário do GNOME também suporta calendários locais e offline, para que você possa acessar seus calendários em qualquer lugar e a qualquer momento enquanto viaja (ou depois do colapso da civilização.)</p>
+    <p xml:lang="pl">Integrując najnowsze technologie GNOME i najlepsze zasady projektowania, Kalendarz GNOME opiera się na dojrzałym serwerze danych Evolution, który umożliwia zarządzanie wielką liczbą wydarzeń i zapewnia integrację z innymi programami. Można dodawać kalendarze z różnych serwisów kalendarzowych online (takich jak NextCloud, Kalendarz Google i serwery CalDAV/WebDAV), co umożliwia synchronizowanie wydarzeń na wielu urządzeniach i platformach. Kalendarz GNOME obsługuje także kalendarze lokalne i offline, więc można używać go zawsze i wszędzie podczas podróżowania (albo po upadku cywilizacji).</p>
+    <p xml:lang="oc">En integrant las darrièras tecnologias GNOME e las practicas melhoras de concepcion, l'Agenda de GNOME s'apièja sul servidor de donadas Evolucion per gerir de grandas quantitats d'eveniments e assegurar l'integracion amb d'autras aplicacions. Podètz ajustar d'agendas provenenta de divèrses servicis d'agenda en linha (coma NextCloud, Google Calendar e los servidors CalDAV / WebDAV), per tal de sincronizar vòstres eveniments entre mantun aparelh e platafòrma. L'Agenda de GNOME pren egalament en carga l'agenda locala e fòra linha, çò que vos permet de l'utilizar pertot e a cada moment pendent vòstres desplaçaments (o après l'esfondrament de la civilizacion).</p>
+    <p xml:lang="nl">GNOME Agenda combineert de stabiele Evolution-gegevensserver met de laatste snufjes en ontwerpen van GNOME om grote hoeveelheden afspraken te beheren en integratie met andere toepassingen te leveren. U kunt agenda’s van verschillende online agendadiensten toevoegen (zoals NextCloud, Google Calendar en CalDAV-/WebDAV-servers), waarmee u uw afspraken kunt synchroniseren over verschillende apparaten en platformen heen. GNOME Agenda biedt ook ondersteuning voor lokale en offline agenda’s, dus u kunt het waar en wanneer u maar wilt gebruiken wanneer u reist (zelfs na de ineenstorting van de menselijke beschaving).</p>
+    <p xml:lang="nb">Med en kombinasjon av den nyeste GNOME-teknologien og den stabile Evolution-tjeneren, kan Kalender både håndtere mange hendelser samtidig og samarbeide med andre apper på systemet. Legg til og synkroniser kalendere fra nettjenester som NextCloud, Google og CalDAV, eller hold tidsplanen din lagret lokalt på enheten.</p>
+    <p xml:lang="my">အစီအစဉ်များကို အရေအတွက်များများ စီမံနိုင်ရန်နှင့် အခြားအပ္ပလီကေးရှင်းများနှင့် ချိတ်ဆက်အလုပ်လုပ်နိုင်ရန် ယုံကြည်စိတ်ချရပြီဖြစ်သော Evolution data serverကို အခြေခံ၍ GNOMEပြက္ခဒိန်ကိရိယာကို နောက်ဆုံးပေါ်GNOMEနည်းပညာများသုံးထားပြီး အကောင်းမွန်ဆုံးလုပ်ထုံးလုပ်နည်းများနှင့်အညီ ဆောက်လုပ်ထားသည်။ NextCloud, Google Calendar နှင့် CalDAV/WebDav ကဲ့သို့ အွန်လိုင်းပြက္ခဒိန်ဝန်ဆောင်မှုများမှ ပြက္ခဒိန်များတင်သွင်းနိုင်ခြင်းကြောင့် သင်၏ စက်အမျိုးအမျိုးတွင်ရှိ ပြက္ခဒိန်ကို တစ်ပြိုင်နက်ညှိနိုင်သည်။</p>
+    <p xml:lang="lv">Integrējot jaunākās GNOME tehnoloģijas un dizaina labās prakses, GNOME Kalendārs ir būvēts uz Evolution datu servera pamata, kas spēj pārvaldīt lielus notikumu apjomus un dot integrāciju ar citām lietotnēm. Jūs varat pievienot kalendārus no dažādiem tiešsaistes kalendāriem (piemēram, NextCloud, Google Calendar un CalDAV / WebDAV serveriem), kas jums ļauj sinhronizēt savus notikumus starp dažādām ierīcēm un platformām. GNOME Kalendārs atbalsta arī lokālos un tiešsaistes kalendārus, lai jūs varētu tos izmantot jebkurā vietā un laikā, kamēr ceļojat (vai arī pēc civilizācijas sabrukšanas).</p>
+    <p xml:lang="lt">Su integruotomis naujausiomis GNOME technologijomis bei geriausiomis dizaino praktikomis, GNOME kalendorius sukurtas naudojant patikimą Evolution duomenų serverį dideliam įvykių kiekiui valdyti bei pateikti integracijai su kitomis programomis. Galite pridėti kalendorius iš įvairių internetinių kalendorių tarnybų (tokių kaip NextCloud, Google Calendar bei CalDAV / WebDAV serveriai), sinchronizuoti savo įvykius keliuose įrenginiuose bei platformose. GNOME kalendorius taip pat palaiko vietinius bei kalendorius be interneto ryšio, tad galite jį naudoti visur ir bet kada keliaudami (ar po civilizacijos griūties).</p>
+    <p xml:lang="ko">최신 그놈 기술과 실제 활용 설계를 통합한 그놈 달력은 오랜 세월동안 만들어온, 방대한 양의 행사를 관리하고 다른 프로그램과의 통합 요소를 제공하는 에볼루션 데이터 서버를 기반으로 만들었습니다. 여러 장치와 플랫폼에 걸쳐 행사 내용을 동기화할 수 있는 다양한 온라인 달력 서비스의 달력(넥스트 클라우드, 구글 캘린더, CalDAV/WebDAV 서버)을 추가할 수 있습니다. 그놈 달력은 로컬 및 오프라인 달력 관리 기능도 지원하여 여행(또는 지역 사회의 붕괴 후)중에도 언제 어디서든 활용할 수 있습니다.</p>
+    <p xml:lang="kk">GNOME жобасының жаңа технологиялары мен озық тәжірибені құрастыруды интеграциялай отырып, GNOME Күнтізбесі оқиғалардың көп мөлшерін басқару және басқа қосымшалармен интеграцияны қамтамасыз ету үшін жетілген Evolution деректер серверінің үстінен құрылады. Оқиғаларды бірнеше құрылғылар мен платформалар арқылы синхрондауға мүмкіндік беретін әр түрлі онлайн күнтізбе қызметтерінен (NextCloud, Google Calendar және CalDAV / WebDAV серверлері сияқты) күнтізбелерді қосуға болады. GNOME күнтізбесі жергілікті және офлайн күнтізбені де қолдайды, сондықтан оны саяхат кезінде кез келген жерде және кез келген уақытта пайдалануға болады (немесе өркениет құлағаннан кейін.)</p>
+    <p xml:lang="kab">Asidef n tiknulujiyin akk tineggura n GNOME d usemres igerrzen n ufeṣṣel, GNOME Calendar ibennu ittsennid ɣef uqeddac n yisefka Evolution yemmden i usefrek aqettun n tesmektiwin n tedyanin akked umuddu n usilaɣ akked yisnasen niḍen. Tzemreḍ ad ternuḍ aṭas yiwitayen i d-yusan seg yiqeddacen srid yemgaraden ( am yiqeddacen n NextCloud, Google Calendar, akked CalDAV / WebDAV), ad k-ǧǧen ad temtaiḍ tidyanin-ik ɣef waṭs n yibenkan akked tɣerɣar. GNOME Calendar yessefrak daɣen awitay adigan akked wid srid, ihi tzemreḍ ad t-tesqedceḍ anida i teddiḍ, melmi i tebɣiḍ mi ara tettinigeḍ (neɣ seld mi ara teɣli tɣerma.)</p>
+    <p xml:lang="ka">შეიცავს რა GNOME-ის უკანასკნელ ტექნოლოგიებს და დიზაინის საუკეთესო ვარიანტებს, GNOME Calendar აგებულია გამოცდილი Evolution-data-server-ის თავზე, რომელსაც მოვლენების დიდი რაოდენობის დამუშავება და სხვა აპლიკაციებთან ინტეგრაცია გააჩნია. შეგიძლიათ, კალენდრები სხვადასხვა ინტერნეტ-კალენდრებიდან (მაგ: NextCloud, Google Calendar და CalDAV / WebDAV სერვერები) დაამატოთ, რაც საშუალებას მოგცემთ, თქვენი მოვლენები სხვადასხვა მოწყობილობებსა და პლატფორმებს შორი დაასინქრონოთ. GNOME Calendar-ს ასევე გააჩნია მხარდაჭერა ლოკალური და ინტერნეტის გარეშე მუშა კალენდრების, ასე რომ, მისი გამოყენება ყველგან და ყოველთვის (ან ცივილიზაციის კოლაფსის შემდეგ) შეგიძლიათ</p>
+    <p xml:lang="id">Mengintegrasikan teknologi GNOME terbaru dan praktik terbaik desain, Kalender GNOME dibangun di atas server data Evolution yang matang untuk mengelola sejumlah besar acara dan untuk menyediakan integrasi dengan aplikasi lain. Anda dapat menambahkan kalender dari berbagai layanan kalender daring (seperti NextCloud, Google Calendar, dan server CalDAV / WebDAV), memungkinkan Anda untuk menyelaraskan acara Anda di beberapa perangkat dan platform. Kalender GNOME juga mendukung kalender lokal dan luring, sehingga Anda dapat menggunakannya di mana saja dan kapan saja saat bepergian (atau setelah peradaban runtuh.)</p>
+    <p xml:lang="hu">A legújabb GNOME-technológiákat és a legjobb tervezési gyakorlatokat integráló GNOME Naptár a kiforrott Evolution adatkiszolgálóra épül, hogy nagy mennyiségű eseményt kezeljen és integrációt biztosítson más alkalmazásokkal. Hozzáadhat naptárakat különböző internetes naptárszolgáltatásokból (például NextCloud, Google Naptár és CalDAV/WebDAV-kiszolgálók), lehetővé téve az események szinkronizálását több eszközön és platformon keresztül. A GNOME Naptár támogatja a helyi és kapcsolat nélküli naptárkészítést is, így utazás közben (vagy a civilizáció összeomlása után) bárhol és bármikor használhatja.</p>
+    <p xml:lang="he">עם שילוב הטכנולוגיה ושיטת העיצוב העדכנית של GNOME, לוח השנה של GNOME נבנה על גבי שרת הנתונים המבוסס של Evolution כדי לנהל כמויות גדולות של אירועים ולספק שילוב מול יישומים אחרים. אפשר להוסיף לוחות שנה ממגון שירותי ניהול לוח שנה (כמו NextCloud,‏ Google Calendar ושרתי CalDAV / WebDAV), וכך מתאפשר לך לסנכרן את האירועים שלך ממגוון מכשירים ופלטפורמות. לוח השנה של GNOME תומך גם בניהול לוחות שונות מקומיים ומנותקים, כדי לאפשר לך להשתמש בהם בכל מקום ובכל זמן גם בעת מסעות בדרכים (או לאחר קריסת האנושות לתוך עצמה.)</p>
+    <p xml:lang="gl">Integrando as últimas tecnoloxías e as mellores prácticas de deseño de GNOME, o Calendario de GNOME construese sobre do maduro servidor de datos de Evolution para xestionar grandes cantidades de eventos e para fornecer integración con outras aplicacións. Pode engadir calendarios desde varios servizos de calendario en liña (como servidores de NextCloud, Google Calendar e CalDAV / WebDAV), permitíndolle sincronizar os seus eventos entre varios dispositivos e plataformas. O Calendario de GNOME tamén permite os calendarios locais e sen conexión, polo que pode usalos en calquera lugar e momento mentres viaxa (ou despois de que a civilización colapse).</p>
+    <p xml:lang="fur">Integrant lis ultimis tecnologjiis di GNOME e il stât de art de progjetazion, GNOME Calendari al funzione sore dal consolidât servidôr dâts di Evolution par gjestî la grande cuantitât di events e dâ a altris aplicazions la pussibilitât di integrâsi. Tu puedis zontâ calendaris di varis servizis in rêt (come NextCloud, Google Calendar e i servidôrs CalDAV / WebDAV). Chest ti permetarà di sincronizâ i tiei events su plui dispositîfs e plateformis. GNOME Calendari al supuarte ancje la gjestion dai calendaris locâi e fûr rêt, cussì tu puedis doprâju dapardut e ogni volte che tu viazis (o dopo dal colàs de civiltât).</p>
+    <p xml:lang="fr">En intégrant les dernières technologies GNOME et les meilleures pratiques de conception, l’Agenda de GNOME s’appuie sur le serveur de données Evolution pour gérer de grandes quantités d’évènements et assurer l’intégration avec d’autres applications. Vous pouvez ajouter des agendas provenant de divers services d'agenda en ligne (comme NextCloud, Google Calendar et les serveurs CalDAV / WebDAV), afin de synchroniser vos évènements entre plusieurs appareils et plates-formes. L’Agenda de GNOME prend également en charge l’agenda local et hors ligne, ce qui vous permet de l’utiliser partout et à tout moment lors de vos déplacements (ou après l’effondrement de la civilisation).</p>
+    <p xml:lang="fi">Gnomen kalenteri sisältää uusimmat Gnome-teknologiat ja -suunnitteluperiaatteet, ja se rakentuu Evolution-datapalvelimen varaan, jonka avulla on mahdollista hallita suuria määriä tapahtumia sekä integroitua muihin sovelluksiin. Voit lisätä kalentereita useista verkkokalenteripalveluista (kuten NextCloud, Google-kalenteri ja CalDAV-/WebDAV-palvelimet), ja voit synkronoida tapahtumat useiden eri laitteiden ja alustojen välillä. Kalenteri tukee myös paikallisia kalentereita sekä yhteydettömän tilan kalentereita, joten voit käyttää sovellusta myös ilman verkkoyhteyttä.</p>
+    <p xml:lang="fa">یکپارچه با جدیدترین فناوری‌ها و اصول طرّاحی گنوم،‌تقویم گنوم برای مدیریت شمار زیاد رویدادها و یکپارچگی با دیگر برنامه‌ها، روی کارساز دادهٔ آزمون پس‌دادهٔ اولوشون ساخته شده. می‌توانید تقویم‌هایی را از خدمت‌های تقویم برخط مختلف (چون نکست‌کلود، تقویم گوگل و کارسازهای CalDAV یا WebDAV) افزوده تا قادرتان سازد رویدادهایتان را میان افزاره‌ها و بن‌سازه‌های مختلف هم‌گام کنید. همچینن تقویم گنوم از تقویم‌های برخط و محلّی پشتیبانی کرده تا بتوانید در هر جایی و هر زمانی، هنگام سفر (یا فروپاشی تمدّن) از آن استفاده کنید.</p>
+    <p xml:lang="eu">GNOMEren teknologia eta diseinu berrienak erabiliz, Egutegiak aplikazioa Evolution datu-zerbitzariaren gainean eraiki da gertaeren kopuru handia kudeatzeko eta beste aplikazio batzuekin erraz integratzeko. Lineako egutegi-zerbitzu askotako egutegiak gehitu daitezke (NextXloud, Google Calendar, CalDAV / WebDAV zerbitzariak...), horrela zure gertaerak gailu eta plataforma anitzetan sinkronizatuz. GNOMEren Egutegiak aplikazioak egutegi lokalak eta lineaz kanpokoak ere onartzen ditu, edozein tokitan eta edonola erabili ditzazun.</p>
+    <p xml:lang="es">Al integrar las últimas tecnologías de GNOME y las mejores prácticas de diseño, el Calendario de GNOME se basa en el servidor de datos maduro Evolution para gestionar grandes cantidades de eventos y proporcionar integración con otras aplicaciones. Puede agregar calendarios de varios servicios de calendario en línea (como NextCloud, Google Calendar y servidores CalDAV/WebDAV), lo que le permite sincronizar sus eventos en múltiples dispositivos y plataformas. El Calendario de GNOME también admite calendarios locales y fuera de línea, por lo que puede usarlo en cualquier lugar y en cualquier momento mientras viaja (o después del colapso de la civilización).</p>
+    <p xml:lang="en_GB">Integrating the latest GNOME technologies and design best practices, GNOME Calendar builds on top of the mature Evolution data server to manage large quantities of events and to provide integration with other applications. You can add calendars from various online calendaring services (like NextCloud, Google Calendar, and CalDAV / WebDAV servers), enabling you to synchronise your events across multiple devices and platforms. GNOME Calendar also supports local and offline calendaring, so you can use it anywhere and anytime while travelling (or after civilisation's collapse).</p>
+    <p xml:lang="de">GNOME Kalender verwendet die neuesten GNOME-Technologien und Designrichtlinien und basiert auf dem ausgereiften Evolution-Datenserver, um große Mengen an Terminen zu verwalten und Integration in andere Anwendungen zu ermöglichen. Sie können Kalender von verschiedenen Online-Anbietern (wie NextCloud, Google Kalender und CalDAV-/WebDAV-Server) hinzufügen, was Ihnen die Synchronisation über mehrere Geräte und Plattformen ermöglicht. GNOME Kalender unterstützt zudem lokale und Offline-Kalender, Sie können es also jederzeit und überall auf Reisen verwenden (oder nach dem Zusammenbruch der Zivilisation).</p>
+    <p xml:lang="da">Ved at integrere de nyeste GNOME-teknologier og bedste designpraksis bygger GNOME Kalender oven på den modne Evolution-dataserver for at håndtere mange begivenheder og for at give integration med andre programmer. Du kan tilføje kalendere fra forskellige online kalendertjenester (som NextCloud, Google Kalender og CalDAV/WebDAV-servere), så du kan synkronisere dine begivenheder på tværs af flere enheder og platforme. GNOME Kalender understøtter også lokal og offline kalenderføring, så du kan bruge den hvor som helst og når som helst, mens du rejser (eller efter civilisationens kollaps).</p>
+    <p xml:lang="cs">Kalendář GNOME integruje nejnovější technologie GNOME a osvědčené postupy návrhu a staví na vyspělém datovém serveru Evolution, aby mohl spravovat velké množství událostí a poskytovat integraci s dalšími aplikacemi. Můžete přidat kalendáře z různých online kalendářových služeb (jako NextCloud, Google Calendar a servery CalDAV / WebDAV), což vám umožní synchronizovat vaše události mezi více zařízeními a platformami. Kalendář GNOME také podporuje místní a offline kalendář, takže jej můžete používat kdekoli a kdykoli na cestách (nebo po kolapsu civilizace.)</p>
+    <p xml:lang="ca">Integrant les últimes tecnologies del GNOME i les millors pràctiques de disseny, el Calendari del GNOME es basa en el madur servidor de dades de l'Evolution per gestionar grans quantitats d'esdeveniments i per proporcionar integració amb altres aplicacions. Es poden afegir calendaris de diversos serveis de calendari en línia (com ara NextCloud, Google Calendar i servidors CalDAV /WebDAV), que permeten sincronitzar els esdeveniments a través de múltiples dispositius i plataformes. El Calendari del GNOME també admet calendaris locals i fora de línia, de manera que es pot utilitzar en qualsevol lloc i en qualsevol moment mentre viatgeu (o després del col·lapse de la civilització).</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Week view</caption>
+      <caption xml:lang="zh_TW">週檢視</caption>
+      <caption xml:lang="zh_CN">周视图</caption>
+      <caption xml:lang="vi">Xem tuần</caption>
+      <caption xml:lang="uk">Перегляд тижня</caption>
+      <caption xml:lang="tr">Hafta görünümü</caption>
+      <caption xml:lang="th">มุมมองสัปดาห์</caption>
+      <caption xml:lang="sv">Veckovy</caption>
+      <caption xml:lang="sr@latin">Nedeljni pregled</caption>
+      <caption xml:lang="sr">Недељни преглед</caption>
+      <caption xml:lang="sl">Tedenski pogled</caption>
+      <caption xml:lang="sk">Prehľad týždňa</caption>
+      <caption xml:lang="ru">Просмотр недели</caption>
+      <caption xml:lang="ro">Vizualizare săptămânală</caption>
+      <caption xml:lang="pt_BR">Visão de semana</caption>
+      <caption xml:lang="pt">Visualização da semana</caption>
+      <caption xml:lang="pl">Widok tygodnia</caption>
+      <caption xml:lang="pa">ਹਫਤਾ ਝਲਕ</caption>
+      <caption xml:lang="oc">Vista setmanièra</caption>
+      <caption xml:lang="nl">Weekoverzicht</caption>
+      <caption xml:lang="ne">साप्ताहिक दृश्य</caption>
+      <caption xml:lang="nb">Ukevisning</caption>
+      <caption xml:lang="my">အပါတ်စဉ်မြင်ကွင်း</caption>
+      <caption xml:lang="ms">Pandangan minggu</caption>
+      <caption xml:lang="ml">ആഴ്ച രീതി</caption>
+      <caption xml:lang="lv">Nedēļas skats</caption>
+      <caption xml:lang="lt">Savaitės rodinys</caption>
+      <caption xml:lang="ko">주별 보기</caption>
+      <caption xml:lang="kk">Апта көрінісі</caption>
+      <caption xml:lang="kab">Taskant n dduṛt</caption>
+      <caption xml:lang="ka">კვირის ხედი</caption>
+      <caption xml:lang="ja">週表示</caption>
+      <caption xml:lang="it">Vista settimanale</caption>
+      <caption xml:lang="is">Vikusýn</caption>
+      <caption xml:lang="id">Tilikan minggu</caption>
+      <caption xml:lang="hu">Hét nézet</caption>
+      <caption xml:lang="hr">Tjedni prikaz</caption>
+      <caption xml:lang="hi">साप्ताहिक दृश्य</caption>
+      <caption xml:lang="he">תצוגה שבועית</caption>
+      <caption xml:lang="gl">Vista de semana</caption>
+      <caption xml:lang="gd">Seall seachdain</caption>
+      <caption xml:lang="fy">Wike-oersjoch</caption>
+      <caption xml:lang="fur">Viodude setemanâl</caption>
+      <caption xml:lang="fr">Vue hebdomadaire</caption>
+      <caption xml:lang="fi">Viikkonäkymä</caption>
+      <caption xml:lang="fa">نمای هفتگی</caption>
+      <caption xml:lang="eu">Asteko ikuspegia</caption>
+      <caption xml:lang="et">Nädalavaade</caption>
+      <caption xml:lang="es">Vista de semana</caption>
+      <caption xml:lang="eo">Semajna vido</caption>
+      <caption xml:lang="en_GB">Week view</caption>
+      <caption xml:lang="el">Προβολή εβδομάδας</caption>
+      <caption xml:lang="de">Wochenansicht</caption>
+      <caption xml:lang="da">Ugevisning</caption>
+      <caption xml:lang="cs">Týdenní zobrazení</caption>
+      <caption xml:lang="ckb">پێشاندانی هەفتەیی</caption>
+      <caption xml:lang="ca@valencia">Vista setmanal</caption>
+      <caption xml:lang="ca">Vista setmanal</caption>
+      <caption xml:lang="bg">Седмичен изглед</caption>
+      <caption xml:lang="be">Прагляд тыдня</caption>
+      <caption xml:lang="ar">المنظور التالي</caption>
+      <caption xml:lang="af">Week oorsig</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/calendar/calendar-week.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Month view</caption>
+      <caption xml:lang="zh_TW">月檢視</caption>
+      <caption xml:lang="zh_CN">月视图</caption>
+      <caption xml:lang="vi">Xem tháng</caption>
+      <caption xml:lang="uk">Перегляд місяця</caption>
+      <caption xml:lang="tr">Ay görünümü</caption>
+      <caption xml:lang="th">มุมมองเดือน</caption>
+      <caption xml:lang="sv">Månadsvy</caption>
+      <caption xml:lang="sr@latin">Mesečni pregled</caption>
+      <caption xml:lang="sr">Месечни преглед</caption>
+      <caption xml:lang="sl">Mesečni pogled</caption>
+      <caption xml:lang="sk">Prehľad mesiaca</caption>
+      <caption xml:lang="ru">Просмотр месяца</caption>
+      <caption xml:lang="ro">Vizualizare lunară</caption>
+      <caption xml:lang="pt_BR">Visão por mês</caption>
+      <caption xml:lang="pt">Visualização do mês</caption>
+      <caption xml:lang="pl">Widok miesiąca</caption>
+      <caption xml:lang="pa">ਮਹੀਨਾ ਝਲਕ</caption>
+      <caption xml:lang="oc">Vista mesadièra</caption>
+      <caption xml:lang="nl">Maandoverzicht</caption>
+      <caption xml:lang="ne">महिना दृश्य</caption>
+      <caption xml:lang="nb">Månedsvisning</caption>
+      <caption xml:lang="my">လစဉ်မြင်ကွင်း</caption>
+      <caption xml:lang="lv">Mēneša skats</caption>
+      <caption xml:lang="lt">Mėnėsio rodinys</caption>
+      <caption xml:lang="ko">월별 보기</caption>
+      <caption xml:lang="kk">Ай көрінісі</caption>
+      <caption xml:lang="kab">Taskant n wayyur</caption>
+      <caption xml:lang="ka">თვის ხედი</caption>
+      <caption xml:lang="it">Vista mensile</caption>
+      <caption xml:lang="is">Mánaðaryfirlit</caption>
+      <caption xml:lang="id">Tilikan bulan</caption>
+      <caption xml:lang="hu">Hónap nézet</caption>
+      <caption xml:lang="hr">Mjesečni prikaz</caption>
+      <caption xml:lang="hi">मासिक दृश्य</caption>
+      <caption xml:lang="he">תצוגה חודשית</caption>
+      <caption xml:lang="gl">Vista mensual</caption>
+      <caption xml:lang="gd">Seall mìos</caption>
+      <caption xml:lang="fur">Viodude mensîl</caption>
+      <caption xml:lang="fr">Vue mensuelle</caption>
+      <caption xml:lang="fi">Kuukausinäkymä</caption>
+      <caption xml:lang="fa">نمای ماهانه</caption>
+      <caption xml:lang="eu">Hileko ikuspegia</caption>
+      <caption xml:lang="es">Vista de mes</caption>
+      <caption xml:lang="eo">Monata vido</caption>
+      <caption xml:lang="en_GB">Month view</caption>
+      <caption xml:lang="el">Προβολή μήνα</caption>
+      <caption xml:lang="de">Monatsansicht</caption>
+      <caption xml:lang="da">Månedsvisning</caption>
+      <caption xml:lang="cs">Měsíční zobrazení</caption>
+      <caption xml:lang="ca">Vista mensual</caption>
+      <caption xml:lang="bg">Месечен изглед</caption>
+      <caption xml:lang="be">Прагляд месяца</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/calendar/calendar-month.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Event editor</caption>
+      <caption xml:lang="zh_TW">編輯行程</caption>
+      <caption xml:lang="zh_CN">事件编辑器</caption>
+      <caption xml:lang="vi">Chỉnh sửa sự kiện</caption>
+      <caption xml:lang="uk">Редактор подій</caption>
+      <caption xml:lang="tr">Olay düzenleyici</caption>
+      <caption xml:lang="th">เครื่องมือแก้ไขงานกิจกรรม</caption>
+      <caption xml:lang="sv">Händelseredigerare</caption>
+      <caption xml:lang="sr@latin">Uređivač događaja</caption>
+      <caption xml:lang="sr">Уређивач догађаја</caption>
+      <caption xml:lang="sl">Urejevalnik dogodkov</caption>
+      <caption xml:lang="sk">Editor udalostí</caption>
+      <caption xml:lang="ru">Редактор событий</caption>
+      <caption xml:lang="ro">Editor de evenimente</caption>
+      <caption xml:lang="pt_BR">Editor de eventos</caption>
+      <caption xml:lang="pt">Editor de eventos</caption>
+      <caption xml:lang="pl">Edytor wydarzenia</caption>
+      <caption xml:lang="pa">ਈਵੈਂਟ ਐਡੀਟਰ</caption>
+      <caption xml:lang="oc">Editor d’eveniment</caption>
+      <caption xml:lang="nl">Afspraakbewerker</caption>
+      <caption xml:lang="ne">घटना सम्पादक</caption>
+      <caption xml:lang="nb">Redigering av hendelse</caption>
+      <caption xml:lang="my">အစီအစဉ်အယ်ဒီတာ</caption>
+      <caption xml:lang="lv">Notikumu redaktors</caption>
+      <caption xml:lang="lt">Įvykio redaktorius</caption>
+      <caption xml:lang="ko">행사 편집기</caption>
+      <caption xml:lang="kk">Оқиға түзеткіші</caption>
+      <caption xml:lang="kab">Amaẓrag n tedyanin</caption>
+      <caption xml:lang="ka">მოვლენის რედაქტორი</caption>
+      <caption xml:lang="it">Editor evento</caption>
+      <caption xml:lang="is">Atburðaritill</caption>
+      <caption xml:lang="id">Penyunting acara</caption>
+      <caption xml:lang="hu">Eseményszerkesztő</caption>
+      <caption xml:lang="hr">Uređivač događaja</caption>
+      <caption xml:lang="hi">कार्यक्रम संशोधक</caption>
+      <caption xml:lang="he">עריכת אירוע</caption>
+      <caption xml:lang="gl">Editor de evento</caption>
+      <caption xml:lang="gd">Deasachadh tachartais</caption>
+      <caption xml:lang="fur">Editôr di events</caption>
+      <caption xml:lang="fr">Éditeur d’évènements</caption>
+      <caption xml:lang="fi">Tapahtumamuokkain</caption>
+      <caption xml:lang="fa">ویرایشگر رویداد</caption>
+      <caption xml:lang="eu">Gertaeren editorea</caption>
+      <caption xml:lang="es">Editor de eventos</caption>
+      <caption xml:lang="eo">Eventa redaktilo</caption>
+      <caption xml:lang="en_GB">Event editor</caption>
+      <caption xml:lang="el">Επεξεργαστής συμβάντων</caption>
+      <caption xml:lang="de">Termin-Editor</caption>
+      <caption xml:lang="da">Begivenhedsredigering</caption>
+      <caption xml:lang="cs">Úprava události</caption>
+      <caption xml:lang="ca">Editor de cites</caption>
+      <caption xml:lang="bg">Редактор на събития</caption>
+      <caption xml:lang="be">Рэдактар падзей</caption>
+      <image>https://static.gnome.org/appdata/gnome-43/calendar/calendar-event.png</image>
+    </screenshot>
+  </screenshots>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HiDpiIcon</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>SearchProvider</kudo>
+  </kudos>
+  <url type="homepage">https://apps.gnome.org/Calendar/</url>
+  <url type="bugtracker">https://gitlab.gnome.org/GNOME/gnome-calendar/issues</url>
+  <url type="donation">https://www.gnome.org/donate/</url>
+  <url type="vcs-browser">https://gitlab.gnome.org/GNOME/gnome-calendar</url>
+  <url type="translate">https://l10n.gnome.org/module/gnome-calendar/</url>
+  <url type="contribute">https://welcome.gnome.org/app/Calendar/</url>
+  <project_group>GNOME</project_group>
+  <developer_name>The GNOME Project</developer_name>
+  <developer_name xml:lang="zh_TW">GNOME 專案</developer_name>
+  <developer_name xml:lang="zh_CN">GNOME 项目</developer_name>
+  <developer_name xml:lang="vi">Dự án GNOME</developer_name>
+  <developer_name xml:lang="uk">Проєкт GNOME</developer_name>
+  <developer_name xml:lang="tr">GNOME Projesi</developer_name>
+  <developer_name xml:lang="th">The GNOME Project</developer_name>
+  <developer_name xml:lang="sv">GNOME-projektet</developer_name>
+  <developer_name xml:lang="sr@latin">Gnom projekat</developer_name>
+  <developer_name xml:lang="sr">Гном пројекат</developer_name>
+  <developer_name xml:lang="sl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="sk">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ru">Проект GNOME</developer_name>
+  <developer_name xml:lang="ro">Proiectul GNOME</developer_name>
+  <developer_name xml:lang="pt_BR">O Projeto GNOME</developer_name>
+  <developer_name xml:lang="pt">O projeto GNOME</developer_name>
+  <developer_name xml:lang="pl">Projekt GNOME</developer_name>
+  <developer_name xml:lang="pa">ਗਨੋਮ ਪਰੋਜੈਕਟ</developer_name>
+  <developer_name xml:lang="oc">Lo projècte GNOME</developer_name>
+  <developer_name xml:lang="nl">Het GNOME-project</developer_name>
+  <developer_name xml:lang="ne">जिनोम परियोजना</developer_name>
+  <developer_name xml:lang="nb">GNOME</developer_name>
+  <developer_name xml:lang="my">GNOME ပရောဂျက်</developer_name>
+  <developer_name xml:lang="lv">GNOME projekts</developer_name>
+  <developer_name xml:lang="lt">GNOME projektas</developer_name>
+  <developer_name xml:lang="ko">그놈 프로젝트</developer_name>
+  <developer_name xml:lang="kk">GNOME жобасы</developer_name>
+  <developer_name xml:lang="kab">Asenfar n GNOME</developer_name>
+  <developer_name xml:lang="ka">პროექტი "GNOME"</developer_name>
+  <developer_name xml:lang="it">Il progetto GNOME</developer_name>
+  <developer_name xml:lang="is">GNOME verkefnið</developer_name>
+  <developer_name xml:lang="id">Proyek GNOME</developer_name>
+  <developer_name xml:lang="hu">A GNOME projekt</developer_name>
+  <developer_name xml:lang="hr">GNOME projekt</developer_name>
+  <developer_name xml:lang="hi">दी गनोम प्रॉजेक्ट</developer_name>
+  <developer_name xml:lang="he">מיזם GNOME</developer_name>
+  <developer_name xml:lang="gl">O Proxecto GNOME</developer_name>
+  <developer_name xml:lang="gd">Pròiseact GNOME</developer_name>
+  <developer_name xml:lang="fur">Il Progjet GNOME</developer_name>
+  <developer_name xml:lang="fr">Le projet GNOME</developer_name>
+  <developer_name xml:lang="fi">Gnome-projekti</developer_name>
+  <developer_name xml:lang="fa">پروژهٔ گنوم</developer_name>
+  <developer_name xml:lang="eu">GNOME proiektua</developer_name>
+  <developer_name xml:lang="es">El Proyecto GNOME</developer_name>
+  <developer_name xml:lang="eo">La GNOME Projekto</developer_name>
+  <developer_name xml:lang="en_GB">The GNOME Project</developer_name>
+  <developer_name xml:lang="el">Έργο GNOME</developer_name>
+  <developer_name xml:lang="de">Das GNOME-Projekt</developer_name>
+  <developer_name xml:lang="da">GNOME-projektet</developer_name>
+  <developer_name xml:lang="cs">Projekt GNOME</developer_name>
+  <developer_name xml:lang="ca">El projecte GNOME</developer_name>
+  <developer_name xml:lang="bg">Проектът GNOME</developer_name>
+  <developer_name xml:lang="be">Праект GNOME</developer_name>
+  <developer_name xml:lang="ab">The GNOME Project</developer_name>
+  <developer id="org.gnome">
+    <name>The GNOME Project</name>
+  </developer>
+  <releases>
+    <release date="2024-03-18" version="46.0" type="stable">
+      <description>
+        <ul>
+          <li>Properly stop the weather service when running in Flatpak</li>
+          <li>Various timezone-related fixes</li>
+          <li>Improved visuals for the Month view</li>
+          <li>Use modern Adwaita dialogs</li>
+          <li>New and updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2023-10-23" version="45.1" type="stable"/>
+    <release date="2023-09-18" version="45.0" type="stable">
+      <description>
+        <ul>
+          <li>New month view with inifinite scrolling support</li>
+          <li>Lots of performance and stability fixes</li>
+          <li>Improved visuals for the sidebar</li>
+          <li>Use modern widgets in various places</li>
+          <li>New and updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2023-09-02" version="45~rc" type="development"/>
+    <release date="2023-08-18" version="45~beta" type="development"/>
+    <release date="2023-03-16" version="44.0" type="stable">
+      <description>
+        <ul>
+          <li>Improve sizing of event editor dialog</li>
+          <li>Fix search not working anymore</li>
+          <li>Fix sidebar not opening events</li>
+          <li>New and updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2023-03-06" version="44~rc" type="development"/>
+    <release date="2023-02-14" version="44~beta" type="development"/>
+    <release date="2022-09-03" version="43.1" type="stable"/>
+    <release date="2022-09-03" version="43.0" type="stable">
+      <description>
+        <ul>
+          <li>Navigation sidebar with weekly events</li>
+          <li>New and updated translations</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2022-09-03" version="43~rc" type="development"/>
+    <release date="2022-08-12" version="43~beta" type="development"/>
+    <release date="2022-07-09" version="43~alpha" type="development"/>
+    <release date="2022-03-18" version="42.0" type="stable">
+      <description>
+        <ul>
+          <li>Port to GTK4</li>
+          <li>Various UI tweaks</li>
+          <li>Much improved timezone handling</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2021-09-17" version="41.0" type="stable">
+      <description>
+        <p>
+          GNOME Calendar 41.0 release brings updated translations, and new event preview
+          popover, and the ability to import events from calendar files.
+        </p>
+      </description>
+    </release>
+    <release date="2021-06-03" version="40.2" type="stable">
+      <description>
+        <p>
+          GNOME Calendar 40.2 release brings updated translations, and a fix to
+          weather forecast not showing.
+        </p>
+      </description>
+    </release>
+    <release date="2021-05-11" version="40.1" type="stable">
+      <description>
+        <p>
+          GNOME Calendar 40.1 release brings stability improvements, updated translations.
+        </p>
+        <p>
+          With this release, the code to fetch the system timezone is more robust, and doesn't
+          crash if for some reason it fails to find the system timezone.
+        </p>
+        <p>
+          A couple of documented keyboard shortcuts weren't working, and with this release they
+          are functional again.
+        </p>
+        <p>
+          Thanks to the new contributors that helped with this release of GNOME Calendar!
+        </p>
+      </description>
+    </release>
+    <release date="2021-03-22" version="40.0" type="stable">
+      <description>
+        <p>
+          GNOME Calendar 40.0 release brings stability improvements, updated translations,
+          and minor visual updates.
+        </p>
+      </description>
+    </release>
+    <release date="2020-09-12" version="3.38.0" type="stable">
+      <description>
+        <p>
+          GNOME Calendar 3.38 release is here! This release brings stability
+          improvements and more security by preventing data loss when moving
+          events to other calendars.
+        </p>
+      </description>
+    </release>
+    <release date="2020-03-06" version="3.36.0" type="stable">
+      <description>
+        <p>GNOME Calendar 3.36 release is here!</p>
+        <p>
+          This is an exciting release with many improvements and new features:
+        </p>
+        <ul>
+          <li>The event editor dialog was redesigned and reimplemented</li>
+          <li>Minor tweaks to the main interface</li>
+          <li>Many improvements and fixes</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2019-09-09" version="3.34.0" type="stable">
+      <description>
+        <p>GNOME Calendar 3.34 release is here!</p>
+        <p>
+          This release comes with many improvements and new features:
+        </p>
+        <ul>
+          <li>The calendar management dialog was redesigned and reimplemented</li>
+          <li>Discovering online calendars is much more reliable</li>
+          <li>Minor tweaks to the main interface</li>
+        </ul>
+      </description>
+    </release>
+    <release date="2019-03-11" version="3.32.0" type="stable">
+      <description>
+        <p>GNOME Calendar 3.32.0 release is here!</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2018-09-03" version="3.30.0" type="stable">
+      <description>
+        <p>GNOME Calendar 3.30.0 release is here!</p>
+        <p>The major highlight of this release is the integration with GNOME's Night Light, making GNOME Calendar use the dark variant of the theme when Night Light is active.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2018-08-27" version="3.29.92" type="development">
+      <description>
+        <p>This release bring a small improvement and updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2018-07-30" version="3.29.90" type="development">
+      <description>
+        <p>This release brings small improvements, bug fixes, and updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2018-03-05" version="3.27.92" type="development">
+      <description>
+        <p>This is the release candidate version of the next big release of GNOME Calendar, and it brings a few Flatpak improvements.</p>
+        <p>This release also updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2018-02-12" version="3.27.90" type="development">
+      <description>
+        <p>This is the alpha version of the next big release of GNOME Calendar, and it brings the following new features and improvements:</p>
+        <ul>
+          <li>Big code refactorings that lead to more stability and ease of maintainership.</li>
+          <li>Follow-up improvements after rewritting the Month view.</li>
+          <li>The Flatpak Nightly builds of GNOME Calendar now have debugging and tracing enabled by default. This
+            will allow testers to report bugs with more precision.
+          </li>
+          <li>Huge memory leaks were also fixed.</li>
+        </ul>
+        <p>This release also updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-11-15" version="3.27.2" type="development">
+      <description>
+        <p>This release brings the following new features and improvements:</p>
+        <ul>
+          <li>Month view was rewritten, and received a substantial redesign.</li>
+          <li>Events were also redesigned. All-day events look different than timed events.</li>
+          <li>Improvements when adding calendars from files.</li>
+        </ul>
+        <p>This release also updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-08-11" version="3.25.90" type="development">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.25.90 release of
+          GNOME Calendar, the third release in the next (3.26) unstable series.
+        </p>
+        <p>This release brings the following new features and improvements:</p>
+        <ul>
+          <li>Add the options to add, modify and remove recurrences from events.</li>
+          <li>Improve Month view by greying out out-of-range days.</li>
+          <li>Completely move to the Meson build system. This allows building Calendar at least 3x faster.</li>
+        </ul>
+        <p>This release also updates many translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-06-19" version="3.25.3" type="development">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.25.3 release of
+          GNOME Calendar, the first release in the next (3.26) unstable series.
+          This release brings the first steps to modify and delete recurrent
+          events, as well as many bugfixes.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-04-24" version="3.25.1" type="development">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.25.1 release of
+          GNOME Calendar, the first release in the next (3.26) unstable series.
+          This release contains most of the changes that landed for 3.24.1, plus
+          a few translation changes.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-04-24" version="3.24.1" type="stable">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.24.1 release of
+          GNOME Calendar! This is a bugfix release that improves a lot the
+          performance and stability of GNOME Calendar.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-03-20" version="3.24.0" type="stable">
+      <description>
+        <p>
+          The GNOME Calendar team is proud to announce the 3.24 release of
+          GNOME Calendar! In this release, users will notice big changes,
+          with the inclusion of the new Week view, various improvements to
+          ranging from various bugfixes, improved keyboard flow for creating
+          events using the quick-add popover, cleanups and much more.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-03-16" version="3.23.92" type="development">
+      <description>
+        <p>
+          In this release, many bugs were fixed in the Week view. GNOME Calendar is
+          now freeze until the next stable release.
+        </p>
+        <p>This release also updates translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-02-28" version="3.23.91.1" type="development">
+      <description>
+        <p>
+          In this release, a couple of minor bugs were fixed. GNOME Calendar is
+          gaining stability fixes until the next stable release now.
+        </p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-02-27" version="3.23.91" type="development">
+      <description>
+        <p>
+          In this release, a couple of minor bugs were fixed. GNOME Calendar is
+          gaining stability fixes until the next stable release now.
+        </p>
+        <p>This release also updates translations, and adds new translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2017-02-14" version="3.23.90" type="development">
+      <description>
+        <p>
+          This release candidate for GNOME 3.24 adds many new features and improvements. The
+          major highlight is the new Week view, besides the many stability and bugs that
+          were fixed.
+        </p>
+        <ul>
+          <li>The new Week view is here!</li>
+          <li>GNOME Calendar now has an official Flatpak manifest</li>
+          <li>Keyboard interaction was improved</li>
+        </ul>
+        <p>
+          This release also updates translations, and adds new translations. GNOME Calendar
+          if officially supported on more then 50 languages now.
+        </p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+    <release date="2016-12-19" version="3.22.2" type="stable">
+      <description>
+        <p>
+          This is the third stable release for GNOME Calendar 3.22, and focuses on
+          bugfixes and stability issues.
+        </p>
+        <ul>
+          <li>Online calendars are now downloaded offline and synchronized</li>
+          <li>Properly draw the current month after scrolling</li>
+          <li>Add an animation on the new month chooser widget</li>
+          <li>Correctly escape strings</li>
+          <li>Plug a memory leak</li>
+        </ul>
+        <p>This release also updates translations, and adds new translations.</p>
+        <p>Thanks to all the contributors that worked on GNOME Calendar!</p>
+      </description>
+    </release>
+  </releases>
+  <update_contact>gbsneto@gnome.org</update_contact>
+  <translation type="gettext">gnome-calendar</translation>
+  <launchable type="desktop-id">org.gnome.Calendar.desktop</launchable>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <content_rating type="oars-1.1"/>
+</component>

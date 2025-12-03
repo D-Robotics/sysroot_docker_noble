@@ -1,0 +1,18 @@
+# hobot log
+
+[Unit]
+Description=Hobot log lantin
+After=hobot-log-daemon.service
+Wants=hobot-log-daemon.service
+ConditionPathExists=/dev/lantin_log
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+StartLimitBurst=0
+ExecStart=/usr/bin/hobot-log-start lantin
+TimeoutStartSec=infinity
+
+[Install]
+WantedBy=basic.target

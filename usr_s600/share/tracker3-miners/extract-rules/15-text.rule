@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-text.so
+MimeTypes=text/plain;text/markdown
+FallbackRdfTypes=nfo:Document;nfo:PlainTextDocument;
+Graph=tracker:Documents
+Hash=099925eabaa7a05a96418129b1f22e8510862c9287c4bb47522b4f150af5f62d
+

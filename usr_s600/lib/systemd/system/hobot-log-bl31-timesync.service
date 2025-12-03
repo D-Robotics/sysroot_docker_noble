@@ -1,0 +1,12 @@
+# Bl31 log timesync
+
+[Unit]
+Description=bl31 log timesync service
+After=hobot-defaultip.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hobot-bl31-log-timesync.sh
+
+[Install]
+WantedBy=basic.target

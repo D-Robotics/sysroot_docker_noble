@@ -1,0 +1,6 @@
+[ExtractorRule]
+MimeTypes=image/svg+xml;image/svg+xml-compressed;
+FallbackRdfTypes=nfo:Image;nfo:VectorImage;
+Graph=tracker:Pictures
+Hash=e6cbd7b77f2f66c1099a27cb7df130b72c734112e40d70cb93bfb80457bc39ee
+

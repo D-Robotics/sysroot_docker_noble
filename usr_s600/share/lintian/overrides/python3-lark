@@ -1,0 +1,4 @@
+# Override false positive Lintian error
+# The check looks for the string "Traceback (most recent call last):"
+# which actually shows up in an example given in the man page.
+python3-lark: python-traceback-in-manpage [usr/share/man/man7/lark.7.gz]

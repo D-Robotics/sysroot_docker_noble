@@ -1,0 +1,412 @@
+#!/bin/bash
+
+smi_version=2.0.0
+stty susp undef
+trap '' SIGINT SIGQUIT
+
+function invalid_usage_handle()
+{
+    echo "ERR: invalid usage, please refer to the help"
+    exit 1
+}
+
+function upgrade_fail_handle()
+{
+    echo "[OTA_INFO] please refer to the log file (${upgrade_log}) for more information"
+    exit 1
+}
+
+function param_check()
+{
+    if [ $param_num -gt 1 ]; then
+        hex_bus_id=$(printf "%02x" ${params[1]} 2>/dev/null)
+
+        if ! [[ ${params[1]} =~ ^[0-9]+$ ]]; then
+            echo "ERR: invalid bid format, must be a decimal number"
+            exit 1
+        fi
+
+        if [ "${params[1]}" -lt 1 ] || [ "${params[1]}" -gt 255 ]; then
+            echo "ERR: invalid bid value, must range form 1 to 255"
+            exit 1
+        fi
+    fi
+}
+
+function utils_check()
+{
+    hbpcie-utils > /dev/null
+    if [ $? -eq 127 ]; then
+        exit 1
+    fi
+}
+
+function pac_status_check()
+{
+    if [ $param_num -gt 1 ]; then
+        hex_bus_id=$(printf "%02x" ${params[1]} 2>/dev/null)
+        param_check
+        utils_check
+
+        if [ ! -e "/dev/hobot_pcie_hybrid_00_${hex_bus_id}" ]; then
+            echo "ERR: invalid bid value, please Check whether the bid corresponds to a valid device in the PAC list"
+            exit 1
+        fi
+
+        create_lock "${params[1]}"
+
+        export HOBOT_PAC_BUS_ID=${params[1]}
+        hbpcie-utils run hrut_socuid > /dev/null
+        if [ $? -ne 0 ]; then
+            hbpcie-utils run hrut_socuid
+            echo "ERR: PAC status abnormal"
+            exit 1
+        fi
+    fi
+}
+
+function check_ip() {
+    local ip_regex="^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+    for ip in "$@"; do
+        if [[ ! $ip =~ $ip_regex ]]; then
+            echo "ERR: invalid IP $ip"
+            exit 1
+        fi
+    done
+}
+
+function create_lock() {
+    lock_file="/tmp/pac_$1.lock"
+
+    exec 99>"$lock_file"
+    if flock -n 99; then
+        trap "flock -u 99; rm -f $lock_file" EXIT
+    else
+        echo "WARN: PAC($1) is busy, try later."
+        exit 1
+    fi
+}
+
+function usage()
+{
+    echo " hobot-smi version: $smi_version"
+    echo " Usage: hobot-smi command [option...]"
+    echo "  hobot-smi command:"
+    echo "      list:      show all PAC information"
+    echo "      uid:       show the uid of the PAC which specified by bid"
+    echo "                   option:     bid"
+    echo "      status:    show the hardware status of the PAC which specified by bid"
+    echo "                   option:     bid"
+    echo "      upgrade:   upgrade the PAC which is specified by bid with file ota.zip"
+    echo "                   options:    bid ota.zip [-f]"
+    echo "      version:   show hobot-smi version"
+    echo "      reset:     reset the PAC which specified by bid"
+    echo "                   option:     bid"
+    echo "      rescan:    rescan the PAC which specified by bid"
+    echo "                   option:     bid"
+    echo "      ipconfig:  configure Network card"
+    echo "                   option:     bid ip mask gateway"
+    echo "      help:      show help information"
+}
+
+function get_list()
+{
+    utils_check
+
+    echo "+----------------------------------------------------------------------------------------------------------------------+"
+    index=1
+    printf "| %-5s | %-7s | %-32s | %-45s |%-16s |\n" "index" "bid" "uid" "firmware" "IP"
+    echo "+----------------------------------------------------------------------------------------------------------------------+"
+
+    for i  in `lspci|grep 1117|awk -F ' ' '{print $1}'|awk -F ':' '{print $1}'`
+    do
+        decimal_bus_id=$(printf "%d" "0x${i}")
+        export HOBOT_PAC_BUS_ID=$decimal_bus_id
+        socuid=`hbpcie-utils run hrut_socuid|awk -F ' ' '{print $2}'` > /dev/null 2>&1
+        firmware=`hbpcie-utils run "cat /etc/version"|sed '1s/^/\t/'`> /dev/null 2>&1
+        phyip=`hbpcie-utils run "ifconfig eth0"|grep "inet addr"|awk -F ':' '{print $2}'|awk -F ' ' '{print $1}'` > /dev/null 2>&1
+        if [[ $socuid =~ ^[0-9a-fA-F]+$ ]] && [ -e /dev/hobot_pcie_hybrid_00_${i} ]; then
+            printf "| %-5s | %-7s | %-32s | %-45s |%-16s |\n" "${index}" "${decimal_bus_id}" "${socuid}" "${firmware}" "${phyip}"
+        else
+            printf "| %-5s | %-7s | %-32s | %-45s |%-16s |\n" "${index}" "${decimal_bus_id}" "*" "*" "*"
+        fi
+        echo "+----------------------------------------------------------------------------------------------------------------------+"
+        index=$(( $index + 1 ))
+    done
+}
+
+function wait_time() {
+    wait_time=$1
+    while [ $wait_time -gt 0 ]
+    do
+        if [[ $#=2 && "$2" = "ota" ]]; then
+            echo -ne "\r[OTA_INFO] please wait $(printf "%3d" $wait_time) second"
+        else
+            echo -ne "\rplease wait $(printf "%3d" $wait_time) second"
+        fi
+        sleep 1
+        ((wait_time--))
+    done
+    echo ""
+}
+
+function get_drv_rev() {
+    local hex_bid=$(printf "%02x" $1 2>/dev/null)
+    while IFS=: read -r left_col rev_col; do
+        if [[ $left_col == "$hex_bid" ]]; then
+            if [[ $rev_col =~ rev\ ([0-9]+) ]]; then
+                echo "${BASH_REMATCH[1]}"
+                return
+            fi
+            break
+        fi
+    done < /tmp/pci_${params[1]}_info.txt
+    echo 0
+}
+
+function rescan_pac()
+{
+    if [ -f /sys/bus/pci/devices/0000\:$1\:00.0/remove ]; then
+        echo 1 > /sys/bus/pci/devices/0000\:$1\:00.0/remove
+        echo 1 > /sys/bus/pci/rescan
+        echo "PAC rescan success"
+    else
+        echo "ERR: PAC rescan fail"
+    fi
+}
+
+function upgrade_pac()
+{
+    upgrade_dir=/tmp/pac_upgarde_log
+    if [ ! -d "$upgrade_dir" ]; then
+        mkdir -p ${upgrade_dir}
+    fi
+    upgrade_log=$upgrade_dir/upgarde_${params[1]}_log_$(date "+%Y%m%d%H%M%S")
+    if [ -e "$upgrade_log" ]; then
+        rm -f ${upgrade_log}
+    fi
+    touch ${upgrade_log}
+
+    lspci|grep 1117 > /tmp/pci_${params[1]}_info.txt
+    drv_rev=$(get_drv_rev ${params[1]})
+    pac_rev=$(hbpcie-utils run "cat /etc/version")
+
+    export HOBOT_PAC_BUS_ID=${params[1]}
+    hbpcie-utils put ${params[2]} /userdata/ota.zip > "${upgrade_log}"
+    if [ $? -ne 0 ]; then
+        echo "[OTA_INFO] ERR: upgrade file transfer fail"
+        upgrade_fail_handle
+    else
+        echo "[OTA_INFO] Upgrade file transfer success, begin to upgrade PAC"
+    fi
+
+    if [ $# = 0 ]; then
+        stdbuf -oL -eL hbpcie-utils run "otaupdate all /userdata/ota.zip" | tee "${upgrade_log}" |grep "OTA_INFO" &
+        count=0
+        while true; do
+            if grep -q "reboot ..." "${upgrade_log}" || [ "${count}" -gt 600 ]; then
+                kill -s SIGPIPE $(pgrep -P $$) > /dev/null 2>&1
+                break
+            elif ! ps -p $! > /dev/null; then
+                echo "[OTA_INFO] ERR: upgrade fail."
+                upgrade_fail_handle
+            fi
+            sleep 1
+            count=$((count+1))
+        done
+
+        if [ "$count" -gt 600 ]; then
+            echo "[OTA_INFO] ERR: timeout exceeded"
+            upgrade_fail_handle
+        fi
+    else
+        hbpcie-utils run "otaupdate all /userdata/ota.zip -f" &
+        sleep 10
+        kill -s SIGPIPE $(pgrep -P $$) > /dev/null 2>&1
+        echo "[OTA_INFO] otaupdate PAC in force mode"
+        wait_time 600 ota
+    fi
+
+    echo "[OTA_INFO] PAC upgrade finish, wait for PAC Start and initialize"
+    wait_time 180 ota
+    echo "[OTA_INFO] PAC initialize finish, start check PAC status"
+
+    rescan_pac $hex_bus_id > /dev/null 2>&1
+    wait_time 10 ota
+
+    lspci|grep 1117 > /tmp/pci_${params[1]}_info.txt
+    drv_rev_new=$(get_drv_rev ${params[1]})
+    if [ "$drv_rev" != "$drv_rev_new" ]; then
+        if [ $drv_rev_new -eq 0 ]; then
+            echo "[OTA_INFO] enumerate this PAC fail"
+            upgrade_fail_handle
+        else
+            echo "[OTA_INFO] PAC upgrade success"
+            echo "[OTA_INFO] WARN: please update the device driver on the server"
+        fi
+    else
+        if [ -e "/dev/hobot_pcie_hybrid_00_${hex_bus_id}" ]; then
+            pac_rev_new=$(hbpcie-utils run "cat /etc/version" 2>/dev/null)
+            if [ $? -eq 0 ]; then
+                ota_result=$(hbpcie-utils run "cat /log/ota/result" 2>/dev/null)
+                if [[ "$pac_rev_new" = "$pac_rev" && $ota_result -ne 1 ]]; then
+                    echo "[OTA_INFO] ERR: PAC upgrade fail"
+                    upgrade_fail_handle
+                else
+                    echo "[OTA_INFO] PAC upgrade success"
+                fi
+            else
+                echo "[OTA_INFO] ERR: PAC status abnormal"
+                upgrade_fail_handle
+            fi
+        else
+            echo "[OTA_INFO] ERR: PAC dev node does not exist"
+            upgrade_fail_handle
+        fi
+    fi
+}
+
+function reset_pac()
+{
+    export HOBOT_PAC_BUS_ID=${params[1]}
+    hbpcie-utils run reboot > /dev/null 2>&1 &
+    utils_pid=$!
+    sleep 1
+    kill -s SIGPIPE $utils_pid > /dev/null 2>&1
+
+    echo "PAC start reset..."
+    wait_time 30
+
+    echo "PAC initialize finish, start check PAC status"
+
+    rescan_pac $hex_bus_id > /dev/null 2>&1
+    wait_time 10
+
+    if [ ! -e "/dev/hobot_pcie_hybrid_00_${hex_bus_id}" ]; then
+        echo "ERR: PAC status abnormal, please refer to the user manual"
+        exit 1
+    else
+        echo "PAC reset success"
+    fi
+}
+
+function ipconfig_pac()
+{
+    export HOBOT_PAC_BUS_ID=${params[1]}
+    check_ip "${params[@]:2:$param_num-2}"
+    hbpcie-utils run "ifconfig eth0 ${params[2]} netmask ${params[3]}" &&
+    hbpcie-utils run "route add default gw ${params[4]}" &&
+    hbpcie-utils run "hrut_ipfull s eth0  ${params[2]} ${params[3]} ${params[4]}"
+    if [ $? -eq 0 ]; then
+        echo "set PAC IP success"
+    fi
+}
+
+if [ $# -lt 1 ]; then
+    invalid_usage_handle
+else
+    command=$1
+    param_num=$#
+    params=("$@")
+fi
+
+case $command in
+    "list")
+        if [ $# -ne 1 ]; then
+            invalid_usage_handle
+        fi
+
+        get_list
+        ;;
+    "uid")
+        if [ $# -ne 2 ]; then
+            invalid_usage_handle
+        fi
+        pac_status_check 
+        export HOBOT_PAC_BUS_ID=${params[1]}
+        hbpcie-utils run hrut_socuid
+        ;;
+    "status")
+        if [ $# -ne 2 ]; then
+            invalid_usage_handle
+        fi
+        pac_status_check
+
+        export HOBOT_PAC_BUS_ID=${params[1]}
+        hbpcie-utils run hrut_somstatus|grep -v =======|head -n -4
+        ret=${PIPESTATUS[0]}
+        if [ $ret -ne 0 ]; then
+            echo "ERR: get information fail, please Check whether the bid corresponds to a valid device in the PAC list"
+            exit 1
+        fi
+        ;;
+    "upgrade")
+        if [[ "$#" -ne 3 && "$#" -ne 4 ]]; then
+            invalid_usage_handle
+        fi
+        pac_status_check
+
+        if [ ! -e "${params[2]}" ]; then
+            echo "ERR: file ${params[2]} does not exist"
+            exit 1
+        fi
+
+        if [[ "$#" -eq 4 ]]; then
+            if [[ "$4" == "-f" ]]; then
+                 upgrade_pac f
+            else
+                invalid_usage_handle
+            fi
+        else
+            upgrade_pac
+        fi
+        ;;
+    "version")
+        if [ $# -ne 1 ]; then
+            invalid_usage_handle
+        fi
+
+        echo "hobot-smi Version: $smi_version"
+        ;;
+    "ipconfig")
+        if [ $# -ne 5 ]; then
+            invalid_usage_handle
+        fi
+        pac_status_check
+
+        ipconfig_pac
+        ;;
+    "reset")
+        if [ $# -ne 2 ]; then
+            invalid_usage_handle
+        fi
+        pac_status_check
+
+        reset_pac
+        ;;
+    "rescan")
+        if [ $# -ne 2 ]; then
+            invalid_usage_handle
+        fi
+        param_check
+
+        lspci|grep 1117 > /tmp/pci_${params[1]}_info.txt
+        dev_rev=$(get_drv_rev ${params[1]})
+        if [ $dev_rev -ne 0 ]; then
+            rescan_pac $hex_bus_id
+        else
+            echo "ERR: bid:${params[1]} is not PAC"
+        fi
+        ;;
+    "help")
+        if [ $# -ne 1 ]; then
+            invalid_usage_handle
+        fi
+
+        usage
+        ;;
+    *)
+        echo "ERR: $command is unsupported command, please run "hobot-smi help" to get more info"
+        exit 1
+        ;;
+esac

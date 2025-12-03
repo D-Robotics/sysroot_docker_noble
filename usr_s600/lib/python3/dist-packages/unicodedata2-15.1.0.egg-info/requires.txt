@@ -1,0 +1,6 @@
+
+[testing]
+coverage
+pytest
+pytest-randomly
+pytest-xdist

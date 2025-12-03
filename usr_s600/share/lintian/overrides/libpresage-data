@@ -1,0 +1,3 @@
+# Abbreviations files are not documentation
+libpresage-data: package-contains-documentation-outside-usr-share-doc [usr/share/presage/abbreviations_en.txt]
+libpresage-data: package-contains-documentation-outside-usr-share-doc [usr/share/presage/abbreviations_it.txt]

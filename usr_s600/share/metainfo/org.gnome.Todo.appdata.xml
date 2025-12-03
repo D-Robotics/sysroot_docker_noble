@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>org.gnome.Todo</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Endeavour</name>
+  <name xml:lang="zh_CN">Endeavour</name>
+  <name xml:lang="uk">Endeavour</name>
+  <name xml:lang="sv">Endeavour</name>
+  <name xml:lang="sr">Роковник</name>
+  <name xml:lang="ru">Endeavour</name>
+  <name xml:lang="pt_BR">Endeavour</name>
+  <name xml:lang="pt">Endeavour</name>
+  <name xml:lang="pl">Endeavour</name>
+  <name xml:lang="it">Endeavour</name>
+  <name xml:lang="is">Endeavour verkefnastýringin</name>
+  <name xml:lang="id">Endeavour</name>
+  <name xml:lang="hu">Endeavour</name>
+  <name xml:lang="hr">Endeavour</name>
+  <name xml:lang="fi">Endeavour</name>
+  <name xml:lang="fa">اندوور</name>
+  <name xml:lang="eu">Endeavour</name>
+  <name xml:lang="de">Endeavour</name>
+  <name xml:lang="da">Endeavour</name>
+  <summary>Manage your tasks</summary>
+  <summary xml:lang="zh_CN">管理您的任务</summary>
+  <summary xml:lang="uk">Керування вашими завданнями</summary>
+  <summary xml:lang="sv">Hantera dina uppgifter</summary>
+  <summary xml:lang="sr">Управљајте вашим задацима</summary>
+  <summary xml:lang="ru">Управляйте своими задачами</summary>
+  <summary xml:lang="pt_BR">Gerencie suas tarefas</summary>
+  <summary xml:lang="pt">Faça a gestão das suas tarefas</summary>
+  <summary xml:lang="pl">Zarządzanie zadaniami</summary>
+  <summary xml:lang="it">Gestisci le tue attività</summary>
+  <summary xml:lang="id">Kelola tugas Anda</summary>
+  <summary xml:lang="hu">Feladatok kezelése</summary>
+  <summary xml:lang="hr">Upravljajte svojim zadacima</summary>
+  <summary xml:lang="fi">Hallitse tehtäviäsi</summary>
+  <summary xml:lang="fa">مدیریت وظایف‌تان</summary>
+  <summary xml:lang="de">Verwalten Sie Ihre Aufgaben</summary>
+  <summary xml:lang="da">Håndtér dine opgaver</summary>
+  <description>
+    <p>
+      Endeavour is a task management application designed for simplicity. Save and order your todos.
+      Manage multiple todo lists. And more
+    </p>
+    <p xml:lang="zh_CN">Endeavour 是一个简便设计的任务管理应用程序。保存和排序您的待办事项。管理多个待办列表。以及其它功能</p>
+    <p xml:lang="uk">«Endeavour» — проста програма для керування завданнями, яку створено із думкою про простоту. Зберігайте та впорядковуйте завдання. Організовуйте кілька списків. Погляньте на усе ширше…</p>
+    <p xml:lang="sv">Endeavour är ett uppgiftshanteringsprogram som är designat med enkelhet i åtanke. Spara och sortera vad du vill göra. Hantera flera uppgiftslistor med mera</p>
+    <p xml:lang="sr">Роковник је програм за управљање задацима осмишљен да буде једноставан. Сачувајте и средите ваше обавезе. Управљајте многоструким списковима обавеза. И још тога</p>
+    <p xml:lang="ru">Endeavour — приложение для управления задачами, разработанное для простоты в использовании. Сохраняйте и сортируйте свои задачи. Управляйте несколькими списками задач. И многое другое</p>
+    <p xml:lang="pt_BR">Endeavour é um aplicativo de gerenciamento de tarefas projetado para atingir a simplicidade. Salve e ordene suas tarefas. Gerencie várias listas de tarefas. E muito mais</p>
+    <p xml:lang="pt">O Endeavour é uma aplicação de gestão de tarefas desenhada para ser simples. Guarde e ordene os seus afazeres. Faça a gestão de várias listas de afazeres. E mais</p>
+    <p xml:lang="pl">Endeavour to prosty program do zarządzania zadaniami. Umożliwia zapisywanie i zmienianie kolejności zadań, zarządzanie wieloma listami i nie tylko.</p>
+    <p xml:lang="it">Endeavour è un'applicazione di gestione delle attività progettata per la semplicità. Salva e ordina le cose da fare. Gestisce vari elenchi di cose da fare, e altro.</p>
+    <p xml:lang="id">Endeavour adalah aplikasi manajemen tugas yang dirancang untuk kesederhanaan. Simpan dan pesan todo Anda. Kelola beberapa daftar todo. Dan banyak lagi</p>
+    <p xml:lang="hu">Az Endeavour egy egyszerűségre tervezett feladatkezelő alkalmazás. Mentse el és rendezze a tennivalóit. Kezeljen több tennivalólistát. És további funkciók.</p>
+    <p xml:lang="hr">Endeavour je aplikacija upravljanja zadacima jednostavnog dizajna. Spremite i organizirajte svoje zadatke. Upravljajte s više popisa zadataka. I još mnogo toga</p>
+    <p xml:lang="fi">Endeavour on helppokäyttöinen työkalu tehtävien hallintaan. Tallenna ja järjestä tehtäviä. Hallitse useita tehtävälistoja. Ja paljon muuta</p>
+    <p xml:lang="fa">اندوور برنامهٔ مدیریت وظایفی است که برای سادگی طراحی شده است. ذخیره و مرتّب‌سازی فعالیت‌هایتان. مدیریت چندین سیاههٔ فعالیت. و بیش‌تر</p>
+    <p xml:lang="de">Endeavour ist eine Anwendung zur Aufgabenverwaltung mit Fokus auf einfache Bedienbarkeit. Speichern und ordnen Sie Ihre Aufgaben. Verwalten Sie mehrere Aufgabenlisten. Und mehr</p>
+    <p xml:lang="da">Endeavour er et program til opgavehåndtering designet mhp. enkelhed. Gem og sortér dine gøremål, håndtér flere gøremålslister mv.</p>
+  </description>
+  <url type="homepage">https://wiki.gnome.org/Apps/Todo</url>
+  <url type="bugtracker">https://gitlab.gnome.org/World/Endeavour/issues</url>
+  <project_group>GNOME</project_group>
+  <screenshots>
+    <screenshot width="1920" height="1080">
+      <image>https://gitlab.gnome.org/World/Endeavour/raw/main/data/appdata/no-tasks.png</image>
+      <caption>Empty state</caption>
+      <caption xml:lang="zh_CN">空状态</caption>
+      <caption xml:lang="uk">Порожній стан</caption>
+      <caption xml:lang="tr">Boş durum</caption>
+      <caption xml:lang="sv">Tomt tillstånd</caption>
+      <caption xml:lang="sr">Празно стање</caption>
+      <caption xml:lang="sl">Prazno stanje</caption>
+      <caption xml:lang="sk">Prázdny stav</caption>
+      <caption xml:lang="ru">Пустое состояние</caption>
+      <caption xml:lang="ro">Stare goală</caption>
+      <caption xml:lang="pt_BR">Estado vazio</caption>
+      <caption xml:lang="pt">Estado vazio</caption>
+      <caption xml:lang="pl">Ekran przed dodaniem zadań</caption>
+      <caption xml:lang="oc">Estat void</caption>
+      <caption xml:lang="nl">Leeg</caption>
+      <caption xml:lang="lv">Tukšs stāvoklis</caption>
+      <caption xml:lang="lt">Tuščia būsena</caption>
+      <caption xml:lang="ko">빈 상태</caption>
+      <caption xml:lang="kk">Бос күй</caption>
+      <caption xml:lang="it">Stato vuoto</caption>
+      <caption xml:lang="is">Tóm staða</caption>
+      <caption xml:lang="id">Keadaan kosong</caption>
+      <caption xml:lang="hu">Üres állapot</caption>
+      <caption xml:lang="hr">Prazno stanje</caption>
+      <caption xml:lang="he">מצב ריק</caption>
+      <caption xml:lang="gl">Estado baleiro</caption>
+      <caption xml:lang="fur">Stât vueit</caption>
+      <caption xml:lang="fr">État vide</caption>
+      <caption xml:lang="fi">Tyhjä tila</caption>
+      <caption xml:lang="fa">وضعیت خالی</caption>
+      <caption xml:lang="eu">Egoera hutsa</caption>
+      <caption xml:lang="et">Tühi olek</caption>
+      <caption xml:lang="es">Estado vacío</caption>
+      <caption xml:lang="en_GB">Empty state</caption>
+      <caption xml:lang="el">Κενή κατάσταση</caption>
+      <caption xml:lang="de">Leerer Zustand</caption>
+      <caption xml:lang="da">Tom tilstand</caption>
+      <caption xml:lang="cs">V prázdném stavu</caption>
+      <caption xml:lang="ca">Estat buit</caption>
+      <caption xml:lang="bg">Начално страница</caption>
+    </screenshot>
+    <screenshot width="1920" height="1080">
+      <image>https://gitlab.gnome.org/World/Endeavour/raw/main/data/appdata/task-list.png</image>
+      <caption>Task lists</caption>
+      <caption xml:lang="zh_CN">任务列表</caption>
+      <caption xml:lang="uk">Списки завдань</caption>
+      <caption xml:lang="tr">Görev listeleri</caption>
+      <caption xml:lang="sv">Uppgiftslistor</caption>
+      <caption xml:lang="sr">Спискови задатака</caption>
+      <caption xml:lang="sl">Seznami nalog</caption>
+      <caption xml:lang="sk">Zoznamy úloh</caption>
+      <caption xml:lang="ru">Списки задач</caption>
+      <caption xml:lang="ro">Liste de sarcini</caption>
+      <caption xml:lang="pt_BR">Listas de tarefas</caption>
+      <caption xml:lang="pt">Listas de tarefas</caption>
+      <caption xml:lang="pl">Listy zadań</caption>
+      <caption xml:lang="oc">Listas de prètzfaches</caption>
+      <caption xml:lang="nl">Takenlijsten</caption>
+      <caption xml:lang="ne">कार्य सुची</caption>
+      <caption xml:lang="lv">Uzdevumu saraksti</caption>
+      <caption xml:lang="lt">Užduočių sąrašai</caption>
+      <caption xml:lang="ko">일정 목록</caption>
+      <caption xml:lang="kk">Тапсырмалар тізімдері</caption>
+      <caption xml:lang="ja">タスクリスト</caption>
+      <caption xml:lang="it">Elenco attività</caption>
+      <caption xml:lang="is">Verkefnalistar</caption>
+      <caption xml:lang="id">Daftar tugas</caption>
+      <caption xml:lang="hu">Feladatlisták</caption>
+      <caption xml:lang="hr">Popis zadatka</caption>
+      <caption xml:lang="he">רשימות של משימות</caption>
+      <caption xml:lang="gl">Lista de tarefas</caption>
+      <caption xml:lang="fur">Listis des ativitâts</caption>
+      <caption xml:lang="fr">Listes de tâches</caption>
+      <caption xml:lang="fi">Tehtävälistat</caption>
+      <caption xml:lang="fa">سیاهه‌های وظیفه</caption>
+      <caption xml:lang="eu">Zereginen zerrendak</caption>
+      <caption xml:lang="et">Ülesandeloendid</caption>
+      <caption xml:lang="es">Listas de tareas</caption>
+      <caption xml:lang="en_GB">Task lists</caption>
+      <caption xml:lang="el">Λίστα εργασιών</caption>
+      <caption xml:lang="de">Aufgabenlisten</caption>
+      <caption xml:lang="da">Opgavelister</caption>
+      <caption xml:lang="cs">Seznamy úkolů</caption>
+      <caption xml:lang="ca">Llistes de tasques</caption>
+      <caption xml:lang="bg">Списъци със задачи</caption>
+    </screenshot>
+  </screenshots>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>ModernToolkit</kudo>
+  </kudos>
+  <releases>
+    <release date="2022-11-02" version="43.0">
+      <description>
+        <p>
+          Endeavour 43 brings major improvements:
+          <ul><li>
+              The Welcome screen has been removed, as its design didn't really
+              work out.
+            </li><li>
+              The notification system was switched to use AdwToast instead of the older,
+              custom notifications.
+            </li><li>
+              Styles have been updated to fit a more Adwaita-like design.
+            </li><li>
+              Lots of bugs have been squashed, leading to a more stable experience.
+            </li></ul>
+        </p>
+      </description>
+    </release>
+    <release date="2022-07-27" version="42.0">
+      <description>
+        <p>
+          Endeavour 42.0 comes with various improvements, bug squashing, and updated
+          translations.
+        </p>
+        <p>
+          This is the first release to feature new branding under the Endeavour name,
+          along with new maintainership.
+        </p>
+      </description>
+    </release>
+    <release date="2021-09-16" version="41.0">
+      <description>
+        <p>
+          GNOME To Do 41.0 comes with a selection of fixes, help pages, and many
+          updated translations.
+        </p>
+      </description>
+    </release>
+    <release date="2021-06-15" version="40.1">
+      <description>
+        <p>
+          GNOME To Do 40.1 comes with a selection of fixes to bugs and packaging issues,
+          cleanups, and many updated translations.
+        </p>
+      </description>
+    </release>
+    <release date="2021-05-03" version="40.0">
+      <description>
+        <p>
+          After 4 years in development, we are proud to annouce GNOME To Do 40.0!
+        </p>
+        <p>
+          GNOME To Do 40 brings major improvements:
+          <ul><li>
+              Loading, saving, and editing tasks is now completely asynchronous. This
+              should bring much better performance, particularly when dealing with
+              very large task lists.
+            </li><li>
+              The user interface was largely redesigned. It now features a sidebar that
+              collapses when the window is too small. Task editing is done in place now.
+            </li><li>GNOME To Do now uses GTK4!</li><li>
+              A welcome screen, and more welcoming empty states, should make To Do more
+              rewarding and engaging to use.
+            </li></ul>
+        </p>
+        <p>
+          Unfortunately, Todoist and Todo.txt are disabled now. The future of these
+          integration points is uncertain, given that the featureset they support is
+          different than GNOME To Do.
+        </p>
+        <p>This release also updates translations, and adds new translations.</p>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="violence-desecration">none</content_attribute>
+    <content_attribute id="violence-slavery">none</content_attribute>
+    <content_attribute id="violence-worship">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="sex-homosexuality">none</content_attribute>
+    <content_attribute id="sex-prostitution">none</content_attribute>
+    <content_attribute id="sex-adultery">none</content_attribute>
+    <content_attribute id="sex-appearance">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">none</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+    <content_attribute id="social-audio">none</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">none</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
+  <launchable type="desktop-id">org.gnome.Todo.desktop</launchable>
+  <developer_name>Jamie Murphy</developer_name>
+  <developer_name xml:lang="zh_CN">Jamie Murphy</developer_name>
+  <developer_name xml:lang="uk">Jamie Murphy</developer_name>
+  <developer_name xml:lang="sv">Jamie Murphy</developer_name>
+  <developer_name xml:lang="sr">Џами Марфи</developer_name>
+  <developer_name xml:lang="ru">Jamie Murphy</developer_name>
+  <developer_name xml:lang="pt_BR">Jamie Murphy</developer_name>
+  <developer_name xml:lang="pt">Jamie Murphy</developer_name>
+  <developer_name xml:lang="pl">Jamie Murphy</developer_name>
+  <developer_name xml:lang="it">Jamie Murphy</developer_name>
+  <developer_name xml:lang="is">Jamie Murphy</developer_name>
+  <developer_name xml:lang="id">Jamie Murphy</developer_name>
+  <developer_name xml:lang="hu">Jamie Murphy</developer_name>
+  <developer_name xml:lang="hr">Jamie Murphy</developer_name>
+  <developer_name xml:lang="fi">Jamie Murphy</developer_name>
+  <developer_name xml:lang="fa">جِیمی مورفی</developer_name>
+  <developer_name xml:lang="eu">Jamie Murphy</developer_name>
+  <developer_name xml:lang="de">Jamie Murphy</developer_name>
+  <developer_name xml:lang="da">Jamie Murphy</developer_name>
+  <update_contact>hello@itsjamie.dev</update_contact>
+  <translation type="gettext">gnome-todo</translation>
+</component>

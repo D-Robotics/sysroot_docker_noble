@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-xps.so
+MimeTypes=application/oxps;application/vnd.ms-xpsdocument;
+FallbackRdfTypes=nfo:PaginatedTextDocument
+Graph=tracker:Documents
+Hash=e934a8ce0799a9bb6097288fc4363b2cb4e4ec80f651e88c89a08f57fdcfcaf7
+

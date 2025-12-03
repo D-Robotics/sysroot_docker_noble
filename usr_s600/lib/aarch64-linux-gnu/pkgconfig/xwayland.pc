@@ -1,0 +1,24 @@
+prefix=/usr
+includedir=${prefix}/include
+
+exec_prefix=${prefix}
+xwayland=/usr/bin/Xwayland
+have_glamor=true
+have_eglstream=true
+have_initfd=true
+have_listenfd=true
+have_verbose=true
+have_terminate_delay=true
+have_no_touch_pointer_emulation=true
+have_force_xrandr_emulation=true
+have_geometry=true
+have_fullscreen=true
+have_host_grab=true
+have_decorate=true
+have_enable_ei_portal=false
+have_byteswappedclients=true
+
+Name: Xwayland
+Description: X Server for Wayland
+Version: 23.2.6
+Cflags: -I${includedir}

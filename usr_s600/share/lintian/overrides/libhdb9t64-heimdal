@@ -1,0 +1,2 @@
+package-name-doesnt-match-sonames
+libhdb9t64-heimdal: package-name-doesnt-match-sonames libhdb9-heimdal

@@ -1,0 +1,2 @@
+package-name-doesnt-match-sonames
+libkadm5clnt7t64-heimdal: package-name-doesnt-match-sonames libkadm5clnt7-heimdal

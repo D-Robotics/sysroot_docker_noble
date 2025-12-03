@@ -1,0 +1,15 @@
+python-dateutil
+pyyaml
+
+[test]
+coala
+coala-bears
+coverage
+coveralls
+mock
+mypy
+nose
+pep8
+radon~=1.4.0
+tox
+tox-pyenv

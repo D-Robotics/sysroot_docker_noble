@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib/aarch64-linux-gnu
+includedir=${prefix}/include
+
+Name: ogdi
+Description: Open Geographic Datastore Interface
+Version: 4.1.1
+Cflags: -I${includedir}/ogdi -I/usr/include/tirpc 
+Libs: -L${libdir} -logdi
+Libs.private: -lexpat -lz -ltirpc 
+
