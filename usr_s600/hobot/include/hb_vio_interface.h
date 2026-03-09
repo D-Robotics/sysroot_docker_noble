@@ -1194,7 +1194,7 @@ int32_t hb_vio_get_param(uint32_t pipeline_id, VIO_INFO_TYPE_E info_type, void *
  * @param[in] uint32_t pipeline_id:pipeline id ; 软件通道id;range:[0, 23],default:0
  * @param[in] VIO_DATA_TYPE_E data_type:需要获取的数据类型;data_type类型说明:
  * HB_VIO_PYM_DATA_V3
- * 获取 pym 处理结果,J6最常用类型;
+ * 获取 pym 处理结果,SUPER最常用类型;
  * HB_VIO_ISP_YUV_DATA
  * 获取isp输出yuv数据,需要配合配置文件中isp_dma_output_format参数设置;
  * HB_VIO_ISP_RAW_DATA
@@ -1229,7 +1229,7 @@ int32_t hb_vio_get_data(uint32_t pipeline_id, VIO_DATA_TYPE_E data_type, void *d
  * @brief Get the data of the corresponding pipelineid conditionally through the corresponding datatype and the set times parameter; 通过对应data_type以及设置的times参数有条件的获取对应pipeline_id的数据;
  *
  * @param[in] uint32_t pipeline_id:pipeline id ; 软件通道id;range:[0, 23],default:0
- * @param[in] VIO_DATA_TYPE_E data_type:需要获取的数据类型:data_type类型说明:HB_VIO_PYM_DATA_V3:获取 pym 处理结果,J6最常用类型;
+ * @param[in] VIO_DATA_TYPE_E data_type:需要获取的数据类型:data_type类型说明:HB_VIO_PYM_DATA_V3:获取 pym 处理结果,SUPER最常用类型;
  * @param[in] VIO_DATA_TYPE_E data_type:The type of data to be obtained; data_ Type description: HB_VIO_PYM_DATA_V3,Get pym processing results. Super is the most commonly used type;
  * @param[in] int32_t times:设置需要获取帧的相对时间;
  * times参数说明:
@@ -1333,7 +1333,7 @@ int32_t hb_vio_free_ispbuf(uint32_t pipeline_id, hb_vio_buffer_t *dst_img_info);
  *
  * @param[in] uint32_t pipeline_id:pipeline id ; 软件通道id;range:[0, 23],default:0
  * @param[in] VIO_DATA_TYPE_E data_type:Released data type, type description: HB_VIO_PYM_DATA_V3, Super most commonly used type;
- * @param[in] VIO_DATA_TYPE_E data_type:释放的数据类型, 类型说明: HB_VIO_PYM_DATA_V3, J6常用;
+ * @param[in] VIO_DATA_TYPE_E data_type:释放的数据类型, 类型说明: HB_VIO_PYM_DATA_V3, SUPER常用;
  * @param[in] void * dst_img_info:pym memory to be freed; 需要free的pym内存;
  * @param[out] None
  *

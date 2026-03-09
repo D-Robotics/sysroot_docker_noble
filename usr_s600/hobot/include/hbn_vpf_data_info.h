@@ -23,12 +23,18 @@ extern "C" {
 
 #define HBN_LAYER_MAXIMUM 6u
 #define HBN_PIPELINE_BIND_MAX 16u /**< vio pipeline max bind count  @NO{S09E05C02U}  */
-#ifdef J6_CAMSYS
+#ifdef SUPER_CAMSYS
 #define HBN_GETFRAME_TIMEOUT 4000
 #else
 #define HBN_GETFRAME_TIMEOUT 1000 //1000ms for dvb
 #endif
 #define HBN_MAX_VNODE_CONFIG 8u
+
+#if defined(SOC_NAME_S100)
+#define EN_3DNR_HW_ID 1
+#elif defined(SOC_NAME_S600)
+#define EN_3DNR_HW_ID 3
+#endif
 
 typedef int64_t hbn_vnode_handle_t;
 typedef int64_t hbn_vflow_handle_t;
