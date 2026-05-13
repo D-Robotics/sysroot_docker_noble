@@ -1,9 +1,26 @@
 #!/bin/bash
 
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m'
+
+log_error() {
+    echo -e "${RED}[ERROR] $1${NC}" >&2
+}
+
+log_warn() {
+    echo -e "${YELLOW}[WARN] $1${NC}" >&2
+}
+
+log_info() {
+    echo -e "${GREEN}[INFO]${NC} $1"
+}
+
 help_msg()
 {
-    echo "Usage: $0 <bpu_first | cpu_first | balanced | default>"
-    echo "Example: $0 bpu_first"
+    log_info "Usage: $0 <bpu_first | cpu_first | balanced | default>"
+    log_info "Example: $0 bpu_first"
     exit 1
 }
 
@@ -14,7 +31,7 @@ fi
 target=$1
 
 # Check if dtc command exists
-if ! command -v dtc &> /dev/null; then
+if ! command -v fdtput &> /dev/null; then
     apt update
     apt install device-tree-compiler -y
 fi
@@ -29,7 +46,13 @@ function get_dtb()
         # get chip
         if [[ "$boardid" =~ ^0x(51)[1234567][01234567][1234567][1234567].$ ]]; then
             # S600
-            echo "rdk-s600-mcb-v0p1.dtb"
+            if [[ "$boardid" == "0x5111110"  ]]; then
+                echo "rdk-s600-mcb-v0p1.dtb"
+            elif [[ "$boardid" == "0x5121210" ]]; then
+                echo "rdk-s600-mcb-v0p2.dtb"
+            else
+                echo "Invalid"
+            fi
         else
             # S100
             case $boardid in
@@ -67,14 +90,24 @@ function get_dtb()
 }
 
 dtb_name=$(get_dtb)
-# echo "INFO: DTB name: $dtb_name"
 
 if [ "$dtb_name" = "Invalid" ];then
-    echo "ERROR: Cannot find valid dtb for current board!"
+    log_error "Cannot find valid dtb for current board!"
     exit 1
 fi
 
 INPUT_DTB="/boot/hobot/${dtb_name}"
+ORIG_INPUT_DTB="${INPUT_DTB}.bak"
+OUTPUT_DTB="${INPUT_DTB}"
+
+function reset_dtb()
+{
+    log_info "Restoring to default..."
+    if [ -f "${ORIG_INPUT_DTB}" ];then
+        cp "${ORIG_INPUT_DTB}" "${OUTPUT_DTB}"
+        rm "${ORIG_INPUT_DTB}"
+    fi
+}
 
 case $target in
     "balanced")
@@ -104,15 +137,15 @@ case $target in
         fi
     ;;
     "bpu_first")
-        if [[ "${INPUT_DTB}" = *"-s600-"* ]];then #total size 28GiB
-            # ion-pool 5120MiB
-            ion_pool_reg_val=(0x40 0xC0000000 0x1 0x40000000)
-            # ion-carveout 13312MiB
-            ion_carveout_reg_val=(0x42 0x00000000 0x3 0x40000000)
-            # ion-cma 5120MiB
-            ion_cma_reg_val=(0x45 0x40000000 0x1 0x40000000)
-            # ion-uncache 5120MiB
-            ion_uncache_reg_val=(0x46 0x80000000 0x1 0x40000000)
+        if [[ "${INPUT_DTB}" = *"-s600-"* ]];then #total size 24GiB
+            # ion-pool 2048MiB
+            ion_pool_reg_val=(0x40 0xC0000000 0x0 0x80000000)
+            # ion-carveout 18360MiB
+            ion_carveout_reg_val=(0x42 0x00000000 0x4 0x80000000)
+            # ion-cam 2048MiB
+            ion_cma_reg_val=(0x46 0x80000000 0x0 0x80000000)
+            # ion-uncache 2048MiB
+            ion_uncache_reg_val=(0x47 0x00000000 0x0 0x80000000)
         elif [[ "${INPUT_DTB}" = *"-s100p-"* ]];then
             # ion-pool 5120MiB
             ion_pool_reg_val=(0x4 0x00000000 0x1 0x40000000)
@@ -127,7 +160,7 @@ case $target in
             ion_carveout_reg_val=(0x8 0x00000000 0x0 0xF0000000)
             # ion-cma 1GiB
             ion_cma_reg_val=(0xc 0x80000000 0x0 0x40000000)
-            echo "WARNING: CAUTION! Setting bpu_first on S100 might introduce random performance issue due to limited memory!"
+            log_warn "CAUTION! Setting bpu_first on S100 might introduce random performance issue due to limited memory!"
         fi
     ;;
     "cpu_first")
@@ -150,30 +183,69 @@ case $target in
         fi
     ;;
     "default")
-        echo "INFO: Restoring to default..."
+        reset_dtb
         exit 0
     ;;
     *)
-        echo "ERROR: Invalid option $target"
+        log_error "Invalid option $target"
         help_msg
     ;;
 esac
 
 # Set ion region sizes according to input
 
-fdtput -t x "$INPUT_DTB" /reserved-memory/ion_reserved reg "${ion_pool_reg_val[@]}" || { echo "ERROR: Update ion-pool reg failed!"; exit 1; }
-fdtput -t x "$INPUT_DTB" /reserved-memory/ion_carveout reg "${ion_carveout_reg_val[@]}" || { echo "ERROR: Update ion_carveout reg failed!"; exit 1; }
-fdtput -t x "$INPUT_DTB" /reserved-memory/ion_cma reg "${ion_cma_reg_val[@]}" || { echo "ERROR: Update ion_cma reg failed!"; exit 1; }
-if [[ "${INPUT_DTB}" = *"-s600-"* ]];then
-fdtput -t x "$INPUT_DTB" /reserved-memory/ion_uncache reg "${ion_uncache_reg_val[@]}" || { echo "ERROR: Update ion_uncache reg failed!"; exit 1; }
+usage=$(df -h /boot | awk 'NR==2 {print $5}' | sed 's/%//')
+
+if [ "$usage" -ge 95 ]; then
+    log_error "/boot partition is full(${usage} used), cannot update dtb!"
+    log_info "Maybe you should run the following command to resize the filesystem:"
+    log_info "    sudo resize2fs /dev/block/platform/by-name/boot_cur"
+    exit 1
 fi
 
-echo "ion_reserved reg = <$(fdtget -t x $INPUT_DTB /reserved-memory/ion_reserved reg)>"
-echo "ion_carveout reg = <$(fdtget -t x $INPUT_DTB /reserved-memory/ion_carveout reg)>"
-echo "ion_cma reg = <$(fdtget -t x $INPUT_DTB /reserved-memory/ion_cma reg)>"
-if [[ "${INPUT_DTB}" = *"-s600-"* ]];then
-echo "ion_uncache reg = <$(fdtget -t x $INPUT_DTB /reserved-memory/ion_uncache reg)>"
+if [ ! -f "${ORIG_INPUT_DTB}" ];then
+    cp "${INPUT_DTB}" "${ORIG_INPUT_DTB}"
+    log_info "Backup created:${ORIG_INPUT_DTB}"
+else
+    log_info "Backup(${ORIG_INPUT_DTB}) already exists, skip backup..."
 fi
 
-echo "INFO: Update ${INPUT_DTB} for $target Done!"
-echo "INFO: The change will take effect AFTER reboot!"
+fdtput -t x "$INPUT_DTB" /reserved-memory/ion_reserved reg \
+    "${ion_pool_reg_val[@]}" || {
+    log_error "Update ion-pool reg failed!"
+    reset_dtb
+    exit 1
+}
+
+fdtput -t x "$INPUT_DTB" /reserved-memory/ion_carveout reg \
+    "${ion_carveout_reg_val[@]}" || {
+        log_error "Update ion_carveout reg failed!"
+        reset_dtb
+        exit 1;
+}
+
+fdtput -t x "$INPUT_DTB" /reserved-memory/ion_cma reg \
+    "${ion_cma_reg_val[@]}" || {
+        log_error "Update ion_cma reg failed!"
+        reset_dtb
+        exit 1
+}
+
+if [[ "${INPUT_DTB}" = *"-s600-"* ]];then
+    fdtput -t x "$INPUT_DTB" /reserved-memory/ion_uncache reg \
+        "${ion_uncache_reg_val[@]}" || {
+            log_error "Update ion_uncache reg failed!"
+            reset_dtb
+            exit 1
+    }
+fi
+
+log_info "ion_reserved reg = <$(fdtget -t x "$INPUT_DTB" /reserved-memory/ion_reserved reg)>"
+log_info "ion_carveout reg = <$(fdtget -t x "$INPUT_DTB" /reserved-memory/ion_carveout reg)>"
+log_info "ion_cma reg = <$(fdtget -t x "$INPUT_DTB" /reserved-memory/ion_cma reg)>"
+if [[ "${INPUT_DTB}" = *"-s600-"* ]];then
+log_info "ion_uncache reg = <$(fdtget -t x "$INPUT_DTB" /reserved-memory/ion_uncache reg)>"
+fi
+
+log_info "Update ${INPUT_DTB} for $target Done!"
+log_info "The change will take effect AFTER reboot!"

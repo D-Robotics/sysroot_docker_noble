@@ -80,6 +80,7 @@ typedef struct vcon_attr_s {
 	int32_t attr_valid;			// Effective configuration of attributes
 	int32_t bus_main;			// .Main I2C Main Line Index
 	int32_t bus_second;			// .Secondary I2C mainline index
+	int32_t poc_map;                        // .Poc map from dts
 	int32_t gpios[VGPIO_NUM];		// .Gpio index
 	int32_t sensor_err[SENSOR_ERR_PIN_NUM];	// sensor err_pin index 4
 	int32_t lpwm_chn[LPWM_CHN_NUM];		// lpwm channel index 4.

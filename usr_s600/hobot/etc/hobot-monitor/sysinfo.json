@@ -65,19 +65,19 @@
             "id": "0xe",
             "type": "file",
             "name": "mcore",
-            "file": "/sys/class/remoteproc/remoteproc0/version"
+            "file": "/sys/class/remoteproc/remoteproc_mcu0/version"
         },
         {
             "id": "0xf",
             "type": "file",
             "name": "vdsp0",
-            "file": "/sys/class/remoteproc/remoteproc1/version"
+            "file": "/sys/class/remoteproc/remoteproc_vdsp0/version"
         },
         {
             "id": "0x10",
             "type": "file",
             "name": "vdsp1",
-            "file": "/sys/class/remoteproc/remoteproc2/version"
+            "file": "/sys/class/remoteproc/remoteproc_vdsp1/version"
         }
     ]
 }

@@ -43,6 +43,7 @@ void bind_IPCFHAL_Channel(py::module &m)
 {
     py::class_<IPCFHAL_Channel>(m, "IPCFHAL_Channel")
         .def(py::init<>())
+        .def_readwrite("instance", &IPCFHAL_Channel::instance)
         .def_readwrite("id", &IPCFHAL_Channel::id)
         .def("get_name", [](const IPCFHAL_Channel &self)
              { return std::string(self.name); })
@@ -136,6 +137,11 @@ int hb_ipcfhal_recv_wrapper(py::object data, int length, int timeout, IPCFHAL_Ch
     return hb_ipcfhal_recv(reinterpret_cast<uint8_t *>(writable_data_ptr), length, timeout, &channel);
 }
 
+int32_t hb_ipcfhal_request_channel_tovdsp_wrapper(int32_t dsp_id, IPCFHAL_Channel &channel)
+{
+    return hb_ipcfhal_request_channel_tovdsp(dsp_id, &channel);
+}
+
 std::tuple<int32_t, uint32_t, uint32_t, uint32_t> get_version() {
     uint32_t major, minor, patch;
     int32_t ret = hb_ipcfhal_get_version(&major, &minor, &patch);
@@ -164,6 +170,11 @@ void bind_functions(py::module &m)
     m.def("HorizonHal_IPCF_Send", &HorizonHal_IPCF_Send);
     m.def("HorizonHal_IPCF_Recv", &HorizonHal_IPCF_Recv);
     m.def("HorizonHal_IPCF_Deinit", &HorizonHal_IPCF_Deinit);
+
+    m.def("hb_ipcfhal_request_channel_tovdsp", &hb_ipcfhal_request_channel_tovdsp_wrapper,
+        "Request a channel for acore2vdsp",
+        py::arg("dsp_id"), py::arg("channel"));
+
 }
 
 // 绑定宏定义

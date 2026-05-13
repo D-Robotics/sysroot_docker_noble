@@ -13,6 +13,7 @@
 #include <unordered_map>
 #include <memory>
 #include <mutex>
+#include <shared_mutex>
 #include <stdexcept>
 #include <optional>
 #include <variant>
@@ -23,7 +24,6 @@
 #include <pybind11/stl.h>
 #include <pybind11/stl_bind.h>
 #include <algorithm>
-#include <atomic>
 
 #include "HB_RuntimeUtils.hpp"
 #include "hb_ucp.h"
@@ -149,95 +149,91 @@ using ExtraArgs = std::unordered_map<std::string, ExtraArgValue>;
 
 class HB_HBMRuntime {
 private:
-    /// Indicates whether the inference runtime is actively running.
-    std::atomic<bool> running_flag{false};
-
     /// Packed handle for managing multiple DNN models.
-    hbDNNPackedHandle_t dnn_packed_handle;
+    hbDNNPackedHandle_t dnn_packed_handle_;
 
     /// Mapping from model name to its corresponding DNN handle.
-    std::unordered_map<std::string, hbDNNHandle_t> dnn_handle_list;
+    std::unordered_map<std::string, hbDNNHandle_t> dnn_handle_list_;
 
     /// List of loaded model names.
-    std::vector<std::string> model_names;
+    std::vector<std::string> model_names_;
 
     /// Number of models loaded.
-    int32_t model_count;
+    int32_t model_count_;
 
     /// Mapping from model name to number of input tensors.
-    std::unordered_map<std::string, int32_t> input_counts;
+    std::unordered_map<std::string, int32_t> input_counts_;
 
     /// Mapping from model name to list of input tensor names.
-    std::unordered_map<std::string, std::vector<std::string>> input_names;
+    std::unordered_map<std::string, std::vector<std::string>> input_names_;
 
     /// Mapping from model -> tensor name -> input tensor description (string).
-    std::unordered_map<std::string, std::unordered_map<std::string, std::string>> input_descs;
+    std::unordered_map<std::string, std::unordered_map<std::string, std::string>> input_descs_;
 
     /// Mapping from model -> tensor name -> input tensor properties.
-    std::unordered_map<std::string, std::unordered_map<std::string, hbDNNTensorProperties>> input_tensor_properties;
+    std::unordered_map<std::string, std::unordered_map<std::string, hbDNNTensorProperties>> input_tensor_properties_;
 
     /// Mapping from model -> tensor name -> input tensor shape.
-    std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int32_t>>> input_shapes;
+    std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int32_t>>> input_shapes_;
 
     /// Mapping from model -> tensor name -> input tensor data type.
-    std::unordered_map<std::string, std::unordered_map<std::string, hbDNNDataType>> input_dtypes;
+    std::unordered_map<std::string, std::unordered_map<std::string, hbDNNDataType>> input_dtypes_;
 
     /// Mapping from model -> tensor name -> quantization parameters.
-    std::unordered_map<std::string, std::unordered_map<std::string, QuantParams>> input_quants;
+    std::unordered_map<std::string, std::unordered_map<std::string, QuantParams>> input_quants_;
 
     /// Mapping from model -> tensor name -> input tensor strides.
-    std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int64_t>>> input_strides;
+    std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int64_t>>> input_strides_;
 
     /// Mapping from model name to number of output tensors.
-    std::unordered_map<std::string, int32_t> output_counts;
+    std::unordered_map<std::string, int32_t> output_counts_;
 
     /// Mapping from model name to list of output tensor names.
-    std::unordered_map<std::string, std::vector<std::string>> output_names;
+    std::unordered_map<std::string, std::vector<std::string>> output_names_;
 
     /// Mapping from model -> tensor name -> output tensor description (string).
-    std::unordered_map<std::string, std::unordered_map<std::string, std::string>> output_descs;
+    std::unordered_map<std::string, std::unordered_map<std::string, std::string>> output_descs_;
 
     /// Mapping from model -> tensor name -> output tensor properties.
-    std::unordered_map<std::string, std::unordered_map<std::string, hbDNNTensorProperties>> output_tensor_properties;
+    std::unordered_map<std::string, std::unordered_map<std::string, hbDNNTensorProperties>> output_tensor_properties_;
 
     /// Mapping from model -> tensor name -> output tensor shape
-    std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int32_t>>> output_shapes;
+    std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int32_t>>> output_shapes_;
 
     /// Mapping from model -> tensor name -> output tensor data type.
-    std::unordered_map<std::string, std::unordered_map<std::string, hbDNNDataType>> output_dtypes;
+    std::unordered_map<std::string, std::unordered_map<std::string, hbDNNDataType>> output_dtypes_;
 
     /// Mapping from model -> tensor name -> quantization parameters.
-    std::unordered_map<std::string, std::unordered_map<std::string, QuantParams>> output_quants;
+    std::unordered_map<std::string, std::unordered_map<std::string, QuantParams>> output_quants_;
 
     /// Mapping from model -> tensor name -> output tensor strides.
-    std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int64_t>>> output_strides;
+    std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int64_t>>> output_strides_;
+
+    /// Mapping from model -> compile-time BPU core count.
+    std::unordered_map<std::string, int32_t> compile_bpu_core_num_;
 
     /// Mapping from model name to model description string.
-    std::unordered_map<std::string, std::string> model_descs;
+    std::unordered_map<std::string, std::string> model_descs_;
 
     /// Mapping from model name to original HBM file path or descriptor.
-    std::unordered_map<std::string, std::string> HBM_descs;
+    std::unordered_map<std::string, std::string> HBM_descs_;
 
     /// Map storing scheduling parameters for each model by model name
-    std::unordered_map<std::string, SchedParam> model_sched_params;
+    std::unordered_map<std::string, SchedParam> model_sched_params_;
+    /// Protects model_sched_params_ (shared_lock for read, unique_lock for write).
+    mutable std::shared_mutex model_sched_params_mutex_;
 
     /// Flag indicating whether model name list and count have been loaded.
-    bool is_load_model_name_and_count = false;
+    bool is_load_model_name_and_count_ = false;
 
     /// Flag indicating whether model handles have been loaded.
-    bool is_load_dnn_handle = false;
-
-    /// Flag indicating whether model name list has been loaded.
-    bool is_load_mode_name_list = false;
-
-    /// Flag indicating whether input shapes have been loaded
-    bool input_shape_ready = false;
+    bool is_load_dnn_handle_ = false;
 
     /**
     * @brief Load the model name list and model count from the packed DNN handle.
     *
     * This function queries the packed DNN handle to retrieve all sub-model names and the total model count.
-    * The names are stored in `model_names` and the count in `model_count`. A flag `is_load_model_name_and_count`
+    * The names are stored in `model_names_` and the count in `model_count_`. A flag `is_load_model_name_and_count_`
     * is set to indicate that model metadata has been successfully loaded.
     *
     * @note This must be called before accessing individual model handles or metadata.
@@ -248,12 +244,28 @@ private:
     * @brief Load DNN model handles for each sub-model in the packed model.
     *
     * This function retrieves a runtime handle (`hbDNNHandle_t`) for each model contained
-    * in the packed DNN model (`dnn_packed_handle`) and stores them in `dnn_handle_list`.
+    * in the packed DNN model (`dnn_packed_handle_`) and stores them in `dnn_handle_list_`.
     * These handles are required to perform inference and query model metadata later.
     *
     * @note This function automatically calls LoadModelNameListAndCount() if model names are not yet loaded.
     */
     void LoadModelHandles();
+
+    /**
+    * @brief Load and cache the compile-time BPU core count for each loaded model.
+    *
+    * This function queries the DNN runtime for the number of BPU cores specified
+    * at compile time for each loaded model using `hbDNNGetCompileBpuCoreNum`.
+    * The retrieved core count is cached internally in a map keyed by model name.
+    *
+    * This information is used to validate runtime BPU core scheduling parameters,
+    * especially for multi-core models, where the number of runtime-selected BPU
+    * cores must exactly match the compile-time configuration.
+    *
+    * @note This function assumes that model names and model handles are available.
+    *       If they are not loaded yet, it will trigger the corresponding load steps.
+    */
+    void LoadModelCompileBpuCoreNum();
 
     /**
     * @brief Load and cache the description string for each loaded model.
@@ -306,16 +318,93 @@ private:
     void InitSchedParam(SchedParam& param);
 
     /**
-    * @brief Initialize scheduling parameters map for a list of models.
+    * @brief Initialize default scheduling parameters for all loaded models.
     *
-    * For each model name in the provided vector, initializes a default
-    * SchedParam and inserts it into the params_map with the model name as key.
+    * This function creates a default `SchedParam` entry for each model name
+    * stored in `model_names_` and inserts it into `params_map`.
     *
-    * @param[out] params_map Reference to the map to populate with model scheduling parameters.
-    * @param[in] model_names Vector of model names to initialize scheduling parameters for.
+    * @note `model_names_` must be initialized before calling this function.
+    *
+    * @param[out] params_map Map to be populated with per-model scheduling parameters.
     */
-    void InitSchedParamMapWithModels(std::unordered_map<std::string, SchedParam>& params_map,
-                                    const std::vector<std::string>& model_names);
+    void InitSchedParamMapWithModels(std::unordered_map<std::string, SchedParam>& params_map);
+
+    /**
+    * @brief Set scheduling priorities for models into a given parameter map.
+    *
+    * Validates model names and priority values (0-255) before updating.
+    *
+    * @param[in] priority            Map from model name to priority value (0-255).
+    * @param[in,out] model_sched_params Map to update with per-model priority.
+    *
+    * @throws std::runtime_error if a model name is invalid or priority is out of range.
+    */
+    void SetModelPriorities(const std::unordered_map<std::string, int32_t>& priority,
+                           std::unordered_map<std::string, SchedParam>& model_sched_params);
+
+    /**
+    * @brief Set BPU core assignments for models into a given parameter map.
+    *
+    * Validates model names and BPU core IDs (0-3) before updating.
+    *
+    * @param[in] bpu_cores           Map from model name to vector of BPU core IDs.
+    * @param[in,out] model_sched_params Map to update with per-model BPU core assignment.
+    *
+    * @throws std::runtime_error if a model name is invalid or any core ID is out of range [0, 3].
+    */
+    void SetModelBpuCores(const std::unordered_map<std::string, std::vector<int32_t>>& bpu_cores,
+                         std::unordered_map<std::string, SchedParam>& model_sched_params);
+
+    /**
+    * @brief Set custom IDs for models into a given parameter map.
+    *
+    * Validates model names before updating the customId field.
+    *
+    * @param[in] custom_id           Map from model name to custom ID value.
+    * @param[in,out] model_sched_params Map to update with per-model custom ID.
+    *
+    * @throws std::runtime_error if a model name is invalid.
+    */
+    void SetCustomIds(const std::unordered_map<std::string, int64_t>& custom_id,
+                     std::unordered_map<std::string, SchedParam>& model_sched_params);
+
+    /**
+    * @brief Set device IDs for models into a given parameter map.
+    *
+    * Validates model names before updating the deviceId field.
+    *
+    * @param[in] device_id           Map from model name to device ID value.
+    * @param[in,out] model_sched_params Map to update with per-model device ID.
+    *
+    * @throws std::runtime_error if a model name is invalid.
+    */
+    void SetDeviceIds(const std::unordered_map<std::string, uint32_t>& device_id,
+                     std::unordered_map<std::string, SchedParam>& model_sched_params);
+
+    /**
+    * @brief Parse and merge scheduling parameters for a run() invocation.
+    *
+    * For each model in multi_input_tensors, merges run-time optional params with
+    * default model_sched_params_. Run-time params take precedence when provided.
+    * The merged result is converted to hbUCPSchedParam and stored in out_ucp_sched_params.
+    *
+    * The output map is intended to be declared locally in run(), so each invocation
+    * has its own copy - reserving space for future multi-threaded run support.
+    *
+    * @param[in] multi_input_tensors  Models involved in this inference run.
+    * @param[in] priority             Optional run-time priority overrides (model_name -> value).
+    * @param[in] bpu_cores            Optional run-time BPU core overrides (model_name -> cores).
+    * @param[in] custom_id            Optional run-time custom ID overrides (model_name -> value).
+    * @param[in] device_id            Optional run-time device ID overrides (model_name -> value).
+    * @param[out] out_ucp_sched_params Merged hbUCPSchedParam for each model (run-local storage).
+    */
+    void ParseAndFillUCPSchedParams(
+        const std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
+        const std::optional<std::unordered_map<std::string, int32_t>>& priority,
+        const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores,
+        const std::optional<std::unordered_map<std::string, int64_t>>& custom_id,
+        const std::optional<std::unordered_map<std::string, uint32_t>>& device_id,
+        std::unordered_map<std::string, hbUCPSchedParam>& out_ucp_sched_params);
 
     /**
     * @brief Load all necessary model parameters and metadata.
@@ -477,16 +566,28 @@ private:
     * - Inserts the numpy array into the provided map keyed by the output tensor name.
     *
     * @param[in]  model_name         The name of the model whose outputs are being processed.
-    * @param[out] model_output_arrays A map to store output tensor name to numpy array.
-    * @param[in]  output_tensors A vector of hbDNNTensors representing the model output tensors.
+    * @param[out] model_output_array A map to store output tensor name to numpy array.
+    * @param[in]  model_output_tensor A vector of hbDNNTensors representing the model output tensors.
     *
     * @return int32_t Returns 0 on success.
     */
     int32_t PrepareOutputArrays(std::string model_name, std::unordered_map<std::string, py::array> & model_output_array,
                             std::vector<hbDNNTensor> & model_output_tensor);
 
-
-    uint64_t GetBPUCoreMaskForModel(const std::string& model_name, const std::vector<int32_t>& bpu_cores);
+    /**
+    * @brief Convert BPU core IDs for a model into a 64-bit bitmask for hbUCPSchedParam.backend.
+    *
+    * If bpu_cores is empty or contains only -1, returns HB_UCP_BPU_CORE_ANY for automatic scheduling.
+    * Otherwise builds a bitmask from user-specified core IDs (valid range 0~3).
+    *
+    * @param[in] model_name  The name of the model (for error messages).
+    * @param[in] bpu_cores   Vector of BPU core IDs for this model (0~3, or -1 for ANY).
+    *
+    * @return A 64-bit mask with bits set for each core ID, or HB_UCP_BPU_CORE_ANY.
+    *
+    * @throws std::runtime_error if any core ID is outside [0, 3] and not -1.
+    */
+    uint64_t GetBPUCoreMaskForModel(const std::string& model_name, const std::vector<int>& bpu_cores);
 
     /**
     * @brief Perform inference for a single model with given input/output tensors.
@@ -499,24 +600,30 @@ private:
     * @param[in] dnn_handle       Handle to the loaded DNN model.
     * @param[in,out] input_tensors   Prepared input tensors for the model.
     * @param[in,out] output_tensors  Output buffers where inference results will be stored.
+    * @param[in] sched_param      UCP scheduling parameters (priority, customId, backend, deviceId).
     */
     void InferSingleModel(const std::string& model_name,
                  hbDNNHandle_t& dnn_handle,
                  std::vector<hbDNNTensor>& input_tensors,
-                 std::vector<hbDNNTensor>& output_tensors);
+                 std::vector<hbDNNTensor>& output_tensors,
+                 const hbUCPSchedParam& sched_param);
 
     /**
     * @brief Launch inference tasks for all models in parallel using multithreading.
     *
-    * Each model is assigned a separate thread to perform inference via `InferSingleModel`.
+    * Each model is assigned a separate thread to perform inference via InferSingleModel.
+    * Each task uses the per-model scheduling parameters from UCP_sched_params.
     *
-    * @param[in] input_tensors   Map containing input tensors for each model.
+    * @param[in] input_tensors      Map containing input tensors for each model.
     * @param[in,out] output_tensors Map to hold output tensors for each model after inference.
+    * @param[in] UCP_sched_params   Per-model hbUCPSchedParam (priority, customId, backend, deviceId).
     *
     * @return Returns 0 on success.
     */
-    int32_t LaunchInferenceTasks(std::unordered_map<std::string, std::vector<hbDNNTensor>> & input_tensor,
-                        std::unordered_map<std::string, std::vector<hbDNNTensor>> & output_tensor);
+    int32_t LaunchInferenceTasks(
+        std::unordered_map<std::string, std::vector<hbDNNTensor>>& input_tensors,
+        std::unordered_map<std::string, std::vector<hbDNNTensor>>& output_tensors,
+        const std::unordered_map<std::string, hbUCPSchedParam>& UCP_sched_params);
 
     /**
     * @brief Perform inference for all loaded models using provided input tensors.
@@ -533,81 +640,69 @@ private:
     *         Outer key: model name, Inner key: output tensor name, Value: py::array.
     */
     std::unordered_map<std::string, std::unordered_map<std::string, py::array>>
-    InferAllModels(std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors);
+    InferAllModels(std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
+                   const std::unordered_map<std::string, hbUCPSchedParam>& UCP_sched_params);
 
     /**
-    * @brief Parse and validate the model name from the given extra arguments.
+    * @brief Parse and validate the model name for inference.
     *
-    * This function extracts the "model_name" key from the provided extra arguments map.
-    * If the key is present, it verifies that the value is a string and matches one of the loaded models.
-    * If the key is absent, it assumes exactly one model is loaded and returns its name.
-    * If multiple models are loaded but no model name is provided, it throws an error due to ambiguity.
+    * If model_name is provided, it must exist in model_list; otherwise the function
+    * assumes exactly one model is loaded and returns its name. If multiple models are
+    * loaded but no model name is provided, it throws an error due to ambiguity.
     *
-    * @param[in] extra_args       A map of extra arguments, where "model_name" may be included.
-    *                   The value type is a variant that can hold multiple types.
-    * @param[in] model_list A vector containing all currently loaded model names.
+    * @param[in] model_name  Optional model name. If provided, must exist in model_list.
+    * @param[in] model_list  Vector containing all currently loaded model names.
     *
     * @return A validated model name string to be used for inference or other operations.
     *
     * @throws std::runtime_error If:
-    *         - "model_name" is present but not a string.
-    *         - "model_name" is not found in the loaded model list.
-    *         - "model_name" is missing and multiple models are loaded.
+    *         - model_name is provided but not found in the loaded model list.
+    *         - model_name is missing and multiple models are loaded.
     */
-    std::string ParseAndValidateModelName(const ExtraArgs& args, const std::vector<std::string>& model_list);
+    std::string ParseAndValidateModelName(const std::optional<std::string>& model_name,
+                                         const std::vector<std::string>& model_list);
 
     /**
-    * @brief Validate input tensor names for one or more models before inference.
+    * @brief Validate model names and input tensor names before inference.
     *
-    * This function checks that all model names and their corresponding input tensor names
-    * in the user-provided `multi_input_tensors` are valid and registered.
+    * This function checks that:
+    * - All model names in `multi_input_tensors` exist in `model_list`.
+    * - Each model has registered input tensor names.
+    * - All provided input tensor names match the expected names for that model.
     *
-    * Specifically:
-    * - It verifies that each model in `multi_input_tensors` exists in the registered `model_list`.
-    * - It ensures each model has corresponding input name registrations in `input_names`.
-    * - It checks that all user-provided input tensor names match the expected names.
+    * @param[in] multi_input_tensors
+    *     Nested map: model_name -> (input_name -> numpy array).
+    * @param[in] model_list
+    *     List of valid, loaded model names.
     *
-    * @param[in] multi_input_tensors A nested map of model name -> (input name -> numpy array),
-    *                         representing the input tensors for inference.
-    * @param[in] model_list       A list of model names that have been loaded and registered.
-    * @param[in] input_names      A map of model name -> list of valid input tensor names.
+    * @throws std::runtime_error
+    *     If a model name is invalid or an input tensor name does not match.
     *
-    * @throws std::runtime_error if:
-    *         - A model name in `multi_input_tensors` is not found in `model_list`.
-    *         - No input names are registered for a model.
-    *         - Any input tensor name is not recognized for its model.
-    *
-    * @note This function performs structural validation only. It does not check tensor shapes or data types.
+    * @note This function validates names only; it does not check tensor shapes or data types.
     */
     void CheckInputInfoValid(const std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
-                            const std::vector<std::string>& model_list,
-                            const std::unordered_map<std::string, std::vector<std::string>>& input_names);
+                            const std::vector<std::string>& model_list);
 
     /**
-    * @brief Validate or filter input models based on the "model_name" field in extra_args.
+    * @brief Validate or filter input models based on the optional model name.
     *
-    * This function enforces model selection rules depending on the presence of "model_name" in extra_args.
-    * - If "model_name" is not provided, the function does nothing (all models are allowed).
-    * - If "model_name" is provided, it verifies that the name exists in multi_input_tensors,
-    *   and filters the map to retain only the selected model.
+    * If model_name_opt is not provided, the function does nothing (all models are allowed).
+    * If model_name_opt is provided, it verifies that the name exists in multi_input_tensors
+    * and filters the map to retain only the selected model.
     *
-    * This ensures that downstream inference logic is only applied to the user-specified model.
-    *
-    * @param[in,out] multi_input_tensors A mutable map of model name -> (input name -> numpy array).
-    *                         May initially contain multiple models.
-    * @param[in] extra_args       Extra arguments provided by the user. May optionally contain:
-    *                         - "model_name" : string, specifies a single model to be used.
+    * @param[in,out] multi_input_tensors  Mutable map of model name -> (input name -> numpy array).
+    *                                    May initially contain multiple models.
+    * @param[in] model_name_opt           Optional model name to select a single model.
     *
     * @throws std::runtime_error if:
-    *         - "model_name" is present but not a string
-    *         - "multi_input_tensors" is empty when "model_name" is provided
-    *         - The specified "model_name" does not match the only available model
-    *         - The specified "model_name" is not present in the input map
+    *         - multi_input_tensors is empty when model_name_opt is provided
+    *         - The specified model name does not match the only available model
+    *         - The specified model name is not present in the input map
     *
     * @note This function modifies multi_input_tensors in-place if filtering is applied.
     */
     void ValidateOrFilterModelName(std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
-                                const ExtraArgs& extra_args);
+                                  const std::optional<std::string>& model_name_opt);
 
     /**
     * @brief Parse and validate BPU core assignment from extra_args.
@@ -670,54 +765,6 @@ public:
     void FreeTensorMem(std::vector<hbDNNTensor>& tensors);
 
     /**
-    * @brief Set the scheduling priorities for models.
-    *
-    * Validates model names and priority values before updating the internal scheduling parameters.
-    *
-    * @param[in] priority  Map from model name to priority value (0-255).
-    *
-    * @throws std::runtime_error if a model name is invalid or priority is out of range.
-    */
-    void SetModelPriorities(const std::unordered_map<std::string, int>& priority);
-
-    /**
-    * @brief Set the BPU core assignments for each model.
-    *
-    * This function validates the model names and BPU core IDs before updating the scheduling parameters.
-    * Each model is assigned a vector of BPU cores to run on. Valid core IDs are in the range [0, 3].
-    *
-    * @param[in] bpu_cores A map from model name to a vector of BPU core IDs.
-    *
-    * @throws std::runtime_error If a model name is not found in the loaded model list or
-    *         if any core ID is outside the valid range [0, 3].
-    */
-    void SetModelBpuCores(const std::unordered_map<std::string, std::vector<int32_t>>& bpu_cores);
-
-    /**
-    * @brief Set custom IDs for each model.
-    *
-    * This function updates the customId field in the scheduling parameters
-    * for the specified models after validating their existence.
-    *
-    * @param[in] custom_id A map from model name to custom ID value.
-    *
-    * @throws std::runtime_error If any model name is not in the loaded model list.
-    */
-    void SetCustomIds(const std::unordered_map<std::string, int64_t>& custom_id);
-
-    /**
-    * @brief Set device IDs for each model.
-    *
-    * This function updates the deviceId field in the scheduling parameters
-    * for the specified models after verifying their presence.
-    *
-    * @param[in] device_id A map from model name to device ID value.
-    *
-    * @throws std::runtime_error If any model name is not in the loaded model list.
-    */
-    void SetDeviceIds(const std::unordered_map<std::string, uint32_t>& device_id);
-
-    /**
     * @brief Set scheduling parameters for multiple models.
     *
     * This function updates scheduling parameters such as priority, BPU cores,
@@ -743,8 +790,11 @@ public:
     * tensor into a tensor map, and delegates to the more general `run()` interface.
     *
     * @param[in] input_tensor A single input tensor (NumPy array). Must match expected shape and dtype.
-    * @param[in] extra_args   Optional arguments such as:
-    *                     - "model_name" (required if multiple models are loaded)
+    * @param[in] model_name  Optional model name (required if multiple models are loaded).
+    * @param[in] priority    Optional scheduling priority overrides.
+    * @param[in] bpu_cores   Optional BPU core overrides.
+    * @param[in] custom_id   Optional custom ID overrides.
+    * @param[in] device_id   Optional device ID overrides.
     *
     * @return A nested map from model_name to a map of output_name -> output tensor (NumPy array).
     *
@@ -754,7 +804,12 @@ public:
     *         - The specified model name is invalid or not found.
     */
     std::unordered_map<std::string, std::unordered_map<std::string, py::array>>
-    run(py::array input_tensor, const ExtraArgs& extra_args);
+    run(py::array input_tensor,
+        const std::optional<std::string>& model_name = std::nullopt,
+        const std::optional<std::unordered_map<std::string, int32_t>>& priority = std::nullopt,
+        const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores = std::nullopt,
+        const std::optional<std::unordered_map<std::string, int64_t>>& custom_id = std::nullopt,
+        const std::optional<std::unordered_map<std::string, uint32_t>>& device_id = std::nullopt);
 
     /**
     * @brief Run inference for a single model with multiple input tensors.
@@ -764,7 +819,11 @@ public:
     * into a nested structure and passed to the generic multi-model `run()` function.
     *
     * @param[in] input_tensors A flat map: input_name -> py::array (NumPy) for a single model.
-    * @param[in] extra_args Additional arguments. Required to contain "model_name" if multiple models are loaded.
+    * @param[in] model_name   Optional model name (required if multiple models are loaded).
+    * @param[in] priority     Optional scheduling priority overrides per model.
+    * @param[in] bpu_cores    Optional BPU core overrides.
+    * @param[in] custom_id    Optional custom ID overrides.
+    * @param[in] device_id    Optional device ID overrides.
     *
     * @return A nested map: model_name -> (output_name -> py::array)
     *
@@ -774,7 +833,11 @@ public:
     */
     std::unordered_map<std::string, std::unordered_map<std::string, py::array>>
     run(std::unordered_map<std::string, py::array>& input_tensors,
-                    const ExtraArgs& extra_args);
+        const std::optional<std::string>& model_name,
+        const std::optional<std::unordered_map<std::string, int32_t>>& priority = std::nullopt,
+        const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores = std::nullopt,
+        const std::optional<std::unordered_map<std::string, int64_t>>& custom_id = std::nullopt,
+        const std::optional<std::unordered_map<std::string, uint32_t>>& device_id = std::nullopt);
 
     /**
     * @brief Run inference for one or multiple models with full input specification.
@@ -782,32 +845,36 @@ public:
     * This is the core multi-model inference entry point.
     * The user provides:
     *   - A nested input map: model_name -> (input_name -> numpy array)
-    *   - Optionally, extra arguments such as:
-    *       - "model_name" : string (to select a specific model)
+    *   - Optionally: model_name, priority, bpu_cores, custom_id, device_id
     *
     * Internally, this function:
     *   1. Validates the input tensor names and models
-    *   2. Optionally filters to a specific model if "model_name" is set
+    *   2. Optionally filters to a specific model if model_name is set
     *   3. Launches inference tasks (may be multi-threaded)
     *   4. Returns inference results as py::array (NumPy) in a nested map
     *
-    * @threadsafe This function is guarded by an atomic flag and is not reentrant.
+    * @threadsafe Multiple run() calls may execute concurrently. Shared state is protected by mutexes.
     *
     * @param[in] multi_input_tensors A nested input map:
     *        model_name -> (input_name -> py::array)
-    * @param[in] extra_args Optional arguments for inference control. Supported keys:
-    *        - "model_name" (std::string)
+    * @param[in] model_name  Optional model name to filter/select.
+    * @param[in] priority    Optional scheduling priority overrides.
+    * @param[in] bpu_cores   Optional BPU core overrides.
+    * @param[in] custom_id   Optional custom ID overrides.
+    * @param[in] device_id   Optional device ID overrides.
     *
     * @return A nested output map:
     *         model_name -> (output_name -> py::array)
     *
-    * @throws std::runtime_error if:
-    *         - Function is already running
-    *         - Input/model name is invalid
+    * @throws std::runtime_error if input/model name is invalid
     */
     std::unordered_map<std::string, std::unordered_map<std::string, py::array>>
     run(std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
-                    const ExtraArgs& extra_args);
+        const std::optional<std::string>& model_name = std::nullopt,
+        const std::optional<std::unordered_map<std::string, int32_t>>& priority = std::nullopt,
+        const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores = std::nullopt,
+        const std::optional<std::unordered_map<std::string, int64_t>>& custom_id = std::nullopt,
+        const std::optional<std::unordered_map<std::string, uint32_t>>& device_id = std::nullopt);
 
     /**
     * @brief Get the version string of the underlying hbDNN library.
@@ -913,6 +980,16 @@ public:
     * @return Map from model name to map of output tensor name to strides vector.
     */
     std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int64_t>>> GetOutputStrides();
+
+    /**
+    * @brief Get compile-time BPU core count for each loaded model.
+    *
+    * The returned map is keyed by model name, and the value is the number of BPU cores
+    * specified at compile time for that model (from hbDNNGetCompileBpuCoreNum).
+    *
+    * @return Map from model name to compile-time BPU core count.
+    */
+    std::unordered_map<std::string, int32_t> GetCompileBpuCoreNum();
 
     /**
     * @brief Get descriptive strings for each loaded model.

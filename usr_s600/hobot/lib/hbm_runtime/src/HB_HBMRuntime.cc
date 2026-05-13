@@ -43,7 +43,7 @@ HB_HBMRuntime::HB_HBMRuntime(const string& model_file)
     // Initialize the packed DNN model handle using Horizon SDK API.
     // This loads the model into memory and prepares it for inference.
     HBDNN_CHECK_SUCCESS(
-        hbDNNInitializeFromFiles(&dnn_packed_handle, model_file_cstrs, 1),
+        hbDNNInitializeFromFiles(&dnn_packed_handle_, model_file_cstrs, 1),
         "hbDNN initialize from " + model_file + " file failed."
     );
 
@@ -51,7 +51,7 @@ HB_HBMRuntime::HB_HBMRuntime(const string& model_file)
     LoadParameters(std::vector<std::string>{model_file});
 
     // Initialize the scheduling parameters map with default values.
-    InitSchedParamMapWithModels(model_sched_params, model_names);
+    InitSchedParamMapWithModels(model_sched_params_);
 }
 
 /**
@@ -94,7 +94,7 @@ HB_HBMRuntime::HB_HBMRuntime(const std::vector<std::string>& model_files)
     // Initialize the packed DNN model handle with multiple HBM files.
     // This step loads the model group into memory and prepares it for multi-model inference.
     HBDNN_CHECK_SUCCESS(
-        hbDNNInitializeFromFiles(&dnn_packed_handle, model_file_cstrs.data(), model_file_cstrs.size()),
+        hbDNNInitializeFromFiles(&dnn_packed_handle_, model_file_cstrs.data(), model_file_cstrs.size()),
         "hbDNN initialize from multiple .hbm files failed."
     );
 
@@ -102,7 +102,7 @@ HB_HBMRuntime::HB_HBMRuntime(const std::vector<std::string>& model_files)
     LoadParameters(model_files);
 
     // Initialize the scheduling parameters map with default values.
-    InitSchedParamMapWithModels(model_sched_params, model_names);
+    InitSchedParamMapWithModels(model_sched_params_);
 }
 
 /**
@@ -138,8 +138,8 @@ void HB_HBMRuntime::FreeTensorMem(std::vector<hbDNNTensor>& tensors) {
 HB_HBMRuntime::~HB_HBMRuntime()
 {
     // Check if the handle was initialized, then release it.
-    if (dnn_packed_handle) {
-        hbDNNRelease(dnn_packed_handle);
+    if (dnn_packed_handle_) {
+        hbDNNRelease(dnn_packed_handle_);
     }
 }
 
@@ -236,7 +236,6 @@ int32_t HB_HBMRuntime::PrepareInputValidShape(std::string &model_name, std::stri
         }
     }
 
-    input_shape_ready = true;
     return 0;
 }
 
@@ -265,11 +264,6 @@ int32_t HB_HBMRuntime::PrepareInputValidShape(std::string &model_name, std::stri
 int32_t HB_HBMRuntime::PrepareInputStride(std::string &model_name, std::string &input_tensor_name,
                                           hbDNNTensorShape &shape, int64_t *stride, py::array &input_array)
 {
-    // Ensure shape is valid before computing stride
-    if (!input_shape_ready) {
-        PrepareInputValidShape(model_name, input_tensor_name, shape, input_array);
-    }
-
     // Fill dynamic strides from innermost to outermost dimension
     for (int32_t idx = shape.numDimensions - 1; idx >= 0; idx--) {
         if (stride[idx] < 0) {
@@ -409,9 +403,9 @@ int32_t HB_HBMRuntime::PrepareInputTensor(std::string model_name, std::vector<hb
                                           std::unordered_map<std::string, py::array>& input_arrays)
 {
     // Loop over all input tensors for the model
-    for (int32_t input_tensor_idx{0}; input_tensor_idx < input_counts[model_name]; input_tensor_idx++) {
+    for (int32_t input_tensor_idx{0}; input_tensor_idx < input_counts_[model_name]; input_tensor_idx++) {
         // Get the tensor name by index
-        std::string input_name = input_names[model_name][input_tensor_idx];
+        std::string input_name = input_names_[model_name][input_tensor_idx];
 
         // Get the input data numpy array from user input
         py::array & input_array = input_arrays[input_name];
@@ -424,7 +418,7 @@ int32_t HB_HBMRuntime::PrepareInputTensor(std::string model_name, std::vector<hb
         hbDNNTensorProperties &input_properties{input_tensors[input_tensor_idx].properties};
 
         // Query tensor properties from the DNN handle
-        HBDNN_CHECK_SUCCESS(hbDNNGetInputTensorProperties(&input_properties, dnn_handle_list[model_name], input_tensor_idx),
+        HBDNN_CHECK_SUCCESS(hbDNNGetInputTensorProperties(&input_properties, dnn_handle_list_[model_name], input_tensor_idx),
                             "Failed to get tensor properties for model: " + model_name + ", input: " + input_name);
 
         // Verify input data type compatibility (numpy dtype vs model expected type)
@@ -460,20 +454,20 @@ int32_t HB_HBMRuntime::PrepareInputTensor(std::string model_name, std::vector<hb
  */
 int32_t HB_HBMRuntime::PrepareOutputTensor(std::string model_name, std::vector<hbDNNTensor> & output_tensors)
 {
-    auto it = output_counts.find(model_name);
-    if (it == output_counts.end()) {
+    auto it = output_counts_.find(model_name);
+    if (it == output_counts_.end()) {
         throw std::runtime_error("Unknown model name: " + model_name);
     }
 
-    for (int32_t idx{0}; idx < output_counts[model_name]; idx++) {
-        std::string tensor_name = output_names[model_name][idx];
+    for (int32_t idx{0}; idx < output_counts_[model_name]; idx++) {
+        std::string tensor_name = output_names_[model_name][idx];
 
         output_tensors.emplace_back();  // 添加新 tensor
         hbDNNTensor& tensor = output_tensors.back();
         hbDNNTensorProperties& tensor_props = tensor.properties;
 
         // Retrieve output tensor properties from the DNN handle
-        HBDNN_CHECK_SUCCESS(hbDNNGetOutputTensorProperties(&tensor_props, dnn_handle_list[model_name], idx),
+        HBDNN_CHECK_SUCCESS(hbDNNGetOutputTensorProperties(&tensor_props, dnn_handle_list_[model_name], idx),
                             "Failed to get tensor properties for model: " + model_name + ", output: " + tensor_name);
 
         // Allocate cached memory for the output tensor
@@ -534,18 +528,18 @@ py::array MakeNumpyArrayWithCapsule(
  * - Inserts the numpy array into the provided map keyed by the output tensor name.
  *
  * @param[in]  model_name         The name of the model whose outputs are being processed.
- * @param[out] model_output_arrays A map to store output tensor name to numpy array.
- * @param[in]  output_tensors A vector of hbDNNTensors representing the model output tensors.
+ * @param[out] model_output_array A map to store output tensor name to numpy array.
+ * @param[in]  model_output_tensor A vector of hbDNNTensors representing the model output tensors.
  *
  * @return int32_t Returns 0 on success.
  */
-int32_t HB_HBMRuntime::PrepareOutputArrays(std::string model_name, std::unordered_map<std::string, py::array> & model_output_arrays,
-                            std::vector<hbDNNTensor> & output_tensors)
+int32_t HB_HBMRuntime::PrepareOutputArrays(std::string model_name, std::unordered_map<std::string, py::array> & model_output_array,
+                            std::vector<hbDNNTensor> & model_output_tensor)
 {
-    for (int32_t output_tensor_idx{0}; output_tensor_idx < output_counts[model_name]; output_tensor_idx++) {
-        std::string tensor_name = output_names[model_name][output_tensor_idx];
+    for (int32_t output_tensor_idx{0}; output_tensor_idx < output_counts_[model_name]; output_tensor_idx++) {
+        std::string tensor_name = output_names_[model_name][output_tensor_idx];
 
-        hbDNNTensorProperties &output_properties{output_tensors[output_tensor_idx].properties};
+        hbDNNTensorProperties &output_properties{model_output_tensor[output_tensor_idx].properties};
 
         // Extract shape and strides for numpy array construction
         std::vector<ssize_t> shape(output_properties.validShape.numDimensions);
@@ -560,28 +554,26 @@ int32_t HB_HBMRuntime::PrepareOutputArrays(std::string model_name, std::unordere
         py::dtype dtype = py::dtype(HbDNNTypeToNumpyFormat(output_properties.tensorType));
 
         // Create numpy array that wraps hbDNNTensor's system memory with automatic memory management
-        py::array np_array = MakeNumpyArrayWithCapsule(dtype, shape, strides, output_tensors[output_tensor_idx].sysMem);
+        py::array np_array = MakeNumpyArrayWithCapsule(dtype, shape, strides, model_output_tensor[output_tensor_idx].sysMem);
 
         // Store in output map with output tensor name as key
-        model_output_arrays[tensor_name] = np_array;
+        model_output_array[tensor_name] = np_array;
     }
     return 0;
 }
 
 /**
- * @brief Determine the BPU core mask to be used for the given model based on user-provided core IDs.
+ * @brief Convert BPU core IDs for a model into a 64-bit bitmask for hbUCPSchedParam.backend.
  *
- * This function looks up the BPU core IDs assigned to a specific model and returns a 64-bit bitmask
- * indicating which cores the model should run on. If no valid cores are specified, it defaults to
- * HB_UCP_BPU_CORE_ANY to allow automatic scheduling.
+ * If bpu_cores is empty or contains only -1, returns HB_UCP_BPU_CORE_ANY for automatic scheduling.
+ * Otherwise builds a bitmask from user-specified core IDs (valid range 0~3).
  *
- * @param[in] model_name    The name of the model for which the BPU core mask is requested.
- * @param[in] bpu_cores  A map from model names to lists of user-specified BPU core IDs (valid values are 0~3 or -1).
+ * @param[in] model_name  The name of the model (for error messages).
+ * @param[in] bpu_cores   Vector of BPU core IDs for this model (0~3, or -1 for ANY).
  *
- * @return A 64-bit mask with bits set for each core ID the model should run on.
- *         Returns HB_UCP_BPU_CORE_ANY if no core is specified or if the list contains only -1.
+ * @return A 64-bit mask with bits set for each core ID, or HB_UCP_BPU_CORE_ANY.
  *
- * @throws std::runtime_error if any core ID is outside the valid range [0, 3] or not -1.
+ * @throws std::runtime_error if any core ID is outside [0, 3] and not -1.
  */
 uint64_t HB_HBMRuntime::GetBPUCoreMaskForModel(const std::string& model_name,
                                                 const std::vector<int>& bpu_cores)
@@ -623,9 +615,10 @@ uint64_t HB_HBMRuntime::GetBPUCoreMaskForModel(const std::string& model_name,
  * @param[in,out] output_tensors  Output buffers where inference results will be stored.
  */
 void HB_HBMRuntime::InferSingleModel(const std::string& model_name,
-                 hbDNNHandle_t& dnn_handle,
-                 std::vector<hbDNNTensor>& input_tensors,
-                 std::vector<hbDNNTensor>& output_tensors)
+                                     hbDNNHandle_t& dnn_handle,
+                                     std::vector<hbDNNTensor>& input_tensors,
+                                     std::vector<hbDNNTensor>& output_tensors,
+                                     const hbUCPSchedParam& sched_param)
 {
     // Task handle for UCP scheduler
     hbUCPTaskHandle_t task_handle = nullptr;
@@ -637,16 +630,9 @@ void HB_HBMRuntime::InferSingleModel(const std::string& model_name,
     HBDNN_CHECK_SUCCESS(hbDNNInferV2(&task_handle, output_tensors.data(), input_tensors.data(), dnn_handle),
                         " hbDNNInferV2 failed");
 
-    // Configure scheduler parameters
-    hbUCPSchedParam sched_param{};
-    HB_UCP_INITIALIZE_SCHED_PARAM(&sched_param);
-    sched_param.priority = model_sched_params[model_name].priority;
-    sched_param.deviceId = model_sched_params[model_name].deviceId;
-    sched_param.customId = model_sched_params[model_name].customId;
-    sched_param.backend = GetBPUCoreMaskForModel(model_name, model_sched_params[model_name].bpu_cores);  // Set BPU core mask
-
-    // Submit task to UCP for execution
-    HBUCP_CHECK_SUCCESS(hbUCPSubmitTask(task_handle, &sched_param),
+    // Submit task to UCP for execution (API expects non-const pointer; pass copy)
+    hbUCPSchedParam sched_param_copy = sched_param;
+    HBUCP_CHECK_SUCCESS(hbUCPSubmitTask(task_handle, &sched_param_copy),
                         model_name + " hbUCPSubmitTask failed");
 
     // Wait for the task to complete (synchronously)
@@ -658,17 +644,9 @@ void HB_HBMRuntime::InferSingleModel(const std::string& model_name,
     auto duration_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
     // std::cout << "hbDNNInferV2 inference time: " << duration_ms << " ms" << std::endl;
 
-    // After inference, flush the memory and fetch updated output tensor properties
+    // After inference, invalidate cache for each output buffer so host can read updated data
     for (int output_tensor_idx = 0; output_tensor_idx < output_tensors.size(); output_tensor_idx++) {
-        // Invalidate cache for output buffer
         HBUCP_CHECK_SUCCESS(hbUCPMemFlush(&output_tensors[output_tensor_idx].sysMem, HB_SYS_MEM_CACHE_INVALIDATE), " ");
-
-        std::string tensor_name = output_names[model_name][output_tensor_idx];
-        hbDNNTensorProperties &output_properties = output_tensor_properties[model_name][tensor_name];
-
-        // Retrieve runtime-updated output tensor properties (e.g., shape, size)
-        HBDNN_CHECK_SUCCESS(hbDNNGetTaskOutputTensorProperties(&output_properties, task_handle, 0, output_tensor_idx),
-                            model_name + " hbDNNGetTaskOutputTensorProperties failed!");
     }
 
     // Release task resources
@@ -679,41 +657,47 @@ void HB_HBMRuntime::InferSingleModel(const std::string& model_name,
 /**
  * @brief Launch inference tasks for all models in parallel using multithreading.
  *
- * Each model is assigned a separate thread to perform inference via `InferSingleModel`.
+ * Each model is assigned a separate thread to perform inference via InferSingleModel.
+ * Each task uses the per-model scheduling parameters from UCP_sched_params.
  *
- * @param[in] input_tensors   Map containing input tensors for each model.
+ * @param[in] input_tensors      Map containing input tensors for each model.
  * @param[in,out] output_tensors Map to hold output tensors for each model after inference.
+ * @param[in] UCP_sched_params   Per-model hbUCPSchedParam (priority, customId, backend, deviceId).
  *
  * @return Returns 0 on success.
  */
-int32_t HB_HBMRuntime::LaunchInferenceTasks(
-    std::unordered_map<std::string, std::vector<hbDNNTensor>> & input_tensors,
-    std::unordered_map<std::string, std::vector<hbDNNTensor>> & output_tensors)
+ int32_t HB_HBMRuntime::LaunchInferenceTasks(
+    std::unordered_map<std::string, std::vector<hbDNNTensor>>& input_tensors,
+    std::unordered_map<std::string, std::vector<hbDNNTensor>>& output_tensors,
+    const std::unordered_map<std::string, hbUCPSchedParam>& UCP_sched_params)
 {
     std::vector<std::thread> threads;
+    threads.reserve(input_tensors.size());
 
-    // Launch inference threads for each model
-    for (const auto& model_pair : input_tensors) {
-        const std::string& model_name = model_pair.first;
+    // 1) Pre-build the keys for `output_tensors` to avoid
+    // rehashing caused by insertions within the loop.
+    for (const auto& [model_name, _] : input_tensors) {
+        output_tensors.try_emplace(model_name);
+    }
 
-        // Start a new thread to perform inference for this model
-        threads.emplace_back([this, model_name, &input_tensors, &output_tensors]() {
-            InferSingleModel(
-                model_name,
-                dnn_handle_list.at(model_name),  // Fetch handle for the model
-                input_tensors[model_name],        // Input tensor list
-                output_tensors[model_name]        // Output tensor list (to be filled)
-            );
+    // 2) Obtain a pointer to a map element and capture the pointer,
+    // avoiding capturing local references within a loop to prevent dangling references.
+    for (const auto& [model_name, _] : input_tensors) {
+        auto* p_in   = &input_tensors.at(model_name);
+        auto* p_out  = &output_tensors.at(model_name);
+        auto  sched  = UCP_sched_params.at(model_name);
+        auto* p_handle = &dnn_handle_list_.at(model_name);
+
+        threads.emplace_back([this, model_name, p_handle, p_in, p_out, sched]() {
+            InferSingleModel(model_name, *p_handle, *p_in, *p_out, sched);
         });
     }
 
-    // Wait for all threads to complete before returning
-    for (auto& thread : threads) {
-        thread.join();
-    }
-
+    for (auto& t : threads) t.join();
     return 0;
 }
+
+
 
 /**
  * @brief Perform inference for all loaded models using provided input tensors.
@@ -731,7 +715,8 @@ int32_t HB_HBMRuntime::LaunchInferenceTasks(
  */
 std::unordered_map<std::string, std::unordered_map<std::string, py::array>>
 HB_HBMRuntime::InferAllModels(
-    std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors)
+    std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
+    const std::unordered_map<std::string, hbUCPSchedParam>& UCP_sched_params)
 {
     // Map to hold input tensor structures for each model
     std::unordered_map<std::string, std::vector<hbDNNTensor>> input_tensors;
@@ -753,8 +738,12 @@ HB_HBMRuntime::InferAllModels(
         PrepareOutputTensor(model_name, output_tensors[model_name]);
     }
 
-    // Step 2: Launch all inference tasks in parallel
-    LaunchInferenceTasks(input_tensors, output_tensors);
+    // Step 2: Launch all inference tasks in parallel (pure C++ / hbDNN/hbUCP; release GIL so
+    // other Python threads can run while we wait on BPU)
+    {
+        py::gil_scoped_release release;
+        LaunchInferenceTasks(input_tensors, output_tensors, UCP_sched_params);
+    }
 
     // Step 3: Convert output tensors to numpy arrays and store in result
     for (const auto& model_pair : multi_input_tensors) {
@@ -770,49 +759,39 @@ HB_HBMRuntime::InferAllModels(
 }
 
 /**
- * @brief Parse and validate the model name from the given extra arguments.
+ * @brief Parse and validate the model name for inference.
  *
- * This function extracts the "model_name" key from the provided extra arguments map.
- * If the key is present, it verifies that the value is a string and matches one of the loaded models.
- * If the key is absent, it assumes exactly one model is loaded and returns its name.
- * If multiple models are loaded but no model name is provided, it throws an error due to ambiguity.
+ * If model_name is provided, it must exist in model_list; otherwise the function
+ * assumes exactly one model is loaded and returns its name. If multiple models are
+ * loaded but no model name is provided, it throws an error due to ambiguity.
  *
- * @param[in] extra_args       A map of extra arguments, where "model_name" may be included.
- *                   The value type is a variant that can hold multiple types.
- * @param[in] model_list A vector containing all currently loaded model names.
+ * @param[in] model_name  Optional model name. If provided, must exist in model_list.
+ * @param[in] model_list  Vector containing all currently loaded model names.
  *
  * @return A validated model name string to be used for inference or other operations.
  *
  * @throws std::runtime_error If:
- *         - "model_name" is present but not a string.
- *         - "model_name" is not found in the loaded model list.
- *         - "model_name" is missing and multiple models are loaded.
+ *         - model_name is provided but not found in the loaded model list.
+ *         - model_name is missing and multiple models are loaded.
  */
 std::string HB_HBMRuntime::ParseAndValidateModelName(
-    const ExtraArgs& extra_args,
+    const std::optional<std::string>& model_name,
     const std::vector<std::string>& model_list)
 {
-    // Try to find "model_name" key in extra arguments
-    auto it = extra_args.find("model_name");
-    if (it != extra_args.end()) {
-        // Check if the value is a string
-        if (!std::holds_alternative<std::string>(it->second)) {
-            throw std::runtime_error("extra_args['model_name'] must be a string.");
-        }
-
-        const std::string& model_name = std::get<std::string>(it->second);
+    if (model_name.has_value()) {
+        const std::string& name_val = model_name.value();
 
         // Check if the provided model name is in the list of loaded models
-        if (std::find(model_list.begin(), model_list.end(), model_name) == model_list.end()) {
-            throw std::runtime_error("Provided model_name '" + model_name + "' is not in the loaded model list.");
+        if (std::find(model_list.begin(), model_list.end(), name_val) == model_list.end()) {
+            throw std::runtime_error("Provided model_name '" + name_val + "' is not in the loaded model list.");
         }
 
-        return model_name;
+        return name_val;
     }
 
     // If no model name provided and multiple models are loaded, raise an error
     if (model_list.size() != 1) {
-        throw std::runtime_error("extra_args does not provide model_name, but multiple models are loaded (" +
+        throw std::runtime_error("model_name was not provided, but multiple models are loaded (" +
                                  std::to_string(model_list.size()) + ").");
     }
 
@@ -821,32 +800,26 @@ std::string HB_HBMRuntime::ParseAndValidateModelName(
 }
 
 /**
- * @brief Validate input tensor names for one or more models before inference.
+ * @brief Validate model names and input tensor names before inference.
  *
- * This function checks that all model names and their corresponding input tensor names
- * in the user-provided `multi_input_tensors` are valid and registered.
+ * This function checks that:
+ * - All model names in `multi_input_tensors` exist in `model_list`.
+ * - Each model has registered input tensor names.
+ * - All provided input tensor names match the expected names for that model.
  *
- * Specifically:
- * - It verifies that each model in `multi_input_tensors` exists in the registered `model_list`.
- * - It ensures each model has corresponding input name registrations in `input_names`.
- * - It checks that all user-provided input tensor names match the expected names.
+ * @param[in] multi_input_tensors
+ *     Nested map: model_name -> (input_name -> numpy array).
+ * @param[in] model_list
+ *     List of valid, loaded model names.
  *
- * @param[in] multi_input_tensors A nested map of model name -> (input name -> numpy array),
- *                         representing the input tensors for inference.
- * @param[in] model_list       A list of model names that have been loaded and registered.
- * @param[in] input_names      A map of model name -> list of valid input tensor names.
+ * @throws std::runtime_error
+ *     If a model name is invalid or an input tensor name does not match.
  *
- * @throws std::runtime_error if:
- *         - A model name in `multi_input_tensors` is not found in `model_list`.
- *         - No input names are registered for a model.
- *         - Any input tensor name is not recognized for its model.
- *
- * @note This function performs structural validation only. It does not check tensor shapes or data types.
+ * @note This function validates names only; it does not check tensor shapes or data types.
  */
 void HB_HBMRuntime::CheckInputInfoValid(
     const std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
-    const std::vector<std::string>& model_list,
-    const std::unordered_map<std::string, std::vector<std::string>>& input_names)
+    const std::vector<std::string>& model_list)
 {
     // Iterate over each model's input map
     for (const auto& [model_name, inputs] : multi_input_tensors) {
@@ -856,8 +829,8 @@ void HB_HBMRuntime::CheckInputInfoValid(
         }
 
         // Check whether input names for this model are registered
-        auto it = input_names.find(model_name);
-        if (it == input_names.end()) {
+        auto it = input_names_.find(model_name);
+        if (it == input_names_.end()) {
             throw std::runtime_error("Input names for model \"" + model_name + "\" are not registered.");
         }
 
@@ -873,45 +846,33 @@ void HB_HBMRuntime::CheckInputInfoValid(
 }
 
 /**
- * @brief Validate or filter input models based on the "model_name" field in extra_args.
+ * @brief Validate or filter input models based on the optional model name.
  *
- * This function enforces model selection rules depending on the presence of "model_name" in extra_args.
- * - If "model_name" is not provided, the function does nothing (all models are allowed).
- * - If "model_name" is provided, it verifies that the name exists in multi_input_tensors,
- *   and filters the map to retain only the selected model.
+ * If model_name_opt is not provided, the function does nothing (all models are allowed).
+ * If model_name_opt is provided, it verifies that the name exists in multi_input_tensors
+ * and filters the map to retain only the selected model.
  *
- * This ensures that downstream inference logic is only applied to the user-specified model.
- *
- * @param[in,out] multi_input_tensors A mutable map of model name -> (input name -> numpy array).
- *                         May initially contain multiple models.
- * @param[in] extra_args       Extra arguments provided by the user. May optionally contain:
- *                         - "model_name" : string, specifies a single model to be used.
+ * @param[in,out] multi_input_tensors  Mutable map of model name -> (input name -> numpy array).
+ *                                    May initially contain multiple models.
+ * @param[in] model_name_opt           Optional model name to select a single model.
  *
  * @throws std::runtime_error if:
- *         - "model_name" is present but not a string
- *         - "multi_input_tensors" is empty when "model_name" is provided
- *         - The specified "model_name" does not match the only available model
- *         - The specified "model_name" is not present in the input map
+ *         - multi_input_tensors is empty when model_name_opt is provided
+ *         - The specified model name does not match the only available model
+ *         - The specified model name is not present in the input map
  *
  * @note This function modifies multi_input_tensors in-place if filtering is applied.
  */
 void HB_HBMRuntime::ValidateOrFilterModelName(
     std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
-    const ExtraArgs& extra_args)
+    const std::optional<std::string>& model_name_opt)
 {
-    // Check if model_name is specified in extra_args
-    auto model_name_it = extra_args.find("model_name");
-    if (model_name_it == extra_args.end()) {
-        // Lenient mode: allow multiple models to be used without restriction
+    // Check if model_name has value
+    if (!model_name_opt.has_value()) {
         return;
     }
 
-    // Validate that model_name is a string
-    if (!std::holds_alternative<std::string>(model_name_it->second)) {
-        throw std::runtime_error("extra_args['model_name'] must be a string.");
-    }
-
-    const std::string& model_name = std::get<std::string>(model_name_it->second);
+    const std::string& model_name = *model_name_opt;
 
     if (multi_input_tensors.empty()) {
         throw std::runtime_error("multi_input_tensors is empty, cannot match model_name: " + model_name);
@@ -943,19 +904,21 @@ void HB_HBMRuntime::ValidateOrFilterModelName(
 }
 
 /**
- * @brief Set the scheduling priorities for models.
- *
- * Validates model names and priority values before updating the internal scheduling parameters.
- *
- * @param[in] priority  Map from model name to priority value (0-255).
- *
- * @throws std::runtime_error if a model name is invalid or priority is out of range.
- */
-void HB_HBMRuntime::SetModelPriorities(const std::unordered_map<std::string, int>& priority)
+* @brief Set scheduling priorities for models into a given parameter map.
+*
+* Validates model names and priority values (0-255) before updating.
+*
+* @param[in] priority            Map from model name to priority value (0-255).
+* @param[in,out] model_sched_params Map to update with per-model priority.
+*
+* @throws std::runtime_error if a model name is invalid or priority is out of range.
+*/
+void HB_HBMRuntime::SetModelPriorities(const std::unordered_map<std::string, int32_t>& priority,
+                                       std::unordered_map<std::string, SchedParam>& model_sched_params)
 {
     for (const auto& [model_name, value] : priority) {
         // Validate model existence
-        if (std::find(model_names.begin(), model_names.end(), model_name) == model_names.end()) {
+        if (std::find(model_names_.begin(), model_names_.end(), model_name) == model_names_.end()) {
             throw std::runtime_error("Invalid model name in priority setting: \"" + model_name +
                                      "\". This model is not in the loaded model list.");
         }
@@ -972,22 +935,22 @@ void HB_HBMRuntime::SetModelPriorities(const std::unordered_map<std::string, int
 }
 
 /**
- * @brief Set the BPU core assignments for each model.
- *
- * This function validates the model names and BPU core IDs before updating the scheduling parameters.
- * Each model is assigned a vector of BPU cores to run on. Valid core IDs are in the range [0, 3].
- *
- * @param[in] bpu_cores A map from model name to a vector of BPU core IDs.
- *
- * @throws std::runtime_error If a model name is not found in the loaded model list or
- *         if any core ID is outside the valid range [0, 3].
- */
+* @brief Set BPU core assignments for models into a given parameter map.
+*
+* Validates model names and BPU core IDs (0-3) before updating.
+*
+* @param[in] bpu_cores           Map from model name to vector of BPU core IDs.
+* @param[in,out] model_sched_params Map to update with per-model BPU core assignment.
+*
+* @throws std::runtime_error if a model name is invalid or any core ID is out of range [0, 3].
+*/
 void HB_HBMRuntime::SetModelBpuCores(
-    const std::unordered_map<std::string, std::vector<int32_t>>& bpu_cores)
+    const std::unordered_map<std::string, std::vector<int32_t>>& bpu_cores,
+    std::unordered_map<std::string, SchedParam>& model_sched_params)
 {
     for (const auto& [model_name, core_ids] : bpu_cores) {
         // Check if the model name is valid
-        if (std::find(model_names.begin(), model_names.end(), model_name) == model_names.end()) {
+        if (std::find(model_names_.begin(), model_names_.end(), model_name) == model_names_.end()) {
             throw std::runtime_error("Invalid model name in bpu_cores: \"" + model_name +
                                      "\". This model is not in the loaded model list.");
         }
@@ -1005,19 +968,20 @@ void HB_HBMRuntime::SetModelBpuCores(
 }
 
 /**
- * @brief Set custom IDs for each model.
- *
- * This function updates the customId field in the scheduling parameters
- * for the specified models after validating their existence.
- *
- * @param[in] custom_id A map from model name to custom ID value.
- *
- * @throws std::runtime_error If any model name is not in the loaded model list.
- */
-void HB_HBMRuntime::SetCustomIds(const std::unordered_map<std::string, int64_t>& custom_id)
+* @brief Set custom IDs for models into a given parameter map.
+*
+* Validates model names before updating the customId field.
+*
+* @param[in] custom_id           Map from model name to custom ID value.
+* @param[in,out] model_sched_params Map to update with per-model custom ID.
+*
+* @throws std::runtime_error if a model name is invalid.
+*/
+void HB_HBMRuntime::SetCustomIds(const std::unordered_map<std::string, int64_t>& custom_id,
+    std::unordered_map<std::string, SchedParam>& model_sched_params)
 {
     for (const auto& [model_name, value] : custom_id) {
-        if (std::find(model_names.begin(), model_names.end(), model_name) == model_names.end()) {
+        if (std::find(model_names_.begin(), model_names_.end(), model_name) == model_names_.end()) {
             throw std::runtime_error("Invalid model name in custom_id setting: \"" + model_name + "\". "
                                      "This model is not in the loaded model list.");
         }
@@ -1027,19 +991,20 @@ void HB_HBMRuntime::SetCustomIds(const std::unordered_map<std::string, int64_t>&
 }
 
 /**
- * @brief Set device IDs for each model.
- *
- * This function updates the deviceId field in the scheduling parameters
- * for the specified models after verifying their presence.
- *
- * @param[in] device_id A map from model name to device ID value.
- *
- * @throws std::runtime_error If any model name is not in the loaded model list.
- */
-void HB_HBMRuntime::SetDeviceIds(const std::unordered_map<std::string, uint32_t>& device_id)
+* @brief Set device IDs for models into a given parameter map.
+*
+* Validates model names before updating the deviceId field.
+*
+* @param[in] device_id           Map from model name to device ID value.
+* @param[in,out] model_sched_params Map to update with per-model device ID.
+*
+* @throws std::runtime_error if a model name is invalid.
+*/
+void HB_HBMRuntime::SetDeviceIds(const std::unordered_map<std::string, uint32_t>& device_id,
+    std::unordered_map<std::string, SchedParam>& model_sched_params)
 {
     for (const auto& [model_name, value] : device_id) {
-        if (std::find(model_names.begin(), model_names.end(), model_name) == model_names.end()) {
+        if (std::find(model_names_.begin(), model_names_.end(), model_name) == model_names_.end()) {
             throw std::runtime_error("Invalid model name in device_id setting: \"" + model_name + "\". "
                                      "This model is not in the loaded model list.");
         }
@@ -1066,17 +1031,90 @@ void HB_HBMRuntime::SetSchedulingParams(
         const std::optional<std::unordered_map<std::string, int64_t>>& custom_id,
         const std::optional<std::unordered_map<std::string, uint32_t>>& device_id)
 {
+    std::unique_lock lock(model_sched_params_mutex_);
     if (priority.has_value()) {  // Set model priorities if provided
-        SetModelPriorities(priority.value());
+        SetModelPriorities(priority.value(), model_sched_params_);
     }
     if (bpu_cores.has_value()) {  // Set BPU core allocations if provided
-        SetModelBpuCores(bpu_cores.value());
+        SetModelBpuCores(bpu_cores.value(), model_sched_params_);
     }
     if (custom_id.has_value()) {  // Set custom IDs if provided
-        SetCustomIds(custom_id.value());
+        SetCustomIds(custom_id.value(), model_sched_params_);
     }
     if (device_id.has_value()) {  // Set device IDs if provided
-        SetDeviceIds(device_id.value());
+        SetDeviceIds(device_id.value(), model_sched_params_);
+    }
+}
+
+/**
+ * @brief Parse and merge scheduling parameters for a run() invocation.
+ *
+ * For each model in multi_input_tensors, merges run-time optional params with
+ * default model_sched_params_. Run-time params take precedence when provided.
+ * The merged result is converted to hbUCPSchedParam and stored in out_ucp_sched_params.
+ *
+ * @param[in] multi_input_tensors   Models involved in this inference run.
+ * @param[in] priority             Optional run-time priority overrides (model_name -> value).
+ * @param[in] bpu_cores            Optional run-time BPU core overrides (model_name -> cores).
+ * @param[in] custom_id            Optional run-time custom ID overrides (model_name -> value).
+ * @param[in] device_id            Optional run-time device ID overrides (model_name -> value).
+ * @param[out] out_ucp_sched_params Merged hbUCPSchedParam for each model (run-local storage).
+ */
+void HB_HBMRuntime::ParseAndFillUCPSchedParams(
+    const std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
+    const std::optional<std::unordered_map<std::string, int32_t>>& priority,
+    const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores,
+    const std::optional<std::unordered_map<std::string, int64_t>>& custom_id,
+    const std::optional<std::unordered_map<std::string, uint32_t>>& device_id,
+    std::unordered_map<std::string, hbUCPSchedParam>& out_ucp_sched_params)
+{
+    out_ucp_sched_params.clear();
+
+    // Build effective_sched_params: default from model_sched_params_, then apply run-time overrides
+    std::unordered_map<std::string, SchedParam> effective_sched_params;
+    {
+        std::shared_lock lock(model_sched_params_mutex_);
+        for (const auto& model_pair : multi_input_tensors) {
+            const std::string& model_name = model_pair.first;
+            auto it_default = model_sched_params_.find(model_name);
+            if (it_default != model_sched_params_.end()) {
+                effective_sched_params[model_name] = it_default->second;
+            } else {
+                SchedParam param;
+                InitSchedParam(param);
+                effective_sched_params[model_name] = param;
+            }
+        }
+    }
+
+    // Apply run-time overrides via Set* functions (with validation)
+    if (priority.has_value()) {
+        SetModelPriorities(priority.value(), effective_sched_params);
+    }
+    if (bpu_cores.has_value()) {
+        SetModelBpuCores(bpu_cores.value(), effective_sched_params);
+    }
+    if (custom_id.has_value()) {
+        SetCustomIds(custom_id.value(), effective_sched_params);
+    }
+    if (device_id.has_value()) {
+        SetDeviceIds(device_id.value(), effective_sched_params);
+    }
+
+    // Convert SchedParam to hbUCPSchedParam
+    for (const auto& model_pair : multi_input_tensors) {
+        const std::string& model_name = model_pair.first;
+        const SchedParam& sp = effective_sched_params[model_name];
+
+        hbUCPSchedParam ucp_param;
+        ucp_param.priority = sp.priority;
+        ucp_param.customId = sp.customId;
+        ucp_param.deviceId = sp.deviceId;
+        ucp_param.backend = GetBPUCoreMaskForModel(
+            model_name,
+            std::vector<int>(sp.bpu_cores.begin(), sp.bpu_cores.end()));
+
+        out_ucp_sched_params[model_name] = ucp_param;
     }
 }
 
@@ -1085,41 +1123,45 @@ void HB_HBMRuntime::SetSchedulingParams(
  *
  * This simplified API is intended for models that accept exactly one input tensor.
  * It automatically selects the correct model (if only one is loaded), wraps the input
- * tensor into a tensor map, and delegates to the more general `run()` interface.
+ * tensor into a tensor map, and delegates to the more general run() interface.
  *
- * @param[in] input_tensor A single input tensor (NumPy array). Must match expected shape and dtype.
- * @param[in] extra_args   Optional arguments such as:
- *                     - "model_name" (required if multiple models are loaded)
+ * @param[in] input_tensor  Single input tensor (NumPy array). Must match expected shape and dtype.
+ * @param[in] model_name   Optional model name (required if multiple models are loaded).
+ * @param[in] priority     Optional scheduling priority overrides per model.
+ * @param[in] bpu_cores    Optional BPU core overrides per model.
+ * @param[in] custom_id    Optional custom ID overrides per model.
+ * @param[in] device_id    Optional device ID overrides per model.
  *
  * @return A nested map from model_name to a map of output_name -> output tensor (NumPy array).
  *
  * @throws std::runtime_error if:
- *         - More than one model is loaded but "model_name" is not specified.
+ *         - More than one model is loaded but model_name is not specified.
  *         - The selected model has more than one input.
  *         - The specified model name is invalid or not found.
  */
 std::unordered_map<std::string, std::unordered_map<std::string, py::array>>
-HB_HBMRuntime::run(py::array input_tensor, const ExtraArgs& extra_args)
+HB_HBMRuntime::run(py::array input_tensor,
+                   const std::optional<std::string>& model_name,
+                   const std::optional<std::unordered_map<std::string, int32_t>>& priority,
+                   const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores,
+                   const std::optional<std::unordered_map<std::string, int64_t>>& custom_id,
+                   const std::optional<std::unordered_map<std::string, uint32_t>>& device_id)
 {
     // Extract the model name, or validate against the only one
-    std::string model_name = ParseAndValidateModelName(extra_args, model_names);
+    std::string model_name_str = ParseAndValidateModelName(model_name, model_names_);
 
     // Check that this model has exactly one input tensor
-    if (input_names[model_name].size() != 1) {
+    if (input_names_[model_name_str].size() != 1) {
         throw std::runtime_error("Single-input run() requires the model to have exactly 1 input, but model '" +
-                                 model_name + "' has " + std::to_string(input_names[model_name].size()) + " inputs.");
+                                 model_name_str + "' has " + std::to_string(input_names_[model_name_str].size()) + " inputs.");
     }
 
     // Wrap input_tensor into a map: {input_name -> tensor}
     std::unordered_map<std::string, py::array> input_tensors;
-    input_tensors[input_names[model_name][0]] = input_tensor;
-
-    // Inject model name into extra_args to ensure correctness downstream
-    ExtraArgs modified_args = extra_args;
-    modified_args["model_name"] = model_name;
+    input_tensors[input_names_[model_name_str][0]] = input_tensor;
 
     // Call the generic run() method that supports multiple inputs per model
-    return run(input_tensors, modified_args);
+    return run(input_tensors, model_name_str, priority, bpu_cores, custom_id, device_id);
 }
 
 /**
@@ -1127,89 +1169,85 @@ HB_HBMRuntime::run(py::array input_tensor, const ExtraArgs& extra_args)
  *
  * This API is designed for models that require multiple input tensors. The user provides
  * a flat map of input tensor name to NumPy array. Internally, the inputs are wrapped
- * into a nested structure and passed to the generic multi-model `run()` function.
+ * into a nested structure and passed to the generic multi-model run() function.
  *
- * @param[in] input_tensors A flat map: input_name -> py::array (NumPy) for a single model.
- * @param[in] extra_args Additional arguments. Required to contain "model_name" if multiple models are loaded.
+ * @param[in] input_tensors  Flat map: input_name -> py::array (NumPy) for a single model.
+ * @param[in] model_name    Optional model name (required if multiple models are loaded).
+ * @param[in] priority      Optional scheduling priority overrides per model.
+ * @param[in] bpu_cores     Optional BPU core overrides per model.
+ * @param[in] custom_id     Optional custom ID overrides per model.
+ * @param[in] device_id     Optional device ID overrides per model.
  *
  * @return A nested map: model_name -> (output_name -> py::array)
  *
  * @throws std::runtime_error if:
- *         - "model_name" is not specified when multiple models are loaded.
+ *         - model_name is not specified when multiple models are loaded.
  *         - The given model name is not in the loaded model list.
  */
 std::unordered_map<std::string, std::unordered_map<std::string, py::array>>
 HB_HBMRuntime::run(std::unordered_map<std::string, py::array>& input_tensors,
-                   const ExtraArgs& extra_args)
+                   const std::optional<std::string>& model_name,
+                   const std::optional<std::unordered_map<std::string, int32_t>>& priority,
+                   const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores,
+                   const std::optional<std::unordered_map<std::string, int64_t>>& custom_id,
+                   const std::optional<std::unordered_map<std::string, uint32_t>>& device_id
+                   )
 {
-    // Extract model name from extra_args or validate against model_names
-    std::string model_name = ParseAndValidateModelName(extra_args, model_names);
+    std::string model_name_str = ParseAndValidateModelName(model_name, model_names_);
 
     // Wrap input tensors into nested structure: { model_name: { input_name: input_tensor } }
     std::unordered_map<std::string, std::unordered_map<std::string, py::array>> nested_input_info;
-    nested_input_info[model_name] = input_tensors;
+    nested_input_info[model_name_str] = input_tensors;
 
-    // Ensure "model_name" is available in extra_args for downstream processing
-    ExtraArgs modified_args = extra_args;
-    modified_args["model_name"] = model_name;
-
-    // Call the generic multi-model, multi-input run()
-    return run(nested_input_info, modified_args);
+    return run(nested_input_info, model_name_str, priority, bpu_cores, custom_id, device_id);
 }
 
 /**
  * @brief Run inference for one or multiple models with full input specification.
  *
- * This is the core multi-model inference entry point.
- * The user provides:
- *   - A nested input map: model_name -> (input_name -> numpy array)
- *   - Optionally, extra arguments such as:
- *       - "model_name" : string (to select a specific model)
+ * This is the core multi-model inference entry point. The user provides a nested
+ * input map and optionally model_name, priority, bpu_cores, custom_id, device_id.
  *
  * Internally, this function:
  *   1. Validates the input tensor names and models
- *   2. Optionally filters to a specific model if "model_name" is set
- *   3. Launches inference tasks (may be multi-threaded)
- *   4. Returns inference results as py::array (NumPy) in a nested map
+ *   2. Optionally filters to a specific model if model_name is set
+ *   3. Parses scheduling params (run-local, run-time overrides take precedence)
+ *   4. Launches inference tasks (may be multi-threaded)
+ *   5. Returns inference results as py::array (NumPy) in a nested map
  *
- * @threadsafe This function is guarded by an atomic flag and is not reentrant.
+ * @param[in] multi_input_tensors  Nested input map: model_name -> (input_name -> py::array)
+ * @param[in] model_name          Optional model name to filter/select.
+ * @param[in] priority            Optional scheduling priority overrides per model.
+ * @param[in] bpu_cores           Optional BPU core overrides per model.
+ * @param[in] custom_id           Optional custom ID overrides per model.
+ * @param[in] device_id           Optional device ID overrides per model.
  *
- * @param[in] multi_input_tensors A nested input map:
- *        model_name -> (input_name -> py::array)
- * @param[in] extra_args Optional arguments for inference control. Supported keys:
- *        - "model_name" (std::string)
+ * @return A nested output map: model_name -> (output_name -> py::array)
  *
- * @return A nested output map:
- *         model_name -> (output_name -> py::array)
- *
- * @throws std::runtime_error if:
- *         - Function is already running
- *         - Input/model name is invalid
+ * @throws std::runtime_error if input/model name is invalid.
  */
 std::unordered_map<std::string, std::unordered_map<std::string, py::array>>
 HB_HBMRuntime::run(std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
-                   const ExtraArgs& extra_args)
+                   const std::optional<std::string>& model_name,
+                   const std::optional<std::unordered_map<std::string, int32_t>>& priority,
+                   const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores,
+                   const std::optional<std::unordered_map<std::string, int64_t>>& custom_id,
+                   const std::optional<std::unordered_map<std::string, uint32_t>>& device_id)
 {
-    // Ensure this function is not re-entered concurrently
-    bool expected = false;
-    if (!running_flag.compare_exchange_strong(expected, true)) {
-        throw std::runtime_error("run() already in use");
-    }
-
-    // Automatically clear the running flag when function exits
-    struct Guard {
-        std::atomic<bool>& flag;
-        ~Guard() { flag = false; }
-    } guard{running_flag};
-
     // Step 1: Check that provided model/input names are valid
-    CheckInputInfoValid(multi_input_tensors, model_names, input_names);
+    CheckInputInfoValid(multi_input_tensors, model_names_);
 
     // Step 2: Optionally filter multi_input_tensors by model_name
-    ValidateOrFilterModelName(multi_input_tensors, extra_args);
+    ValidateOrFilterModelName(multi_input_tensors, model_name);
 
-    // Step 3: Perform inference and return results
-    return InferAllModels(multi_input_tensors);
+    // Step 3: Parse and merge scheduling params (run-local, reserves space for multi-threading)
+    // Use run params when provided, otherwise fall back to model_sched_params_
+    std::unordered_map<std::string, hbUCPSchedParam> UCP_sched_params;
+    ParseAndFillUCPSchedParams(multi_input_tensors, priority, bpu_cores, custom_id, device_id,
+                              UCP_sched_params);
+
+    // Step 4: Perform inference and return results
+    return InferAllModels(multi_input_tensors, UCP_sched_params);
 }
 
 /**
@@ -1227,7 +1265,7 @@ const std::string HB_HBMRuntime::GetVersion() {
  * @brief Load the model name list and model count from the packed DNN handle.
  *
  * This function queries the packed DNN handle to retrieve all sub-model names and the total model count.
- * The names are stored in `model_names` and the count in `model_count`. A flag `is_load_model_name_and_count`
+ * The names are stored in `model_names_` and the count in `model_count_`. A flag `is_load_model_name_and_count_`
  * is set to indicate that model metadata has been successfully loaded.
  *
  * @note This must be called before accessing individual model handles or metadata.
@@ -1236,23 +1274,23 @@ void HB_HBMRuntime::LoadModelNameListAndCount() {
     const char** name_array = nullptr;
 
     // Query the DNN engine for model names and count
-    HBDNN_CHECK_SUCCESS(hbDNNGetModelNameList(&name_array, &model_count, dnn_packed_handle),
+    HBDNN_CHECK_SUCCESS(hbDNNGetModelNameList(&name_array, &model_count_, dnn_packed_handle_),
                         "Failed to get model names.");
 
-    // Copy each name into the model_names vector
-    for (int i = 0; i < model_count; ++i) {
-        model_names.emplace_back(name_array[i]);
+    // Copy each name into the model_names_ vector
+    for (int i = 0; i < model_count_; ++i) {
+        model_names_.emplace_back(name_array[i]);
     }
 
     // Set the internal flag to true
-    is_load_model_name_and_count = true;
+    is_load_model_name_and_count_ = true;
 }
 
 /**
  * @brief Load DNN model handles for each sub-model in the packed model.
  *
  * This function retrieves a runtime handle (`hbDNNHandle_t`) for each model contained
- * in the packed DNN model (`dnn_packed_handle`) and stores them in `dnn_handle_list`.
+ * in the packed DNN model (`dnn_packed_handle_`) and stores them in `dnn_handle_list_`.
  * These handles are required to perform inference and query model metadata later.
  *
  * @note This function automatically calls LoadModelNameListAndCount() if model names are not yet loaded.
@@ -1261,26 +1299,26 @@ void HB_HBMRuntime::LoadModelNameListAndCount() {
 void HB_HBMRuntime::LoadModelHandles()
 {
     // If model names and count are not yet loaded, retrieve them first
-    if (!is_load_model_name_and_count)
+    if (!is_load_model_name_and_count_)
         LoadModelNameListAndCount();
 
     // Iterate through all loaded model names
-    for (int i = 0; i < model_count; i++) {
+    for (int i = 0; i < model_count_; i++) {
         hbDNNHandle_t handle;
 
         // Get the DNN handle for the specific model from the packed handle
-        // and store it in the internal handle map (dnn_handle_list)
+        // and store it in the internal handle map (dnn_handle_list_)
         HBDNN_CHECK_SUCCESS(
-            hbDNNGetModelHandle(&handle, dnn_packed_handle, model_names[i].c_str()),
-            std::string("Failed to get handle for model: ") + model_names[i].c_str()
+            hbDNNGetModelHandle(&handle, dnn_packed_handle_, model_names_[i].c_str()),
+            std::string("Failed to get handle for model: ") + model_names_[i].c_str()
         );
 
         // Save the handle in a map for later inference usage
-        dnn_handle_list[model_names[i]] = handle;
+        dnn_handle_list_[model_names_[i]] = handle;
     }
 
     // Mark that model handles have been successfully loaded
-    is_load_dnn_handle = true;
+    is_load_dnn_handle_ = true;
 }
 
 /**
@@ -1295,13 +1333,13 @@ void HB_HBMRuntime::LoadModelHandles()
 void HB_HBMRuntime::LoadInputInfo()
 {
     // Ensure model names and handles are loaded
-    if (!is_load_model_name_and_count)
+    if (!is_load_model_name_and_count_)
         LoadModelNameListAndCount();
-    if (!is_load_dnn_handle)
+    if (!is_load_dnn_handle_)
         LoadModelHandles();
 
     // Loop over all registered model handles
-    for (const auto& pair : dnn_handle_list) {
+    for (const auto& pair : dnn_handle_list_) {
         const std::string& model_name = pair.first;
         hbDNNHandle_t handle = pair.second;
         std::vector<std::string> inputs;
@@ -1335,38 +1373,38 @@ void HB_HBMRuntime::LoadInputInfo()
             inputs.emplace_back(input_name_cstr);  // Store input name list
 
             // Cache all relevant input tensor information
-            input_tensor_properties[model_name][input_name_cstr] = props;
+            input_tensor_properties_[model_name][input_name_cstr] = props;
 
-            input_shapes[model_name][input_name_cstr] = std::vector<int32_t>(
+            input_shapes_[model_name][input_name_cstr] = std::vector<int32_t>(
                 props.validShape.dimensionSize,
                 props.validShape.dimensionSize + props.validShape.numDimensions);
 
-            input_dtypes[model_name][input_name_cstr] = static_cast<hbDNNDataType>(props.tensorType);
+            input_dtypes_[model_name][input_name_cstr] = static_cast<hbDNNDataType>(props.tensorType);
 
-            input_quants[model_name][input_name_cstr].quant_type = props.quantiType;
-            input_quants[model_name][input_name_cstr].axis = props.quantizeAxis;
-            input_quants[model_name][input_name_cstr].scale = std::vector<float>(
+            input_quants_[model_name][input_name_cstr].quant_type = props.quantiType;
+            input_quants_[model_name][input_name_cstr].axis = props.quantizeAxis;
+            input_quants_[model_name][input_name_cstr].scale = std::vector<float>(
                 props.scale.scaleData,
                 props.scale.scaleData + props.scale.scaleLen);
-            input_quants[model_name][input_name_cstr].zero_point = std::vector<int32_t>(
+            input_quants_[model_name][input_name_cstr].zero_point = std::vector<int32_t>(
                 props.scale.zeroPointData,
                 props.scale.zeroPointData + props.scale.zeroPointLen);
 
-            input_strides[model_name][input_name_cstr].assign(
+            input_strides_[model_name][input_name_cstr].assign(
                 props.stride,
                 props.stride + props.validShape.numDimensions);
 
             // Store optional description if available
             if (desc_type == HB_DNN_DESC_TYPE_STRING && input_desc_cstr != nullptr && desc_size > 0) {
-                input_descs[model_name][input_name_cstr] = std::string(input_desc_cstr, desc_size);
+                input_descs_[model_name][input_name_cstr] = std::string(input_desc_cstr, desc_size);
             } else {
-                input_descs[model_name][input_name_cstr] = "";
+                input_descs_[model_name][input_name_cstr] = "";
             }
         }
 
         // Finalize input name list and count for this model
-        input_counts[model_name] = count;
-        input_names[model_name] = std::move(inputs);
+        input_counts_[model_name] = count;
+        input_names_[model_name] = std::move(inputs);
     }
 }
 
@@ -1381,13 +1419,13 @@ void HB_HBMRuntime::LoadInputInfo()
 void HB_HBMRuntime::LoadOutputInfo()
 {
     // Ensure model names and handles are available
-    if (!is_load_model_name_and_count)
+    if (!is_load_model_name_and_count_)
         LoadModelNameListAndCount();
-    if (!is_load_dnn_handle)
+    if (!is_load_dnn_handle_)
         LoadModelHandles();
 
     // Iterate over all model handles
-    for (const auto& pair : dnn_handle_list) {
+    for (const auto& pair : dnn_handle_list_) {
         const std::string& model_name = pair.first;
         hbDNNHandle_t handle = pair.second;
         std::vector<std::string> outputs;
@@ -1421,38 +1459,81 @@ void HB_HBMRuntime::LoadOutputInfo()
             outputs.emplace_back(output_name_cstr);  // Store output name
 
             // Cache output tensor metadata
-            output_tensor_properties[model_name][output_name_cstr] = props;
+            output_tensor_properties_[model_name][output_name_cstr] = props;
 
-            output_shapes[model_name][output_name_cstr] = std::vector<int32_t>(
+            output_shapes_[model_name][output_name_cstr] = std::vector<int32_t>(
                 props.validShape.dimensionSize,
                 props.validShape.dimensionSize + props.validShape.numDimensions);
 
-            output_dtypes[model_name][output_name_cstr] = static_cast<hbDNNDataType>(props.tensorType);
+            output_dtypes_[model_name][output_name_cstr] = static_cast<hbDNNDataType>(props.tensorType);
 
-            output_quants[model_name][output_name_cstr].quant_type = props.quantiType;
-            output_quants[model_name][output_name_cstr].axis = props.quantizeAxis;
-            output_quants[model_name][output_name_cstr].scale = std::vector<float>(
+            output_quants_[model_name][output_name_cstr].quant_type = props.quantiType;
+            output_quants_[model_name][output_name_cstr].axis = props.quantizeAxis;
+            output_quants_[model_name][output_name_cstr].scale = std::vector<float>(
                 props.scale.scaleData,
                 props.scale.scaleData + props.scale.scaleLen);
-            output_quants[model_name][output_name_cstr].zero_point = std::vector<int32_t>(
+            output_quants_[model_name][output_name_cstr].zero_point = std::vector<int32_t>(
                 props.scale.zeroPointData,
                 props.scale.zeroPointData + props.scale.zeroPointLen);
 
-            output_strides[model_name][output_name_cstr].assign(
+            output_strides_[model_name][output_name_cstr].assign(
                 props.stride,
                 props.stride + props.validShape.numDimensions);
 
             // Save description if available
             if (desc_type == HB_DNN_DESC_TYPE_STRING && output_desc_cstr != nullptr && desc_size > 0) {
-                output_descs[model_name][output_name_cstr] = std::string(output_desc_cstr, desc_size);
+                output_descs_[model_name][output_name_cstr] = std::string(output_desc_cstr, desc_size);
             } else {
-                output_descs[model_name][output_name_cstr] = "";
+                output_descs_[model_name][output_name_cstr] = "";
             }
         }
 
         // Finalize output name list and count
-        output_counts[model_name] = count;
-        output_names[model_name] = std::move(outputs);
+        output_counts_[model_name] = count;
+        output_names_[model_name] = std::move(outputs);
+    }
+}
+
+/**
+ * @brief Load and cache the compile-time BPU core count for each loaded model.
+ *
+ * This function queries the DNN runtime for the number of BPU cores specified
+ * at compile time for each loaded model using `hbDNNGetCompileBpuCoreNum`.
+ * The retrieved core count is cached internally in a map keyed by model name.
+ *
+ * This information is used to validate runtime BPU core scheduling parameters,
+ * especially for multi-core models, where the number of runtime-selected BPU
+ * cores must exactly match the compile-time configuration.
+ *
+ * @note This function assumes that model names and model handles are available.
+ *       If they are not loaded yet, it will trigger the corresponding load steps.
+ */
+void HB_HBMRuntime::LoadModelCompileBpuCoreNum()
+{
+    // Ensure model names and handles are available
+    if (!is_load_model_name_and_count_)
+        LoadModelNameListAndCount();
+    if (!is_load_dnn_handle_)
+        LoadModelHandles();
+
+    // Clear previous cache to avoid stale entries when reloading models
+    compile_bpu_core_num_.clear();
+
+    // Iterate over each model handle and query compile-time BPU core count
+    for (const auto& pair : dnn_handle_list_) {
+        const std::string& model_name = pair.first;
+        hbDNNHandle_t handle = pair.second;
+
+        int32_t core_num = 0;
+
+        // Retrieve the number of BPU cores specified at compile time
+        HBDNN_CHECK_SUCCESS(
+            hbDNNGetCompileBpuCoreNum(&core_num, handle),
+            "Failed to get compile BPU core num for model: " + model_name
+        );
+
+        // Cache the compile-time BPU core count for this model
+        compile_bpu_core_num_[model_name] = core_num;
     }
 }
 
@@ -1468,13 +1549,13 @@ void HB_HBMRuntime::LoadOutputInfo()
 void HB_HBMRuntime::LoadModelDesc()
 {
     // Ensure model names and handles are available
-    if (!is_load_model_name_and_count)
+    if (!is_load_model_name_and_count_)
         LoadModelNameListAndCount();
-    if (!is_load_dnn_handle)
+    if (!is_load_dnn_handle_)
         LoadModelHandles();
 
     // Iterate over each model handle to get the description
-    for (const auto& pair : dnn_handle_list) {
+    for (const auto& pair : dnn_handle_list_) {
         const std::string& model_name = pair.first;
         hbDNNHandle_t handle = pair.second;
 
@@ -1488,9 +1569,9 @@ void HB_HBMRuntime::LoadModelDesc()
 
         // Store description string if valid, else store empty string
         if (desc_type == HB_DNN_DESC_TYPE_STRING && desc_cstr != nullptr && desc_size > 0) {
-            model_descs[model_name] = std::string(desc_cstr, desc_size);
+            model_descs_[model_name] = std::string(desc_cstr, desc_size);
         } else {
-            model_descs[model_name] = "";
+            model_descs_[model_name] = "";
         }
     }
 }
@@ -1514,14 +1595,14 @@ void HB_HBMRuntime::LoadHBMDesc(const std::vector<std::string>& model_files)
         int32_t desc_type = 0;
 
         // Retrieve HBM description from the packed model handle by index
-        HBDNN_CHECK_SUCCESS(hbDNNGetHBMDesc(&desc_cstr, &desc_size, &desc_type, dnn_packed_handle, idx),
+        HBDNN_CHECK_SUCCESS(hbDNNGetHBMDesc(&desc_cstr, &desc_size, &desc_type, dnn_packed_handle_, idx),
                             "Failed to get HBM desc for file: " + filename);
 
         // Store the description string if valid, using desc_size to avoid truncation caused by '\0' in the content
         if (desc_type == HB_DNN_DESC_TYPE_STRING && desc_cstr != nullptr && desc_size > 0) {
-            HBM_descs[filename] = std::string(desc_cstr, desc_size);
+            HBM_descs_[filename] = std::string(desc_cstr, desc_size);
         } else {
-            HBM_descs[filename] = "";
+            HBM_descs_[filename] = "";
         }
     }
 }
@@ -1540,17 +1621,18 @@ void HB_HBMRuntime::InitSchedParam(SchedParam& param)
 }
 
 /**
- * @brief Initialize scheduling parameters map for a list of models.
+ * @brief Initialize default scheduling parameters for all loaded models.
  *
- * For each model name in the provided vector, initializes a default
- * SchedParam and inserts it into the params_map with the model name as key.
+ * This function creates a default `SchedParam` entry for each model name
+ * stored in `model_names_` and inserts it into `params_map`.
  *
- * @param[out] params_map Reference to the map to populate with model scheduling parameters.
- * @param[in] model_names Vector of model names to initialize scheduling parameters for.
+ * @note `model_names_` must be initialized before calling this function.
+ *
+ * @param[out] params_map Map to be populated with per-model scheduling parameters.
  */
-void HB_HBMRuntime::InitSchedParamMapWithModels(std::unordered_map<std::string, SchedParam>& params_map,
-                                const std::vector<std::string>& model_names) {
-    for (const auto& name : model_names) {
+void HB_HBMRuntime::InitSchedParamMapWithModels(std::unordered_map<std::string, SchedParam>& params_map)
+{
+    for (const auto& name : model_names_) {
         SchedParam param;
         InitSchedParam(param);
         params_map[name] = param;
@@ -1577,6 +1659,7 @@ void HB_HBMRuntime::LoadParameters(const std::vector<std::string>& model_files)
     LoadModelHandles();
     LoadInputInfo();
     LoadOutputInfo();
+    LoadModelCompileBpuCoreNum();
     LoadModelDesc();
     LoadHBMDesc(model_files);
 }
@@ -1587,7 +1670,7 @@ void HB_HBMRuntime::LoadParameters(const std::vector<std::string>& model_files)
  */
 std::vector<std::string> HB_HBMRuntime::GetModelNames()
 {
-    return model_names;
+    return model_names_;
 }
 
 /**
@@ -1596,7 +1679,7 @@ std::vector<std::string> HB_HBMRuntime::GetModelNames()
  */
 int32_t HB_HBMRuntime::GetModelCount()
 {
-    return model_count;
+    return model_count_;
 }
 
 /**
@@ -1605,7 +1688,7 @@ int32_t HB_HBMRuntime::GetModelCount()
  */
 std::unordered_map<std::string, int32_t> HB_HBMRuntime::GetInputCounts()
 {
-    return input_counts;
+    return input_counts_;
 }
 
 /**
@@ -1614,7 +1697,7 @@ std::unordered_map<std::string, int32_t> HB_HBMRuntime::GetInputCounts()
  */
 std::unordered_map<std::string, std::vector<std::string>> HB_HBMRuntime::GetInputNames()
 {
-    return input_names;
+    return input_names_;
 }
 
 /**
@@ -1623,7 +1706,7 @@ std::unordered_map<std::string, std::vector<std::string>> HB_HBMRuntime::GetInpu
  */
 std::unordered_map<std::string, std::unordered_map<std::string, std::string>> HB_HBMRuntime::GetInputDescs()
 {
-    return input_descs;
+    return input_descs_;
 }
 
 /**
@@ -1632,7 +1715,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, std::string>> HB
  */
 std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int32_t>>> HB_HBMRuntime::GetInputShapes()
 {
-    return input_shapes;
+    return input_shapes_;
 }
 
 /**
@@ -1641,7 +1724,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int3
  */
 std::unordered_map<std::string, std::unordered_map<std::string, hbDNNDataType>> HB_HBMRuntime::GetInputDtpyes()
 {
-    return input_dtypes;
+    return input_dtypes_;
 }
 
 /**
@@ -1650,7 +1733,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, hbDNNDataType>> 
  */
 std::unordered_map<std::string, std::unordered_map<std::string, QuantParams>> HB_HBMRuntime::GetInputQuants()
 {
-    return input_quants;
+    return input_quants_;
 }
 
 /**
@@ -1659,7 +1742,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, QuantParams>> HB
  */
 std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int64_t>>> HB_HBMRuntime::GetInputStrides()
 {
-    return input_strides;
+    return input_strides_;
 }
 
 /**
@@ -1668,7 +1751,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int6
  */
 std::unordered_map<std::string, int32_t> HB_HBMRuntime::GetOutputCounts()
 {
-    return output_counts;
+    return output_counts_;
 }
 
 /**
@@ -1677,7 +1760,7 @@ std::unordered_map<std::string, int32_t> HB_HBMRuntime::GetOutputCounts()
  */
 std::unordered_map<std::string, std::vector<std::string>> HB_HBMRuntime::GetOutputNames()
 {
-    return output_names;
+    return output_names_;
 }
 
 /**
@@ -1686,7 +1769,7 @@ std::unordered_map<std::string, std::vector<std::string>> HB_HBMRuntime::GetOutp
  */
 std::unordered_map<std::string, std::unordered_map<std::string, std::string>> HB_HBMRuntime::GetOutputDescs()
 {
-    return output_descs;
+    return output_descs_;
 }
 
 /**
@@ -1695,7 +1778,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, std::string>> HB
  */
 std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int32_t>>> HB_HBMRuntime::GetOutputShapes()
 {
-    return output_shapes;
+    return output_shapes_;
 }
 
 /**
@@ -1704,7 +1787,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int3
  */
 std::unordered_map<std::string, std::unordered_map<std::string, hbDNNDataType>> HB_HBMRuntime::GetOutputDtpyes()
 {
-    return output_dtypes;
+    return output_dtypes_;
 }
 
 /**
@@ -1713,7 +1796,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, hbDNNDataType>> 
  */
 std::unordered_map<std::string, std::unordered_map<std::string, QuantParams>> HB_HBMRuntime::GetOutputQuants()
 {
-    return output_quants;
+    return output_quants_;
 }
 
 /**
@@ -1722,7 +1805,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, QuantParams>> HB
  */
 std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int64_t>>> HB_HBMRuntime::GetOutputStrides()
 {
-    return output_strides;
+    return output_strides_;
 }
 
 /**
@@ -1731,7 +1814,7 @@ std::unordered_map<std::string, std::unordered_map<std::string, std::vector<int6
  */
 std::unordered_map<std::string, std::string> HB_HBMRuntime::GetModelDescs()
 {
-    return model_descs;
+    return model_descs_;
 }
 
 /**
@@ -1740,8 +1823,22 @@ std::unordered_map<std::string, std::string> HB_HBMRuntime::GetModelDescs()
  */
 std::unordered_map<std::string, std::string> HB_HBMRuntime::GetHBMDescs()
 {
-    return HBM_descs;
+    return HBM_descs_;
 }
+
+/**
+ * @brief Get compile-time BPU core count for each loaded model.
+ *
+ * The returned map is keyed by model name, and the value is the number of BPU cores
+ * specified at compile time for that model (from hbDNNGetCompileBpuCoreNum).
+ *
+ * @return Map from model name to compile-time BPU core count.
+ */
+std::unordered_map<std::string, int32_t> HB_HBMRuntime::GetCompileBpuCoreNum()
+{
+    return compile_bpu_core_num_;
+}
+
 
 /**
  * @brief Get the scheduling parameters for all models.
@@ -1751,5 +1848,6 @@ std::unordered_map<std::string, std::string> HB_HBMRuntime::GetHBMDescs()
  */
 std::unordered_map<std::string, SchedParam> HB_HBMRuntime::GetModelSchedParams()
 {
-    return model_sched_params;
+    std::shared_lock lock(model_sched_params_mutex_);
+    return model_sched_params_;
 }
