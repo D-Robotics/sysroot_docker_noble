@@ -272,6 +272,15 @@ class HB_HBMRuntime:
         """
         ...
 
+    @property
+    def compile_bpu_core_num(self) -> Dict[str, int]:
+        """
+        Number of BPU cores each model was compiled for.
+
+        :return: Dict mapping model name to compile-time BPU core count
+        """
+        ...
+
     # Scheduling parameters
 
     @property
@@ -304,42 +313,86 @@ class HB_HBMRuntime:
     # Inference methods with overloads for different input types
 
     @overload
-    def run(self, input_tensor: np.ndarray, **kwargs: Any) \
-            -> Dict[str, Dict[str, np.ndarray]]:
+    def run(
+        self,
+        input_tensor: np.ndarray,
+        model_name: Optional[str] = ...,
+        priority: Optional[Dict[str, int]] = ...,
+        bpu_cores: Optional[Dict[str, List[int]]] = ...,
+        custom_id: Optional[Dict[str, int]] = ...,
+        device_id: Optional[Dict[str, int]] = ...,
+    ) -> Dict[str, Dict[str, np.ndarray]]:
         """
         Run inference with a single input tensor for a single-input model.
 
         :param input_tensor: numpy ndarray as input tensor
+        :param model_name: Optional model name (required if multiple models loaded)
+        :param priority: Optional scheduling priority overrides per model
+        :param bpu_cores: Optional BPU core overrides per model
+        :param custom_id: Optional custom ID overrides per model
+        :param device_id: Optional device ID overrides per model
         :return: Nested dict {model_name: {output_name: numpy ndarray output}}
         """
         ...
 
     @overload
-    def run(self, input_tensors: Dict[str, np.ndarray], **kwargs: Any) \
-            -> Dict[str, Dict[str, np.ndarray]]:
+    def run(
+        self,
+        input_tensors: Dict[str, np.ndarray],
+        model_name: Optional[str] = ...,
+        priority: Optional[Dict[str, int]] = ...,
+        bpu_cores: Optional[Dict[str, List[int]]] = ...,
+        custom_id: Optional[Dict[str, int]] = ...,
+        device_id: Optional[Dict[str, int]] = ...,
+    ) -> Dict[str, Dict[str, np.ndarray]]:
         """
-        Run inference with a dict of input tensor name
-        to tensor for a single model.
+        Run inference with a dict of input tensor name to tensor for a single model.
 
         :param input_tensors: Dict mapping input tensor names to numpy ndarrays
+        :param model_name: Optional model name (required if multiple models loaded)
+        :param priority: Optional scheduling priority overrides per model
+        :param bpu_cores: Optional BPU core overrides per model
+        :param custom_id: Optional custom ID overrides per model
+        :param device_id: Optional device ID overrides per model
         :return: Nested dict {model_name: {output_name: numpy ndarray output}}
         """
         ...
 
     @overload
-    def run(self, multi_input_tensors: Dict[str, Dict[str, np.ndarray]], **kwargs: Any) -> Dict[str, Dict[str, np.ndarray]]:
+    def run(
+        self,
+        multi_input_tensors: Dict[str, Dict[str, np.ndarray]],
+        model_name: Optional[str] = ...,
+        priority: Optional[Dict[str, int]] = ...,
+        bpu_cores: Optional[Dict[str, List[int]]] = ...,
+        custom_id: Optional[Dict[str, int]] = ...,
+        device_id: Optional[Dict[str, int]] = ...,
+    ) -> Dict[str, Dict[str, np.ndarray]]:
         """
         Run inference with multiple models, each having multiple input tensors.
 
         :param multi_input_tensors: Dict mapping model names to dicts
-        of input names to numpy ndarrays
+            of input names to numpy ndarrays
+        :param model_name: Optional model name to filter/select
+        :param priority: Optional scheduling priority overrides per model
+        :param bpu_cores: Optional BPU core overrides per model
+        :param custom_id: Optional custom ID overrides per model
+        :param device_id: Optional device ID overrides per model
         :return: Nested dict {model_name: {output_name: numpy ndarray output}}
         """
         ...
 
-    def run(self, *args, **kwargs) -> Dict[str, Dict[str, np.ndarray]]:
+    def run(
+        self,
+        *args: Any,
+        model_name: Optional[str] = None,
+        priority: Optional[Dict[str, int]] = None,
+        bpu_cores: Optional[Dict[str, List[int]]] = None,
+        custom_id: Optional[Dict[str, int]] = None,
+        device_id: Optional[Dict[str, int]] = None,
+    ) -> Dict[str, Dict[str, np.ndarray]]:
         """
-        General run method dispatching to specific overloads based on input.
+        Run inference. Dispatches to specific overload based on input type.
 
         :return: Nested dict {model_name: {output_name: numpy ndarray output}}
         """

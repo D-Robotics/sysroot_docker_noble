@@ -16,42 +16,6 @@
 namespace py = pybind11;
 
 /**
- * @brief Convert Python keyword arguments into ExtraArgs structure used in C++ runtime.
- *
- * Supported keys in kwargs:
- * - @b model_name: (string) Explicitly specify the model to run (for single-input or multi-input inference).
- * - @b priority: (dict[str, int]) Mapping of model names to scheduling priority.
- * - @b bpu_cores: (dict[str, list[int]]) Mapping of model names to list of BPU core IDs (0~3).
- * - Other basic types like int, float, bool, str are also supported as generic extra args.
- *
- * @param kwargs Python kwargs dictionary from py::kwargs
- * @return ExtraArgs Struct used internally for task scheduling and runtime options.
- *
- * @throws std::runtime_error If an unsupported key or incorrect value type is provided.
- */
-
-ExtraArgs convert_kwargs(const py::dict& kwargs) {
-    ExtraArgs args;
-    for (auto item : kwargs) {
-        std::string key = py::str(item.first);
-        py::handle val = item.second;
-
-        // Special handling: model_name
-        if (key == "model_name") {
-            if (!py::isinstance<py::str>(val)) {
-                throw std::runtime_error("\"model_name\" must be a str");
-            }
-            args[key] = val.cast<std::string>();
-        }
-        // Unsupported argument
-        else {
-            throw std::runtime_error("Unsupported type in kwargs: " + key);
-        }
-    }
-    return args;
-}
-
-/**
  * @brief Python binding for HB_HBMRuntime module
  *
  * Exposes enums, quantization parameters, and the main HB_HBMRuntime class.
@@ -136,6 +100,9 @@ PYBIND11_MODULE(HB_HBMRuntime, m) {
         .def_property_readonly("output_quants", &HB_HBMRuntime::GetOutputQuants)
         .def_property_readonly("output_strides", &HB_HBMRuntime::GetOutputStrides)
 
+        // Compile-time BPU core count per model
+        .def_property_readonly("compile_bpu_core_num", &HB_HBMRuntime::GetCompileBpuCoreNum)
+
         // HBM and model description
         .def_property_readonly("model_descs", &HB_HBMRuntime::GetModelDescs)
         .def_property_readonly("hbm_descs", &HB_HBMRuntime::GetHBMDescs)
@@ -152,42 +119,72 @@ PYBIND11_MODULE(HB_HBMRuntime, m) {
              py::arg("device_id") = std::nullopt
         )
 
+        // run() overloads: each accepts optional model_name, priority, bpu_cores, custom_id, device_id
+        // GIL is released only inside C++ InferAllModels around LaunchInferenceTasks (not here).
         // Inference entry: single input
         .def("run",
-            [](HB_HBMRuntime& self, py::array& input_tensor, py::kwargs kwargs) {
+            [](HB_HBMRuntime& self, py::array& input_tensor,
+               const std::optional<std::string>& model_name,
+               const std::optional<std::unordered_map<std::string, int32_t>>& priority,
+               const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores,
+               const std::optional<std::unordered_map<std::string, int64_t>>& custom_id,
+               const std::optional<std::unordered_map<std::string, uint32_t>>& device_id) {
                 if (!(input_tensor.flags() & py::array::c_style)) {
                     input_tensor = input_tensor.attr("copy")();  // Ensure C-contiguous
                 }
-                return self.run(input_tensor, convert_kwargs(kwargs));
+                return self.run(input_tensor, model_name, priority, bpu_cores, custom_id, device_id);
             },
-            py::arg("input_tensor"))
+            py::arg("input_tensor"),
+            py::arg("model_name") = std::nullopt,
+            py::arg("priority") = std::nullopt,
+            py::arg("bpu_cores") = std::nullopt,
+            py::arg("custom_id") = std::nullopt,
+            py::arg("device_id") = std::nullopt)
 
         // Inference entry: single model, multiple inputs
         .def("run",
-            [](HB_HBMRuntime& self, std::unordered_map<std::string, py::array>& input_tensors, py::kwargs kwargs) {
+            [](HB_HBMRuntime& self, std::unordered_map<std::string, py::array>& input_tensors,
+               const std::optional<std::string>& model_name,
+               const std::optional<std::unordered_map<std::string, int32_t>>& priority,
+               const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores,
+               const std::optional<std::unordered_map<std::string, int64_t>>& custom_id,
+               const std::optional<std::unordered_map<std::string, uint32_t>>& device_id) {
                 for (auto& [name, tensor] : input_tensors) {
                     if (!(tensor.flags() & py::array::c_style)) {
                         tensor = tensor.attr("copy")();
                     }
                 }
-                return self.run(input_tensors, convert_kwargs(kwargs));
+                return self.run(input_tensors, model_name, priority, bpu_cores, custom_id, device_id);
             },
-            py::arg("input_tensors"))
+            py::arg("input_tensors"),
+            py::arg("model_name") = std::nullopt,
+            py::arg("priority") = std::nullopt,
+            py::arg("bpu_cores") = std::nullopt,
+            py::arg("custom_id") = std::nullopt,
+            py::arg("device_id") = std::nullopt)
 
         // Inference entry: multiple models
         .def("run",
             [](HB_HBMRuntime& self,
                std::unordered_map<std::string, std::unordered_map<std::string, py::array>>& multi_input_tensors,
-               py::kwargs kwargs) {
-                for (auto& [model_name, tensors] : multi_input_tensors) {
+               const std::optional<std::string>& model_name,
+               const std::optional<std::unordered_map<std::string, int32_t>>& priority,
+               const std::optional<std::unordered_map<std::string, std::vector<int32_t>>>& bpu_cores,
+               const std::optional<std::unordered_map<std::string, int64_t>>& custom_id,
+               const std::optional<std::unordered_map<std::string, uint32_t>>& device_id) {
+                for (auto& [mn, tensors] : multi_input_tensors) {
                     for (auto& [tensor_name, tensor] : tensors) {
                         if (!(tensor.flags() & py::array::c_style)) {
                             tensor = tensor.attr("copy")();
                         }
                     }
                 }
-                ExtraArgs extra_args = convert_kwargs(kwargs);
-                return self.run(multi_input_tensors, extra_args);
+                return self.run(multi_input_tensors, model_name, priority, bpu_cores, custom_id, device_id);
             },
-            py::arg("multi_input_tensors"));
+            py::arg("multi_input_tensors"),
+            py::arg("model_name") = std::nullopt,
+            py::arg("priority") = std::nullopt,
+            py::arg("bpu_cores") = std::nullopt,
+            py::arg("custom_id") = std::nullopt,
+            py::arg("device_id") = std::nullopt);
 }
