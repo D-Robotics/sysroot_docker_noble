@@ -1,0 +1,143 @@
+#!/bin/zsh
+
+calc_human_readable()
+{
+	size=$1
+	s1K=`expr 1 \* 1024`
+	s1M=`expr 1024 \* 1024`
+	s1G=`expr 1024 \* 1024 \* 1024`
+
+	if [[ ${size} -ge ${s1G} ]]; then
+		size_h=$(echo "${size} ${s1G}" | awk '{printf ($1/$2>=10 ? "%.1fG" : "%.2fG"), $1/$2}')
+	elif [[ ${size} -ge ${s1M} ]]; then
+		size_h=$(echo "${size} ${s1M}" | awk '{printf ($1/$2>=10 ? "%.1fM" : "%.2fM"), $1/$2}')
+	elif [[ ${size} -ge ${s1K} ]]; then
+		size_h=$(echo "${size} ${s1K}" | awk '{printf ($1/$2>=10 ? "%.1fK" : "%.2fK"), $1/$2}')
+	else
+		size_h=$size
+	fi
+
+	printf "%s" $size_h
+}
+
+show_meminfo()
+{
+	name=$1
+	size_cim=$(calc_human_readable $2)
+	size_isp=$(calc_human_readable $3)
+	size_pym=$(calc_human_readable $4)
+	size_gdc=$(calc_human_readable $5)
+	size_codec=$(calc_human_readable $6)
+	size_stitch=$(calc_human_readable $7)
+	size_idu=$(calc_human_readable $8)
+	size_bpu=$(calc_human_readable $9)
+	size_other=$(calc_human_readable ${10})
+	size_total=$(calc_human_readable ${11})
+
+	printf "%20s %10s %10s %10s %10s %10s %10s %10s %10s %10s %10s\n" \
+		${name} $size_cim $size_isp $size_pym $size_gdc $size_codec $size_stitch $size_idu $size_bpu $size_other $size_total
+}
+
+default_file="/sys/kernel/debug/ion/heaps/all_heap_info"
+input_file="${1:-$default_file}"
+
+if [[ ! -f "$input_file" ]]; then
+	echo "Error: File '$input_file' does not exist!" >&2
+	exit 1
+fi
+
+allinfo=$(sed -n '/allocations (info is from last known client):/,/total orphaned/{//!p}' "$input_file" | grep -Ev "^[[:space:]]*(-+|=+)[[:space:]]*$|client.*paddr")
+process_names=($(echo "$allinfo" | awk '{print $1}' | sort -u))
+
+printf "%-20s %-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s\n" "process" "cim" "isp" "pym" "gdc" "codec" "stitch" "idu" "bpu" "other" "total"
+echo "-------------------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------"
+
+total_cim=0
+total_isp=0
+total_pym=0
+total_gdc=0
+total_codec=0
+total_stitch=0
+total_idu=0
+total_bpu=0
+total_other=0
+total=0
+
+setopt KSH_ARRAYS
+for ((i=0; i<${#process_names[@]}; i++)); do
+	process_info=$(echo "$allinfo" | grep ${process_names[$i]})
+
+	memsize_cim=$(echo "$process_info" | grep "cim" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+	memsize_isp=$(echo "$process_info" | grep "isp" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+	memsize_pym=$(echo "$process_info" | grep "pym" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+	memsize_gdc=$(echo "$process_info" | grep "gdc" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+	memsize_codec=$(echo "$process_info" | grep -E "vpu|jpu" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+	memsize_stitch=$(echo "$process_info" | grep "stitch" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+	memsize_idu=$(echo "$process_info" | grep "idu" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+	memsize_bpu=$(echo "$process_info" | grep "bpu" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+	memsize_other=$(echo "$process_info" | grep -v -E "cim|isp|pym|gdc|vpu|jpu|stitch|idu|bpu" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+	memsize_total=$(echo "$process_info" | awk '{sum += $5} END {printf "%.0f", sum ? sum : 0}' | tr -cd '[:digit:]')
+
+	total_cim=$(expr $total_cim + $memsize_cim)
+	total_isp=$(expr $total_isp + $memsize_isp)
+	total_pym=$(expr $total_pym + $memsize_pym)
+	total_gdc=$(expr $total_gdc + $memsize_gdc)
+	total_codec=$(expr $total_codec + $memsize_codec)
+	total_stitch=$(expr $total_stitch + $memsize_stitch)
+	total_idu=$(expr $total_idu + $memsize_idu)
+	total_bpu=$(expr $total_bpu + $memsize_bpu)
+	total_other=$(expr $total_other + $memsize_other)
+	total=$(expr $total + $memsize_total)
+
+	show_meminfo ${process_names[$i]} $memsize_cim $memsize_isp $memsize_pym $memsize_gdc $memsize_codec $memsize_stitch $memsize_idu $memsize_bpu $memsize_other $memsize_total
+done
+
+echo "-------------------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------"
+show_meminfo "-" $total_cim $total_isp $total_pym $total_gdc $total_codec $total_stitch $total_idu $total_bpu $total_other $total
+
+allinfo=$(cat $input_file | grep -A1 -E "heap total size|total orphaned" | grep -Ev "^[[:space:]]*-+[[:space:]]*$")
+
+heap=$(echo "$allinfo" | grep -A2 "carveout")
+carveout_total=$(echo "$heap" | grep "heap total size" | awk '{print $5}' | tr -cd '[:digit:]')
+carveout_used=$(echo "$heap" | grep -A1 "total orphaned" | grep -v "orphaned" | awk '{print $2}' | tr -cd '[:digit:]')
+carveout_free=$(expr $carveout_total - $carveout_used)
+
+heap=$(echo "$allinfo" | grep -A2 "cma_reserved")
+cma_reserved_total=$(echo "$heap" | grep "heap total size" | awk '{print $5}' | tr -cd '[:digit:]')
+cma_reserved_used=$(echo "$heap" | grep -A1 "total orphaned" | grep -v "orphaned" | awk '{print $2}' | tr -cd '[:digit:]')
+cma_reserved_free=$(expr $cma_reserved_total - $cma_reserved_used)
+
+heap=$(echo "$allinfo" | grep -A2 "ion_cma")
+ion_cma_total=$(echo "$heap" | grep "heap total size" | awk '{print $5}' | tr -cd '[:digit:]')
+ion_cma_used=$(echo "$heap" | grep -A1 "total orphaned" | grep -v "orphaned" | awk '{print $2}' | tr -cd '[:digit:]')
+ion_cma_free=$(expr $ion_cma_total - $ion_cma_used)
+
+total_total=$(expr $carveout_total + $cma_reserved_total + $ion_cma_total)
+total_used=$(expr $carveout_used + $cma_reserved_used + $ion_cma_used)
+total_free=$(expr $carveout_free + $cma_reserved_free + $ion_cma_free)
+
+carveout_total=$(calc_human_readable $carveout_total)
+carveout_used=$(calc_human_readable $carveout_used)
+carveout_free=$(calc_human_readable $carveout_free)
+
+cma_reserved_total=$(calc_human_readable $cma_reserved_total)
+cma_reserved_used=$(calc_human_readable $cma_reserved_used)
+cma_reserved_free=$(calc_human_readable $cma_reserved_free)
+
+ion_cma_total=$(calc_human_readable $ion_cma_total)
+ion_cma_used=$(calc_human_readable $ion_cma_used)
+ion_cma_free=$(calc_human_readable $ion_cma_free)
+
+total_total=$(calc_human_readable $total_total)
+total_used=$(calc_human_readable $total_used)
+total_free=$(calc_human_readable $total_free)
+
+echo ""
+printf "%-20s %-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s\n" "ion-mem" "total" "used" "free"
+echo "-------------------- ---------- ---------- ----------"
+printf "%20s %10s %10s %10s %10s %10s %10s %10s %10s %10s %10s\n" "carveout" "$carveout_total" "$carveout_used" "$carveout_free"
+printf "%20s %10s %10s %10s %10s %10s %10s %10s %10s %10s %10s\n" "cma_reserved" "$cma_reserved_total" "$cma_reserved_used" "$cma_reserved_free"
+printf "%20s %10s %10s %10s %10s %10s %10s %10s %10s %10s %10s\n" "ion_cma" "$ion_cma_total" "$ion_cma_used" "$ion_cma_free"
+echo "-------------------- ---------- ---------- ----------"
+printf "%20s %10s %10s %10s %10s %10s %10s %10s %10s %10s %10s\n" "-" "$total_total" "$total_used" "$total_free"
+

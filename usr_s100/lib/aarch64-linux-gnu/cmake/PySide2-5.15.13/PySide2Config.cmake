@@ -1,0 +1,5 @@
+if (NOT PYTHON_CONFIG_SUFFIX)
+    message(STATUS "PySide2Config: Using default python: .cpython-312-aarch64-linux-gnu")
+    SET(PYTHON_CONFIG_SUFFIX .cpython-312-aarch64-linux-gnu)
+endif()
+include(${CMAKE_CURRENT_LIST_DIR}/PySide2Config${PYTHON_CONFIG_SUFFIX}.cmake)

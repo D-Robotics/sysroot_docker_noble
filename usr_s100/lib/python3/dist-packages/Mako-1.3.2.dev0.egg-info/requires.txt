@@ -1,0 +1,9 @@
+
+[babel]
+Babel
+
+[lingua]
+lingua
+
+[testing]
+pytest

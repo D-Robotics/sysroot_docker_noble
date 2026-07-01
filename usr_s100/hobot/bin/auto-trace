@@ -1,0 +1,84 @@
+#!/bin/zsh
+
+TMP_DIR="/tmp"
+TRACE_DIR="/log/trace"
+
+
+CONFIG_FILE="$1"
+TRACE_PREFIX="$2"  # 可选参数，trace 文件名前缀
+
+if [[ -z "$CONFIG_FILE" ]]; then
+  echo "[ERROR] Missing config file path argument."
+  echo "Usage: $0 <config_file> [trace_name]"
+  exit 1
+fi
+
+# 检查文件是否存在
+if [[ ! -f "$CONFIG_FILE" ]]; then
+  echo "[ERROR] Config file '$CONFIG_FILE' not found."
+  exit 1
+fi
+
+# 解析 duration_ms 字段
+DURATION_MS=$(grep -E "^duration_ms\s*:" "$CONFIG_FILE" | awk '{print $2}')
+
+# 检查是否成功获取
+if [[ -z "$DURATION_MS" ]]; then
+  echo "[ERROR] Failed to parse 'duration_ms' from $CONFIG_FILE"
+  exit 1
+fi
+
+INTERVAL=$DURATION_MS  # 保留为毫秒
+
+# 检查 traced 是否在运行
+if ! pgrep -f "tracebox traced --background" > /dev/null; then
+    echo "[INFO] Starting tracebox traced..."
+    tracebox traced --background &
+else
+    echo "[OK] tracebox traced is already running."
+fi
+
+# 检查 traced_probes 是否在运行
+if ! pgrep -f "tracebox traced_probes --background" > /dev/null; then
+    echo "[INFO] Starting tracebox traced_probes..."
+    tracebox traced_probes --background &
+else
+    echo "[OK] tracebox traced_probes is already running."
+fi
+
+mkdir -p "$TMP_DIR" "$TRACE_DIR"
+
+TMP_CURRENT="$TMP_DIR/trace_current.pftrace"
+TMP_LAST="$TMP_DIR/trace_last.pftrace"
+
+trap "echo '[INFO] Interrupted. Cleaning up...'; exit 0" SIGINT SIGTERM
+while true; do
+  # 将旧 trace 重命名为 last
+  [ -f "$TMP_CURRENT" ] && mv "$TMP_CURRENT" "$TMP_LAST"
+
+  echo "[`date '+%F %T'`] [INFO] Start tracing to $TMP_CURRENT (Duration: ${INTERVAL}ms)"
+  tracebox perfetto --txt -c "$CONFIG_FILE" -o "$TMP_CURRENT"
+
+
+  if [ -f "/tmp/trigger_trace" ]; then
+    TIMESTAMP=$(date +%s%3N)
+    TIMESTAMP_LAST=$((TIMESTAMP - INTERVAL))
+
+    if [ -n "$TRACE_PREFIX" ]; then
+      FILENAME_CUR="${TRACE_PREFIX}_${TIMESTAMP}.pftrace"
+      FILENAME_LAST="${TRACE_PREFIX}_${TIMESTAMP_LAST}.pftrace"
+    else
+      FILENAME_CUR="trace_${TIMESTAMP}.pftrace"
+      FILENAME_LAST="trace_${TIMESTAMP_LAST}.pftrace"
+    fi
+
+    echo "[`date '+%F %T'`] [INFO] Saved traces to:"
+
+    [ -f "$TMP_LAST" ] && cp "$TMP_LAST" "$TRACE_DIR/$FILENAME_LAST" && echo "    $TRACE_DIR/$FILENAME_LAST"
+    cp "$TMP_CURRENT" "$TRACE_DIR/$FILENAME_CUR"
+    echo "    $TRACE_DIR/$FILENAME_CUR"
+
+    rm -f "/tmp/trigger_trace"
+  fi
+
+done

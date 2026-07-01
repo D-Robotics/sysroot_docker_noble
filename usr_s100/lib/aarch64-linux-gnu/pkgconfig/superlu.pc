@@ -1,0 +1,12 @@
+prefix=/usr
+libdir=/usr/lib/aarch64-linux-gnu
+includedir=/usr/include/superlu
+
+Name: SuperLU
+Description: Direct solution of large, sparse systems of linear equations
+Version: 6.0.1
+URL: https://portal.nersc.gov/project/sparse/superlu/
+
+Libs: -L${libdir} -lsuperlu
+Libs.private: blas -lm
+Cflags: -I${includedir}

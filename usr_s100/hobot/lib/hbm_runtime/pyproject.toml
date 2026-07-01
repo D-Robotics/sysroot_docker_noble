@@ -1,0 +1,27 @@
+[build-system]
+requires = ["scikit-build-core>=0.7", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "hbm-runtime"
+version = "0.1.0.post1"
+description = "Python wrapper for D-Robotics libucp/libdnn libraries"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Proprietary"}
+authors = [{name = "xiangshun.zhao et al."}]
+maintainers = [{name = "D-Robotics Developer Team", email = "developer@d-robotics.cc"}]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: C++",
+  "Operating System :: POSIX :: Linux",
+  "License :: Other/Proprietary License",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Embedded Systems",
+]
+
+[tool.scikit-build]
+wheel.packages = ["hbm_runtime"]
+build.verbose = true

@@ -1,0 +1,11 @@
+libdir=/usr/lib/aarch64-linux-gnu
+includedir=/usr/include
+
+Name: libibverbs
+Description: RDMA Core Userspace Library
+URL: https://github.com/linux-rdma/rdma-core
+Version: 1.14.50.0
+Libs: -L${libdir} -libverbs 
+Libs.private:  -lbnxt_re-rdmav34 -lcxgb4-rdmav34 -lefa -lerdma-rdmav34 -lhns-rdmav34 -lirdma-rdmav34 -lmana -lmlx4 -lmlx5 -lmthca-rdmav34 -locrdma-rdmav34 -lqedr-rdmav34 -lvmw_pvrdma-rdmav34 -lhfi1verbs-rdmav34 -lipathverbs-rdmav34 -lrxe-rdmav34 -lsiw-rdmav34 -libverbs 
+Requires.private: libnl-3.0, libnl-route-3.0
+Cflags: -I${includedir}

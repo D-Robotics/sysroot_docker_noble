@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# colour
+GREEN='\033[0;32m'
+NC='\033[0m'
+
+# get all version
+board_name=$(cat /sys/class/boardinfo/board_name)
+release_ver=$(cat /etc/version)
+hsm_ver=$(cat /proc/version_hsm)
+sbl_ver=$(cat /sys/class/remoteproc/remoteproc_mcu0/sbl_version)
+ddr_ver=$(cat /proc/ddr_version/version)
+mcu_ver=$(cat /sys/class/remoteproc/remoteproc_mcu0/mcu_version)
+spl_ver=$(strings /dev/block/platform/by-name/spl_cur | grep -m 1 "U-Boot SPL")
+bl31_ver=$(cat /proc/bl31_debug/version)
+optee_ver=$(cat /proc/version_optee)
+uboot_ver=$(cat /proc/bootloader_log | grep U-Boot | head -n 1)
+linux_ver=$(cat /proc/version)
+bpu_ver=$(cat /sys/devices/system/bpu/bpu0/fw_version)
+vdsp_ver=$(cat /sys/class/remoteproc/remoteproc_vdsp0/version)
+
+# show in console
+function show_info()
+{
+    echo -en "${GREEN}$1:${NC} \n$2\n\n"
+}
+function show_version()
+{
+    echo -en "${GREEN}$1 version:${NC} \n$2\n\n"
+}
+
+show_info    "board name"  "${board_name}"
+show_version "release"     "${release_ver}"
+show_version "hsm"         "${hsm_ver}"
+show_version "sbl"         "${sbl_ver}"
+show_version "ddr"         "${ddr_ver}"
+show_version "mcu"         "${mcu_ver}"
+show_version "spl"         "${spl_ver}"
+show_version "bl31"        "${bl31_ver}"
+show_version "optee"       "${optee_ver}"
+show_version "uboot"       "${uboot_ver}"
+show_version "linux"       "${linux_ver}"
+show_version "bpu"         "${bpu_ver}"
+show_version "vdsp"        "${vdsp_ver}"
+
+echo -en "${NC}"
+
+if [ -e "/proc/lantin_profiling/version" ]; then
+	lantinhv_ver=$(cat /proc/lantin_profiling/version)
+	show_version "lantinhv"    "${lantinhv_ver}"
+fi

@@ -1,0 +1,10 @@
+datemath-stubs/METADATA.toml,sha256=-6CCQZAfVzP3ilUDtupUsrNe6SksA3pZikDkepHthpw,236
+datemath-stubs/__init__.pyi,sha256=Z0Y78ejFSRszAjJ__o939V9OhED6T3fEsjGB63mHOJ4,405
+datemath-stubs/helpers.pyi,sha256=z4hOofQQzFf_scAVZKnPV7aBGujnbayP1o8b0CduTUA,286
+datemath-stubs/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+types_python_datemath-1.5.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+types_python_datemath-1.5.dist-info/METADATA,sha256=HXn3BRCjNbm7Z5b8mVAOBQB3cAqKI9cOmXZGBMHymgQ,1817
+types_python_datemath-1.5.dist-info/RECORD,,
+types_python_datemath-1.5.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_python_datemath-1.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+types_python_datemath-1.5.dist-info/top_level.txt,sha256=5F1HpQAEwCPd3PP1-g0hEdDYKmb6mdIhKdfGnMaTRcE,15

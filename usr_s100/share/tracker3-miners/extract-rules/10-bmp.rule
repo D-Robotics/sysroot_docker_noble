@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-bmp.so
+MimeTypes=image/bmp
+FallbackRdfTypes=nfo:Image;nmm:Photo;
+Graph=tracker:Pictures
+Hash=744bb25f22d2fc5c9bc7c7df60e78cb45c1bfcf784f03b108f806a44e23decd6
+

@@ -1,0 +1,11 @@
+libdir=/usr/lib/aarch64-linux-gnu
+includedir=/usr/include
+
+Name: libmana
+Description: RDMA Core Userspace Library
+URL: https://github.com/linux-rdma/rdma-core
+Version: 1.0.50.0
+Libs: -L${libdir} -lmana 
+Libs.private: 
+Requires.private: libibverbs
+Cflags: -I${includedir}

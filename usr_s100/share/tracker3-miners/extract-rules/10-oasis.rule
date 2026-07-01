@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-oasis.so
+MimeTypes=application/vnd.oasis.opendocument.*
+FallbackRdfTypes=nfo:PaginatedTextDocument
+Graph=tracker:Documents
+Hash=88728d31e551972d29322fd2877e8e9b8af11cd615bc5a1579085c07392efb0c
+

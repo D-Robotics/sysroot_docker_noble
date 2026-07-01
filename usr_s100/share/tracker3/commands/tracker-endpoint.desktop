@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+NoDisplay=true
+# Translators: This is a CLI command name that should not be translated.
+Name=endpoint
+Comment=Create a SPARQL endpoint
+X-Ubuntu-Gettext-Domain=tracker3

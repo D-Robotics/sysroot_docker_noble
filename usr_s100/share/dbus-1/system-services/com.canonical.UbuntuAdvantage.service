@@ -1,0 +1,5 @@
+[D-BUS Service]
+Name=com.canonical.UbuntuAdvantage
+Exec=/usr/libexec/ubuntu-advantage-desktop-daemon
+User=root
+SystemdService=ubuntu-advantage-desktop-daemon.service

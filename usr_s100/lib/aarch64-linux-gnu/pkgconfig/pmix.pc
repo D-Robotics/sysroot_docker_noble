@@ -1,0 +1,14 @@
+prefix=/usr/lib/aarch64-linux-gnu/pmix2
+exec_prefix=${prefix}
+libdir=/usr/lib/aarch64-linux-gnu/pmix2/lib
+includedir=/usr/lib/aarch64-linux-gnu/pmix2/include
+
+Name: pmix
+Description: Process Management Interface for Exascale (PMIx)
+Version: 5.0.1a1
+URL: https://pmix.org/
+Libs: -L${libdir} -Wl,-rpath -Wl,${libdir} -Wl,--enable-new-dtags -lpmix
+Libs.private: 
+Cflags: -I${includedir} -I${includedir}/pmix -I/usr/include
+Requires: 
+Requires.private: 

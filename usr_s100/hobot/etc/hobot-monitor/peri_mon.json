@@ -1,0 +1,165 @@
+{
+    "name": "peri",
+    "cmd-list": [
+        {
+            "id": "0x1",
+            "name": "cooling0",
+            "type": "file",
+            "file": "/sys/class/thermal/cooling_device0/cur_state"
+        },
+        {
+            "id": "0x2",
+            "name": "cooling1",
+            "type": "file",
+            "file": "/sys/class/thermal/cooling_device1/cur_state"
+        },
+        {
+            "id": "0x3",
+            "name": "thermal0",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone0/temp"
+        },
+        {
+            "id": "0x4",
+            "name": "thermal1",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone1/temp"
+        },
+        {
+            "id": "0x5",
+            "name": "thermal2",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone2/temp"
+        },
+        {
+            "id": "0x6",
+            "name": "thermal3",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone3/temp"
+        },
+        {
+            "id": "0x7",
+            "name": "thermal4",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone4/temp"
+        },
+        {
+            "id": "0x8",
+            "name": "thermal5",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone5/temp"
+        },
+        {
+            "id": "0x9",
+            "name": "thermal6",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone6/temp"
+        },
+        {
+            "id": "0xa",
+            "name": "thermal7",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone7/temp"
+        },
+        {
+            "id": "0xb",
+            "name": "thermal8",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone8/temp"
+        },
+        {
+            "id": "0xc",
+            "name": "thermal9",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone9/temp"
+        },
+        {
+            "id": "0xd",
+            "name": "thermal10",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone10/temp"
+        },
+        {
+            "id": "0xe",
+            "name": "thermal11",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone11/temp"
+        },
+        {
+            "id": "0xf",
+            "name": "thermal12",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone12/temp"
+        },
+        {
+            "id": "0x10",
+            "name": "thermal13",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone13/temp"
+        },
+        {
+            "id": "0x11",
+            "name": "thermal14",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone14/temp"
+        },
+        {
+            "id": "0x12",
+            "name": "thermal15",
+            "type": "file",
+            "file": "/sys/class/thermal/thermal_zone15/temp"
+        },
+        {
+            "id": "0x13",
+            "name": "all_thermal",
+            "type": "custom",
+            "lib": "/usr/hobot/lib/libmon_peri.so",
+            "symbols": "get_thermal_all"
+        },
+        {
+            "id": "0x14",
+            "type": "custom",
+            "name": "block_info",
+            "lib": "/usr/hobot/lib/libmon_peri.so",
+            "symbols": "get_block_info"
+        },
+        {
+            "id": "0x15",
+            "type": "file",
+            "name": "ion_reserved",
+            "file": "/sys/kernel/debug/ion/heaps/cma_reserved"
+        },
+        {
+            "id": "0x16",
+            "type": "file",
+            "name": "ion_carveout",
+            "file": "/sys/kernel/debug/ion/heaps/carveout"
+        },
+        {
+            "id": "0x17",
+            "type": "file",
+            "name": "ion_cma",
+            "file": "/sys/kernel/debug/ion/heaps/ion_cma"
+        },
+        {
+            "id": "0x18",
+            "type": "custom",
+            "name": "ion_info",
+            "lib": "/usr/hobot/lib/libmon_peri.so",
+            "symbols": "get_ion_info_all"
+        },
+        {
+            "id": "0x19",
+            "type": "custom",
+            "name": "partition_size",
+            "lib": "/usr/hobot/lib/libmon_peri.so",
+            "symbols": "get_partition_status"
+        },
+        {
+            "id": "0x1a",
+            "type": "file",
+            "name": "meminfo",
+            "file": "/proc/meminfo"
+        }
+    ]
+}

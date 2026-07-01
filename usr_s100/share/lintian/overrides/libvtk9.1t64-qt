@@ -1,0 +1,2 @@
+libvtk9.1t64-qt: package-name-doesnt-match-sonames
+libvtk9.1t64-qt: package-name-doesnt-match-sonames libvtk9.1-qt

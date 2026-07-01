@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/aarch64-linux-gnu
+sharedlibdir=${prefix}/lib/aarch64-linux-gnu
+includedir=${prefix}/include/polyclipping
+
+Name: polyclipping
+Description: polygon clipping library
+Version: 
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lpolyclipping
+Cflags: -I${includedir}

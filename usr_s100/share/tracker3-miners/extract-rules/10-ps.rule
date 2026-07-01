@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-ps.so
+MimeTypes=application/x-gzpostscript;application/postscript;
+FallbackRdfTypes=nfo:PaginatedTextDocument
+Graph=tracker:Documents
+Hash=29f8936244191c3d1dd2712e4a45101b15bb6cfb4eb3f40c6fb2803e7644e683
+

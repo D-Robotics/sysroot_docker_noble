@@ -1,0 +1,7 @@
+[ExtractorRule]
+ModulePath=libextract-pdf.so
+MimeTypes=application/pdf
+FallbackRdfTypes=nfo:PaginatedTextDocument
+Graph=tracker:Documents
+Hash=22c5a3b05ab086712766e85dc608293bf0fbbf4b15d4e96398d5890fde97ef77
+

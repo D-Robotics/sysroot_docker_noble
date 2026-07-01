@@ -1,0 +1,2 @@
+# Link pointing to arch-independent data
+thonny: breakout-link usr/lib/python3/dist-packages/thonny/res -> usr/share/thonny/res

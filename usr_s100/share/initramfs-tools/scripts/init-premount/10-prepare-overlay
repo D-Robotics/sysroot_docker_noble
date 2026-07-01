@@ -1,0 +1,49 @@
+#!/bin/sh
+
+case "$1" in
+	# no pre-reqs
+	prereqs) echo ""; exit 0;;
+esac
+
+. /scripts/functions
+
+PATH=/usr/sbin:/usr/bin:/sbin:/bin
+
+overlay_dev=$(awk -F'overlayroot=' '{print $2}' /proc/cmdline | awk '{print $1}')
+
+if [ "${overlay_dev}" = "tmpfs" ]; then
+    exit 0
+fi
+
+if [ -z "${overlay_dev}" ]; then
+    echo "No overlay device"
+    exit 0
+fi
+
+timeout_ms=5000     # Total wait 5000 milliseconds
+interval_ms=1       # 1ms interval
+elapsed_ms=0
+
+while [ "$elapsed_ms" -lt "$timeout_ms" ]; do
+    if [ -b "${overlay_dev}" ]; then
+        break
+    fi
+    sleep 0.001
+    elapsed_ms=$((elapsed_ms + interval_ms))
+done
+
+if [ ! -b "${overlay_dev}" ]; then
+    echo "Timeout: ${overlay_dev} not found."
+    exit 0
+fi
+
+FSTYPE=$(blkid -o value -s TYPE "${overlay_dev}")
+
+if [ "$FSTYPE" != "ext4" ]; then
+    echo "format ${overlay_dev} to ext4"
+
+    mkfs.ext4 -F "${overlay_dev}" || { echo "❌ format failed"; exit 1; }
+    resize2fs "${overlay_dev}"
+fi
+
+exit 0

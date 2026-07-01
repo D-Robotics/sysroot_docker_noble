@@ -1,0 +1,7 @@
+
+prefix=/usr
+app=${prefix}/bin/tecla
+
+Name: tecla
+Description: Keyboard layout previewer
+Version: 46.0

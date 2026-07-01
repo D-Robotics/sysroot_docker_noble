@@ -1,0 +1,2 @@
+# This only uses symbols from higher-level libraries, and not from glibc
+libportal-gtk3-1: library-not-linked-against-libc [usr/lib/*/libportal-gtk3.so.*]

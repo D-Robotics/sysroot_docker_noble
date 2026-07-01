@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- filename: table.xml -->
+<component>
+    <name>org.freedesktop.IBus.Table</name>
+    <description>Table Component</description>
+    <exec>/usr/libexec/ibus-engine-table --ibus</exec>
+    <version>1.17.4</version>
+    <author>Yuwei Yu &lt;acevery@gmail.com&gt;</author>
+    <license>LGPL</license>
+    <homepage>https://github.com/mike-fabian/ibus-table</homepage>
+    <textdomain>ibus-table</textdomain>
+    <observed-paths>
+        <path>/usr/share/ibus-table/tables/</path>
+    </observed-paths>
+    <engines exec='/usr/libexec/ibus-engine-table --xml'/>
+</component>
