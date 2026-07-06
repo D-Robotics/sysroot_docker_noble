@@ -1,0 +1,14 @@
+prefix=/usr
+libdir=${prefix}/lib/aarch64-linux-gnu
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}/proj
+
+Name: PROJ
+Description: Coordinate transformation software library
+Requires:
+Version: 9.4.0
+Libs: -L${libdir} -lproj
+Libs.private: -lstdc++ -lm -ldl
+Requires.private: sqlite3 libtiff-4 libcurl
+Cflags: -I${includedir}

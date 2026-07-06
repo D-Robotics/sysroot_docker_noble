@@ -1,0 +1,1 @@
+../open-coarrays/openmpi/pkgconfig/caf-openmpi.pc

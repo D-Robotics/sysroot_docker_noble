@@ -1,0 +1,2 @@
+# Symbols for C++ libraries are not stable and will break latest on buildds.
+liblog4cxx15: no-symbols-control-file

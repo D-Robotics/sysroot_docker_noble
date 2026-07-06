@@ -1,0 +1,4 @@
+# ibus-daemon uses readlink(2) which is not protectable
+ibus: hardening-no-fortify-functions *ibus-daemon*
+# not intended for user execution
+no-manual-page *usr/libexec/ibus-*

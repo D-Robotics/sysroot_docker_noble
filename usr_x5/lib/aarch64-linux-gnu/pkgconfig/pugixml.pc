@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+includedir=/usr/include
+libdir=/usr/lib/aarch64-linux-gnu
+
+Name: pugixml
+Description: Light-weight, simple and fast XML parser for C++ with XPath support.
+URL: https://pugixml.org/
+Version: 1.14
+Cflags: -I${includedir}
+Libs: -L${libdir} -lpugixml

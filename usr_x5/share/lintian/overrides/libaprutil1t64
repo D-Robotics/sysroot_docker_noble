@@ -1,0 +1,3 @@
+libaprutil1t64: symbols-declares-dependency-on-other-package
+libaprutil1t64: package-name-doesnt-match-sonames libaprutil-1-0
+libaprutil1t64: package-name-doesnt-match-sonames libaprutil1

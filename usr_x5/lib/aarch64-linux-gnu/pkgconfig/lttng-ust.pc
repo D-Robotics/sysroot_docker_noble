@@ -1,0 +1,12 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/aarch64-linux-gnu
+includedir=/usr/include/aarch64-linux-gnu
+
+Name: LTTng Userspace Tracer
+Description: The LTTng Userspace Tracer (UST) is a library accompanied by a set of tools to trace userspace code. 
+Version: 2.13.7
+Requires:
+Libs: -L${libdir} -llttng-ust -llttng-ust-common -ldl
+Cflags: -I${includedir} 
+

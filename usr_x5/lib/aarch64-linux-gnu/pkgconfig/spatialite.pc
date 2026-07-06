@@ -1,0 +1,12 @@
+# Package Information for pkg-config
+
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/aarch64-linux-gnu
+includedir=${prefix}/include
+
+Name: spatialite
+Description: Spatial SQL database engine based on SQLite
+Version: 5.1.0
+Libs: -L${libdir} -lspatialite -lminizip -lrttopo -lfreexl -lproj -lz  -L/usr/lib/aarch64-linux-gnu -lgeos_c -lxml2  -lsqlite3  -lm
+Cflags: -I${includedir}

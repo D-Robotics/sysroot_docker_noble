@@ -1,0 +1,22 @@
+# keep symbols so that native memory tracking works
+# See https://bugs.launchpad.net/ubuntu/+source/openjdk-20/+bug/2012326
+openjdk-21-jre-headless binary: unstripped-binary-or-object
+
+# Ignore the mouse cursors
+openjdk-21-jre-headless binary: image-file-in-usr-lib
+
+# Just an empty directory
+openjdk-21-jre-headless binary: debug-suffix-not-dbg
+
+# Upstream implementation
+openjdk-21-jre-headless binary: exit-in-shared-library
+openjdk-21-jre-headless binary: spelling-error-in-binary
+
+# Override due to upstream copyright
+openjdk-21-jre-headless binary: spelling-error-in-copyright "GNU Public License" "GNU General Public License"
+
+# repeated lib due to upstream implementation directory layout
+openjdk-21-jre-headless binary: repeated-path-segment
+
+# override warning for the old mailing address in upstream copyright
+openjdk-21-jre-headless binary: old-fsf-address-in-copyright-file

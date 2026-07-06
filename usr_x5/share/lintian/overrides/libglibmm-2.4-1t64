@@ -1,0 +1,2 @@
+# Package renamed for t64 transition. Not worth splitting the library
+package-name-doesnt-match-sonames libgiomm-2.4-1 libglibmm-2.4-1 libglibmm-generate-extra-defs-2.4-1

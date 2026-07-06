@@ -1,0 +1,6 @@
+Name: CAF
+Description: Co-Array Fortran support
+Version: 2.10.2+ds-2.1build2
+Requires: ompi
+Cflags: -I/usr/include/aarch64-linux-gnu -I/usr/lib/aarch64-linux-gnu/fortran/
+Libs: -L/usr/lib/aarch64-linux-gnu/open-coarrays/openmpi/lib -lcaf_openmpi

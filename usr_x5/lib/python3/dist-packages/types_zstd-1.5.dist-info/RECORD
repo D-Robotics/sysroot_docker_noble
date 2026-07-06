@@ -1,0 +1,8 @@
+types_zstd-1.5.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+types_zstd-1.5.dist-info/METADATA,sha256=HjbJIfc9Es1Ym-BweW83BaqS74uxN7aFrB8w9e0BX5c,1500
+types_zstd-1.5.dist-info/RECORD,,
+types_zstd-1.5.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_zstd-1.5.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+types_zstd-1.5.dist-info/top_level.txt,sha256=TcNDAWsvPt5ZIh66gJzdvRfZFwOMNjZD8U5Qe9gJOBc,11
+zstd-stubs/METADATA.toml,sha256=LeCWiTrDCZ_WyMc490XKI8YQm8ZMKTYP8tYuQiWQpqA,93
+zstd-stubs/__init__.pyi,sha256=ckbnptHhkRJ_fcn4ygIQt7zXOn1tBRskh8wB1uScWS0,765

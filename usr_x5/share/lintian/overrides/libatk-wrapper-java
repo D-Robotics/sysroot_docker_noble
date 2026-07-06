@@ -1,0 +1,2 @@
+# This is not actually a java library
+libatk-wrapper-java: bad-jar-name usr/share/java/java-atk-wrapper.jar

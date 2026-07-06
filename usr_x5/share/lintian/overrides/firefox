@@ -1,0 +1,8 @@
+firefox: embedded-library freetype     [usr/lib/firefox/libxul.so]
+firefox: embedded-library libavutil    [usr/lib/firefox/libmozavutil.so]
+firefox: embedded-library libjpeg      [usr/lib/firefox/libxul.so]
+firefox: embedded-library libjsoncpp   [usr/lib/firefox/libxul.so]
+firefox: embedded-library nspr         [usr/lib/firefox/libnspr4.so]
+firefox: embedded-library nss          [usr/lib/firefox/libnss3.so]
+firefox: embedded-library srtp         [usr/lib/firefox/libxul.so]
+firefox: image-file-in-usr-lib

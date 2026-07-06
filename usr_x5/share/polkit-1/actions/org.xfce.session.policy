@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+
+  
+
+  <vendor>XFCE Session Manager</vendor>
+  <vendor_url>http://xfce.org/</vendor_url>
+  <icon_name>xfce4-session</icon_name>
+
+
+  <action id="org.xfce.session.xfsm-shutdown-helper">
+    
+    <description>Shutdown, restart, suspend, or hibernate the system</description>
+    <description xml:lang="bg">Изключване, рестартиране, приспиване или хиберниране на системата</description>
+    <description xml:lang="de">Das System herunterfahren, neu starten, in Bereitschaft oder in den Ruhezustand versetzen</description>
+    <description xml:lang="en_GB">Shutdown, restart, suspend, or hibernate the system</description>
+    <description xml:lang="fr">Arrêter, redémarrer, suspendre ou mettre en veille prolongée le système</description>
+    <description xml:lang="he">כבה, הפעל מחדש, השהה או הכנס למצב שינה את המערכת</description>
+    <description xml:lang="it">Spegni, riavvia, sospendi o iberna il sistema</description>
+    <description xml:lang="ja">シャットダウン、再起動、サスペンド、またはハイバネートします</description>
+    <description xml:lang="ko">시스템 끄기, 다시 시작, 대기, 최대 절전을 수행합니다</description>
+    <description xml:lang="lt">Išjungti, paleisti iš naujo, pristabdyti ar užmigdyti sistemą</description>
+    <description xml:lang="nb">Slå av, start på nytt, sett systemet i hvile- eller dvalemodus</description>
+    <description xml:lang="nl">Sluit het systeem af, herstart het of breng het in pauzestand of slaapstand</description>
+    <description xml:lang="pl">Wyłączenie, ponowne uruchomienie, wstrzymanie lub hibernowanie systemu</description>
+    <description xml:lang="pt">Encerrar, reiniciar, suspender ou hibernar o sistema</description>
+    <description xml:lang="ru">Выключить, перезагрузить, перевести систему в ждущий или спящий режимы</description>
+    <description xml:lang="sl">Zaustavitev, ponovni zagon, pripravljenost ali mirovanje sistema</description>
+    <description xml:lang="sq">Fikni, rinisni, pezulloni, ose plogështoni sistemin</description>
+    <description xml:lang="sr">Искључи, препокрени, обутави или замрзни систем</description>
+    <description xml:lang="sv">Stäng av, starta om, vänte, eller viloläge för systemet</description>
+    <description xml:lang="tr">Sistemi kapatın, yeniden başlatın, askıya alın veya hazırda bekletin</description>
+    <description xml:lang="uk">Вимкнення, перезапуск, призупинення або сплячий режим системи</description>
+    <description xml:lang="zh_CN">关闭，重启，挂起，或休眠系统</description>
+    <description xml:lang="zh_TW">關機、重新啟動、暫停或休眠系統</description>
+    <message>Authentication is required to shutdown, restart, suspend, or hibernate the system.</message>
+    <message xml:lang="bg">Изисква се удостоверяване за изключване, рестартиране, спиране или хибернация на системата.</message>
+    <message xml:lang="de">Um das System herunterzufahren, neu zu starten, in Bereitschaft oder in den Ruhezustand zu versetzen, ist eine Authentifizierung erforderlich.</message>
+    <message xml:lang="en_GB">Authentication is required to shutdown, restart, suspend, or hibernate the system.</message>
+    <message xml:lang="fr">L’authentification est requise pour arrêter, redémarrer, suspendre ou mettre en veille prolongée le système.</message>
+    <message xml:lang="he">נדרש אימות לכיבוי, הפעלה מחדש, השהיה או הכנסה למצב שינה של המערכת.</message>
+    <message xml:lang="it">è N</message>
+    <message xml:lang="ja">シャットダウン、再起動、サスペンド、またはハイバネートするには認証が必要です。</message>
+    <message xml:lang="ko">시스템 끄기, 다시 시작, 대기 최대 절전을 수행하려면 인증이 필요합니다.</message>
+    <message xml:lang="lt">Norint išjungti, paleisti iš naujo, pristabdyti ar užmigdyti sistemą, reikia nustatyti tapatybę.</message>
+    <message xml:lang="nb">Autentisering kreves for å slå av, starte på nytt eller sette systemet i hvile- eller dvalemodus.</message>
+    <message xml:lang="nl">Authenticatie is vereist voor afsluiten, herstarten, pauzestand of slaapstand.</message>
+    <message xml:lang="pl">Uwierzytelnianie jest wymagane do wyłączenia, ponownego uruchomienia, wstrzymania lub hibernowania systemu.</message>
+    <message xml:lang="pt">A autenticação é necessária para encerrar, reiniciar, suspender ou hibernar o sistema.</message>
+    <message xml:lang="ru">Для выключения, перезагрузки, перевода системы в ждущий или спящий режимы необходима аутентификация.</message>
+    <message xml:lang="sl">Za zaustavitev, ponovni zagon, pripravljenost ali mirovanje sistema je potrebna overitev.</message>
+    <message xml:lang="sq">Që të bëni fikje, rinisje, pezullim, ose plogështim të sistemit, është e domosdoshme të bëni mirëfilltësimin.</message>
+    <message xml:lang="sr">Потребна је лозинка ради искључивања, препокретања, обустављања или замрзавања система.</message>
+    <message xml:lang="sv">Autentisering krävs för att stänga av, starta om, vänte eller viloläge för systemet</message>
+    <message xml:lang="tr">Sistemi kapatmak, yeniden başlatmak, askıya almak veya hazırda bekletmek için kimlik doğrulaması gerekir.</message>
+    <message xml:lang="uk">Автентифікація потрібна для вимкнення, перезапуску, призупинення або переходу системи в сплячий режим.</message>
+    <message xml:lang="zh_CN">需要身份验证才能关闭，重启，挂起，或休眠系统。</message>
+    <message xml:lang="zh_TW">讓系統關機、重新啟動、暫停或休眠需要驗證。</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/lib/aarch64-linux-gnu/xfce4/session/xfsm-shutdown-helper</annotate>
+  </action>
+
+</policyconfig>

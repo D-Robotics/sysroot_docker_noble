@@ -1,0 +1,14 @@
+# Crypto++ package configuration file
+
+prefix=/usr
+libdir=/usr/lib/aarch64-linux-gnu/
+includedir=${prefix}/include
+datadir=${prefix}/share
+
+Name: Crypto++
+Description: Crypto++ cryptographic library
+Version: 8.9
+URL: https://crypto++.com/
+
+Cflags: -I${includedir}
+Libs: -L${libdir} -lcryptopp

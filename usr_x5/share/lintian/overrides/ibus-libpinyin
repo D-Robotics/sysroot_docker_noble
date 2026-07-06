@@ -1,0 +1,4 @@
+# not intended to be executed manually
+ibus-libpinyin: no-manual-page *usr/libexec/ibus-*-libpinyin*
+# not documentation
+ibus-libpinyin: package-contains-documentation-outside-usr-share-doc *usr/share/ibus-libpinyin/network.txt*

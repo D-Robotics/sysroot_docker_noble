@@ -1,0 +1,6 @@
+# Symbols are problematic for C++ libraries, shlibs is used instead.
+no-symbols-control-file *
+
+# 64-bit time_t transition
+package-name-doesnt-match-sonames libfyba0 libfygm0 libfyut0
+

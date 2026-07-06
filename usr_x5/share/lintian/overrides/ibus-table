@@ -1,0 +1,4 @@
+# not a docs file
+ibus-table: package-contains-documentation-outside-usr-share-doc *template.txt*
+# not intended for manual execution
+ibus-table: no-manual-page *usr/libexec/ibus-*-table*

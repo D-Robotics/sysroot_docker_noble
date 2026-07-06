@@ -1,0 +1,31 @@
+#ifndef ATL_INSTINFO_H
+   #define ATL_INSTINFO_H
+
+#define ATL_ARCH "GENERIC64"
+#define ATL_INSTFLAGS "-1 0 -a 1 -l 1"
+#define ATL_F2CDEFS "-DAdd_ -DF77_INTEGER=int -DStringSunStyle"
+#define ATL_ARCHDEFS "-DATL_OS_Linux -DATL_ARCH_GENERIC -DATL_USE64BITS -DATL_GAS_ARM64"
+#define ATL_DKCFLAGS "-Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=. -fstack-protector-strong -fdebug-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=/usr/src/atlas-3.10.3-13ubuntu1 -fPIC"
+#define ATL_DKC "/usr/bin/gcc"
+#define ATL_SKCFLAGS "-Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=. -fstack-protector-strong -fdebug-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=/usr/src/atlas-3.10.3-13ubuntu1 -fPIC"
+#define ATL_SKC "/usr/bin/gcc"
+#define ATL_DMCFLAGS "-Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=. -fstack-protector-strong -fdebug-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=/usr/src/atlas-3.10.3-13ubuntu1 -fPIC"
+#define ATL_DMC "/usr/bin/gcc"
+#define ATL_SMCFLAGS "-Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=. -fstack-protector-strong -fdebug-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=/usr/src/atlas-3.10.3-13ubuntu1 -fPIC"
+#define ATL_SMC "/usr/bin/gcc"
+#define ATL_ICCFLAGS "-DL2SIZE=33554432 -I/build/atlas-jFez9T/atlas-3.10.3/build/include -I/build/atlas-jFez9T/atlas-3.10.3/build/..//include -I/build/atlas-jFez9T/atlas-3.10.3/build/..//include/contrib -DAdd_ -DF77_INTEGER=int -DStringSunStyle -DATL_OS_Linux -DATL_ARCH_GENERIC -DATL_USE64BITS -DATL_GAS_ARM64 -DATL_DYLIBS -DWALL -Wdate-time -D_FORTIFY_SOURCE=2 -g -O2 -ffile-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=. -fstack-protector-strong -fdebug-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=/usr/src/atlas-3.10.3-13ubuntu1 -"
+#define ATL_ICC "/usr/bin/gcc"
+#define ATL_F77FLAGS "-g -O2 -ffile-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=. -fstack-protector-strong -fdebug-prefix-map=/build/atlas-jFez9T/atlas-3.10.3=/usr/src/atlas-3.10.3-13ubuntu1 -fPIC"
+#define ATL_F77 "/usr/bin/gfortran"
+#define ATL_DKCVERS "gcc (Ubuntu 12.2.0-14ubuntu1) 12.2.0"
+#define ATL_SKCVERS "gcc (Ubuntu 12.2.0-14ubuntu1) 12.2.0"
+#define ATL_DMCVERS "gcc (Ubuntu 12.2.0-14ubuntu1) 12.2.0"
+#define ATL_SMCVERS "gcc (Ubuntu 12.2.0-14ubuntu1) 12.2.0"
+#define ATL_ICCVERS "gcc (Ubuntu 12.2.0-14ubuntu1) 12.2.0"
+#define ATL_F77VERS "GNU Fortran (Ubuntu 12.2.0-14ubuntu1) 12.2.0"
+#define ATL_SYSINFO "Linux bos02-arm64-012 5.4.0-137-generic #154-Ubuntu SMP Thu Jan 5 17:03:02 UTC 2023 aarch64 aarch64 aarch64 GNU/Linux"
+#define ATL_DATE    "Thu Jan 26 23:41:22 UTC 2023"
+#define ATL_UNAM    "buildd"
+#define ATL_VERS    "3.10.3"
+
+#endif
